@@ -2,8 +2,9 @@ import React from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
-    title?: string;
-    callbackFn?: React.MouseEventHandler<HTMLButtonElement>;
+    title?: string | HTMLParagraphElement;
+    callbackFn?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
+    type: 'BUTTON' | 'LINK'
   };
   theme?: {
     baseFontSize?: number;

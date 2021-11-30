@@ -60,14 +60,25 @@ describe('<SnackBar />', () => {
     const SNACKBARS = [
       <SnackBar />,
       <SnackBar text="SnackBar message content " />,
+      <SnackBar
+        text={
+          <p>
+            SnackBar <b>message</b> content
+          </p>
+        }
+      />,
       <SnackBar onClose={() => {}} />,
       <SnackBar closeButtonAriaLabel="close" />,
       <SnackBar secondsToClose={10} />,
       <SnackBar skin="neutral" />,
       <SnackBar skin="primary" />,
+      <SnackBar skin="primary" hideIcon />,
       <SnackBar skin="success" />,
+      <SnackBar skin="success" hideIcon />,
       <SnackBar skin="warning" />,
+      <SnackBar skin="warning" hideIcon />,
       <SnackBar skin="error" />,
+      <SnackBar skin="error" hideIcon />,
       <SnackBar skin="neutral" inverted />,
       <SnackBar skin="primary" inverted />,
       <SnackBar skin="success" inverted />,
@@ -104,11 +115,6 @@ describe('<SnackBar />', () => {
     });
   });
 
-  it('should not show the close left icon when the skin is different of neutral', () => {
-    component = mount(SnackBarComponentWithSuccessSkin);
-    expect(component.find('CloseIconLeft').exists()).toBe(false);
-  });
-
   it('should not show the action button when the skin is different of neutral', () => {
     component = mount(SnackBarComponentWithSuccessSkin);
     expect(component.find('ActionButton').exists()).toBe(false);
@@ -120,15 +126,9 @@ describe('<SnackBar />', () => {
     expect(actionTriggerEventMock).toHaveBeenCalled();
   });
 
-  it('should call on close event callback with action triggers (call close icon in the left)', () => {
-    component = mount(SnackBarComponent);
-    component.find('CloseIconLeft').simulate('click');
-    expect(onCloseEventMock).toHaveBeenCalled();
-  });
-
   it('should call on close event callback without action triggers (call close icon in the right)', () => {
     component = mount(SnackBarComponentWithoutActionTriggers);
-    component.find('CloseIconRight').simulate('click');
+    component.find('CloseButton').simulate('click');
     expect(onCloseEventMock).toHaveBeenCalled();
   });
 
@@ -144,18 +144,6 @@ describe('<SnackBar />', () => {
     expect(actionTrigger.title).toMatch(actionTriggerText);
   });
 
-  it('should have a close icon when its props is set', () => {
-    component = mount(SnackBarComponent);
-    const closeIconContent = component.find('CloseIconLeft Icon').prop('name');
-    expect(closeIconContent).toMatch('close');
-  });
-
-  it('should the arial label of close button prop be the same of the props setted', () => {
-    component = mount(SnackBarComponent);
-    const ariaLabelContent = component.find('CloseIconLeft').prop('aria-label');
-    expect(CloseButtonAriaLabel).toMatch(ariaLabelContent);
-  });
-
   it('(a11y) should the dialog has the same id of content', () => {
     component = mount(SnackBarComponent);
     const snackBarDialogAriaDescribedBy = component
@@ -167,12 +155,6 @@ describe('<SnackBar />', () => {
     expect(snackBarDialogAriaDescribedBy).toMatch(
       snackBarDialogTextContainerId,
     );
-  });
-
-  it('(a11y) should close component when the close button was confirmed by keyboard', () => {
-    component = mount(SnackBarComponent);
-    component.find('CloseIconLeft').simulate('keypress', { key: 'Enter' });
-    expect(onCloseEventMock).toHaveBeenCalled();
   });
 
   it('(a11y) should focus the action button when component was rendered', () => {

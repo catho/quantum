@@ -23,9 +23,44 @@ const Template = args => (
 
 export const Default = Template.bind({});
 Default.args = {
+  text: (
+    <p>
+      SnackBar <b>neutral</b> text content
+    </p>
+  ),
+  onClose: () => {},
+  skin: 'neutral',
+};
+
+export const DefaultWithCallback = Template.bind({});
+DefaultWithCallback.args = {
+  ...Default.args,
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
+};
+
+export const Primary = Template.bind({});
+Primary.args = {
   text: 'SnackBar primary text content',
   onClose: () => {},
   skin: 'primary',
+};
+
+export const PrimaryWithoutIcon = Template.bind({});
+PrimaryWithoutIcon.args = {
+  ...Primary.args,
+  hideIcon: true,
+};
+
+export const PrimaryWithCallback = Template.bind({});
+PrimaryWithCallback.args = {
+  ...Primary.args,
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
 };
 
 export const Success = Template.bind({});
@@ -35,6 +70,15 @@ Success.args = {
   skin: 'success',
 };
 
+export const SuccessWithCallback = Template.bind({});
+SuccessWithCallback.args = {
+  ...Success.args,
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
+};
+
 export const Error = Template.bind({});
 Error.args = {
   text: 'SnackBar error text content',
@@ -42,16 +86,31 @@ Error.args = {
   skin: 'error',
 };
 
+export const ErrorWithCallback = Template.bind({});
+ErrorWithCallback.args = {
+  ...Error.args,
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
+};
+
 export const Warning = Template.bind({});
 Warning.args = {
   text: 'SnackBar warning text content',
   onClose: () => {},
   skin: 'warning',
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
 };
 
-export const Callback = Template.bind({});
-Callback.args = {
-  text: 'SnackBar calback text content',
-  onClose: () => {},
-  actionTrigger: { title: 'CALLBACK ACTION' },
+export const WarningWithCallback = Template.bind({});
+WarningWithCallback.args = {
+  ...Warning.args,
+  actionTrigger: {
+    title: 'Desfazer',
+    callbackFn: () => {},
+  },
 };

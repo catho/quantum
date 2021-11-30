@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
+
+import { query } from '../Grid/sub-components/shared';
+import { hexToRgba, BREAKPOINTS } from '../shared';
 import Button from '../Button';
 import { Row, Col } from '../Grid';
 import uniqId from '../shared/uniqId';
@@ -14,6 +17,8 @@ import {
 } from '../shared/theme';
 import Icon from '../Icon/Icon';
 import { GetSkinIcon } from './IconTypes';
+
+const mediaQueries = query(BREAKPOINTS);
 
 const ID_GENERATOR = uniqId('snackbar-dialog-');
 
@@ -54,11 +59,13 @@ const a11yFocusTab = props => {
 };
 
 const SnackBarDialog = styled.div`
-  align-items: center;
-  border-radius: 4px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: 4px;
   min-height: 48px;
+
   ${({
     theme: {
       spacing: { xsmall, small, medium },
@@ -70,10 +77,15 @@ const SnackBarDialog = styled.div`
 
   ${props => {
     const { background, text } = getBackgroundAndTextColorBySkin(props);
-    return `
-    background-color: ${background};
-    color: ${text};
-  `;
+    return css`
+      background-color: ${background};
+      color: ${text};
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    `;
   }}
 
   :focus {
@@ -81,16 +93,15 @@ const SnackBarDialog = styled.div`
   }
 `;
 
-const TextContainer = styled.strong`
-  font-weight: normal;
-  ${({
-      theme: {
-        spacing: { xsmall },
-      },
-    }) => `
-    padding-right: ${xsmall}px;
-  `}
-    :focus {
+const TextContainer = styled.span`
+  flex: 1;
+  width: 100%;
+
+  & > p {
+    margin: 0;
+  }
+
+  :focus {
     ${a11yFocusTab}
   }
 `;
@@ -114,47 +125,65 @@ const SkinIcon = styled(Icon)`
   `}
 `;
 
-const CloseIconRight = styled(Button.Icon).attrs({
+const CloseButton = styled(Button.Icon).attrs({
   icon: 'close',
 })`
-  ${props => {
-    const { text } = getBackgroundAndTextColorBySkin(props);
+  ${({ skin, theme, inverted }) => {
+    const { text } = getBackgroundAndTextColorBySkin({ skin, theme, inverted });
+
+    const {
+      spacing: { small },
+    } = theme;
 
     return css`
+      margin-left: ${small}px;
       color: ${text};
 
       :hover,
       :focus {
-        background-color: transparent;
+        background: transparent;
         box-shadow: none;
         color: ${text};
-        ${a11yFocusTab}
+        ${a11yFocusTab};
       }
     `;
   }}
 `;
 
-const CloseIconLeft = styled(CloseIconRight)`
-  ${({
-    theme: {
-      spacing: { xsmall },
-    },
-  }) => `
-    margin-right: ${xsmall}px;
-  `}
-`;
+const ActionButton = styled(Button)`
+  ${({ theme, skin, inverted }) => {
+    const { text: color } = getBackgroundAndTextColorBySkin({
+      skin,
+      theme,
+      inverted,
+    });
+    const {
+      spacing: { small },
+    } = theme;
 
-const WrapperLeft = styled.div`
-  display: inherit;
-  align-items: center;
-`;
+    return css`
+      background: ${hexToRgba(color, 0.15)};
 
-const ActionButton = styled(Button)``;
+      margin-left: ${small}px;
+      box-shadow: none;
+      color: ${color};
+      outline: none;
+      border-width: 0;
+      border-color: unset;
 
-const ActionsSection = styled.div`
-  align-items: center;
-  display: flex;
-  flex: none;
+      :hover,
+      :focus {
+        outline: none;
+        background: ${hexToRgba(color, 0.15)};
+        box-shadow: none;
+        color: ${color};
+      }
+
+      ${mediaQueries.medium`
+        background-color: transparent;
+      `}
+    `;
+  }}
 `;
 
 const DialogBlock = styled.section`
@@ -221,11 +250,9 @@ class SnackBar extends React.Component {
       theme,
       skin,
       inverted,
+      hideIcon,
       ...rest
     } = this.props;
-
-    const isActionTriggerDiffAction =
-      actionTrigger && actionTrigger.title !== 'ACTION' && skin === 'neutral';
 
     return ReactDOM.createPortal(
       <DialogBlock>
@@ -247,52 +274,36 @@ class SnackBar extends React.Component {
               aria-describedby={this._id}
               tabIndex="0"
             >
-              <WrapperLeft>
-                {isActionTriggerDiffAction ? (
-                  <CloseIconLeft
-                    theme={theme}
-                    inverted={inverted}
-                    skin={skin}
-                    onClick={onClose}
-                    aria-label={closeButtonAriaLabel}
-                    onKeyPress={this.handleKeyPress}
-                  />
-                ) : (
-                  this.handleSkinIcon(theme, skin)
-                )}
-                <TextContainer
-                  id={this._id}
+              {!hideIcon && this.handleSkinIcon(theme, skin)}
+              <TextContainer
+                id={this._id}
+                inverted={inverted}
+                theme={theme}
+                skin={skin}
+              >
+                {text}
+              </TextContainer>
+              {actionTrigger && (
+                <ActionButton
+                  className="action-button"
                   inverted={inverted}
                   theme={theme}
                   skin={skin}
+                  onClick={actionTrigger.callbackFn}
                 >
-                  {text}
-                </TextContainer>
-              </WrapperLeft>
-              <ActionsSection>
-                {isActionTriggerDiffAction ? (
-                  <ActionButton
-                    className="action-button"
-                    inverted={inverted}
-                    theme={theme}
-                    skin="secondary"
-                    onClick={actionTrigger.callbackFn}
-                  >
-                    {actionTrigger.title}
-                  </ActionButton>
-                ) : (
-                  onClose && (
-                    <CloseIconRight
-                      theme={theme}
-                      inverted={inverted}
-                      skin={skin}
-                      onClick={onClose}
-                      aria-label={closeButtonAriaLabel}
-                      onKeyPress={this.handleKeyPress}
-                    />
-                  )
-                )}
-              </ActionsSection>
+                  {actionTrigger.title}
+                </ActionButton>
+              )}
+              {onClose && (
+                <CloseButton
+                  theme={theme}
+                  inverted={inverted}
+                  skin={skin}
+                  onClick={onClose}
+                  aria-label={closeButtonAriaLabel}
+                  onKeyPress={this.handleKeyPress}
+                />
+              )}
             </SnackBarDialog>
           </Col>
         </Row>
@@ -302,18 +313,16 @@ class SnackBar extends React.Component {
   }
 }
 
-CloseIconLeft.displayName = 'CloseIconLeft';
-CloseIconRight.displayName = 'CloseIconRight';
+CloseButton.displayName = 'CloseButton';
 SkinIcon.displayName = 'SkinIcon';
 ActionButton.displayName = 'ActionButton';
 SnackBarDialog.displayName = 'SnackBarDialog';
 TextContainer.displayName = 'TextContainer';
 
 SnackBar.propTypes = {
-  /** This prop works only on neutral skin */
   actionTrigger: PropTypes.shape({
-    title: PropTypes.string,
-    callbackFn: PropTypes.func,
+    title: PropTypes.string.isRequired,
+    callbackFn: PropTypes.func.isRequired,
   }),
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
@@ -326,6 +335,7 @@ SnackBar.propTypes = {
     }),
   }),
   closeButtonAriaLabel: PropTypes.string,
+  hideIcon: PropTypes.bool,
   onClose: PropTypes.func,
   secondsToClose: PropTypes.number,
   skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
@@ -341,10 +351,8 @@ SnackBar.defaultProps = {
   secondsToClose: 6,
   skin: 'neutral',
   text: 'Text of SnackBar component',
-  actionTrigger: {
-    title: 'ACTION',
-    callbackFn: () => {},
-  },
+  actionTrigger: undefined,
+  hideIcon: false,
   inverted: false,
   id: undefined,
   theme: {
