@@ -2,9 +2,8 @@ import React from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
-    title?: string | HTMLParagraphElement;
-    callbackFn?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
-    type: 'BUTTON' | 'LINK'
+    title?: string;
+    callbackFn: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   };
   theme?: {
     baseFontSize?: number;
@@ -17,11 +16,12 @@ export interface SnackBarProps {
     };
   };
   closeButtonAriaLabel?: string;
-  onClose?: React.MouseEventHandler<HTMLButtonElement>;
+  onClose?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   secondsToClose?: number;
   skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
-  text?: string;
+  text: string | HTMLParagraphElement;
   inverted?: boolean;
+  hideIcon?: boolean;
   id?: string;
 }
 
