@@ -167,13 +167,11 @@ const ActionButton = styled(Button)`
       margin-left: ${small}px;
       box-shadow: none;
       color: ${color};
-      outline: none;
       border-width: 0;
       border-color: unset;
 
       :hover,
       :focus {
-        outline: none;
         background: ${hexToRgba(color, 0.15)};
         box-shadow: none;
         color: ${color};
