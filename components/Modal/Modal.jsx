@@ -57,19 +57,21 @@ const CloseIcon = styled(Button.Icon).attrs({
 CloseIcon.displayName = 'CloseIcon';
 
 const ModalWrapper = styled.div`
-  align-items: center;
-  background-color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => hexToRgba(neutral[700], 0.5)};
-  display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+
+  background-color: ${({
+    theme: {
+      colors: { neutral },
+    },
+  }) => hexToRgba(neutral[700], 0.5)};
 `;
 
 ModalWrapper.displayName = 'ModalWrapper';
