@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Button } from '../../components';
+import { Modal, Button, Input } from '../../components';
 
 const modalHeader = (titleProps = {}) => (
   <Modal.Header>
@@ -31,7 +31,23 @@ const Template = args => {
   );
 };
 
+const TemplateWithInput = args => {
+  const { header = modalHeader(), footer = modalFooterSimple } = args;
+  return (
+    <Modal>
+      {header}
+      <Modal.Content>
+        <Input />
+        You will not be able to recover this item later.
+      </Modal.Content>
+      {footer}
+    </Modal>
+  );
+};
+
 export const Simple = Template.bind({});
+
+export const SimpleWithInput = TemplateWithInput.bind({});
 
 export const SimpleWithSmallTitle = Template.bind({});
 SimpleWithSmallTitle.args = {

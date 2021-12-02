@@ -104,12 +104,15 @@ class Modal extends React.Component {
       [tabindex="0"]`,
     );
     const firstFocusableIndex = [...this.focusableElements].findIndex(
-      f => f.nodeName !== 'A',
+      f => f.nodeName === 'INPUT',
     ); // eslint-disable-line
-    this.firstFocusableElement = this.focusableElements[firstFocusableIndex];
+    this.firstFocusableElement = this.focusableElements[
+      firstFocusableIndex > -1 ? firstFocusableIndex : 0
+    ];
     this.lastFocusableElement = this.focusableElements[
       this.focusableElements.length - 1
     ];
+
     this.firstFocusableElement.focus();
 
     window.addEventListener('keydown', this.handleKeyDown);
@@ -205,7 +208,7 @@ class Modal extends React.Component {
         theme={theme}
         {...rest}
       >
-        <ModalCard theme={theme}>
+        <ModalCard tabIndex={0} theme={theme}>
           {children}
           <CloseIcon
             onClick={onClose}
