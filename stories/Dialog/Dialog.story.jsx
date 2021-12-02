@@ -17,7 +17,11 @@ export default {
 
 export const DialogStory = () => (
   <>
-    <Heading name="Dialog">Dialog</Heading>
+    <Heading name="Dialog">
+      Dialog is a type of window with a backdrop that appears in front of all
+      content when displayed, normally used to provide information or ask for
+      some user interaciont.
+    </Heading>
     <TabbedView>
       <Tab title="Usage">
         <StoryContainer>

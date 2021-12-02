@@ -19,7 +19,7 @@ const Wrapper = styled.div`
   right: 0;
   bottom: 0;
 
-  z-index: 99;
+  z-index: 98;
 
   @keyframes fadeIn {
     0% {

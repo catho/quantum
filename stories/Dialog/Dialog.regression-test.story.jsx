@@ -1,6 +1,6 @@
 import React from 'react';
-import { Dialog } from '../../components';
-import Example from './ExampleStyle';
+import { Dialog, Button } from '../../components';
+import Example, { ButtonWrapper } from './ExampleStyle';
 
 export default {
   title: 'Dialog',
@@ -9,17 +9,16 @@ export default {
 
 const Template = args => <Dialog {...args} />;
 
-export const Simple = Template.bind({});
-Simple.args = {
-  selector: '#regression-test',
-};
-
 export const WithContent = Template.bind({});
 WithContent.args = {
-  ...Simple.args,
+  selector: '#regression-test',
   children: (
     <Example>
-      <h3>Some text</h3>
+      <h3>Salvar alteração?</h3>
+      <ButtonWrapper>
+        <Button skin="error">Cancelar</Button>
+        <Button>Salvar</Button>
+      </ButtonWrapper>
     </Example>
   ),
   shouldOpen: true,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Dialog, Button } from '../../components';
-import Example from './ExampleStyle';
+import Example, { ButtonWrapper } from './ExampleStyle';
 
 const DialogExample = () => {
   const [openDialog, setOpenDialog] = useState(false);
@@ -9,13 +9,26 @@ const DialogExample = () => {
     setOpenDialog(false);
   };
 
+  const handleSave = () => {
+    // eslint-disable-next-line no-alert
+    // eslint-disable-next-line no-undef
+    alert('ACME Corporation');
+    closeDialog();
+  };
+
   return (
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
       {openDialog && (
         <Dialog onClose={closeDialog}>
           <Example>
-            <h1>Example text</h1>
+            <h3>Salvar alteração?</h3>
+            <ButtonWrapper>
+              <Button skin="error" onClick={() => closeDialog()}>
+                Cancelar
+              </Button>
+              <Button onClick={() => handleSave()}>Salvar</Button>
+            </ButtonWrapper>
           </Example>
         </Dialog>
       )}
@@ -31,29 +44,46 @@ import { Dialog, Button } from '../../components';
 const Example = styled.div
   align-items: center;
   background: white;
+  border-radius: 20px;
   display: flex;
+  flex-direction: column;
   height: 30%;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: auto;
-  width: 30%;
+  width: 300px;
 
+  const ButtonWrapper = styled.div
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 
 const DialogExample = () => {
 
   const [openDialog, setOpenDialog] = useState(false);
 
   const handleDialog = () => {
-    setOpenDialog(!openDialog)
+    setOpenDialog(false)
   };
+
+  const handleSave = () => {
+    alert('ACME Corporation');
+    closeDialog();
+  }
 
   return (
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
-      {openDialog <Dialog onClose={handleDialog}>
-        <Example>
-          <h1>Some text</h1>
-        </Example>
-      </Dialog>}
+      {openDialog && (
+        <Dialog onClose={closeDialog}>
+          <Example>
+            <h3>Salvar alteração?</h3>
+            <ButtonWrapper>
+              <Button skin='error' onClick={() => closeDialog()}>Cancelar</Button>
+              <Button onClick={() => handleSave()}>Salvar</Button>
+            </ButtonWrapper>
+          </Example>
+        </Dialog>
+      )}
     </>
   )
 }
