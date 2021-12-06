@@ -34,6 +34,7 @@ import Stepper from './Stepper';
 import SegmentedControl from './SegmentedControl';
 import List from './List';
 import ChargeBar from './ChargeBar';
+import Dialog from './Dialog';
 
 export {
   Accordion,
@@ -79,4 +80,5 @@ export {
   SegmentedControl,
   List,
   ChargeBar,
+  Dialog,
 };

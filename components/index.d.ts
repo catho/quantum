@@ -10,6 +10,7 @@ import { default as SocialButtonComponent, SocialButtonProps } from "./SocialBut
 import { default as CardComponent, Props as CardProps } from "./Card"
 import { Checkbox as CheckboxComponent, CheckboxGroup as CheckboxGroupComponent, CheckboxProps, CheckboxGroupProps } from './Checkbox';
 import { default as CircularLoaderComponent, CircularLoaderProps } from "./CircularLoader"
+import { default as DialogComponent, DialogProps } from "./Dialog"
 import { default as DropdownComponent, DropdownProps } from "./Dropdown"
 import { Container as ContainerComponent, Col as ColComponent, Row as RowComponent, ColProps, RowProps, ContainerProps } from './Grid';
 import { default as HamburgerComponent, HamburgerProps } from "@catho/quantum/Hamburger"
@@ -49,6 +50,7 @@ export const Card: StyledComponent<typeof CardComponent, CardProps>;
 export const Checkbox: StyledComponent<typeof CheckboxComponent, CheckboxProps>;
 export const CheckboxGroup: StyledComponent<typeof CheckboxGroupComponent, CheckboxGroupProps>;
 export const CircularLoader: StyledComponent<typeof CircularLoaderComponent, CircularLoaderProps>;
+export const Dialog: StyledComponent<typeof DialogComponent, DialogProps>;
 export const Dropdown: StyledComponent<typeof DropdownComponent, DropdownProps>;
 export const Container: StyledComponent<typeof ContainerComponent, ContainerProps>;
 export const Col: StyledComponent<typeof ColComponent, ColProps>;
