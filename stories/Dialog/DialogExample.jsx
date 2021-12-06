@@ -20,7 +20,10 @@ const DialogExample = () => {
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
       {openDialog && (
-        <Dialog onClose={closeDialog}>
+        <Dialog
+          onClose={closeDialog}
+          onClickOutside={event => console.log(event)}
+        >
           <Example>
             <h3>Salvar alteração?</h3>
             <ButtonWrapper>
@@ -74,7 +77,7 @@ const DialogExample = () => {
     <>
       <Button onClick={() => setOpenDialog(true)}>Open Dialog</Button>
       {openDialog && (
-        <Dialog onClose={closeDialog}>
+        <Dialog onClose={closeDialog} onClickOutside={(event) => console.log(event)}>
           <Example>
             <h3>Salvar alteração?</h3>
             <ButtonWrapper>

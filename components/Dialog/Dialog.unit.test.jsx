@@ -34,6 +34,17 @@ describe('Dialog', () => {
     component.unmount();
   });
 
+  it('should not call onClose when disableClickOutside is passed', () => {
+    const onCloseFunc = jest.fn();
+    component = mount(<Dialog onClose={onCloseFunc} disableClickOutside />);
+
+    component.find('div').simulate('click');
+
+    expect(onCloseFunc).not.toHaveBeenCalled();
+
+    component.unmount();
+  });
+
   it('should call onClose when "Escape" key is pressed', () => {
     const eventMap = {
       keydown: null,
@@ -57,5 +68,16 @@ describe('Dialog', () => {
     await new Promise(r => setTimeout(r, 1000));
 
     expect(onCloseTimeout).toHaveBeenCalled();
+  });
+
+  it('should call onClickOutside when clicked outside content', () => {
+    const onClickOutside = jest.fn();
+    component = mount(<Dialog onClickOutside={onClickOutside} />);
+
+    component.find('div').simulate('click');
+
+    expect(onClickOutside).toHaveBeenCalled();
+
+    component.unmount();
   });
 });

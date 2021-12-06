@@ -36,6 +36,7 @@ const Dialog = ({
   closeOnTime,
   children,
   theme,
+  onClickOutside,
   disableClickOutside,
   selector,
 }) => {
@@ -56,9 +57,13 @@ const Dialog = ({
     }
   };
 
-  const handleClickOutside = ({ target }) => {
-    if (target === dialogOver.current && !disableClickOutside) {
+  const handleClickOutside = event => {
+    if (event.target === dialogOver.current && !disableClickOutside) {
       handleClose();
+    }
+
+    if (onClickOutside) {
+      onClickOutside(event);
     }
   };
 
@@ -84,7 +89,7 @@ const Dialog = ({
     ? createPortal(
         <Wrapper
           ref={dialogOver}
-          onClick={e => handleClickOutside(e)}
+          onClick={event => handleClickOutside(event)}
           role="dialog"
           tabIndex="-1"
           theme={theme}
@@ -104,6 +109,8 @@ Dialog.propTypes = {
   ]),
   /** Callback function triggered when the component requests to be closed */
   onClose: PropTypes.func,
+  /** Callback triggered when user overlay is clicked */
+  onClickOutside: PropTypes.func,
   /** Defines a time in seconds for the dialog to be closed */
   closeOnTime: PropTypes.number,
   /** This props it's to disable the functionality to close when user clicks in the overlay */
@@ -130,6 +137,18 @@ Dialog.__docgenInfo = {
       required: false,
       description:
         'Callback function triggered when the component requests to be closed',
+    },
+    onClickOutside: {
+      defaultValue: {
+        value: 'undefined',
+        computed: false,
+      },
+      type: {
+        name: 'func',
+      },
+      required: false,
+      description:
+        'Callback function triggered when overlay is clicked. Ex: (event) => { console.log(event) }',
     },
     children: {
       defaultValue: {
@@ -184,6 +203,7 @@ Dialog.defaultProps = {
   selector: 'body',
   children: undefined,
   closeOnTime: undefined,
+  onClickOutside: undefined,
   disableClickOutside: false,
   theme: {
     colors,
