@@ -5,8 +5,9 @@ export interface DialogProps {
   theme?: {
     colors?: object;
   };
-  shouldOpen: boolean;
   onClose?: () => void;
+  onClickOutside?: () => void;
+  disableClickOutside: boolean;
   closeOnTime?: number;
 }
 
