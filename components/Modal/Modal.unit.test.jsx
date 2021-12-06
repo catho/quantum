@@ -2,6 +2,7 @@ import React from 'react';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Modal from './Modal';
+import { Card } from '..';
 
 describe('<Modal />', () => {
   let component;
@@ -81,7 +82,7 @@ describe('<Modal />', () => {
   });
 
   describe('Tab events', () => {
-    it('should focus first element different from a link when Modal is opened', () => {
+    it('should focus article when modal is open and its doesnt have an input', () => {
       const modal = mount(
         <Modal>
           <Modal.Content>
@@ -98,11 +99,37 @@ describe('<Modal />', () => {
 
       const focusedElement = document.activeElement;
 
-      expect(focusedElement.nodeName).not.toBe('A');
+      expect(
+        modal
+          .find(Card)
+          .at(0)
+          .getDOMNode(),
+      ).toBe(focusedElement);
+    });
+
+    it('should focus an input when modal is open', () => {
+      const modal = mount(
+        <Modal>
+          <Modal.Content>
+            <input type="text" />
+            <p>
+              Some text<a href="catho.com">Some link</a>
+            </p>
+          </Modal.Content>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      const focusedElement = document.activeElement;
+
+      expect(focusedElement.nodeName).not.toBe('article');
 
       expect(
         modal
-          .find('button')
+          .find('input')
           .at(0)
           .getDOMNode(),
       ).toBe(focusedElement);

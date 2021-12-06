@@ -624,6 +624,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
         >
           <article
             class="c1 c2"
+            tabindex="0"
           >
             <header
               class="c3 c4 c5"
@@ -876,6 +877,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
         role="dialog"
       >
         <Modal__ModalCard
+          tabIndex={0}
           theme={
             Object {
               "breakpoints": Object {
@@ -1073,6 +1075,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
         >
           <Card
             className="c1"
+            tabIndex={0}
             theme={
               Object {
                 "breakpoints": Object {
@@ -1270,6 +1273,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
           >
             <Card__CardWrapper
               className="c1"
+              tabIndex={0}
               theme={
                 Object {
                   "breakpoints": Object {
@@ -1467,6 +1471,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
             >
               <article
                 className="c2 c1"
+                tabIndex={0}
               >
                 <Header
                   theme={
