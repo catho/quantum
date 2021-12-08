@@ -64,6 +64,9 @@ module.exports = [
   // Card
   'Card',
 
+  // Dialog
+  'Dialog',
+
   // Modal
   'Modal',
 
