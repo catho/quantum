@@ -1,6 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../../shared/theme';
+import { query } from '../../Grid/sub-components/shared';
+import { BREAKPOINTS } from '../../shared';
+
+const mediaQueries = query(BREAKPOINTS);
 
 const Style = createGlobalStyle`
 * {
@@ -24,33 +28,59 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  letter-spacing: 0.7px;
-  font-size: 48px;
+  font-size: 36px;
+  letter-spacing: 0.25px;
+
+  ${mediaQueries.medium`
+    letter-spacing: 0.72px;
+    font-size: 48px;
+  `}
 }
 
 h2 {
-  font-size: 36px;
-  letter-spacing: 0.5px;
+  font-size: 32px;
+  letter-spacing: 0.24px;
+
+  ${mediaQueries.medium`
+    font-size: 36px;
+    letter-spacing: 0.54px;
+  `}
 }
 
 h3 {
   font-size: 28px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
+
+  ${mediaQueries.medium`
+    letter-spacing: 0.42px;
+  `}
 }
 
 h4 {
   font-size: 24px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.24px;
+
+  ${mediaQueries.medium`
+    letter-spacing: 0.36px;
+  `}
 }
 
 h5 {
   font-size: 20px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
+
+  ${mediaQueries.medium`
+    letter-spacing: 0.3px;
+  `}
 }
 
 h6 {
   font-size: 18px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.18px;
+
+  ${mediaQueries.medium`
+    letter-spacing: 0.27px;
+  `}
 }
 
 ul, ol {
