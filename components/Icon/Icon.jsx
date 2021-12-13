@@ -51,6 +51,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import KeyboardArrowUp from '@material-ui/icons/KeyboardArrowUp';
 import Launch from '@material-ui/icons/Launch';
+import LocationCity from '@material-ui/icons/LocationCity';
 import Lock from '@material-ui/icons/Lock';
 import Markunread from '@material-ui/icons/Markunread';
 import Menu from '@material-ui/icons/Menu';
@@ -145,6 +146,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     keyboard_arrow_right: KeyboardArrowRight,
     keyboard_arrow_up: KeyboardArrowUp,
     launch: Launch,
+    location_city: LocationCity,
     lock: Lock,
     markunread: Markunread,
     menu_book: MenuBook,

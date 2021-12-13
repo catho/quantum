@@ -49,6 +49,7 @@ const icons = [
   'keyboard_arrow_right',
   'keyboard_arrow_up',
   'launch',
+  'location_city',
   'lock',
   'markunread',
   'menu_book',
