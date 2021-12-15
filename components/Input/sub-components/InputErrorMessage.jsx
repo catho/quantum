@@ -23,11 +23,12 @@ InputErrorMessage.propTypes = {
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
-  skin: PropTypes.oneOf(['default', 'dark']).isRequired,
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 InputErrorMessage.defaultProps = {
   theme: { spacing, colors },
+  skin: 'default',
 };
 
 export default InputErrorMessage;

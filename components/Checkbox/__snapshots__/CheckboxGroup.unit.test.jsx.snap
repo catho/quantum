@@ -6,7 +6,7 @@ exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 jHvmCQ nTJFd\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bciUTo nTJFd\\"
   >
     <div
       className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
@@ -146,7 +146,7 @@ exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 jHvmCQ nTJFd\\"
+    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bciUTo nTJFd\\"
   >
     <div
       className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
@@ -235,6 +235,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -346,6 +347,7 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -534,6 +536,7 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -717,6 +720,7 @@ exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -823,6 +827,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] 
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -940,6 +945,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -1051,6 +1057,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -1209,6 +1216,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -1402,6 +1410,7 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -1585,6 +1594,7 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c4 {
@@ -1701,6 +1711,7 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {

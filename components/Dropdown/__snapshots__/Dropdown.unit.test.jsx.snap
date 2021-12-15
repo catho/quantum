@@ -6,6 +6,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -22,11 +23,11 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -53,13 +54,16 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -225,6 +229,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -241,11 +246,11 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -272,13 +277,16 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -444,6 +452,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -460,11 +469,11 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -491,13 +500,16 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -677,6 +689,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -693,11 +706,11 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
   border-color: #e91b0c;
 }
 
@@ -725,13 +738,16 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -901,6 +917,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -917,11 +934,11 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -948,13 +965,16 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -1120,6 +1140,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -1136,11 +1157,11 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
-  padding: 8px 16px;
 }
 
 .c3::-webkit-inner-spin-button,
@@ -1167,19 +1188,23 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 .c3[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c3:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c2 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c4 {
@@ -1352,6 +1377,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c4 {
@@ -1368,11 +1394,11 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
-  padding: 8px 16px;
 }
 
 .c4::-webkit-inner-spin-button,
@@ -1399,19 +1425,23 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 .c4[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c4:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c4[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c2 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c3 {
@@ -1593,6 +1623,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -1609,11 +1640,11 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1640,13 +1671,16 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -1736,6 +1770,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -1752,11 +1787,11 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -1783,13 +1818,16 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -1955,6 +1993,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -1971,11 +2010,11 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2002,13 +2041,16 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -2174,6 +2216,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -2190,11 +2233,11 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 8px;
-  padding: 8px 16px;
 }
 
 .c3::-webkit-inner-spin-button,
@@ -2221,19 +2264,23 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 .c3[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c3:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c2 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c4 {
@@ -2406,6 +2453,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -2422,11 +2470,11 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -2453,13 +2501,16 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c3 {
