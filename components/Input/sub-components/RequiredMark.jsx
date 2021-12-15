@@ -22,6 +22,7 @@ RequiredMark.propTypes = {
 
 RequiredMark.defaultProps = {
   theme: { colors },
+  skin: 'default',
 };
 
 export default RequiredMark;

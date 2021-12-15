@@ -72,6 +72,7 @@ const darkSkin = ({ theme, error }) => {
 
     &[disabled] {
       color: ${hexToRgba(neutral[0], 0.5)};
+      border-color: transparent;
     }
   `;
 };
@@ -146,11 +147,12 @@ TextInput.propTypes = {
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
-  skin: PropTypes.oneOf(['default', 'dark']).isRequired,
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 TextInput.defaultProps = {
   theme: { spacing, colors },
+  skin: 'default',
 };
 
 export default TextInput;

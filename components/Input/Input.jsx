@@ -191,7 +191,11 @@ class Input extends React.Component {
             )}
           />
           {error && !_isPassword && (
-            <InputErrorIcon description={descriptionLabel} theme={theme} />
+            <InputErrorIcon
+              description={descriptionLabel}
+              theme={theme}
+              skin={skin}
+            />
           )}
           {_isPassword && (
             <InputIcon

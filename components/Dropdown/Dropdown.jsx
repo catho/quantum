@@ -316,7 +316,7 @@ const Dropdown = ({
     });
 
   return (
-    <FieldGroup>
+    <FieldGroup theme={theme}>
       <Downshift
         {...rest}
         selectedItem={selectedItem}
