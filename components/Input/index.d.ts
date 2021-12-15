@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Validations } from '../Form';
 import { string } from 'prop-types';
+import { Validations } from '../Form';
 
 export type MaskFunction = (rawValue: string) => string[];
 export type Mask = boolean | RegExp | string | MaskFunction;
@@ -34,6 +34,7 @@ export interface InputProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   minLength?: number | string;
   maxLength?: number | string;
+  skin?: 'default' | 'dark';
   theme?: {
     spacing?: object;
     colors?: object;
