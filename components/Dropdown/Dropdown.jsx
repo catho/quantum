@@ -229,7 +229,6 @@ List.propTypes = {
   }).isRequired,
   items: PropTypes.arrayOf(itemPropType).isRequired,
   getItemProps: PropTypes.func.isRequired,
-  skin: PropTypes.oneOf(['default', 'dark']).isRequired,
 };
 
 const Dropdown = ({
