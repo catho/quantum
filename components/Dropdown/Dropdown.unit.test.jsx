@@ -75,6 +75,37 @@ describe('Dropdown component ', () => {
     expect(renderer.create(withName).toJSON()).toMatchSnapshot();
   });
 
+  it('should match the snapshot with dark skin', () => {
+    expect(
+      renderer.create(<Dropdown dark="skin" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer
+        .create(<Dropdown placeholder="Dropdown placeholder" skin="dark" />)
+        .toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown placeholder="" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown error="Error message" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown disabled skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown label="Dropdown label" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer
+        .create(<Dropdown required label="Dropdown label" skin="dark" />)
+        .toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown autocomplete skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+  });
+
   it('should find the selected item label when its is selected', () => {
     const selectedLabel = selectedItemObject.label;
     const component = mount(withSelectedItem);
