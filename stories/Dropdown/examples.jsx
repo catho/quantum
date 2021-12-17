@@ -95,7 +95,7 @@ const SimpleWithDarkSkin = () => (
     items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
   />
 );
-Simple.CODE = `<Dropdown skin="dark"
+SimpleWithDarkSkin.CODE = `<Dropdown skin="dark"
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
