@@ -27,6 +27,9 @@ const Template = args => (
 export const Default = Template.bind({});
 Default.args = { ...props };
 
+export const DefaultWithoutClose = Template.bind({});
+DefaultWithoutClose.args = { ...props, onClose: undefined };
+
 export const SkinPrimary = Template.bind({});
 SkinPrimary.args = {
   ...Default.args,
