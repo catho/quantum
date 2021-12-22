@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { spacing } from '../../shared/theme';
+import styled, { css } from 'styled-components';
+import { colors, spacing } from '../../shared/theme';
 
 const InputLabel = styled.label`
   display: block;
@@ -9,8 +9,10 @@ const InputLabel = styled.label`
     theme: {
       spacing: { xsmall },
     },
-  }) => `
+  }) => css`
     margin: ${xsmall}px 0 0;
+
+    color: inherit;
   `}
 `;
 
@@ -19,11 +21,12 @@ InputLabel.displayName = 'InputLabel';
 InputLabel.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
+    colors: PropTypes.object,
   }),
 };
 
 InputLabel.defaultProps = {
-  theme: { spacing },
+  theme: { spacing, colors },
 };
 
 export default InputLabel;

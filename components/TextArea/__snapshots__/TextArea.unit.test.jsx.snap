@@ -6,6 +6,7 @@ exports[`TextArea component should match snapshots 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -22,11 +23,11 @@ exports[`TextArea component should match snapshots 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -53,13 +54,16 @@ exports[`TextArea component should match snapshots 1`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c2.c2 {
@@ -93,6 +97,7 @@ exports[`TextArea component should match snapshots 2`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -109,11 +114,11 @@ exports[`TextArea component should match snapshots 2`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
   background-color: #E5EDFC;
 }
 
@@ -141,13 +146,16 @@ exports[`TextArea component should match snapshots 2`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c2.c2 {
@@ -181,6 +189,7 @@ exports[`TextArea component should match snapshots 3`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c2 {
@@ -197,11 +206,11 @@ exports[`TextArea component should match snapshots 3`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -228,19 +237,23 @@ exports[`TextArea component should match snapshots 3`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c1 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c3.c3 {
@@ -280,6 +293,7 @@ exports[`TextArea component should match snapshots 4`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -296,11 +310,11 @@ exports[`TextArea component should match snapshots 4`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c3::-webkit-inner-spin-button,
@@ -327,19 +341,23 @@ exports[`TextArea component should match snapshots 4`] = `
 .c3[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c3:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c1 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c2 {
@@ -388,6 +406,7 @@ exports[`TextArea component should match snapshots 5`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -404,11 +423,11 @@ exports[`TextArea component should match snapshots 5`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -435,13 +454,16 @@ exports[`TextArea component should match snapshots 5`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c2.c2 {
@@ -475,6 +497,7 @@ exports[`TextArea component should match snapshots 6`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -491,11 +514,11 @@ exports[`TextArea component should match snapshots 6`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -522,13 +545,16 @@ exports[`TextArea component should match snapshots 6`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c2.c2 {
@@ -573,6 +599,7 @@ exports[`TextArea component should match snapshots 7`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -589,11 +616,11 @@ exports[`TextArea component should match snapshots 7`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c1::-webkit-inner-spin-button,
@@ -620,17 +647,20 @@ exports[`TextArea component should match snapshots 7`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c4 {
-  color: #424242;
+  color: inherit;
 }
 
 .c2.c2 {
@@ -679,6 +709,7 @@ exports[`TextArea component should match snapshots 8`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c1 {
@@ -695,11 +726,11 @@ exports[`TextArea component should match snapshots 8`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
   border-color: #e91b0c;
 }
 
@@ -727,13 +758,16 @@ exports[`TextArea component should match snapshots 8`] = `
 .c1[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c1:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .c2.c2 {
@@ -759,6 +793,888 @@ exports[`TextArea component should match snapshots 8`] = `
   
   <span
     className="InputErrorMessage-sc-s0eyav-0 c3"
+  >
+    Error message
+  </span>
+</div>
+`;
+
+exports[`TextArea component should match snapshots 9`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={false}
+    id="textarea-8"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 10`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={false}
+    id="textarea-9"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value="foo"
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 11`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c2::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c2:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c2::placeholder {
+  color: #ffffff;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #0CC0EA;
+}
+
+.c2[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+  color: inherit;
+}
+
+.c3.c3 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="textarea-10"
+  >
+    Text label
+  </label>
+  <textarea
+    className="c2 c3"
+    disabled={false}
+    id="textarea-10"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 12`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c3 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c3::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c3:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c3::placeholder {
+  color: #ffffff;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #0CC0EA;
+}
+
+.c3[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+  color: inherit;
+}
+
+.c2 {
+  color: inherit;
+}
+
+.c4.c4 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="textarea-11"
+  >
+    Text label
+    <em
+      className="c2"
+    >
+      *
+    </em>
+  </label>
+  <textarea
+    className="c3 c4"
+    disabled={false}
+    id="textarea-11"
+    onChange={[Function]}
+    placeholder=""
+    required={true}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 13`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={true}
+    id="textarea-12"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 14`] = `
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={false}
+    id="textarea-13"
+    onChange={[Function]}
+    placeholder="this input has a placeholder"
+    required={false}
+    value=""
+  />
+  
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 15`] = `
+.c3 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4 {
+  color: inherit;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={false}
+    id="textarea-14"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  <span
+    className="InputErrorMessage-sc-s0eyav-0 c3 c4"
+  >
+    this is a helper text
+  </span>
+  
+</div>
+`;
+
+exports[`TextArea component should match snapshots 16`] = `
+.c3 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.c1 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.c1::-webkit-inner-spin-button,
+.c1::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c1::-webkit-calendar-picker-indicator,
+.c1::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c1::-ms-clear {
+  display: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::-moz-placeholder {
+  color: #ffffff;
+}
+
+.c1:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.c1::placeholder {
+  color: #ffffff;
+}
+
+.c1:hover,
+.c1:focus {
+  border-color: #0CC0EA;
+}
+
+.c1[disabled] {
+  color: rgba(255,255,255,0.5);
+  border-color: transparent;
+}
+
+.c1[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4 {
+  color: #ffffff;
+}
+
+.c2.c2 {
+  display: block;
+  min-height: 108px;
+  margin-top: 8px;
+  -webkit-transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+}
+
+<div
+  className="c0"
+>
+  <textarea
+    className="c1 c2"
+    disabled={false}
+    id="textarea-15"
+    onChange={[Function]}
+    placeholder=""
+    required={false}
+    value=""
+  />
+  
+  <span
+    className="c3 c4"
   >
     Error message
   </span>

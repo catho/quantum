@@ -63,3 +63,20 @@ export default [
     component: <ControlledExample />,
   },
 ];
+
+export const skinDark = {
+  code: `<Input
+skin="dark"
+label="With a helper text and Dark Skin"
+placeholder="Some placeholder"
+helperText="Helper here"
+/>`,
+  component: (
+    <Input
+      skin="dark"
+      label="With a helper text and Dark Skin"
+      placeholder="Some placeholder"
+      helperText="Helper here"
+    />
+  ),
+};

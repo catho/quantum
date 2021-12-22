@@ -75,6 +75,37 @@ describe('Dropdown component ', () => {
     expect(renderer.create(withName).toJSON()).toMatchSnapshot();
   });
 
+  it('should match the snapshot with dark skin', () => {
+    expect(
+      renderer.create(<Dropdown dark="skin" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer
+        .create(<Dropdown placeholder="Dropdown placeholder" skin="dark" />)
+        .toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown placeholder="" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown error="Error message" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown disabled skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown label="Dropdown label" skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer
+        .create(<Dropdown required label="Dropdown label" skin="dark" />)
+        .toJSON(),
+    ).toMatchSnapshot();
+    expect(
+      renderer.create(<Dropdown autocomplete skin="dark" />).toJSON(),
+    ).toMatchSnapshot();
+  });
+
   it('should find the selected item label when its is selected', () => {
     const selectedLabel = selectedItemObject.label;
     const component = mount(withSelectedItem);
@@ -86,25 +117,17 @@ describe('Dropdown component ', () => {
   it('should change the position of arrow icon when click open list', () => {
     const component = mount(withItems);
 
-    expect(component.find('ArrowDown Icon').prop('name')).toEqual(
-      'arrow_drop_down',
-    );
+    expect(component.find('ArrowIcon').prop('name')).toEqual('arrow_drop_down');
     component.find('DropInput').simulate('click');
-    expect(component.find('ArrowUp Icon').prop('name')).toEqual(
-      'arrow_drop_up',
-    );
+    expect(component.find('ArrowIcon').prop('name')).toEqual('arrow_drop_up');
   });
 
   it('should change the position of arrow icon when click to close list', () => {
     const component = mount(withItems);
     component.find('DropInput').simulate('click');
-    expect(component.find('ArrowUp Icon').prop('name')).toEqual(
-      'arrow_drop_up',
-    );
+    expect(component.find('ArrowIcon').prop('name')).toEqual('arrow_drop_up');
     component.find('DropInput').simulate('click');
-    expect(component.find('ArrowDown Icon').prop('name')).toEqual(
-      'arrow_drop_down',
-    );
+    expect(component.find('ArrowIcon').prop('name')).toEqual('arrow_drop_down');
   });
 
   it('should show image in dropdown item when its passed on items prop', () => {

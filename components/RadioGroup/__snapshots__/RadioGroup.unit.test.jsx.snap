@@ -11,7 +11,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 + Received
 
   <div
-    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 jHvmCQ eCksJC\\"
+    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 bciUTo eCksJC\\"
     role=\\"radiogroup\\"
   >
     <div
@@ -101,6 +101,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -211,6 +212,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c4 {
@@ -336,6 +338,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c5 {
@@ -498,6 +501,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c3 {
@@ -613,6 +617,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c5 {
@@ -791,6 +796,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c5 {
@@ -945,6 +951,7 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
   margin-bottom: 20px;
   min-width: 250px;
   width: 100%;
+  color: #424242;
 }
 
 .c5 {

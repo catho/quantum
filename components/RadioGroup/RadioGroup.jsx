@@ -56,7 +56,7 @@ const RadioGroup = ({
     );
 
   return (
-    <Group {...rest}>
+    <Group theme={theme} {...rest}>
       {items}
       {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
     </Group>
