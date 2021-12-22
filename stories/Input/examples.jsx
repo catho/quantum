@@ -59,21 +59,24 @@ export default [
     component: <Input label="With a helper text" helperText="Helper here" />,
   },
   {
-    code: `<Input
-  skin="dark"
-  label="With a helper text and Dark Skin"
-  helperText="Helper here"
-/>`,
-    component: (
-      <Input
-        skin="dark"
-        label="With a helper text and Dark Skin"
-        helperText="Helper here"
-      />
-    ),
-  },
-  {
     code: ControlledExample.code,
     component: <ControlledExample />,
   },
 ];
+
+export const skinDark = {
+  code: `<Input
+skin="dark"
+label="With a helper text and Dark Skin"
+placeholder="Some placeholder"
+helperText="Helper here"
+/>`,
+  component: (
+    <Input
+      skin="dark"
+      label="With a helper text and Dark Skin"
+      placeholder="Some placeholder"
+      helperText="Helper here"
+    />
+  ),
+};
