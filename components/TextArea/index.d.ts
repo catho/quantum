@@ -10,6 +10,7 @@ export interface TextAreaProps {
     required?: boolean;
     value?: string;
     id?: string | number;
+    skin?: 'default' | 'dark';
 }
 
 export default class TextArea extends React.Component<TextAreaProps> {}

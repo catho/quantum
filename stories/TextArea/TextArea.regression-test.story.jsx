@@ -7,12 +7,29 @@ export default {
   component: TextArea,
 };
 
+const parameters = {
+  backgrounds: {
+    default: 'dark',
+    values: [{ name: 'dark', value: '#1250C4' }],
+  },
+};
+
 const Template = args => <TextArea {...args} />;
+const TemplateDark = args => <TextArea skin="dark" {...args} />;
 
 export const Default = Template.bind({});
 
+export const Dark = TemplateDark.bind({});
+Dark.parameters = parameters;
+
 export const Disabled = Template.bind({});
 Disabled.args = {
+  disabled: true,
+};
+
+export const DisabledWithDarkSkin = TemplateDark.bind({});
+DisabledWithDarkSkin.parameters = parameters;
+DisabledWithDarkSkin.args = {
   disabled: true,
 };
 
@@ -21,8 +38,20 @@ PreValued.args = {
   value: 'text value',
 };
 
+export const PreValuedWithDarkSkin = TemplateDark.bind({});
+PreValuedWithDarkSkin.parameters = parameters;
+PreValuedWithDarkSkin.args = {
+  value: 'text value',
+};
+
 export const Label = Template.bind({});
 Label.args = {
+  label: 'label',
+};
+
+export const LabelWithDarkSkin = TemplateDark.bind({});
+LabelWithDarkSkin.parameters = parameters;
+LabelWithDarkSkin.args = {
   label: 'label',
 };
 
@@ -32,12 +61,31 @@ Required.args = {
   required: true,
 };
 
+export const RequiredWithDarkSkin = TemplateDark.bind({});
+RequiredWithDarkSkin.parameters = parameters;
+RequiredWithDarkSkin.args = {
+  ...Label.args,
+  required: true,
+};
+
 export const HelperText = Template.bind({});
 HelperText.args = {
   helperText: 'helperText',
 };
 
+export const HelperTextWithDarkSkin = TemplateDark.bind({});
+HelperTextWithDarkSkin.parameters = parameters;
+HelperTextWithDarkSkin.args = {
+  helperText: 'helperText',
+};
+
 export const Placeholder = Template.bind({});
 Placeholder.args = {
+  placeholder: 'placeholder',
+};
+
+export const PlaceholderWithDarkSkin = TemplateDark.bind({});
+PlaceholderWithDarkSkin.parameters = parameters;
+PlaceholderWithDarkSkin.args = {
   placeholder: 'placeholder',
 };

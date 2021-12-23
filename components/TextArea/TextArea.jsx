@@ -60,16 +60,17 @@ class TextArea extends React.Component {
       error,
       id,
       theme,
+      skin,
       ...rest
     } = this.props;
     const { hasDefaultValue, currentValue } = this.state;
 
     return (
-      <FieldGroup>
+      <FieldGroup theme={theme} skin={skin}>
         {label && (
           <InputLabel htmlFor={this._id}>
             {label}
-            {required && <RequiredMark>*</RequiredMark>}
+            {required && <RequiredMark skin={skin}>*</RequiredMark>}
           </InputLabel>
         )}
         <TextAreaTag
@@ -82,10 +83,13 @@ class TextArea extends React.Component {
           as="textarea"
           onChange={this.onChangeTextArea}
           theme={theme}
+          skin={skin}
         />
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
-          <InputErrorMessage helperText={helperText}>{error}</InputErrorMessage>
+          <InputErrorMessage skin={skin} helperText={helperText}>
+            {error}
+          </InputErrorMessage>
         )}
       </FieldGroup>
     );
@@ -103,6 +107,7 @@ TextArea.defaultProps = {
   value: '',
   id: undefined,
   theme: { spacing, colors, baseFontSize },
+  skin: 'default',
 };
 
 TextArea.propTypes = {
@@ -120,6 +125,7 @@ TextArea.propTypes = {
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 TextAreaTag.displayName = 'TextAreaTag';

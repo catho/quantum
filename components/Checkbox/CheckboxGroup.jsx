@@ -36,7 +36,7 @@ class CheckboxGroup extends React.Component {
       options.map(option => <ItemType {...option} key={option.name} />);
 
     return (
-      <Group>
+      <Group theme={theme}>
         <CheckboxGroupContext.Provider
           value={{
             error: Boolean(error),

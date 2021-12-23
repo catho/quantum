@@ -4,13 +4,7 @@ import InputErrorMessage from './InputErrorMessage';
 import { colors, spacing } from '../../shared/theme';
 
 const HelperText = styled(InputErrorMessage)`
-  ${({
-    theme: {
-      colors: {
-        neutral: { 700: neutral700 },
-      },
-    },
-  }) => `color: ${neutral700};`}
+  color: inherit;
 `;
 
 HelperText.propTypes = {

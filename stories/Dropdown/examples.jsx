@@ -89,6 +89,16 @@ Simple.CODE = `<Dropdown
   items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
 />`;
 
+const SimpleWithDarkSkin = () => (
+  <Dropdown
+    skin="dark"
+    items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+  />
+);
+SimpleWithDarkSkin.CODE = `<Dropdown skin="dark"
+  items={['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado']}
+/>`;
+
 const CustomLabel = () => (
   <Dropdown
     label="With a custom label"
@@ -236,6 +246,7 @@ items={[
 
 export {
   Simple,
+  SimpleWithDarkSkin,
   CustomLabel,
   RequiredMark,
   WithError,

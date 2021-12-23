@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
@@ -25,10 +25,12 @@ const InputIcon = styled(Icon)`
     theme: {
       spacing: { xsmall, medium },
     },
-  }) => `
+  }) => css`
     right: ${medium}px;
     bottom: ${xsmall * 1.25}px;
     width: ${baseFontSize * 1.5}px;
+
+    color: inherit;
   `}
 `;
 
@@ -38,17 +40,20 @@ const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
     theme: {
       spacing: { medium },
     },
-  }) => `left: ${medium}px;`}
+  }) => css`
+    left: ${medium}px;
+  `}
 `;
 
 const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
   ${({
     theme: {
-      colors: {
-        error: { 700: error700 },
-      },
+      colors: { error },
     },
-  }) => `color: ${error700};`}
+    skin,
+  }) => css`
+    color: ${skin === 'default' ? error[700] : 'inherit'};
+  `}
 `;
 
 const DescriptionLabel = styled.span`
@@ -58,6 +63,8 @@ const DescriptionLabel = styled.span`
     font-size: ${fontSize * 0.875}px;
     padding: 0;
   `}
+
+  color: inherit;
 `;
 
 const InputWrapper = styled.div`
@@ -128,6 +135,7 @@ class Input extends React.Component {
       onClean,
       theme,
       disabled,
+      skin,
       ...rest
     } = this.props;
     const { currentValue, hasDefaultValue } = this.state;
@@ -147,11 +155,11 @@ class Input extends React.Component {
     };
 
     return (
-      <FieldGroup>
+      <FieldGroup theme={theme} skin={skin}>
         {label && (
           <InputLabel htmlFor={this._id} error={error}>
             {label}
-            {required && <RequiredMark>*</RequiredMark>}
+            {required && <RequiredMark skin={skin}>*</RequiredMark>}
           </InputLabel>
         )}
         {descriptionLabel && (
@@ -178,11 +186,16 @@ class Input extends React.Component {
                 hasRightIcon={_hasIcon}
                 hasLeftIcon={_isSearchType}
                 hasDefaultValue={hasDefaultValue}
+                skin={skin}
               />
             )}
           />
           {error && !_isPassword && (
-            <InputErrorIcon description={descriptionLabel} theme={theme} />
+            <InputErrorIcon
+              description={descriptionLabel}
+              theme={theme}
+              skin={skin}
+            />
           )}
           {_isPassword && (
             <InputIcon
@@ -202,7 +215,11 @@ class Input extends React.Component {
           )}
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && <InputErrorMessage theme={theme}>{error}</InputErrorMessage>}
+        {error && (
+          <InputErrorMessage theme={theme} skin={skin}>
+            {error}
+          </InputErrorMessage>
+        )}
       </FieldGroup>
     );
   }
@@ -249,6 +266,7 @@ Input.propTypes = {
   }),
   minLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 Input.defaultProps = {
@@ -268,6 +286,7 @@ Input.defaultProps = {
   theme: { spacing, colors, baseFontSize },
   minLength: 0,
   maxLength: 255,
+  skin: 'default',
 };
 
 Input.displayName = 'Input';

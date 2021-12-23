@@ -15,6 +15,7 @@ import { Row, Col } from '../../components/Grid';
 import List from '../../components/List';
 import {
   Simple,
+  SimpleWithDarkSkin,
   CustomLabel,
   RequiredMark,
   WithError,
@@ -91,6 +92,7 @@ export const DropdownStory = () => (
           <DropdownExample component={Disabled} position="7" />
           <DropdownExample component={WithImages} position="8" />
           <DropdownExample component={Controlled} position="9" />
+          <DropdownExample component={SimpleWithDarkSkin} position="10" />
         </StoryContainer>
       </Tab>
       <Tab title="API">

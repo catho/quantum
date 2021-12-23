@@ -21,6 +21,7 @@ export interface DropdownProps {
     stateAndHelpers: ControllerStateAndHelpers<ItemPropType>,
   ) => void;
   items?: ItemPropType[];
+  skin?: 'default' | 'dark',
   theme?: {
     colors?: object;
     spacing?: object;

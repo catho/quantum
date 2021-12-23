@@ -97,6 +97,7 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => (
 Alert.defaultProps = {
   icon: null,
   skin: 'neutral',
+  onClose: undefined,
   theme: {
     colors,
     baseFontSize: defaultBaseFontSize,
@@ -116,7 +117,7 @@ Alert.propTypes = {
    * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
   icon: PropTypes.string,
   /** You must pass a callback that is called when close button is clicked */
-  onClose: PropTypes.func.isRequired,
+  onClose: PropTypes.func,
   skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,

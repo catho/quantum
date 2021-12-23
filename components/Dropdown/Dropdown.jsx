@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
 import { FieldGroup, shadow, uniqId, normalizeChars } from '../shared';
@@ -31,11 +31,7 @@ const DropInput = styled(TextInput)`
   ${({
     text,
     autocomplete,
-    theme,
     theme: {
-      colors: {
-        neutral: { 900: neutral900, 500: neutral500 },
-      },
       spacing: { xsmall, medium, xxxlarge },
     },
   }) => `
@@ -45,48 +41,18 @@ const DropInput = styled(TextInput)`
         : ''
     }
     ${!text ? 'flex-direction: row-reverse;' : ''}
-    color: ${neutral900};
-    ${shadow(5, neutral500)({ theme })};
+    color: inherit;
   `};
 `;
 
-const ArrowDown = styled(Icon).attrs({
-  name: 'arrow_drop_down',
-})`
+const ArrowIcon = styled(Icon)`
   pointer-events: none;
   width: ${ICON_DEFAULT_SIZE};
 
-  ${({
-    selectedItem,
-    theme: {
-      colors: {
-        neutral: { 700: neutral700 },
-      },
-    },
-  }) =>
+  ${({ selectedItem }) =>
     !selectedItem &&
     `
-    color: ${neutral700};
-  `}
-`;
-
-const ArrowUp = styled(Icon).attrs({
-  name: 'arrow_drop_up',
-})`
-  pointer-events: none;
-  width: ${ICON_DEFAULT_SIZE};
-
-  ${({
-    selectedItem,
-    theme: {
-      colors: {
-        neutral: { 700: neutral700 },
-      },
-    },
-  }) =>
-    !selectedItem &&
-    `
-    color: ${neutral700};
+    color: inherit;
   `}
 `;
 
@@ -104,15 +70,14 @@ const DropList = styled.ul`
   ${({ theme }) => {
     const {
       spacing: { xxsmall },
-      colors: {
-        neutral: { 0: neutral0, 300: neutral300 },
-      },
+      colors: { neutral },
     } = theme;
 
-    return `
-      background-color: ${neutral0};
+    return css`
+      background-color: ${neutral[0]};
+      color: ${neutral[700]};
       margin-top: ${xxsmall}px;
-      ${shadow(5, neutral300)({ theme })};
+      ${shadow(5, neutral[300])({ theme })};
     `;
   }}
 `;
@@ -197,9 +162,8 @@ const DropItemImage = styled.img`
 
 DropInput.displayName = 'DropInput';
 DropItem.displayName = 'DropItem';
+ArrowIcon.displayName = 'ArrowIcon';
 SelectedItemLabel.displayName = 'SelectedItemLabel';
-ArrowDown.displayName = 'ArrowDown';
-ArrowUp.displayName = 'ArrowUp';
 DropItemImage.displayName = 'DropItemImage';
 DropContainer.displayName = 'DropContainer';
 
@@ -282,6 +246,7 @@ const Dropdown = ({
   id,
   name,
   ignoreSpecialChars,
+  skin,
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -316,7 +281,7 @@ const Dropdown = ({
     });
 
   return (
-    <FieldGroup>
+    <FieldGroup theme={theme} skin={skin}>
       <Downshift
         {...rest}
         selectedItem={selectedItem}
@@ -347,7 +312,7 @@ const Dropdown = ({
                   htmlFor={_id}
                 >
                   {label}
-                  {required && <RequiredMark>*</RequiredMark>}
+                  {required && <RequiredMark skin={skin}>*</RequiredMark>}
                 </InputLabel>
               )}
               <input
@@ -373,6 +338,7 @@ const Dropdown = ({
                       hasLabel={hasLabel}
                       id={_id}
                       autocomplete={autocomplete}
+                      skin={skin}
                       {...rest}
                     />
                   </DropContainer>
@@ -398,14 +364,14 @@ const Dropdown = ({
                     text={_buttonLabel}
                     theme={theme}
                     hasLabel={hasLabel}
+                    skin={skin}
                     id={_id}
                   >
                     {_buttonLabel}
-                    {isOpen ? (
-                      <ArrowUp theme={theme} />
-                    ) : (
-                      <ArrowDown theme={theme} />
-                    )}
+                    <ArrowIcon
+                      name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
+                      theme={theme}
+                    />
                   </DropInput>
 
                   {isOpen && (
@@ -423,7 +389,7 @@ const Dropdown = ({
         }}
       </Downshift>
       {helperText && <HelperText>{helperText}</HelperText>}
-      {error && <InputErrorMessage>{error}</InputErrorMessage>}
+      {error && <InputErrorMessage skin={skin}>{error}</InputErrorMessage>}
     </FieldGroup>
   );
 };
@@ -443,6 +409,7 @@ Dropdown.defaultProps = {
   onChange: () => {},
   theme: { colors, spacing, baseFontSize },
   ignoreSpecialChars: false,
+  skin: 'default',
 };
 
 Dropdown.propTypes = {
@@ -472,6 +439,7 @@ Dropdown.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   ignoreSpecialChars: PropTypes.bool,
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 export default Dropdown;
