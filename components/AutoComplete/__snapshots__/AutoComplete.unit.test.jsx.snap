@@ -15,11 +15,11 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;
-  margin-top: 0px;
-  padding: 8px 16px;
 }
 
 .c2::-webkit-inner-spin-button,
@@ -46,19 +46,23 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
 .c2[disabled] {
   background-color: #f2f2f2;
   border-color: #999999;
-  box-shadow: none;
   color: #999999;
-  cursor: not-allowed;
 }
 
 .c2:-webkit-autofill {
   box-shadow: 0 0 0 1000px #fff5f5 inset;
 }
 
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c1 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
+  color: inherit;
 }
 
 .c0 {
