@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete Should render Autocomplete 1`] = `
+.c2 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+  margin-top: 0px;
+  padding: 8px 16px;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  box-shadow: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c1 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  margin-top: 8px;
+}
+
+.c4 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor=""
+  >
+    
+  </label>
+  <input
+    aria-autocomplete="both"
+    aria-expanded={false}
+    aria-owns="autocompleteOptions"
+    autoComplete="off"
+    className="c2 c3"
+    disabled={false}
+    id=""
+    name=""
+    onChange={[Function]}
+    onClick={[Function]}
+    placeholder="Select an option"
+    role="combobox"
+    type="text"
+    value=""
+  />
+  
+  
+  
+  
+  <div
+    aria-atomic="true"
+    aria-live="polite"
+    className="c4"
+    role="status"
+  >
+    5 estão disponiveis.
+  </div>
+</div>
+`;

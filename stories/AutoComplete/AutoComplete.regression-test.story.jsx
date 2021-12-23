@@ -1,6 +1,8 @@
 import React from 'react';
 import { AutoComplete } from '../../components';
 
+const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
+
 export default {
   title: 'AutoComplete',
   component: AutoComplete,
@@ -13,14 +15,5 @@ Default.args = {
   id: 'autoCompleteNew',
   name: 'autoCompleteNew',
   label: 'Auto Complete',
-  suggestions: [
-    'teste1',
-    'teste11',
-    'teste111',
-    'teste1111',
-    'teste2',
-    'teste3',
-    'teste4',
-    'teste5',
-  ],
+  suggestions: Examples,
 };
