@@ -605,6 +605,7 @@ export type IconNames =
     | 'perm_phone_msg'
     | 'perm_scan_wifi'
     | 'person_add'
+    | 'person_circle'
     | 'personal_video'
     | 'person'
     | 'person_outline'
