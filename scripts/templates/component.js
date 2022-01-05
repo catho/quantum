@@ -1,6 +1,6 @@
 module.exports = componentName => [
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `// Generated with scripts/create-component.js
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -24,17 +24,17 @@ export default ${componentName};
     name: `${componentName}.jsx`,
   },
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `// Generated with scripts/create-component.js
 import React from 'react';
 import { create } from 'react-test-renderer';
 
 import ${componentName} from './${componentName}';
 
-describe(<${componentName} />, () => {
-  it('should math the snapshots', () => {
+describe('<${componentName} />', () => {
+  it('should match the snapshots', () => {
     expect(
       create(<${componentName} />)
-        .toJson(),
+        .toJSON(),
     ).toMatchSnapshot();
   })
 })
@@ -42,7 +42,7 @@ describe(<${componentName} />, () => {
     name: `${componentName}.unit.test.jsx`,
   },
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `// Generated with scripts/create-component.js
 import ${componentName} from './${componentName}';
 
 export default ${componentName};
@@ -51,7 +51,7 @@ export default ${componentName};
   },
   {
     content: `
-// Generated with scripts/create-componnent.js
+// Generated with scripts/create-component.js
 import React from 'react';
 
 export interface ${componentName}Props {
