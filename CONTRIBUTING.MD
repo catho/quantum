@@ -18,11 +18,13 @@ nvm use
     ```sh
     git checkout -b update-readme-file
     ```
-4.  Open up the project in your favorite text editor, select the file you want to contribute and make your changes. If your contribution is a new component you can use our script to generate initial structure for a new component.
+4.  Open up the project in your favorite text editor, select the file you want to contribute and make your changes. 
+    
+    - If your contribution is a new component you can use our script to generate initial structure for a new component:
 
-    ```sh
-    yarn generate ComponentName
-    ```
+        ```sh
+        yarn generate ComponentName
+        ```
 
 5.  After making your changes in the new git branch then add your modified files to git, [How to add, commit, push and go](http://readwrite.com/2013/10/02/github-for-beginners-part-2/)
 
