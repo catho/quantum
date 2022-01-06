@@ -85,4 +85,6 @@ module.exports = [
   'Stepper',
 
   'SegmentedControl',
+
+  'Link',
 ].map(s => `../stories/${s}/${s}.story.jsx`);
