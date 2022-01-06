@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AutoComplete Should render Autocomplete 1`] = `
-.c2 {
+Array [
+  .c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -73,7 +74,37 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
   margin-top: 8px;
 }
 
-.c4 {
+<div
+    className="c0"
+  >
+    <label
+      className="c1"
+      htmlFor=""
+    >
+      
+    </label>
+    <input
+      aria-autocomplete="both"
+      aria-expanded={false}
+      aria-owns="autocompleteOptions"
+      autoComplete="off"
+      className="c2 c3"
+      disabled={false}
+      id=""
+      name=""
+      onChange={[Function]}
+      onClick={[Function]}
+      placeholder="Select an option"
+      role="combobox"
+      type="text"
+      value=""
+    />
+    
+    
+  </div>,
+  "",
+  "",
+  .c0 {
   border: 0;
   -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
@@ -86,41 +117,12 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
 }
 
 <div
-  className="c0"
->
-  <label
-    className="c1"
-    htmlFor=""
-  >
-    
-  </label>
-  <input
-    aria-autocomplete="both"
-    aria-expanded={false}
-    aria-owns="autocompleteOptions"
-    autoComplete="off"
-    className="c2 c3"
-    disabled={false}
-    id=""
-    name=""
-    onChange={[Function]}
-    onClick={[Function]}
-    placeholder="Select an option"
-    role="combobox"
-    type="text"
-    value=""
-  />
-  
-  
-  
-  
-  <div
     aria-atomic="true"
     aria-live="polite"
-    className="c4"
+    className="c0"
     role="status"
   >
     5 estão disponiveis.
-  </div>
-</div>
+  </div>,
+]
 `;
