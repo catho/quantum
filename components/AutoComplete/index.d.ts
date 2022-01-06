@@ -5,7 +5,7 @@ export interface AutoCompleteProps {
     colors?: object;
     spacing?: object;
   };
-  suggestions?: Array<string>;
+  suggestions: Array<string>;
   id?: string;
   name?: string;
   label?: string;

@@ -18,7 +18,13 @@ const Wrapper = styled.div`
 `;
 
 const InputText = styled(TextInput)`
-  margin-top: 8px;
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => css`
+    margin-top: ${xsmall}px;
+  `}
 `;
 
 const ITEM_HEIGHT = '44px';
@@ -32,9 +38,9 @@ const InputIcon = styled(Icon)`
     theme: {
       spacing: { xsmall, medium },
     },
-  }) => `
+  }) => css`
     right: ${medium}px;
-    bottom: ${xsmall * 4.6}px;
+    bottom: ${xsmall * 1.25}px;
     width: ${baseFontSize * 1.5}px;
   `}
 `;
@@ -45,11 +51,9 @@ const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
       colors: {
         error: { 700: error700 },
       },
-      spacing: { medium },
     },
-  }) => `
-  color: ${error700};
-  bottom: ${medium * 4}px;
+  }) => css`
+    color: ${error700};
   `}
 `;
 
@@ -137,24 +141,43 @@ const AutoComplete = ({
 }) => {
   const [userTypedValue, setUserTypedValue] = useState('');
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
+  const [filterSuggestionsLength, setFilterSuggestionsLength] = useState(
+    filterSuggestions.length,
+  );
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [cursor, setCursor] = useState(0);
 
   const wrapperRef = useRef();
   const listOptions = useRef();
 
+  const EscapeKeyPressValue = 'Escape';
+  const assistiveDescriptionDefault = `${filterSuggestionsLength} estão disponiveis.`;
+  const assistiveDescriptionDropDownOpen = `${assistiveDescriptionDefault} ${
+    filterSuggestions[cursor]
+  } 
+  ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
+
   const filterItens = value =>
     suggestions.filter(suggestion =>
       suggestion.includes(normalizeChars(value.toLowerCase())),
     );
 
+  const handleFilter = value => {
+    const filteredValues = filterItens(value);
+    if (filteredValues.length === 0) {
+      setShowSuggestions(false);
+    } else {
+      setShowSuggestions(true);
+    }
+    setFilterSuggestions(filteredValues);
+    setFilterSuggestionsLength(filteredValues.length);
+  };
+
   const handleChange = ({ target }) => {
     setUserTypedValue(target.value);
     if (selectedItem) selectedItem(target.value);
     setCursor(0);
-    setShowSuggestions(true);
-    filterItens(target.value);
-    setFilterSuggestions(filterItens(target.value));
+    handleFilter(target.value);
   };
 
   /* istanbul ignore next */
@@ -165,7 +188,9 @@ const AutoComplete = ({
   };
 
   const handleInputClick = () => {
-    setFilterSuggestions(filterItens(userTypedValue));
+    const filteredItem = filterItens(userTypedValue);
+    setFilterSuggestions(filteredItem);
+    setFilterSuggestionsLength(filteredItem.length);
     setShowSuggestions(true);
   };
 
@@ -181,7 +206,7 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   const handleEscPress = ({ key }) => {
-    if (key === 'Escape') {
+    if (key === EscapeKeyPressValue) {
       setShowSuggestions(false);
       wrapperRef.current.children[1].focus();
       setCursor(0);
@@ -214,11 +239,9 @@ const AutoComplete = ({
 
   const generateAssistiveDescript = () => {
     if (showSuggestions) {
-      return `${filterSuggestions.length} estão disponiveis. ${
-        filterSuggestions[cursor]
-      } ${cursor + 1} de ${filterSuggestions.length} está destacado`;
+      return assistiveDescriptionDropDownOpen;
     }
-    return `${filterSuggestions.length} estão disponiveis.`;
+    return assistiveDescriptionDefault;
   };
 
   const downPress = useKeyPress('ArrowDown');
@@ -228,9 +251,9 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   useEffect(() => {
-    if (showSuggestions && filterSuggestions.length && downPress) {
+    if (showSuggestions && filterSuggestionsLength && downPress) {
       const selectedCursor =
-        cursor < filterSuggestions.length - 1 ? cursor + 1 : cursor;
+        cursor < filterSuggestionsLength - 1 ? cursor + 1 : cursor;
       setCursor(selectedCursor);
       listOptions.current.children[selectedCursor].focus();
     }
@@ -238,7 +261,7 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   useEffect(() => {
-    if (showSuggestions && filterSuggestions.length && upPress) {
+    if (showSuggestions && filterSuggestionsLength && upPress) {
       const selectedCursor = cursor > 0 ? cursor - 1 : cursor;
       setCursor(selectedCursor);
       listOptions.current.children[selectedCursor].focus();
@@ -251,7 +274,7 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   useEffect(() => {
-    if (showSuggestions && filterSuggestions.length && enterPress) {
+    if (showSuggestions && filterSuggestionsLength && enterPress) {
       setUserTypedValue(filterSuggestions[cursor]);
       setShowSuggestions(false);
       wrapperRef.current.children[1].focus();
@@ -278,42 +301,44 @@ const AutoComplete = ({
   }, []);
 
   return (
-    <Wrapper ref={wrapperRef}>
-      <InputLabel htmlFor={id} error={error}>
-        {label}
-      </InputLabel>
-      <InputText
-        id={id}
-        name={name}
-        type="text"
-        error={error}
-        disabled={disabled}
-        placeholder={placeholder}
-        autoComplete="off"
-        role="combobox"
-        aria-owns="autocompleteOptions"
-        aria-autocomplete="both"
-        aria-expanded={showSuggestions}
-        value={userTypedValue}
-        onClick={() => handleInputClick()}
-        onChange={e => handleChange(e)}
-      />
-      {userTypedValue && !error && !disabled && (
-        <InputIcon
-          theme={theme}
-          name="clear"
-          description="limpar valor"
-          onClick={() => handleClearValue()}
+    <>
+      <Wrapper ref={wrapperRef}>
+        <InputLabel htmlFor={id} error={error}>
+          {label}
+        </InputLabel>
+        <InputText
+          id={id}
+          name={name}
+          type="text"
+          error={error}
+          disabled={disabled}
+          placeholder={placeholder}
+          autoComplete="off"
+          role="combobox"
+          aria-owns="autocompleteOptions"
+          aria-autocomplete="both"
+          aria-expanded={showSuggestions}
+          value={userTypedValue}
+          onClick={() => handleInputClick()}
+          onChange={e => handleChange(e)}
         />
-      )}
-      {generateSuggestions()}
+        {userTypedValue && !error && !disabled && (
+          <InputIcon
+            theme={theme}
+            name="clear"
+            description="limpar valor"
+            onClick={() => handleClearValue()}
+          />
+        )}
+        {generateSuggestions()}
+        {error && <InputErrorIcon description={error} theme={theme} />}
+      </Wrapper>
       {helperText && <HelperText>{helperText}</HelperText>}
       {error && <InputErrorMessage theme={theme}>{error}</InputErrorMessage>}
-      {error && <InputErrorIcon description={error} theme={theme} />}
       <PoliteStatus role="status" aria-atomic="true" aria-live="polite">
         {generateAssistiveDescript()}
       </PoliteStatus>
-    </Wrapper>
+    </>
   );
 };
 
@@ -350,7 +375,7 @@ AutoComplete.defaultProps = {
   error: '',
   disabled: false,
   placeholder: 'Select an option',
-  selectedItem: () => {},
+  selectedItem: undefined,
 };
 
 export default AutoComplete;
