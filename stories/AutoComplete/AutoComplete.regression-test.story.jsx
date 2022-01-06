@@ -17,3 +17,15 @@ Default.args = {
   label: 'Auto Complete',
   suggestions: Examples,
 };
+
+export const WithError = Template.bind({});
+WithError.args = {
+  ...Default.args,
+  error: 'Error message',
+};
+
+export const WithHelperText = Template.bind({});
+WithHelperText.args = {
+  ...Default.args,
+  helperText: 'Helper text',
+};
