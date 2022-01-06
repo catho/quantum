@@ -35,6 +35,7 @@ import SegmentedControl from './SegmentedControl';
 import List from './List';
 import ChargeBar from './ChargeBar';
 import Dialog from './Dialog';
+import Link from './Link';
 
 export {
   Accordion,
@@ -81,4 +82,5 @@ export {
   List,
   ChargeBar,
   Dialog,
+  Link,
 };
