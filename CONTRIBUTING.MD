@@ -1,6 +1,6 @@
 # Contributor's Guide
 
-You can contribute in many ways: openning or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
+You can contribute in many ways: opening or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
 
 ## Contribution Prerequisites
 - Node;
@@ -18,7 +18,13 @@ nvm use
     ```sh
     git checkout -b update-readme-file
     ```
-4.  Open up the project in your favourite text editor, select the file you want to contribute to and make your changes.
+4.  Open up the project in your favorite text editor, select the file you want to contribute and make your changes. 
+    
+    - If your contribution is a new component you can use our script to generate initial structure for a new component:
+
+        ```sh
+        yarn generate ComponentName
+        ```
 
 5.  After making your changes in the new git branch then add your modified files to git, [How to add, commit, push and go](http://readwrite.com/2013/10/02/github-for-beginners-part-2/)
 
@@ -41,7 +47,7 @@ nvm use
 
 7.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
     
-    - Select the type of change that you're commiting (required)
+    - Select the type of change that you're committing (required)
     - What is the scope of this change (e.g. component or file name)?
     - Write a short, imperative tense description of the change (required)
     - Provide a longer description of the change

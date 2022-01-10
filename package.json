@@ -34,7 +34,8 @@
     "storybook": "start-storybook -s .storybook/static",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "semantic-release": "semantic-release",
-    "deploy-storybook": "storybook-to-ghpages"
+    "deploy-storybook": "storybook-to-ghpages",
+    "generate": "node ./scripts/create-component"
   },
   "repository": {
     "type": "git",
