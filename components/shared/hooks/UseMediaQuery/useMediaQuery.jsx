@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 
 const useMediaQuery = width => {
   const [targetReached, setTargetReached] = useState(false);
-
+  /* istanbul ignore next */
   const updateTarget = useCallback(event => {
     if (event.matches) {
       setTargetReached(true);
