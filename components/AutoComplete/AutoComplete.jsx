@@ -10,10 +10,27 @@ import {
   InputLabel,
   InputErrorMessage,
   HelperText,
+  RequiredMark,
 } from '../Input/sub-components';
 import useKeyPress from './SubComponents/UseKeyPress';
 
-const Wrapper = styled.div`
+const ITEM_HEIGHT = '44px';
+const MAX_ITEMS_VISIBILITY = 7;
+const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
+
+const ComponentWrapper = styled.div`
+  ${({
+    theme: {
+      colors: { neutral },
+    },
+    skin = 'default',
+  }) => css`
+    position: relative;
+    color: ${skin === 'default' ? neutral[700] : neutral[0]};
+  `}
+`;
+
+const InputWrapper = styled.div`
   position: relative;
 `;
 
@@ -26,10 +43,6 @@ const InputText = styled(TextInput)`
     margin-top: ${xsmall}px;
   `}
 `;
-
-const ITEM_HEIGHT = '44px';
-const MAX_ITEMS_VISIBILITY = 7;
-const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
 
 const InputIcon = styled(Icon)`
   cursor: pointer;
@@ -52,8 +65,9 @@ const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
         error: { 700: error700 },
       },
     },
+    skin,
   }) => css`
-    color: ${error700};
+    color: ${skin === 'default' ? error700 : 'inherit'};
   `}
 `;
 
@@ -66,7 +80,7 @@ const List = styled.ul`
   padding: 0;
   position: absolute;
   width: 100%;
-  z-index: 9999;
+  z-index: 1;
 
   ${({ theme }) => {
     const {
@@ -75,7 +89,6 @@ const List = styled.ul`
         neutral: { 0: neutral0, 700: neutral700 },
       },
     } = theme;
-
     return css`
       background-color: ${neutral0};
       margin-top: ${xxsmall}px;
@@ -84,25 +97,27 @@ const List = styled.ul`
   }}
 `;
 
-const ListItens = styled.li`
+const ListIten = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
-  min-height: 42px;
+  height: ${ITEM_HEIGHT};
   ${({
     theme: {
       spacing: { xsmall, medium },
       colors: {
-        neutral: { 0: neutral0 },
+        neutral: { 0: neutral0, 700: neutral700 },
       },
     },
   }) => css`
+    color: ${neutral700};
     font-size: ${DROPITEM_FONT_SIZE}px;
     background-color: ${neutral0};
     padding: ${xsmall}px ${medium}px;
   `}
+
   &[aria-selected = 'true' ], &:hover {
     ${({
       theme: {
@@ -138,6 +153,8 @@ const AutoComplete = ({
   suggestions,
   theme,
   selectedItem,
+  required,
+  skin,
 }) => {
   const [userTypedValue, setUserTypedValue] = useState('');
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
@@ -151,31 +168,29 @@ const AutoComplete = ({
   const listOptions = useRef();
 
   const EscapeKeyPressValue = 'Escape';
-  const assistiveDescriptionDefault = `${filterSuggestionsLength} estão disponiveis.`;
+  const assistiveDescriptionDefault = `Digite uma ou mais letras para expandir os resultados. ${filterSuggestionsLength} estão disponiveis.`;
   const assistiveDescriptionDropDownOpen = `${assistiveDescriptionDefault} ${
     filterSuggestions[cursor]
   } 
   ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
 
   const filterItens = value =>
-    suggestions.filter(suggestion =>
-      suggestion.includes(normalizeChars(value.toLowerCase())),
-    );
+    suggestions.filter(suggestion => {
+      let option = normalizeChars(suggestion);
+      option = normalizeChars(option);
+      return option.indexOf(normalizeChars(value.toLowerCase())) > -1;
+    });
 
   const handleFilter = value => {
     const filteredValues = filterItens(value);
-    if (filteredValues.length === 0) {
-      setShowSuggestions(false);
-    } else {
-      setShowSuggestions(true);
-    }
+    setShowSuggestions(!!filteredValues.length);
     setFilterSuggestions(filteredValues);
     setFilterSuggestionsLength(filteredValues.length);
   };
 
   const handleChange = ({ target }) => {
     setUserTypedValue(target.value);
-    if (selectedItem) selectedItem(target.value);
+    selectedItem(target.value);
     setCursor(0);
     handleFilter(target.value);
   };
@@ -196,7 +211,7 @@ const AutoComplete = ({
 
   const handleItemClick = item => {
     setUserTypedValue(item);
-    if (selectedItem) selectedItem(item);
+    selectedItem(item);
     setShowSuggestions(false);
   };
 
@@ -220,9 +235,10 @@ const AutoComplete = ({
         role="listbox"
         id="autocompleteOptions"
         ref={listOptions}
+        skin={skin}
       >
         {filterSuggestions.map((item, index) => (
-          <ListItens
+          <ListIten
             key={item}
             aria-posinset={index}
             onClick={() => handleItemClick(item)}
@@ -232,7 +248,7 @@ const AutoComplete = ({
             tabIndex="-1"
           >
             {item}
-          </ListItens>
+          </ListIten>
         ))}
       </List>
     ) : null;
@@ -261,7 +277,7 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   useEffect(() => {
-    if (showSuggestions && filterSuggestionsLength && upPress) {
+    if (showSuggestions && filterSuggestionsLength && upPress && cursor > 0) {
       const selectedCursor = cursor > 0 ? cursor - 1 : cursor;
       setCursor(selectedCursor);
       listOptions.current.children[selectedCursor].focus();
@@ -301,10 +317,11 @@ const AutoComplete = ({
   }, []);
 
   return (
-    <>
-      <Wrapper ref={wrapperRef}>
+    <ComponentWrapper theme={theme} skin={skin}>
+      <InputWrapper ref={wrapperRef}>
         <InputLabel htmlFor={id} error={error}>
           {label}
+          {required && <RequiredMark skin={skin}>*</RequiredMark>}
         </InputLabel>
         <InputText
           id={id}
@@ -321,6 +338,7 @@ const AutoComplete = ({
           value={userTypedValue}
           onClick={() => handleInputClick()}
           onChange={e => handleChange(e)}
+          skin={skin}
         />
         {userTypedValue && !error && !disabled && (
           <InputIcon
@@ -331,14 +349,20 @@ const AutoComplete = ({
           />
         )}
         {generateSuggestions()}
-        {error && <InputErrorIcon description={error} theme={theme} />}
-      </Wrapper>
+        {error && (
+          <InputErrorIcon description={error} theme={theme} skin={skin} />
+        )}
+      </InputWrapper>
       {helperText && <HelperText>{helperText}</HelperText>}
-      {error && <InputErrorMessage theme={theme}>{error}</InputErrorMessage>}
+      {error && (
+        <InputErrorMessage theme={theme} skin={skin}>
+          {error}
+        </InputErrorMessage>
+      )}
       <PoliteStatus role="status" aria-atomic="true" aria-live="polite">
         {generateAssistiveDescript()}
       </PoliteStatus>
-    </>
+    </ComponentWrapper>
   );
 };
 
@@ -361,6 +385,8 @@ AutoComplete.propTypes = {
   selectedItem: PropTypes.func,
   /** Displays a helper text below the component */
   helperText: PropTypes.string,
+  required: PropTypes.bool,
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 AutoComplete.defaultProps = {
@@ -375,7 +401,9 @@ AutoComplete.defaultProps = {
   error: '',
   disabled: false,
   placeholder: 'Select an option',
-  selectedItem: undefined,
+  selectedItem: () => {},
+  required: false,
+  skin: 'default',
 };
 
 export default AutoComplete;
