@@ -16,6 +16,7 @@ Default.args = {
   name: 'autoCompleteNew',
   label: 'Auto Complete',
   suggestions: Examples,
+  required: true,
 };
 
 export const WithError = Template.bind({});
@@ -28,4 +29,19 @@ export const WithHelperText = Template.bind({});
 WithHelperText.args = {
   ...Default.args,
   helperText: 'Helper text',
+};
+
+export const WithDark = Template.bind({});
+WithDark.args = {
+  ...Default.args,
+  skin: 'dark',
+  error: 'Error message',
+  helperText: 'Helper text',
+};
+
+WithDark.parameters = {
+  backgrounds: {
+    default: 'dark',
+    values: [{ name: 'dark', value: '#1250C4' }],
+  },
 };
