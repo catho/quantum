@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../components/shared/theme';
 
 const DefaultDiv = styled.div`
   width: 150px;
@@ -14,7 +15,7 @@ const DefaultDiv = styled.div`
 `;
 
 const DarkDiv = styled(DefaultDiv)`
-  background-color: #1250c4;
+  background-color: ${colors.primary[700]};
 `;
 
 export { DefaultDiv, DarkDiv };
