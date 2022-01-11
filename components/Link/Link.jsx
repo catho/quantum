@@ -10,6 +10,7 @@ const StyledLink = styled.a`
       : colors.neutral['300']};
     text-decoration: ${underline ? 'underline' : 'none'};
     cursor: pointer;
+    font-weight: 700;
 
     &:hover {
       color: ${skin === 'default'
