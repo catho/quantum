@@ -16,9 +16,9 @@ export interface CarouselProps {
   }>,
   theme?: {
     baseFontSize?: number;
-    colors?: object;
-    breakpoints?: object;
-    spacing?: object;
+    colors?: {};
+    breakpoints?: {};
+    spacing?: {};
   };
 }
 

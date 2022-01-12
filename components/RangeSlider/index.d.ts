@@ -18,8 +18,8 @@ export interface RangeSliderProps {
     value?: number | { from: number; to: number };
     defaultValue?: number | { from: number; to: number };
     theme?: {
-        spacing?: object;
-        colors?: object;
+        spacing?: {};
+        colors?: {};
         baseFontSize?: number;
     };
 }

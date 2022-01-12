@@ -935,6 +935,7 @@ export interface IconProps {
     name: IconNames;
     style?: React.CSSProperties;
     skin?: string;
+    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
 }
 
 export default class Icon extends React.Component<IconProps> {}

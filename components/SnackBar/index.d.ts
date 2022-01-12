@@ -7,12 +7,12 @@ export interface SnackBarProps {
   };
   theme?: {
     baseFontSize?: number;
-    colors?: object;
-    breakpoints?: object;
-    spacing?: object;
+    colors?: {};
+    breakpoints?: {};
+    spacing?: {};
     components?: {
-      snackbar?: object;
-      button?: object;
+      snackbar?: {};
+      button?: {};
     };
   };
   closeButtonAriaLabel?: string;

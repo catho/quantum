@@ -5,8 +5,8 @@ export interface ToggleProps {
   id?: string;
   checked?: boolean;
   theme?: {
-    colors?: object;
-    spacing?: object;
+    colors?: {};
+    spacing?: {};
     baseFontSize?: number;
   };
 }

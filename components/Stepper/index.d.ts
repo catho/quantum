@@ -7,9 +7,9 @@ export interface StepperProps {
     currentStepText?: string;
     nextStepText?: string;
     theme?: {
-        colors?: object;
+        colors?: {};
         baseFontSize?: number;
-        spacing?: object;
+        spacing?: {};
     };
     i18n?: {
       paginationPreposition: string;

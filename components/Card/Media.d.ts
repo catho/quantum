@@ -2,8 +2,8 @@ import React from 'react';
 
 type Media = React.ComponentType<{
     className?: string;
-    style?: object;
-    theme?: { colors?: object; spacing?: object };
+    style?: {};
+    theme?: { colors?: {}; spacing?: object };
 }> & {
     displayName: 'Card.Media';
 };

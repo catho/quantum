@@ -10,11 +10,11 @@ export interface TagProps {
     stroked?: boolean;
     text?: string;
     theme?: {
-        colors?: object;
+        colors?: {};
         components?: {
-            tag?: object;
+            tag?: {};
         };
-        spacing?: object;
+        spacing?: {};
     };
 }
 

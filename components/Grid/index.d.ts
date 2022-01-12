@@ -23,8 +23,8 @@ export interface ContainerProps {
     fluid?: boolean;
     hide?: BreakpointsType | string[];
     theme?: {
-        breakpoints?: object;
-        components?: object;
+        breakpoints?: {};
+        components?: {};
     };
     'no-gutters'?: boolean;
 }
@@ -37,7 +37,7 @@ export interface HideProps {
     small?: boolean;
     xsmall?: boolean;
     theme?: {
-        breakpoints: object;
+        breakpoints: {};
     };
 }
 
@@ -48,7 +48,7 @@ export interface RowProps {
     children: React.ReactNode[] | React.ReactNode;
     hide?: BreakpointsType | BreakpointsType[];
     theme?: {
-        breakpoints?: object;
+        breakpoints?: {};
     };
 }
 

@@ -6,7 +6,6 @@ export interface AvatarProps {
     text?: string;
     hasToggle?: boolean;
     href?: string;
-    size?: string;
     onClick?: () => {};
 }
 

@@ -5,10 +5,10 @@ export interface SegmentedControlProps {
     onChange?: React.MouseEventHandler<HTMLButtonElement>;
     darkMode?: boolean;
     theme?: {
-        colors?: object;
-        spacing?: object;
+      spacing?: {};
+      colors?: {};
     };
-    items?: [{
+    items: [{
       label: string;
       value: string;
       icon: string;

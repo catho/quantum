@@ -5,7 +5,7 @@ export type NonEmptyArray<T> = [T, ...T[]];
 export interface SocialsProps {
     size?: string;
     theme?: {
-        spacing?: object;
+        spacing?: {};
     };
     items: NonEmptyArray<{
         name?: 'facebook' | 'twitter' | 'youtube';

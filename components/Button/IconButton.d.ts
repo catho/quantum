@@ -5,10 +5,10 @@ export interface IconButtonProps {
     skin?: 'neutral' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
     theme?: {
         baseFontSize?: number;
-        colors?: object;
-        spacing?: object;
+        colors?: {};
+        spacing?: {};
         components?: {
-            button?: object;
+            button?: {};
         };
     };
 }
