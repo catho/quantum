@@ -97,7 +97,7 @@ const List = styled.ul`
   }}
 `;
 
-const ListIten = styled.li`
+const ListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -238,7 +238,7 @@ const AutoComplete = ({
         skin={skin}
       >
         {filterSuggestions.map((item, index) => (
-          <ListIten
+          <ListItem
             key={item}
             aria-posinset={index}
             onClick={() => handleItemClick(item)}
@@ -248,7 +248,7 @@ const AutoComplete = ({
             tabIndex="-1"
           >
             {item}
-          </ListIten>
+          </ListItem>
         ))}
       </List>
     ) : null;
