@@ -5,7 +5,7 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-const importMediaQuery = `import useMediaQuery from '@catho/quantum/shared/hooks/UseMediaQuery'`;
+const importMediaQuery = `import useMediaQuery from '@catho/quantum/shared/hooks'`;
 
 const mediaQueryCode = `
 ${importMediaQuery}
