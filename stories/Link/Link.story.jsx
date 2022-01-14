@@ -48,7 +48,7 @@ export const LinkStory = () => (
         <StoryContainer>
           <Title as="h2">Default</Title>
           <DefaultDiv>
-            <Link href="link" rel="noreferrer">
+            <Link href="//www.catho.com.br" rel="noreferrer">
               Example Link
             </Link>
           </DefaultDiv>
@@ -57,7 +57,7 @@ export const LinkStory = () => (
         <StoryContainer>
           <Title as="h2">Dark</Title>
           <DarkDiv>
-            <Link skin="dark" href="#link" rel="noreferrer">
+            <Link skin="dark" href="//www.catho.com.br" rel="noreferrer">
               Example Link
             </Link>
           </DarkDiv>

@@ -17,7 +17,7 @@ const DarkSkinTemplate = args => (
 
 export const Default = Template.bind({});
 Default.args = {
-  href: 'link',
+  href: '//www.catho.com.br',
   rel: 'noreferrer',
 };
 
