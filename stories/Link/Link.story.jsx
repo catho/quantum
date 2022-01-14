@@ -15,13 +15,13 @@ const description =
   'The component Link make it easy to quickly style a anchor tag';
 
 export default {
-  title: 'Link',
+  title: 'Foundation',
 };
 
 const defaultCode = `<Link href="_blank" rel="noreferrer">Teste</Link>`;
 const darkCode = `<Link skin="dark" href="_blank" rel="noreferrer">Teste</Link>`;
 
-export const LinkStory = () => (
+export const LinkComponent = () => (
   <>
     <Heading name="Link">{description}</Heading>
     <TabbedView>
