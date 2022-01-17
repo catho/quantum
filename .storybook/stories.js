@@ -84,5 +84,7 @@ module.exports = [
 
   'Stepper',
 
+  'AutoComplete',
+
   'SegmentedControl',
 ].map(s => `../stories/${s}/${s}.story.jsx`);
