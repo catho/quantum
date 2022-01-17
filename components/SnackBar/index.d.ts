@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
-    title?: string;
+    title: string;
     callbackFn: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   };
   theme?: {

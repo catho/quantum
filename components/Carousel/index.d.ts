@@ -8,7 +8,7 @@ export interface CarouselProps {
   slidesToScroll?: number,
   arrowColor?: 'primary' | 'success' | 'error' | 'neutral' | 'warning',
   cardSize?: 'small' | 'medium' | 'large',
-  cards?:NonEmptyArray<{
+  cards:NonEmptyArray<{
     imagePath?: string,
     imageDescription?: string,
     title?: string,

@@ -22,7 +22,7 @@ export interface TabbedViewProps {
         breakpoints?: {};
         spacing?: {};
     };
-    onClick?: () => void;
+    onTabClick?: () => {};
 }
 
 export class TabbedView extends React.Component<TabbedViewProps> {

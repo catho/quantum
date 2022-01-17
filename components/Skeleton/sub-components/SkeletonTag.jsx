@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { theme } from '../../shared';
 
 import SkeletonBase from './SkeletonBase';
 
@@ -28,11 +29,16 @@ const SkeletonTag = styled(SkeletonBase)`
 SkeletonTag.displayName = 'SkeletonTag';
 
 SkeletonTag.propTypes = {
-  size: PropTypes.oneOf(['small', 'medium', 'large']).isRequired,
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
-  }).isRequired,
+  }),
+};
+
+Skeleton.defaultProps = {
+  size: 'medium',
+  theme,
 };
 
 export default SkeletonTag;

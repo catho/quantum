@@ -23,7 +23,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
             button: {};
         };
     };
-    id?: string;
 }
 
 export default class Button extends React.Component<ButtonProps> {
