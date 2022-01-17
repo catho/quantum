@@ -36,7 +36,7 @@ SkeletonTag.propTypes = {
   }),
 };
 
-Skeleton.defaultProps = {
+SkeletonTag.defaultProps = {
   size: 'medium',
   theme,
 };
