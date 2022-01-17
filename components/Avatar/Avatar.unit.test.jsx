@@ -1,6 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 import Avatar from './Avatar';
 
 const encodedPicture =
@@ -8,42 +7,43 @@ const encodedPicture =
 
 describe('<Avatar />', () => {
   it('should have a11y notification roles', () => {
-    const component = mount(<Avatar hasNotification />);
-    const AvatarWrapper = component.find('AvatarWrapper');
-    expect(AvatarWrapper.prop('aria-live')).toEqual('polite');
-    const AvatarNotification = component.find('AvatarNotification');
-    expect(AvatarNotification.prop('role')).toEqual('alert');
+    const { container } = render(<Avatar hasNotification />);
+    const AvatarWrapper = container.querySelectorAll('span')[0];
+    expect(AvatarWrapper.getAttribute('aria-live')).toBe('polite');
+    const AvatarNotification = screen.getByRole('alert');
+    expect(AvatarNotification.getAttribute('role')).toEqual('alert');
   });
 
   describe('Should match snapshot', () => {
     it('With picture', () => {
-      expect(
-        renderer.create(<Avatar picture={encodedPicture} />).toJSON(),
-      ).toMatchSnapshot();
+      const { container } = render(<Avatar picture={encodedPicture} />);
+
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('Without picture', () => {
-      expect(renderer.create(<Avatar />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Avatar />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('With notification', () => {
-      expect(
-        renderer.create(<Avatar hasNotification />).toJSON(),
-      ).toMatchSnapshot();
+      const { container } = render(<Avatar hasNotification />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('With text', () => {
-      expect(
-        renderer.create(<Avatar text="Profile" />).toJSON(),
-      ).toMatchSnapshot();
+      const { container } = render(<Avatar text="Profile" />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('With href', () => {
-      expect(renderer.create(<Avatar href="#" />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Avatar href="#" />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('With toggle icon', () => {
-      expect(renderer.create(<Avatar hasToggle />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Avatar hasToggle />);
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 });
