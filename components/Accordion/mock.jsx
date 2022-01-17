@@ -81,6 +81,7 @@ const educationItem = {
     </p>
   ),
   onClick: () => {
+    /* istanbul ignore next */
     console.log('Educação event triggered');
   },
 };

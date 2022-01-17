@@ -55,8 +55,6 @@ const AccordionHeader = styled.button.attrs({ type: 'button' })`
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
-
-  ${({ as }) => (as === 'button' ? `cursor: pointer;` : null)}
 `;
 
 const AccordionContent = styled.div`
