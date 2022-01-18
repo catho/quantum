@@ -37,6 +37,7 @@ import ChargeBar from './ChargeBar';
 import Dialog from './Dialog';
 import AutoComplete from './AutoComplete';
 import Breadcrumbs from './Breadcrumbs';
+import Link from './Link';
 
 export {
   Accordion,
@@ -85,4 +86,5 @@ export {
   Dialog,
   AutoComplete,
   Breadcrumbs,
+  Link,
 };

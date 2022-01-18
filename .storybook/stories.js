@@ -88,4 +88,6 @@ module.exports = [
 
   'SegmentedControl',
   'Breadcrumbs',
+
+  'Link',
 ].map(s => `../stories/${s}/${s}.story.jsx`);
