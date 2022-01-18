@@ -76,6 +76,8 @@
     "@storybook/router": "^6.4.9",
     "@storybook/storybook-deployer": "^2.8.10",
     "@storybook/theming": "^6.4.9",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "all-contributors-cli": "^6.8.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
