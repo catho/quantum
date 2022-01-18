@@ -87,4 +87,6 @@ module.exports = [
   'AutoComplete',
 
   'SegmentedControl',
+
+  'Link',
 ].map(s => `../stories/${s}/${s}.story.jsx`);
