@@ -75,3 +75,6 @@ export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialB
 export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent, SegmentedControlProps>;
 export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
 
+
+export { Breadcrumbs } from './Breadcrumbs';
+export const Breadcrumbs: StyledComponent<typeof BreadcrumbsComponent, BreadcrumbsProps>;

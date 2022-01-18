@@ -87,4 +87,5 @@ module.exports = [
   'AutoComplete',
 
   'SegmentedControl',
+  'Breadcrumbs',
 ].map(s => `../stories/${s}/${s}.story.jsx`);
