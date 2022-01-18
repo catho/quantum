@@ -84,6 +84,8 @@ module.exports = [
 
   'Stepper',
 
+  'AutoComplete',
+
   'SegmentedControl',
 
   'Link',
