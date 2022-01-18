@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Breadcrumbs /> should match the snapshots 1`] = `
+Array [
+  <h1>
+    Hello, do domething here!
+  </h1>,
+  <p>
+    some prop
+  </p>,
+]
+`;
