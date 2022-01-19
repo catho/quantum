@@ -27,7 +27,7 @@ export interface RadioButtonProps {
   id?: string;
   inline?: boolean;
   label?: string;
-  onChange?: () => {} | React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: () => void | React.ChangeEventHandler<HTMLInputElement>;
   theme?: {
     baseFontSize?: number;
     spacing?: {};

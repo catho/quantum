@@ -6,7 +6,7 @@ export interface AvatarProps {
     text?: string;
     hasToggle?: boolean;
     href?: string;
-    onClick?: () => {};
+    onClick?: () => void;
 }
 
 export default class Avatar extends React.Component<AvatarProps> { }
