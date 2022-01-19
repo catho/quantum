@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 
 import { theme as defaultTheme } from '../shared';
 import Icon from '../Icon';
+import Link from '../Link';
 
 const BreadcrumbsItems = styled.ol`
   display: flex;
@@ -12,6 +13,14 @@ const BreadcrumbsItems = styled.ol`
   list-style: none;
 
   overflow: auto;
+
+  ${({
+    theme: {
+      spacing: { xxsmall, small },
+    },
+  }) => css`
+    padding: ${small}px ${xxsmall}px;
+  `}
 `;
 
 const BreadcrumbItem = styled.li`
@@ -21,7 +30,7 @@ const BreadcrumbItem = styled.li`
   ${({
     theme: {
       baseFontSize,
-      colors: { primary, secondary, neutral },
+      colors: { neutral },
       spacing: { xsmall },
     },
   }) => css`
@@ -31,12 +40,8 @@ const BreadcrumbItem = styled.li`
       display: flex;
       align-items: center;
 
-      text-decoration: none;
-      color: ${primary[700]};
-
-      :hover {
+      &:hover {
         text-decoration: underline;
-        color: ${secondary[700]};
       }
     }
 
@@ -119,9 +124,9 @@ const Breadcrumbs = ({ items, theme }) => {
     restItems.map(item => (
       <BreadcrumbItem key={item.label} theme={theme}>
         <BreadcrumbIcon theme={theme} />
-        <a href={item.url} title={item.label}>
+        <Link underline={false} href={item.url} title={item.label}>
           {item.label}
-        </a>
+        </Link>
       </BreadcrumbItem>
     ));
 
@@ -141,12 +146,16 @@ const Breadcrumbs = ({ items, theme }) => {
 
   return (
     <nav>
-      <BreadcrumbsItems ref={breadcrumbsItemsEl} aria-label="breadcrumb">
+      <BreadcrumbsItems
+        ref={breadcrumbsItemsEl}
+        aria-label="breadcrumb"
+        theme={theme}
+      >
         <BreadcrumbItem theme={theme}>
-          <a href={firstItem.url} title={firstItem.label}>
+          <Link underline={false} href={firstItem.url} title={firstItem.label}>
             <BreadcrumbIcon theme={theme} name="home" />
             {firstItem.label}
-          </a>
+          </Link>
         </BreadcrumbItem>
 
         {collapsed ? renderExpandButton() : renderMiddleItems()}
