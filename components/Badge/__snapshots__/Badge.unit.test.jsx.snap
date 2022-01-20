@@ -34,12 +34,12 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
 }
 
 <div
-  className="c0"
-  value={10}
+  class="c0"
+  value="10"
 >
   <span
-    className="c1"
-    value={10}
+    class="c1"
+    value="10"
   >
     10
   </span>
@@ -128,20 +128,17 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
 }
 
 <div
-  className="c0"
-  value={10}
+  class="c0"
+  value="10"
 >
   <span
-    className="c1"
-    value={10}
+    class="c1"
+    value="10"
   >
     10
   </span>
   <button
-    className="c2"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
+    class="c2"
     type="button"
   >
     
@@ -183,12 +180,59 @@ exports[`<Badge /> Should match snapshot with skin 1`] = `
 }
 
 <div
-  className="c0"
-  value={10}
+  class="c0"
+  value="10"
 >
   <span
-    className="c1"
-    value={10}
+    class="c1"
+    value="10"
+  >
+    10
+  </span>
+  
+</div>
+`;
+
+exports[`<Badge /> Should match snapshot with skin inverted 1`] = `
+.c0 {
+  display: inline-block;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.c1 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  min-width: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #424242;
+  color: #f2f2f2;
+}
+
+<div
+  class="c0"
+  value="10"
+>
+  <span
+    class="c1"
+    value="10"
   >
     10
   </span>
