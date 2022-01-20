@@ -1,9 +1,16 @@
 
-// Generated with scripts/create-component.js
 import React from 'react';
 
 export interface BreadcrumbsProps {
-  someProp?: string;
+  items: Array<{
+    label: string;
+    url: string;
+  }>;
+  theme?: {
+    colors: {},
+    spacing: {},
+    baseFontSize: number;
+  };
 }
 
 export default class Breadcrumbs extends React.Component<BreadcrumbsProps> {}

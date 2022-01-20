@@ -177,6 +177,8 @@ Breadcrumbs.propTypes = {
   ).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
+    spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
   }),
 };
 
