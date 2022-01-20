@@ -1,12 +1,405 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumbs /> should match the snapshots 1`] = `
-Array [
-  <h1>
-    Hello, do domething here!
-  </h1>,
-  <p>
-    some prop
-  </p>,
-]
+<DocumentFragment>
+  .c2 {
+  color: #1250C4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.c2:hover {
+  color: #DE0059;
+}
+
+.c2:visited {
+  color: #5734BA;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  overflow: auto;
+  padding: 12px 4px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.c1 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 span {
+  color: #424242;
+}
+
+.c1 + li {
+  margin-left: 8px;
+}
+
+.c3 {
+  margin-right: 4px;
+  color: #1250C4;
+}
+
+.c4 {
+  margin-right: 8px;
+  color: #1250C4;
+}
+
+<nav>
+    <ol
+      aria-label="breadcrumb"
+      class="c0"
+    >
+      <li
+        class="c1"
+      >
+        <a
+          class="c2"
+          href="catho.com"
+          title="Home"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root c3"
+            data-qtm-preloader="icon"
+            focusable="false"
+            style="font-size: 16px; max-width: 16px;"
+            theme="[object Object]"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+          Home
+        </a>
+      </li>
+      <li
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <a
+          class="c2"
+          href="catho.com"
+          title="Quantum"
+        >
+          Quantum
+        </a>
+      </li>
+      <li
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <a
+          class="c2"
+          href="catho.com"
+          title="Components"
+        >
+          Components
+        </a>
+      </li>
+      <li
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <span>
+          Breadcrumbs
+        </span>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapsed 1`] = `
+<DocumentFragment>
+  .c2 {
+  color: #1250C4;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.c2:hover {
+  color: #DE0059;
+}
+
+.c2:visited {
+  color: #5734BA;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  overflow: auto;
+  padding: 12px 4px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.c1 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 span {
+  color: #424242;
+}
+
+.c1 + li {
+  margin-left: 8px;
+}
+
+.c3 {
+  margin-right: 4px;
+  color: #1250C4;
+}
+
+.c4 {
+  margin-right: 8px;
+  color: #1250C4;
+}
+
+.c5 {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #1250C4;
+}
+
+.c5:hover {
+  font-weight: 700;
+}
+
+<nav>
+    <ol
+      aria-label="breadcrumb"
+      class="c0"
+    >
+      <li
+        class="c1"
+      >
+        <a
+          class="c2"
+          href="catho.com"
+          title="Home"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root c3"
+            data-qtm-preloader="icon"
+            focusable="false"
+            style="font-size: 16px; max-width: 16px;"
+            theme="[object Object]"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+            />
+          </svg>
+          Home
+        </a>
+      </li>
+      <li
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <button
+          aria-label="Show all breadcrumbs"
+          class="c5"
+          title="Show all breadcrumbs"
+          type="button"
+        >
+          ...
+        </button>
+      </li>
+      <li
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <span>
+          Breadcrumbs
+        </span>
+      </li>
+    </ol>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs is expanded 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -42,18 +42,41 @@
+          >
+            <path
+              d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
+            />
+          </svg>
+-         <button
+-           aria-label=\\"Show all breadcrumbs\\"
+-           class=\\"Breadcrumbs__ExpandButton-sc-d5msik-3 cOtvQf\\"
+-           title=\\"Show all breadcrumbs\\"
+-           type=\\"button\\"
++         <a
++           class=\\"Link__StyledLink-sc-16ae9tk-0 hbDduQ\\"
++           href=\\"catho.com\\"
++           title=\\"Quantum\\"
++         >
++           Quantum
++         </a>
++       </li>
++       <li
++         class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 fldDSU\\"
++       >
++         <svg
++           aria-hidden=\\"true\\"
++           class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
++           data-qtm-preloader=\\"icon\\"
++           focusable=\\"false\\"
++           style=\\"font-size: 16px; max-width: 16px;\\"
++           theme=\\"[object Object]\\"
++           viewBox=\\"0 0 24 24\\"
+          >
+-           ...
+-         </button>
++           <path
++             d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
++           />
++         </svg>
++         <a
++           class=\\"Link__StyledLink-sc-16ae9tk-0 hbDduQ\\"
++           href=\\"catho.com\\"
++           title=\\"Components\\"
++         >
++           Components
++         </a>
+        </li>
+        <li
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 fldDSU\\"
+        >
+          <svg"
 `;
