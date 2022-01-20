@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 
-import { string } from 'prop-types';
 import { Validations } from '../Form';
 
 export type MaskFunction = (rawValue: string) => string[];
@@ -17,7 +16,7 @@ export type CustomValidate =
   | ((param?: { value: string }) => string)
   | { validate: Validate; error: string };
 
-export interface InputProps {
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   value?: string;
   label?: string;
   helperText?: string;
@@ -32,12 +31,12 @@ export interface InputProps {
   mask?: Mask | Mask[];
   onClean?: React.MouseEventHandler<HTMLInputElement>;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  minLength?: number | string;
-  maxLength?: number | string;
+  minLength?: number;
+  maxLength?: number;
   skin?: 'default' | 'dark';
   theme?: {
-    spacing?: object;
-    colors?: object;
+    spacing?: {};
+    colors?: {};
     baseFontSize?: number;
   };
 }

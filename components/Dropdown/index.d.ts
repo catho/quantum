@@ -23,8 +23,8 @@ export interface DropdownProps {
   items?: ItemPropType[];
   skin?: 'default' | 'dark',
   theme?: {
-    colors?: object;
-    spacing?: object;
+    colors?: {};
+    spacing?: {};
     baseFontSize?: number;
   };
 }

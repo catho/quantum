@@ -5,11 +5,12 @@ export interface BadgeProps {
     children?: React.ReactNode[] | React.ReactNode;
     number?: number;
     inverted?: boolean;
+    dot?: boolean;
     theme?: {
         baseFontSize?: number;
-        spacing?: object;
+        spacing?: {};
         components?: {
-            badge?: object;
+            badge?: {};
         };
     };
 }

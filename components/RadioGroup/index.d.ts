@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconNames } from '../Icon';
 
 export interface RadioProps {
   disabled?: boolean;
@@ -7,8 +8,8 @@ export interface RadioProps {
   label?: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   theme?: {
-    colors?: object;
-    spacing?: object;
+    colors?: {};
+    spacing?: {};
   };
   value: string;
 }
@@ -22,17 +23,17 @@ export interface RadioButtonProps {
   size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
   disabled?: boolean;
   error?: boolean;
-  icon?: string;
+  icon?: IconNames | string;
   id?: string;
   inline?: boolean;
   label?: string;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: () => void | React.ChangeEventHandler<HTMLInputElement>;
   theme?: {
     baseFontSize?: number;
-    spacing?: object;
-    colors?: object;
+    spacing?: {};
+    colors?: {};
     components?: {
-      button?: object;
+      button?: {};
     };
   };
   value: string;
@@ -48,17 +49,17 @@ export interface RadioGroupProps {
     value: string;
     disabled?: boolean;
   }>;
-
   children?: React.ReactNode[] | React.ReactNode;
   inline?: boolean;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
-  value?: string;
+  onChange?: () => {} | React.ChangeEventHandler<HTMLInputElement>;
+  defaultValue?: string;
+  name: string;
   error?: string;
   theme?: {
-    colors?: object;
-    spacing?: object;
+    colors?: {};
+    spacing?: {};
   };
-  name: string;
+  required?: boolean;
 }
 
 export default class RadioGroup extends React.Component<RadioGroupProps> {

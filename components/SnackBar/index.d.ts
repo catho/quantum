@@ -2,17 +2,17 @@ import React from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
-    title?: string;
+    title: string;
     callbackFn: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   };
   theme?: {
     baseFontSize?: number;
-    colors?: object;
-    breakpoints?: object;
-    spacing?: object;
+    colors?: {};
+    breakpoints?: {};
+    spacing?: {};
     components?: {
-      snackbar?: object;
-      button?: object;
+      snackbar?: {};
+      button?: {};
     };
   };
   closeButtonAriaLabel?: string;

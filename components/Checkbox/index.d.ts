@@ -11,8 +11,8 @@ export interface CheckboxProps {
     value?: string;
     onChange?: React.ChangeEventHandler<HTMLInputElement>;
     theme?: {
-        colors?: object;
-        spacing?: object;
+        colors?: {};
+        spacing?: {};
         baseFontSize?: number;
     };
 }
@@ -53,12 +53,13 @@ export interface CheckboxGroupProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
     type: 'checkbox' | 'button';
     theme?: {
-        colors?: object;
-        spacing?: object;
+        colors?: {};
+        spacing?: {};
     };
 }
 
 export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
     static Checkbox: CheckboxType;
+
     static Button: CheckboxButton;
 }

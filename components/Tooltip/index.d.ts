@@ -7,8 +7,8 @@ export interface TooltipProps {
     multiline?: boolean;
     children: React.ReactNode[] | React.ReactNode;
     theme?: {
-        spacing?: object;
-        colors?: object;
+        spacing?: {};
+        colors?: {};
         baseFontSize?: number;
     };
 }
