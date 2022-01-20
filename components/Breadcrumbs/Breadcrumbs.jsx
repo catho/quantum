@@ -112,11 +112,12 @@ const Breadcrumbs = ({ items, theme }) => {
   restItems.splice(lastItemIndex - 1, 1);
 
   useEffect(() => {
-    if (items.length > 2 && window.innerWidth) {
-      const { innerWidth } = window;
-      const { scrollWidth } = breadcrumbsItemsEl.current;
+    if (items.length > 2 && breadcrumbsItemsEl.current) {
+      const { scrollWidth, clientWidth } = breadcrumbsItemsEl.current;
 
-      setCollapsed(innerWidth < scrollWidth);
+      console.log(breadcrumbsItemsEl.current.clientWidth);
+
+      setCollapsed(clientWidth < scrollWidth);
     }
   }, []);
 
