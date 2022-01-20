@@ -115,8 +115,6 @@ const Breadcrumbs = ({ items, theme }) => {
     if (items.length > 2 && breadcrumbsItemsEl.current) {
       const { scrollWidth, clientWidth } = breadcrumbsItemsEl.current;
 
-      console.log(breadcrumbsItemsEl.current.clientWidth);
-
       setCollapsed(clientWidth < scrollWidth);
     }
   }, []);
