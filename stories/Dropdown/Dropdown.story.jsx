@@ -10,6 +10,7 @@ import {
   Title,
 } from '@catho/quantum-storybook-ui';
 
+import Alert from '../../components/Alert';
 import Dropdown from '../../components/Dropdown';
 import { Row, Col } from '../../components/Grid';
 import List from '../../components/List';
@@ -21,8 +22,6 @@ import {
   WithError,
   Disabled,
   Controlled,
-  AutoComplete,
-  AutoCompleteWithSpecialChars,
   WithImages,
 } from './examples';
 
@@ -60,6 +59,17 @@ export const DropdownStory = () => (
         <StoryContainer>
           <Title as="h2">Importing</Title>
           <SimpleHighlight>{importCode}</SimpleHighlight>
+          <br />
+          <Alert icon="warning" skin="warning">
+            <strong>Important:</strong>
+            <p>
+              The prop autocomplete was deprecated, in case you still using it,
+              we strongly suggest to switch to the component{' '}
+              <strong>
+                <a href="/?path=/story/forms--auto-complete">Auto Complete.</a>
+              </strong>
+            </p>
+          </Alert>
           <div>
             <p>
               Its options are described by `items` prop, which can be either
@@ -82,11 +92,6 @@ export const DropdownStory = () => (
           </div>
           <DropdownExample component={Simple} position="1" />
           <DropdownExample component={CustomLabel} position="2" />
-          <DropdownExample component={AutoComplete} position="3" />
-          <DropdownExample
-            component={AutoCompleteWithSpecialChars}
-            position="4"
-          />
           <DropdownExample component={RequiredMark} position="5" />
           <DropdownExample component={WithError} position="6" />
           <DropdownExample component={Disabled} position="7" />
@@ -96,7 +101,10 @@ export const DropdownStory = () => (
         </StoryContainer>
       </Tab>
       <Tab title="API">
-        <AutoPropsApi component={Dropdown} />
+        <AutoPropsApi
+          component={Dropdown}
+          ignoredProps={['theme', 'autocomplete']}
+        />
       </Tab>
     </TabbedView>
   </>
