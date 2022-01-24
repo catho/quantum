@@ -1,7 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { mount } from 'enzyme';
+import userEvent from '@testing-library/user-event';
 import AutoComplete from './AutoComplete';
 
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
@@ -19,11 +19,11 @@ describe('AutoComplete', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should render the AutoComplete open', () => {
+  it('should render the AutoComplete open', async () => {
     render(<AutoComplete suggestions={Examples} />);
     const input = screen.getByRole('combobox');
 
-    fireEvent.change(input, { target: { value: 'm' } });
+    await userEvent.type(input, 'm');
 
     const autoCompleteOptions = screen.getAllByRole('listbox')[0];
 
@@ -41,94 +41,111 @@ describe('AutoComplete', () => {
     expect(autoCompleteOptions).toBeInTheDocument();
   });
 
-  it('should select a item when is clicked', () => {
+  it('should select a item when is clicked', async () => {
     render(<AutoComplete suggestions={Examples} />);
     const input = screen.getByRole('combobox');
 
-    fireEvent.change(input, { target: { value: 'melanci' } });
+    await userEvent.type(input, 'melanci');
 
     const melanciaOption = screen.getAllByRole('option', {
       name: /melancia/i,
     })[0];
 
-    fireEvent.click(melanciaOption);
+    userEvent.click(melanciaOption);
 
     expect(input.getAttribute('value')).toBe('melancia');
   });
 
-  it('should close the options after item is clicked', () => {
-    const component = mount(<AutoComplete suggestions={Examples} />);
-    component
-      .find('input')
-      .simulate('change', { target: { value: 'melanci' } });
+  it('should close the options after item is clicked', async () => {
+    render(<AutoComplete suggestions={Examples} />);
+    const input = screen.getByRole('combobox');
 
-    expect(component.find('ul').exists()).toEqual(true);
+    await userEvent.type(input, 'melanci');
 
-    component.find('li').simulate('click');
+    const autoCompleteOptions = screen.getAllByRole('listbox')[0];
 
-    expect(component.find('ul').exists()).toEqual(false);
-    component.unmount();
+    expect(autoCompleteOptions).toBeInTheDocument();
+
+    const melanciaOption = screen.getAllByRole('option', {
+      name: /melancia/i,
+    })[0];
+
+    userEvent.click(melanciaOption);
+
+    expect(autoCompleteOptions).not.toBeInTheDocument();
   });
 
-  it('should close the options when there is no valid option', () => {
-    const component = mount(<AutoComplete suggestions={Examples} />);
-    component.find('input').simulate('change', { target: { value: 'mon' } });
+  it('should close the options when there is no valid option', async () => {
+    render(<AutoComplete suggestions={Examples} />);
 
-    expect(component.find('ul').exists()).toEqual(false);
-    component.unmount();
+    const input = screen.getByRole('combobox');
+
+    fireEvent.click(input);
+
+    const autoCompleteOptions = screen.getAllByRole('listbox')[0];
+
+    await userEvent.type(input, 'mon');
+
+    expect(autoCompleteOptions).not.toBeInTheDocument();
   });
 
-  it('should clean input value when clicked in the x button', () => {
-    const component = mount(<AutoComplete suggestions={Examples} />);
-    component.find('input').simulate('change', { target: { value: 'mon' } });
+  it('should clean input value when clicked in the x button', async () => {
+    const { container } = render(<AutoComplete suggestions={Examples} />);
 
-    component.find('svg').simulate('click');
+    const input = screen.getByRole('combobox');
 
-    expect(component.find('input').prop('value').length).toEqual(0);
-    component.unmount();
+    await userEvent.type(input, 'mon');
+
+    const cleanButton = container.querySelectorAll('svg')[0];
+
+    fireEvent.click(cleanButton);
+
+    expect(input.getAttribute('value')).toBe('');
   });
 
   it('should has an error icon when "error" prop is set', () => {
-    const component = mount(
+    const { container } = render(
       <AutoComplete suggestions={Examples} error="error text" />,
     );
-    const InputErrorIconElement = component.find('svg');
 
-    expect(InputErrorIconElement).toHaveLength(1);
-    component.unmount();
+    const InputErrorIconElement = container.querySelectorAll('svg')[0];
+
+    expect(InputErrorIconElement).toBeInTheDocument();
   });
 
-  it('should call selectedItemMock callback when prop is setted', () => {
+  it('should call selectedItemMock callback when prop is setted', async () => {
     const selectedItemMock = jest.fn();
-    const component = mount(
+    render(
       <AutoComplete suggestions={Examples} selectedItem={selectedItemMock} />,
     );
-    component.find('input').simulate('change', { target: { value: 'mora' } });
+
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'mora');
 
     expect(selectedItemMock).toHaveBeenCalled();
   });
 
-  it('should call selectedItemMock callback when prop is setted and user selected a option', () => {
+  it('should call selectedItemMock callback when prop is setted and user selected a option', async () => {
     const selectedItemMock = jest.fn();
-    const component = mount(
+    render(
       <AutoComplete suggestions={Examples} selectedItem={selectedItemMock} />,
     );
-    component
-      .find('input')
-      .simulate('change', { target: { value: 'melanci' } });
 
-    component.find('li').simulate('click');
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'melanci');
+
+    const autoCompleteOptions = screen.getAllByRole('listbox')[0];
+
+    userEvent.click(autoCompleteOptions);
 
     expect(selectedItemMock).toHaveBeenCalled();
-    component.unmount();
   });
 
   it('should has an helper text prop is set', () => {
-    const component = mount(
-      <AutoComplete suggestions={Examples} helperText="helper text" />,
-    );
+    render(<AutoComplete suggestions={Examples} helperText="helper text" />);
 
-    expect(component.find('HelperText').exists()).toEqual(true);
-    component.unmount();
+    expect(screen.getByText(/helper text/i)).toBeInTheDocument();
   });
 });
