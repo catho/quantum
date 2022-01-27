@@ -40,6 +40,8 @@ const BreadcrumbItem = styled.li`
       display: flex;
       align-items: center;
 
+      font-weight: 400;
+
       &:hover {
         text-decoration: underline;
       }
@@ -51,6 +53,18 @@ const BreadcrumbItem = styled.li`
 
     & + li {
       margin-left: ${xsmall}px;
+    }
+
+    &[aria-hidden='true'] {
+      border: 0;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 0;
+      visibility: hidden;
     }
   `}
 `;
@@ -101,6 +115,7 @@ const Breadcrumbs = ({ items, theme }) => {
   }
 
   const [collapsed, setCollapsed] = useState(false);
+  const [secondLink, setSecondLink] = useState(null);
 
   const breadcrumbsItemsEl = useRef(null);
 
@@ -119,29 +134,21 @@ const Breadcrumbs = ({ items, theme }) => {
     }
   }, []);
 
-  const renderMiddleItems = () =>
-    restItems.map(item => (
-      <BreadcrumbItem key={item.label} theme={theme}>
-        <BreadcrumbIcon theme={theme} />
-        <Link underline={false} href={item.url} title={item.label}>
-          {item.label}
-        </Link>
-      </BreadcrumbItem>
-    ));
+  useEffect(() => {
+    if (secondLink) {
+      secondLink.focus();
+    }
+  }, [secondLink]);
 
-  const renderExpandButton = () => (
-    <BreadcrumbItem theme={theme}>
-      <BreadcrumbIcon theme={theme} />
-      <ExpandButton
-        theme={theme}
-        aria-label="Show all breadcrumbs"
-        title="Show all breadcrumbs"
-        onClick={() => setCollapsed(false)}
-      >
-        ...
-      </ExpandButton>
-    </BreadcrumbItem>
-  );
+  const handleExpand = () => {
+    setCollapsed(false);
+
+    const focusableItem = breadcrumbsItemsEl.current.querySelector(
+      'li[aria-hidden="true"] a',
+    );
+
+    setSecondLink(focusableItem);
+  };
 
   return (
     <nav>
@@ -157,7 +164,35 @@ const Breadcrumbs = ({ items, theme }) => {
           </Link>
         </BreadcrumbItem>
 
-        {collapsed ? renderExpandButton() : renderMiddleItems()}
+        <BreadcrumbItem
+          theme={theme}
+          hidden={!collapsed}
+          aria-hidden={!collapsed}
+        >
+          <BreadcrumbIcon theme={theme} />
+          <ExpandButton
+            theme={theme}
+            aria-label="Exibir todas as opções"
+            title="Exibir todas as opções"
+            onClick={handleExpand}
+          >
+            ...
+          </ExpandButton>
+        </BreadcrumbItem>
+
+        {restItems.map(item => (
+          <BreadcrumbItem
+            key={item.label}
+            theme={theme}
+            hidden={collapsed}
+            aria-hidden={collapsed}
+          >
+            <BreadcrumbIcon theme={theme} />
+            <Link underline={false} href={item.url} title={item.label}>
+              {item.label}
+            </Link>
+          </BreadcrumbItem>
+        ))}
 
         <BreadcrumbItem theme={theme}>
           <BreadcrumbIcon theme={theme} />
