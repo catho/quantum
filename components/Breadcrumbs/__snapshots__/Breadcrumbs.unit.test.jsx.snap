@@ -53,6 +53,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 400;
 }
 
 .c1 a:hover {
@@ -68,6 +69,18 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
   margin-left: 8px;
 }
 
+.c1[aria-hidden='true'] {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  visibility: hidden;
+}
+
 .c3 {
   margin-right: 4px;
   color: #1250C4;
@@ -78,10 +91,22 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
   color: #1250C4;
 }
 
+.c5 {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #1250C4;
+}
+
+.c5:hover {
+  font-weight: 700;
+}
+
 <nav>
     <ol
       aria-label="breadcrumb"
       class="c0"
+      id="breadcrumbs-list"
     >
       <li
         class="c1"
@@ -108,6 +133,36 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="true"
+        class="c1"
+        hidden=""
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <button
+          aria-controls="breadcrumbs-list"
+          aria-expanded="true"
+          aria-label="Exibir todas as opções"
+          class="c5"
+          title="Exibir todas as opções"
+          type="button"
+        >
+          ...
+        </button>
+      </li>
+      <li
+        aria-hidden="false"
         class="c1"
       >
         <svg
@@ -132,6 +187,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
         </a>
       </li>
       <li
+        aria-hidden="false"
         class="c1"
       >
         <svg
@@ -233,6 +289,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-weight: 400;
 }
 
 .c1 a:hover {
@@ -246,6 +303,18 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
 
 .c1 + li {
   margin-left: 8px;
+}
+
+.c1[aria-hidden='true'] {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+  visibility: hidden;
 }
 
 .c3 {
@@ -273,6 +342,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
     <ol
       aria-label="breadcrumb"
       class="c0"
+      id="breadcrumbs-list"
     >
       <li
         class="c1"
@@ -299,6 +369,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
         </a>
       </li>
       <li
+        aria-hidden="false"
         class="c1"
       >
         <svg
@@ -315,13 +386,65 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
           />
         </svg>
         <button
-          aria-label="Show all breadcrumbs"
+          aria-controls="breadcrumbs-list"
+          aria-expanded="false"
+          aria-label="Exibir todas as opções"
           class="c5"
-          title="Show all breadcrumbs"
+          title="Exibir todas as opções"
           type="button"
         >
           ...
         </button>
+      </li>
+      <li
+        aria-hidden="true"
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <a
+          class="c2"
+          href="catho.com"
+          title="Quantum"
+        >
+          Quantum
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="c1"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 16px; max-width: 16px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          />
+        </svg>
+        <a
+          class="c2"
+          href="catho.com"
+          title="Components"
+        >
+          Components
+        </a>
       </li>
       <li
         class="c1"
@@ -353,53 +476,56 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
 - First value
 + Second value
 
-@@ -42,18 +42,41 @@
-          >
-            <path
+@@ -28,12 +28,13 @@
+            </svg>
+            Home
+          </a>
+        </li>
+        <li
+-         aria-hidden=\\"false\\"
++         aria-hidden=\\"true\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
++         hidden=\\"\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
+            data-qtm-preloader=\\"icon\\"
+@@ -46,21 +47,21 @@
               d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
             />
           </svg>
--         <button
--           aria-label=\\"Show all breadcrumbs\\"
--           class=\\"Breadcrumbs__ExpandButton-sc-d5msik-3 cOtvQf\\"
--           title=\\"Show all breadcrumbs\\"
--           type=\\"button\\"
-+         <a
-+           class=\\"Link__StyledLink-sc-16ae9tk-0 hbDduQ\\"
-+           href=\\"catho.com\\"
-+           title=\\"Quantum\\"
-+         >
-+           Quantum
-+         </a>
-+       </li>
-+       <li
-+         class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 fldDSU\\"
-+       >
-+         <svg
-+           aria-hidden=\\"true\\"
-+           class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
-+           data-qtm-preloader=\\"icon\\"
-+           focusable=\\"false\\"
-+           style=\\"font-size: 16px; max-width: 16px;\\"
-+           theme=\\"[object Object]\\"
-+           viewBox=\\"0 0 24 24\\"
+          <button
+            aria-controls=\\"breadcrumbs-list\\"
+-           aria-expanded=\\"false\\"
++           aria-expanded=\\"true\\"
+            aria-label=\\"Exibir todas as opções\\"
+            class=\\"Breadcrumbs__ExpandButton-sc-d5msik-3 cOtvQf\\"
+            title=\\"Exibir todas as opções\\"
+            type=\\"button\\"
           >
--           ...
--         </button>
-+           <path
-+             d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
-+           />
-+         </svg>
-+         <a
-+           class=\\"Link__StyledLink-sc-16ae9tk-0 hbDduQ\\"
-+           href=\\"catho.com\\"
-+           title=\\"Components\\"
-+         >
-+           Components
-+         </a>
+            ...
+          </button>
         </li>
         <li
-          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 fldDSU\\"
+-         aria-hidden=\\"true\\"
++         aria-hidden=\\"false\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
         >
-          <svg"
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
+@@ -81,11 +82,11 @@
+          >
+            Quantum
+          </a>
+        </li>
+        <li
+-         aria-hidden=\\"true\\"
++         aria-hidden=\\"false\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
+        >
+          <svg
+            aria-hidden=\\"true\\"
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\""
 `;
