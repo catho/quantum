@@ -153,6 +153,7 @@ const Breadcrumbs = ({ items, theme }) => {
   return (
     <nav>
       <BreadcrumbsItems
+        id="breadcrumbs-list"
         ref={breadcrumbsItemsEl}
         aria-label="breadcrumb"
         theme={theme}
@@ -172,6 +173,8 @@ const Breadcrumbs = ({ items, theme }) => {
           <BreadcrumbIcon theme={theme} />
           <ExpandButton
             theme={theme}
+            aria-expanded={!collapsed}
+            aria-controls="breadcrumbs-list"
             aria-label="Exibir todas as opções"
             title="Exibir todas as opções"
             onClick={handleExpand}
@@ -184,7 +187,6 @@ const Breadcrumbs = ({ items, theme }) => {
           <BreadcrumbItem
             key={item.label}
             theme={theme}
-            hidden={collapsed}
             aria-hidden={collapsed}
           >
             <BreadcrumbIcon theme={theme} />
