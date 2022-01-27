@@ -7,30 +7,11 @@ import {
   Tab,
   StoryContainer,
   Title,
-  Example,
 } from '@catho/quantum-storybook-ui';
 
 import Alert from '../../components/Alert';
 import Breadcrumbs from '../../components/Breadcrumbs';
-
-const items = [
-  {
-    label: 'Home',
-    url: 'catho.com',
-  },
-  {
-    label: 'Quantum',
-    url: 'catho.com',
-  },
-  {
-    label: 'Components',
-    url: 'catho.com',
-  },
-  {
-    label: 'Breadcrumbs',
-    url: 'catho.com',
-  },
-];
+import defaultContent from '../../components/Breadcrumbs/exampleContents';
 
 export default {
   title: 'Breadcrumbs',
@@ -61,10 +42,12 @@ export const BreadcrumbsStory = () => (
       <Tab title="Examples">
         <StoryContainer>
           <Title as="h3">Breadcrumbs default</Title>
-          <Example
-            component={<Breadcrumbs items={items} />}
-            code="<Breadcrumbs />"
-          />
+          <SimpleHighlight>{defaultContent.code}</SimpleHighlight>
+          <SimpleHighlight>
+            {`<Breadcrumbs items={defaultContent} />`}
+          </SimpleHighlight>
+          <br />
+          <Breadcrumbs items={defaultContent} />
         </StoryContainer>
       </Tab>
     </TabbedView>

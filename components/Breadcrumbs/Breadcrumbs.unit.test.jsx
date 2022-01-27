@@ -2,25 +2,7 @@ import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 
 import Breadcrumbs from './Breadcrumbs';
-
-const items = [
-  {
-    label: 'Home',
-    url: 'catho.com',
-  },
-  {
-    label: 'Quantum',
-    url: 'catho.com',
-  },
-  {
-    label: 'Components',
-    url: 'catho.com',
-  },
-  {
-    label: 'Breadcrumbs',
-    url: 'catho.com',
-  },
-];
+import defaultContent from './exampleContents';
 
 const mockScrollWidth = (value = 450) => {
   // eslint-disable-next-line no-undef
@@ -36,7 +18,7 @@ const mockWindowInnerWidth = (value = 360) => {
 
 describe('<Breadcrumbs />', () => {
   it('should match the snapshots', () => {
-    const { asFragment } = render(<Breadcrumbs items={items} />);
+    const { asFragment } = render(<Breadcrumbs items={defaultContent} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -45,7 +27,7 @@ describe('<Breadcrumbs />', () => {
     mockScrollWidth();
     mockWindowInnerWidth();
 
-    const { asFragment } = render(<Breadcrumbs items={items} />);
+    const { asFragment } = render(<Breadcrumbs items={defaultContent} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -54,7 +36,9 @@ describe('<Breadcrumbs />', () => {
     mockScrollWidth();
     mockWindowInnerWidth();
 
-    const { getByText, asFragment } = render(<Breadcrumbs items={items} />);
+    const { getByText, asFragment } = render(
+      <Breadcrumbs items={defaultContent} />,
+    );
 
     const firstRender = asFragment();
 
@@ -64,7 +48,7 @@ describe('<Breadcrumbs />', () => {
   });
 
   it('should all links have href attribute', () => {
-    render(<Breadcrumbs items={items} />);
+    render(<Breadcrumbs items={defaultContent} />);
 
     const links = screen.getAllByRole('link');
 
