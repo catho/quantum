@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 
 import Breadcrumbs from './Breadcrumbs';
 
@@ -61,5 +61,28 @@ describe('<Breadcrumbs />', () => {
     fireEvent.click(getByText('...'));
 
     expect(firstRender).toMatchDiffSnapshot(asFragment());
+  });
+
+  it('should all links have href attribute', () => {
+    render(<Breadcrumbs items={items} />);
+
+    const links = screen.getAllByRole('link');
+
+    const hasLinkWithoutHREFAttribute = links.some(
+      link => !link.hasAttribute('href'),
+    );
+
+    expect(hasLinkWithoutHREFAttribute).toBe(false);
+  });
+
+  it('should receive an error when items length less than 2', () => {
+    const consoleError = jest.spyOn(console, 'error');
+
+    const { container } = render(
+      <Breadcrumbs items={[{ label: 'some-label', url: 'some-url' }]} />,
+    );
+
+    expect(container.firstChild).toBeNull();
+    expect(consoleError).toHaveBeenCalled();
   });
 });

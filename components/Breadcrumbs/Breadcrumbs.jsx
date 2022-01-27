@@ -111,7 +111,10 @@ const ExpandButton = styled.button.attrs(() => ({
 
 const Breadcrumbs = ({ items, theme }) => {
   if (items.length < 2) {
-    throw new Error('Breadcrumbs items should be greater or equal than 2.');
+    // eslint-disable-next-line no-console
+    console.error('Breadcrumbs items should be greater or equal than 2.');
+
+    return null;
   }
 
   const [collapsed, setCollapsed] = useState(false);
