@@ -74,6 +74,40 @@ describe('AutoComplete', () => {
     expect(autoCompleteOptions).not.toBeInTheDocument();
   });
 
+  it('should correctly filter items with accent', async () => {
+    render(
+      <AutoComplete
+        suggestions={['morango', 'melancia', 'maça', 'banana', 'laranja']}
+      />,
+    );
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'maçã');
+
+    const maçaOption = screen.getAllByRole('option', {
+      name: /maça/i,
+    })[0];
+
+    expect(maçaOption).toBeInTheDocument();
+  });
+
+  it('should correctly filter items without accent', async () => {
+    render(
+      <AutoComplete
+        suggestions={['morango', 'melancia', 'maçã', 'banana', 'laranja']}
+      />,
+    );
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'maça');
+
+    const maçaOption = screen.getAllByRole('option', {
+      name: /maçã/i,
+    })[0];
+
+    expect(maçaOption).toBeInTheDocument();
+  });
+
   it('should close the options when there is no valid option', async () => {
     render(<AutoComplete suggestions={Examples} />);
 
