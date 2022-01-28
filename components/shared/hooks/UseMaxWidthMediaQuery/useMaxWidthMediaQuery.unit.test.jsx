@@ -18,7 +18,7 @@ const matchMediaMook = (match = false) =>
     })),
   });
 
-describe('useMediaQuery', () => {
+describe('useMaxWidthMediaQuery', () => {
   it('should be bigger than 768px', () => {
     matchMediaMook();
     const component = mount(<ExampleMediaQuery />);

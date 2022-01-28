@@ -1,18 +1,18 @@
 import React from 'react';
 import { Heading } from '@catho/quantum-storybook-ui';
-import UseMediaQueryExample from './Examples/UseMediaQueryExample';
+import UseMaxWidthMediaQueryExample from './Examples/UseMaxWidthMediaQueryExample';
 
 export default {
   title: 'Hooks ',
 };
 
-export const useMediaQuery = () => (
+export const useMaxWidthMediaQuery = () => (
   <>
-    <Heading title="UseMediaQuery" />
-    <UseMediaQueryExample />
+    <Heading title="UseMaxWidthMediaQuery" />
+    <UseMaxWidthMediaQueryExample />
   </>
 );
 
-useMediaQuery.story = {
-  name: 'useMediaQuery',
+useMaxWidthMediaQuery.story = {
+  name: 'useMaxWidthMediaQuery',
 };

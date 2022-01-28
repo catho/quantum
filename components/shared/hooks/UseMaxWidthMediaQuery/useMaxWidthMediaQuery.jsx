@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 
-const useMediaQuery = width => {
+const useMaxWidthMediaQuery = width => {
   const [targetReached, setTargetReached] = useState(false);
   /* istanbul ignore next */
   const updateTarget = useCallback(event => {
@@ -25,4 +25,4 @@ const useMediaQuery = width => {
   return targetReached;
 };
 
-export default useMediaQuery;
+export default useMaxWidthMediaQuery;

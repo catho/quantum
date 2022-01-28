@@ -5,7 +5,7 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
-const importMediaQuery = `import useMediaQuery from '@catho/quantum/shared/hooks'`;
+const importMediaQuery = `import useMaxWidthMediaQuery from '@catho/quantum/shared/hooks'`;
 
 const mediaQueryCode = `
 ${importMediaQuery}
@@ -15,7 +15,7 @@ const {
   breakpoints: { medium },
 } = theme;
 const Component = () => {
-  const isBreakpoint = useMediaQuery(medium.width)
+  const isBreakpoint = useMaxWidthMediaQuery(medium.width)
   return (
     <>
       { isBreakpoint ? (
@@ -34,7 +34,7 @@ const Component = () => {
 export default Component;
 `;
 
-const UseMediaQueryExample = () => (
+const UseMaxWidthMediaQueryExample = () => (
   <StoryContainer>
     <Title as="h2">Importing</Title>
     <SimpleHighlight>{importMediaQuery}</SimpleHighlight>
@@ -50,4 +50,4 @@ const UseMediaQueryExample = () => (
   </StoryContainer>
 );
 
-export default UseMediaQueryExample;
+export default UseMaxWidthMediaQueryExample;

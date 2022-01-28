@@ -1,8 +1,8 @@
 import React from 'react';
-import useMediaQuery from './useMediaQuery';
+import useMaxWidthMediaQuery from './useMaxWidthMediaQuery';
 
 const ExampleMediaQuery = () => {
-  const breakpoint = useMediaQuery(768);
+  const breakpoint = useMaxWidthMediaQuery(768);
 
   return breakpoint ? <h1>Less than 768</h1> : <h1>More than 768</h1>;
 };

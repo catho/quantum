@@ -1,3 +1,3 @@
-import useMediaQuery from './UseMediaQuery';
+import useMaxWidthMediaQuery from './UseMaxWidthMediaQuery';
 
-export default useMediaQuery;
+export default useMaxWidthMediaQuery;
