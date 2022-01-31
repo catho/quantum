@@ -108,8 +108,12 @@ const ChargeBar = props => {
     <Wrapper width={width} background={background} baseFontSize={baseFontSize}>
       <InfoBlock id="chargebar-label">
         <Icon name="whatshot" size="small" skin={background} />
-        <LabelInfo spacing={spacing}>{label}</LabelInfo>
-        <ProgressLabel>{progressPercent}%</ProgressLabel>
+        <LabelInfo data-testid="label-info" spacing={spacing}>
+          {label}
+        </LabelInfo>
+        <ProgressLabel data-testid="progress-percent">
+          {progressPercent}%
+        </ProgressLabel>
       </InfoBlock>
       <Bar
         background={background}

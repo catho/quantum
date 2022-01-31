@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -83,85 +84,58 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
 }
 
 <div
-  className="c0"
-  width="250px"
->
-  <div
-    className="c1"
-    id="chargebar-label"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "#1250C4",
-          "fontSize": 16,
-          "maxWidth": 16,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-      />
-    </svg>
-    <span
-      className="c2"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      default informative text
-    </span>
-    <span
-      className="c3"
-    >
-      50
-      %
-    </span>
-  </div>
-  <div
-    aria-labelledby="chargebar-label"
-    className="c4"
-    role="progressbar"
-    spacing={
-      Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      }
-    }
-    tabIndex="0"
+    class="c0"
     width="250px"
   >
     <div
-      className="c5"
-    />
+      class="c1"
+      id="chargebar-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="color: rgb(18, 80, 196); font-size: 16px; max-width: 16px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+        />
+      </svg>
+      <span
+        class="c2"
+        data-testid="label-info"
+        spacing="[object Object]"
+      >
+        default informative text
+      </span>
+      <span
+        class="c3"
+        data-testid="progress-percent"
+      >
+        50%
+      </span>
+    </div>
+    <div
+      aria-labelledby="chargebar-label"
+      class="c4"
+      role="progressbar"
+      spacing="[object Object]"
+      tabindex="0"
+      width="250px"
+    >
+      <div
+        class="c5"
+      />
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -247,85 +221,58 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
 }
 
 <div
-  className="c0"
-  width="250px"
->
-  <div
-    className="c1"
-    id="chargebar-label"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "#DE0059",
-          "fontSize": 16,
-          "maxWidth": 16,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-      />
-    </svg>
-    <span
-      className="c2"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      default informative text
-    </span>
-    <span
-      className="c3"
-    >
-      50
-      %
-    </span>
-  </div>
-  <div
-    aria-labelledby="chargebar-label"
-    className="c4"
-    role="progressbar"
-    spacing={
-      Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      }
-    }
-    tabIndex="0"
+    class="c0"
     width="250px"
   >
     <div
-      className="c5"
-    />
+      class="c1"
+      id="chargebar-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="color: rgb(222, 0, 89); font-size: 16px; max-width: 16px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+        />
+      </svg>
+      <span
+        class="c2"
+        data-testid="label-info"
+        spacing="[object Object]"
+      >
+        default informative text
+      </span>
+      <span
+        class="c3"
+        data-testid="progress-percent"
+      >
+        50%
+      </span>
+    </div>
+    <div
+      aria-labelledby="chargebar-label"
+      class="c4"
+      role="progressbar"
+      spacing="[object Object]"
+      tabindex="0"
+      width="250px"
+    >
+      <div
+        class="c5"
+      />
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -415,85 +362,58 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
 }
 
 <div
-  className="c0"
-  width="250px"
->
-  <div
-    className="c1"
-    id="chargebar-label"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "#3b610f",
-          "fontSize": 16,
-          "maxWidth": 16,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-      />
-    </svg>
-    <span
-      className="c2"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      default informative text
-    </span>
-    <span
-      className="c3"
-    >
-      50
-      %
-    </span>
-  </div>
-  <div
-    aria-labelledby="chargebar-label"
-    className="c4"
-    role="progressbar"
-    spacing={
-      Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      }
-    }
-    tabIndex="0"
+    class="c0"
     width="250px"
   >
     <div
-      className="c5"
-    />
+      class="c1"
+      id="chargebar-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="color: rgb(59, 97, 15); font-size: 16px; max-width: 16px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+        />
+      </svg>
+      <span
+        class="c2"
+        data-testid="label-info"
+        spacing="[object Object]"
+      >
+        default informative text
+      </span>
+      <span
+        class="c3"
+        data-testid="progress-percent"
+      >
+        50%
+      </span>
+    </div>
+    <div
+      aria-labelledby="chargebar-label"
+      class="c4"
+      role="progressbar"
+      spacing="[object Object]"
+      tabindex="0"
+      width="250px"
+    >
+      <div
+        class="c5"
+      />
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -587,85 +507,58 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
 }
 
 <div
-  className="c0"
-  width="250px"
->
-  <div
-    className="c1"
-    id="chargebar-label"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "#424242",
-          "fontSize": 16,
-          "maxWidth": 16,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-      />
-    </svg>
-    <span
-      className="c2"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      default informative text
-    </span>
-    <span
-      className="c3"
-    >
-      50
-      %
-    </span>
-  </div>
-  <div
-    aria-labelledby="chargebar-label"
-    className="c4"
-    role="progressbar"
-    spacing={
-      Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      }
-    }
-    tabIndex="0"
+    class="c0"
     width="250px"
   >
     <div
-      className="c5"
-    />
+      class="c1"
+      id="chargebar-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="color: rgb(66, 66, 66); font-size: 16px; max-width: 16px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+        />
+      </svg>
+      <span
+        class="c2"
+        data-testid="label-info"
+        spacing="[object Object]"
+      >
+        default informative text
+      </span>
+      <span
+        class="c3"
+        data-testid="progress-percent"
+      >
+        50%
+      </span>
+    </div>
+    <div
+      aria-labelledby="chargebar-label"
+      class="c4"
+      role="progressbar"
+      spacing="[object Object]"
+      tabindex="0"
+      width="250px"
+    >
+      <div
+        class="c5"
+      />
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
 exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   overflow: hidden;
   position: relative;
   border-radius: 4px;
@@ -759,79 +652,51 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
 }
 
 <div
-  className="c0"
-  width="250px"
->
-  <div
-    className="c1"
-    id="chargebar-label"
-  >
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "#1250C4",
-          "fontSize": 16,
-          "maxWidth": 16,
-        }
-      }
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
-      />
-    </svg>
-    <span
-      className="c2"
-      spacing={
-        Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        }
-      }
-    >
-      curriculum force
-    </span>
-    <span
-      className="c3"
-    >
-      75
-      %
-    </span>
-  </div>
-  <div
-    aria-labelledby="chargebar-label"
-    className="c4"
-    role="progressbar"
-    spacing={
-      Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      }
-    }
-    tabIndex="0"
+    class="c0"
     width="250px"
   >
     <div
-      className="c5"
-    />
+      class="c1"
+      id="chargebar-label"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="color: rgb(18, 80, 196); font-size: 16px; max-width: 16px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"
+        />
+      </svg>
+      <span
+        class="c2"
+        data-testid="label-info"
+        spacing="[object Object]"
+      >
+        curriculum force
+      </span>
+      <span
+        class="c3"
+        data-testid="progress-percent"
+      >
+        75%
+      </span>
+    </div>
+    <div
+      aria-labelledby="chargebar-label"
+      class="c4"
+      role="progressbar"
+      spacing="[object Object]"
+      tabindex="0"
+      width="250px"
+    >
+      <div
+        class="c5"
+      />
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
