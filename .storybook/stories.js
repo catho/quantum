@@ -16,6 +16,8 @@ module.exports = [
   'Breakpoints',
   'List',
 
+  'Hooks',
+
   // Alert
   'Alert',
 
