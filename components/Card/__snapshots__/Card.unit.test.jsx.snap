@@ -72,39 +72,39 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 }
 
 <article
-  className="c0"
+  class="c0"
 >
   <header
-    className="c1"
+    class="c1"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <h2
-        className="c3"
+        class="c3"
       >
         Title
       </h2>
       <div
-        className="c4"
+        class="c4"
       >
         Description
       </div>
     </div>
     <img
       alt="Thumbnail"
-      className="c5"
+      class="c5"
       loading="lazy"
       src="#"
     />
   </header>
   <div
-    className="c6"
+    class="c6"
   >
     Content
   </div>
   <footer
-    className="c7"
+    class="c7"
   >
     Footer
   </footer>
@@ -123,7 +123,7 @@ exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
 
 <img
   alt=""
-  className="c0"
+  class="c0"
   loading="lazy"
   src=""
 />
@@ -136,7 +136,7 @@ exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -148,6 +148,6 @@ exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
 }
 
 <h2
-  className="c0"
+  class="c0"
 />
 `;
