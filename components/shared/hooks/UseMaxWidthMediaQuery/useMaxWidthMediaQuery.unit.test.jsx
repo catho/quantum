@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 
 import ExampleMediaQuery from './Example';
 
-const matchMediaMook = (match = false) =>
+const matchMediaMock = (match = false) =>
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
     value: jest.fn().mockImplementation(query => ({
@@ -20,13 +20,13 @@ const matchMediaMook = (match = false) =>
 
 describe('useMaxWidthMediaQuery', () => {
   it('should be bigger than 768px', () => {
-    matchMediaMook();
+    matchMediaMock();
     const component = mount(<ExampleMediaQuery />);
     expect(component.find('h1').text()).toBe('More than 768');
   });
 
   it('should be smaller than 768px', () => {
-    matchMediaMook(true);
+    matchMediaMock(true);
     const component = mount(<ExampleMediaQuery />);
     expect(component.find('h1').text()).toBe('Less than 768');
   });
