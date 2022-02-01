@@ -1,66 +1,60 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount, shallow } from 'enzyme';
+import { fireEvent, render, screen } from '@testing-library/react';
 
 import Checkbox from './Checkbox';
 
 describe('<Checkbox />', () => {
-  const mockFn = jest.fn();
-
-  beforeEach(mockFn.mockClear);
-
   it('should match the snapshot', () => {
-    expect(renderer.create(<Checkbox name="foo" />).toJSON()).toMatchSnapshot();
+    expect(render(<Checkbox name="foo" />).asFragment()).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox name="foo" error="error message" />).toJSON(),
+      render(<Checkbox name="foo" error="error message" />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer
-        .create(<Checkbox name="foo" error="error message" checked />)
-        .toJSON(),
+      render(
+        <Checkbox name="foo" error="error message" checked />,
+      ).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox name="foo" checked />).toJSON(),
+      render(<Checkbox name="foo" checked />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox name="foo" disabled />).toJSON(),
+      render(<Checkbox name="foo" disabled />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox name="foo" label="Some text" />).toJSON(),
+      render(<Checkbox name="foo" label="Some text" />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Checkbox name="foo" checked disabled />).toJSON(),
+      render(<Checkbox name="foo" checked disabled />).asFragment(),
     ).toMatchSnapshot();
   });
 
-  it('should pass onChange prop to checkbox component', () => {
-    const wrapper = mount(<Checkbox name="foo" onChange={mockFn} />);
-    const checkbox = wrapper.find('HiddenCheckbox');
-    expect(wrapper.prop('onChange')).toEqual(checkbox.prop('onChange'));
+  it('should pass checked prop to checkbox starts checked', () => {
+    render(<Checkbox name="foo" checked />);
+
+    expect(screen.getByRole('checkbox')).toBeChecked();
   });
 
-  it('should pass checked prop to checkbox component', () => {
-    const wrapper = shallow(<Checkbox name="foo" checked />);
-    const checkbox = wrapper.find('HiddenCheckbox');
-    expect(checkbox.prop('checked')).toEqual(true);
+  it('should apply id prop on htmlFor', () => {
+    const { container } = render(<Checkbox name="foo" id="test" />);
+
+    const { htmlFor } = container.querySelector('label');
+
+    expect(htmlFor).toBe('test');
   });
 
-  it('should apply id prop', () => {
-    const wrapper = shallow(<Checkbox name="foo" id="test" />);
+  it('should get the checkbox status with its label', () => {
+    render(<Checkbox name="foo" label="test" id="some-id" />);
 
-    const label = wrapper.find('CheckboxLabel');
-    const checkbox = wrapper.find('HiddenCheckbox');
-    const htmlFor = label.prop('htmlFor');
-
-    expect(htmlFor).not.toBeUndefined();
-    expect(htmlFor).toEqual(checkbox.prop('id'));
+    expect(screen.queryByLabelText(/test/i)).not.toBeChecked();
   });
 
-  it('should apply label prop', () => {
-    const wrapper = mount(<Checkbox name="foo" label="test" />);
-    const labelText = wrapper.find('CheckboxLabel').text();
+  it('should call onChange prop when the checkbox is clicked', async () => {
+    const mockFn = jest.fn();
 
-    expect(labelText).not.toBeUndefined();
-    expect(labelText).toEqual(wrapper.prop('label'));
+    render(<Checkbox name="foo" onChange={mockFn} />);
+
+    fireEvent.click(screen.getByRole('checkbox'));
+
+    expect(mockFn).toHaveBeenCalledTimes(1);
   });
 });
