@@ -186,11 +186,17 @@ describe('Dropdown component ', () => {
   });
 
   it('should render the item if value or label are not informed', () => {
-    render(<Dropdown items={['manga', 'morango', 'melancia']} />);
+    render(
+      <Dropdown
+        items={['manga', 'morango', 'melancia']}
+        helperText="texto de ajuda"
+      />,
+    );
     const button = screen.getByRole('button');
     fireEvent.click(button);
 
     const option = screen.getByRole('option', { name: /melancia/i });
+    expect(screen.getByText(/texto de ajuda/i)).toBeInTheDocument();
     expect(option).toBeInTheDocument();
   });
 });
