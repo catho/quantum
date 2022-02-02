@@ -47,7 +47,12 @@ describe('Dialog', () => {
     });
 
     const onCloseMock = jest.fn();
+
     render(<Dialog onClose={onCloseMock} />);
+
+    eventMap.keydown({ key: 'Enter' });
+
+    expect(onCloseMock).not.toHaveBeenCalled();
 
     eventMap.keydown({ key: 'Escape' });
 

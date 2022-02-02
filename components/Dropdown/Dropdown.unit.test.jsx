@@ -164,6 +164,35 @@ describe('Dropdown component ', () => {
     expect(input.getAttribute('id')).toBe('input-autocomplete');
     expect(input.getAttribute('data-gtm-event-category')).toBe('some-value');
   });
+
+  it('should render the label if value its not informed', () => {
+    const filteredItems = ITEMS.map(item => ({ label: item.label }));
+    render(<Dropdown items={filteredItems} />);
+    const button = screen.getByRole('button');
+    fireEvent.click(button);
+
+    const option = screen.getByRole('option', { name: /foo/i });
+    expect(option).toBeInTheDocument();
+  });
+
+  it('should render the value if label its not informed', () => {
+    const filteredItems = ITEMS.map(item => ({ value: item.value }));
+    render(<Dropdown items={filteredItems} />);
+    const button = screen.getByRole('button');
+    fireEvent.click(button);
+
+    const option = screen.getByRole('option', { name: /fooKey/i });
+    expect(option).toBeInTheDocument();
+  });
+
+  it('should render the item if value or label are not informed', () => {
+    render(<Dropdown items={['manga', 'morango', 'melancia']} />);
+    const button = screen.getByRole('button');
+    fireEvent.click(button);
+
+    const option = screen.getByRole('option', { name: /melancia/i });
+    expect(option).toBeInTheDocument();
+  });
 });
 
 describe('with an "onChange" callback set', () => {
