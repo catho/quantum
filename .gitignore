@@ -3,7 +3,6 @@ node_modules
 yarn-error.log
 storybook-static
 npm-debug.log
-coverage
 .idea
 .vscode
 dist
