@@ -25,7 +25,7 @@ describe('ChargeBar component', () => {
     const percent = 30;
     render(<ChargeBar progressPercent={percent} label={customLabel} />);
 
-    expect(screen.getByTestId('label-info')).toHaveTextContent(customLabel);
-    expect(screen.getByTestId('progress-percent')).toHaveTextContent(percent);
+    expect(screen.queryByText(customLabel)).toBeInTheDocument();
+    expect(screen.queryByText(`${percent}%`)).toBeInTheDocument();
   });
 });
