@@ -105,14 +105,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
       </svg>
       <span
         class="c2"
-        data-testid="label-info"
         spacing="[object Object]"
       >
         default informative text
       </span>
       <span
         class="c3"
-        data-testid="progress-percent"
       >
         50%
       </span>
@@ -242,14 +240,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
       </svg>
       <span
         class="c2"
-        data-testid="label-info"
         spacing="[object Object]"
       >
         default informative text
       </span>
       <span
         class="c3"
-        data-testid="progress-percent"
       >
         50%
       </span>
@@ -383,14 +379,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
       </svg>
       <span
         class="c2"
-        data-testid="label-info"
         spacing="[object Object]"
       >
         default informative text
       </span>
       <span
         class="c3"
-        data-testid="progress-percent"
       >
         50%
       </span>
@@ -528,14 +522,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
       </svg>
       <span
         class="c2"
-        data-testid="label-info"
         spacing="[object Object]"
       >
         default informative text
       </span>
       <span
         class="c3"
-        data-testid="progress-percent"
       >
         50%
       </span>
@@ -673,14 +665,12 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
       </svg>
       <span
         class="c2"
-        data-testid="label-info"
         spacing="[object Object]"
       >
         curriculum force
       </span>
       <span
         class="c3"
-        data-testid="progress-percent"
       >
         75%
       </span>
