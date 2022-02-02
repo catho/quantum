@@ -17,7 +17,7 @@ class CheckboxGroup extends React.Component {
       target: { checked, name },
     } = event;
 
-    const { onChange = () => {}, children, options } = this.props;
+    const { onChange, children, options } = this.props;
 
     const items = React.Children.map(children, ({ props }) => props) || options;
 
@@ -89,7 +89,7 @@ CheckboxGroup.defaultProps = {
   children: undefined,
   error: undefined,
   inline: false,
-  onChange: undefined,
+  onChange: () => {},
   options: [],
   size: 'medium',
   type: 'checkbox',

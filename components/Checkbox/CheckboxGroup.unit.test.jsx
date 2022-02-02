@@ -344,11 +344,7 @@ describe('Checkbox group with checkbox button', () => {
 
           <CheckboxGroup.Button name="With value" value="With value" />
 
-          <CheckboxGroup.Button
-            name="Another name"
-            error="Some error"
-            onChange={() => {}}
-          >
+          <CheckboxGroup.Button name="Another name" error="Some error">
             Another value
           </CheckboxGroup.Button>
         </>
