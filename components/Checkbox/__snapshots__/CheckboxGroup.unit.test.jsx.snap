@@ -1,343 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CheckboxGroup /> snapshot should render the same 1`] = `
-"Snapshot Diff:
- - Expected
-+ Received
-
-  <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bciUTo nTJFd\\"
-  >
-    <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
-    >
-      <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
-          disabled={false}
-          id=\\"\\"
-          name=\\"Foo\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
-        <svg
-          aria-hidden={true}
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3\\"
-          data-qtm-preloader=\\"icon\\"
-          focusable=\\"false\\"
-          style={
-            Object {
-              \\"color\\": \\"\\",
-              \\"fontSize\\": 24,
-              \\"maxWidth\\": 24,
-            }
-          }
-          viewBox=\\"0 0 24 24\\"
-        >
-          <path
-            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
-          />
-        </svg>
-        <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
-          htmlFor=\\"\\"
-        >
--         Foo label
-+         Foo
-        </label>
-      </div>
-    </div>
-    <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
-    >
-      <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
-          disabled={false}
-          id=\\"\\"
-          name=\\"Bar\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
-        <svg
-          aria-hidden={true}
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3\\"
-          data-qtm-preloader=\\"icon\\"
-          focusable=\\"false\\"
-          style={
-            Object {
-              \\"color\\": \\"\\",
-              \\"fontSize\\": 24,
-              \\"maxWidth\\": 24,
-            }
-          }
-          viewBox=\\"0 0 24 24\\"
-        >
-          <path
-            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
-          />
-        </svg>
-        <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
-          htmlFor=\\"\\"
-        >
--         Bar label
-+         Bar
-        </label>
-      </div>
-    </div>
-    <div
-      className=\\"Checkbox__Wrapper-sc-1ca5whm-0\\"
-    >
-      <div
-        className=\\"Checkbox__CheckboxWrapper-sc-1ca5whm-1 gzVUdr\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 Checkbox__HiddenCheckbox-sc-1ca5whm-4 dAMkUb jbbOOw\\"
-          disabled={false}
-          id=\\"\\"
-          name=\\"Baz\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
-        <svg
-          aria-hidden={true}
-          className=\\"MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3\\"
-          data-qtm-preloader=\\"icon\\"
-          focusable=\\"false\\"
-          style={
-            Object {
-              \\"color\\": \\"\\",
-              \\"fontSize\\": 24,
-              \\"maxWidth\\": 24,
-            }
-          }
-          viewBox=\\"0 0 24 24\\"
-        >
-          <path
-            d=\\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\\"
-          />
-        </svg>
-        <label
-          className=\\"Label-sc-1ny5bqy-0 Checkbox__CheckboxLabel-sc-1ca5whm-2 duEDAR gaSCQH\\"
-          htmlFor=\\"\\"
-        >
--         Baz label
-+         Baz
-        </label>
-      </div>
-    </div>
-  </div>"
-`;
-
-exports[`<CheckboxGroup /> snapshot should render the same, when using buttons 1`] = `
-"Snapshot Diff:
- - Expected
-+ Received
-
-  <div
-    className=\\"FieldGroup-sc-18uoi37-0 CheckboxGroup__Group-sc-1da60j6-0 bciUTo nTJFd\\"
-  >
-    <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
-    >
-      <label
-        checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
-        disabled={false}
--       htmlFor=\\"checkbox-button-12\\"
-+       htmlFor=\\"checkbox-button-15\\"
-        size=\\"medium\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
-          disabled={false}
--         id=\\"checkbox-button-12\\"
-+         id=\\"checkbox-button-15\\"
-          name=\\"Foo\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
--       Foo label
-+       Foo
-      </label>
-    </div>
-    <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
-    >
-      <label
-        checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
-        disabled={false}
--       htmlFor=\\"checkbox-button-13\\"
-+       htmlFor=\\"checkbox-button-16\\"
-        size=\\"medium\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
-          disabled={false}
--         id=\\"checkbox-button-13\\"
-+         id=\\"checkbox-button-16\\"
-          name=\\"Bar\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
--       Bar label
-+       Bar
-      </label>
-    </div>
-    <div
-      className=\\"CheckboxButton__Wrapper-sc-1rvg70v-2 dHjBBA\\"
-    >
-      <label
-        checked={false}
-        className=\\"CheckboxButton__CheckButton-sc-1rvg70v-3 eFlpEz\\"
-        disabled={false}
--       htmlFor=\\"checkbox-button-14\\"
-+       htmlFor=\\"checkbox-button-17\\"
-        size=\\"medium\\"
-      >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 dAMkUb\\"
-          disabled={false}
--         id=\\"checkbox-button-14\\"
-+         id=\\"checkbox-button-17\\"
-          name=\\"Baz\\"
-          onChange={[Function anonymous]}
-          type=\\"checkbox\\"
-          value=\\"\\"
-        />
--       Baz label
-+       Baz
-      </label>
-    </div>
-  </div>"
-`;
-
-exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Button /> 1`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  color: #424242;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  position: relative;
-}
-
-<div
-  className="c0 c1"
->
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-3"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-3"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-4"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-4"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-5"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-5"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
-  </div>
-</div>
-`;
-
-exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] = `
-.c6 {
+exports[`Checkbox group should match snapshots 1`] = `
+<DocumentFragment>
+  .c6 {
   display: block;
   margin-bottom: 5px;
 }
@@ -394,139 +59,114 @@ exports[`<CheckboxGroup /> snapshot simple with <CheckboxGroup.Checkbox /> 1`] =
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
+    class="c0 c1"
   >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Foo
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Bar
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Baz
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
     </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
-.c6 {
+exports[`Checkbox group should match snapshots 2`] = `
+<DocumentFragment>
+  .c6 {
   display: block;
   margin-bottom: 5px;
 }
@@ -583,361 +223,85 @@ exports[`<CheckboxGroup /> snapshot simple with options 1`] = `
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
+    class="c0 c1"
   >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Foo
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Bar
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
     </div>
   </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
-    <div
-      className="c2"
-    >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Baz
-      </label>
-    </div>
-  </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot simple with options and type prop as "button" 1`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  color: #424242;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  position: relative;
-}
-
-<div
-  className="c0 c1"
->
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-0"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-0"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-1"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-1"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-2"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-2"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
-  </div>
-</div>
-`;
-
-exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> and icons 1`] = `
-.c0 {
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
-  color: #424242;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.c1 {
-  position: relative;
-}
-
-<div
-  className="c0 c1"
->
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-18"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-18"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-19"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-19"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-20"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-20"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
-  </div>
-</div>
-`;
-
-exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 1`] = `
-.c4 {
-  color: #ac001a;
-  margin-top: 8px;
-  cursor: text;
+exports[`Checkbox group should match snapshots 3`] = `
+<DocumentFragment>
+  .c6 {
   display: block;
-  line-height: normal;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -960,11 +324,31 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
 }
 
 .c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
 }
 
 .c1 {
@@ -972,86 +356,87 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with an error 
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className=""
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-6"
-      size="medium"
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-6"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-7"
-      size="medium"
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-7"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
   </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-8"
-      size="medium"
-    >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-8"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
-  </div>
-  <span
-    className="c4"
-  >
-    Error Message
-  </span>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled options 1`] = `
+exports[`Checkbox group should match snapshots 4`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .c0 {
   position: relative;
   margin-bottom: 20px;
@@ -1072,11 +457,31 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 }
 
 .c2 {
-  margin-bottom: 16px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
 }
 
 .c1 {
@@ -1084,118 +489,250 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Button /> with disabled 
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className=""
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c2"
-      disabled={true}
-      htmlFor="checkbox-button-9"
-      size="medium"
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={true}
-        id="checkbox-button-9"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
         />
-      </svg>
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-10"
-      size="medium"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-10"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
-  </div>
-  <div
-    className=""
-  >
-    <label
-      checked={true}
-      className="c2"
-      disabled={true}
-      htmlFor="checkbox-button-11"
-      size="medium"
-    >
-      <input
-        checked={true}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={true}
-        id="checkbox-button-11"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
         />
-      </svg>
-    </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an error 1`] = `
-.c8 {
+exports[`Checkbox group should match snapshots 5`] = `
+<DocumentFragment>
+  .c8 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -1244,6 +781,10 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
   margin: 0 0 0 12px;
 }
 
+.c9[disabled] ~ .c5 {
+  color: #999999;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -1263,144 +804,863 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with an erro
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
+    class="c0 c1"
   >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Foo
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Bar
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
-      >
-        Baz
-      </label>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
     </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <span
+      class="c8"
+    >
+      Some error
+    </span>
   </div>
-  <span
-    className="c8"
-  >
-    Error Message
-  </span>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disabled options 1`] = `
-.c6 {
+exports[`Checkbox group should match snapshots 6`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c8[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots 7`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c8[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 1`] = `
+<DocumentFragment>
+  .c6 {
   display: block;
   margin-bottom: 5px;
 }
@@ -1457,139 +1717,3013 @@ exports[`<CheckboxGroup /> snapshot with <CheckboxGroup.Checkbox /> with disable
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
+    class="c0 c1"
   >
     <div
-      className="c2"
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={true}
-        id=""
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
+      <div
+        class="c2"
       >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
         />
-      </svg>
-      <label
-        className="c5 c6 c7"
-        htmlFor=""
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
       >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 2`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 3`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 4`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 5`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 6`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 7`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group should match snapshots with different sizes 8`] = `
+<DocumentFragment>
+  .c6 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+}
+
+.c7 {
+  color: #424242;
+  margin: 0 0 0 12px;
+}
+
+.c4 {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.c4[disabled] {
+  cursor: not-allowed;
+}
+
+.c4[disabled] ~ .c5 {
+  color: #999999;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Foo
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Bar
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          id=""
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Baz
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          checked=""
+          class="c3 c4"
+          id=""
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Checked Label - 2
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 1
+        </label>
+      </div>
+    </div>
+    <div
+      class="Checkbox__Wrapper-sc-1ca5whm-0"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3 c4"
+          disabled=""
+          id=""
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <label
+          class="c5 c6 c7"
+          for=""
+        >
+          Disabled Checked Label - 2
+        </label>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-0"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-0"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
         Foo
       </label>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class=""
     >
-      <input
-        checked={false}
-        className="c3 c4"
-        disabled={false}
-        id=""
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
       <label
-        className="c5 c6 c7"
-        htmlFor=""
+        class="c2"
+        for="checkbox-button-1"
       >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-1"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
         Bar
       </label>
     </div>
-  </div>
-  <div
-    className="Checkbox__Wrapper-sc-1ca5whm-0"
-  >
     <div
-      className="c2"
+      class=""
     >
-      <input
-        checked={true}
-        className="c3 c4"
-        disabled={true}
-        id=""
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-        />
-      </svg>
       <label
-        className="c5 c6 c7"
-        htmlFor=""
+        class="c2"
+        for="checkbox-button-2"
       >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-2"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
         Baz
       </label>
     </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
+exports[`Checkbox group with checkbox button should match snapshots 2`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-3"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-3"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-4"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-4"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots 3`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-5"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-5"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-6"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-6"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots 4`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-7"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-7"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-8"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-8"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-9"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-9"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-10"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-10"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-11"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-11"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-12"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-12"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-13"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-13"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots 5`] = `
+<DocumentFragment>
+  .c4 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-14"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-14"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-15"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-15"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-16"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-16"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-17"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-17"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-18"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-18"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-19"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-19"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-20"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-20"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <span
+      class="c4"
+    >
+      Some error
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots 6`] = `
+<DocumentFragment>
+  .c0 {
   position: relative;
   margin-bottom: 20px;
   min-width: 250px;
@@ -1631,82 +4765,164 @@ exports[`<CheckboxGroup /> snapshot with inline <CheckboxGroup.Button /> 1`] = `
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className="c2"
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="checkbox-button-21"
-      size="medium"
+    <div
+      class="c2"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
-        disabled={false}
-        id="checkbox-button-21"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
-  </div>
-  <div
-    className="c2"
-  >
-    <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="checkbox-button-22"
-      size="medium"
+      <label
+        class="c3"
+        for="checkbox-button-21"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-21"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class="c2"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
-        disabled={false}
-        id="checkbox-button-22"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
-  </div>
-  <div
-    className="c2"
-  >
-    <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="checkbox-button-23"
-      size="medium"
+      <label
+        class="c3"
+        for="checkbox-button-22"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-22"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class="c2"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
-        disabled={false}
-        id="checkbox-button-23"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
+      <label
+        class="c3"
+        for="checkbox-button-23"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-23"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-24"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-24"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-25"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-25"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-26"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-26"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-27"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-27"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
   </div>
-</div>
+</DocumentFragment>
 `;
 
-exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
-.c0 {
+exports[`Checkbox group with checkbox button should match snapshots with children 1`] = `
+<DocumentFragment>
+  .c0 {
   position: relative;
   margin-bottom: 20px;
   min-width: 250px;
@@ -1738,76 +4954,1743 @@ exports[`<CheckboxGroup /> snapshot with size <CheckboxGroup.Button /> 1`] = `
 }
 
 <div
-  className="c0 c1"
->
-  <div
-    className=""
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-24"
-      size="large"
+    <div
+      class=""
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-24"
-        name="Foo"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Foo
-    </label>
+      <label
+        class="c2"
+        for="checkbox-button-28"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-28"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-29"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-29"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-30"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-30"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-31"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-31"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-32"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-32"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-33"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-33"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-34"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-34"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-35"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-35"
+          name="With value"
+          type="checkbox"
+          value="With value"
+        />
+        With value
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-36"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-36"
+          name="Another name"
+          type="checkbox"
+          value=""
+        />
+        Another value
+      </label>
+    </div>
   </div>
-  <div
-    className=""
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-25"
-      size="large"
+    <div
+      class=""
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-25"
-        name="Bar"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Bar
-    </label>
+      <label
+        class="c2"
+        for="checkbox-button-37"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-37"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-38"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-38"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-39"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-39"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-40"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-40"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-41"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-41"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-42"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-42"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-43"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-43"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
   </div>
-  <div
-    className=""
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 2`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c4 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c2:last-child {
+  margin-right: 0;
+}
+
+.c3 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
   >
-    <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="checkbox-button-26"
-      size="large"
+    <div
+      class="c2"
     >
-      <input
-        checked={false}
-        className="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
-        disabled={false}
-        id="checkbox-button-26"
-        name="Baz"
-        onChange={[Function]}
-        type="checkbox"
-        value=""
-      />
-      Baz
-    </label>
+      <label
+        class="c3"
+        for="checkbox-button-44"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-44"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-45"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-45"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-46"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-46"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-47"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-47"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-48"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-48"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-49"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-49"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-50"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-50"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
   </div>
-</div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 3`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-51"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-51"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-52"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-52"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-53"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-53"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-54"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-54"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-55"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-55"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-56"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-56"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-57"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-57"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 4`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c4 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c2:last-child {
+  margin-right: 0;
+}
+
+.c3 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-58"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-58"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-59"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-59"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-60"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-60"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-61"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-61"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-62"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-62"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-63"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-63"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-64"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-64"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 5`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-65"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-65"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-66"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-66"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-67"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-67"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-68"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-68"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-69"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-69"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-70"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-70"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-71"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-71"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 6`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c4 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c2:last-child {
+  margin-right: 0;
+}
+
+.c3 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-72"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-72"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-73"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-73"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-74"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-74"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-75"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-75"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-76"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-76"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-77"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-77"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-78"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-78"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 7`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-79"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-79"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-80"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-80"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-81"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-81"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-82"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-82"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        for="checkbox-button-83"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          id="checkbox-button-83"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-84"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-84"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class=""
+    >
+      <label
+        class="c2"
+        disabled=""
+        for="checkbox-button-85"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          disabled=""
+          id="checkbox-button-85"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Checkbox group with checkbox button should match snapshots with different sizes 8`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c4 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c2 {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.c2:last-child {
+  margin-right: 0;
+}
+
+.c3 {
+  margin-bottom: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c1 {
+  position: relative;
+}
+
+<div
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-86"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-86"
+          name="Foo"
+          type="checkbox"
+          value=""
+        />
+        Foo
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-87"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-87"
+          name="Bar"
+          type="checkbox"
+          value=""
+        />
+        Bar
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-88"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-88"
+          name="Baz"
+          type="checkbox"
+          value=""
+        />
+        Baz
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-89"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-89"
+          name="Checked Option 1"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 1
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        for="checkbox-button-90"
+      >
+        <input
+          checked=""
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          id="checkbox-button-90"
+          name="Checked Option 2"
+          type="checkbox"
+          value=""
+        />
+        Checked Label - 2
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-91"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-91"
+          name="Disabled Option 1"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 1
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+    <div
+      class="c2"
+    >
+      <label
+        class="c3"
+        disabled=""
+        for="checkbox-button-92"
+      >
+        <input
+          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          disabled=""
+          id="checkbox-button-92"
+          name="Disabled Option 2"
+          type="checkbox"
+          value=""
+        />
+        Disabled Checked Label - 2
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+          />
+        </svg>
+      </label>
+    </div>
+  </div>
+</DocumentFragment>
 `;
