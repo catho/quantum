@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Subtitle /> Should match the snapshot 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-size: 14px;
   line-height: 21px;
   -webkit-letter-spacing: 0.3px;
@@ -11,6 +12,7 @@ exports[`<Subtitle /> Should match the snapshot 1`] = `
 }
 
 <span
-  className="c0"
-/>
+    class="c0"
+  />
+</DocumentFragment>
 `;

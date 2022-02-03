@@ -1,9 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Title from './Title';
 
 describe('<Title />', () => {
   it('Should match the snapshot', () => {
-    expect(renderer.create(<Title />).toJSON()).toMatchSnapshot();
+    expect(render(<Title />).asFragment()).toMatchSnapshot();
   });
 });
