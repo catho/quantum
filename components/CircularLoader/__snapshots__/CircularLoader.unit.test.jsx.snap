@@ -38,22 +38,21 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
 }
 
 <div
-  className="c0"
+  class="c0"
   role="progressbar"
-  size="medium"
 >
   <svg
-    className="c1"
+    class="c1"
     color="#1250C4"
     viewBox="22 22 44 44"
   >
     <circle
-      className="c2"
+      class="c2"
       color="#1250C4"
-      cx={44}
-      cy={44}
-      r={20.2}
-      strokeWidth={3.6}
+      cx="44"
+      cy="44"
+      r="20.2"
+      stroke-width="3.6"
     />
   </svg>
 </div>
