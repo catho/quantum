@@ -1,51 +1,37 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import 'jest-styled-components';
+import { render } from '@testing-library/react';
 import Hide from './Hide';
 
 describe('<Hide />', () => {
   it("should hide it's children according to screen size", () => {
-    expect(
-      renderer.create(<Hide xsmall>Content</Hide>).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Hide small>Content</Hide>).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Hide medium>Content</Hide>).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Hide large>Content</Hide>).toJSON(),
-    ).toMatchSnapshot();
+    const { container: xsmall } = render(<Hide xsmall>Content</Hide>);
+    const { container: small } = render(<Hide small>Content</Hide>);
+    const { container: medium } = render(<Hide medium>Content</Hide>);
+    const { container: large } = render(<Hide large>Content</Hide>);
 
-    expect(
-      renderer
-        .create(
-          <Hide small large>
-            Content
-          </Hide>,
-        )
-        .toJSON(),
-    ).toMatchSnapshot();
+    const { container: smallLarge } = render(
+      <Hide small large>
+        Content
+      </Hide>,
+    );
+    const { container: xsmallMedium } = render(
+      <Hide xsmall medium>
+        Content
+      </Hide>,
+    );
+    const { container: smallLargeMedium } = render(
+      <Hide small large medium>
+        Content
+      </Hide>,
+    );
 
-    expect(
-      renderer
-        .create(
-          <Hide xsmall medium>
-            Content
-          </Hide>,
-        )
-        .toJSON(),
-    ).toMatchSnapshot();
+    expect(xsmall.firstChild).toMatchSnapshot();
+    expect(small.firstChild).toMatchSnapshot();
+    expect(medium.firstChild).toMatchSnapshot();
+    expect(large.firstChild).toMatchSnapshot();
 
-    expect(
-      renderer
-        .create(
-          <Hide small large medium>
-            Content
-          </Hide>,
-        )
-        .toJSON(),
-    ).toMatchSnapshot();
+    expect(smallLarge.firstChild).toMatchSnapshot();
+    expect(xsmallMedium.firstChild).toMatchSnapshot();
+    expect(smallLargeMedium.firstChild).toMatchSnapshot();
   });
 });
