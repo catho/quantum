@@ -1,48 +1,50 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 
 import Hamburger from './Hamburger';
 
 describe('<Hamburger />', () => {
   describe('Should match snapshot with props:', () => {
     it('default', () => {
-      expect(renderer.create(<Hamburger />).toJSON()).toMatchSnapshot();
+      const { container } = render(<Hamburger />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('showNotification', () => {
-      expect(renderer.create(<Hamburger showNotification />)).toMatchSnapshot();
+      const { container } = render(<Hamburger showNotification />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('isOpened', () => {
-      expect(renderer.create(<Hamburger isOpened />)).toMatchSnapshot();
+      const { container } = render(<Hamburger isOpened />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('showNotification and isOpened', () => {
-      expect(
-        renderer.create(<Hamburger showNotification isOpened />),
-      ).toMatchSnapshot();
+      const { container } = render(<Hamburger showNotification isOpened />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('inverted', () => {
-      expect(renderer.create(<Hamburger inverted />)).toMatchSnapshot();
+      const { container } = render(<Hamburger inverted />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('inverted and showNotification', () => {
-      expect(
-        renderer.create(<Hamburger inverted showNotification />),
-      ).toMatchSnapshot();
+      const { container } = render(<Hamburger inverted showNotification />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('inverted and isOpened', () => {
-      expect(
-        renderer.create(<Hamburger inverted isOpened />),
-      ).toMatchSnapshot();
+      const { container } = render(<Hamburger inverted isOpened />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('inverted, showNotification and isOpened', () => {
-      expect(
-        renderer.create(<Hamburger inverted showNotification isOpened />),
-      ).toMatchSnapshot();
+      const { container } = render(
+        <Hamburger inverted showNotification isOpened />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 });
