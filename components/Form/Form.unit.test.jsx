@@ -1,22 +1,19 @@
+/* eslint-disable no-console */
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import validations from './validations';
 import Form from './Form';
 import Input from '../Input';
 import Button from '../Button';
 
-jest.mock('react-text-mask', () => props => (
-  <input type="text" {...{ ...props }} />
-));
-
 const onValidSubmitCallback = jest.fn();
 const onSubmitCallback = jest.fn();
-const mockEvent = { preventDefault: jest.fn() };
 
 const FormWithoutValidations = () => (
   <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
     <Input name="name" label="Name" />
+    <Button type="submit"> Enviar </Button>
   </Form>
 );
 
@@ -36,6 +33,7 @@ const FormWithValidations = () => (
     <Input
       name="country"
       label="Country"
+      value="1234"
       validate={validations.MaxLength}
       maxLength="3"
     />
@@ -44,109 +42,119 @@ const FormWithValidations = () => (
   </Form>
 );
 
-beforeEach(() => {
-  onValidSubmitCallback.mockClear();
-  onSubmitCallback.mockClear();
-});
-
 describe('Form component ', () => {
   it('should match the snapshot', () => {
-    expect(renderer.create(FormWithValidations()).toJSON()).toMatchSnapshot();
+    const { container } = render(FormWithValidations());
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   describe('Without validations', () => {
     it('Should call "onValidSubmit" and "onSubmit" callback on a valid submit', () => {
-      const wrapper = shallow(FormWithoutValidations());
-      wrapper.simulate('submit', mockEvent);
-
+      render(FormWithoutValidations());
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
       expect(onValidSubmitCallback).toHaveBeenCalled();
       expect(onSubmitCallback).toHaveBeenCalled();
     });
   });
 
+  const validationTests = [
+    {
+      fieldName: 'required',
+      validationName: 'Required',
+      errorMsg: 'Campo obrigatório',
+      valid: 'foo',
+    },
+    {
+      fieldName: 'CPF',
+      validationName: 'CPF',
+      errorMsg: 'CPF inválido',
+      valid: '321.970.213-97',
+      invalid: '123.456.212-34',
+    },
+    {
+      fieldName: 'CEP',
+      validationName: 'CEP',
+      errorMsg: 'CEP inválido',
+      valid: '02354128',
+    },
+    {
+      fieldName: 'Birthday',
+      validationName: 'Date',
+      errorMsg: 'Data inválida',
+      valid: '20/11/1981',
+      invalid: '30/02/1950',
+    },
+    {
+      fieldName: 'E-mail',
+      validationName: 'Email',
+      errorMsg: 'E-mail inválido',
+      valid: 'foo@baz.com',
+      invalid: 'foo@baz',
+    },
+    {
+      fieldName: 'Address',
+      validationName: 'MinLength',
+      errorMsg: 'Mínimo de 8 caracteres',
+      valid: '12345678',
+      invalid: '12',
+    },
+  ];
+
   describe('With validations', () => {
     it('Shouldn\'t call "onValidSubmit" and "onSubmit" callback on a invalid submit', () => {
-      const wrapper = shallow(FormWithValidations());
-      wrapper.simulate('submit', mockEvent);
+      render(FormWithValidations());
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
       expect(onValidSubmitCallback).not.toHaveBeenCalled();
       expect(onSubmitCallback).toHaveBeenCalled();
     });
 
-    it('Should validate fields', () => {
-      const execTest = ({ invalid, valid, validationName, errorMsg }) => {
-        const wrapper = shallow(FormWithValidations());
-        const getField = () =>
-          wrapper.find({ validate: validations[validationName] });
+    it('Should test maxLength without starting with error', async () => {
+      render(
+        <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
+          <Input
+            name="country"
+            label="Country"
+            validate={validations.MaxLength}
+            maxLength="3"
+          />
+          <Button type="submit"> Enviar </Button>
+        </Form>,
+      );
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
-        if (invalid) {
-          const initalField = getField();
-          initalField.simulate('change', {
-            target: { name: initalField.prop('name'), value: invalid },
-          });
-        }
+      const input = screen.getByRole('textbox', { name: /Country/i });
 
-        wrapper.simulate('submit', mockEvent);
+      await userEvent.type(input, '123');
 
-        const beforeChange = getField();
-        expect(beforeChange.prop('error')).toBe(errorMsg);
-
-        beforeChange.simulate('change', {
-          target: { name: beforeChange.prop('name'), value: valid },
-        });
-
-        const afterChange = getField();
-
-        expect(afterChange.prop('error')).toBe('');
-      };
-
-      const validationTests = [
-        {
-          validationName: 'Required',
-          errorMsg: 'Campo obrigatório',
-          valid: 'foo',
-        },
-        {
-          validationName: 'CPF',
-          errorMsg: 'CPF inválido',
-          valid: '321.970.213-97',
-          invalid: '123.456.212-34',
-        },
-        {
-          validationName: 'CEP',
-          errorMsg: 'CEP inválido',
-          valid: '02354128',
-        },
-        {
-          validationName: 'Date',
-          errorMsg: 'Data inválida',
-          valid: '20/11/1981',
-          invalid: '30/02/1950',
-        },
-        {
-          validationName: 'Email',
-          errorMsg: 'E-mail inválido',
-          valid: 'foo@baz.com',
-          invalid: 'foo@baz',
-        },
-        {
-          validationName: 'MaxLength',
-          errorMsg: 'Maximo de 3 caracteres',
-          valid: '123',
-          invalid: '123456789',
-        },
-        {
-          validationName: 'MinLength',
-          errorMsg: 'Mínimo de 8 caracteres',
-          valid: '12345678',
-          invalid: '12345',
-        },
-      ];
-
-      validationTests.forEach(execTest);
+      expect(
+        screen.queryByText('Maximo de 3 caracteres'),
+      ).not.toBeInTheDocument();
     });
 
-    it('Should exec validations in diferent formats', () => {
+    validationTests.forEach(test => {
+      it(`should validate ${test.validationName}`, async () => {
+        render(FormWithValidations());
+        const input = screen.getByRole('textbox', { name: test.fieldName });
+        if (test.invalid) {
+          await userEvent.type(input, test.invalid);
+        }
+
+        const button = screen.getByRole('button', { value: 'Enviar' });
+        fireEvent.click(button);
+
+        expect(screen.getByText(test.errorMsg)).toBeInTheDocument();
+
+        await userEvent.type(input, test.valid);
+
+        expect(screen.queryByText(test.errorMsg)).not.toBeInTheDocument();
+      });
+    });
+
+    it('Should exec validations in diferent formats', async () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Input
@@ -161,32 +169,31 @@ describe('Form component ', () => {
               },
             ]}
           />
+          <Button type="submit"> Enviar </Button>
         </Form>
       );
 
-      const wrapper = shallow(form);
-      wrapper.simulate('submit', mockEvent);
+      render(form);
+
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
       expect(onSubmitCallback).toHaveBeenCalled();
 
-      const input = wrapper.find(Input);
+      const input = screen.getByRole('textbox', { name: /Name/i });
+      await userEvent.type(input, 'Some value');
 
-      input.simulate('change', {
-        target: { name: input.prop('name'), value: 'Some value' },
-      });
-
-      wrapper.simulate('submit', mockEvent);
+      fireEvent.click(button);
 
       expect(onValidSubmitCallback).toHaveBeenCalled();
     });
 
-    it('Should exec validation in nested input ', () => {
+    it('Should exec validation in nested input ', async () => {
       const errorMsg = 'Valor mínimo de caracteres não alcançado';
       const formNested = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Input
-            className="parent"
-            name="lastname"
+            name="lastName"
             label="Lastname"
             minLength="20"
             validate={[
@@ -197,60 +204,42 @@ describe('Form component ', () => {
               },
             ]}
           />
-          <div>
-            <div>
-              <Input
-                className="nested"
-                name="name"
-                label="Name"
-                minLength="20"
-                validate={[
-                  validations.Required,
-                  {
-                    validate: validations.MinLength,
-                    error: errorMsg,
-                  },
-                ]}
-              />
-            </div>
-          </div>
+          <Input
+            name="name"
+            label="Name"
+            minLength="20"
+            validate={[
+              validations.Required,
+              {
+                validate: validations.MinLength,
+                error: errorMsg,
+              },
+            ]}
+          />
+          <Button type="submit"> Enviar </Button>
         </Form>
       );
 
-      const wrapper = shallow(formNested);
-      wrapper.simulate('submit', mockEvent);
+      render(formNested);
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
       expect(onSubmitCallback).toHaveBeenCalled();
 
-      const parentInput = wrapper.find('.parent');
-      const nestedInput = wrapper.find('.nested');
+      const inputName = screen.getByRole('textbox', { name: /Name/ });
+      const inputLastName = screen.getByRole('textbox', { name: /Lastname/ });
 
-      parentInput.simulate('change', {
-        target: { name: parentInput.prop('name'), value: 'Some value' },
-      });
+      await userEvent.type(inputName, 'Some value');
+      await userEvent.type(inputLastName, 'Some value');
 
-      nestedInput.simulate('change', {
-        target: { name: nestedInput.prop('name'), value: 'Some value' },
-      });
-
-      wrapper.simulate('submit', mockEvent);
+      fireEvent.click(button);
       expect(onValidSubmitCallback).not.toHaveBeenCalled();
 
-      parentInput.simulate('change', {
-        target: {
-          name: parentInput.prop('name'),
-          value: 'Some value bigger than other one',
-        },
-      });
+      await userEvent.type(inputName, 'Some value bigger than other one');
+      await userEvent.type(inputLastName, 'Some value bigger than other one');
 
-      nestedInput.simulate('change', {
-        target: {
-          name: nestedInput.prop('name'),
-          value: 'Some value d bigger than other one',
-        },
-      });
+      fireEvent.click(button);
 
-      wrapper.simulate('submit', mockEvent);
       expect(onValidSubmitCallback).toHaveBeenCalled();
     });
   });
@@ -260,34 +249,31 @@ describe('Form component ', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Input name="foo" validate={validations.Required} />
+          <Button type="submit"> Enviar </Button>
         </Form>
       );
 
-      const wrapper = shallow(form);
-      expect(wrapper.state('valid')).toBe(false);
-
-      wrapper.simulate('submit', mockEvent);
+      render(form);
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
       expect(onSubmitCallback).toHaveBeenCalled();
       expect(onValidSubmitCallback).not.toHaveBeenCalled();
-      expect(wrapper.state('valid')).toBe(false);
     });
 
     it('Should be true when everything is ok', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>
           <Input name="foo" validate={validations.Required} value="foo" />
+          <Button type="submit"> Enviar </Button>
         </Form>
       );
-
-      const wrapper = shallow(form);
-      expect(wrapper.state('valid')).toBe(false);
-
-      wrapper.simulate('submit', mockEvent);
+      render(form);
+      const button = screen.getByRole('button', { value: 'Enviar' });
+      fireEvent.click(button);
 
       expect(onSubmitCallback).toHaveBeenCalledWith({ valid: true });
       expect(onValidSubmitCallback).toHaveBeenCalledWith({ foo: 'foo' });
-      expect(wrapper.state('valid')).toBe(true);
     });
   });
 });
