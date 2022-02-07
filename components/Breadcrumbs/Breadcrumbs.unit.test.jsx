@@ -60,7 +60,7 @@ describe('<Breadcrumbs />', () => {
   });
 
   it('should receive an error when items length less than 2', () => {
-    const consoleError = jest.spyOn(console, 'error');
+    const consoleError = jest.spyOn(console, 'error').mockImplementation();
 
     const { container } = render(
       <Breadcrumbs items={[{ label: 'some-label', url: 'some-url' }]} />,
@@ -68,5 +68,7 @@ describe('<Breadcrumbs />', () => {
 
     expect(container.firstChild).toBeNull();
     expect(consoleError).toHaveBeenCalled();
+
+    jest.restoreAllMocks();
   });
 });
