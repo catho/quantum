@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import SkeletonBase from './SkeletonBase';
+import { theme } from '../../shared';
 
 const SkeletonButton = styled(SkeletonBase)`
   border-radius: 4px;
@@ -26,10 +27,15 @@ const SkeletonButton = styled(SkeletonBase)`
 SkeletonButton.displayName = 'SkeletonButton';
 
 SkeletonButton.propTypes = {
-  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']).isRequired,
+  size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
   theme: PropTypes.shape({
     spacing: PropTypes.object,
-  }).isRequired,
+  }),
+};
+
+SkeletonButton.defaultProps = {
+  size: 'medium',
+  theme,
 };
 
 export default SkeletonButton;

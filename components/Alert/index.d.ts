@@ -1,17 +1,18 @@
 import React from 'react';
+import { IconNames } from '../Icon';
 
 export interface AlertProps {
     children: React.ReactNode;
     onClose?: () => {} | React.MouseEventHandler<HTMLButtonElement> | React.TouchEventHandler<HTMLButtonElement>;
-    icon?: string;
+    icon?: IconNames | string;
     skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
     theme?: {
         baseFontSize?: number;
-        colors?: object;
-        spacing?: object;
+        colors?: {};
+        spacing?: {};
         components?: {
-            alert?: object;
-            button?: object;
+            alert?: {};
+            button?: {};
         };
     };
 }

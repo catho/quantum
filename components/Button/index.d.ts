@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
+import { IconNames } from '../Icon';
 import IconButton from './IconButton';
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     center?: boolean;
     disabled?: boolean;
     stroked?: boolean;
     full?: boolean;
-    icon?: string;
+    icon?: IconNames | string;
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
     skin?: 'neutral' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
     type?: 'button' | 'reset' | 'submit';
@@ -15,14 +16,13 @@ export interface ButtonProps {
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
     theme?: {
         baseFontSize?: number;
-        colors?: object;
-        spacing?: object;
-        breakpoints?: object;
+        colors?: {};
+        spacing?: {};
+        breakpoints?: {};
         components?: {
-            button: object;
+            button: {};
         };
     };
-    id?: string;
 }
 
 export default class Button extends React.Component<ButtonProps> {

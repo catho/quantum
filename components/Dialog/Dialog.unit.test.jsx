@@ -1,18 +1,11 @@
 import React from 'react';
-import toJson from 'enzyme-to-json';
-import { mount } from 'enzyme';
+import { render, fireEvent, screen } from '@testing-library/react';
 import Dialog from './Dialog';
 import Example from '../../stories/Dialog/ExampleStyle';
 
 describe('Dialog', () => {
-  let component;
-
-  it('should render the dialog with content', () => {
-    expect(toJson(mount(<Dialog />))).toMatchSnapshot();
-  });
-
   it('should render the Dialog with children', () => {
-    component = mount(
+    render(
       <Dialog>
         <Example>
           <h3>Some text</h3>
@@ -20,29 +13,29 @@ describe('Dialog', () => {
       </Dialog>,
     );
 
-    expect(component.find('h3').exists()).toBe(true);
+    expect(
+      screen.getByRole('heading', { name: /Some Text/i }),
+    ).toBeInTheDocument();
   });
 
   it('should call onClose when clicked outside content', () => {
     const onCloseFunc = jest.fn();
-    component = mount(<Dialog onClose={onCloseFunc} />);
+    render(<Dialog onClose={onCloseFunc} />);
 
-    component.find('div').simulate('click');
+    const overlay = screen.getByRole('dialog');
+    fireEvent.click(overlay);
 
     expect(onCloseFunc).toHaveBeenCalled();
-
-    component.unmount();
   });
 
   it('should not call onClose when disableClickOutside is passed', () => {
     const onCloseFunc = jest.fn();
-    component = mount(<Dialog onClose={onCloseFunc} disableClickOutside />);
+    render(<Dialog onClose={onCloseFunc} disableClickOutside />);
 
-    component.find('div').simulate('click');
+    const overlay = screen.getByRole('dialog');
+    fireEvent.click(overlay);
 
     expect(onCloseFunc).not.toHaveBeenCalled();
-
-    component.unmount();
   });
 
   it('should call onClose when "Escape" key is pressed', () => {
@@ -54,7 +47,12 @@ describe('Dialog', () => {
     });
 
     const onCloseMock = jest.fn();
-    mount(<Dialog onClose={onCloseMock} />);
+
+    render(<Dialog onClose={onCloseMock} />);
+
+    eventMap.keydown({ key: 'Enter' });
+
+    expect(onCloseMock).not.toHaveBeenCalled();
 
     eventMap.keydown({ key: 'Escape' });
 
@@ -63,7 +61,7 @@ describe('Dialog', () => {
 
   it('should call onClose after 1 second', async () => {
     const onCloseTimeout = jest.fn();
-    mount(<Dialog onClose={onCloseTimeout} closeOnTime={1} />);
+    render(<Dialog onClose={onCloseTimeout} closeOnTime={1} />);
 
     await new Promise(r => setTimeout(r, 1000));
 
@@ -72,12 +70,11 @@ describe('Dialog', () => {
 
   it('should call onClickOutside when clicked outside content', () => {
     const onClickOutside = jest.fn();
-    component = mount(<Dialog onClickOutside={onClickOutside} />);
+    render(<Dialog onClickOutside={onClickOutside} />);
 
-    component.find('div').simulate('click');
+    const overlay = screen.getByRole('dialog');
+    fireEvent.click(overlay);
 
     expect(onClickOutside).toHaveBeenCalled();
-
-    component.unmount();
   });
 });

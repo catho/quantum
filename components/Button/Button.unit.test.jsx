@@ -1,79 +1,132 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render, screen } from '@testing-library/react';
 import Button from './Button';
+import { colors } from '../shared/theme';
 
 describe('Button component', () => {
   it('Should match the snapshot', () => {
-    expect(renderer.create(<Button>Text</Button>).toJSON()).toMatchSnapshot();
+    const { container } = render(<Button>Text</Button>);
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('when full prop is set', () => {
-    expect(
-      renderer.create(<Button full>Full</Button>).toJSON(),
-    ).toMatchSnapshot();
+    const { container } = render(<Button full>Text</Button>);
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('when center prop is set', () => {
-    expect(
-      renderer.create(<Button center>Center</Button>).toJSON(),
-    ).toMatchSnapshot();
+    const { container } = render(<Button center>Text</Button>);
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('should render a button only icon state ', () => {
-    expect(renderer.create(<Button icon="info" />).toJSON()).toMatchSnapshot();
-    expect(
-      renderer.create(<Button icon="info" size="xsmall" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Button icon="info" size="small" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Button icon="info" size="large" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer.create(<Button icon="info" size="xlarge" />).toJSON(),
-    ).toMatchSnapshot();
+    const { container: defaultSize } = render(<Button icon="info" />);
+    const { container: xSmallSize } = render(
+      <Button icon="info" size="xsmall" />,
+    );
+    const { container: smallSize } = render(
+      <Button icon="info" size="small" />,
+    );
+    const { container: largeSize } = render(
+      <Button icon="info" size="large" />,
+    );
+    const { container: xLargeSizeIcon } = render(
+      <Button icon="info" size="xlarge" />,
+    );
+
+    expect(defaultSize.firstChild).toMatchSnapshot();
+    expect(xSmallSize.firstChild).toMatchSnapshot();
+    expect(smallSize.firstChild).toMatchSnapshot();
+    expect(largeSize.firstChild).toMatchSnapshot();
+    expect(xLargeSizeIcon.firstChild).toMatchSnapshot();
   });
 
   describe('when there is a skin set', () => {
     it('should match secondary snapshot', () => {
-      const neutral = <Button skin="neutral">neutral</Button>;
-      const primary = <Button skin="primary">primary</Button>;
-      const success = <Button skin="success">success</Button>;
-      const warning = <Button skin="warning">warning</Button>;
-      const error = <Button skin="error">error</Button>;
+      const { container: neutral } = render(
+        <Button skin="neutral">neutral</Button>,
+      );
+      const { container: primary } = render(
+        <Button skin="primary">primary</Button>,
+      );
+      const { container: success } = render(
+        <Button skin="success">success</Button>,
+      );
+      const { container: warning } = render(
+        <Button skin="warning">warning</Button>,
+      );
+      const { container: error } = render(<Button skin="error">error</Button>);
 
-      expect(renderer.create(neutral).toJSON()).toMatchSnapshot();
-      expect(renderer.create(primary).toJSON()).toMatchSnapshot();
-      expect(renderer.create(success).toJSON()).toMatchSnapshot();
-      expect(renderer.create(warning).toJSON()).toMatchSnapshot();
-      expect(renderer.create(error).toJSON()).toMatchSnapshot();
+      expect(neutral.firstChild).toMatchSnapshot();
+      expect(primary.firstChild).toMatchSnapshot();
+      expect(success.firstChild).toMatchSnapshot();
+      expect(warning.firstChild).toMatchSnapshot();
+      expect(error.firstChild).toMatchSnapshot();
     });
   });
 
   describe('when there is a type set', () => {
     it('should match secondary snapshot', () => {
-      const button = <Button type="button">button</Button>;
-      const reset = <Button type="reset">reset</Button>;
-      const submit = <Button type="submit">submit</Button>;
+      const { container: button } = render(
+        <Button type="button">button</Button>,
+      );
+      const { container: reset } = render(<Button type="reset">reset</Button>);
+      const { container: submit } = render(
+        <Button type="submit">submit</Button>,
+      );
 
-      expect(renderer.create(button).toJSON()).toMatchSnapshot();
-      expect(renderer.create(reset).toJSON()).toMatchSnapshot();
-      expect(renderer.create(submit).toJSON()).toMatchSnapshot();
+      expect(button.firstChild).toMatchSnapshot();
+      expect(reset.firstChild).toMatchSnapshot();
+      expect(submit.firstChild).toMatchSnapshot();
     });
   });
 
   describe('with an icon', () => {
     it('should match secondary snapshot', () => {
-      const search = <Button icon="search">Search</Button>;
-      const payment = <Button icon="payment">Payment</Button>;
-      const lock = <Button icon="lock">Lock</Button>;
-      const star = <Button icon="star">Star</Button>;
+      const { container: search } = render(
+        <Button icon="search">Search</Button>,
+      );
+      const { container: payment } = render(
+        <Button icon="payment">Payment</Button>,
+      );
+      const { container: lock } = render(<Button icon="lock">Lock</Button>);
+      const { container: star } = render(<Button icon="star">Star</Button>);
 
-      expect(renderer.create(search).toJSON()).toMatchSnapshot();
-      expect(renderer.create(payment).toJSON()).toMatchSnapshot();
-      expect(renderer.create(lock).toJSON()).toMatchSnapshot();
-      expect(renderer.create(star).toJSON()).toMatchSnapshot();
+      expect(search.firstChild).toMatchSnapshot();
+      expect(payment.firstChild).toMatchSnapshot();
+      expect(lock.firstChild).toMatchSnapshot();
+      expect(star.firstChild).toMatchSnapshot();
+    });
+  });
+
+  it('should have disabled and stroked styles', () => {
+    render(
+      <Button stroked disabled>
+        Text
+      </Button>,
+    );
+
+    const button = screen.getByRole('button', { name: /Text/i });
+
+    expect(button).toHaveStyle({
+      'background-color': `${colors.neutral[300]}`,
+      color: `${colors.neutral[700]}`,
+      border: `2px solid ${colors.neutral[500]}`,
+    });
+  });
+
+  it('should have disabled styles', () => {
+    render(<Button disabled>Text</Button>);
+
+    const button = screen.getByRole('button', { name: /Text/i });
+
+    expect(button).toHaveStyle({
+      'background-color': `${colors.neutral[300]}`,
+      color: `${colors.neutral[700]}`,
+      border: `2px solid ${colors.neutral[300]}`,
     });
   });
 });

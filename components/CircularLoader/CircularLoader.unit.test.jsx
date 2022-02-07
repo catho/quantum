@@ -1,10 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import CircularLoader from './CircularLoader';
 
 describe('CircularLoader component', () => {
   it('Should match the snapshot of a simple circular loader', () => {
-    const simpleCircularLoader = <CircularLoader />;
-    expect(renderer.create(simpleCircularLoader).toJSON()).toMatchSnapshot();
+    const { container } = render(<CircularLoader />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

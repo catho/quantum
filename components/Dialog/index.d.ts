@@ -3,7 +3,7 @@ import React from 'react';
 export interface DialogProps {
   children: React.ReactNode[] | React.ReactNode;
   theme?: {
-    colors?: object;
+    colors?: {};
   };
   onClose?: () => void;
   onClickOutside?: () => void;

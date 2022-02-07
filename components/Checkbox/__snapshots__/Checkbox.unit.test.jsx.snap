@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> should match the snapshot 1`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   display: block;
   margin-bottom: 5px;
 }
@@ -46,52 +47,42 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={false}
-      className="c1 c2"
-      disabled={false}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        class="c1 c2"
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
-    >
-      
-    </label>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
   </div>
-  
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 2`] = `
-.c6 {
+<DocumentFragment>
+  .c6 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -151,56 +142,47 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={false}
-      className="c1 c2"
-      disabled={false}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        class="c1 c2"
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
+    <span
+      class="c6"
     >
-      
-    </label>
+      error message
+    </span>
   </div>
-  <span
-    className="c6"
-  >
-    error message
-  </span>
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 3`] = `
-.c6 {
+<DocumentFragment>
+  .c6 {
   color: #ac001a;
   margin-top: 8px;
   cursor: text;
@@ -260,56 +242,48 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={true}
-      className="c1 c2"
-      disabled={false}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        checked=""
+        class="c1 c2"
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
+    <span
+      class="c6"
     >
-      
-    </label>
+      error message
+    </span>
   </div>
-  <span
-    className="c6"
-  >
-    error message
-  </span>
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 4`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   display: block;
   margin-bottom: 5px;
 }
@@ -358,52 +332,43 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={true}
-      className="c1 c2"
-      disabled={false}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        checked=""
+        class="c1 c2"
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
-    >
-      
-    </label>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
   </div>
-  
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 5`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   display: block;
   margin-bottom: 5px;
 }
@@ -452,52 +417,43 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={false}
-      className="c1 c2"
-      disabled={true}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        class="c1 c2"
+        disabled=""
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
-    >
-      
-    </label>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
   </div>
-  
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 6`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   display: block;
   margin-bottom: 5px;
 }
@@ -546,52 +502,44 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={false}
-      className="c1 c2"
-      disabled={false}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        class="c1 c2"
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
-    >
-      Some text
-    </label>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      >
+        Some text
+      </label>
+    </div>
   </div>
-  
-</div>
+</DocumentFragment>
 `;
 
 exports[`<Checkbox /> should match the snapshot 7`] = `
-.c4 {
+<DocumentFragment>
+  .c4 {
   display: block;
   margin-bottom: 5px;
 }
@@ -640,46 +588,37 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 }
 
 <div
-  className="Checkbox__Wrapper-sc-1ca5whm-0"
->
-  <div
-    className="c0"
+    class="Checkbox__Wrapper-sc-1ca5whm-0"
   >
-    <input
-      checked={true}
-      className="c1 c2"
-      disabled={true}
-      id=""
-      name="foo"
-      onChange={[Function]}
-      type="checkbox"
-      value=""
-    />
-    <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      viewBox="0 0 24 24"
+    <div
+      class="c0"
     >
-      <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+      <input
+        checked=""
+        class="c1 c2"
+        disabled=""
+        id=""
+        name="foo"
+        type="checkbox"
+        value=""
       />
-    </svg>
-    <label
-      className="c3 c4 c5"
-      htmlFor=""
-    >
-      
-    </label>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        />
+      </svg>
+      <label
+        class="c3 c4 c5"
+        for=""
+      />
+    </div>
   </div>
-  
-</div>
+</DocumentFragment>
 `;

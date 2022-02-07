@@ -1,279 +1,362 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import renderer from 'react-test-renderer';
-import diff from 'jest-diff';
-import stripAnsi from 'strip-ansi';
+import { fireEvent, render, screen } from '@testing-library/react';
+
 import CheckboxGroup from './CheckboxGroup';
 
-const _create = ({
-  enzymeMethod = shallow,
-  groupOptions = {},
-  children = [
-    { name: 'Foo', checked: true },
-    { name: 'Bar' },
-    { name: 'Baz', checked: true },
-  ],
-  Item = CheckboxGroup.Checkbox,
-} = {}) => ({
-  withOptions: enzymeMethod(
-    <CheckboxGroup
-      options={children}
-      {...groupOptions}
-      type={Item === CheckboxGroup.Checkbox ? 'checkbox' : 'button'}
-    />,
-  ),
-  withChildren: enzymeMethod(
-    <CheckboxGroup {...groupOptions}>
-      {children.map(option => (
-        <Item {...option} key={option.name} />
-      ))}
-    </CheckboxGroup>,
-  ),
+const options = [
+  { label: 'Foo', name: 'Foo' },
+  { label: 'Bar', name: 'Bar' },
+  { label: 'Baz', name: 'Baz' },
+];
+
+const checkedOptions = [
+  { label: 'Checked Label - 1', name: 'Checked Option 1', checked: true },
+  { label: 'Checked Label - 2', name: 'Checked Option 2', checked: true },
+];
+
+const disabledOptions = [
+  {
+    label: 'Disabled Checked Label - 1',
+    name: 'Disabled Option 1',
+    disabled: true,
+  },
+  {
+    label: 'Disabled Checked Label - 2',
+    name: 'Disabled Option 2',
+    disabled: true,
+  },
+];
+
+const mixedOptions = [...options, ...checkedOptions, ...disabledOptions];
+
+const onChangeMock = jest.fn();
+
+describe('Checkbox group', () => {
+  it('should match snapshots', () => {
+    expect(
+      render(<CheckboxGroup options={options} />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<CheckboxGroup options={checkedOptions} />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<CheckboxGroup options={disabledOptions} />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<CheckboxGroup options={mixedOptions} />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} error="Some error" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<CheckboxGroup options={mixedOptions} inline />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup>
+          {mixedOptions.map(item => (
+            <CheckboxGroup.Checkbox
+              key={item.name}
+              name={item.name}
+              label={item.label}
+              disabled={item.disabled}
+              checked={item.checked}
+            />
+          ))}
+        </CheckboxGroup>,
+      ).asFragment(),
+    ).toMatchSnapshot();
+  });
+
+  it('should match snapshots with different sizes', () => {
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="xsmall" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} inline size="xsmall" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="small" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} inline size="small" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="large" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} inline size="large" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="xlarge" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} inline size="xlarge" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+  });
+
+  it('should call on change function when an unchecked option is clicked', () => {
+    render(<CheckboxGroup options={mixedOptions} onChange={onChangeMock} />);
+
+    const uncheckedItems = screen.getAllByRole('checkbox', { checked: false });
+
+    uncheckedItems.forEach(item => {
+      fireEvent.click(item);
+    });
+
+    expect(onChangeMock).toHaveBeenCalledTimes(5);
+  });
+
+  it('should call on change function when a checked option is clicked', () => {
+    render(<CheckboxGroup options={mixedOptions} onChange={onChangeMock} />);
+
+    const checkedItems = screen.getAllByRole('checkbox', { checked: true });
+
+    checkedItems.forEach(item => {
+      fireEvent.click(item);
+    });
+
+    expect(onChangeMock).toHaveBeenCalledTimes(2);
+  });
 });
 
-const _childrenTest = CheckboxItem => {
-  describe(`<${CheckboxItem.displayName} />`, () => {
-    it(`should render three <${CheckboxItem.displayName} />`, () => {
-      const { withOptions, withChildren } = _create({
-        Item: CheckboxItem,
-      });
+describe('Checkbox group with checkbox button', () => {
+  it('should match snapshots', () => {
+    expect(
+      render(<CheckboxGroup options={options} type="button" />).asFragment(),
+    ).toMatchSnapshot();
 
-      expect(withOptions.find(CheckboxItem)).toHaveLength(3);
-      expect(withChildren.find(CheckboxItem)).toHaveLength(3);
-    });
+    expect(
+      render(
+        <CheckboxGroup options={checkedOptions} type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
 
-    it(`should call onChange on every <${CheckboxItem.displayName} /> change`, () => {
-      const onChildrenChangeMock = jest.fn();
-      const onOptionsChangeMock = jest.fn();
+    expect(
+      render(
+        <CheckboxGroup options={disabledOptions} type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
 
-      const { withChildren } = _create({
-        groupOptions: {
-          onChange: onChildrenChangeMock,
-        },
-        enzymeMethod: mount,
-        Item: CheckboxItem,
-      });
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
 
-      const { withOptions } = _create({
-        groupOptions: {
-          onChange: onOptionsChangeMock,
-        },
-        enzymeMethod: mount,
-        Item: CheckboxItem,
-      });
+    expect(
+      render(
+        <CheckboxGroup
+          options={mixedOptions}
+          error="Some error"
+          type="button"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
 
-      withChildren.find(CheckboxItem).forEach(checkbox =>
-        checkbox.find('HiddenCheckbox').simulate('change', {
-          target: {
-            checked: true,
-            name: checkbox.prop('name'),
-          },
-        }),
-      );
-
-      withOptions.find(CheckboxItem).forEach(checkbox => {
-        checkbox.find('HiddenCheckbox').simulate('change', {
-          target: {
-            checked: true,
-            name: checkbox.prop('name'),
-          },
-        });
-      });
-
-      expect(onChildrenChangeMock).toBeCalledTimes(3);
-      expect(onOptionsChangeMock).toBeCalledTimes(3);
-    });
-  });
-};
-
-describe('<CheckboxGroup />', () => {
-  describe('snapshot', () => {
-    it('simple with options', () => {
-      const options = [
-        { name: 'Foo', label: 'Foo' },
-        { name: 'Bar', label: 'Bar' },
-        { name: 'Baz', label: 'Baz' },
-      ];
-
-      const component = <CheckboxGroup options={options} />;
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('simple with options and type prop as "button"', () => {
-      const options = [
-        { name: 'Foo', label: 'Foo' },
-        { name: 'Bar', label: 'Bar' },
-        { name: 'Baz', label: 'Baz' },
-      ];
-
-      const component = <CheckboxGroup options={options} type="button" />;
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('simple with <CheckboxGroup.Checkbox />', () => {
-      const component = (
-        <CheckboxGroup>
-          <CheckboxGroup.Checkbox name="Foo">Foo</CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Baz">Baz</CheckboxGroup.Checkbox>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('simple with <CheckboxGroup.Button />', () => {
-      const component = (
-        <CheckboxGroup>
-          <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with <CheckboxGroup.Checkbox /> with an error', () => {
-      const component = (
-        <CheckboxGroup error="Error Message">
-          <CheckboxGroup.Checkbox name="Foo">Foo</CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Baz">Baz</CheckboxGroup.Checkbox>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with <CheckboxGroup.Button /> with an error', () => {
-      const component = (
-        <CheckboxGroup error="Error Message">
-          <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with <CheckboxGroup.Checkbox /> with disabled options', () => {
-      const component = (
-        <CheckboxGroup>
-          <CheckboxGroup.Checkbox name="Foo" disabled>
-            Foo
-          </CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
-          <CheckboxGroup.Checkbox name="Baz" disabled checked>
-            Baz
-          </CheckboxGroup.Checkbox>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with <CheckboxGroup.Button /> with disabled options', () => {
-      const component = (
-        <CheckboxGroup>
-          <CheckboxGroup.Button name="Foo" disabled>
-            Foo
-          </CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz" disabled checked>
-            Baz
-          </CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('should render the same', () => {
-      const options = [
-        { name: 'Foo', label: 'Foo label' },
-        { name: 'Bar', label: 'Bar label' },
-        { name: 'Baz', label: 'Baz label' },
-      ];
-
-      const snapOptions = renderer
-        .create(<CheckboxGroup options={options} />)
-        .toJSON();
-
-      const snapComposable = renderer
-        .create(
-          <CheckboxGroup>
-            <CheckboxGroup.Checkbox name="Foo">Foo</CheckboxGroup.Checkbox>
-            <CheckboxGroup.Checkbox name="Bar">Bar</CheckboxGroup.Checkbox>
-            <CheckboxGroup.Checkbox name="Baz">Baz</CheckboxGroup.Checkbox>
-          </CheckboxGroup>,
-        )
-        .toJSON();
-
-      expect(
-        `Snapshot Diff:\n ${stripAnsi(diff(snapOptions, snapComposable))}`,
-      ).toMatchSnapshot();
-    });
-
-    it('should render the same, when using buttons', () => {
-      const options = [
-        { name: 'Foo', label: 'Foo label' },
-        { name: 'Bar', label: 'Bar label' },
-        { name: 'Baz', label: 'Baz label' },
-      ];
-
-      const snapOptions = renderer
-        .create(<CheckboxGroup options={options} type="button" />)
-        .toJSON();
-
-      const snapComposable = renderer
-        .create(
-          <CheckboxGroup>
-            <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
-            <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-            <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
-          </CheckboxGroup>,
-        )
-        .toJSON();
-
-      expect(
-        `Snapshot Diff:\n ${stripAnsi(diff(snapOptions, snapComposable))}`,
-      ).toMatchSnapshot();
-    });
-
-    it('with <CheckboxGroup.Button /> and icons', () => {
-      const component = (
-        <CheckboxGroup>
-          <CheckboxGroup.Button name="Foo" icon="menu">
-            Foo
-          </CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz" icon="lock">
-            Baz
-          </CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with inline <CheckboxGroup.Button />', () => {
-      const component = (
-        <CheckboxGroup inline>
-          <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
-
-    it('with size <CheckboxGroup.Button />', () => {
-      const component = (
-        <CheckboxGroup size="large">
-          <CheckboxGroup.Button name="Foo">Foo</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Bar">Bar</CheckboxGroup.Button>
-          <CheckboxGroup.Button name="Baz">Baz</CheckboxGroup.Button>
-        </CheckboxGroup>
-      );
-      expect(renderer.create(component)).toMatchSnapshot();
-    });
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} inline type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
   });
 
-  _childrenTest(CheckboxGroup.Checkbox);
-  _childrenTest(CheckboxGroup.Button);
+  it('should match snapshots with children', () => {
+    expect(
+      render(
+        <CheckboxGroup>
+          <>
+            {mixedOptions.map(item => (
+              <CheckboxGroup.Button
+                key={item.name}
+                name={item.name}
+                label={item.label}
+                disabled={item.disabled}
+                checked={item.checked}
+              />
+            ))}
+
+            <CheckboxGroup.Button name="With value" value="With value" />
+
+            <CheckboxGroup.Button
+              name="Another name"
+              error="Some error"
+              onChange={() => {}}
+            >
+              Another value
+            </CheckboxGroup.Button>
+          </>
+        </CheckboxGroup>,
+      ).asFragment(),
+    ).toMatchSnapshot();
+  });
+
+  it('should match snapshots with different sizes', () => {
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="xsmall" type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup
+          options={mixedOptions}
+          inline
+          size="xsmall"
+          type="button"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="small" type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup
+          options={mixedOptions}
+          inline
+          size="small"
+          type="button"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="large" type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup
+          options={mixedOptions}
+          inline
+          size="large"
+          type="button"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup options={mixedOptions} size="xlarge" type="button" />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <CheckboxGroup
+          options={mixedOptions}
+          inline
+          size="xlarge"
+          type="button"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+  });
+
+  it('should call on change function when an unchecked option is clicked', () => {
+    render(
+      <CheckboxGroup
+        options={mixedOptions}
+        type="button"
+        onChange={onChangeMock}
+      />,
+    );
+
+    const uncheckedItems = screen.getAllByRole('checkbox', { checked: false });
+
+    uncheckedItems.forEach(item => {
+      fireEvent.click(item);
+    });
+
+    expect(onChangeMock).toHaveBeenCalledTimes(5);
+  });
+
+  it('should call on change function when a checked option is clicked', () => {
+    render(
+      <CheckboxGroup
+        options={mixedOptions}
+        type="button"
+        onChange={onChangeMock}
+      />,
+    );
+
+    const checkedItems = screen.getAllByRole('checkbox', { checked: true });
+
+    checkedItems.forEach(item => {
+      fireEvent.click(item);
+    });
+
+    expect(onChangeMock).toHaveBeenCalledTimes(2);
+  });
+
+  it('should call on change function on children', () => {
+    render(
+      <CheckboxGroup onChange={onChangeMock}>
+        <>
+          {mixedOptions.map(item => (
+            <CheckboxGroup.Button
+              key={item.name}
+              name={item.name}
+              label={item.label}
+              disabled={item.disabled}
+              checked={item.checked}
+            />
+          ))}
+
+          <CheckboxGroup.Button name="With value" value="With value" />
+
+          <CheckboxGroup.Button name="Another name" error="Some error">
+            Another value
+          </CheckboxGroup.Button>
+        </>
+      </CheckboxGroup>,
+    );
+
+    const items = screen.getAllByRole('checkbox');
+
+    items.forEach(item => {
+      fireEvent.click(item);
+    });
+
+    expect(onChangeMock).toHaveBeenCalledTimes(9);
+  });
 });

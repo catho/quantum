@@ -4,9 +4,9 @@ export interface ChargeBarProps {
     skin?: 'neutral' | 'primary' | 'secondary' | 'success';
     theme?: {
         components?: {
-            chargeBar?: object;
+            chargeBar?: {};
         };
-        spacing: object;
+        spacing: {};
         baseFontSize: number;
     };
     width?: string;

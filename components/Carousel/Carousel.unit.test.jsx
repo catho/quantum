@@ -1,7 +1,7 @@
 import './watchMedia.mock';
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+
 import Carousel from './Carousel';
 
 const content = [
@@ -57,56 +57,49 @@ const content = [
 
 describe('<Carousel />', () => {
   it('should match the snapshot', () => {
+    expect(render(<Carousel cards={content} />).asFragment()).toMatchSnapshot();
     expect(
-      renderer.create(<Carousel cards={content} />).toJSON(),
+      render(<Carousel cards={content} cardSize="small" />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Carousel cards={content} cardSize="small" />).toJSON(),
+      render(<Carousel cards={content} cardSize="large" />).asFragment(),
     ).toMatchSnapshot();
     expect(
-      renderer.create(<Carousel cards={content} cardSize="large" />).toJSON(),
-    ).toMatchSnapshot();
-    expect(
-      renderer
-        .create(
-          <Carousel cards={content} cardSize="large" arrowColor="primary" />,
-        )
-        .toJSON(),
+      render(
+        <Carousel cards={content} cardSize="large" arrowColor="primary" />,
+      ).asFragment(),
     ).toMatchSnapshot();
   });
 
   it('should not have dots when the card size is small', () => {
-    const component = mount(<Carousel cards={content} cardSize="small" />);
-    expect(component.find('.slick-slider .slick-dots').exists()).toBeFalsy();
+    render(<Carousel cards={content} cardSize="small" />);
+
+    expect(screen.queryAllByRole('button')).toHaveLength(0);
   });
 
   it('should hide dots when dotsPagination is false', () => {
-    const componentMediumDotsFalse = mount(
-      <Carousel cards={content} dotsPagination={false} />,
-    );
-    expect(
-      componentMediumDotsFalse.find('.slick-slider .slick-dots').exists(),
-    ).toBeFalsy();
+    render(<Carousel cards={content} dotsPagination={false} />);
 
-    const componentLargeDotsFalse = mount(
+    expect(screen.queryAllByRole('button')).toHaveLength(0);
+  });
+
+  it('should hide dots when dotsPagination is false and card size is large', () => {
+    render(
       <Carousel cards={content} cardSize="large" dotsPagination={false} />,
     );
-    expect(
-      componentLargeDotsFalse.find('.slick-slider .slick-dots').exists(),
-    ).toBeFalsy();
+
+    expect(screen.queryAllByRole('button')).toHaveLength(0);
   });
 
   it('should show dots', () => {
-    const componentMediumDotsThruthy = mount(<Carousel cards={content} />);
-    expect(
-      componentMediumDotsThruthy.find('.slick-slider .slick-dots').exists(),
-    ).toBeTruthy();
+    render(<Carousel cards={content} />);
 
-    const componentLargeDotsThruthy = mount(
-      <Carousel cards={content} cardSize="large" />,
-    );
-    expect(
-      componentLargeDotsThruthy.find('.slick-slider .slick-dots').exists(),
-    ).toBeTruthy();
+    expect(screen.getAllByRole('button')).toHaveLength(8);
+  });
+
+  it('should show dots when card size is large', () => {
+    render(<Carousel cards={content} cardSize="large" />);
+
+    expect(screen.getAllByRole('button')).toHaveLength(8);
   });
 });

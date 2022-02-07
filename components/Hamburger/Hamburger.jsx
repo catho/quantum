@@ -26,7 +26,7 @@ const NotificationIcon = styled.span`
   position: absolute;
   width: ${NOTIFICATION_SIZE}px;
   height: ${NOTIFICATION_SIZE}px;
-  border: solid 2px ${props => colors.neutral[props.inverted ? 0 : 1000]}}};
+  border: solid 2px ${props => colors.neutral[props.inverted ? 0 : 1000]};
   top: 0;
   right: 0;
   border-radius: ${NOTIFICATION_SIZE}px;
@@ -61,7 +61,11 @@ const Hamburger = ({
 
   return (
     <HamburgerWrapper aria-live="polite">
-      {!isOpened ? HamburgerBlock : <CloseIconWrapper inverted={inverted} />}
+      {!isOpened ? (
+        HamburgerBlock
+      ) : (
+        <CloseIconWrapper inverted={inverted ? 1 : 0} />
+      )}
     </HamburgerWrapper>
   );
 };

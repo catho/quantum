@@ -78,6 +78,7 @@ import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Warning from '@material-ui/icons/Warning';
+import WatchLater from '@material-ui/icons/WatchLater';
 import Whatshot from '@material-ui/icons/Whatshot';
 import Work from '@material-ui/icons/Work';
 
@@ -174,6 +175,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     visibility_off: VisibilityOff,
     visibility: Visibility,
     warning: Warning,
+    watch_later: WatchLater,
     whatshot: Whatshot,
     work: Work,
   };

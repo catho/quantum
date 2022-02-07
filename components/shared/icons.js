@@ -77,6 +77,7 @@ const icons = [
   'visibility_off',
   'visibility',
   'warning',
+  'watch_later',
   'whatshot',
   'work',
 ];

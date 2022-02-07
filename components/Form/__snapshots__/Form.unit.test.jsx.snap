@@ -9,6 +9,122 @@ exports[`Form component  should match the snapshot 1`] = `
   color: #424242;
 }
 
+.c3 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
+  padding-right: 48px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+  background-color: #E5EDFC;
+}
+
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4::-webkit-calendar-picker-indicator,
+.c4::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:hover,
+.c4:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c4[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c4:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c4[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .c1 {
   display: block;
   font-weight: bold;
@@ -16,11 +132,20 @@ exports[`Form component  should match the snapshot 1`] = `
   color: inherit;
 }
 
+.c5 {
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  width: 24px;
+  color: inherit;
+}
+
 .c2 {
   position: relative;
 }
 
-.c3 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -49,52 +174,46 @@ exports[`Form component  should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3:hover {
+.c6:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c3:focus,
-.c3:focus-within {
+.c6:focus,
+.c6:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c3:active {
+.c6:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
 <form
-  noValidate={true}
-  onSubmit={[Function]}
+  novalidate=""
 >
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-0"
+      class="c1"
+      for="input-0"
     >
       required
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-0"
-        mask={[Function]}
-        maxLength={255}
-        minLength={0}
+        maxlength="255"
+        minlength="0"
         name="required"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -104,31 +223,26 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-1"
+      class="c1"
+      for="input-1"
     >
       CPF
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-1"
-        mask={[Function]}
-        maxLength={255}
-        minLength={0}
+        maxlength="255"
+        minlength="0"
         name="cpf"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -138,31 +252,26 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-2"
+      class="c1"
+      for="input-2"
     >
       CEP
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-2"
-        mask={[Function]}
-        maxLength={255}
-        minLength={0}
+        maxlength="255"
+        minlength="0"
         name="cep"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -172,31 +281,26 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-3"
+      class="c1"
+      for="input-3"
     >
       Birthday
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-3"
-        mask={[Function]}
-        maxLength={255}
-        minLength={0}
+        maxlength="255"
+        minlength="0"
         name="birthday"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -206,31 +310,26 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-4"
+      class="c1"
+      for="input-4"
     >
       E-mail
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-4"
-        mask={[Function]}
-        maxLength={255}
-        minLength={0}
+        maxlength="255"
+        minlength="0"
         name="email"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -240,31 +339,26 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-5"
+      class="c1"
+      for="input-5"
     >
       Address
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c3"
         id="input-5"
-        mask={[Function]}
-        maxLength={255}
-        minLength="8"
+        maxlength="255"
+        minlength="8"
         name="address"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
         value=""
       />
       
@@ -274,44 +368,49 @@ exports[`Form component  should match the snapshot 1`] = `
     
   </div>
   <div
-    className="c0"
+    class="c0"
   >
     <label
-      className="c1"
-      htmlFor="input-6"
+      class="c1"
+      for="input-6"
     >
       Country
     </label>
     
     <div
-      className="c2"
+      class="c2"
     >
       <input
-        disabled={false}
+        class="c4"
         id="input-6"
-        mask={[Function]}
-        maxLength="3"
-        minLength={0}
+        maxlength="3"
+        minlength="0"
         name="country"
-        onChange={[Function]}
         placeholder=""
-        render={[Function]}
-        required={false}
         type="text"
-        validate={[Function]}
-        value=""
+        value="1234"
       />
       
-      
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root c5"
+        data-qtm-preloader="icon"
+        description=""
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        theme="[object Object]"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+        />
+      </svg>
     </div>
     
     
   </div>
   <button
-    className="c3"
-    disabled={false}
-    onClick={[Function]}
-    size="medium"
+    class="c6"
     type="submit"
   >
     

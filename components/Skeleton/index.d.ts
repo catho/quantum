@@ -1,9 +1,9 @@
 import React from 'react';
 
 export interface SkeletonButtonProps {
-    size: 'xsmall' | 'small' | 'medium' | 'large';
-    theme: {
-        spacing?: object;
+    size?: 'xsmall' | 'small' | 'medium' | 'large';
+    theme?: {
+        spacing?: {};
     };
 }
 
@@ -14,9 +14,9 @@ export type SkeletonCircle = React.ComponentType;
 export type SkeletonText = React.ComponentType;
 
 export interface SkeletonTagProps {
-    size: 'xsmall' | 'small' | 'medium' | 'large';
-    theme: {
-        spacing?: object;
+    size?: 'xsmall' | 'small' | 'medium' | 'large';
+    theme?: {
+        spacing?: {};
         baseFontSize?: number;
     };
 }
@@ -29,7 +29,7 @@ export interface SkeletonProps {
     height?: string;
     size?: 'xsmall' | 'small' | 'medium' | 'large';
     theme?: {
-        spacing?: object;
+        spacing?: {};
         baseFontSize?: number;
     };
 }

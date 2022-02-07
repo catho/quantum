@@ -4,7 +4,7 @@ export interface ProgressBarProps {
     skin?: 'neutral' | 'primary' | 'secondary';
     theme?: {
         components?: {
-            progressBar?: object;
+            progressBar?: {};
         };
     };
     width?: string;

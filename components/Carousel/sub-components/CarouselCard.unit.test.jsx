@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+
 import CarouselCard from './CarouselCard';
 
 const CARD_TITLE = 'Card title';
@@ -16,39 +16,36 @@ const content = {
 describe('<CarouselCard />', () => {
   it('should match the snapshots', () => {
     expect(
-      renderer
-        .create(<CarouselCard card={content} cardSize="small" />)
-        .toJSON(),
+      render(<CarouselCard card={content} cardSize="small" />).asFragment(),
     ).toMatchSnapshot();
 
     expect(
-      renderer
-        .create(<CarouselCard card={content} cardSize="medium" />)
-        .toJSON(),
+      render(<CarouselCard card={content} cardSize="medium" />).asFragment(),
     ).toMatchSnapshot();
 
     expect(
-      renderer
-        .create(<CarouselCard card={content} cardSize="large" />)
-        .toJSON(),
+      render(<CarouselCard card={content} cardSize="large" />).asFragment(),
     ).toMatchSnapshot();
   });
 
   it('small card shouldnt have a title and description', () => {
-    const component = mount(<CarouselCard card={content} cardSize="small" />);
-    expect(component.find('Title').exists()).toBeFalsy();
-    expect(component.find('Description').exists()).toBeFalsy();
+    render(<CarouselCard card={content} cardSize="small" />);
+
+    expect(screen.queryByText(CARD_TITLE)).not.toBeInTheDocument();
+    expect(screen.queryByText(CARD_DESCRIPTION)).not.toBeInTheDocument();
   });
 
   it('medium cards should have title and description', () => {
-    const component = mount(<CarouselCard card={content} cardSize="medium" />);
-    expect(component.find('Title').text()).toEqual(CARD_TITLE);
-    expect(component.find('Description').text()).toEqual(CARD_DESCRIPTION);
+    render(<CarouselCard card={content} cardSize="medium" />);
+
+    expect(screen.queryByText(CARD_TITLE)).toBeInTheDocument();
+    expect(screen.queryByText(CARD_DESCRIPTION)).toBeInTheDocument();
   });
 
   it('large cards should have title and description', () => {
-    const component = mount(<CarouselCard card={content} cardSize="large" />);
-    expect(component.find('Title').text()).toEqual(CARD_TITLE);
-    expect(component.find('Description').text()).toEqual(CARD_DESCRIPTION);
+    render(<CarouselCard card={content} cardSize="large" />);
+
+    expect(screen.queryByText(CARD_TITLE)).toBeInTheDocument();
+    expect(screen.queryByText(CARD_DESCRIPTION)).toBeInTheDocument();
   });
 });

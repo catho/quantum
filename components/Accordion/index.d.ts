@@ -2,8 +2,8 @@ import React from 'react';
 
 export interface AccordionProps {
     theme?: {
-        colors?: object;
-        spacing?: object;
+        colors?: {};
+        spacing?: {};
         baseFontSize?: number;
     };
     keepOnlyOneOpen?: boolean;
