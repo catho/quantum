@@ -9,15 +9,16 @@ import {
   Title,
 } from '@catho/quantum-storybook-ui';
 
-import AutoComplete from '../../components/AutoComplete';
+// eslint-disable-next-line import/no-named-default
+import { default as AutoCompleteComponent } from '../../components/AutoComplete';
 
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
 
 const AutoCompleteExample = () => (
-  <AutoComplete
+  <AutoCompleteComponent
     label="Pick a fruit"
     selectedItem={item => console.log(item)}
-    helperText="Type you favorite fruit"
+    helperText="Type your favorite fruit"
     suggestions={Examples}
   />
 );
@@ -31,10 +32,10 @@ suggestions={Examples} />
 `;
 
 export default {
-  title: 'AutoComplete',
+  title: 'Forms',
 };
 
-export const AutoCompleteStory = () => (
+export const AutoComplete = () => (
   <>
     <Heading name="AutoComplete">
       The autocomplete it`&apos;`,s a input that has a dropdown menu with
@@ -49,7 +50,10 @@ export const AutoCompleteStory = () => (
         </StoryContainer>
       </Tab>
       <Tab title="API">
-        <AutoPropsApi component={AutoComplete} ignoredProps={['theme']} />
+        <AutoPropsApi
+          component={AutoCompleteComponent}
+          ignoredProps={['theme']}
+        />
       </Tab>
     </TabbedView>
   </>
