@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Blockquote /> Should match the snapshot 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   font-size: 12px;
   line-height: 18px;
   -webkit-letter-spacing: 0.2px;
@@ -12,6 +13,7 @@ exports[`<Blockquote /> Should match the snapshot 1`] = `
 }
 
 <blockquote
-  className="c0"
-/>
+    class="c0"
+  />
+</DocumentFragment>
 `;

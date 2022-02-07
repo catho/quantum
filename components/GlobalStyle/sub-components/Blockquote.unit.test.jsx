@@ -1,9 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
+
 import Blockquote from './Blockquote';
 
 describe('<Blockquote />', () => {
   it('Should match the snapshot', () => {
-    expect(renderer.create(<Blockquote />).toJSON()).toMatchSnapshot();
+    expect(render(<Blockquote />).asFragment()).toMatchSnapshot();
   });
 });
