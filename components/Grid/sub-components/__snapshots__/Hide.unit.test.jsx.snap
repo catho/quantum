@@ -7,8 +7,48 @@ exports[`<Hide /> should hide it's children according to screen size 1`] = `
   }
 }
 
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -25,8 +65,44 @@ exports[`<Hide /> should hide it's children according to screen size 2`] = `
   }
 }
 
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -47,8 +123,40 @@ exports[`<Hide /> should hide it's children according to screen size 3`] = `
   }
 }
 
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -73,8 +181,36 @@ exports[`<Hide /> should hide it's children according to screen size 4`] = `
   }
 }
 
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -109,8 +245,28 @@ exports[`<Hide /> should hide it's children according to screen size 5`] = `
   }
 }
 
+@media (max-width:599px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -153,8 +309,20 @@ exports[`<Hide /> should hide it's children according to screen size 6`] = `
   }
 }
 
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>
@@ -212,7 +380,7 @@ exports[`<Hide /> should hide it's children according to screen size 7`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   Content
 </div>

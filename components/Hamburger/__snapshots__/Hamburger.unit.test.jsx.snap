@@ -14,13 +14,13 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={0}
+    inverted="0"
     viewBox="0 0 24 24"
   >
     <path
@@ -44,13 +44,13 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={1}
+    inverted="1"
     viewBox="0 0 24 24"
   >
     <path
@@ -74,13 +74,13 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={true}
+    inverted="1"
     viewBox="0 0 24 24"
   >
     <path
@@ -115,17 +115,17 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <span
     aria-label="There are new notifications"
-    className="c1"
+    class="c1"
   />
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c2"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c2"
     focusable="false"
-    inverted={1}
+    inverted="1"
     viewBox="0 0 24 24"
   >
     <path
@@ -149,13 +149,13 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={true}
+    inverted="1"
     viewBox="0 0 24 24"
   >
     <path
@@ -179,13 +179,13 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={false}
+    inverted="0"
     viewBox="0 0 24 24"
   >
     <path
@@ -220,17 +220,17 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <span
     aria-label="There are new notifications"
-    className="c1"
+    class="c1"
   />
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c2"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c2"
     focusable="false"
-    inverted={0}
+    inverted="0"
     viewBox="0 0 24 24"
   >
     <path
@@ -254,13 +254,13 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
 
 <div
   aria-live="polite"
-  className="c0"
+  class="c0"
 >
   <svg
-    aria-hidden={true}
-    className="MuiSvgIcon-root c1"
+    aria-hidden="true"
+    class="MuiSvgIcon-root c1"
     focusable="false"
-    inverted={false}
+    inverted="0"
     viewBox="0 0 24 24"
   >
     <path
