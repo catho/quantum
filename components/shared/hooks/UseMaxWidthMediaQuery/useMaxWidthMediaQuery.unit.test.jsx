@@ -1,26 +1,11 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import matchMediaMock from '../../helpers';
 
 import ExampleMediaQuery from './Example';
 
-const matchMediaMock = (match = false) =>
-  Object.defineProperty(window, 'matchMedia', {
-    writable: true,
-    value: jest.fn().mockImplementation(query => ({
-      matches: match,
-      media: query,
-      onchange: null,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-      addEventListener: jest.fn(),
-      removeEventListener: jest.fn(),
-      dispatchEvent: jest.fn(),
-    })),
-  });
-
 describe('useMaxWidthMediaQuery', () => {
   it('should be bigger than 768px', () => {
-    matchMediaMock();
     const component = mount(<ExampleMediaQuery />);
     expect(component.find('h1').text()).toBe('More than 768');
   });
