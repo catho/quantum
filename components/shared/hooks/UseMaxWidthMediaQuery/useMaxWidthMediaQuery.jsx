@@ -17,6 +17,7 @@ const useMaxWidthMediaQuery = width => {
     try {
       media.addEventListener('change', e => updateTarget(e));
     } catch (e1) {
+      /* istanbul ignore next */
       try {
         media.addListener(e => updateTarget(e));
       } catch (e2) {
@@ -32,6 +33,7 @@ const useMaxWidthMediaQuery = width => {
       try {
         media.removeEventListener('change', e => updateTarget(e));
       } catch (e3) {
+        /* istanbul ignore next */
         media.removeListener(updateTarget);
       }
     };
