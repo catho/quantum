@@ -92,6 +92,16 @@ class Input extends React.Component {
     this._id = id || ID_GENERATOR.next().value;
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    const { currentValue } = this.state;
+    const { value } = this.props;
+
+    if (currentValue !== value && prevProps.value !== value) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({ ...prevState, currentValue: value });
+    }
+  }
+
   onChangeInput = ev => {
     const { onChange } = this.props;
     const inputValue = ev.currentTarget.value;
