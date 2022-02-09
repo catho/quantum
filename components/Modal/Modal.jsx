@@ -169,10 +169,6 @@ class Modal extends React.Component {
 
   handleKeyDown = e => {
     if (e.key === 'Tab') {
-      if (this.focusableElements.length === 1) {
-        return e.preventDefault();
-      }
-
       if (e.shiftKey) {
         return this.handleBackwardTab(e);
       }
