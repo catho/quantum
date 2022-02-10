@@ -1,8 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen } from '@testing-library/react';
 import List from './List';
-import Item from './sub-components/Item';
 
 const items = [
   'Tomato sauce',
@@ -13,37 +11,55 @@ const items = [
   'Hot pepper sauce',
 ];
 
+const exampleItemsWithIcon = [
+  { icon: 'close' },
+  { icon: 'accessible' },
+  { icon: 'block' },
+];
+
 describe('<List />', () => {
   it('Should match the default snapshot', () => {
-    const wrapper = mount(<List />);
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const { container } = render(<List />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('Should match the divided list snapshot', () => {
-    const wrapper = mount(<List divided items={items} />);
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const { container } = render(<List bullet="•" inline items={items} />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('Should match bullet list snapshot', () => {
+    const { container } = render(<List divided items={items} />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('Should match the bullet list snapshot', () => {
-    const wrapper = mount(<List ordered items={items} />);
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const { container } = render(<List ordered items={items} />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it('render six Item components', () => {
-    const wrapper = mount(<List items={items} />);
-
-    expect(wrapper.find(Item)).toHaveLength(6);
+    render(<List items={items} />);
+    items.forEach(item => {
+      expect(screen.getByText(item)).toBeInTheDocument();
+    });
   });
 
   it('render unordered list as a default one', () => {
-    const wrapper = mount(<List />);
-
-    expect(wrapper.find('UnorderedList')).toBeTruthy();
+    const { container } = render(<List />);
+    const list = container.querySelector('ul');
+    expect(list).toBeInTheDocument();
   });
 
   it('render ordered list', () => {
-    const wrapper = mount(<List ordered />);
+    const { container } = render(<List ordered />);
+    const list = container.querySelector('ol');
+    expect(list).toBeInTheDocument();
+  });
 
-    expect(wrapper.find('OrderedList')).toBeTruthy();
+  it('render ordered list', () => {
+    const { container } = render(<List items={exampleItemsWithIcon} />);
+    const icons = container.querySelectorAll('svg');
+    expect(icons).toHaveLength(3);
   });
 });
