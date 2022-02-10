@@ -1,30 +1,28 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Icon from './Icon';
 
 describe('<Icon />', () => {
   it('Should match the snapshot', () => {
-    const tree3D = renderer.create(<Icon name="accessible_forward" />).toJSON();
-    const treeFilter = renderer.create(<Icon name="check_circle" />).toJSON();
-    const treeArrow = renderer.create(<Icon name="search" />).toJSON();
-    const withColor = renderer
-      .create(<Icon name="star" skin="tomato" />)
-      .toJSON();
-    const withSmallSize = renderer
-      .create(<Icon name="search" size="small" />)
-      .toJSON();
-    const withMediumSize = renderer
-      .create(<Icon name="search" size="medium" />)
-      .toJSON();
-    const withLargeSize = renderer
-      .create(<Icon name="search" size="large" />)
-      .toJSON();
-    const withXSmallSize = renderer
-      .create(<Icon name="search" size="xsmall" />)
-      .toJSON();
-    const withXLargeSize = renderer
-      .create(<Icon name="search" size="xlarge" />)
-      .toJSON();
+    const { container: tree3D } = render(<Icon name="accessible_forward" />);
+    const { container: treeFilter } = render(<Icon name="check_circle" />);
+    const { container: treeArrow } = render(<Icon name="search" />);
+    const { container: withColor } = render(<Icon name="star" skin="tomato" />);
+    const { container: withSmallSize } = render(
+      <Icon name="search" size="small" />,
+    );
+    const { container: withMediumSize } = render(
+      <Icon name="search" size="medium" />,
+    );
+    const { container: withLargeSize } = render(
+      <Icon name="search" size="large" />,
+    );
+    const { container: withXSmallSize } = render(
+      <Icon name="search" size="xsmall" />,
+    );
+    const { container: withXLargeSize } = render(
+      <Icon name="search" size="xlarge" />,
+    );
 
     expect(tree3D).toMatchSnapshot();
     expect(treeFilter).toMatchSnapshot();
