@@ -1,70 +1,86 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import MaskedInput from 'react-text-mask';
+import { render, screen, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Input from './Input';
 import masks from '../shared/masks';
+import { colors } from '../shared/theme';
 
 describe('Input component', () => {
   it('should has a required signal when "required" prop is set', () => {
-    const component = shallow(
+    const { container } = render(
       <Input value="foo" label="label of input" required />,
     );
 
-    expect(component.find('InputLabel').text()).toMatch('*');
+    expect(container.querySelector('em')).toHaveTextContent('*');
   });
 
   it('should has a search icon when type prop is set to "search" value', () => {
-    const component = shallow(
-      <Input value="foo" label="label of input" type="search" />,
+    const { container } = render(
+      <Input
+        value="foo"
+        label="label of input"
+        type="search"
+        descriptionLabel="search"
+      />,
     );
 
-    const InputSearchIconElement = component.find('InputSearchIcon');
+    expect(container.querySelectorAll('svg')[1]).toBeInTheDocument();
+  });
 
-    expect(InputSearchIconElement).toHaveLength(1);
+  it('should have dark skin and error msg', () => {
+    const { container } = render(
+      <Input
+        value="foo"
+        label="label of input"
+        skin="dark"
+        error="mensagem de erro"
+      />,
+    );
+
+    const fieldGroup = container.querySelectorAll('div')[0];
+    const errorMsg = screen.getByText(/mensagem de erro/i);
+
+    expect(fieldGroup).toHaveStyleRule('color', `${colors.neutral[0]}`);
+    expect(errorMsg).toBeInTheDocument();
   });
 
   it('should has an error icon when "error" prop is set', () => {
-    const component = shallow(
+    const { container } = render(
       <Input value="foo" label="label of input" error="error text" />,
     );
-    const InputErrorIconElement = component.find('InputErrorIcon');
 
-    expect(InputErrorIconElement).toHaveLength(1);
+    expect(container.querySelector('svg')).toBeInTheDocument();
   });
 
   it('should has a helper text when "helperText" prop is set ', () => {
     const helperTextContent = 'this is a helper text';
-    const component = shallow(
+    render(
       <Input
         value="foo"
         label="label of input"
         helperText={helperTextContent}
       />,
     );
-    const helperTextElementContent = component.find('HelperText').text();
 
-    expect(helperTextElementContent).toEqual(helperTextContent);
+    expect(screen.getByText(helperTextContent)).toBeInTheDocument();
   });
 
   it('should has a description label when "descriptionLabel" prop was set', () => {
     const descriptionLabelContent = 'this is a description label';
-    const component = shallow(
+    render(
       <Input
         value="foo"
         label="label of input"
         descriptionLabel={descriptionLabelContent}
       />,
     );
-    const descriptionLabelElementContent = component
-      .find('DescriptionLabel')
-      .text();
 
-    expect(descriptionLabelElementContent).toEqual(descriptionLabelContent);
+    expect(screen.getByText(descriptionLabelContent)).toBeInTheDocument();
   });
 
   it('should has a placeholder when "placeholder" is text', () => {
     const placeholderContent = 'this is a input placeholder';
-    const component = mount(
+    render(
       <Input
         value="foo"
         label="label of input"
@@ -72,112 +88,147 @@ describe('Input component', () => {
       />,
     );
 
-    const placeholderProp = component.find('TextInput').prop('placeholder');
-    expect(placeholderProp).toEqual(placeholderContent);
+    const input = screen.getByRole('textbox', { name: /label of input/i });
+
+    expect(input.getAttribute('placeholder')).toMatch(placeholderContent);
   });
 
   it('should has a clear icon when input value is not empty', () => {
-    const component = mount(<Input value="foo" label="label of input" />);
-    const hasIcon = component.find('InputIcon Icon');
+    const { container } = render(<Input value="foo" label="label of input" />);
 
-    expect(hasIcon).toBeTruthy();
-
-    const clearIcon = hasIcon.prop('name');
-    expect(clearIcon).toEqual('clear');
+    expect(container.querySelector('svg')).toBeInTheDocument();
   });
 
   it('should generate a new id for it instance, when "id" prop is not set', () => {
-    const componentA = shallow(<Input value="foo" label="label of input" />);
-    const componentB = shallow(<Input value="foo" label="label of input" />);
-    const inputIdA = componentA.find(MaskedInput).prop('id');
-    const inputIdB = componentB.find(MaskedInput).prop('id');
+    const { container: inputA } = render(
+      <Input value="foo" label="label of input a" />,
+    );
+    const { container: inputB } = render(
+      <Input value="foo" label="label of input b" />,
+    );
+    const inputIdA = inputA.querySelector('input');
+    const inputIdB = inputB.querySelector('input');
 
-    expect(inputIdA).not.toBe('');
-    expect(inputIdB).not.toBe('');
+    expect(inputIdA.getAttribute('id')).toBeTruthy();
+    expect(inputIdB.getAttribute('id')).toBeTruthy();
 
-    expect(inputIdA).not.toEqual(inputIdB);
+    expect(inputIdA.getAttribute('id')).not.toEqual(
+      inputIdB.getAttribute('id'),
+    );
   });
 
   it('should apply a mask prop to input value', () => {
-    const input = mount(<Input mask={masks.cpf} value="99999999999" />);
-    const { value } = input.find(MaskedInput).getDOMNode();
+    render(
+      <Input mask={masks.cpf} value="99999999999" label="Digite seu cpf" />,
+    );
 
-    expect(value).toBe('999.999.999-99');
+    expect(screen.getByDisplayValue('999.999.999-99')).toBeInTheDocument();
   });
 
   it('should call onClean callback when prop is setted', () => {
     const onCleanMock = jest.fn();
-    const component = shallow(<Input value="foo" onClean={onCleanMock} />);
-    const inputIcon = component.find('InputIcon');
-    inputIcon.simulate('click');
+    const { container } = render(
+      <Input value="foo" onClean={onCleanMock} label="Digite seu cpf" />,
+    );
+    const inputIcon = container.querySelector('svg');
+    fireEvent.click(inputIcon);
     expect(onCleanMock).toHaveBeenCalled();
   });
 
-  it('should update state when value property is changed', () => {
-    const component = mount(<Input value="foo" />);
-    expect(component.state('currentValue')).toBe('foo');
+  it('should change input value when user types a different value', async () => {
+    const { container } = render(<Input value="foo" label="Digite seu cpf" />);
 
-    component.setProps({ value: 'bar' }).update();
-    expect(component.state('currentValue')).toBe('bar');
+    const input = screen.getByRole('textbox', { name: /Digite seu cpf/i });
+    expect(input.getAttribute('value')).toEqual('foo');
+
+    const inputIcon = container.querySelector('svg');
+    fireEvent.click(inputIcon);
+
+    await userEvent.type(input, 'bar');
+
+    expect(input.getAttribute('value')).toEqual('bar');
   });
 
   describe('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
-      const wrapper = mount(<Input label="Text label" id={id} />);
-      const input = wrapper.find('TextInput');
-      const label = wrapper.find('InputLabel');
-      const labelHtmlFor = label.prop('htmlFor');
-      const inputId = input.prop('id');
+      const { container } = render(<Input label="Text label" id={id} />);
+
+      const input = screen.getByRole('textbox', { name: /Text label/i });
+      const label = container.querySelector('label');
+      const labelHtmlFor = label.getAttribute('for');
+      const inputId = input.getAttribute('id');
 
       expect(labelHtmlFor).toEqual(id);
       expect(inputId).toEqual(id);
     });
 
     it('should match label "htmlFor" label param and "input" param with generated id', () => {
-      const wrapper = shallow(<Input label="Text label" value="foo" />);
-      const labelId = wrapper.find('InputLabel').prop('htmlFor');
-      const inputId = wrapper.find(MaskedInput).prop('id');
+      const { container } = render(<Input label="Text label" value="foo" />);
+      const labelId = container.querySelector('label').getAttribute('for');
+      const inputId = screen
+        .getByRole('textbox', /Text label/i)
+        .getAttribute('id');
 
       expect(labelId).toEqual(inputId);
     });
   });
 
   describe('with password type', () => {
-    const wrapper = mount(<Input type="password" />);
-
-    const icon = () => wrapper.find('InputIcon Icon');
-
-    const visibilityIcon = () => icon().prop('name');
-
     it('should has "password" as default input type', () => {
-      expect(visibilityIcon()).toBeTruthy();
-      expect(visibilityIcon()).toEqual('visibility');
-      expect(wrapper.state('type')).toEqual('password');
+      const { container } = render(<Input type="password" />);
+      expect(container.querySelector('svg')).toBeInTheDocument();
+
+      const input = container.querySelector('input');
+      expect(input.getAttribute('type')).toEqual('password');
     });
 
     it('should toggle input type, when password icon is clicked', () => {
-      const visibilityOffIcon = () => icon().prop('name');
+      const { container } = render(<Input type="password" />);
 
-      icon().simulate('click');
-      expect(visibilityOffIcon()).toBeTruthy();
-      expect(visibilityOffIcon()).toEqual('visibility_off');
-      expect(wrapper.state('type')).toEqual('text');
+      const input = container.querySelector('input');
 
-      icon().simulate('click');
-      expect(visibilityIcon()).toBeTruthy();
-      expect(visibilityIcon()).toEqual('visibility');
-      expect(wrapper.state('type')).toEqual('password');
+      const icon = container.querySelector('svg');
+
+      expect(icon).toBeInTheDocument();
+
+      fireEvent.click(icon);
+
+      const iconVisible = container.querySelector('svg');
+
+      expect(iconVisible).toBeInTheDocument();
+
+      expect(icon).not.toEqual(iconVisible);
+      expect(input.getAttribute('type')).toEqual('text');
+
+      fireEvent.click(iconVisible);
+
+      const iconAfterVisible = container.querySelector('svg');
+
+      expect(iconAfterVisible).toBeInTheDocument();
+      expect(iconAfterVisible).not.toEqual(iconVisible);
+      expect(input.getAttribute('type')).toEqual('password');
     });
   });
 
-  it('should onChange props be called', () => {
+  it('should onChange props be called', async () => {
     const onChangeEventMock = jest.fn();
-    const wrapper = mount(
+    render(
       <Input label="Text label" value="foo" onChange={onChangeEventMock} />,
     );
-    const componentInput = wrapper.find('TextInput');
-    componentInput.simulate('change');
+    const componentInput = screen.getByRole('textbox', /Text label/i);
+    await userEvent.type(componentInput, 'bar');
     expect(onChangeEventMock).toHaveBeenCalled();
+  });
+
+  it('should update state when value property is changed', () => {
+    const { rerender } = render(<Input label="Text label" value="foo" />);
+    const componentInput = screen.getByRole('textbox', /Text label/i);
+
+    expect(componentInput.getAttribute('value')).toEqual('foo');
+
+    rerender(<Input label="Text label" value="bar" />);
+
+    expect(componentInput.getAttribute('value')).toEqual('bar');
   });
 });

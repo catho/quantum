@@ -1,10 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Input from './Input';
-
-jest.mock('react-text-mask', () => props => (
-  <input type="text" {...{ ...props }} />
-));
 
 describe('Input component', () => {
   it('should match snapshots', () => {
@@ -28,8 +24,9 @@ describe('Input component', () => {
       <Input.Password />,
     ];
 
-    INPUTS.forEach(input =>
-      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
-    );
+    INPUTS.forEach(input => {
+      const { container } = render(input);
+      expect(container).toMatchSnapshot();
+    });
   });
 });

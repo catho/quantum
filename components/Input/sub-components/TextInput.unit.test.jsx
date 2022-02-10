@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import TextInput from './TextInput';
 
 describe('Input component', () => {
@@ -15,22 +15,24 @@ describe('Input component', () => {
       <TextInput skin="dark" hasIcon />,
       <TextInput placeholder="Placeholder text" />,
       <TextInput skin="dark" placeholder="Placeholder text" />,
-      <TextInput value="Value text" />,
-      <TextInput skin="dark" value="Value text" />,
+      <TextInput value="Value text" readOnly />,
+      <TextInput skin="dark" value="Value text" readOnly />,
       <TextInput defaultValue="Value text" />,
       <TextInput skin="dark" defaultValue="Value text" />,
-      <TextInput placeholder="Placeholder text" value="Value text" />,
+      <TextInput placeholder="Placeholder text" value="Value text" readOnly />,
       <TextInput
         skin="dark"
         placeholder="Placeholder text"
         value="Value text"
+        readOnly
       />,
       <TextInput error="Error message" disabled />,
       <TextInput skin="dark" error="Error message" disabled />,
     ];
 
-    INPUTS.forEach(input =>
-      expect(renderer.create(input).toJSON()).toMatchSnapshot(),
-    );
+    INPUTS.forEach(input => {
+      const { container } = render(input);
+      expect(container).toMatchSnapshot();
+    });
   });
 });
