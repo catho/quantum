@@ -1,103 +1,79 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { fireEvent, render, screen } from '@testing-library/react';
 import RangeSlider from './RangeSlider';
 
 describe('<RangeSlider />', () => {
   describe('Snapshots', () => {
     it('should match the snapshot when have just one handle', () => {
-      expect(toJson(shallow(<RangeSlider value={10} />))).toMatchSnapshot();
+      const { container } = render(<RangeSlider value={10} />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('should match the snapshot when have two handles', () => {
-      expect(
-        toJson(shallow(<RangeSlider value={{ from: 10, to: 30 }} />)),
-      ).toMatchSnapshot();
+      const { container } = render(
+        <RangeSlider value={{ from: 10, to: 30 }} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('should match the snapshot when <RangeSlider /> is disabled', () => {
-      expect(toJson(shallow(<RangeSlider disabled />))).toMatchSnapshot();
+      const { container } = render(<RangeSlider disabled />);
+      expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should match the snapshot when <RangeSlider /> label is on', () => {
+      const { container } = render(<RangeSlider valueLabelDisplay="on" />);
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
   describe('tipFormatter prop', () => {
     it('should format Tooltip text and display it correctly when have just one handle', () => {
-      const range = mount(
-        <RangeSlider value={10} tipFormatter={value => `R$ ${value}`} />,
-      );
-      const tooltip = range.find('ValueLabel');
+      render(<RangeSlider value={10} tipFormatter={value => `R$ ${value}`} />);
 
-      expect(tooltip.text()).toBe('R$ 10');
+      expect(screen.getByText('R$ 10')).toBeInTheDocument();
     });
 
     it('should format Tooltip text and display it correctly when have two handles', () => {
-      const range = mount(
+      render(
         <RangeSlider
           value={{ from: 10, to: 40 }}
           tipFormatter={value => `${value}km`}
         />,
       );
-      const tooltip = range.find('ValueLabel');
 
-      expect(tooltip.at(0).text()).toBe('10km');
-      expect(tooltip.at(1).text()).toBe('40km');
+      expect(screen.getByText('10km')).toBeInTheDocument();
+      expect(screen.getByText('40km')).toBeInTheDocument();
     });
   });
 
   describe('onChange prop', () => {
-    it('should call it with currently slider value', () => {
+    it('should call it with currently slider value', async () => {
       const onChangeMock = jest.fn();
-      const range = shallow(<RangeSlider value={10} onChange={onChangeMock} />);
-      const slider = range.find('SliderComponent');
+      const { container } = render(
+        <RangeSlider defaultValue={10} onChange={onChangeMock} />,
+      );
 
-      slider.simulate('change', 20);
+      const slider = container.querySelector('input');
 
-      expect(onChangeMock).toBeCalledWith(20);
+      await fireEvent.mouseDown(slider, { clientX: 1 });
+
+      expect(onChangeMock).toBeCalledTimes(1);
     });
 
-    it('should call it with currently range value', () => {
+    it('should call it with currently range value', async () => {
       const onChangeMock = jest.fn();
-      const range = shallow(
-        <RangeSlider value={{ from: 0, to: 100 }} onChange={onChangeMock} />,
-      );
-      const slider = range.find('SliderComponent');
-
-      slider.simulate('change', { from: 20, to: 80 });
-
-      expect(onChangeMock.mock.calls.length).toBe(1);
-    });
-  });
-
-  describe('onChangeCommited prop', () => {
-    it('should call it with currently slider value', () => {
-      const onChangeCommitedMock = jest.fn();
-      const range = shallow(
-        <RangeSlider value={10} onChangeCommited={onChangeCommitedMock} />,
-      );
-      const slider = range.find('SliderComponent');
-
-      slider.simulate('change', 20);
-
-      setTimeout(() => {
-        expect(onChangeCommitedMock).toBeCalledWith(20);
-      }, 1000);
-    });
-
-    it('should call it with currently range value', () => {
-      const onChangeCommitedMock = jest.fn();
-      const range = shallow(
+      const { container } = render(
         <RangeSlider
-          value={{ from: 0, to: 100 }}
-          onChangeCommited={onChangeCommitedMock}
+          defaultValue={{ from: 20, to: 80 }}
+          onChange={onChangeMock}
         />,
       );
-      const slider = range.find('SliderComponent');
+      const slider = container.querySelector('input');
 
-      slider.simulate('change', { from: 20, to: 80 });
+      await fireEvent.mouseDown(slider, { clientX: 1 });
 
-      setTimeout(() => {
-        expect(onChangeCommitedMock.mock.calls.length).toBe(1);
-      }, 1000);
+      expect(onChangeMock.mock.calls.length).toBe(1);
     });
   });
 
@@ -110,47 +86,47 @@ describe('<RangeSlider />', () => {
 
     describe('with a single value', () => {
       it('should not call console.error when it is valid', () => {
-        mount(<RangeSlider value={0} />);
+        render(<RangeSlider value={0} />);
         expect(global.console.error).not.toHaveBeenCalled();
       });
 
       it('should call console.error when it is not a number', () => {
-        mount(<RangeSlider value="1" />);
+        render(<RangeSlider value="1" />);
         expect(global.console.error).toHaveBeenCalled();
       });
 
       it('should call console.error when it is greater then max prop', () => {
-        mount(<RangeSlider max={40} value={50} />);
+        render(<RangeSlider max={40} value={50} />);
         expect(global.console.error).toHaveBeenCalled();
       });
 
       it('should call console.error when it is less then min prop', () => {
-        mount(<RangeSlider min={40} value={30} />);
+        render(<RangeSlider min={40} value={30} />);
         expect(global.console.error).toHaveBeenCalled();
       });
     });
 
     describe('with a range value', () => {
       it('should not call console.error when both is valid', () => {
-        mount(<RangeSlider value={{ from: 0, to: 100 }} />);
+        render(<RangeSlider value={{ from: 0, to: 100 }} />);
         expect(global.console.error).not.toHaveBeenCalled();
       });
 
       it('should call console.error when one of them are not a number', () => {
-        mount(<RangeSlider value={{ from: '0', to: 100 }} />);
+        render(<RangeSlider value={{ from: '0', to: 100 }} />);
         expect(global.console.error).toHaveBeenCalled();
 
-        mount(<RangeSlider value={{ from: 0, to: '100' }} />);
+        render(<RangeSlider value={{ from: 0, to: '100' }} />);
         expect(global.console.error).toHaveBeenCalled();
       });
 
       it('should call console.error when "to" value is greater then max prop', () => {
-        mount(<RangeSlider value={{ from: 0, to: 100 }} max={90} />);
+        render(<RangeSlider value={{ from: 0, to: 100 }} max={90} />);
         expect(global.console.error).toHaveBeenCalled();
       });
 
       it('should call console.error when "from" value is less then min prop', () => {
-        mount(<RangeSlider value={{ from: 0, to: 100 }} min={10} />);
+        render(<RangeSlider value={{ from: 0, to: 100 }} min={10} />);
         expect(global.console.error).toHaveBeenCalled();
       });
     });
