@@ -5,6 +5,8 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
+import Alert from '../../../components/Alert';
+
 const importMediaQuery = `import useMaxWidthMediaQuery from '@catho/quantum/shared/hooks'`;
 
 const mediaQueryCode = `
@@ -34,10 +36,35 @@ const Component = () => {
 export default Component;
 `;
 
+const mockImport = `
+import matchMediaMock from '@catho/quantum/shared/helpers'
+
+describe('My tests', () => {
+  beforeAll(() => {
+    matchMediaMock()
+  });
+});
+`;
+
 const UseMaxWidthMediaQueryExample = () => (
   <StoryContainer>
     <Title as="h2">Importing</Title>
     <SimpleHighlight>{importMediaQuery}</SimpleHighlight>
+
+    <br />
+    <Alert icon="warning" skin="warning">
+      <strong>Important:</strong>
+      <p>
+        Due to jest{' '}
+        <a href="https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom">
+          not supporting windows.matchMedia yet
+        </a>
+        , we recommend that you use the below mock in your tests. Just add this
+        function to the jest-config file or inside a before all in the
+        component&apos;s test file.
+        <SimpleHighlight>{mockImport}</SimpleHighlight>
+      </p>
+    </Alert>
 
     <Title as="h3">Usage</Title>
     <p>

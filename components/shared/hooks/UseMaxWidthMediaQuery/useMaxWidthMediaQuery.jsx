@@ -13,13 +13,30 @@ const useMaxWidthMediaQuery = width => {
 
   useEffect(() => {
     const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addEventListener('change', e => updateTarget(e));
+
+    try {
+      media.addEventListener('change', e => updateTarget(e));
+    } catch (e1) {
+      /* istanbul ignore next */
+      try {
+        media.addListener(e => updateTarget(e));
+      } catch (e2) {
+        console.error(e2);
+      }
+    }
 
     if (media.matches) {
       setTargetReached(true);
     }
 
-    return () => media.removeEventListener('change', e => updateTarget(e));
+    return () => {
+      try {
+        media.removeEventListener('change', e => updateTarget(e));
+      } catch (e3) {
+        /* istanbul ignore next */
+        media.removeListener(updateTarget);
+      }
+    };
   }, []);
 
   return targetReached;
