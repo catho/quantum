@@ -47,20 +47,20 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
     height="8px"
     role="progressbar"
     width="250px"
   >
     <div
-      className="c2"
+      class="c2"
     />
   </div>
   <span
-    className="c3"
+    class="c3"
   >
     30
     %
@@ -115,20 +115,20 @@ exports[`ProgressBar component Should match the snapshot of a progress bar in pr
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
     height="8px"
     role="progressbar"
     width="250px"
   >
     <div
-      className="c2"
+      class="c2"
     />
   </div>
   <span
-    className="c3"
+    class="c3"
   >
     30
     %
@@ -183,20 +183,20 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
     height="8px"
     role="progressbar"
     width="250px"
   >
     <div
-      className="c2"
+      class="c2"
     />
   </div>
   <span
-    className="c3"
+    class="c3"
   >
     30
      percent loaded
@@ -251,20 +251,20 @@ exports[`ProgressBar component Should match the snapshot of a progressbar in pro
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
     height="8px"
     role="progressbar"
     width="250px"
   >
     <div
-      className="c2"
+      class="c2"
     />
   </div>
   <span
-    className="c3"
+    class="c3"
   >
     300
      files loaded from 1000
@@ -319,20 +319,20 @@ exports[`ProgressBar component Should match the snapshot of a simple progress ba
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
     height="8px"
     role="progressbar"
     width="250px"
   >
     <div
-      className="c2"
+      class="c2"
     />
   </div>
   <span
-    className="c3"
+    class="c3"
   >
     0
     %
