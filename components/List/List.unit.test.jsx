@@ -57,7 +57,7 @@ describe('<List />', () => {
     expect(list).toBeInTheDocument();
   });
 
-  it('render ordered list', () => {
+  it('render icon list', () => {
     const { container } = render(<List items={exampleItemsWithIcon} />);
     const icons = container.querySelectorAll('svg');
     expect(icons).toHaveLength(3);

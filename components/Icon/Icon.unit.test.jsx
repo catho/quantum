@@ -34,4 +34,13 @@ describe('<Icon />', () => {
     expect(withXSmallSize).toMatchSnapshot();
     expect(withXLargeSize).toMatchSnapshot();
   });
+
+  it('should not render a icon when name is wrong', () => {
+    const consoleErrorMock = jest.spyOn(console, 'error').mockImplementation();
+    const { container } = render(<Icon name="fooo" />);
+
+    expect(container.querySelector('svg')).not.toBeInTheDocument();
+    expect(consoleErrorMock).toBeCalled();
+    consoleErrorMock.mockRestore();
+  });
 });
