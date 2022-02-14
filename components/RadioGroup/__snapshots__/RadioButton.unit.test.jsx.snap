@@ -21,21 +21,16 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={true}
-    className="c0"
-    disabled={false}
-    htmlFor="radio-button-1"
-    size="medium"
+    class="c0"
+    for="radio-button-1"
   >
     <input
-      checked={true}
-      className="c1"
-      disabled={false}
+      checked=""
+      class="c1"
       id="radio-button-1"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
@@ -65,21 +60,15 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={false}
-    htmlFor="radio-button-7"
-    size="medium"
+    class="c0"
+    for="radio-button-7"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={false}
+      class="c1"
       id="radio-button-7"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
@@ -113,215 +102,28 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={true}
-    htmlFor="radio-button-4"
-    size="medium"
+    class="c0"
+    disabled=""
+    for="radio-button-4"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={true}
+      class="c1"
+      disabled=""
       id="radio-button-4"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
     Foo
     <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root c2"
+      aria-hidden="true"
+      class="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      theme={
-        Object {
-          "baseFontSize": 16,
-          "colors": Object {
-            "error": Object {
-              "100": "#fff5f5",
-              "300": "#f88e86",
-              "500": "#ec584e",
-              "700": "#e91b0c",
-              "900": "#ac001a",
-            },
-            "neutral": Object {
-              "0": "#ffffff",
-              "100": "#f2f2f2",
-              "1000": "#000000",
-              "300": "#e0e0e0",
-              "500": "#999999",
-              "700": "#424242",
-              "900": "#191919",
-            },
-            "primary": Object {
-              "100": "#E5EDFC",
-              "300": "#89AAE7",
-              "500": "#0CC0EA",
-              "700": "#1250C4",
-              "900": "#002F7B",
-            },
-            "secondary": Object {
-              "100": "#F7B0C8",
-              "300": "#F278A1",
-              "500": "#E91E63",
-              "700": "#DE0059",
-              "900": "#9E003F",
-            },
-            "success": Object {
-              "100": "#dcedc8",
-              "300": "#c9eda2",
-              "500": "#7ed321",
-              "700": "#3b610f",
-              "900": "#004D40",
-            },
-            "warning": Object {
-              "100": "#ffefd6",
-              "300": "#ffda6a",
-              "500": "#ffc107",
-              "700": "#f09100",
-              "900": "#d14900",
-            },
-          },
-          "components": Object {
-            "button": Object {
-              "skins": Object {
-                "error": Object {
-                  "mainColor": Object {
-                    "100": "#fff5f5",
-                    "300": "#f88e86",
-                    "500": "#ec584e",
-                    "700": "#e91b0c",
-                    "900": "#ac001a",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "neutral": Object {
-                  "mainColor": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "primary": Object {
-                  "mainColor": Object {
-                    "100": "#E5EDFC",
-                    "300": "#89AAE7",
-                    "500": "#0CC0EA",
-                    "700": "#1250C4",
-                    "900": "#002F7B",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "secondary": Object {
-                  "mainColor": Object {
-                    "100": "#F7B0C8",
-                    "300": "#F278A1",
-                    "500": "#E91E63",
-                    "700": "#DE0059",
-                    "900": "#9E003F",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "success": Object {
-                  "mainColor": Object {
-                    "100": "#dcedc8",
-                    "300": "#c9eda2",
-                    "500": "#7ed321",
-                    "700": "#3b610f",
-                    "900": "#004D40",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "warning": Object {
-                  "mainColor": Object {
-                    "100": "#ffefd6",
-                    "300": "#ffda6a",
-                    "500": "#ffc107",
-                    "700": "#f09100",
-                    "900": "#d14900",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-              },
-            },
-          },
-          "spacing": Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          },
-        }
-      }
+      style="font-size: 24px; max-width: 24px;"
+      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
@@ -357,215 +159,28 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={true}
-    htmlFor="radio-button-6"
-    size="medium"
+    class="c0"
+    disabled=""
+    for="radio-button-6"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={true}
+      class="c1"
+      disabled=""
       id="radio-button-6"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
     Foo
     <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root c2"
+      aria-hidden="true"
+      class="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      theme={
-        Object {
-          "baseFontSize": 16,
-          "colors": Object {
-            "error": Object {
-              "100": "#fff5f5",
-              "300": "#f88e86",
-              "500": "#ec584e",
-              "700": "#e91b0c",
-              "900": "#ac001a",
-            },
-            "neutral": Object {
-              "0": "#ffffff",
-              "100": "#f2f2f2",
-              "1000": "#000000",
-              "300": "#e0e0e0",
-              "500": "#999999",
-              "700": "#424242",
-              "900": "#191919",
-            },
-            "primary": Object {
-              "100": "#E5EDFC",
-              "300": "#89AAE7",
-              "500": "#0CC0EA",
-              "700": "#1250C4",
-              "900": "#002F7B",
-            },
-            "secondary": Object {
-              "100": "#F7B0C8",
-              "300": "#F278A1",
-              "500": "#E91E63",
-              "700": "#DE0059",
-              "900": "#9E003F",
-            },
-            "success": Object {
-              "100": "#dcedc8",
-              "300": "#c9eda2",
-              "500": "#7ed321",
-              "700": "#3b610f",
-              "900": "#004D40",
-            },
-            "warning": Object {
-              "100": "#ffefd6",
-              "300": "#ffda6a",
-              "500": "#ffc107",
-              "700": "#f09100",
-              "900": "#d14900",
-            },
-          },
-          "components": Object {
-            "button": Object {
-              "skins": Object {
-                "error": Object {
-                  "mainColor": Object {
-                    "100": "#fff5f5",
-                    "300": "#f88e86",
-                    "500": "#ec584e",
-                    "700": "#e91b0c",
-                    "900": "#ac001a",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "neutral": Object {
-                  "mainColor": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "primary": Object {
-                  "mainColor": Object {
-                    "100": "#E5EDFC",
-                    "300": "#89AAE7",
-                    "500": "#0CC0EA",
-                    "700": "#1250C4",
-                    "900": "#002F7B",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "secondary": Object {
-                  "mainColor": Object {
-                    "100": "#F7B0C8",
-                    "300": "#F278A1",
-                    "500": "#E91E63",
-                    "700": "#DE0059",
-                    "900": "#9E003F",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "success": Object {
-                  "mainColor": Object {
-                    "100": "#dcedc8",
-                    "300": "#c9eda2",
-                    "500": "#7ed321",
-                    "700": "#3b610f",
-                    "900": "#004D40",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "warning": Object {
-                  "mainColor": Object {
-                    "100": "#ffefd6",
-                    "300": "#ffda6a",
-                    "500": "#ffc107",
-                    "700": "#f09100",
-                    "900": "#d14900",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-              },
-            },
-          },
-          "spacing": Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          },
-        }
-      }
+      style="font-size: 24px; max-width: 24px;"
+      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
@@ -597,21 +212,15 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={false}
-    htmlFor="radio-button-5"
-    size="medium"
+    class="c0"
+    for="radio-button-5"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={false}
+      class="c1"
       id="radio-button-5"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
@@ -645,214 +254,25 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={false}
-    htmlFor="radio-button-3"
-    size="medium"
+    class="c0"
+    for="radio-button-3"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={false}
+      class="c1"
       id="radio-button-3"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
     <svg
-      aria-hidden={true}
-      className="MuiSvgIcon-root c2"
+      aria-hidden="true"
+      class="MuiSvgIcon-root c2"
       data-qtm-preloader="icon"
       focusable="false"
-      style={
-        Object {
-          "color": "",
-          "fontSize": 24,
-          "maxWidth": 24,
-        }
-      }
-      theme={
-        Object {
-          "baseFontSize": 16,
-          "colors": Object {
-            "error": Object {
-              "100": "#fff5f5",
-              "300": "#f88e86",
-              "500": "#ec584e",
-              "700": "#e91b0c",
-              "900": "#ac001a",
-            },
-            "neutral": Object {
-              "0": "#ffffff",
-              "100": "#f2f2f2",
-              "1000": "#000000",
-              "300": "#e0e0e0",
-              "500": "#999999",
-              "700": "#424242",
-              "900": "#191919",
-            },
-            "primary": Object {
-              "100": "#E5EDFC",
-              "300": "#89AAE7",
-              "500": "#0CC0EA",
-              "700": "#1250C4",
-              "900": "#002F7B",
-            },
-            "secondary": Object {
-              "100": "#F7B0C8",
-              "300": "#F278A1",
-              "500": "#E91E63",
-              "700": "#DE0059",
-              "900": "#9E003F",
-            },
-            "success": Object {
-              "100": "#dcedc8",
-              "300": "#c9eda2",
-              "500": "#7ed321",
-              "700": "#3b610f",
-              "900": "#004D40",
-            },
-            "warning": Object {
-              "100": "#ffefd6",
-              "300": "#ffda6a",
-              "500": "#ffc107",
-              "700": "#f09100",
-              "900": "#d14900",
-            },
-          },
-          "components": Object {
-            "button": Object {
-              "skins": Object {
-                "error": Object {
-                  "mainColor": Object {
-                    "100": "#fff5f5",
-                    "300": "#f88e86",
-                    "500": "#ec584e",
-                    "700": "#e91b0c",
-                    "900": "#ac001a",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "neutral": Object {
-                  "mainColor": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "primary": Object {
-                  "mainColor": Object {
-                    "100": "#E5EDFC",
-                    "300": "#89AAE7",
-                    "500": "#0CC0EA",
-                    "700": "#1250C4",
-                    "900": "#002F7B",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "secondary": Object {
-                  "mainColor": Object {
-                    "100": "#F7B0C8",
-                    "300": "#F278A1",
-                    "500": "#E91E63",
-                    "700": "#DE0059",
-                    "900": "#9E003F",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "success": Object {
-                  "mainColor": Object {
-                    "100": "#dcedc8",
-                    "300": "#c9eda2",
-                    "500": "#7ed321",
-                    "700": "#3b610f",
-                    "900": "#004D40",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-                "warning": Object {
-                  "mainColor": Object {
-                    "100": "#ffefd6",
-                    "300": "#ffda6a",
-                    "500": "#ffc107",
-                    "700": "#f09100",
-                    "900": "#d14900",
-                  },
-                  "text": Object {
-                    "0": "#ffffff",
-                    "100": "#f2f2f2",
-                    "1000": "#000000",
-                    "300": "#e0e0e0",
-                    "500": "#999999",
-                    "700": "#424242",
-                    "900": "#191919",
-                  },
-                },
-              },
-            },
-          },
-          "spacing": Object {
-            "large": 24,
-            "medium": 16,
-            "small": 12,
-            "xlarge": 32,
-            "xsmall": 8,
-            "xxlarge": 40,
-            "xxsmall": 4,
-            "xxxlarge": 48,
-            "xxxsmall": 2,
-          },
-        }
-      }
+      style="font-size: 24px; max-width: 24px;"
+      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
@@ -895,21 +315,15 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <label
-    checked={false}
-    className="c1"
-    disabled={false}
-    htmlFor="radio-button-2"
-    size="medium"
+    class="c1"
+    for="radio-button-2"
   >
     <input
-      checked={false}
-      className="c2"
-      disabled={false}
+      class="c2"
       id="radio-button-2"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />
@@ -939,21 +353,15 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 <div
-  className="RadioButton__Wrapper-sc-1q7g63p-2"
+  class="RadioButton__Wrapper-sc-1q7g63p-2"
 >
   <label
-    checked={false}
-    className="c0"
-    disabled={false}
-    htmlFor="radio-button-0"
-    size="medium"
+    class="c0"
+    for="radio-button-0"
   >
     <input
-      checked={false}
-      className="c1"
-      disabled={false}
+      class="c1"
       id="radio-button-0"
-      onChange={[Function]}
       type="radio"
       value="Foo"
     />

@@ -2,97 +2,68 @@
 
 exports[`<RadioGroup /> snapshot should render the same 1`] = `
 "Snapshot Diff:
- Compared values have no visual difference."
+Compared values have no visual difference."
 `;
 
 exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button /> 1`] = `
 "Snapshot Diff:
- - Expected
-+ Received
+- First value
++ Second value
 
-  <div
-    className=\\"FieldGroup-sc-18uoi37-0 RadioGroup__Group-sc-1l7wvp0-0 bciUTo eCksJC\\"
-    role=\\"radiogroup\\"
-  >
-    <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
-    >
-      <label
-        checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
-        disabled={false}
--       htmlFor=\\"radio-button-9\\"
-+       htmlFor=\\"radio-button-12\\"
-        size=\\"medium\\"
+@@ -6,15 +6,15 @@
+      <div
+        class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
-          disabled={false}
--         id=\\"radio-button-9\\"
-+         id=\\"radio-button-12\\"
-          name=\\"foo\\"
-          onChange={[Function onChange]}
-          required={false}
-          type=\\"radio\\"
-          value=\\"Foo\\"
-        />
-        Foo
-      </label>
-    </div>
-    <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
-    >
-      <label
-        checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
-        disabled={false}
--       htmlFor=\\"radio-button-10\\"
-+       htmlFor=\\"radio-button-13\\"
-        size=\\"medium\\"
+        <label
+          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+-         for=\\"radio-button-9\\"
++         for=\\"radio-button-12\\"
+        >
+          <input
+            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+-           id=\\"radio-button-9\\"
++           id=\\"radio-button-12\\"
+            name=\\"foo\\"
+            type=\\"radio\\"
+            value=\\"Foo\\"
+          />
+          Foo
+@@ -23,15 +23,15 @@
+      <div
+        class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
-          disabled={false}
--         id=\\"radio-button-10\\"
-+         id=\\"radio-button-13\\"
-          name=\\"foo\\"
-          onChange={[Function onChange]}
-          required={false}
-          type=\\"radio\\"
-          value=\\"Bar\\"
-        />
-        Bar
-      </label>
-    </div>
-    <div
-      className=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
-    >
-      <label
-        checked={false}
-        className=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
-        disabled={false}
--       htmlFor=\\"radio-button-11\\"
-+       htmlFor=\\"radio-button-14\\"
-        size=\\"medium\\"
+        <label
+          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+-         for=\\"radio-button-10\\"
++         for=\\"radio-button-13\\"
+        >
+          <input
+            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+-           id=\\"radio-button-10\\"
++           id=\\"radio-button-13\\"
+            name=\\"foo\\"
+            type=\\"radio\\"
+            value=\\"Bar\\"
+          />
+          Bar
+@@ -40,15 +40,15 @@
+      <div
+        class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
-        <input
-          checked={false}
-          className=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
-          disabled={false}
--         id=\\"radio-button-11\\"
-+         id=\\"radio-button-14\\"
-          name=\\"foo\\"
-          onChange={[Function onChange]}
-          required={false}
-          type=\\"radio\\"
-          value=\\"Baz\\"
-        />
-        Baz
-      </label>
-    </div>
-  </div>"
+        <label
+          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+-         for=\\"radio-button-11\\"
++         for=\\"radio-button-14\\"
+        >
+          <input
+            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+-           id=\\"radio-button-11\\"
++           id=\\"radio-button-14\\"
+            name=\\"foo\\"
+            type=\\"radio\\"
+            value=\\"Baz\\"
+          />
+          Baz"
 `;
 
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
@@ -128,27 +99,20 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-3"
-      size="medium"
+      class="c2"
+      for="radio-button-3"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-3"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Foo"
       />
@@ -156,23 +120,16 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-4"
-      size="medium"
+      class="c2"
+      for="radio-button-4"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-4"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Bar"
       />
@@ -180,23 +137,16 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-5"
-      size="medium"
+      class="c2"
+      for="radio-button-5"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-5"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Baz"
       />
@@ -249,27 +199,20 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <div
-    className="c2"
+    class="c2"
   >
     <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="radio-button-6"
-      size="medium"
+      class="c3"
+      for="radio-button-6"
     >
       <input
-        checked={false}
-        className="c4"
-        disabled={false}
+        class="c4"
         id="radio-button-6"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Foo"
       />
@@ -277,23 +220,16 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
     </label>
   </div>
   <div
-    className="c2"
+    class="c2"
   >
     <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="radio-button-7"
-      size="medium"
+      class="c3"
+      for="radio-button-7"
     >
       <input
-        checked={false}
-        className="c4"
-        disabled={false}
+        class="c4"
         id="radio-button-7"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Bar"
       />
@@ -301,23 +237,16 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
     </label>
   </div>
   <div
-    className="c2"
+    class="c2"
   >
     <label
-      checked={false}
-      className="c3"
-      disabled={false}
-      htmlFor="radio-button-8"
-      size="medium"
+      class="c3"
+      for="radio-button-8"
     >
       <input
-        checked={false}
-        className="c4"
-        disabled={false}
+        class="c4"
         id="radio-button-8"
         name="groceries"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Baz"
       />
@@ -426,67 +355,52 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="groceries"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Foo"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Foo
     </span>
   </label>
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="groceries"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Bar"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Bar
     </span>
   </label>
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="groceries"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Baz"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Baz
@@ -528,27 +442,20 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-0"
-      size="medium"
+      class="c2"
+      for="radio-button-0"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-0"
         name="foo"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Foo"
       />
@@ -556,23 +463,16 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     </label>
   </div>
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-1"
-      size="medium"
+      class="c2"
+      for="radio-button-1"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-1"
         name="foo"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Bar"
       />
@@ -580,23 +480,16 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     </label>
   </div>
   <div
-    className="RadioButton__Wrapper-sc-1q7g63p-2"
+    class="RadioButton__Wrapper-sc-1q7g63p-2"
   >
     <label
-      checked={false}
-      className="c2"
-      disabled={false}
-      htmlFor="radio-button-2"
-      size="medium"
+      class="c2"
+      for="radio-button-2"
     >
       <input
-        checked={false}
-        className="c3"
-        disabled={false}
+        class="c3"
         id="radio-button-2"
         name="foo"
-        onChange={[Function]}
-        required={false}
         type="radio"
         value="Baz"
       />
@@ -705,67 +598,52 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="foo"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Foo"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Foo
     </span>
   </label>
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="foo"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Bar"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Bar
     </span>
   </label>
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="foo"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Baz"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Baz
@@ -908,32 +786,27 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="groceries"
-      onChange={[Function]}
-      required={false}
-      size="medium"
       type="radio"
       value="Foo"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Foo
     </span>
   </label>
   <span
-    className="c8"
+    class="c8"
   >
     Error text
   </span>
@@ -1039,25 +912,21 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   role="radiogroup"
 >
   <label
-    className="c2 c3"
-    disabled={false}
+    class="c2 c3"
   >
     <input
-      className="c4 c5"
-      disabled={false}
+      class="c4 c5"
       name="groceries"
-      onChange={[Function]}
-      required={true}
-      size="medium"
+      required=""
       type="radio"
       value="Foo"
     />
     <span
-      className="c6 c7"
+      class="c6 c7"
     />
     <span>
       Foo
