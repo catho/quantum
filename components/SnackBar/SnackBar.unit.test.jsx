@@ -1,8 +1,7 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import SnackBar from './SnackBar';
-import { GetAllSkinsIcons } from './IconTypes';
+import { colors } from '../shared/theme';
 
 describe('<SnackBar />', () => {
   const actionTriggerEventMock = jest.fn();
@@ -15,7 +14,6 @@ describe('<SnackBar />', () => {
     callbackFn: actionTriggerEventMock,
   };
 
-  let component;
   const SnackBarComponent = (
     <SnackBar
       text="SnackBar message content"
@@ -87,99 +85,134 @@ describe('<SnackBar />', () => {
     ];
 
     SNACKBARS.forEach(snackbar => {
-      const SnackComponent = mount(snackbar);
-      expect(toJson(SnackComponent)).toMatchSnapshot();
-      SnackComponent.unmount();
+      const { container } = render(snackbar);
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
-  afterEach(() => {
-    if (component && component.length) {
-      component.unmount();
-    }
+  it('should match background color with neutral skin', () => {
+    render(<SnackBar skin="neutral" />);
+    const snackBarDialog = screen.getByRole('alertdialog');
+    expect(snackBarDialog).toHaveStyle({
+      'background-color': colors.neutral[700],
+    });
   });
 
-  it('should show the correct skin icon on the matched skin', () => {
-    Object.entries(GetAllSkinsIcons()).forEach(([skin, skinIconName]) => {
-      component = mount(
-        <SnackBar
-          text="SnackBar message content"
-          onClose={onCloseEventMock}
-          closeButtonAriaLabel={CloseButtonAriaLabel}
-          skin={skin}
-        />,
-      );
-      const iconName = component.find('SkinIcon Icon').prop('name');
-      expect(iconName).toMatch(skinIconName);
-      component.unmount();
+  it('should match background color with success skin', () => {
+    render(<SnackBar skin="success" />);
+    const snackBarDialog = screen.getByRole('alertdialog');
+    expect(snackBarDialog).toHaveStyle({
+      'background-color': colors.success[900],
+    });
+  });
+
+  it('should match background color with primary skin', () => {
+    render(<SnackBar skin="primary" />);
+    const snackBarDialog = screen.getByRole('alertdialog');
+    expect(snackBarDialog).toHaveStyle({
+      'background-color': colors.primary[900],
+    });
+  });
+
+  it('should match background color with warning skin', () => {
+    render(<SnackBar skin="warning" />);
+    const snackBarDialog = screen.getByRole('alertdialog');
+    expect(snackBarDialog).toHaveStyle({
+      'background-color': colors.warning[700],
+    });
+  });
+
+  it('should match background color with error skin', () => {
+    render(<SnackBar skin="error" />);
+    const snackBarDialog = screen.getByRole('alertdialog');
+    expect(snackBarDialog).toHaveStyle({
+      'background-color': colors.error[900],
     });
   });
 
   it('should not show the action button when the skin is different of neutral', () => {
-    component = mount(SnackBarComponentWithSuccessSkin);
-    expect(component.find('ActionButton').exists()).toBe(false);
+    render(SnackBarComponentWithSuccessSkin);
+    expect(screen.queryByText('HIDE')).not.toBeInTheDocument();
   });
 
   it('should call the action button when the skin is neutral and have a action trigger', () => {
-    component = mount(SnackBarComponentWithNeutralSkin);
-    component.find('ActionButton').simulate('click');
+    render(SnackBarComponentWithNeutralSkin);
+
+    const button = screen.getByText('HIDE');
+    expect(button).toBeInTheDocument();
+  });
+
+  it('should call action trigger callback', () => {
+    render(SnackBarComponent);
+
+    const button = screen.getByText('HIDE');
+    fireEvent.click(button);
+
     expect(actionTriggerEventMock).toHaveBeenCalled();
   });
 
   it('should call on close event callback without action triggers (call close icon in the right)', () => {
-    component = mount(SnackBarComponentWithoutActionTriggers);
-    component.find('CloseButton').simulate('click');
+    render(SnackBarComponentWithoutActionTriggers);
+    const closeButton = screen.getByRole('button', { name: /close/i });
+    fireEvent.click(closeButton);
     expect(onCloseEventMock).toHaveBeenCalled();
   });
 
-  it('should call action trigger callback', () => {
-    component = mount(SnackBarComponent);
-    component.find('ActionButton').simulate('click');
-    expect(actionTriggerEventMock).toHaveBeenCalled();
-  });
-
   it('should action trigger title has the same of the prop object', () => {
-    component = mount(SnackBarComponent);
-    const actionTriggerText = component.find('ActionButton').text();
-    expect(actionTrigger.title).toMatch(actionTriggerText);
+    render(SnackBarComponent);
+    expect(screen.getByText(actionTrigger.title)).toBeInTheDocument();
   });
 
   it('(a11y) should the dialog has the same id of content', () => {
-    component = mount(SnackBarComponent);
-    const snackBarDialogAriaDescribedBy = component
-      .find('SnackBarDialog')
-      .prop('aria-describedby');
-    const snackBarDialogTextContainerId = component
-      .find('TextContainer')
-      .prop('id');
-    expect(snackBarDialogAriaDescribedBy).toMatch(
-      snackBarDialogTextContainerId,
+    render(SnackBarComponent);
+
+    const snackBarDialog = screen.getByRole('alertdialog');
+    const snackBarDialogTextContainer = screen.getByText(
+      /SnackBar message content/i,
+    );
+
+    expect(snackBarDialog.getAttribute('aria-describedby')).toMatch(
+      snackBarDialogTextContainer.getAttribute('id'),
     );
   });
 
   it('(a11y) should focus the action button when component was rendered', () => {
-    component = mount(SnackBarComponent);
+    render(SnackBarComponent);
     const focusedElement = document.activeElement;
-    expect(component.find('ActionButton').getDOMNode()).toEqual(focusedElement);
+
+    expect(screen.getByRole('button', { name: /HIDE/i })).toEqual(
+      focusedElement,
+    );
   });
 
-  it('(a11y) should close the component by secondsToClose prop time setted', () => {
-    component = mount(SnackBarComponent);
+  it('(a11y) should close the component by secondsToClose prop time setted', async () => {
+    render(SnackBarComponent);
 
-    const secondsToCloseProp = component
-      .find('SnackBarDialog')
-      .prop('secondsToClose');
+    const snackBarDialog = screen.getByRole('alertdialog');
 
-    expect(secondsToCloseProp).toBe(secondsToClose);
+    await expect(async () => {
+      await waitFor(() => {
+        expect(snackBarDialog).not.toBeInTheDocument();
+      });
+    }).rejects.toEqual(expect.anything());
+  });
 
-    setTimeout(() => {
-      expect(onCloseEventMock).toHaveBeenCalled();
-    }, secondsToClose);
+  it('Should close when enter is pressed', async () => {
+    render(SnackBarComponentWithoutActionTriggers);
+    const closeButton = screen.getByRole('button', { name: /close/i });
+
+    fireEvent.keyPress(closeButton, { key: 'escape', code: 27, charCode: 27 });
+
+    expect(onCloseEventMock).not.toHaveBeenCalled();
+
+    fireEvent.keyPress(closeButton, { key: 'Enter', code: 13, charCode: 13 });
+
+    expect(onCloseEventMock).toHaveBeenCalled();
   });
 
   it('should be child of body element', () => {
     expect(document.body.childNodes.length).toBe(0);
-    mount(SnackBarComponent);
-    expect(document.body.childNodes.length).toBe(1);
+    render(SnackBarComponent);
+    expect(document.body.childNodes.length).toBe(2);
   });
 });
