@@ -13,11 +13,10 @@ exports[`<Tag /> Inverted prop error 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -37,11 +36,10 @@ exports[`<Tag /> Inverted prop neutral 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -61,11 +59,10 @@ exports[`<Tag /> Inverted prop primary 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -85,11 +82,10 @@ exports[`<Tag /> Inverted prop success 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -109,11 +105,10 @@ exports[`<Tag /> Inverted prop warning 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -134,11 +129,10 @@ exports[`<Tag /> Sizes large 1`] = `
 }
 
 <div
-  className="c0"
-  size="large"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -158,11 +152,10 @@ exports[`<Tag /> Sizes medium 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -185,11 +178,10 @@ exports[`<Tag /> Sizes small 1`] = `
 }
 
 <div
-  className="c0"
-  size="small"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -209,11 +201,10 @@ exports[`<Tag /> Skins error 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -233,11 +224,10 @@ exports[`<Tag /> Skins primary 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -257,11 +247,10 @@ exports[`<Tag /> Skins success 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -281,11 +270,10 @@ exports[`<Tag /> Skins warning 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -305,11 +293,10 @@ exports[`<Tag /> Stroked prop error 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -329,11 +316,10 @@ exports[`<Tag /> Stroked prop neutral 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -353,11 +339,10 @@ exports[`<Tag /> Stroked prop primary 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -377,11 +362,10 @@ exports[`<Tag /> Stroked prop success 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -401,11 +385,10 @@ exports[`<Tag /> Stroked prop warning 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -454,31 +437,21 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -537,31 +510,21 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -625,31 +588,21 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -718,31 +671,21 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -816,31 +759,21 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -919,31 +852,21 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1027,31 +950,21 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1140,31 +1053,21 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1258,31 +1161,21 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1381,31 +1274,21 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1504,31 +1387,21 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1627,31 +1500,21 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1750,31 +1613,21 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1873,31 +1726,21 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -1996,31 +1839,21 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="c1"
-    onClose={[Function]}
+    class="c1"
   >
     Tag text
     <button
-      className="c2"
-      onClick={[Function]}
-      size="medium"
+      class="c2"
     >
       <svg
-        aria-hidden={true}
-        className="MuiSvgIcon-root c3 c4"
+        aria-hidden="true"
+        class="MuiSvgIcon-root c3 c4"
         data-qtm-preloader="icon"
         focusable="false"
-        style={
-          Object {
-            "color": "",
-            "fontSize": 24,
-            "maxWidth": 24,
-          }
-        }
+        style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
@@ -2046,11 +1879,10 @@ exports[`<Tag /> with bold prop 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>
@@ -2070,11 +1902,10 @@ exports[`<Tag /> with only text prop / children 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     example
   </div>
@@ -2094,11 +1925,10 @@ exports[`<Tag /> with only text prop / children 2`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     example
   </div>
@@ -2118,11 +1948,10 @@ exports[`<Tag /> without props 1`] = `
 }
 
 <div
-  className="c0"
-  size="medium"
+  class="c0"
 >
   <div
-    className="Tag__Content-sc-1i8fike-1"
+    class="Tag__Content-sc-1i8fike-1"
   >
     Tag text
   </div>

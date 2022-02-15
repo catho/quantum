@@ -1,13 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Tag from './Tag';
 
 const testSnapshot = (props = {}) => {
   const propsList = Array.isArray(props) ? props : [props];
 
   propsList.forEach(p => {
-    expect(renderer.create(<Tag {...p} />).toJSON()).toMatchSnapshot();
+    const { container } = render(<Tag {...p} />);
+    expect(container.firstChild).toMatchSnapshot();
   });
 };
 
@@ -69,10 +69,11 @@ describe('<Tag />', () => {
 
     it('is called when close button is clicked', () => {
       const onCloseMock = jest.fn();
-      const tag = shallow(<Tag closable onClose={onCloseMock} />);
-      const button = tag.find('CloseButton');
+      render(<Tag closable onClose={onCloseMock} />);
 
-      button.simulate('click');
+      const button = screen.getByRole('button');
+
+      fireEvent.click(button);
 
       expect(onCloseMock).toHaveBeenCalled();
     });
