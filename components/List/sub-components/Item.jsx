@@ -52,7 +52,7 @@ class Item extends React.Component {
       return <Item content={item} key={item} />;
     }
 
-    return <Item {...item} key={item.content} />;
+    return <Item {...item} key={item[Object.keys(item)[0]]} />;
   };
 
   _renderIcon = (icon, theme) => {

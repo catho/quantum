@@ -1,5 +1,151 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<List /> Should match bullet list snapshot 1`] = `
+.c3 {
+  margin: 4px 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px;
+}
+
+.c0 {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.c0 li {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.c0 li:last-child {
+  border: none;
+}
+
+<ul
+  class="c0"
+>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Tomato sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Mustard
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Barbecue sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Red-wine vinegar
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Salsa
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+        >
+          Hot pepper sauce
+        </span>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
 exports[`<List /> Should match the bullet list snapshot 1`] = `
 .c3 {
   margin: 4px 0;
@@ -50,876 +196,106 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
   margin-top: 8px;
 }
 
-<List
-  bullet=""
-  divided={false}
-  inline={false}
-  items={
-    Array [
-      "Tomato sauce",
-      "Mustard",
-      "Barbecue sauce",
-      "Red-wine vinegar",
-      "Salsa",
-      "Hot pepper sauce",
-    ]
-  }
-  ordered={true}
-  theme={
-    Object {
-      "baseFontSize": 16,
-      "colors": Object {
-        "error": Object {
-          "100": "#fff5f5",
-          "300": "#f88e86",
-          "500": "#ec584e",
-          "700": "#e91b0c",
-          "900": "#ac001a",
-        },
-        "neutral": Object {
-          "0": "#ffffff",
-          "100": "#f2f2f2",
-          "1000": "#000000",
-          "300": "#e0e0e0",
-          "500": "#999999",
-          "700": "#424242",
-          "900": "#191919",
-        },
-        "primary": Object {
-          "100": "#E5EDFC",
-          "300": "#89AAE7",
-          "500": "#0CC0EA",
-          "700": "#1250C4",
-          "900": "#002F7B",
-        },
-        "secondary": Object {
-          "100": "#F7B0C8",
-          "300": "#F278A1",
-          "500": "#E91E63",
-          "700": "#DE0059",
-          "900": "#9E003F",
-        },
-        "success": Object {
-          "100": "#dcedc8",
-          "300": "#c9eda2",
-          "500": "#7ed321",
-          "700": "#3b610f",
-          "900": "#004D40",
-        },
-        "warning": Object {
-          "100": "#ffefd6",
-          "300": "#ffda6a",
-          "500": "#ffc107",
-          "700": "#f09100",
-          "900": "#d14900",
-        },
-      },
-      "spacing": Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      },
-    }
-  }
+<ol
+  class="c0"
 >
-  <OrderedList
-    bullet=""
-    divided={false}
-    inline={false}
-    items={
-      Array [
-        "Tomato sauce",
-        "Mustard",
-        "Barbecue sauce",
-        "Red-wine vinegar",
-        "Salsa",
-        "Hot pepper sauce",
-      ]
-    }
-    ordered={true}
-    theme={
-      Object {
-        "baseFontSize": 16,
-        "colors": Object {
-          "error": Object {
-            "100": "#fff5f5",
-            "300": "#f88e86",
-            "500": "#ec584e",
-            "700": "#e91b0c",
-            "900": "#ac001a",
-          },
-          "neutral": Object {
-            "0": "#ffffff",
-            "100": "#f2f2f2",
-            "1000": "#000000",
-            "300": "#e0e0e0",
-            "500": "#999999",
-            "700": "#424242",
-            "900": "#191919",
-          },
-          "primary": Object {
-            "100": "#E5EDFC",
-            "300": "#89AAE7",
-            "500": "#0CC0EA",
-            "700": "#1250C4",
-            "900": "#002F7B",
-          },
-          "secondary": Object {
-            "100": "#F7B0C8",
-            "300": "#F278A1",
-            "500": "#E91E63",
-            "700": "#DE0059",
-            "900": "#9E003F",
-          },
-          "success": Object {
-            "100": "#dcedc8",
-            "300": "#c9eda2",
-            "500": "#7ed321",
-            "700": "#3b610f",
-            "900": "#004D40",
-          },
-          "warning": Object {
-            "100": "#ffefd6",
-            "300": "#ffda6a",
-            "500": "#ffc107",
-            "700": "#f09100",
-            "900": "#d14900",
-          },
-        },
-        "spacing": Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        },
-      }
-    }
-  >
-    <ol
-      className="c0"
+  <li>
+    <div
+      class="c1"
     >
-      <List.Item
-        bullet=""
-        content="Tomato sauce"
-        icon=""
-        key="Tomato sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Tomato sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Tomato sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Mustard"
-        icon=""
-        key="Mustard"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Tomato sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Mustard"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Mustard
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Barbecue sauce"
-        icon=""
-        key="Barbecue sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Mustard
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Barbecue sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Barbecue sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Red-wine vinegar"
-        icon=""
-        key="Red-wine vinegar"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Barbecue sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Red-wine vinegar"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Red-wine vinegar
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Salsa"
-        icon=""
-        key="Salsa"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Red-wine vinegar
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Salsa"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Salsa
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Hot pepper sauce"
-        icon=""
-        key="Hot pepper sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Salsa
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Hot pepper sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Hot pepper sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-    </ol>
-  </OrderedList>
-</List>
+        <span
+          class="c3"
+        >
+          Hot pepper sauce
+        </span>
+      </div>
+    </div>
+  </li>
+</ol>
 `;
 
 exports[`<List /> Should match the default snapshot 1`] = `
@@ -929,149 +305,9 @@ exports[`<List /> Should match the default snapshot 1`] = `
   padding-left: 0;
 }
 
-<List
-  bullet=""
-  divided={false}
-  inline={false}
-  items={Array []}
-  ordered={false}
-  theme={
-    Object {
-      "baseFontSize": 16,
-      "colors": Object {
-        "error": Object {
-          "100": "#fff5f5",
-          "300": "#f88e86",
-          "500": "#ec584e",
-          "700": "#e91b0c",
-          "900": "#ac001a",
-        },
-        "neutral": Object {
-          "0": "#ffffff",
-          "100": "#f2f2f2",
-          "1000": "#000000",
-          "300": "#e0e0e0",
-          "500": "#999999",
-          "700": "#424242",
-          "900": "#191919",
-        },
-        "primary": Object {
-          "100": "#E5EDFC",
-          "300": "#89AAE7",
-          "500": "#0CC0EA",
-          "700": "#1250C4",
-          "900": "#002F7B",
-        },
-        "secondary": Object {
-          "100": "#F7B0C8",
-          "300": "#F278A1",
-          "500": "#E91E63",
-          "700": "#DE0059",
-          "900": "#9E003F",
-        },
-        "success": Object {
-          "100": "#dcedc8",
-          "300": "#c9eda2",
-          "500": "#7ed321",
-          "700": "#3b610f",
-          "900": "#004D40",
-        },
-        "warning": Object {
-          "100": "#ffefd6",
-          "300": "#ffda6a",
-          "500": "#ffc107",
-          "700": "#f09100",
-          "900": "#d14900",
-        },
-      },
-      "spacing": Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      },
-    }
-  }
->
-  <UnorderedList
-    bullet=""
-    divided={false}
-    inline={false}
-    items={Array []}
-    ordered={false}
-    theme={
-      Object {
-        "baseFontSize": 16,
-        "colors": Object {
-          "error": Object {
-            "100": "#fff5f5",
-            "300": "#f88e86",
-            "500": "#ec584e",
-            "700": "#e91b0c",
-            "900": "#ac001a",
-          },
-          "neutral": Object {
-            "0": "#ffffff",
-            "100": "#f2f2f2",
-            "1000": "#000000",
-            "300": "#e0e0e0",
-            "500": "#999999",
-            "700": "#424242",
-            "900": "#191919",
-          },
-          "primary": Object {
-            "100": "#E5EDFC",
-            "300": "#89AAE7",
-            "500": "#0CC0EA",
-            "700": "#1250C4",
-            "900": "#002F7B",
-          },
-          "secondary": Object {
-            "100": "#F7B0C8",
-            "300": "#F278A1",
-            "500": "#E91E63",
-            "700": "#DE0059",
-            "900": "#9E003F",
-          },
-          "success": Object {
-            "100": "#dcedc8",
-            "300": "#c9eda2",
-            "500": "#7ed321",
-            "700": "#3b610f",
-            "900": "#004D40",
-          },
-          "warning": Object {
-            "100": "#ffefd6",
-            "300": "#ffda6a",
-            "500": "#ffc107",
-            "700": "#f09100",
-            "900": "#d14900",
-          },
-        },
-        "spacing": Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        },
-      }
-    }
-  >
-    <ul
-      className="c0"
-    />
-  </UnorderedList>
-</List>
+<ul
+  class="c0"
+/>
 `;
 
 exports[`<List /> Should match the divided list snapshot 1`] = `
@@ -1107,885 +343,122 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
 .c0 {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding-left: 24px;
 }
 
 .c0 li {
-  border-bottom: 1px solid #f2f2f2;
+  display: inline-block;
 }
 
-.c0 li:last-child {
-  border: none;
+.c0 li {
+  position: relative;
 }
 
-<List
-  bullet=""
-  divided={true}
-  inline={false}
-  items={
-    Array [
-      "Tomato sauce",
-      "Mustard",
-      "Barbecue sauce",
-      "Red-wine vinegar",
-      "Salsa",
-      "Hot pepper sauce",
-    ]
-  }
-  ordered={false}
-  theme={
-    Object {
-      "baseFontSize": 16,
-      "colors": Object {
-        "error": Object {
-          "100": "#fff5f5",
-          "300": "#f88e86",
-          "500": "#ec584e",
-          "700": "#e91b0c",
-          "900": "#ac001a",
-        },
-        "neutral": Object {
-          "0": "#ffffff",
-          "100": "#f2f2f2",
-          "1000": "#000000",
-          "300": "#e0e0e0",
-          "500": "#999999",
-          "700": "#424242",
-          "900": "#191919",
-        },
-        "primary": Object {
-          "100": "#E5EDFC",
-          "300": "#89AAE7",
-          "500": "#0CC0EA",
-          "700": "#1250C4",
-          "900": "#002F7B",
-        },
-        "secondary": Object {
-          "100": "#F7B0C8",
-          "300": "#F278A1",
-          "500": "#E91E63",
-          "700": "#DE0059",
-          "900": "#9E003F",
-        },
-        "success": Object {
-          "100": "#dcedc8",
-          "300": "#c9eda2",
-          "500": "#7ed321",
-          "700": "#3b610f",
-          "900": "#004D40",
-        },
-        "warning": Object {
-          "100": "#ffefd6",
-          "300": "#ffda6a",
-          "500": "#ffc107",
-          "700": "#f09100",
-          "900": "#d14900",
-        },
-      },
-      "spacing": Object {
-        "large": 24,
-        "medium": 16,
-        "small": 12,
-        "xlarge": 32,
-        "xsmall": 8,
-        "xxlarge": 40,
-        "xxsmall": 4,
-        "xxxlarge": 48,
-        "xxxsmall": 2,
-      },
-    }
-  }
+.c0 li:before {
+  content: '•';
+  position: absolute;
+  top: 12%;
+  right: 100%;
+}
+
+<ul
+  class="c0"
 >
-  <UnorderedList
-    bullet=""
-    divided={true}
-    inline={false}
-    items={
-      Array [
-        "Tomato sauce",
-        "Mustard",
-        "Barbecue sauce",
-        "Red-wine vinegar",
-        "Salsa",
-        "Hot pepper sauce",
-      ]
-    }
-    ordered={false}
-    theme={
-      Object {
-        "baseFontSize": 16,
-        "colors": Object {
-          "error": Object {
-            "100": "#fff5f5",
-            "300": "#f88e86",
-            "500": "#ec584e",
-            "700": "#e91b0c",
-            "900": "#ac001a",
-          },
-          "neutral": Object {
-            "0": "#ffffff",
-            "100": "#f2f2f2",
-            "1000": "#000000",
-            "300": "#e0e0e0",
-            "500": "#999999",
-            "700": "#424242",
-            "900": "#191919",
-          },
-          "primary": Object {
-            "100": "#E5EDFC",
-            "300": "#89AAE7",
-            "500": "#0CC0EA",
-            "700": "#1250C4",
-            "900": "#002F7B",
-          },
-          "secondary": Object {
-            "100": "#F7B0C8",
-            "300": "#F278A1",
-            "500": "#E91E63",
-            "700": "#DE0059",
-            "900": "#9E003F",
-          },
-          "success": Object {
-            "100": "#dcedc8",
-            "300": "#c9eda2",
-            "500": "#7ed321",
-            "700": "#3b610f",
-            "900": "#004D40",
-          },
-          "warning": Object {
-            "100": "#ffefd6",
-            "300": "#ffda6a",
-            "500": "#ffc107",
-            "700": "#f09100",
-            "900": "#d14900",
-          },
-        },
-        "spacing": Object {
-          "large": 24,
-          "medium": 16,
-          "small": 12,
-          "xlarge": 32,
-          "xsmall": 8,
-          "xxlarge": 40,
-          "xxsmall": 4,
-          "xxxlarge": 48,
-          "xxxsmall": 2,
-        },
-      }
-    }
-  >
-    <ul
-      className="c0"
+  <li>
+    <div
+      class="c1"
     >
-      <List.Item
-        bullet=""
-        content="Tomato sauce"
-        icon=""
-        key="Tomato sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Tomato sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Tomato sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Mustard"
-        icon=""
-        key="Mustard"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Tomato sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Mustard"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Mustard
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Barbecue sauce"
-        icon=""
-        key="Barbecue sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Mustard
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Barbecue sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Barbecue sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Red-wine vinegar"
-        icon=""
-        key="Red-wine vinegar"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Barbecue sauce
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Red-wine vinegar"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Red-wine vinegar
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Salsa"
-        icon=""
-        key="Salsa"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Red-wine vinegar
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Salsa"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Salsa
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-      <List.Item
-        bullet=""
-        content="Hot pepper sauce"
-        icon=""
-        key="Hot pepper sauce"
-        theme={
-          Object {
-            "baseFontSize": 16,
-            "spacing": Object {
-              "large": 24,
-              "medium": 16,
-              "small": 12,
-              "xlarge": 32,
-              "xsmall": 8,
-              "xxlarge": 40,
-              "xxsmall": 4,
-              "xxxlarge": 48,
-              "xxxsmall": 2,
-            },
-          }
-        }
+        <span
+          class="c3"
+        >
+          Salsa
+        </span>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div
+      class="c1"
+    >
+      
+      <div
+        class="c2"
       >
-        <li>
-          <ListItem
-            bullet=""
-            theme={
-              Object {
-                "baseFontSize": 16,
-                "spacing": Object {
-                  "large": 24,
-                  "medium": 16,
-                  "small": 12,
-                  "xlarge": 32,
-                  "xsmall": 8,
-                  "xxlarge": 40,
-                  "xxsmall": 4,
-                  "xxxlarge": 48,
-                  "xxxsmall": 2,
-                },
-              }
-            }
-          >
-            <div
-              className="c1"
-            >
-              <List.Content
-                content="Hot pepper sauce"
-                header=""
-                subheader=""
-                theme={
-                  Object {
-                    "baseFontSize": 16,
-                    "spacing": Object {
-                      "large": 24,
-                      "medium": 16,
-                      "small": 12,
-                      "xlarge": 32,
-                      "xsmall": 8,
-                      "xxlarge": 40,
-                      "xxsmall": 4,
-                      "xxxlarge": 48,
-                      "xxxsmall": 2,
-                    },
-                  }
-                }
-              >
-                <Content>
-                  <div
-                    className="c2"
-                  >
-                    <List.Header
-                      theme={
-                        Object {
-                          "spacing": Object {
-                            "large": 24,
-                            "medium": 16,
-                            "small": 12,
-                            "xlarge": 32,
-                            "xsmall": 8,
-                            "xxlarge": 40,
-                            "xxsmall": 4,
-                            "xxxlarge": 48,
-                            "xxxsmall": 2,
-                          },
-                        }
-                      }
-                    >
-                      <Header
-                        theme={
-                          Object {
-                            "spacing": Object {
-                              "large": 24,
-                              "medium": 16,
-                              "small": 12,
-                              "xlarge": 32,
-                              "xsmall": 8,
-                              "xxlarge": 40,
-                              "xxsmall": 4,
-                              "xxxlarge": 48,
-                              "xxxsmall": 2,
-                            },
-                          }
-                        }
-                      >
-                        <span
-                          className="c3"
-                        >
-                          Hot pepper sauce
-                        </span>
-                      </Header>
-                    </List.Header>
-                  </div>
-                </Content>
-              </List.Content>
-            </div>
-          </ListItem>
-        </li>
-      </List.Item>
-    </ul>
-  </UnorderedList>
-</List>
+        <span
+          class="c3"
+        >
+          Hot pepper sauce
+        </span>
+      </div>
+    </div>
+  </li>
+</ul>
 `;

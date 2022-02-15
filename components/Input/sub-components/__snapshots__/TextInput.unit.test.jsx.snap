@@ -58,9 +58,11 @@ exports[`Input component should match snapshots 1`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 2`] = `
@@ -131,9 +133,11 @@ exports[`Input component should match snapshots 2`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 3`] = `
@@ -195,9 +199,11 @@ exports[`Input component should match snapshots 3`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 4`] = `
@@ -269,9 +275,11 @@ exports[`Input component should match snapshots 4`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 5`] = `
@@ -332,10 +340,12 @@ exports[`Input component should match snapshots 5`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  disabled={true}
-/>
+<div>
+  <input
+    class="c0"
+    disabled=""
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 6`] = `
@@ -406,10 +416,12 @@ exports[`Input component should match snapshots 6`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  disabled={true}
-/>
+<div>
+  <input
+    class="c0"
+    disabled=""
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 7`] = `
@@ -470,9 +482,11 @@ exports[`Input component should match snapshots 7`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 8`] = `
@@ -543,9 +557,11 @@ exports[`Input component should match snapshots 8`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-/>
+<div>
+  <input
+    class="c0"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 9`] = `
@@ -606,10 +622,12 @@ exports[`Input component should match snapshots 9`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  placeholder="Placeholder text"
-/>
+<div>
+  <input
+    class="c0"
+    placeholder="Placeholder text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 10`] = `
@@ -680,10 +698,12 @@ exports[`Input component should match snapshots 10`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  placeholder="Placeholder text"
-/>
+<div>
+  <input
+    class="c0"
+    placeholder="Placeholder text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 11`] = `
@@ -744,10 +764,13 @@ exports[`Input component should match snapshots 11`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  value="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    readonly=""
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 12`] = `
@@ -818,10 +841,13 @@ exports[`Input component should match snapshots 12`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  value="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    readonly=""
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 13`] = `
@@ -882,10 +908,12 @@ exports[`Input component should match snapshots 13`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  defaultValue="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 14`] = `
@@ -956,10 +984,12 @@ exports[`Input component should match snapshots 14`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  defaultValue="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 15`] = `
@@ -1020,11 +1050,14 @@ exports[`Input component should match snapshots 15`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  placeholder="Placeholder text"
-  value="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    placeholder="Placeholder text"
+    readonly=""
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 16`] = `
@@ -1095,11 +1128,14 @@ exports[`Input component should match snapshots 16`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  placeholder="Placeholder text"
-  value="Value text"
-/>
+<div>
+  <input
+    class="c0"
+    placeholder="Placeholder text"
+    readonly=""
+    value="Value text"
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 17`] = `
@@ -1161,10 +1197,12 @@ exports[`Input component should match snapshots 17`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  disabled={true}
-/>
+<div>
+  <input
+    class="c0"
+    disabled=""
+  />
+</div>
 `;
 
 exports[`Input component should match snapshots 18`] = `
@@ -1236,8 +1274,10 @@ exports[`Input component should match snapshots 18`] = `
   cursor: not-allowed;
 }
 
-<input
-  className="c0"
-  disabled={true}
-/>
+<div>
+  <input
+    class="c0"
+    disabled=""
+  />
+</div>
 `;
