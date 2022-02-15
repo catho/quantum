@@ -1,17 +1,17 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import FacebookIcon from './FacebookIcon';
 
 describe('FacebookIcon component', () => {
   it('Should match the snapshot', () => {
     expect(
-      renderer.create(<FacebookIcon title="test" />).toJSON(),
+      render(<FacebookIcon title="test" />).asFragment(),
     ).toMatchSnapshot();
   });
 
   it('when size prop is set to 120', () => {
     expect(
-      renderer.create(<FacebookIcon title="test" size="120" />).toJSON(),
+      render(<FacebookIcon title="test" size="120" />).asFragment(),
     ).toMatchSnapshot();
   });
 });
