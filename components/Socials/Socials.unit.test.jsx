@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import Socials from './Socials';
 
@@ -35,10 +35,9 @@ describe('<Socials />', () => {
   });
 
   it('should pass title to <Title /> on SVG ', () => {
-    const { container } = render(<Socials items={[allSocialsList[0]]} />);
+    render(<Socials items={[allSocialsList[0]]} />);
 
-    const svg = container.querySelector('svg');
-    expect(svg.querySelector('title').innerHTML).toBe(allSocialsList[0].title);
+    expect(screen.getByText(allSocialsList[0].title)).toBeInTheDocument();
   });
 
   it('should have the same number of social types passed in object items ', () => {
