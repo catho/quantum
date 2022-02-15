@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dots /> Snapshot should match snapshot 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
@@ -37,10 +38,11 @@ exports[`<Dots /> Snapshot should match snapshot 1`] = `
 }
 
 <div
-  className="c0"
->
-  <span
-    className="c1"
-  />
-</div>
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+  </div>
+</DocumentFragment>
 `;
