@@ -50,6 +50,7 @@ SocialButton.propTypes = {
   onClick: PropTypes.func,
 };
 
+/* istanbul ignore next */
 SocialButton.defaultProps = {
   onClick: () => {},
 };
