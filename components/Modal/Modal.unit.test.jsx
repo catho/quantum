@@ -1,11 +1,9 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen, fireEvent } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Modal from './Modal';
-import { Card } from '..';
 
 describe('<Modal />', () => {
-  let component;
   const wrapper = (
     <Modal>
       <Modal.Header>
@@ -18,64 +16,77 @@ describe('<Modal />', () => {
     </Modal>
   );
 
-  afterEach(() => {
-    if (component && component.length) component.unmount();
-  });
-
   describe('Snapshots', () => {
     it('should match the snapshot', () => {
-      component = mount(wrapper);
-      expect(toJson(component)).toMatchSnapshot();
+      render(wrapper);
+
+      const overlay = screen.getByRole('dialog');
+      expect(overlay).toMatchSnapshot();
+
+      const card = screen.getByRole('article');
+      expect(card).toMatchSnapshot();
     });
   });
 
   describe('Modal DOM position', () => {
-    it('should be child of body element', () => {
-      expect(document.body.childNodes.length).toBe(0);
-      component = mount(wrapper);
-      expect(document.body.childNodes.length).toBe(1);
+    it('should render dialog', () => {
+      render(wrapper);
+
+      expect(screen.getByRole('dialog')).toBeInTheDocument();
     });
   });
 
   describe('closeIcon', () => {
     it('should exists a closeIcon button when modal is rendered', () => {
-      const modal = mount(<Modal />);
+      render(<Modal />);
 
-      expect(modal.find('CloseIcon')).toBeTruthy();
+      const button = screen.getByRole('button');
+
+      expect(button).toBeInTheDocument();
     });
   });
 
   describe('onClose prop', () => {
     it('should call onClose when CloseIcon is clicked', () => {
       const onCloseMock = jest.fn();
-      const modal = mount(<Modal onClose={onCloseMock} />);
+      render(<Modal onClose={onCloseMock} />);
 
-      modal.find('CloseIcon').simulate('click');
+      const button = screen.getByRole('button');
+
+      fireEvent.click(button);
 
       expect(onCloseMock).toHaveBeenCalled();
     });
 
     it('should call onClose when is clicked outside Modal', () => {
       const onCloseMock = jest.fn();
-      const modal = mount(<Modal onClose={onCloseMock} />);
+      render(<Modal onClose={onCloseMock} />);
 
-      modal.find('ModalWrapper').simulate('click');
+      const overlay = screen.getByRole('dialog');
+
+      fireEvent.click(overlay);
 
       expect(onCloseMock).toHaveBeenCalled();
     });
 
     it('should call onClose when "Escape" key is pressed', () => {
-      const eventMap = {
-        keydown: null,
-      };
-      window.addEventListener = jest.fn((event, cb) => {
-        eventMap[event] = cb;
+      const onCloseMock = jest.fn();
+
+      render(<Modal onClose={onCloseMock} />);
+
+      const overlay = screen.getByRole('dialog');
+
+      fireEvent.keyDown(overlay, {
+        key: 'Enter',
+        code: 'Enter',
       });
 
-      const onCloseMock = jest.fn();
-      mount(<Modal onClose={onCloseMock} />);
+      expect(onCloseMock).not.toHaveBeenCalled();
 
-      eventMap.keydown({ key: 'Escape' });
+      fireEvent.keyDown(overlay, {
+        key: 'Escape',
+        code: 'Escape',
+      });
 
       expect(onCloseMock).toHaveBeenCalled();
     });
@@ -83,7 +94,7 @@ describe('<Modal />', () => {
 
   describe('Tab events', () => {
     it('should focus article when modal is open and its doesnt have an input', () => {
-      const modal = mount(
+      render(
         <Modal>
           <Modal.Content>
             <p>
@@ -97,18 +108,81 @@ describe('<Modal />', () => {
         </Modal>,
       );
 
-      const focusedElement = document.activeElement;
+      const article = screen.getByRole('article');
 
-      expect(
-        modal
-          .find(Card)
-          .at(0)
-          .getDOMNode(),
-      ).toBe(focusedElement);
+      expect(article).toHaveFocus();
+    });
+
+    it('should change focus to link when tab is pressed', () => {
+      render(
+        <Modal>
+          <Modal.Content>
+            <p>
+              Some text<a href="catho.com">Some link</a>
+            </p>
+          </Modal.Content>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      expect(screen.getByRole('article')).toHaveFocus();
+
+      userEvent.tab();
+
+      expect(screen.getByRole('link')).toHaveFocus();
+    });
+
+    it(`should change focus to first focusable element when tab is pressed on last focusable element`, () => {
+      render(
+        <Modal>
+          <Modal.Content>
+            <p>
+              Some text<a href="catho.com">Some link</a>
+            </p>
+          </Modal.Content>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      expect(screen.getByRole('article')).toHaveFocus();
+
+      userEvent.tab({ shift: true });
+      userEvent.tab();
+
+      expect(screen.getByRole('article')).toHaveFocus();
+    });
+
+    it('should change focus to ok button when shift + tab is pressed two times', () => {
+      render(
+        <Modal>
+          <Modal.Content>
+            <p>
+              Some text<a href="catho.com">Some link</a>
+            </p>
+          </Modal.Content>
+          <Modal.Footer>
+            <button type="button">Cancel</button>
+            <button type="button">Ok</button>
+          </Modal.Footer>
+        </Modal>,
+      );
+
+      expect(screen.getByRole('article')).toHaveFocus();
+
+      userEvent.tab({ shift: true });
+      userEvent.tab({ shift: true });
+
+      expect(screen.getByText('Ok')).toHaveFocus();
     });
 
     it('should focus an input when modal is open', () => {
-      const modal = mount(
+      render(
         <Modal>
           <Modal.Content>
             <input type="text" />
@@ -123,16 +197,9 @@ describe('<Modal />', () => {
         </Modal>,
       );
 
-      const focusedElement = document.activeElement;
+      const input = screen.getByRole('textbox');
 
-      expect(focusedElement.nodeName).not.toBe('article');
-
-      expect(
-        modal
-          .find('input')
-          .at(0)
-          .getDOMNode(),
-      ).toBe(focusedElement);
+      expect(input).toHaveFocus();
     });
   });
 });

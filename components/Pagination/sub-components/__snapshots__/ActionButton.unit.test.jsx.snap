@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -33,15 +34,16 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 }
 
 <a
-  className="c0"
-  onClick={[Function]}
->
-  Back
-</a>
+    class="c0"
+  >
+    Back
+  </a>
+</DocumentFragment>
 `;
 
 exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -73,10 +75,10 @@ exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop
 }
 
 <a
-  aria-disabled={true}
-  className="c0"
-  onClick={[Function]}
->
-  Next
-</a>
+    aria-disabled="true"
+    class="c0"
+  >
+    Next
+  </a>
+</DocumentFragment>
 `;

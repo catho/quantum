@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -190,82 +190,75 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 2"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         2
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 3"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         3
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         4
       </a>
       <div
-        className="c5"
+        class="c5"
       >
         <span
-          className="c6"
+          class="c6"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 10"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         10
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -379,40 +372,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         1 of 10
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -566,75 +557,68 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 2"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         2
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 3"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         3
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         4
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 5"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         5
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -748,40 +732,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         1 of 5
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -935,84 +917,76 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 2"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         2
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 3"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         3
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         4
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 5"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         5
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 6"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         6
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -1126,40 +1100,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         1 of 6
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -1348,82 +1320,75 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 2"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         2
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 3"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         3
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         4
       </a>
       <div
-        className="c5"
+        class="c5"
       >
         <span
-          className="c6"
+          class="c6"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 7"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         7
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -1537,40 +1502,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         1 of 7
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -1724,93 +1687,84 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 2"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         2
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 3"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         3
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 4"
-        className="c4"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c4"
+        tabindex="0"
       >
         4
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 5"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         5
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 6"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         6
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 7"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         7
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -1924,40 +1878,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         4 of 7
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -2146,82 +2098,75 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <div
-        className="c4"
+        class="c4"
       >
         <span
-          className="c5"
+          class="c5"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         4
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        className="c6"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c6"
+        tabindex="0"
       >
         5
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 6"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         6
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 7"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         7
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -2335,40 +2280,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         5 of 7
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -2557,82 +2500,75 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <div
-        className="c4"
+        class="c4"
       >
         <span
-          className="c5"
+          class="c5"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 4"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         4
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        className="c6"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c6"
+        tabindex="0"
       >
         5
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 6"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         6
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 7"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         7
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -2746,40 +2682,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         5 of 7
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -2968,89 +2902,82 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <div
-        className="c4"
+        class="c4"
       >
         <span
-          className="c5"
+          class="c5"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 49"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         49
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 50"
-        className="c6"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c6"
+        tabindex="0"
       >
         50
       </a>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 51"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         51
       </a>
       <div
-        className="c4"
+        class="c4"
       >
         <span
-          className="c5"
+          class="c5"
         />
       </div>
       <a
-        aria-current={false}
+        aria-current="false"
         aria-label="Page 100"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         100
       </a>
       <a
-        aria-disabled={false}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -3164,40 +3091,38 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={false}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         50 of 100
       </span>
       <a
-        aria-disabled={false}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
 
 exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
-Array [
+<DocumentFragment>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -3308,39 +3233,36 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Previous
       </a>
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        className="c3"
-        onClick={[Function]}
-        tabIndex={0}
+        class="c3"
+        tabindex="0"
       >
         1
       </a>
       <a
-        aria-disabled={true}
-        className="c2"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
+  </div>
   .c2 {
   cursor: pointer;
   font-weight: normal;
@@ -3454,34 +3376,32 @@ Array [
 }
 
 <div
-    className="c0"
+    class="c0"
   >
     <nav
       aria-label="pagination"
-      className="c1"
+      class="c1"
     >
       <a
-        aria-disabled={true}
-        className="c2 c3"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
       >
         Previous
       </a>
       <span
-        className="c4"
+        class="c4"
       >
         1 of 1
       </span>
       <a
-        aria-disabled={true}
-        className="c2 c5"
-        onClick={[Function]}
-        tabIndex={0}
+        aria-disabled="true"
+        class="c2 c5"
+        tabindex="0"
       >
         Next
       </a>
     </nav>
-  </div>,
-]
+  </div>
+</DocumentFragment>
 `;
