@@ -1,9 +1,9 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen, fireEvent } from '@testing-library/react';
 import SegmentedControl from './SegmentedControl';
 import {
   defaultContent,
+  defaultContentWithoutCheckedItems,
   fiveContentsWithIcon,
   threeContentsWithIcon,
   nContents,
@@ -19,95 +19,91 @@ describe('<SegmentedControl />', () => {
     ];
 
     SegmentedControls.forEach(segmentedControl => {
-      const segmentedComponent = mount(segmentedControl);
-      expect(toJson(segmentedComponent)).toMatchSnapshot();
-      segmentedComponent.unmount();
+      const { container } = render(segmentedControl);
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
   it('should render icon instead text label if icon is setted', () => {
-    const component = mount(
+    const { container } = render(
       <SegmentedControl items={threeContentsWithIcon} name="unit-test" />,
     );
-    expect(component.find('Icon').exists()).toBeTruthy();
+    expect(container.querySelectorAll('svg')).toHaveLength(3);
   });
 
   it('should render a maximum of 5 buttons', () => {
-    const component = mount(
+    const { container } = render(
       <SegmentedControl items={nContents} name="unit-test" />,
     );
-    expect(component.find('LabelButton').length).toEqual(5);
+
+    container.querySelectorAll('label').forEach((label, index) => {
+      expect(label.getAttribute('aria-label')).toEqual(nContents[index].label);
+    });
   });
 
   it('should input radio be checked when props contains item checked', () => {
-    const component = mount(
-      <SegmentedControl items={defaultContent} name="unit-test" />,
-    );
+    render(<SegmentedControl items={defaultContent} name="unit-test" />);
     const firstItemValue = defaultContent[0].value;
     const itemValueChecked = defaultContent[1].value;
-    expect(component.find('input[checked=true]').prop('value')).toEqual(
-      itemValueChecked,
-    );
-    expect(
-      component
-        .find('input')
-        .first()
-        .prop('value'),
-    ).toEqual(firstItemValue);
+
+    const checkedInput = screen.getByRole('radio', { name: /Operacional/i });
+    const firstInput = screen.getByRole('radio', { name: /Profissional/i });
+
+    expect(checkedInput).toHaveAttribute('checked');
+    expect(checkedInput.getAttribute('value')).toEqual(itemValueChecked);
+    expect(firstInput.getAttribute('value')).toEqual(firstItemValue);
   });
 
   it('should change the button when its clicked', () => {
     const onChangeMock = jest.fn();
-    const component = mount(
+    const { container } = render(
       <SegmentedControl
         items={defaultContent}
         name="unit-test"
         onChange={onChangeMock}
       />,
     );
-    const firstRadio = component.find('LabelButton input').first();
+
+    const firstInput = screen.getByRole('radio', { name: /Profissional/i });
 
     expect(onChangeMock).not.toHaveBeenCalled();
-    expect(
-      component
-        .find('LabelButton')
-        .first()
-        .hasClass('input-checked'),
-    ).toBeFalsy();
-    firstRadio.simulate('change');
-    expect(
-      component
-        .find('LabelButton')
-        .first()
-        .hasClass('input-checked'),
-    ).toBeTruthy();
-    expect(onChangeMock).toHaveBeenCalled();
+
+    expect(firstInput).not.toHaveAttribute('checked');
+    fireEvent.click(firstInput);
+
+    expect(container.querySelectorAll('label')[0]).toHaveClass('input-checked');
+    expect(onChangeMock).toBeCalled();
     expect(onChangeMock).toBeCalledTimes(1);
   });
 
+  it('should not have checked prop', () => {
+    render(<SegmentedControl items={defaultContentWithoutCheckedItems} />);
+    const inputs = screen.getAllByRole('radio');
+
+    inputs.forEach(input => {
+      expect(input).not.toHaveAttribute('checked');
+    });
+  });
+
   it('(a11y) should contains aria-label corresponding the label of items', () => {
-    const component = mount(
+    const { container } = render(
       <SegmentedControl items={defaultContent} name="unit-test" />,
     );
+
+    const firstLabel = container.querySelectorAll('label')[0];
     const firstItemLabel = defaultContent[0].label;
-    expect(
-      component
-        .find('LabelButton')
-        .first()
-        .prop('aria-label'),
-    ).toEqual(firstItemLabel);
+    expect(firstLabel.getAttribute('aria-label')).toMatch(firstItemLabel);
   });
 
   it('(a11y) should render the correct tabindex in each item', () => {
-    const component = mount(
+    const { container } = render(
       <SegmentedControl items={defaultContent} name="unit-test" />,
     );
-    expect(
-      component
-        .find('LabelButton')
-        .first()
-        .prop('tabIndex'),
-    ).toEqual(0);
-    expect(component.find('label.input-checked').prop('tabIndex')).toEqual(-1);
+
+    const firstLabel = container.querySelectorAll('label')[0];
+    const secondLabel = container.querySelectorAll('label')[1];
+
+    expect(firstLabel.getAttribute('tabindex')).toEqual('0');
+    expect(secondLabel.getAttribute('tabindex')).toEqual('-1');
   });
 });

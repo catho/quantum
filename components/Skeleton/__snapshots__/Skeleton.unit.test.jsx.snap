@@ -16,9 +16,7 @@ exports[`Skeleton component Should match the snapshot of a Button component skel
 }
 
 <div
-  className="c0 c1"
-  height={null}
-  size="medium"
+  class="c0 c1"
   width="100px"
 />
 `;
@@ -40,9 +38,7 @@ exports[`Skeleton component Should match the snapshot of a Tag component loader 
 }
 
 <div
-  className="c0 c1"
-  height={null}
-  size="medium"
+  class="c0 c1"
   width="100px"
 />
 `;
@@ -63,7 +59,7 @@ exports[`Skeleton component Should match the snapshot of a circular skeleton 1`]
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   height="56px"
   width="56px"
 />
@@ -81,7 +77,7 @@ exports[`Skeleton component Should match the snapshot of a simple skeleton 1`] =
 }
 
 <div
-  className="SkeletonRect-sc-65m7h4-0 c0"
+  class="SkeletonRect-sc-65m7h4-0 c0"
   height="14px"
   width="100%"
 />
@@ -103,7 +99,7 @@ exports[`Skeleton component Should match the snapshot of a text skeleton 1`] = `
 }
 
 <div
-  className="c0 c1"
+  class="c0 c1"
   height="14px"
   width="100%"
 />
