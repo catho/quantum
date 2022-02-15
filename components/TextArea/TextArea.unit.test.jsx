@@ -1,6 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow, mount } from 'enzyme';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import TextArea from './TextArea';
 
 describe('TextArea component', () => {
@@ -24,70 +24,73 @@ describe('TextArea component', () => {
       <TextArea skin="dark" error="Error message" />,
     ];
 
-    TEXT_AREAS.forEach(textArea =>
-      expect(renderer.create(textArea).toJSON()).toMatchSnapshot(),
-    );
+    TEXT_AREAS.forEach(textArea => {
+      const { container } = render(textArea);
+      expect(container.firstChild).toMatchSnapshot();
+    });
   });
 
   it('should has a required signal when "required" and "label" props are set ', () => {
-    const component = shallow(<TextArea label="Text label" required />);
-    expect(component.find('InputLabel').text()).toMatch('*');
+    render(<TextArea label="Text label" required />);
+    expect(screen.getByText('*')).toBeInTheDocument();
   });
 
   it('should have a placeholder when "placeholder" prop is set ', () => {
     const placeholderText = 'this input has a placeholder';
-    const component = shallow(<TextArea placeholder={placeholderText} />);
-    const textAreaPlaceholder = component
-      .find('TextAreaTag')
-      .prop('placeholder');
+    render(<TextArea placeholder={placeholderText} />);
+    const textArea = screen.getByRole('textbox');
 
-    expect(textAreaPlaceholder).toMatch(placeholderText);
+    expect(textArea.getAttribute('placeholder')).toEqual(placeholderText);
   });
 
   it('should have a helper text when "helper text" prop is set ', () => {
     const helperTextContent = 'this is a helper text';
-    const component = shallow(<TextArea helperText={helperTextContent} />);
-    const textAreaHelperText = component.find('HelperText').text();
+    render(<TextArea helperText={helperTextContent} />);
 
-    expect(textAreaHelperText).toMatch(helperTextContent);
+    const textAreaHelperText = screen.getByText(helperTextContent);
+
+    expect(textAreaHelperText).toBeInTheDocument();
   });
 
   it('should have a error text when "error" prop is set', () => {
     const errorMessageContent = 'Error message';
-    const component = shallow(<TextArea error={errorMessageContent} />);
-    const errorMessage = component.find('InputErrorMessage').text();
-    expect(errorMessage).toMatch(errorMessageContent);
+    render(<TextArea error={errorMessageContent} />);
+
+    const errorMessage = screen.getByText(errorMessageContent);
+    expect(errorMessage).toBeInTheDocument();
   });
 
-  it('should onChange props be called', () => {
+  it('should onChange props be called', async () => {
     const onChangeEventMock = jest.fn();
-    const wrapper = mount(
+    render(
       <TextArea label="Text label" value="foo" onChange={onChangeEventMock} />,
     );
-    const componentText = wrapper.find('TextAreaTag');
-    componentText.simulate('change');
+    const textArea = screen.getByRole('textbox');
+
+    await userEvent.type(textArea, 'foo');
+
     expect(onChangeEventMock).toHaveBeenCalled();
   });
 
   describe('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
-      const wrapper = shallow(<TextArea label="Text label" id={id} />);
-      const input = wrapper.find('TextAreaTag');
-      const label = wrapper.find('InputLabel');
-      const labelHtmlFor = label.prop('htmlFor');
-      const inputId = input.prop('id');
+      const { container } = render(<TextArea label="Text label" id={id} />);
 
-      expect(labelHtmlFor).toEqual(id);
-      expect(inputId).toEqual(id);
+      const textArea = screen.getByRole('textbox');
+      const label = container.querySelector('label');
+
+      expect(label.getAttribute('for')).toEqual(id);
+      expect(textArea.getAttribute('id')).toEqual(id);
     });
 
     it('should match label "htmlFor" label param and "input" param with generated id', () => {
-      const wrapper = shallow(<TextArea label="Text label" value="foo" />);
-      const labelId = wrapper.find('InputLabel').prop('htmlFor');
-      const inputId = wrapper.find('TextAreaTag').prop('id');
+      const { container } = render(<TextArea label="Text label" value="foo" />);
 
-      expect(labelId).toEqual(inputId);
+      const textArea = screen.getByRole('textbox');
+      const label = container.querySelector('label');
+
+      expect(textArea.getAttribute('id')).toEqual(label.getAttribute('for'));
     });
   });
 });
