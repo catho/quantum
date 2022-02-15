@@ -239,6 +239,7 @@ Modal.propTypes = {
   }),
 };
 
+/* istanbul ignore next */
 Modal.defaultProps = {
   children: undefined,
   onClose: () => {},

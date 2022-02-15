@@ -29,7 +29,7 @@ describe('<Modal />', () => {
   });
 
   describe('Modal DOM position', () => {
-    it('should be child of body element', () => {
+    it('should render dialog', () => {
       render(wrapper);
 
       expect(screen.getByRole('dialog')).toBeInTheDocument();
