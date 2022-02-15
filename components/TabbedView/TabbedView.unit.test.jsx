@@ -1,6 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { fireEvent, render, screen } from '@testing-library/react';
 import TabbedView from './TabbedView';
 import Tab from './Tab';
 import Badge from '../Badge';
@@ -12,7 +11,7 @@ const icon = <Icon name="star" />;
 describe('<TabbedView /> ', () => {
   describe('Snapshot', () => {
     it('should match snapshot', () => {
-      const component = mount(
+      const { container } = render(
         <TabbedView>
           <TabbedView.Tab title="example">
             <p>Example text</p>
@@ -20,10 +19,10 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(toJson(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
     it('should match snapshot with fluid option', () => {
-      const component = mount(
+      const { container } = render(
         <TabbedView fluid>
           <Tab title="Candidates">Candidates content</Tab>
           <Tab title="Companies">Companies content</Tab>
@@ -31,10 +30,10 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(toJson(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
     it('should match snapshot with badges and icons', () => {
-      const component = mount(
+      const { container } = render(
         <TabbedView>
           <Tab title="With badge" badge={badge}>
             With badge content
@@ -49,37 +48,45 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(toJson(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
   describe('Active Tab', () => {
-    const component = mount(
-      <TabbedView>
-        <Tab title="Candidatos">Candidatos content</Tab>
-        <Tab title="Empresas">Empresas content</Tab>
-        <Tab title="Educação">Educação content</Tab>
-      </TabbedView>,
-    );
-
     it('should have first Tab active', () => {
-      expect(component.html()).toContain('Candidatos content');
-      expect(component.html()).not.toContain('Empresas content');
-      expect(component.html()).not.toContain('Educação content');
+      render(
+        <TabbedView>
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
+
+      expect(screen.getByText('Candidatos content')).toBeInTheDocument();
+      expect(screen.queryByText('Empresas content')).not.toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
     });
 
-    it('should change active tab when another Tab is clicked', () => {
-      const secondNavItem = component.find('NavItem').at(1);
+    it('should change active tab when another Tab is clicked', async () => {
+      render(
+        <TabbedView>
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
 
-      secondNavItem.simulate('click');
+      const secondNavItem = screen.getByRole('tab', { name: /Empresas/i });
 
-      expect(component.html()).not.toContain('Candidatos content');
-      expect(component.html()).toContain('Empresas content');
-      expect(component.html()).not.toContain('Educação content');
+      fireEvent.click(secondNavItem);
+
+      expect(screen.queryByText('Candidatos content')).not.toBeInTheDocument();
+      expect(screen.getByText('Empresas content')).toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
     });
 
     it('should have pre selected Tab', () => {
-      const wrapper = mount(
+      render(
         <TabbedView activeTab="Educação">
           <Tab title="Candidatos">Candidatos content</Tab>
           <Tab title="Empresas">Empresas content</Tab>
@@ -87,9 +94,14 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(wrapper.html()).not.toContain('Candidatos content');
-      expect(wrapper.html()).not.toContain('Empresas content');
-      expect(wrapper.html()).toContain('Educação content');
+      expect(screen.queryByText('Candidatos content')).not.toBeInTheDocument();
+      expect(screen.queryByText('Empresas content')).not.toBeInTheDocument();
+      expect(screen.getByText('Educação content')).toBeInTheDocument();
+    });
+
+    it('should render a tab with title and children', () => {
+      render(<Tab title="Candidates">Candidates content</Tab>);
+      expect(screen.getByText('Candidates content')).toBeInTheDocument();
     });
   });
 
@@ -97,7 +109,7 @@ describe('<TabbedView /> ', () => {
     const onTabClickEventMock = jest.fn();
 
     it('should trigger the callback when the tab is clicked', () => {
-      const component = mount(
+      render(
         <TabbedView onTabClick={onTabClickEventMock}>
           <Tab title="Candidates">Candidates content</Tab>
           <Tab title="Companies">Companies content</Tab>
@@ -105,8 +117,9 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      const secondNavItem = component.find('NavItem').at(1);
-      secondNavItem.simulate('click');
+      const secondNavItem = screen.getByRole('tab', { name: /Companies/i });
+
+      fireEvent.click(secondNavItem);
 
       expect(onTabClickEventMock).toHaveBeenCalled();
     });
