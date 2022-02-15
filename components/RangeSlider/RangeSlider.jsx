@@ -160,7 +160,7 @@ const RangeSlider = props => {
 };
 
 SliderWrapper.displayName = 'RangeSliderWrapper';
-
+/* istanbul ignore next */
 RangeSlider.defaultProps = {
   step: 1,
   max: 100,

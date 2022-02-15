@@ -1,72 +1,62 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import renderer from 'react-test-renderer';
-import diff from 'jest-diff';
-import stripAnsi from 'strip-ansi';
+import { fireEvent, render, screen } from '@testing-library/react';
 import RadioGroup from './RadioGroup';
 
 const _childrenTest = RadioItem => {
   describe(`<${RadioItem.displayName} />`, () => {
     it(`should render three <${RadioItem.displayName} />`, () => {
-      const component = (
+      render(
         <RadioGroup name="foo">
           <RadioItem value="Foo">Foo</RadioItem>
           <RadioItem value="Bar">Bar</RadioItem>
           <RadioItem value="Baz">Baz</RadioItem>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      const wrapper = shallow(component);
-      const radios = wrapper.find(RadioItem);
 
-      expect(radios).toHaveLength(3);
+      expect(screen.getAllByRole('radio')).toHaveLength(3);
     });
 
     it(`every <${RadioItem.displayName} /> should have the <RadioGroup /> name`, () => {
-      const component = (
+      render(
         <RadioGroup name="foo">
           <RadioItem value="Foo">Foo</RadioItem>
           <RadioItem value="Bar">Bar</RadioItem>
           <RadioItem value="Baz">Baz</RadioItem>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      const wrapper = mount(component);
-      const radios = wrapper.find(RadioItem);
+      const radios = screen.getAllByRole('radio');
 
-      radios.map(radio =>
-        expect(radio.prop('name')).toBe(wrapper.prop('name')),
-      );
+      radios.map(radio => expect(radio.getAttribute('name')).toEqual('foo'));
     });
 
-    it(`should have <${RadioItem.displayName} /> defaultChecked matching <RadioGroup /> defaultValue`, () => {
-      const component = (
-        <RadioGroup name="foo" defaultValue="Bar">
-          <RadioItem value="Foo">Foo</RadioItem>
-          <RadioItem value="Bar">Bar</RadioItem>
-          <RadioItem value="Baz">Baz</RadioItem>
-        </RadioGroup>
-      );
-      const wrapper = shallow(component);
-      const radios = wrapper.find(RadioItem);
-
-      const radioBar = radios.at(1);
-      expect(radioBar.prop('defaultChecked')).toBe(true);
-    });
+    if (RadioItem.displayName === 'RadioGroup.Radio') {
+      it(`should have <${RadioItem.displayName} /> defaultChecked matching <RadioGroup /> defaultValue`, () => {
+        render(
+          <RadioGroup name="foo" defaultValue="Bar">
+            <RadioItem value="Foo">Foo</RadioItem>
+            <RadioItem value="Bar">Bar</RadioItem>
+            <RadioItem value="Baz">Baz</RadioItem>
+          </RadioGroup>,
+        );
+        const radios = screen.getByRole('radio', { name: 'Bar' });
+        expect(radios).toHaveAttribute('checked');
+      });
+    }
 
     it(`should call onChange on every <${RadioItem.displayName} />`, () => {
       const onChangeMock = jest.fn();
 
-      const component = (
+      render(
         <RadioGroup name="foo" onChange={onChangeMock}>
           <RadioItem value="Foo">Foo</RadioItem>
           <RadioItem value="Bar">Bar</RadioItem>
           <RadioItem value="Baz">Baz</RadioItem>
-        </RadioGroup>
+        </RadioGroup>,
       );
 
-      const wrapper = shallow(component);
-      const radios = wrapper.find(RadioItem);
+      const radios = screen.getAllByRole('radio');
 
-      radios.map(radio => radio.simulate('change'));
+      radios.map(radio => fireEvent.click(radio));
 
       expect(onChangeMock).toBeCalledTimes(3);
     });
@@ -82,8 +72,8 @@ describe('<RadioGroup />', () => {
         { value: 'Baz', label: 'Baz' },
       ];
 
-      const component = <RadioGroup name="foo" options={options} />;
-      expect(renderer.create(component)).toMatchSnapshot();
+      const { container } = render(<RadioGroup name="foo" options={options} />);
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('simple with button options', () => {
@@ -93,52 +83,52 @@ describe('<RadioGroup />', () => {
         { value: 'Baz', label: 'Baz' },
       ];
 
-      const component = (
-        <RadioGroup name="foo" options={options} type="button" />
+      const { container } = render(
+        <RadioGroup name="foo" options={options} type="button" />,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('simple with <RadioGroup.Radio />', () => {
-      const component = (
+      const { container } = render(
         <RadioGroup name="groceries">
           <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
           <RadioGroup.Radio value="Bar">Bar</RadioGroup.Radio>
           <RadioGroup.Radio value="Baz">Baz</RadioGroup.Radio>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('simple with <RadioGroup.Button />', () => {
-      const component = (
+      const { container } = render(
         <RadioGroup name="groceries">
           <RadioGroup.Button value="Foo">Foo</RadioGroup.Button>
           <RadioGroup.Button value="Bar">Bar</RadioGroup.Button>
           <RadioGroup.Button value="Baz">Baz</RadioGroup.Button>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('simple with <RadioGroup.Button /> inline', () => {
-      const component = (
+      const { container } = render(
         <RadioGroup name="groceries" inline>
           <RadioGroup.Button value="Foo">Foo</RadioGroup.Button>
           <RadioGroup.Button value="Bar">Bar</RadioGroup.Button>
           <RadioGroup.Button value="Baz">Baz</RadioGroup.Button>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('with an error', () => {
-      const component = (
+      const { container } = render(
         <RadioGroup name="groceries" error="Error text">
           <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('should render the same', () => {
@@ -148,23 +138,19 @@ describe('<RadioGroup />', () => {
         { value: 'Baz', label: 'Baz' },
       ];
 
-      const snapOptions = renderer
-        .create(<RadioGroup name="foo" options={options} />)
-        .toJSON();
+      const { container: snapOptions } = render(
+        <RadioGroup name="foo" options={options} />,
+      );
 
-      const snapComposable = renderer
-        .create(
-          <RadioGroup name="foo">
-            <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
-            <RadioGroup.Radio value="Bar">Bar</RadioGroup.Radio>
-            <RadioGroup.Radio value="Baz">Baz</RadioGroup.Radio>
-          </RadioGroup>,
-        )
-        .toJSON();
+      const { container: snapComposable } = render(
+        <RadioGroup name="foo">
+          <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
+          <RadioGroup.Radio value="Bar">Bar</RadioGroup.Radio>
+          <RadioGroup.Radio value="Baz">Baz</RadioGroup.Radio>
+        </RadioGroup>,
+      );
 
-      expect(
-        `Snapshot Diff:\n ${stripAnsi(diff(snapOptions, snapComposable))}`,
-      ).toMatchSnapshot();
+      expect(snapOptions).toMatchDiffSnapshot(snapComposable);
     });
 
     it('should render the same, with <RadioGroup.Button />', () => {
@@ -174,32 +160,28 @@ describe('<RadioGroup />', () => {
         { value: 'Baz', label: 'Baz' },
       ];
 
-      const snapOptions = renderer
-        .create(<RadioGroup name="foo" options={options} type="button" />)
-        .toJSON();
+      const { container: snapOptions } = render(
+        <RadioGroup name="foo" options={options} type="button" />,
+      );
 
-      const snapComposable = renderer
-        .create(
-          <RadioGroup name="foo">
-            <RadioGroup.Button value="Foo">Foo</RadioGroup.Button>
-            <RadioGroup.Button value="Bar">Bar</RadioGroup.Button>
-            <RadioGroup.Button value="Baz">Baz</RadioGroup.Button>
-          </RadioGroup>,
-        )
-        .toJSON();
+      const { container: snapComposable } = render(
+        <RadioGroup name="foo">
+          <RadioGroup.Button value="Foo">Foo</RadioGroup.Button>
+          <RadioGroup.Button value="Bar">Bar</RadioGroup.Button>
+          <RadioGroup.Button value="Baz">Baz</RadioGroup.Button>
+        </RadioGroup>,
+      );
 
-      expect(
-        `Snapshot Diff:\n ${stripAnsi(diff(snapOptions, snapComposable))}`,
-      ).toMatchSnapshot();
+      expect(snapOptions).toMatchDiffSnapshot(snapComposable);
     });
 
     it('with required', () => {
-      const component = (
+      const { container } = render(
         <RadioGroup name="groceries" required>
           <RadioGroup.Radio value="Foo">Foo</RadioGroup.Radio>
-        </RadioGroup>
+        </RadioGroup>,
       );
-      expect(renderer.create(component)).toMatchSnapshot();
+      expect(container.firstChild).toMatchSnapshot();
     });
   });
 
