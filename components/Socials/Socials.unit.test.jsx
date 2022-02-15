@@ -1,6 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen } from '@testing-library/react';
+
 import Socials from './Socials';
 
 const allSocialsList = [
@@ -30,19 +30,19 @@ describe('<Socials />', () => {
     ];
 
     SOCIALS.forEach(social => {
-      const SocialComponent = mount(social);
-      expect(toJson(SocialComponent)).toMatchSnapshot();
-      SocialComponent.unmount();
+      expect(render(social).asFragment()).toMatchSnapshot();
     });
   });
 
   it('should pass title to <Title /> on SVG ', () => {
-    const component = mount(<Socials items={[allSocialsList[0]]} />);
-    expect(component.find('title').text()).toBe(allSocialsList[0].title);
+    render(<Socials items={[allSocialsList[0]]} />);
+
+    expect(screen.getByText(allSocialsList[0].title)).toBeInTheDocument();
   });
 
   it('should have the same number of social types passed in object items ', () => {
-    const wrapper = mount(<Socials items={allSocialsList} />);
-    expect(wrapper.find('ListItem').length).toBe(allSocialsList.length);
+    const { getAllByRole } = render(<Socials items={allSocialsList} />);
+
+    expect(getAllByRole('listitem')).toHaveLength(allSocialsList.length);
   });
 });

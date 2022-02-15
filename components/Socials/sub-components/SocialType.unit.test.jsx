@@ -1,11 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render } from '@testing-library/react';
+
 import SocialType from './SocialType';
 
 describe('<SocialType />', () => {
   it('should match snapshots', () => {
-    const SOCIALTYPES = [
+    const SOCIAL_TYPES = [
       <SocialType
         type="facebook"
         url="http://facebook.com"
@@ -23,10 +23,8 @@ describe('<SocialType />', () => {
       />,
     ];
 
-    SOCIALTYPES.forEach(socialType => {
-      const SocialTypeComponent = mount(socialType);
-      expect(toJson(SocialTypeComponent)).toMatchSnapshot();
-      SocialTypeComponent.unmount();
+    SOCIAL_TYPES.forEach(socialType => {
+      expect(render(socialType).asFragment()).toMatchSnapshot();
     });
   });
 });

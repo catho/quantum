@@ -11,21 +11,16 @@ const SocialWrapper = styled.a`
   display: inline-flex;
 `;
 
-const SocialType = ({ type, url, size, title, withBox }) => (
-  <SocialWrapper href={url}>
-    {type === 'twitter' && (
-      <SocialTwitterIcon size={size} title={title} withBox={withBox} />
-    )}
-
-    {type === 'youtube' && (
-      <SocialYoutubeIcon size={size} title={title} withBox={withBox} />
-    )}
-
-    {type === 'facebook' && (
+const SocialType = ({ type, url, size, title, withBox }) => {
+  const socialTypes = {
+    twitter: <SocialTwitterIcon size={size} title={title} withBox={withBox} />,
+    youtube: <SocialYoutubeIcon size={size} title={title} withBox={withBox} />,
+    facebook: (
       <SocialFacebookIcon size={size} title={title} withBox={withBox} />
-    )}
-  </SocialWrapper>
-);
+    ),
+  };
+  return <SocialWrapper href={url}>{socialTypes[type]}</SocialWrapper>;
+};
 
 SocialType.defaultProps = {
   size: '48',
@@ -33,7 +28,7 @@ SocialType.defaultProps = {
 };
 
 SocialType.propTypes = {
-  type: Proptypes.string.isRequired,
+  type: Proptypes.oneOf(['twitter', 'youtube', 'facebook']).isRequired,
   url: Proptypes.string.isRequired,
   size: Proptypes.string,
   title: Proptypes.string.isRequired,

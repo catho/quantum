@@ -1,6 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import { render, screen } from '@testing-library/react';
+
 import Stepper from './Stepper';
 
 const i18n = {
@@ -50,14 +50,12 @@ describe('<Stepper />', () => {
     ];
 
     Steppers.forEach(stepper => {
-      const StepperComponent = mount(stepper);
-      expect(toJson(StepperComponent)).toMatchSnapshot();
-      StepperComponent.unmount();
+      expect(render(stepper).asFragment()).toMatchSnapshot();
     });
   });
 
   it('should ensure that total prop always be 6 if the prop was bigger than 6', () => {
-    const component = mount(
+    render(
       <Stepper
         i18n={i18n}
         index={3}
@@ -67,11 +65,11 @@ describe('<Stepper />', () => {
       />,
     );
 
-    expect(component.find('RadialProgressOverlay').text()).toEqual('3 de 6');
+    expect(screen.getByText('3 de 6')).toBeInTheDocument();
   });
 
-  it('should ensure that index prop always be 1 if the prop was minor of 1', () => {
-    const component = mount(
+  it('should ensure that index prop always be 1 if the prop was minor of 1', async () => {
+    const { rerender } = render(
       <Stepper
         i18n={i18n}
         index={0}
@@ -81,25 +79,25 @@ describe('<Stepper />', () => {
       />,
     );
 
-    expect(component.find('RadialProgressOverlay').text()).toEqual('1 de 6');
+    expect(screen.getByText('1 de 6')).toBeInTheDocument();
 
-    const component2 = mount(
+    rerender(
       <Stepper
         i18n={i18n}
         index={-5}
-        total={8}
+        total={6}
         currentStepText="Salários / benefícios"
         nextStepText="Contrato / Local "
       />,
     );
 
-    expect(component2.find('RadialProgressOverlay').text()).toEqual('1 de 6');
+    expect(screen.getByText('1 de 6')).toBeInTheDocument();
   });
 
   it('should ensure that index prop does not be bigger than total prop ', () => {
     jest.spyOn(console, 'warn').mockImplementation(jest.fn());
 
-    const component = mount(
+    render(
       <Stepper
         i18n={i18n}
         index={9}
@@ -109,38 +107,41 @@ describe('<Stepper />', () => {
       />,
     );
 
-    expect(component.find('RadialProgressOverlay').text()).toEqual('1 de 6');
+    expect(screen.getByText('1 de 6')).toBeInTheDocument();
     jest.spyOn(console, 'warn').mockRestore();
   });
 
   it('should have "proximo" word when it is not the last step', () => {
-    const component = mount(
-      <Stepper
-        i18n={i18n}
-        index={5}
-        total={6}
-        currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
-      />,
-    );
-
-    expect(component.find('NextStep').text()).toContain('próximo');
-
-    const componentLastStep = mount(
+    const nextStepText = 'Contrato / Local';
+    const { rerender } = render(
       <Stepper
         i18n={i18n}
         index={6}
         total={6}
         currentStepText="Salários / benefícios"
-        nextStepText="Contrato / Local "
+        nextStepText={nextStepText}
       />,
     );
 
-    expect(componentLastStep.find('NextStep').text()).not.toContain('próximo');
+    expect(
+      screen.queryByText(`próximo: ${nextStepText}`),
+    ).not.toBeInTheDocument();
+
+    rerender(
+      <Stepper
+        i18n={i18n}
+        index={5}
+        total={6}
+        currentStepText="Salários / benefícios"
+        nextStepText={nextStepText}
+      />,
+    );
+
+    expect(screen.queryByText(`próximo: ${nextStepText}`)).toBeInTheDocument();
   });
 
   it('should ensure that total and index prop always be 1 if the prop was settled 0', () => {
-    const component = mount(
+    render(
       <Stepper
         i18n={i18n}
         index={0}
@@ -150,6 +151,6 @@ describe('<Stepper />', () => {
       />,
     );
 
-    expect(component.find('RadialProgressOverlay').text()).toEqual('1 de 1');
+    expect(screen.getByText('1 de 1')).toBeInTheDocument();
   });
 });
