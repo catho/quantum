@@ -69,10 +69,6 @@ const Popover = ({
   }, [isVisible]);
 
   const handleVisible = newVisibleValue => {
-    if (isVisible === newVisibleValue) {
-      return;
-    }
-
     setIsVisible(newVisibleValue);
 
     if (!isVisible) {
@@ -115,6 +111,7 @@ Popover.propTypes = {
   onClose: PropTypes.func,
 };
 
+/* istanbul ignore next */
 Popover.defaultProps = {
   inverted: false,
   visible: false,

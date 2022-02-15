@@ -163,6 +163,7 @@ Content.propTypes = {
   }),
 };
 
+/* istanbul ignore next */
 Content.defaultProps = {
   inverted: false,
   placement: 'top',
