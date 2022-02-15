@@ -1,33 +1,40 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { fireEvent, render, screen } from '@testing-library/react';
+
 import Toggle from './Toggle';
 
 describe('<Toggle /> ', () => {
-  describe('Snapshots', () => {
-    it('should match snapshot without props', () => {
-      expect(renderer.create(<Toggle />).toJSON()).toMatchSnapshot();
-    });
-
-    it('should match snapshot with checked prop', () => {
-      expect(renderer.create(<Toggle checked />).toJSON()).toMatchSnapshot();
-    });
+  it('should match snapshot without props', () => {
+    expect(render(<Toggle />).asFragment()).toMatchSnapshot();
   });
 
-  describe('Correctly props', () => {
-    it('should pass onChange prop to input element', () => {
-      const onChangeMock = () => {};
-      const toggle = shallow(<Toggle onChange={onChangeMock} />);
-      const checkbox = toggle.find('HiddenCheckbox');
+  it('should match snapshot with checked prop', () => {
+    expect(render(<Toggle checked />).asFragment()).toMatchSnapshot();
+  });
 
-      expect(checkbox.props().onChange).toBe(onChangeMock);
-    });
+  it('should call onChange callback when toggle is clicked', () => {
+    const onChangeMock = jest.fn();
+    render(<Toggle onChange={onChangeMock} />);
 
-    it('should pass checked prop to input element', () => {
-      const toggle = shallow(<Toggle checked />);
-      const checkbox = toggle.find('HiddenCheckbox');
+    const toggle = screen.getByRole('switch');
+    fireEvent.click(toggle);
 
-      expect(checkbox.props().checked).toBe(true);
-    });
+    expect(onChangeMock).toHaveBeenCalled();
+  });
+
+  it('should render unchecked', () => {
+    render(<Toggle />);
+
+    const toggleChecked = screen.getByRole('switch', { checked: false });
+
+    expect(toggleChecked).toBeInTheDocument();
+  });
+
+  it('should render checked when prop checked is received', () => {
+    render(<Toggle checked />);
+
+    const toggleChecked = screen.getByRole('switch', { checked: true });
+
+    expect(toggleChecked).toBeInTheDocument();
   });
 });
