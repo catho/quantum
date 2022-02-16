@@ -71,6 +71,7 @@ const icons = [
   'star_border',
   'star_half',
   'star',
+  'trending_up',
   'tune',
   'swap_vert',
   'verified_user',

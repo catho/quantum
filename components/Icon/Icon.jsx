@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Accessible from '@material-ui/icons/Accessible';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import AccessTime from '@material-ui/icons/AccessTime';
@@ -73,6 +74,7 @@ import Star from '@material-ui/icons/Star';
 import StarBorder from '@material-ui/icons/StarBorder';
 import StarHalf from '@material-ui/icons/StarHalf';
 import SwapVert from '@material-ui/icons/SwapVert';
+import TrendingUp from '@material-ui/icons/TrendingUp';
 import Tune from '@material-ui/icons/Tune';
 import VerifiedUser from '@material-ui/icons/VerifiedUser';
 import Visibility from '@material-ui/icons/Visibility';
@@ -170,6 +172,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     star_half: StarHalf,
     star: Star,
     swap_vert: SwapVert,
+    trending_up: TrendingUp,
     tune: Tune,
     verified_user: VerifiedUser,
     visibility_off: VisibilityOff,
