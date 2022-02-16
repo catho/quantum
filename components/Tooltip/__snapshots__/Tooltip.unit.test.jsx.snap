@@ -1,23 +1,447 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tooltip component  All positions Should match the snapshot when place is bottom 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+exports[`Tooltip component  Should match the snapshot when is multiline 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
 
-exports[`Tooltip component  All positions Should match the snapshot when place is left 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
 
-exports[`Tooltip component  All positions Should match the snapshot when place is right 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+.c2 {
+  display: inline-block;
+  max-width: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  line-height: 20px;
+  text-align: left;
+}
 
-exports[`Tooltip component  All positions Should match the snapshot when place is top 1`] = `"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">This is a hint</span></div>Hover Me</div>"`;
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
 
-exports[`Tooltip component  Multiline Should match the snapshot when is multiline 1`] = `
-"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 dwZvoO\\">Lorem ipsum dolor sit amet, 
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 Aenean bibendum facilisis sem viverra fringilla. 
-Suspendisse finibus libero nec justo semper.</span></div>Hover Me</div>"
+Suspendisse finibus libero nec justo semper.
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
 `;
 
-exports[`Tooltip component  Multiline Should match the snapshot when is not multiline 1`] = `
-"<div class=\\"Tooltip__Wrapper-sc-1s2fcfh-2 jieLsX\\"><div class=\\"Tooltip__Tip-sc-1s2fcfh-0 hSYyir\\"><span class=\\"Tooltip__TipText-sc-1s2fcfh-1 fqvvUE\\">Lorem ipsum dolor sit amet, 
+exports[`Tooltip component  Should match the snapshot when is not multiline 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
 Aenean bibendum facilisis sem viverra fringilla. 
-Suspendisse finibus libero nec justo semper.</span></div>Hover Me</div>"
+Suspendisse finibus libero nec justo semper.
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip component  Should match the snapshot when place is bottom 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        This is a hint
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip component  Should match the snapshot when place is left 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        This is a hint
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip component  Should match the snapshot when place is right 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        This is a hint
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Tooltip component  Should match the snapshot when place is top 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        This is a hint
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
 `;

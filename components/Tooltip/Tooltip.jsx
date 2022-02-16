@@ -84,6 +84,7 @@ class Tooltip extends Component {
       <Wrapper
         onMouseEnter={() => this.isVisible(true)}
         onMouseLeave={() => this.isVisible(false)}
+        multiline={multiline}
         {...rest}
       >
         <Tip
