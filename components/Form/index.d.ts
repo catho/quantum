@@ -23,4 +23,6 @@ export namespace Validations {
     function MaxLength(params: { value?: string; maxLength?: string | number }): string;
 
     function Email(params: { value?: string }): string;
+
+    function EmailBlockAccent(params: { value?: string }): string;
 }
