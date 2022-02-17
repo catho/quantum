@@ -1,4 +1,3 @@
-import React from 'react';
 import { AutoExample } from '@catho/quantum-storybook-ui';
 import { ChargeBar } from '../../components';
 

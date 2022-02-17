@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading, TabbedView, Tab } from '@catho/quantum-storybook-ui';
 
 import Usage from './Usage';

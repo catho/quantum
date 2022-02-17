@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import Input from '../../components/Input';
 
-class ControlledExample extends React.Component {
+class ControlledExample extends Component {
   constructor(props) {
     super(props);
 
@@ -34,7 +34,7 @@ class ControlledExample extends React.Component {
 export default ControlledExample;
 
 ControlledExample.code = `
-class ControlledExample extends React.Component {
+class ControlledExample extends Component {
 
   constructor(props) {
     super(props)

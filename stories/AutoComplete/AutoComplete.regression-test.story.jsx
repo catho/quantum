@@ -1,4 +1,3 @@
-import React from 'react';
 import { AutoComplete } from '../../components';
 
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];

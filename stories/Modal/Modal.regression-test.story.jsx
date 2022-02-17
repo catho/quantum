@@ -1,4 +1,3 @@
-import React from 'react';
 import { Modal, Button, Input } from '../../components';
 
 const modalHeader = (titleProps = {}) => (

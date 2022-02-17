@@ -1,4 +1,3 @@
-import React from 'react';
 import { Dialog, Button } from '../../components';
 import Example, { ButtonWrapper } from './ExampleStyle';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import mockedProps from '../../components/Accordion/mock';
 
 import { Accordion } from '../../components';

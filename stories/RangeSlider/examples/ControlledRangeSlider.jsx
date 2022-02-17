@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import RangeSlider from '../../../components/RangeSlider';
 
 class ControlledRangeSlider extends Component {
@@ -28,7 +28,7 @@ class ControlledRangeSlider extends Component {
 }
 
 ControlledRangeSlider.code = `
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { RangeSlider } from '@catho/quantum';
 
 class ControlledRangeSlider extends Component {

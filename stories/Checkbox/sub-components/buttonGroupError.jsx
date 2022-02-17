@@ -1,4 +1,3 @@
-import React from 'react';
 import CheckboxGroup from '../../../components/Checkbox/CheckboxGroup';
 
 const options = [

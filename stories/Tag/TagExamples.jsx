@@ -1,4 +1,3 @@
-import React from 'react';
 import { Example, Title } from '@catho/quantum-storybook-ui';
 import styled from 'styled-components';
 import { Tag } from '../../components';

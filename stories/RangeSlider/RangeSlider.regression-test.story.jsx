@@ -1,4 +1,3 @@
-import React from 'react';
 import { Row, Col, RangeSlider } from '../../components';
 import rangeSliderUtils from '../../components/RangeSlider/utils';
 

@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExampleCallback extends React.Component {
+class SnackBarExampleCallback extends Component {
   constructor() {
     super();
 
@@ -42,11 +42,11 @@ class SnackBarExampleCallback extends React.Component {
 }
 
 SnackBarExampleCallback.code = `
-import React from 'react';
+
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExampleCallback extends React.Component {
+class SnackBarExampleCallback extends Component {
   constructor() {
     super();
 

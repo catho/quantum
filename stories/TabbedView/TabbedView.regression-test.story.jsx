@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Badge, Icon, TabbedView, Tab } from '../../components';
 
 const badge = <Badge number={4} />;

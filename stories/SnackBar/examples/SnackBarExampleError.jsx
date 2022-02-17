@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExampleError extends React.Component {
+class SnackBarExampleError extends Component {
   constructor() {
     super();
 
@@ -36,11 +36,11 @@ class SnackBarExampleError extends React.Component {
 }
 
 SnackBarExampleError.code = `
-import React from 'react';
+
 import Button from '../../../components/Button';
 import SnackBar from '../../../components/SnackBar';
 
-class SnackBarExampleError extends React.Component {
+class SnackBarExampleError extends Component {
   constructor() {
     super();
 

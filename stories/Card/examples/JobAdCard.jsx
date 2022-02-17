@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from '../../../components/Card';
 import Tag from '../../../components/Tag';
 import Button from '../../../components/Button';

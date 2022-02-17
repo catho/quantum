@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading } from '@catho/quantum-storybook-ui';
 import styled from 'styled-components';
 import Introduction from './Introduction';

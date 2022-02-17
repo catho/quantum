@@ -1,4 +1,3 @@
-import React from 'react';
 import TooltipExampleTop from './TooltipExampleTop';
 import TooltipExampleRight from './TooltipExampleRight';
 import TooltipExampleBottom from './TooltipExampleBottom';

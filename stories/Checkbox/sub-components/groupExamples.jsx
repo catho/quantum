@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import CheckboxGroup from '../../../components/Checkbox/CheckboxGroup';
 
 const options = [
@@ -9,7 +9,7 @@ const options = [
   { label: 'Blueberry', name: 'blueberry' },
 ];
 
-class ControlledGroup extends React.Component {
+class ControlledGroup extends Component {
   constructor(props) {
     super(props);
 
@@ -38,7 +38,7 @@ class ControlledGroup extends React.Component {
   }
 }
 
-ControlledGroup.code = `class ControlledGroup extends React.Component {
+ControlledGroup.code = `class ControlledGroup extends Component {
   constructor(props) {
     super(props);
 

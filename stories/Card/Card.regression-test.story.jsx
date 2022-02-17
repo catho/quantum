@@ -1,5 +1,3 @@
-import React from 'react';
-
 import SimpleCard from './examples/SimpleCard';
 import JobAdCard from './examples/JobAdCard';
 import AdvancedCard from './examples/AdvancedCard';

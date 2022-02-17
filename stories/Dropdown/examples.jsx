@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from '../../components/Dropdown';
 
-class Controlled extends React.Component {
+class Controlled extends Component {
   constructor(props) {
     super(props);
 
@@ -11,7 +11,7 @@ class Controlled extends React.Component {
     this.state = { selectedItem };
   }
 
-  static CODE = `class ControlledDropdown extends React.Component {
+  static CODE = `class ControlledDropdown extends Component {
   constructor(props) {
     super(props);
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Popover, Button, Row, Col } from '../../components';
 
 const handleDirectionPosition = direction => {

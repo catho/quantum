@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import RadioGroup from '../../../components/RadioGroup';
 
 const options = [
@@ -6,7 +6,7 @@ const options = [
   { value: 'default', label: 'Default' },
 ];
 
-class Group extends React.Component {
+class Group extends Component {
   constructor(props) {
     super(props);
 
