@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, createElement } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Item from './sub-components/Item';
@@ -99,7 +99,7 @@ const Ordered = styled.ol`
 
 Ordered.displayName = 'OrderedList';
 
-class List extends React.Component {
+class List extends Component {
   constructor(props) {
     super(props);
 
@@ -132,7 +132,7 @@ class List extends React.Component {
 
     const listItems = children || items.map(Item.create);
 
-    return React.createElement(
+    return createElement(
       this._listType(ordered),
       {
         inline,

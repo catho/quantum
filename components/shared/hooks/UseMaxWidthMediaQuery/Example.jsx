@@ -1,4 +1,3 @@
-import React from 'react';
 import useMaxWidthMediaQuery from './useMaxWidthMediaQuery';
 
 const ExampleMediaQuery = () => {

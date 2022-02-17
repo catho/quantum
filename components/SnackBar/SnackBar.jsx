@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { Component } from 'react';
+import { createPortal } from 'react-dom';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -192,7 +192,7 @@ const DialogBlock = styled.section`
   z-index: 98;
 `;
 
-class SnackBar extends React.Component {
+class SnackBar extends Component {
   constructor(props) {
     super(props);
     const { id } = props;
@@ -252,7 +252,7 @@ class SnackBar extends React.Component {
       ...rest
     } = this.props;
 
-    return ReactDOM.createPortal(
+    return createPortal(
       <DialogBlock>
         <Row>
           <Col

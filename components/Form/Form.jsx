@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, Children, isValidElement, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import Input from '../Input';
 import InputTypes from '../Input/InputTypes';
@@ -18,9 +18,9 @@ const typeNames = Object.values(InputTypes).map(
   InputType => InputType.displayName,
 );
 
-class Form extends React.Component {
+class Form extends Component {
   static _isValidElement = element =>
-    React.isValidElement(element) &&
+    isValidElement(element) &&
     [Input.displayName, ...typeNames].includes(element.type.displayName);
 
   constructor(props) {
@@ -53,7 +53,7 @@ class Form extends React.Component {
         return child;
       }
       const { name, error, onChange = () => {} } = child.props;
-      return React.cloneElement(child, {
+      return cloneElement(child, {
         value: values[name],
         error: errors[name] || error,
         onChange: e => {
@@ -66,14 +66,14 @@ class Form extends React.Component {
   };
 
   _recursiveMap = (children, fn) =>
-    React.Children.map(children, child => {
-      if (!React.isValidElement(child)) {
+    Children.map(children, child => {
+      if (!isValidElement(child)) {
         return child;
       }
 
       if (child.props.children) {
         return fn(
-          React.cloneElement(child, {
+          cloneElement(child, {
             children: this._recursiveMap(child.props.children, fn),
           }),
         );

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -162,7 +162,7 @@ const TabPanel = styled.div`
 
 const RenderIf = ({ conditional, children }) => conditional && children;
 
-class TabbedView extends React.Component {
+class TabbedView extends Component {
   constructor(props) {
     super(props);
 
@@ -175,7 +175,7 @@ class TabbedView extends React.Component {
         {
           props: { title },
         },
-      ] = React.Children.toArray(children);
+      ] = Children.toArray(children);
       this.state = { activeTab: title };
     }
   }
@@ -201,7 +201,7 @@ class TabbedView extends React.Component {
     return (
       <>
         <Navbar theme={theme} skin={skin} fluid={fluid}>
-          {React.Children.map(children, ({ props: { title, badge, icon } }) => (
+          {Children.map(children, ({ props: { title, badge, icon } }) => (
             <NavItem
               fluid={fluid}
               key={title}
@@ -219,7 +219,7 @@ class TabbedView extends React.Component {
           ))}
         </Navbar>
 
-        {React.Children.map(
+        {Children.map(
           children,
           ({ props: { title, children: tabContent } }) => (
             <RenderIf conditional={title === activeTab}>

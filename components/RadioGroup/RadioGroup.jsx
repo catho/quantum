@@ -1,4 +1,4 @@
-import React from 'react';
+import { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
@@ -45,8 +45,8 @@ const RadioGroup = ({
   );
 
   const items =
-    React.Children.map(children, child =>
-      React.cloneElement(child, {
+    Children.map(children, child =>
+      cloneElement(child, {
         defaultChecked: child.props.value === defaultValue ? true : undefined,
         ...commonProps,
       }),

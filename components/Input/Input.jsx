@@ -1,6 +1,7 @@
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import React from 'react';
+
 import MaskedInput from 'react-text-mask';
 
 import { FieldGroup, uniqId } from '../shared';
@@ -77,7 +78,7 @@ InputErrorIcon.displayName = 'InputErrorIcon';
 DescriptionLabel.displayName = 'DescriptionLabel';
 
 /** A text field component to get user text data */
-class Input extends React.Component {
+class Input extends Component {
   constructor(props) {
     super(props);
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -35,7 +35,7 @@ const CardWrapper = styled.article`
   `}
 `;
 
-class Card extends React.Component {
+class Card extends Component {
   static Header = Header;
 
   static HeaderText = HeaderText;

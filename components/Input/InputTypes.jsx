@@ -1,4 +1,3 @@
-import React from 'react';
 // eslint-disable-next-line import/no-cycle
 import Input from './Input';
 import masks from '../shared/masks';

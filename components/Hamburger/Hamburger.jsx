@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import HamburgerIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';

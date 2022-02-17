@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, Children } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
@@ -11,7 +11,7 @@ const Group = styled(FieldGroup)`
   position: relative;
 `;
 
-class CheckboxGroup extends React.Component {
+class CheckboxGroup extends Component {
   _onChange = event => {
     const {
       target: { checked, name },
@@ -19,7 +19,7 @@ class CheckboxGroup extends React.Component {
 
     const { onChange, children, options } = this.props;
 
-    const items = React.Children.map(children, ({ props }) => props) || options;
+    const items = Children.map(children, ({ props }) => props) || options;
 
     onChange(
       items.map(item => (item.name === name ? { ...item, checked } : item)),

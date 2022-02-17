@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from '../Button';
@@ -72,7 +72,7 @@ const RadioButton = styled(Button)`
   display: inline-flex;
 `;
 
-class Radio extends React.Component {
+class Radio extends Component {
   constructor(props) {
     super(props);
 
