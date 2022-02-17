@@ -29,20 +29,22 @@ const FacebookButton = styled(BaseButton)`
 `;
 
 const SocialButton = ({ provider, ...props }) => {
-  const providers = {
-    facebook: (
-      <FacebookButton {...props}>
-        <FacebookIcon title="facebook-button" size="24" />
-      </FacebookButton>
-    ),
-    google: (
-      <GoogleButton {...props} stroked skin="neutral">
-        <GoogleIcon title="google-button" size="24" />
-      </GoogleButton>
-    ),
-  };
-
-  return providers[provider];
+  switch (provider) {
+    case 'facebook':
+      return (
+        <FacebookButton {...props}>
+          <FacebookIcon title="facebook-button" size="24" />
+        </FacebookButton>
+      );
+    case 'google':
+      return (
+        <GoogleButton {...props} stroked skin="neutral">
+          <GoogleIcon title="google-button" size="24" />
+        </GoogleButton>
+      );
+    default:
+      return <Button />;
+  }
 };
 
 SocialButton.propTypes = {
