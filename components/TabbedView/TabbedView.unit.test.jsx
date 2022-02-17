@@ -1,4 +1,3 @@
-import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import TabbedView from './TabbedView';
 import Tab from './Tab';
