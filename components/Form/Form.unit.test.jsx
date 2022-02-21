@@ -25,6 +25,16 @@ const FormWithValidations = () => (
     <Input name="birthday" label="Birthday" validate={validations.Date} />
     <Input name="email" label="E-mail" validate={validations.Email} />
     <Input
+      name="email_accent"
+      label="E-mail_Accent"
+      validate={[
+        {
+          validate: validations.EmailBlockAccent,
+          error: 'E-mail com acentos não são permitidos',
+        },
+      ]}
+    />
+    <Input
       name="address"
       label="Address"
       validate={validations.MinLength}
@@ -91,6 +101,13 @@ describe('Form component ', () => {
       errorMsg: 'E-mail inválido',
       valid: 'foo@baz.com',
       invalid: 'foo@baz',
+    },
+    {
+      fieldName: 'E-mail_Accent',
+      validationName: 'Email with accent',
+      errorMsg: 'E-mail com acentos não são permitidos',
+      valid: 'foo@baz.com',
+      invalid: 'foá@baz.com',
     },
     {
       fieldName: 'Address',

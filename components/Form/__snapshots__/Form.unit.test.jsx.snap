@@ -345,7 +345,7 @@ exports[`Form component  should match the snapshot 1`] = `
       class="c1"
       for="input-5"
     >
-      Address
+      E-mail_Accent
     </label>
     
     <div
@@ -354,6 +354,35 @@ exports[`Form component  should match the snapshot 1`] = `
       <input
         class="c3"
         id="input-5"
+        maxlength="255"
+        minlength="0"
+        name="email_accent"
+        placeholder=""
+        type="text"
+        value=""
+      />
+      
+      
+    </div>
+    
+    
+  </div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1"
+      for="input-6"
+    >
+      Address
+    </label>
+    
+    <div
+      class="c2"
+    >
+      <input
+        class="c3"
+        id="input-6"
         maxlength="255"
         minlength="8"
         name="address"
@@ -372,7 +401,7 @@ exports[`Form component  should match the snapshot 1`] = `
   >
     <label
       class="c1"
-      for="input-6"
+      for="input-7"
     >
       Country
     </label>
@@ -382,7 +411,7 @@ exports[`Form component  should match the snapshot 1`] = `
     >
       <input
         class="c4"
-        id="input-6"
+        id="input-7"
         maxlength="3"
         minlength="0"
         name="country"
