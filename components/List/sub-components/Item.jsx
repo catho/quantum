@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { spacing, baseFontSize } from '../../shared/theme';
@@ -46,7 +46,7 @@ const ListItem = styled.div`
 
 ListItem.displayName = 'ListItem';
 
-class Item extends React.Component {
+class Item extends Component {
   static create = item => {
     if (typeof item === 'string') {
       return <Item content={item} key={item} />;

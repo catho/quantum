@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Stepper from '../../components/Stepper';
 
 const i18n = {

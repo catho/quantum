@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import { CheckboxGroup } from '../../../components/Checkbox';
 
-class ControledGroup extends React.Component {
+class ControledGroup extends Component {
   constructor(props) {
     super(props);
 
@@ -31,7 +31,7 @@ class ControledGroup extends React.Component {
 }
 
 export default {
-  code: `class ControledGroup extends React.Component {
+  code: `class ControledGroup extends Component {
     constructor(props) {
       super(props);
 

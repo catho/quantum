@@ -1,5 +1,6 @@
+import { Component, cloneElement } from 'react';
 import PropTypes from 'prop-types';
-import React from 'react';
+
 import styled from 'styled-components';
 import { query, hide, calcGutter } from './shared';
 import { theme as defaultTheme } from '../../shared';
@@ -98,7 +99,7 @@ const StyledRow = styled.div`
   ${hide}
 `;
 
-class Row extends React.Component {
+class Row extends Component {
   constructor(props) {
     super(props);
 
@@ -109,7 +110,7 @@ class Row extends React.Component {
     const { children, 'no-gutters': noGutters, ...rest } = this.props;
 
     const applyNoGutters = child => {
-      const ChildWithNoGutters = React.cloneElement(child, {
+      const ChildWithNoGutters = cloneElement(child, {
         'no-gutters':
           child.props && child.props['no-gutters'] === true ? true : noGutters,
       });

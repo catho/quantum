@@ -1,5 +1,4 @@
 // Generated with scripts/create-componnent.js
-import React from 'react';
 
 import Breadcrumbs from '../../components/Breadcrumbs';
 import defaultContent from '../../components/Breadcrumbs/exampleContents';

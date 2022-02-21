@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkTo from '@storybook/addon-links/react';
 import styled from 'styled-components';
 import {
@@ -72,7 +71,7 @@ export default {
 };
 
 export const Icons = () => (
-  <React.Fragment>
+  <>
     <Heading name="Icons">
       Quantum use Material icons, beautifully crafted symbols for common actions
       and items. Download on desktop to use them in your digital products for
@@ -130,5 +129,5 @@ export const Icons = () => (
         </StoryContainer>
       </Tab>
     </TabbedView>
-  </React.Fragment>
+  </>
 );

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, uniqId } from '../shared';
@@ -27,7 +27,7 @@ const TextAreaTag = styled(TextInput)`
   }
 `;
 
-class TextArea extends React.Component {
+class TextArea extends Component {
   constructor(props) {
     super(props);
 

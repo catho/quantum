@@ -1,4 +1,3 @@
-import React from 'react';
 import Socials from '../../../components/Socials';
 
 const socialList = [
@@ -24,7 +23,7 @@ const SocialExampleWithoutBoxChangingSize = () => (
 );
 
 SocialExampleWithoutBoxChangingSize.code = `
-import React from 'react';
+
 import Socials from '../../../components/Socials';
 
 const socialList = [

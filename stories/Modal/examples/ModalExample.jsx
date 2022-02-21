@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Button, Modal } from '../../../components';
 
 class ModalExample extends Component {
@@ -56,7 +56,7 @@ class ModalExample extends Component {
   }
 }
 
-ModalExample.code = `import React, { Component } from 'react';
+ModalExample.code = `import { Component } from 'react';
 import { Button, Modal } from '@catho/quantum';
 
 class ModalExample extends Component {

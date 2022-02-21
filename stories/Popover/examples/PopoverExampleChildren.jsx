@@ -1,4 +1,3 @@
-import React from 'react';
 import Popover from '../../../components/Popover';
 import Button from '../../../components/Button';
 

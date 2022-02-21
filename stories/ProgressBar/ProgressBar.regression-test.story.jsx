@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProgressBar } from '../../components';
 
 const progressPercent = 25;

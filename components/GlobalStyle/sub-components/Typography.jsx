@@ -1,4 +1,3 @@
-import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../../shared/theme';
 import { query } from '../../Grid/sub-components/shared';

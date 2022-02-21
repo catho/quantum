@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -75,14 +75,13 @@ const ModalWrapper = styled.div`
 `;
 
 ModalWrapper.displayName = 'ModalWrapper';
-
-class Modal extends React.Component {
+class Modal extends Component {
   parent = document.body;
 
   constructor(props) {
     super(props);
+    this.modalWrapperRef = createRef();
 
-    this.modalWrapperRef = React.createRef();
     this.modalOverlay = document.createElement('section');
     this.focusableElements = [];
     this.focusedElementBeforeOpen = document.activeElement;

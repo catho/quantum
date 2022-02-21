@@ -1,4 +1,3 @@
-import React from 'react';
 import Socials from '../../../components/Socials';
 
 const socialList = [
@@ -22,7 +21,7 @@ const socialList = [
 const SocialExampleAll = () => <Socials items={socialList} />;
 
 SocialExampleAll.code = `
-import React from 'react';
+
 import Socials from '../../../components/Socials';
 
 const socialList = [

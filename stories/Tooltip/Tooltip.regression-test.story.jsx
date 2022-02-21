@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Tooltip, Button, Row, Col } from '../../components';
 
 const decorator = Story => (

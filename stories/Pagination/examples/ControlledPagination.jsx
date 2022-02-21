@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Pagination } from '../../../components';
 
 class ControlledPagination extends Component {
@@ -28,7 +28,7 @@ class ControlledPagination extends Component {
   }
 }
 
-ControlledPagination.code = `import React, { Component } from 'react';
+ControlledPagination.code = `import { Component } from 'react';
 import { Pagination } from '@catho/quantum';
 
 class ControlledPagination extends Component {

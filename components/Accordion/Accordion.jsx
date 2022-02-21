@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import slugify from 'slugify';
@@ -176,7 +176,7 @@ const AccordionItem = styled.li`
 AccordionHeader.displayName = 'AccordionHeader';
 AccordionContent.displayName = 'AccordionContent';
 
-class Accordion extends React.Component {
+class Accordion extends Component {
   constructor(props) {
     super(props);
     this.state = {

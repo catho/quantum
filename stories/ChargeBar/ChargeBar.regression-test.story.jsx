@@ -1,4 +1,3 @@
-import React from 'react';
 import { ChargeBar } from '../../components';
 
 const progressPercent = 75;

@@ -1,4 +1,3 @@
-import React from 'react';
 import PopoverExampleTop from './PopoverExampleTop';
 import PopoverExampleRight from './PopoverExampleRight';
 import PopoverExampleBottom from './PopoverExampleBottom';

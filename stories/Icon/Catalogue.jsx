@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Title } from '@catho/quantum-storybook-ui';
 import { Row, Col } from '../../components/Grid';
 import Input from '../../components/Input';
@@ -25,7 +25,7 @@ class Catalogue extends Component {
     const { filtered } = this.state;
 
     return (
-      <React.Fragment>
+      <>
         <Row>
           <Col medium={12}>
             <Title as="h2">Available Icons </Title>
@@ -48,7 +48,7 @@ class Catalogue extends Component {
             <IconToClipboard name={name} key={name} />
           ))}
         </Row>
-      </React.Fragment>
+      </>
     );
   }
 }

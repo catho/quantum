@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, createRef } from 'react';
+import { useEffect, useRef, useState, createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 

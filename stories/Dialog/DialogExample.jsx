@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Dialog, Button } from '../../components';
 import Example, { ButtonWrapper } from './ExampleStyle';
 
@@ -40,7 +40,7 @@ const DialogExample = () => {
 };
 
 DialogExample.code = `
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { Dialog, Button } from '../../components';
 

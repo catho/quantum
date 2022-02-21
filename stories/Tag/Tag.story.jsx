@@ -1,4 +1,3 @@
-import React from 'react';
 import { Tab, AutoExample, StoryContainer } from '@catho/quantum-storybook-ui';
 import { Tag } from '../../components';
 import {

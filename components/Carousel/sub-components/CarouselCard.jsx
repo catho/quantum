@@ -1,4 +1,3 @@
-import React from 'react';
 import Proptypes from 'prop-types';
 import ThumbCard from './ThumbCard';
 import DescriptionCard from './DescriptionCard';

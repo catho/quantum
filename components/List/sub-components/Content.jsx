@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { spacing, baseFontSize } from '../../shared/theme';
@@ -12,7 +12,7 @@ const ContentBox = styled.div`
 
 ContentBox.displayName = 'Content';
 
-class Content extends React.Component {
+class Content extends Component {
   _renderContent = ({ content, header, subheader, theme }) => {
     const renderHeader =
       typeof content !== 'string' && content.header ? content.header : header;
@@ -26,13 +26,13 @@ class Content extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <>
         <Header theme={theme}>{renderHeader}</Header>
 
         {renderSubHeader && (
           <SubHeader theme={theme}>{renderSubHeader}</SubHeader>
         )}
-      </React.Fragment>
+      </>
     );
   };
 

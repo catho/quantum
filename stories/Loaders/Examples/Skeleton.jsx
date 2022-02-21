@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+
 import { Skeleton, Card, Tag, Button } from '../../../components';
 import { Title } from '../../../components/GlobalStyle';
 

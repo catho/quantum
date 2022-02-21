@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import MaterialSlider from '@material-ui/core/Slider';
@@ -148,7 +148,7 @@ const RangeSlider = props => {
         min={min}
         onChange={onChange}
         onChangeCommitted={onChangeCommitted}
-        ref={React.createRef()}
+        ref={createRef()}
         step={step}
         track={track}
         value={disabled ? 0 : formatedValue}

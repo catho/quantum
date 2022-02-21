@@ -1,4 +1,3 @@
-import React from 'react';
 import { AutoExample, Tab, SimpleHighlight } from '@catho/quantum-storybook-ui';
 import {
   ProgressBarExample,
