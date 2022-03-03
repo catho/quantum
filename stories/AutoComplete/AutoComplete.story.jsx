@@ -16,7 +16,8 @@ const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
 const AutoCompleteExample = () => (
   <AutoCompleteComponent
     label="Pick a fruit"
-    selectedItem={item => console.log(item)}
+    onSelectedItem={item => console.log('selected', item)}
+    onChange={item => console.log('change', item)}
     helperText="Type your favorite fruit"
     suggestions={Examples}
   />
