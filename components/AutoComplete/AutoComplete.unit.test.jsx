@@ -145,30 +145,30 @@ describe('AutoComplete', () => {
     expect(InputErrorIconElement).toBeInTheDocument();
   });
 
-  it('should call selectedItemMock callback when prop is setted', async () => {
-    const selectedItemMock = jest.fn();
-    render(
-      <AutoComplete suggestions={Examples} selectedItem={selectedItemMock} />,
-    );
+  it('should call onChangeMock callback when prop is setted', async () => {
+    const onChangeMock = jest.fn();
+    render(<AutoComplete suggestions={Examples} onChange={onChangeMock} />);
 
     const input = screen.getByRole('combobox');
 
     await userEvent.type(input, 'mora');
 
-    expect(selectedItemMock).toHaveBeenCalled();
+    expect(onChangeMock).toHaveBeenCalled();
   });
 
   it('should call selectedItemMock callback when prop is setted and user selected a option', async () => {
     const selectedItemMock = jest.fn();
     render(
-      <AutoComplete suggestions={Examples} selectedItem={selectedItemMock} />,
+      <AutoComplete suggestions={Examples} onSelectedItem={selectedItemMock} />,
     );
 
     const input = screen.getByRole('combobox');
 
     await userEvent.type(input, 'melanci');
 
-    const autoCompleteOptions = screen.getAllByRole('listbox')[0];
+    const autoCompleteOptions = screen.getByRole('option', {
+      name: /melancia/i,
+    });
 
     userEvent.click(autoCompleteOptions);
 
