@@ -13,7 +13,8 @@ export interface AutoCompleteProps {
   error?: string;
   disabled?: boolean;
   placeholder?: string;
-  selectedItem?: () => void;
+  onChange?: () => void;
+  onSelectedItem?: () => void;
 }
 
 export default class AutoComplete extends React.Component<AutoCompleteProps> {}
