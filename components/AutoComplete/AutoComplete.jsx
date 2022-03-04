@@ -166,7 +166,7 @@ const AutoComplete = ({
   const [cursor, setCursor] = useState(0);
   const wrapperRef = useRef();
   const listOptions = useRef();
-  const autoInput = useRef(null);
+  const autoInputRef = useRef(null);
   const EscapeKeyPressValue = 'Escape';
   const assistiveDescriptionDefault = `Digite uma ou mais letras para expandir os resultados. ${filterSuggestionsLength} estão disponiveis.`;
   const assistiveDescriptionDropDownOpen = `${assistiveDescriptionDefault} ${
@@ -190,9 +190,7 @@ const AutoComplete = ({
 
   const handleChange = value => {
     setUserTypedValue(value);
-    if (value.length >= 3) {
-      onChange(value);
-    }
+    onChange(value);
     setCursor(0);
     handleFilter(value);
   };
@@ -322,7 +320,7 @@ const AutoComplete = ({
   }, []);
 
   useEffect(() => {
-    if (document.activeElement === autoInput.current) {
+    if (document.activeElement === autoInputRef.current) {
       handleFilter(userTypedValue);
     }
   }, [suggestions]);
@@ -336,7 +334,7 @@ const AutoComplete = ({
         </InputLabel>
         <InputText
           id={id}
-          ref={autoInput}
+          ref={autoInputRef}
           name={name}
           type="text"
           error={error}
@@ -393,7 +391,7 @@ AutoComplete.propTypes = {
   label: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  /** Callback function to receive what the user is typing it will trigger after user types the third letter */
+  /** Callback function to receive what the user is typing */
   onChange: PropTypes.func,
   /** Callback function to receive user selected value */
   onSelectedItem: PropTypes.func,
