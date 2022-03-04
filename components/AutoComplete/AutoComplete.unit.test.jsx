@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event';
 import AutoComplete from './AutoComplete';
 
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
+const ExamplesChanged = ['melanci', 'melancia'];
 
 describe('AutoComplete', () => {
   it('Should render Autocomplete', () => {
@@ -17,11 +18,11 @@ describe('AutoComplete', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should render the AutoComplete open', async () => {
+  it('should render the AutoComplete open', () => {
     render(<AutoComplete suggestions={Examples} />);
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'm');
+    userEvent.type(input, 'm');
 
     const autoCompleteOptions = screen.getAllByRole('listbox')[0];
 
@@ -39,11 +40,11 @@ describe('AutoComplete', () => {
     expect(autoCompleteOptions).toBeInTheDocument();
   });
 
-  it('should select a item when is clicked', async () => {
+  it('should select a item when is clicked', () => {
     render(<AutoComplete suggestions={Examples} />);
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'melanci');
+    userEvent.type(input, 'melanci');
 
     const melanciaOption = screen.getAllByRole('option', {
       name: /melancia/i,
@@ -54,11 +55,11 @@ describe('AutoComplete', () => {
     expect(input.getAttribute('value')).toBe('melancia');
   });
 
-  it('should close the options after item is clicked', async () => {
+  it('should close the options after item is clicked', () => {
     render(<AutoComplete suggestions={Examples} />);
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'melanci');
+    userEvent.type(input, 'melanci');
 
     const autoCompleteOptions = screen.getAllByRole('listbox')[0];
 
@@ -73,7 +74,7 @@ describe('AutoComplete', () => {
     expect(autoCompleteOptions).not.toBeInTheDocument();
   });
 
-  it('should correctly filter items with accent', async () => {
+  it('should correctly filter items with accent', () => {
     render(
       <AutoComplete
         suggestions={['morango', 'melancia', 'maça', 'banana', 'laranja']}
@@ -81,7 +82,7 @@ describe('AutoComplete', () => {
     );
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'maçã');
+    userEvent.type(input, 'maçã');
 
     const maçaOption = screen.getAllByRole('option', {
       name: /maça/i,
@@ -90,7 +91,7 @@ describe('AutoComplete', () => {
     expect(maçaOption).toBeInTheDocument();
   });
 
-  it('should correctly filter items without accent', async () => {
+  it('should correctly filter items without accent', () => {
     render(
       <AutoComplete
         suggestions={['morango', 'melancia', 'maçã', 'banana', 'laranja']}
@@ -98,7 +99,7 @@ describe('AutoComplete', () => {
     );
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'maça');
+    userEvent.type(input, 'maça');
 
     const maçaOption = screen.getAllByRole('option', {
       name: /maçã/i,
@@ -107,7 +108,7 @@ describe('AutoComplete', () => {
     expect(maçaOption).toBeInTheDocument();
   });
 
-  it('should close the options when there is no valid option', async () => {
+  it('should close the options when there is no valid option', () => {
     render(<AutoComplete suggestions={Examples} />);
 
     const input = screen.getByRole('combobox');
@@ -116,17 +117,17 @@ describe('AutoComplete', () => {
 
     const autoCompleteOptions = screen.getAllByRole('listbox')[0];
 
-    await userEvent.type(input, 'mon');
+    userEvent.type(input, 'mon');
 
     expect(autoCompleteOptions).not.toBeInTheDocument();
   });
 
-  it('should clean input value when clicked in the x button', async () => {
+  it('should clean input value when clicked in the x button', () => {
     const { container } = render(<AutoComplete suggestions={Examples} />);
 
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'mon');
+    userEvent.type(input, 'mon');
 
     const cleanButton = container.querySelectorAll('svg')[0];
 
@@ -145,18 +146,18 @@ describe('AutoComplete', () => {
     expect(InputErrorIconElement).toBeInTheDocument();
   });
 
-  it('should call onChangeMock callback when prop is setted', async () => {
+  it('should call onChangeMock callback when prop is setted', () => {
     const onChangeMock = jest.fn();
     render(<AutoComplete suggestions={Examples} onChange={onChangeMock} />);
 
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'mora');
+    userEvent.type(input, 'mora');
 
     expect(onChangeMock).toHaveBeenCalled();
   });
 
-  it('should call selectedItemMock callback when prop is setted and user selected a option', async () => {
+  it('should call selectedItemMock callback when prop is setted and user selected a option', () => {
     const selectedItemMock = jest.fn();
     render(
       <AutoComplete suggestions={Examples} onSelectedItem={selectedItemMock} />,
@@ -164,7 +165,7 @@ describe('AutoComplete', () => {
 
     const input = screen.getByRole('combobox');
 
-    await userEvent.type(input, 'melanci');
+    userEvent.type(input, 'melanci');
 
     const autoCompleteOptions = screen.getByRole('option', {
       name: /melancia/i,
@@ -179,5 +180,22 @@ describe('AutoComplete', () => {
     render(<AutoComplete suggestions={Examples} helperText="helper text" />);
 
     expect(screen.getByText(/helper text/i)).toBeInTheDocument();
+  });
+
+  it('should filter the options if suggestions prop is changed', () => {
+    const { rerender } = render(<AutoComplete suggestions={Examples} />);
+
+    const input = screen.getByRole('combobox');
+
+    userEvent.type(input, 'melanci');
+
+    rerender(<AutoComplete suggestions={ExamplesChanged} />);
+
+    expect(input.value).toBe('melanci');
+    expect(screen.getAllByRole('option')).toHaveLength(2);
+    expect(screen.getByRole('option', { name: 'melanci' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('option', { name: 'melancia' }),
+    ).toBeInTheDocument();
   });
 });
