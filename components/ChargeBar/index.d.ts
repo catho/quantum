@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface ChargeBarProps {
     skin?: 'neutral' | 'primary' | 'secondary' | 'success';
@@ -14,4 +14,4 @@ export interface ChargeBarProps {
     label?: string;
 }
 
-export default class ChargeBar extends React.Component<ChargeBarProps> {}
+export default class ChargeBar extends Component<ChargeBarProps> {}

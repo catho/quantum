@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode, Component } from 'react';
 
 export interface AccordionProps {
     theme?: {
@@ -9,10 +9,10 @@ export interface AccordionProps {
     keepOnlyOneOpen?: boolean;
     items: Array<{
         title?: string;
-        content?: React.ReactNode;
+        content?: ReactNode;
         opened?: boolean;
         onClick?: () => void;
     }>;
 }
 
-export default class Accordion extends React.Component<AccordionProps> {}
+export default class Accordion extends Component<AccordionProps> {}

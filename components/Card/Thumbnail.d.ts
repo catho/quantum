@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Thumbnail = React.ComponentType<{
+type Thumbnail = ComponentType<{
     src: string;
     alt: string;
     rounded?: boolean;

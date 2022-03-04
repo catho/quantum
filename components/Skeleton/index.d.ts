@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, ComponentType } from 'react';
 
 export interface SkeletonButtonProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large';
@@ -7,11 +7,11 @@ export interface SkeletonButtonProps {
     };
 }
 
-export type SkeletonButton = React.ComponentType<SkeletonButtonProps>;
+export type SkeletonButton = ComponentType<SkeletonButtonProps>;
 
-export type SkeletonCircle = React.ComponentType;
+export type SkeletonCircle = ComponentType;
 
-export type SkeletonText = React.ComponentType;
+export type SkeletonText = ComponentType;
 
 export interface SkeletonTagProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large';
@@ -21,7 +21,7 @@ export interface SkeletonTagProps {
     };
 }
 
-export type SkeletonTag = React.ComponentType<SkeletonTagProps>;
+export type SkeletonTag = ComponentType<SkeletonTagProps>;
 
 export interface SkeletonProps {
     type?: 'rect' | 'circle' | 'text' | 'button' | 'tag';
@@ -34,7 +34,7 @@ export interface SkeletonProps {
     };
 }
 
-export default class Skeleton extends React.Component<SkeletonProps> {
+export default class Skeleton extends Component<SkeletonProps> {
     static Button: SkeletonButton;
 
     static Circle: SkeletonCircle;

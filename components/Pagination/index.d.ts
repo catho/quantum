@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface PaginationProps {
     tabIndex?: number;
@@ -15,4 +15,4 @@ export interface PaginationProps {
     followOnlyFirstPage?: boolean;
 }
 
-export default class Pagination extends React.Component<PaginationProps> {}
+export default class Pagination extends Component<PaginationProps> {}

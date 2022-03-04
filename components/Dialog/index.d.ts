@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component, ReactNode } from 'react';
 
 export interface DialogProps {
-  children: React.ReactNode[] | React.ReactNode;
+  children: ReactNode[] | ReactNode;
   theme?: {
     colors?: {};
   };
@@ -11,4 +11,4 @@ export interface DialogProps {
   closeOnTime?: number;
 }
 
-export default class Dialog extends React.Component<DialogProps> {}
+export default class Dialog extends Component<DialogProps> {}

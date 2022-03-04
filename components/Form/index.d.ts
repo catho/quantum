@@ -1,13 +1,13 @@
-import React, { FormHTMLAttributes } from 'react';
+import { FormHTMLAttributes, ReactNode, Component } from 'react';
 
 export interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
-    children: React.ReactNode[] | React.ReactNode;
+    children: ReactNode[] | ReactNode;
     onSubmit?: ({ valid }?: { valid: boolean }) => void;
     onValidSubmit?: (values?: { [name: string]: string | undefined }) => void;
     noValidate?: boolean;
 }
 
-export class Form extends React.Component<FormProps> {}
+export class Form extends Component<FormProps> {}
 
 export namespace Validations {
     function Required(params: { value?: string }): string;

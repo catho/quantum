@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Description = React.ComponentType<{
+type Description = ComponentType<{
     small?: boolean;
     theme?: { baseFontSize?: number; spacing?: object };
 }> & {

@@ -1,12 +1,12 @@
-import React from 'react';
+import { Component, ChangeEventHandler } from 'react';
 
 export interface RangeSliderProps {
     step?: number;
     max?: number;
     min?: number;
     disabled?: boolean;
-    onChange?: React.ChangeEventHandler<HTMLInputElement>;
-    onChangeCommitted?: React.ChangeEventHandler<HTMLInputElement>;
+    onChange?: ChangeEventHandler<HTMLInputElement>;
+    onChangeCommitted?: ChangeEventHandler<HTMLInputElement>;
     marks?: Array<{
         value?: string | number;
         label?: string;
@@ -24,4 +24,4 @@ export interface RangeSliderProps {
     };
 }
 
-export default class RangeSlider extends React.Component<RangeSliderProps> {}
+export default class RangeSlider extends Component<RangeSliderProps> {}

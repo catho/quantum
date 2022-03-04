@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface HamburgerProps {
     showNotification?: boolean;
@@ -7,4 +7,4 @@ export interface HamburgerProps {
     ariaLabelDescription?: string;
 }
 
-export default class Hamburger extends React.Component<HamburgerProps> {}
+export default class Hamburger extends Component<HamburgerProps> {}

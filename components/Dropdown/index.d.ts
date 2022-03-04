@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { ControllerStateAndHelpers } from 'downshift';
 
 export type ItemPropType = string | { value: string | number; label: string };
@@ -29,4 +29,4 @@ export interface DropdownProps {
   };
 }
 
-export default class Dropdown extends React.Component<DropdownProps> {}
+export default class Dropdown extends Component<DropdownProps> {}

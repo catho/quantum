@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface AutoCompleteProps {
   theme?: {
@@ -16,4 +16,4 @@ export interface AutoCompleteProps {
   selectedItem?: () => void;
 }
 
-export default class AutoComplete extends React.Component<AutoCompleteProps> {}
+export default class AutoComplete extends Component<AutoCompleteProps> {}

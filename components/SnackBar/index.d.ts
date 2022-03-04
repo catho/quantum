@@ -1,9 +1,9 @@
-import React from 'react';
+import { Component, MouseEventHandler, TouchEventHandler } from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
     title: string;
-    callbackFn: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
+    callbackFn: MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   };
   theme?: {
     baseFontSize?: number;
@@ -16,7 +16,7 @@ export interface SnackBarProps {
     };
   };
   closeButtonAriaLabel?: string;
-  onClose?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | React.TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
+  onClose?: MouseEventHandler<HTMLButtonElement | HTMLAnchorElement> | TouchEventHandler<HTMLButtonElement | HTMLAnchorElement>;
   secondsToClose?: number;
   skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
   text: string | HTMLParagraphElement;
@@ -25,4 +25,4 @@ export interface SnackBarProps {
   id?: string;
 }
 
-export default class SnackBar extends React.Component<SnackBarProps> {}
+export default class SnackBar extends Component<SnackBarProps> {}

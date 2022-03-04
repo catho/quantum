@@ -1,8 +1,8 @@
-import React from 'react';
+import { FC, MouseEventHandler } from 'react';
 
 export interface SegmentedControlProps {
     name?: string;
-    onChange?: React.MouseEventHandler<HTMLButtonElement>;
+    onChange?: MouseEventHandler<HTMLButtonElement>;
     darkMode?: boolean;
     theme?: {
       spacing?: {};
@@ -16,4 +16,4 @@ export interface SegmentedControlProps {
     }];
 }
 
-declare const SegmentedControl: React.FC<SegmentedControlProps>;
+declare const SegmentedControl: FC<SegmentedControlProps>;

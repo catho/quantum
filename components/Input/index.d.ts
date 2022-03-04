@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from 'react';
+import { Component, InputHTMLAttributes, MouseEventHandler, ChangeEventHandler } from 'react';
 
 import { Validations } from '../Form';
 
@@ -29,8 +29,8 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name?: string;
   validate?: Validate | CustomValidate | Array<Validate | CustomValidate>;
   mask?: Mask | Mask[];
-  onClean?: React.MouseEventHandler<HTMLInputElement>;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onClean?: MouseEventHandler<HTMLInputElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   minLength?: number;
   maxLength?: number;
   skin?: 'default' | 'dark';
@@ -41,4 +41,4 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   };
 }
 
-export default class Input extends React.Component<InputProps> {}
+export default class Input extends Component<InputProps> {}

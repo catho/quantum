@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, ReactElement } from 'react';
 import { IconNames } from '../Icon';
 
 interface ItemContent {
@@ -17,7 +17,7 @@ export interface ListProps {
   inline?: boolean;
   divided?: boolean;
   bullet?: boolean;
-  children?: React.ReactElement | React.ReactElement[];
+  children?: ReactElement | ReactElement[];
   theme?: {
     colors?: {};
     spacing?: {};
@@ -29,7 +29,7 @@ interface Content {
   header?: string;
   subheader?: string;
   content?: ItemContent,
-  children?: React.ReactElement | React.ReactElement[];
+  children?: ReactElement | ReactElement[];
   theme?: {
     spacing?: {};
     baseFontSize?: number;
@@ -43,7 +43,7 @@ interface Header {
 }
 
 interface SubHeader {
-  children?: React.ReactElement | React.ReactElement[];
+  children?: ReactElement | ReactElement[];
   theme?: {
     baseFontSize?: number;
   }
@@ -53,14 +53,14 @@ interface Item {
   content?: ItemContent;
   icon?: IconNames | string;
   bullet?: string;
-  children?: React.ReactElement | React.ReactElement[];
+  children?: ReactElement | ReactElement[];
   theme?: {
     spacing?: {};
     baseFontSize?: number;
   }
 }
 
-export default class List extends React.Component<ListProps> {
+export default class List extends Component<ListProps> {
   static Header: Header;
   
   static SubHeader: SubHeader;

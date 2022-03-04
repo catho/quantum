@@ -1,12 +1,12 @@
-import React from 'react';
+import { Component, ReactNode, ChangeEventHandler, ComponentType } from 'react';
 import { IconNames } from '../Icon';
 
 export interface RadioProps {
   disabled?: boolean;
   error?: boolean;
-  children?: string | React.ReactNode[] | React.ReactNode;
+  children?: string | ReactNode[] | ReactNode;
   label?: string;
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   theme?: {
     colors?: {};
     spacing?: {};
@@ -14,7 +14,7 @@ export interface RadioProps {
   value: string;
 }
 
-export type Radio = React.ComponentType<RadioProps>;
+export type Radio = ComponentType<RadioProps>;
 
 export interface RadioButtonProps {
   checked?: boolean;
@@ -27,7 +27,7 @@ export interface RadioButtonProps {
   id?: string;
   inline?: boolean;
   label?: string;
-  onChange?: () => void | React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: () => void | ChangeEventHandler<HTMLInputElement>;
   theme?: {
     baseFontSize?: number;
     spacing?: {};
@@ -39,19 +39,19 @@ export interface RadioButtonProps {
   value: string;
 }
 
-export type RadioButton = React.ComponentType<RadioButtonProps>;
+export type RadioButton = ComponentType<RadioButtonProps>;
 
 export interface RadioGroupProps {
   type?: 'radio' | 'button';
   size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
   options?: Array<{
-    label?: React.ReactNode;
+    label?: ReactNode;
     value: string;
     disabled?: boolean;
   }>;
-  children?: React.ReactNode[] | React.ReactNode;
+  children?: ReactNode[] | ReactNode;
   inline?: boolean;
-  onChange?: () => {} | React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: () => {} | ChangeEventHandler<HTMLInputElement>;
   defaultValue?: string;
   name: string;
   error?: string;
@@ -62,7 +62,7 @@ export interface RadioGroupProps {
   required?: boolean;
 }
 
-export default class RadioGroup extends React.Component<RadioGroupProps> {
+export default class RadioGroup extends Component<RadioGroupProps> {
   static Radio: Radio;
 
   static Button: RadioButton;

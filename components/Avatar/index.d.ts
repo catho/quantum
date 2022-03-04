@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface AvatarProps {
     picture?: string;
@@ -9,4 +9,4 @@ export interface AvatarProps {
     onClick?: () => void;
 }
 
-export default class Avatar extends React.Component<AvatarProps> { }
+export default class Avatar extends Component<AvatarProps> { }

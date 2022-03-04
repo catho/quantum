@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, ReactNode } from 'react';
 import Breakpoints from '../Breakpoints';
 
 export type BreakpointsType = keyof typeof Breakpoints;
@@ -16,7 +16,7 @@ export interface ColProps {
     hide?: BreakpointsType | BreakpointsType[];
 }
 
-export class Col extends React.Component<ColProps> {}
+export class Col extends Component<ColProps> {}
 
 export interface ContainerProps {
     withBreakpoints?: boolean;
@@ -29,7 +29,7 @@ export interface ContainerProps {
     'no-gutters'?: boolean;
 }
 
-export class Container extends React.Component<ContainerProps> {}
+export class Container extends Component<ContainerProps> {}
 
 export interface HideProps {
     large?: boolean;
@@ -41,15 +41,15 @@ export interface HideProps {
     };
 }
 
-export class Hide extends React.Component<HideProps> {}
+export class Hide extends Component<HideProps> {}
 
 export interface RowProps {
     'no-gutters'?: boolean;
-    children: React.ReactNode[] | React.ReactNode;
+    children: ReactNode[] | ReactNode;
     hide?: BreakpointsType | BreakpointsType[];
     theme?: {
         breakpoints?: {};
     };
 }
 
-export class Row extends React.Component<RowProps> {}
+export class Row extends Component<RowProps> {}

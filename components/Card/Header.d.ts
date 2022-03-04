@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Header = React.ComponentType<{
+type Header = ComponentType<{
     theme?: { spacing?: object };
 }> & {
     displayName: 'Card.Header';

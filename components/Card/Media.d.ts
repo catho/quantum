@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Media = React.ComponentType<{
+type Media = ComponentType<{
     className?: string;
     style?: {};
     theme?: { colors?: {}; spacing?: {} };
