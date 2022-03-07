@@ -5,4 +5,7 @@ module.exports = {
     '@storybook/addon-options/register',
     '@storybook/addon-links/register',
   ],
+  features: {
+    buildStoriesJson: true,
+  },
 };
