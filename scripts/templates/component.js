@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const ${componentName} = ({ someProp }) => (
   <>
-    <h1>Hello, do domething here!</h1>
+    <h1>Hello, do something here!</h1>
     <p>{someProp}</p>
   </>
 )
