@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Footer = React.ComponentType<{
+type Footer = ComponentType<{
     theme?: { spacing?: object };
 }> & {
     displayName: 'Card.Footer';

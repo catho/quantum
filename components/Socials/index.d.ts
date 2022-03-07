@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export type NonEmptyArray<T> = [T, ...T[]];
 
@@ -15,4 +15,4 @@ export interface SocialsProps {
     withBox?: boolean;
 }
 
-export default class Socials extends React.Component<SocialsProps> {}
+export default class Socials extends Component<SocialsProps> {}

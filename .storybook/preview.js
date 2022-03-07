@@ -1,4 +1,3 @@
-import React from 'react';
 import 'loki/configure-react';
 import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';

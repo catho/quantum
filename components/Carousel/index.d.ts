@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export type NonEmptyArray<T> = [T, ...T[]];
 
@@ -22,4 +22,4 @@ export interface CarouselProps {
   };
 }
 
-export default class Carousel extends React.Component<CarouselProps> {}
+export default class Carousel extends Component<CarouselProps> {}

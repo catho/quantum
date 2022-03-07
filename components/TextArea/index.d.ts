@@ -1,11 +1,11 @@
-import React, { TextareaHTMLAttributes } from 'react';
+import { Component, ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 
 export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
     disabled?: boolean;
     error?: string;
     helperText?: string;
     label?: string;
-    onChange?: React.ChangeEventHandler<HTMLInputElement>;
+    onChange?: ChangeEventHandler<HTMLInputElement>;
     placeholder?: string;
     required?: boolean;
     value?: string;
@@ -18,4 +18,4 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
     }
 }
 
-export default class TextArea extends React.Component<TextAreaProps> {}
+export default class TextArea extends Component<TextAreaProps> {}

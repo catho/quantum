@@ -1,11 +1,11 @@
-import React from 'react';
+import { Component, ReactNode } from 'react';
 
 export interface TooltipProps {
     text: string;
     placement?: 'top' | 'right' | 'bottom' | 'left';
     visible?: boolean;
     multiline?: boolean;
-    children: React.ReactNode[] | React.ReactNode;
+    children: ReactNode[] | ReactNode;
     theme?: {
         spacing?: {};
         colors?: {};
@@ -13,4 +13,4 @@ export interface TooltipProps {
     };
 }
 
-export default class Tooltip extends React.Component<TooltipProps> {}
+export default class Tooltip extends Component<TooltipProps> {}

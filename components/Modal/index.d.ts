@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, ComponentType, ReactNode, TouchEvent, MouseEventHandler } from 'react';
 import HeaderText from '../Card/HeaderText';
 import Title from '../Card/Title';
 import Footer from '../Card/Footer';
@@ -9,13 +9,13 @@ interface StaticProps {
   };
 }
 
-export type ModalHeader = React.ComponentType<StaticProps>;
-export type ModalContent = React.ComponentType<StaticProps>;
+export type ModalHeader = ComponentType<StaticProps>;
+export type ModalContent = ComponentType<StaticProps>;
 
 export interface ModalProps {
-  children?: React.ReactNode[] | React.ReactNode;
-  onClick?: (e?: React.MouseEvent | React.TouchEvent) => void;
-  onClose?: React.MouseEventHandler<HTMLButtonElement>;
+  children?: ReactNode[] | ReactNode;
+  onClick?: (e?: MouseEvent | TouchEvent) => void;
+  onClose?: MouseEventHandler<HTMLButtonElement>;
   closeButtonAriaLabel?: string;
   theme?: {
     breakpoints?: {};
@@ -27,7 +27,7 @@ export interface ModalProps {
   };
 }
 
-export default class Modal extends React.Component<ModalProps> {
+export default class Modal extends Component<ModalProps> {
   static Header: ModalHeader;
 
   static Title: Title;

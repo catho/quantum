@@ -1,12 +1,11 @@
 module.exports = componentName => [
   {
     content: `// Generated with scripts/create-component.js
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const ${componentName} = ({ someProp }) => (
   <>
-    <h1>Hello, do domething here!</h1>
+    <h1>Hello, do something here!</h1>
     <p>{someProp}</p>
   </>
 )
@@ -25,16 +24,15 @@ export default ${componentName};
   },
   {
     content: `// Generated with scripts/create-component.js
-import React from 'react';
-import { create } from 'react-test-renderer';
+import { render } from '@testing-library/react';
 
 import ${componentName} from './${componentName}';
 
 describe('<${componentName} />', () => {
   it('should match the snapshots', () => {
     expect(
-      create(<${componentName} />)
-        .toJSON(),
+      render(<${componentName} />)
+        .asFragment(),
     ).toMatchSnapshot();
   })
 })
@@ -52,13 +50,13 @@ export default ${componentName};
   {
     content: `
 // Generated with scripts/create-component.js
-import React from 'react';
+import { Component } from 'react';
 
 export interface ${componentName}Props {
   someProp?: string;
 }
 
-export default class ${componentName} extends React.Component<${componentName}Props> {}
+export default class ${componentName} extends Component<${componentName}Props> {}
     `,
     name: `index.d.ts`,
   },

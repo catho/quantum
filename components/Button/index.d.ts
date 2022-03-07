@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from 'react';
+import { Component, ButtonHTMLAttributes, ReactNode, MouseEventHandler } from 'react';
 import { IconNames } from '../Icon';
 import IconButton from './IconButton';
 
@@ -11,9 +11,9 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
     skin?: 'neutral' | 'primary' | 'secondary' | 'success' | 'warning' | 'error';
     type?: 'button' | 'reset' | 'submit';
-    children?: React.ReactNode[] | React.ReactNode;
+    children?: ReactNode[] | ReactNode;
     $as?: JSX.Element | string;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    onClick?: MouseEventHandler<HTMLButtonElement>;
     theme?: {
         baseFontSize?: number;
         colors?: {};
@@ -25,6 +25,6 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     };
 }
 
-export default class Button extends React.Component<ButtonProps> {
+export default class Button extends Component<ButtonProps> {
     static Icon: IconButton;
 }

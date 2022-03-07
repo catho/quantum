@@ -1,4 +1,4 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
 export interface IconButtonProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
@@ -13,6 +13,6 @@ export interface IconButtonProps {
     };
 }
 
-type IconButton = React.ComponentType<IconButtonProps>;
+type IconButton = ComponentType<IconButtonProps>;
 
 export default IconButton;

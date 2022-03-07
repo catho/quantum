@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 
 export interface StepperProps {
     total?: number;
@@ -17,4 +17,4 @@ export interface StepperProps {
     }
 }
 
-declare const Stepper: React.FC<StepperProps>;
+declare const Stepper: FC<StepperProps>;

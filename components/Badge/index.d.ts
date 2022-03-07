@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component, ReactNode } from 'react';
 
 export interface BadgeProps {
     skin?: 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
-    children?: React.ReactNode[] | React.ReactNode;
+    children?: ReactNode[] | ReactNode;
     number?: number;
     inverted?: boolean;
     dot?: boolean;
@@ -15,4 +15,4 @@ export interface BadgeProps {
     };
 }
 
-export default class Badge extends React.Component<BadgeProps> {}
+export default class Badge extends Component<BadgeProps> {}

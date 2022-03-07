@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, CSSProperties } from 'react';
 
 export type IconNames =
     | 'access_alarm'
@@ -933,9 +933,9 @@ export type IconNames =
 
 export interface IconProps {
     name: IconNames;
-    style?: React.CSSProperties;
+    style?: CSSProperties;
     skin?: string;
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
 }
 
-export default class Icon extends React.Component<IconProps> {}
+export default class Icon extends Component<IconProps> {}

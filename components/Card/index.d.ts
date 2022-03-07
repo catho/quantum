@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, MouseEvent } from 'react';
 import Content from './Content';
 import Description from './Description';
 import Footer from './Footer';
@@ -9,13 +9,13 @@ import Thumbnail from './Thumbnail';
 import Title from './Title';
 
 type Props = {
-    onClick?: (e: React.MouseEvent) => void;
+    onClick?: (e: MouseEvent) => void;
     theme?: {
         colors?: object
     }
 }
 
-export default class Card extends React.Component<Props> {
+export default class Card extends Component<Props> {
     static Content: Content;
 
     static Description: Description;

@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Title = React.ComponentType<{
+type Title = ComponentType<{
     small?: boolean;
     theme?: { baseFontSize?: object };
 }> & {

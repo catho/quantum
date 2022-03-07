@@ -1,10 +1,10 @@
-import React from 'react';
+import { Component, ReactNode, MouseEventHandler } from 'react';
 
 export interface TagProps {
     bold?: boolean;
     inverted?: boolean;
-    children?: React.ReactNode[] | React.ReactNode;
-    onClose?: React.MouseEventHandler<HTMLButtonElement>;
+    children?: ReactNode[] | ReactNode;
+    onClose?: MouseEventHandler<HTMLButtonElement>;
     size?: 'small' | 'medium' | 'large';
     skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
     stroked?: boolean;
@@ -18,4 +18,4 @@ export interface TagProps {
     };
 }
 
-export default class Tag extends React.Component<TagProps> {}
+export default class Tag extends Component<TagProps> {}

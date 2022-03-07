@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type Content = React.ComponentType<{
+type Content = ComponentType<{
     theme?: { baseFontSize?: number; spacing?: object };
 }> & {
     displayName: 'Card.Content';

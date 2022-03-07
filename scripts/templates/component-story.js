@@ -1,7 +1,6 @@
 module.exports = componentName => [
   {
     content: `// Generated with scripts/create-componnent.js
-import React from 'react';
 import {
   AutoExample,
   Tab,
@@ -40,7 +39,6 @@ export const ${componentName}Story = () => (
   },
   {
     content: `// Generated with scripts/create-componnent.js
-import React from 'react';
 
 import ${componentName} from '../../components/${componentName}';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 export interface ProgressBarProps {
     skin?: 'neutral' | 'primary' | 'secondary';
@@ -14,4 +14,4 @@ export interface ProgressBarProps {
     label?: string;
 }
 
-export default class ProgressBar extends React.Component<ProgressBarProps> {}
+export default class ProgressBar extends Component<ProgressBarProps> {}

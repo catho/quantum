@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component, ChangeEventHandler } from 'react';
 
 export interface ToggleProps {
-  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+  onChange?: ChangeEventHandler<HTMLInputElement>;
   id?: string;
   checked?: boolean;
   theme?: {
@@ -11,4 +11,4 @@ export interface ToggleProps {
   };
 }
 
-export default class Toggle extends React.Component<ToggleProps> {}
+export default class Toggle extends Component<ToggleProps> {}

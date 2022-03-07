@@ -1,17 +1,17 @@
-import React from 'react';
+import { Component, ReactNode } from 'react';
 
 export interface TabProps {
     title: string;
-    badge?: React.ReactNode;
-    icon?: React.ReactNode;
-    children: React.ReactNode[] | React.ReactNode;
+    badge?: ReactNode;
+    icon?: ReactNode;
+    children: ReactNode[] | ReactNode;
 }
 
-export class Tab extends React.Component<TabProps> { }
+export class Tab extends Component<TabProps> { }
 
 export interface TabbedViewProps {
     fluid?: boolean;
-    children: React.ReactNode[] | React.ReactNode;
+    children: ReactNode[] | ReactNode;
     activeTab?: string;
     skin?: 'neutral' | 'primary';
     theme?: {
@@ -25,6 +25,6 @@ export interface TabbedViewProps {
     onTabClick?: () => void;
 }
 
-export class TabbedView extends React.Component<TabbedViewProps> {
+export class TabbedView extends Component<TabbedViewProps> {
     static Tab: Tab;
 }

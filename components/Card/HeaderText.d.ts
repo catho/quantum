@@ -1,6 +1,6 @@
-import React from 'react';
+import { ComponentType } from 'react';
 
-type HeaderText = React.ComponentType & {
+type HeaderText = ComponentType & {
     displayName: 'Card.HeaderText';
 };
 

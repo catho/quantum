@@ -1,9 +1,9 @@
-import React from 'react';
+import { ReactNode, MouseEventHandler, TouchEventHandler, Component } from 'react';
 import { IconNames } from '../Icon';
 
 export interface AlertProps {
-    children: React.ReactNode;
-    onClose?: () => {} | React.MouseEventHandler<HTMLButtonElement> | React.TouchEventHandler<HTMLButtonElement>;
+    children: ReactNode;
+    onClose?: () => {} | MouseEventHandler<HTMLButtonElement> | TouchEventHandler<HTMLButtonElement>;
     icon?: IconNames | string;
     skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
     theme?: {
@@ -17,4 +17,4 @@ export interface AlertProps {
     };
 }
 
-export default class Alert extends React.Component<AlertProps> {}
+export default class Alert extends Component<AlertProps> {}
