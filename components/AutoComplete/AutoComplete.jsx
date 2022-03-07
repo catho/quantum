@@ -152,7 +152,8 @@ const AutoComplete = ({
   placeholder,
   suggestions,
   theme,
-  selectedItem,
+  onSelectedItem,
+  onChange,
   required,
   skin,
 }) => {
@@ -163,10 +164,9 @@ const AutoComplete = ({
   );
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [cursor, setCursor] = useState(0);
-
   const wrapperRef = useRef();
   const listOptions = useRef();
-
+  const autoInputRef = useRef(null);
   const EscapeKeyPressValue = 'Escape';
   const assistiveDescriptionDefault = `Digite uma ou mais letras para expandir os resultados. ${filterSuggestionsLength} estão disponiveis.`;
   const assistiveDescriptionDropDownOpen = `${assistiveDescriptionDefault} ${
@@ -174,7 +174,7 @@ const AutoComplete = ({
   } 
   ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
 
-  const filterItens = value =>
+  const filterItems = value =>
     suggestions.filter(suggestion => {
       let option = normalizeChars(suggestion);
       option = normalizeChars(option);
@@ -182,17 +182,17 @@ const AutoComplete = ({
     });
 
   const handleFilter = value => {
-    const filteredValues = filterItens(value);
+    const filteredValues = filterItems(value);
     setShowSuggestions(!!filteredValues.length);
     setFilterSuggestions(filteredValues);
     setFilterSuggestionsLength(filteredValues.length);
   };
 
-  const handleChange = ({ target }) => {
-    setUserTypedValue(target.value);
-    selectedItem(target.value);
+  const handleChange = value => {
+    setUserTypedValue(value);
+    onChange(value);
     setCursor(0);
-    handleFilter(target.value);
+    handleFilter(value);
   };
 
   /* istanbul ignore next */
@@ -203,7 +203,7 @@ const AutoComplete = ({
   };
 
   const handleInputClick = () => {
-    const filteredItem = filterItens(userTypedValue);
+    const filteredItem = filterItems(userTypedValue);
     setFilterSuggestions(filteredItem);
     setFilterSuggestionsLength(filteredItem.length);
     setShowSuggestions(true);
@@ -211,12 +211,13 @@ const AutoComplete = ({
 
   const handleItemClick = item => {
     setUserTypedValue(item);
-    selectedItem(item);
+    onSelectedItem(item);
     setShowSuggestions(false);
   };
 
   const handleClearValue = () => {
     setUserTypedValue('');
+    setCursor(0);
   };
 
   /* istanbul ignore next */
@@ -292,6 +293,7 @@ const AutoComplete = ({
   useEffect(() => {
     if (showSuggestions && filterSuggestionsLength && enterPress) {
       setUserTypedValue(filterSuggestions[cursor]);
+      onSelectedItem(filterSuggestions[cursor]);
       setShowSuggestions(false);
       wrapperRef.current.children[1].focus();
     }
@@ -301,6 +303,7 @@ const AutoComplete = ({
   useEffect(() => {
     if (showSuggestions && tabPress) {
       setUserTypedValue(filterSuggestions[cursor]);
+      onSelectedItem(filterSuggestions[cursor]);
       setShowSuggestions(false);
     } else if (tabPress) {
       setShowSuggestions(false);
@@ -316,6 +319,12 @@ const AutoComplete = ({
     };
   }, []);
 
+  useEffect(() => {
+    if (document.activeElement === autoInputRef.current) {
+      handleFilter(userTypedValue);
+    }
+  }, [suggestions]);
+
   return (
     <ComponentWrapper theme={theme} skin={skin}>
       <InputWrapper ref={wrapperRef}>
@@ -325,6 +334,7 @@ const AutoComplete = ({
         </InputLabel>
         <InputText
           id={id}
+          ref={autoInputRef}
           name={name}
           type="text"
           error={error}
@@ -337,7 +347,7 @@ const AutoComplete = ({
           aria-expanded={showSuggestions}
           value={userTypedValue}
           onClick={() => handleInputClick()}
-          onChange={e => handleChange(e)}
+          onChange={e => handleChange(e.target.value)}
           skin={skin}
         />
         {userTypedValue && !error && !disabled && (
@@ -381,8 +391,10 @@ AutoComplete.propTypes = {
   label: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
-  /** Callback function to receive user typed value and user selected value */
-  selectedItem: PropTypes.func,
+  /** Callback function to receive what the user is typing */
+  onChange: PropTypes.func,
+  /** Callback function to receive user selected value */
+  onSelectedItem: PropTypes.func,
   /** Displays a helper text below the component */
   helperText: PropTypes.string,
   required: PropTypes.bool,
@@ -401,7 +413,8 @@ AutoComplete.defaultProps = {
   error: '',
   disabled: false,
   placeholder: 'Select an option',
-  selectedItem: () => {},
+  onChange: () => {},
+  onSelectedItem: () => {},
   required: false,
   skin: 'default',
 };
