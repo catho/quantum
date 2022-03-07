@@ -65,6 +65,7 @@ const icons = [
   'refresh',
   'receipt',
   'search',
+  'security',
   'send',
   'school',
   'share',

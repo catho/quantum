@@ -66,6 +66,7 @@ import RadioButtonUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import Refresh from '@material-ui/icons/Refresh';
 import Receipt from '@material-ui/icons/Receipt';
 import Search from '@material-ui/icons/Search';
+import Security from '@material-ui/icons/Security';
 import Send from '@material-ui/icons/Send';
 import School from '@material-ui/icons/School';
 import Share from '@material-ui/icons/Share';
@@ -164,6 +165,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     refresh: Refresh,
     receipt: Receipt,
     search: Search,
+    security: Security,
     send: Send,
     school: School,
     share: Share,
