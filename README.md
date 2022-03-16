@@ -16,6 +16,7 @@ It can be installed via npm or yarn.
 ```sh
 yarn add @catho/quantum styled-components
 ```
+### :warning: Quantum is compatible with react@16.14.0 or higher
 
 To use a component, it need to be imported in your project:
 
