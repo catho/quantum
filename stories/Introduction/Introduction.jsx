@@ -4,6 +4,8 @@ import {
   SimpleHighlight,
 } from '@catho/quantum-storybook-ui';
 
+import { Alert } from '../../components';
+
 const yarnAdd = 'yarn add @catho/quantum';
 const importHeader = `import { Header } from '@catho/quantum';
 export default () => <Header />;`;
@@ -39,6 +41,10 @@ const Introduction = () => (
     >
       {yarnAdd}
     </SimpleHighlight>
+    <br />
+    <Alert icon="warning" skin="warning">
+      Quantum is compatible with react@16.14.0 or higher
+    </Alert>
     <p>Use in your react project:</p>
     <SimpleHighlight
       backgroundColor={codeBackgroundColor}
