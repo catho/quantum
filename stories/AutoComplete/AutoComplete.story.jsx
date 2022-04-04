@@ -11,23 +11,47 @@ import {
 // eslint-disable-next-line import/no-named-default
 import { default as AutoCompleteComponent } from '../../components/AutoComplete';
 
-const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
+const Examples = [
+  'Analista de Gestão de Incidentes',
+  'Analista de Governança de TI',
+  'Analista de Help Desk',
+  'Analista de Negócios de TI',
+  'Analista de Garantia da Qualidade',
+  'Analista de Pricing Sênior',
+  'Analista de Pricing Pleno',
+  'Analista de Pricing Junior',
+  'Analista de Engenharia de Produto',
+  'Analista de Sustentabilidade',
+  'Cronoanalista',
+];
 
 const AutoCompleteExample = () => (
   <AutoCompleteComponent
-    label="Pick a fruit"
+    label="Pick a analyst"
     onSelectedItem={item => console.log('selected', item)}
     onChange={item => console.log('change', item)}
-    helperText="Type your favorite fruit"
+    helperText="Type a analyst"
     suggestions={Examples}
   />
 );
 
 AutoCompleteExample.CODE = ` import { AutoComplete } from '@catho/quantum';
 
-const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
+const Examples = [
+  "Analista de Gestão de Incidentes",
+  "Analista de Governança de TI",
+  "Analista de Help Desk",
+  "Analista de Negócios de TI",
+  "Analista de Garantia da Qualidade",
+  "Analista de Pricing Sênior",
+  "Analista de Pricing Pleno",
+  "Analista de Pricing Junior",
+  "Analista de Engenharia de Produto",
+  "Analista de Sustentabilidade",
+  "Cronoanalista",
+];
 
-<AutoComplete label="Pick a fruit" helperText="Type you favorite fruit" selectedItem={item => console.log(item)} 
+<AutoComplete label="Pick a analyst" helperText="Type a analyst" onChange={item => console.log(item)} selectedItem={item => console.log(item)} 
 suggestions={Examples} />
 `;
 
