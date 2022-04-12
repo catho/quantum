@@ -87,3 +87,8 @@ PlaceholderWithDarkSkin.parameters = parameters;
 PlaceholderWithDarkSkin.args = {
   placeholder: 'placeholder',
 };
+
+export const AutoResize = Template.bind({});
+AutoResize.args = {
+  autoResize: true,
+};

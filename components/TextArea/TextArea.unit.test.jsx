@@ -13,6 +13,7 @@ describe('TextArea component', () => {
       <TextArea placeholder="this input has a placeholder" />,
       <TextArea helperText="this is a helper text" />,
       <TextArea error="Error message" />,
+      <TextArea autoResize />,
       <TextArea skin="dark" />,
       <TextArea skin="dark" value="foo" />,
       <TextArea skin="dark" label="Text label" />,
