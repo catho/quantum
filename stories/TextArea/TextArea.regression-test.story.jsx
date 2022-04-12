@@ -90,5 +90,15 @@ PlaceholderWithDarkSkin.args = {
 
 export const AutoResize = Template.bind({});
 AutoResize.args = {
-  autoResize: true,
+  isAutoResize: true,
+};
+
+export const AutoResizeWithCustomConfig = Template.bind({});
+AutoResizeWithCustomConfig.args = {
+  isAutoResize: true,
+  autoResizeConfig: {
+    initialRows: 2,
+    minRows: 2,
+    maxRows: 3,
+  },
 };

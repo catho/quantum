@@ -23,10 +23,10 @@ const TextAreaTag = styled(TextInput)`
       theme: {
         spacing: { xsmall },
       },
-      autoResize,
+      isAutoResize,
     }) => `
-      resize: ${!autoResize ? 'auto' : 'none'};
-      min-height: ${!autoResize ? `${CUSTOM_HEIGHT}px` : 'inherit'};
+      resize: ${!isAutoResize ? 'auto' : 'none'};
+      min-height: ${!isAutoResize ? `${CUSTOM_HEIGHT}px` : 'inherit'};
       margin-top: ${xsmall}px;
       `}
     transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -40,13 +40,17 @@ class TextArea extends Component {
     const {
       id,
       value,
-      autoResizeConfig: { rowsConfig, minRowsConfig, maxRowsConfig },
+      autoResizeConfig: {
+        initialRows,
+        minRows: minRowsConfig,
+        maxRows: maxRowsConfig,
+      },
     } = props;
 
     this.state = {
       hasDefaultValue: value !== null && value[0],
       currentValue: value,
-      rows: rowsConfig,
+      rows: initialRows,
       minRows: minRowsConfig,
       maxRows: maxRowsConfig,
     };
@@ -56,34 +60,35 @@ class TextArea extends Component {
     this._linHeight = 1.5;
   }
 
-  onChangeTextArea = ev => {
+  onChangeTextArea = event => {
+    const { target } = event;
     const { onChange } = this.props;
     const { minRows, maxRows } = this.state;
     const textareaLineHeightInPx = this._fontSize * this._linHeight;
-    const previousRows = ev.target.rows;
-    ev.target.rows = minRows;
+    const previousNumberRows = target.rows;
+    target.rows = minRows;
 
-    const currentRows = Math.floor(
-      ev.target.scrollHeight / textareaLineHeightInPx,
+    const currentRowsNumber = Math.floor(
+      target.scrollHeight / textareaLineHeightInPx,
     );
 
-    if (currentRows === previousRows) {
-      ev.target.rows = currentRows;
+    if (currentRowsNumber === previousNumberRows) {
+      target.rows = currentRowsNumber;
     }
 
-    if (currentRows >= maxRows) {
-      ev.target.rows = maxRows;
-      ev.target.scrollTop = ev.target.scrollHeight;
+    if (currentRowsNumber >= maxRows) {
+      target.rows = maxRows;
+      target.scrollTop = target.scrollHeight;
     }
 
-    const inputValue = ev.currentTarget.value;
+    const inputValue = event.currentTarget.value;
     this.setState({
       currentValue: inputValue,
       hasDefaultValue: null,
-      rows: currentRows < maxRows ? currentRows : maxRows,
+      rows: currentRowsNumber < maxRows ? currentRowsNumber : maxRows,
     });
 
-    onChange(ev);
+    onChange(event);
   };
 
   render() {
@@ -95,7 +100,7 @@ class TextArea extends Component {
       id,
       theme,
       skin,
-      autoResize,
+      isAutoResize,
       autoResizeConfig,
       ...rest
     } = this.props;
@@ -111,8 +116,8 @@ class TextArea extends Component {
         )}
         <TextAreaTag
           {...rest}
-          autoResize={autoResize}
-          rows={autoResize ? rows : undefined}
+          isAutoResize={isAutoResize}
+          rows={isAutoResize ? rows : undefined}
           hasDefaultValue={hasDefaultValue}
           value={currentValue}
           error={error}
@@ -136,11 +141,11 @@ class TextArea extends Component {
 
 TextArea.defaultProps = {
   /** Disables the default resize and activates the auto resize */
-  autoResize: false,
+  isAutoResize: false,
   autoResizeConfig: {
-    rowsConfig: 1,
-    minRowsConfig: 1,
-    maxRowsConfig: 5,
+    initialRows: 1,
+    minRows: 1,
+    maxRows: 5,
   },
   disabled: false,
   error: '',
@@ -156,11 +161,11 @@ TextArea.defaultProps = {
 };
 
 TextArea.propTypes = {
-  autoResize: PropTypes.bool,
+  isAutoResize: PropTypes.bool,
   autoResizeConfig: PropTypes.shape({
-    rowsConfig: PropTypes.number,
-    minRowsConfig: PropTypes.number,
-    maxRowsConfig: PropTypes.number,
+    initialRows: PropTypes.number,
+    minRows: PropTypes.number,
+    maxRows: PropTypes.number,
   }),
   disabled: PropTypes.bool,
   error: PropTypes.string,
