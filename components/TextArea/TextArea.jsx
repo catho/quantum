@@ -25,9 +25,9 @@ const TextAreaTag = styled(TextInput)`
       },
       autoResize,
     }) => `
-      margin-top: ${xsmall}px;
-      min-height: ${!autoResize ? `${CUSTOM_HEIGHT}px` : 'inherit'};
       resize: ${!autoResize ? 'auto' : 'none'};
+      min-height: ${!autoResize ? `${CUSTOM_HEIGHT}px` : 'inherit'};
+      margin-top: ${xsmall}px;
       `}
     transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
@@ -112,7 +112,7 @@ class TextArea extends Component {
         <TextAreaTag
           {...rest}
           autoResize={autoResize}
-          rows={autoResize && rows}
+          rows={autoResize ? rows : undefined}
           hasDefaultValue={hasDefaultValue}
           value={currentValue}
           error={error}
