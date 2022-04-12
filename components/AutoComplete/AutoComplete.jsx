@@ -176,7 +176,7 @@ const AutoComplete = ({
 
   const filterItems = value =>
     suggestions.filter(suggestion => {
-      let option = normalizeChars(suggestion);
+      let option = normalizeChars(suggestion.toLowerCase());
       option = normalizeChars(option);
       return option.indexOf(normalizeChars(value.toLowerCase())) > -1;
     });
