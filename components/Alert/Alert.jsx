@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from '../Button';
@@ -83,15 +84,28 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Alert = ({ icon, children, theme, onClose, ...rest }) => (
-  <Wrapper theme={theme} {...rest} role="alert">
-    <Content onClose={onClose}>
-      {icon && <AlertIcon name={icon} />}
-      {children && <span>{children}</span>}
-      {onClose && <CloseButton theme={theme} onClick={onClose} />}
-    </Content>
-  </Wrapper>
-);
+const Alert = ({ icon, children, theme, onClose, ...rest }) => {
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => {
+    setShow(false);
+    onClose();
+  };
+
+  return (
+    <>
+      {show && (
+        <Wrapper theme={theme} {...rest} role="alert">
+          <Content>
+            {icon && <AlertIcon name={icon} />}
+            {children && <span>{children}</span>}
+            {onClose && <CloseButton theme={theme} onClick={handleClose} />}
+          </Content>
+        </Wrapper>
+      )}
+    </>
+  );
+};
 
 Alert.defaultProps = {
   icon: null,
