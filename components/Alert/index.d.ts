@@ -3,7 +3,7 @@ import { IconNames } from '../Icon';
 
 export interface AlertProps {
     children: ReactNode;
-    onClose?: () => {} | MouseEventHandler<HTMLButtonElement> | TouchEventHandler<HTMLButtonElement>;
+    onClose?: MouseEventHandler<HTMLButtonElement> | TouchEventHandler<HTMLButtonElement>;
     icon?: IconNames | string;
     skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
     theme?: {
