@@ -2,11 +2,11 @@ import { Component, ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 
 export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
     disabled?: boolean;
-    autoResize?: boolean;
+    isAutoResize?: boolean;
     autoResizeConfig?: {
-        rowsConfig: number,
-        minRowsConfig: number,
-		maxRowsConfig: number,
+        initialRows: number,
+        minRows: number,
+		maxRows: number,
     };
     error?: string;
     helperText?: string;
