@@ -3,7 +3,7 @@ const icons = [
   'accessible_forward',
   'accessible',
   'add',
-  'wallet_icon',
+  'wallet',
   'add_circle',
   'apps',
   'arrow_drop_down',

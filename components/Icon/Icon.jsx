@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Accessible from '@material-ui/icons/Accessible';
 import AccessibleForward from '@material-ui/icons/AccessibleForward';
 import AccessTime from '@material-ui/icons/AccessTime';
-import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
+import AccountBalanceWallet from '@material-ui/icons/AccountBalanceWallet';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Add from '@material-ui/icons/Add';
 import AddCircle from '@material-ui/icons/AddCircle';
@@ -104,7 +104,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     accessible_forward: AccessibleForward,
     accessible: Accessible,
     add: Add,
-    wallet_icon: AccountBalanceWalletIcon,
+    wallet: AccountBalanceWallet,
     add_circle: AddCircle,
     apps: Apps,
     arrow_drop_down: ArrowDropDown,
