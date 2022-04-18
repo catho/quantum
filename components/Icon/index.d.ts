@@ -906,6 +906,7 @@ export type IconNames =
     | 'volume_up'
     | 'vpn_key'
     | 'vpn_lock'
+    | 'wallet'
     | 'wallpaper'
     | 'warning'
     | 'watch'
