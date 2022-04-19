@@ -21,6 +21,7 @@ describe('TextArea component', () => {
       <TextArea skin="dark" placeholder="this input has a placeholder" />,
       <TextArea skin="dark" helperText="this is a helper text" />,
       <TextArea skin="dark" error="Error message" />,
+      <TextArea isAutoResize />,
     ];
 
     TEXT_AREAS.forEach(textArea => {

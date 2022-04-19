@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -13,16 +14,21 @@ import { spacing, colors, baseFontSize } from '../shared/theme';
 
 const ID_GENERATOR = uniqId('textarea-');
 
+const CUSTOM_HEIGHT = 108;
+
 const TextAreaTag = styled(TextInput)`
   && {
     display: block;
-    min-height: 108px;
     ${({
       theme: {
         spacing: { xsmall },
       },
+      isAutoResize,
     }) => `
-      margin-top: ${xsmall}px;`}
+      resize: ${!isAutoResize ? 'auto' : 'none'};
+      min-height: ${!isAutoResize ? `${CUSTOM_HEIGHT}px` : 'inherit'};
+      margin-top: ${xsmall}px;
+      `}
     transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }
 `;
@@ -31,25 +37,58 @@ class TextArea extends Component {
   constructor(props) {
     super(props);
 
-    const { id, value } = props;
+    const {
+      id,
+      value,
+      autoResizeConfig: {
+        initialRows,
+        minRows: minRowsConfig,
+        maxRows: maxRowsConfig,
+      },
+    } = props;
 
     this.state = {
       hasDefaultValue: value !== null && value[0],
       currentValue: value,
+      rows: initialRows,
+      minRows: minRowsConfig,
+      maxRows: maxRowsConfig,
     };
 
     this._id = id || ID_GENERATOR.next().value;
+    this._fontSize = 16;
+    this._linHeight = 1.5;
   }
 
-  onChangeTextArea = ev => {
+  onChangeTextArea = event => {
+    const { target } = event;
     const { onChange } = this.props;
-    const inputValue = ev.currentTarget.value;
+    const { minRows, maxRows } = this.state;
+    const textareaLineHeightInPx = this._fontSize * this._linHeight;
+    const previousNumberRows = target.rows;
+    target.rows = minRows;
+
+    const currentRowsNumber = Math.floor(
+      target.scrollHeight / textareaLineHeightInPx,
+    );
+
+    if (currentRowsNumber === previousNumberRows) {
+      target.rows = currentRowsNumber;
+    }
+
+    if (currentRowsNumber >= maxRows) {
+      target.rows = maxRows;
+      target.scrollTop = target.scrollHeight;
+    }
+
+    const inputValue = event.currentTarget.value;
     this.setState({
       currentValue: inputValue,
       hasDefaultValue: null,
+      rows: currentRowsNumber < maxRows ? currentRowsNumber : maxRows,
     });
 
-    onChange(ev);
+    onChange(event);
   };
 
   render() {
@@ -61,9 +100,11 @@ class TextArea extends Component {
       id,
       theme,
       skin,
+      isAutoResize,
+      autoResizeConfig,
       ...rest
     } = this.props;
-    const { hasDefaultValue, currentValue } = this.state;
+    const { hasDefaultValue, currentValue, rows } = this.state;
 
     return (
       <FieldGroup theme={theme} skin={skin}>
@@ -75,6 +116,8 @@ class TextArea extends Component {
         )}
         <TextAreaTag
           {...rest}
+          isAutoResize={isAutoResize}
+          rows={isAutoResize ? rows : undefined}
           hasDefaultValue={hasDefaultValue}
           value={currentValue}
           error={error}
@@ -97,6 +140,13 @@ class TextArea extends Component {
 }
 
 TextArea.defaultProps = {
+  /** Disables the default resize and activates the auto resize */
+  isAutoResize: false,
+  autoResizeConfig: {
+    initialRows: 1,
+    minRows: 1,
+    maxRows: 5,
+  },
   disabled: false,
   error: '',
   helperText: '',
@@ -111,6 +161,12 @@ TextArea.defaultProps = {
 };
 
 TextArea.propTypes = {
+  isAutoResize: PropTypes.bool,
+  autoResizeConfig: PropTypes.shape({
+    initialRows: PropTypes.number,
+    minRows: PropTypes.number,
+    maxRows: PropTypes.number,
+  }),
   disabled: PropTypes.bool,
   error: PropTypes.string,
   helperText: PropTypes.string,
