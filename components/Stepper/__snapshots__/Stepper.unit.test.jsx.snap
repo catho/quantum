@@ -24,6 +24,9 @@ exports[`<Stepper /> should match snapshots 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;
@@ -164,6 +167,9 @@ exports[`<Stepper /> should match snapshots 2`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;
@@ -308,6 +314,9 @@ exports[`<Stepper /> should match snapshots 3`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;
@@ -456,6 +465,9 @@ exports[`<Stepper /> should match snapshots 4`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;
@@ -608,6 +620,9 @@ exports[`<Stepper /> should match snapshots 5`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;
@@ -764,6 +779,9 @@ exports[`<Stepper /> should match snapshots 6`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   font-weight: 700;
   width: 64px;
   height: 64px;

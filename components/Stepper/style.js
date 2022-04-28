@@ -40,6 +40,7 @@ const Wrapper = styled.div`
 const RadialProgressBar = styled.div`
   border-radius: 50%;
   display: flex;
+  flex: none;
   font-weight: 700;
 
   width: ${MOBILE_CIRCLE_SIZE}px;
