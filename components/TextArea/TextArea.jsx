@@ -60,6 +60,16 @@ class TextArea extends Component {
     this._linHeight = 1.5;
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    const { currentValue } = this.state;
+    const { value } = this.props;
+
+    if (currentValue !== value && prevProps.value !== value) {
+      // eslint-disable-next-line react/no-did-update-set-state
+      this.setState({ ...prevState, currentValue: value });
+    }
+  }
+
   onChangeTextArea = event => {
     const { target } = event;
     const { onChange } = this.props;

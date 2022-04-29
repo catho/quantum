@@ -93,4 +93,13 @@ describe('TextArea component', () => {
       expect(textArea.getAttribute('id')).toEqual(label.getAttribute('for'));
     });
   });
+
+  it('should update state when value property is changed', () => {
+    const { rerender } = render(<TextArea label="Text label" value="foo" />);
+    const componentInput = screen.getByRole('textbox', /Text label/i);
+    expect(componentInput.value).toEqual('foo');
+
+    rerender(<TextArea label="Text label" value="bar" />);
+    expect(componentInput.value).toEqual('bar');
+  });
 });
