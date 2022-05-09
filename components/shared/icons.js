@@ -18,6 +18,7 @@ const icons = [
   'block',
   'cached',
   'camera',
+  'chat',
   'check_box_outline_blank',
   'check_box',
   'check_circle',

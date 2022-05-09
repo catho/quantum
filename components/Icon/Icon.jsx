@@ -20,6 +20,7 @@ import AttachMoney from '@material-ui/icons/AttachMoney';
 import Block from '@material-ui/icons/Block';
 import Cached from '@material-ui/icons/Cached';
 import CameraAlt from '@material-ui/icons/CameraAlt';
+import Chat from '@material-ui/icons/Chat';
 import Check from '@material-ui/icons/Check';
 import CheckBox from '@material-ui/icons/CheckBox';
 import CheckBoxOutlineBlank from '@material-ui/icons/CheckBoxOutlineBlank';
@@ -119,6 +120,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     block: Block,
     cached: Cached,
     camera: CameraAlt,
+    chat: Chat,
     check_box_outline_blank: CheckBoxOutlineBlank,
     check_box: CheckBox,
     check_circle: CheckCircle,
