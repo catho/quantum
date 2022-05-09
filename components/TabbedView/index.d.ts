@@ -7,7 +7,7 @@ export interface TabProps {
     children: ReactNode[] | ReactNode;
 }
 
-export class Tab extends Component<TabProps> { }
+export type Tab = Component<TabProps>;
 
 export interface TabbedViewProps {
     fluid?: boolean;
@@ -25,6 +25,6 @@ export interface TabbedViewProps {
     onTabClick?: () => void;
 }
 
-export class TabbedView extends Component<TabbedViewProps> {
+export default class TabbedView extends Component<TabbedViewProps> {
     static Tab: Tab;
 }
