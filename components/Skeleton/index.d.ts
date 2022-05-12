@@ -10,9 +10,6 @@ export interface SkeletonButtonProps {
 export type SkeletonButton = ComponentType<SkeletonButtonProps>;
 
 export type SkeletonCircle = ComponentType;
-
-export type SkeletonText = ComponentType;
-
 export interface SkeletonTagProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large';
     theme?: {
@@ -34,6 +31,7 @@ export interface SkeletonProps {
     };
 }
 
+export type SkeletonText = ComponentType<SkeletonProps>;
 export default class Skeleton extends Component<SkeletonProps> {
     static Button: SkeletonButton;
 
@@ -43,3 +41,4 @@ export default class Skeleton extends Component<SkeletonProps> {
 
     static Tag: SkeletonTag;
 }
+
