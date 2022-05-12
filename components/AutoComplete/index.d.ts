@@ -12,8 +12,8 @@ export interface AutoCompleteProps {
   helperText?: string;
   error?: string;
   disabled?: boolean;
+  minlength?: string;
   onChange?: (value: string) => void;
-  selectedItem?: (item: string) => void;
   onSelectedItem?: (item: string) => void;
 }
 
