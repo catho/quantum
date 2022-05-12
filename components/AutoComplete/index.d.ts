@@ -12,10 +12,9 @@ export interface AutoCompleteProps {
   helperText?: string;
   error?: string;
   disabled?: boolean;
-  minlength?: string;
-  onChange?: (item: string) => void;
+  onChange?: (value: string) => void;
   selectedItem?: (item: string) => void;
   onSelectedItem?: (item: string) => void;
 }
 
-export default class AutoComplete extends Component<AutoCompleteProps> {}
+export default class AutoComplete extends Component<AutoCompleteProps> { }
