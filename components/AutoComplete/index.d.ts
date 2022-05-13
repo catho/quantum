@@ -13,6 +13,7 @@ export interface AutoCompleteProps {
   error?: string;
   disabled?: boolean;
   minlength?: string;
+  placeholder?: string;
   onChange?: (value: string) => void;
   onSelectedItem?: (item: string) => void;
 }
