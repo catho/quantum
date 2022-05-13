@@ -195,9 +195,8 @@ const AutoComplete = ({
     handleFilter(value);
   };
 
-  /* istanbul ignore next */
   const handleClickOutside = event => {
-    if (!wrapperRef.current.contains(event.target)) {
+    if (!wrapperRef.current?.contains(event.target)) {
       setShowSuggestions(false);
     }
   };
@@ -220,11 +219,11 @@ const AutoComplete = ({
     setCursor(0);
   };
 
-  /* istanbul ignore next */
   const handleEscPress = ({ key }) => {
-    if (key === EscapeKeyPressValue) {
+    const node = wrapperRef.current;
+    if (node && key === EscapeKeyPressValue) {
       setShowSuggestions(false);
-      wrapperRef.current.children[1].focus();
+      node.children[1].focus();
       setCursor(0);
     }
   };
