@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
 import { colors } from '../shared/theme';
 
@@ -22,11 +23,11 @@ const StyledLink = styled.a`
   `}
 `;
 
-const Link = ({ children, skin, underline, ...rest }) => (
-  <StyledLink skin={skin} underline={underline} {...rest}>
+const Link = forwardRef(({ children, skin, underline, ...rest }, ref) => (
+  <StyledLink ref={ref} skin={skin} underline={underline} {...rest}>
     {children}
   </StyledLink>
-);
+));
 
 Link.propTypes = {
   theme: PropTypes.shape({
