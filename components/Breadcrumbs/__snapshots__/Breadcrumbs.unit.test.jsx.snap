@@ -8,6 +8,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
   text-decoration: none;
   cursor: pointer;
   font-weight: 700;
+  word-break: break-all;
 }
 
 .c2:hover {
@@ -244,6 +245,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
   text-decoration: none;
   cursor: pointer;
   font-weight: 700;
+  word-break: break-all;
 }
 
 .c2:hover {

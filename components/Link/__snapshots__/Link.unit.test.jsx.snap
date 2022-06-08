@@ -7,6 +7,7 @@ exports[` Link Should match the dark snapshot 1`] = `
   text-decoration: underline;
   cursor: pointer;
   font-weight: 700;
+  word-break: break-all;
 }
 
 .c0:hover {
@@ -33,6 +34,7 @@ exports[` Link Should match the default snapshot 1`] = `
   text-decoration: underline;
   cursor: pointer;
   font-weight: 700;
+  word-break: break-all;
 }
 
 .c0:hover {
@@ -59,6 +61,7 @@ exports[` Link Should match the default snapshot without underline 1`] = `
   text-decoration: none;
   cursor: pointer;
   font-weight: 700;
+  word-break: break-all;
 }
 
 .c0:hover {

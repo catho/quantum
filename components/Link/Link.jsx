@@ -12,6 +12,8 @@ const StyledLink = styled.a`
     cursor: pointer;
     font-weight: 700;
 
+    word-break: break-all;
+
     &:hover {
       color: ${skin === 'default'
         ? colors.secondary['700']
