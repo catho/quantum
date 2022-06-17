@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { Component } from 'react';
+import { Component, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, uniqId } from '../shared';
@@ -112,6 +112,7 @@ class TextArea extends Component {
       skin,
       isAutoResize,
       autoResizeConfig,
+      innerRef,
       ...rest
     } = this.props;
     const { hasDefaultValue, currentValue, rows } = this.state;
@@ -126,6 +127,7 @@ class TextArea extends Component {
         )}
         <TextAreaTag
           {...rest}
+          ref={innerRef}
           isAutoResize={isAutoResize}
           rows={isAutoResize ? rows : undefined}
           hasDefaultValue={hasDefaultValue}
@@ -168,6 +170,7 @@ TextArea.defaultProps = {
   id: undefined,
   theme: { spacing, colors, baseFontSize },
   skin: 'default',
+  innerRef: undefined,
 };
 
 TextArea.propTypes = {
@@ -192,8 +195,14 @@ TextArea.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
+  innerRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
 };
 
 TextAreaTag.displayName = 'TextAreaTag';
 
-export default TextArea;
+export default forwardRef((props, ref) => (
+  <TextArea innerRef={ref} {...props} />
+));
