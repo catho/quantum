@@ -1,6 +1,6 @@
 import { AutoExample } from '@catho/quantum-storybook-ui';
 
-import TextArea from '../../components/TextArea';
+import { TextArea } from '../../components/TextArea/TextArea';
 
 export default {
   title: 'Forms',

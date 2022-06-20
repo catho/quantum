@@ -36,7 +36,7 @@ const TextAreaTag = styled(TextInput)`
 const _fontSize = 16;
 const _linHeight = 1.5;
 
-const TextArea = forwardRef((props, ref) => {
+export const TextArea = props => {
   const {
     id = ID_GENERATOR.next().value,
     value,
@@ -51,6 +51,7 @@ const TextArea = forwardRef((props, ref) => {
     skin,
     isAutoResize,
     autoResizeConfig: { initialRows, minRows, maxRows },
+    innerRef,
     ...rest
   } = props;
 
@@ -100,7 +101,7 @@ const TextArea = forwardRef((props, ref) => {
       )}
       <TextAreaTag
         {...rest}
-        ref={ref}
+        ref={innerRef}
         isAutoResize={isAutoResize}
         rows={isAutoResize ? rows : undefined}
         hasDefaultValue={hasDefaultValue}
@@ -123,7 +124,7 @@ const TextArea = forwardRef((props, ref) => {
       )}
     </FieldGroup>
   );
-});
+};
 
 TextArea.defaultProps = {
   /** Disables the default resize and activates the auto resize */
@@ -144,6 +145,7 @@ TextArea.defaultProps = {
   id: undefined,
   theme: { spacing, colors, baseFontSize },
   skin: 'default',
+  innerRef: undefined,
 };
 
 TextArea.propTypes = {
@@ -168,8 +170,14 @@ TextArea.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
+  innerRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
 };
 
 TextAreaTag.displayName = 'TextAreaTag';
 
-export default TextArea;
+export default forwardRef((props, ref) => (
+  <TextArea {...props} innerRef={ref} />
+));

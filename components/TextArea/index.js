@@ -1,3 +1,3 @@
-import TextArea from './TextArea';
+import TextAreaForwardRef from './TextArea';
 
-export default TextArea;
+export default TextAreaForwardRef;
