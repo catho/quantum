@@ -36,7 +36,7 @@ const TextAreaTag = styled(TextInput)`
 const _fontSize = 16;
 const _linHeight = 1.5;
 
-export const TextArea = props => {
+export const TextAreaComponent = props => {
   const {
     id = ID_GENERATOR.next().value,
     value,
@@ -126,7 +126,7 @@ export const TextArea = props => {
   );
 };
 
-TextArea.defaultProps = {
+TextAreaComponent.defaultProps = {
   /** Disables the default resize and activates the auto resize */
   isAutoResize: false,
   autoResizeConfig: {
@@ -148,7 +148,7 @@ TextArea.defaultProps = {
   innerRef: undefined,
 };
 
-TextArea.propTypes = {
+TextAreaComponent.propTypes = {
   isAutoResize: PropTypes.bool,
   autoResizeConfig: PropTypes.shape({
     initialRows: PropTypes.number,
@@ -179,5 +179,5 @@ TextArea.propTypes = {
 TextAreaTag.displayName = 'TextAreaTag';
 
 export default forwardRef((props, ref) => (
-  <TextArea {...props} innerRef={ref} />
+  <TextAreaComponent {...props} innerRef={ref} />
 ));
