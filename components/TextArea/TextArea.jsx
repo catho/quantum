@@ -33,8 +33,8 @@ const TextAreaTag = styled(TextInput)`
   }
 `;
 
-const _fontSize = 16;
-const _linHeight = 1.5;
+const FONT_SIZE = 16;
+const LINE_HEIGHT = 1.5;
 
 export const TextAreaComponent = props => {
   const {
@@ -65,7 +65,7 @@ export const TextAreaComponent = props => {
 
   const onChangeTextArea = event => {
     const { target } = event;
-    const textareaLineHeightInPx = _fontSize * _linHeight;
+    const textareaLineHeightInPx = FONT_SIZE * LINE_HEIGHT;
     const previousNumberRows = target.rows;
     target.rows = minRows;
 
