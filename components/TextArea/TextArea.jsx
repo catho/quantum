@@ -51,6 +51,7 @@ export const TextAreaComponent = props => {
     skin,
     isAutoResize,
     autoResizeConfig: { initialRows, minRows, maxRows },
+    // eslint-disable-next-line react/prop-types
     innerRef,
     ...rest
   } = props;
@@ -145,7 +146,6 @@ TextAreaComponent.defaultProps = {
   id: undefined,
   theme: { spacing, colors, baseFontSize },
   skin: 'default',
-  innerRef: undefined,
 };
 
 TextAreaComponent.propTypes = {
@@ -170,10 +170,6 @@ TextAreaComponent.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
-  innerRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
-  ]),
 };
 
 TextAreaTag.displayName = 'TextAreaTag';
