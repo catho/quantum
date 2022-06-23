@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { Component } from 'react';
+import { useState, useEffect, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, uniqId } from '../shared';
@@ -33,48 +33,40 @@ const TextAreaTag = styled(TextInput)`
   }
 `;
 
-class TextArea extends Component {
-  constructor(props) {
-    super(props);
+const FONT_SIZE = 16;
+const LINE_HEIGHT = 1.5;
 
-    const {
-      id,
-      value,
-      autoResizeConfig: {
-        initialRows,
-        minRows: minRowsConfig,
-        maxRows: maxRowsConfig,
-      },
-    } = props;
+export const TextAreaComponent = props => {
+  const {
+    id = ID_GENERATOR.next().value,
+    value,
+    onChange,
+    label,
+    disabled,
+    required,
+    helperText,
+    error,
+    placeholder,
+    theme,
+    skin,
+    isAutoResize,
+    autoResizeConfig: { initialRows, minRows, maxRows },
+    // eslint-disable-next-line react/prop-types
+    innerRef,
+    ...rest
+  } = props;
 
-    this.state = {
-      hasDefaultValue: value !== null && value[0],
-      currentValue: value,
-      rows: initialRows,
-      minRows: minRowsConfig,
-      maxRows: maxRowsConfig,
-    };
+  const [hasDefaultValue, setHasDefaultValue] = useState(!!value?.length);
+  const [currentValue, setCurrentValue] = useState(value);
+  const [rows, setRows] = useState(initialRows);
 
-    this._id = id || ID_GENERATOR.next().value;
-    this._fontSize = 16;
-    this._linHeight = 1.5;
-  }
+  useEffect(() => {
+    setCurrentValue(value);
+  }, [value]);
 
-  componentDidUpdate(prevProps, prevState) {
-    const { currentValue } = this.state;
-    const { value } = this.props;
-
-    if (currentValue !== value && prevProps.value !== value) {
-      // eslint-disable-next-line react/no-did-update-set-state
-      this.setState({ ...prevState, currentValue: value });
-    }
-  }
-
-  onChangeTextArea = event => {
+  const onChangeTextArea = event => {
     const { target } = event;
-    const { onChange } = this.props;
-    const { minRows, maxRows } = this.state;
-    const textareaLineHeightInPx = this._fontSize * this._linHeight;
+    const textareaLineHeightInPx = FONT_SIZE * LINE_HEIGHT;
     const previousNumberRows = target.rows;
     target.rows = minRows;
 
@@ -92,64 +84,50 @@ class TextArea extends Component {
     }
 
     const inputValue = event.currentTarget.value;
-    this.setState({
-      currentValue: inputValue,
-      hasDefaultValue: null,
-      rows: currentRowsNumber < maxRows ? currentRowsNumber : maxRows,
-    });
-
-    onChange(event);
+    setCurrentValue(inputValue);
+    setHasDefaultValue(false);
+    setRows(currentRowsNumber < maxRows ? currentRowsNumber : maxRows);
+    if (typeof onChange === 'function') {
+      onChange(event);
+    }
   };
 
-  render() {
-    const {
-      label,
-      required,
-      helperText,
-      error,
-      id,
-      theme,
-      skin,
-      isAutoResize,
-      autoResizeConfig,
-      ...rest
-    } = this.props;
-    const { hasDefaultValue, currentValue, rows } = this.state;
+  return (
+    <FieldGroup theme={theme} skin={skin}>
+      {label && (
+        <InputLabel htmlFor={id}>
+          {label}
+          {required && <RequiredMark skin={skin}>*</RequiredMark>}
+        </InputLabel>
+      )}
+      <TextAreaTag
+        {...rest}
+        ref={innerRef}
+        isAutoResize={isAutoResize}
+        rows={isAutoResize ? rows : undefined}
+        hasDefaultValue={hasDefaultValue}
+        value={currentValue}
+        placeholder={placeholder}
+        disabled={disabled}
+        error={error}
+        id={id}
+        required={required}
+        as="textarea"
+        onChange={onChangeTextArea}
+        theme={theme}
+        skin={skin}
+      />
+      {helperText && <HelperText>{helperText}</HelperText>}
+      {error && (
+        <InputErrorMessage skin={skin} helperText={helperText}>
+          {error}
+        </InputErrorMessage>
+      )}
+    </FieldGroup>
+  );
+};
 
-    return (
-      <FieldGroup theme={theme} skin={skin}>
-        {label && (
-          <InputLabel htmlFor={this._id}>
-            {label}
-            {required && <RequiredMark skin={skin}>*</RequiredMark>}
-          </InputLabel>
-        )}
-        <TextAreaTag
-          {...rest}
-          isAutoResize={isAutoResize}
-          rows={isAutoResize ? rows : undefined}
-          hasDefaultValue={hasDefaultValue}
-          value={currentValue}
-          error={error}
-          id={this._id}
-          required={required}
-          as="textarea"
-          onChange={this.onChangeTextArea}
-          theme={theme}
-          skin={skin}
-        />
-        {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage skin={skin} helperText={helperText}>
-            {error}
-          </InputErrorMessage>
-        )}
-      </FieldGroup>
-    );
-  }
-}
-
-TextArea.defaultProps = {
+TextAreaComponent.defaultProps = {
   /** Disables the default resize and activates the auto resize */
   isAutoResize: false,
   autoResizeConfig: {
@@ -170,7 +148,7 @@ TextArea.defaultProps = {
   skin: 'default',
 };
 
-TextArea.propTypes = {
+TextAreaComponent.propTypes = {
   isAutoResize: PropTypes.bool,
   autoResizeConfig: PropTypes.shape({
     initialRows: PropTypes.number,
@@ -196,4 +174,6 @@ TextArea.propTypes = {
 
 TextAreaTag.displayName = 'TextAreaTag';
 
-export default TextArea;
+export default forwardRef((props, ref) => (
+  <TextAreaComponent {...props} innerRef={ref} />
+));
