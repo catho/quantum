@@ -12,6 +12,15 @@ const CSSDecorator = (Story, context) => (
 
 export const parameters = {
   layout: 'fullscreen',
+  controls: { expand: true },
+  options: { showPanel: true },
+  viewMode: 'docs',
+  previewTabs: {
+    'storybook/docs/panel': {
+      hidden: false,
+      index: -1,
+    },
+  },
 };
 
 export const decorators = [
