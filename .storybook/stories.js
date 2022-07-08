@@ -4,10 +4,9 @@
  * order is reflected in storybook sidebar
  */
 
-module.exports = [
-  'Introduction',
+const docs = ['Introduction'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
-  // Foundations
+const foundation = [
   'Colors',
   'Grid',
   'Typography',
@@ -15,81 +14,10 @@ module.exports = [
   'Icon',
   'Breakpoints',
   'List',
+].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
-  'Hooks',
+const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
-  // Alert
-  'Alert',
+const components = ['../stories/**/*.story.@(jsx|mdx)'].filter(Boolean);
 
-  // Accordion
-  'Accordion',
-
-  // Avatar
-  'Avatar',
-
-  'Carousel',
-
-  // Buttons
-  'Button',
-
-  // Forms
-  'Checkbox',
-  'Dropdown',
-  'Input',
-  'RadioGroup',
-  'Toggle',
-  'Form',
-  'RangeSlider',
-  'TextArea',
-
-  // Loaders
-  'Loaders',
-
-  // ChargeBar
-  'ChargeBar',
-
-  // Tooltip
-  'Tooltip',
-
-  // Popover
-  'Popover',
-
-  // Badge
-  'Badge',
-
-  // Tags
-  'Tag',
-
-  // TabbedView
-  'TabbedView',
-
-  // Card
-  'Card',
-
-  // Dialog
-  'Dialog',
-
-  // Modal
-  'Modal',
-
-  // Pagination
-  'Pagination',
-
-  // SnackBar
-  'SnackBar',
-
-  // Hamburger
-  'Hamburger',
-
-  // Socials
-  'Socials',
-
-  'Stepper',
-
-  'AutoComplete',
-
-  'SegmentedControl',
-  'Breadcrumbs',
-
-  'Link',
-].map(s => `../stories/${s}/${s}.story.jsx`);
+module.exports = [...docs, ...foundation, ...hooks, ...components];
