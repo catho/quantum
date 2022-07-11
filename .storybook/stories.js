@@ -1,9 +1,3 @@
-/**
- * Storybook list of stories
- *
- * order is reflected in storybook sidebar
- */
-
 const docs = ['Introduction'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
 const foundation = [

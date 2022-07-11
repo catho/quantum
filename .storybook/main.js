@@ -1,10 +1,5 @@
 const stories = require('./stories');
 
-// const stories = [
-//   '../stories/Introduction/*.story.@(mdx|jsx)',
-//   '../stories/**/*.story.@(mdx|jsx)',
-// ].filter(Boolean)
-
 module.exports = {
   stories,
   staticDirs: ['static'],

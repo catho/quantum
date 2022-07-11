@@ -1,5 +1,7 @@
 import 'loki/configure-react';
 import { UiStyle } from '@catho/quantum-storybook-ui';
+
+import theme from './theme';
 import GlobalStyle from '../components/GlobalStyle';
 
 const CSSDecorator = (Story, context) => (
@@ -17,7 +19,6 @@ export const parameters = {
   previewTabs: {
     'storybook/docs/panel': {
       hidden: false,
-      index: -1,
     },
   },
 };

@@ -10,6 +10,5 @@ export default create({
   inputBg: '#FFF',
   brandTitle: 'Quantum',
   brandUrl: 'https://github.com/catho/quantum',
-  brandImage:
-    'https://assets.catho.com.br/catho-components/storybook/logo/cc-logo-2.png',
+  brandImage: 'https://assets.catho.com.br/quantum/quantum_logo.svg',
 });

@@ -1,12 +1,24 @@
 import { Meta, Story } from '@storybook/addon-docs';
 
 import { Alert } from '../../components';
+import StyledHeader from '../shared/StyledHeader'
 
-<Meta title="Introduction/GettingStarted" />
+<Meta 
+  title="Introduction/GettingStarted" 
+  parameters={{
+    previewTabs: { 
+      'storybook/docs/panel': null, 
+      canvas: {
+        hidden: true,
+      },
+    },
+  }}
+/>
 
-# Quantum
-CSS in JS based reusable components, are the core of Quantum
-design-system: a library for developing consistent UI/UX at Catho.
+<StyledHeader title="Quantum">
+  CSS in JS based reusable components, are the core of Quantum
+  design-system: a library for developing consistent UI/UX at Catho.
+</StyledHeader>
 
 ## Starting from scratch
 Quantum can be easily included in applications or one-off projects. We
