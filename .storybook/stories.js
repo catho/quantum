@@ -12,6 +12,8 @@ const foundation = [
 
 const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
-const components = ['../stories/**/*.story.@(jsx|mdx)'].filter(Boolean);
+const components = ['../stories/**/!(*.regression).story.@(jsx|mdx)'].filter(
+  Boolean,
+);
 
 module.exports = [...docs, ...foundation, ...hooks, ...components];
