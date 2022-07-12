@@ -1,0 +1,40 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import StyledHeader from '../shared/StyledHeader'
+import Colors from './Colors'
+
+<Meta 
+  title="Foundation/Colors" 
+  parameters={{
+    previewTabs: { 
+      'storybook/docs/panel': null, 
+      canvas: {
+        hidden: true,
+      },
+    },
+  }}
+/>
+
+<StyledHeader title="Colors">
+  Catho's color palette consists of brand, support and neutral accents.
+  All colors are imported by the default theme.
+</StyledHeader>
+
+## Importing Colors
+
+```js
+import { Colors } from '@catho/quantum';
+```
+
+### Usage
+Colors is a object that expose the pallete and can be used in multiple places
+
+```js
+console.log(Colors.primary['500']);	
+/*returns: #0CC0EA;*/	
+
+console.log(Colors.secondary['500'])	
+/*returns: #E91E63/*
+```
+
+<Colors />
