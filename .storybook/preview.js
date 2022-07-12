@@ -1,6 +1,7 @@
 import 'loki/configure-react';
-import { withOptions } from '@storybook/addon-options';
 import { UiStyle } from '@catho/quantum-storybook-ui';
+
+import theme from './theme';
 import GlobalStyle from '../components/GlobalStyle';
 
 const CSSDecorator = (Story, context) => (
@@ -12,15 +13,14 @@ const CSSDecorator = (Story, context) => (
 
 export const parameters = {
   layout: 'fullscreen',
+  controls: { expand: true },
+  options: { showPanel: true },
+  viewMode: 'docs',
+  previewTabs: {
+    'storybook/docs/panel': {
+      hidden: false,
+    },
+  },
 };
 
-export const decorators = [
-  withOptions({
-    name: 'Quantum',
-    showAddonPanel: false,
-    addonPanelInRight: false,
-    url: 'https://github.com/catho/quantum/',
-  }),
-  UiStyle,
-  CSSDecorator,
-];
+export const decorators = [UiStyle, CSSDecorator];
