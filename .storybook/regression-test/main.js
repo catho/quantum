@@ -1,7 +1,17 @@
 module.exports = {
   stories: ['../../stories/**/*.regression-test.story.jsx'],
   addons: [
-    '@storybook/addon-backgrounds',
-    '@storybook/addon-viewport/register',
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        measure: false,
+        outline: false,
+        controls: false,
+        docs: false,
+        actions: false,
+        toolbars: false,
+      },
+    },
+    '@storybook/addon-a11y',
   ],
 };
