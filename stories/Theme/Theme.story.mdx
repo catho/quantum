@@ -1,0 +1,142 @@
+import { Meta } from '@storybook/addon-docs';
+
+import { Header } from '../shared'
+
+import { BreakpointsProperties, ColorIntensity, SpacingValues } from './Theme';
+
+<Meta 
+  title="Foundation/Theme" 
+  parameters={{
+    previewTabs: { 
+      'storybook/docs/panel': null, 
+      canvas: {
+        hidden: true,
+      },
+    },
+  }}
+/>
+
+<Header title="Theme">
+  All Quantum components are initialized with the default Quantum theme.
+  <br />
+  Here we will describe which properties are available on it.
+</Header>
+
+## Quantum Theme
+
+The theme has properties which, some of them, are used in components.
+It's structured with these ones:
+
+- [breakpoints](#breakpoints)
+- [colors](#colors)
+- [gutter](#gutter)
+- [baseFontSize](#baseFontSize)
+- [spacing](#spacing)
+- [components](#components)
+
+### <a id="breakpoints"></a>Breakpoints
+
+Used at `<Grid />` to generate and manage the grid
+system behavior in all defined screen sizes named as `xsmall`, `small`, `medium`, and `large`.
+
+Each breakpoint is defined by an object which contains 2 properties:
+
+<BreakpointsProperties />
+
+With the right configuration, the object must be like this:
+
+```js
+xsmall: {
+  width: 1,
+  columns: 4,
+},
+small: {
+  width: 600,
+  columns: 8,
+},
+medium: {
+  width: 1024,
+  columns: 12,
+},
+large: {
+  width: 1440,
+  columns: 12,
+}
+```
+
+### <a id="colors"></a>Colors
+
+With 6 predefined colors, this object contains all major colors used in several components:
+
+- primary
+- secondary
+- success
+- warning
+- error
+- neutral
+
+All of them should have five intensity levels: `100`, `300`, `500`, `700` and `900`.
+
+For example:
+
+<ColorIntensity />
+
+### <a id="gutter"></a>Gutter
+
+Is the default value used in `<Grid />`, to generate and manipulate the grid system properties, and spacing property of the default theme. The **value is 8**.
+
+### <a id="base-font-size"></a>Base font size
+
+The `font-size` property of a component is calculed based on a value that is **16**, by default. Changing this value will affect all library.
+
+### <a id="spacing"></a>Spacing
+
+Present in several components, the `spacing` object has 9 predefined values and should be used to set margins and paddings.
+
+The spacing names and values are:
+
+<SpacingValues />
+
+### <a id="components"></a>Components
+
+Each component may have a prop to set the colors used inside itself. That prop is called `skin` and can be changed respectively, according to each component, inside the `components` theme property.
+
+Currently, these components have skins:
+
+- `<Alert />`
+- `<Badge />`
+- `<Button />`
+- `<ChargeBar />`
+- `<Container />`
+- `<Popover />`
+- `<ProgressBar />`
+- `<Snackbar />`
+- `<TabbedView />`
+- `<Tag />`
+
+```js
+badge: {
+  skins: {
+    neutral: {
+      background: colors.neutral[100],
+      text: colors.neutral[700],
+    },
+    primary: {
+      background: colors.primary[700],
+      text: colors.neutral[100],
+    },
+    secondary: {
+      background: colors.secondary[500],
+      text: colors.neutral[0],
+    },
+    error: {
+      background: colors.error[500],
+      text: colors.neutral[100],
+    },
+    success: {
+      background: colors.success[100],
+      text: colors.success[900],
+    },
+  },
+}
+```
