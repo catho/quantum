@@ -1,0 +1,232 @@
+
+import { Meta } from '@storybook/addon-docs';
+
+import StyledHeader from '../shared/StyledHeader';
+import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, HideExample, OffsetExample } from './Grid';
+
+<Meta 
+  title="Foundation/Grid" 
+  parameters={{
+    previewTabs: { 
+      'storybook/docs/panel': null, 
+      canvas: {
+        hidden: true,
+      },
+    },
+  }}
+/>
+
+<StyledHeader title="Grid">
+  This Grid is based on &nbsp;
+    <a href="https://material.io/design/layout/responsive-layout-grid.html">
+    Material Design Grid definition
+    </a>
+    &nbsp;It is adaptable to screen size and orientation and has columns
+    definitions to each resolution.
+</StyledHeader>
+
+## Importing Grid
+
+```js
+import { Container, Row, Col, Hide } from '@catho/quantum';
+```
+
+### Usage
+
+#### Containers
+
+You may choose one of three containers or all to use in your projects.
+Note that, due to padding and more, neither container is nestable.
+
+Use `<Container></Container>` for a responsive fixed width
+container.
+
+```js
+<Container>
+  ...
+</Container>
+```
+
+Use `<Container withBreakpoints></Container>`
+for a container with quantum breakpoints.
+
+```js
+<Container withBreakpoints>
+  ...
+</Container>
+```
+
+Use `<Container fluid></Container>` for a full width
+container, spanning the entire width of your viewport.
+
+```js
+<Container fluid>
+  ...
+</Container>
+```
+
+#### Row
+
+Rows are wrappers for columns. Each column has horizontal space `column gap`
+(called a gutter) for controlling the space between them.
+
+#### Breakpoints
+
+Material Design provides responsive layouts based on the following column
+structures. Layouts using 4-column, 8-column, and 12-column grids are
+available for use across different screens, devices, and orientations.
+
+Each breakpoint range determines the number of columns, and recommended
+margins and gutters, for each display size.
+
+<SizesTable />
+
+The `<Col>` component accepts this props for breakpoints:
+
+<ul>
+  <li>xsmall</li>
+  <li>small</li>
+  <li>medium</li>
+  <li>large</li>
+</ul>
+
+#### Example: Stacked-to-horizontal
+
+You can create a basic grid system that starts out stacked on mobile
+devices and tablet devices before becoming horizontal on desktop devices.
+Place grid columns in any `<Row>`
+
+<HorizontalExample />
+
+```js
+<Row>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+  <Col medium={1}>...</Col>
+</Row>
+
+<Row>
+  <Col medium={8}>...</Col>
+  <Col medium={4}>...</Col>
+</Row>
+
+<Row>
+  <Col medium={4}>...</Col>
+  <Col medium={4}>...</Col>
+  <Col medium={4}>...</Col>
+</Row>
+
+<Row>
+  <Col medium={6}>...</Col>
+  <Col medium={6}>...</Col>
+</Row>
+```
+
+
+#### Example: Mobile and desktop
+
+Don’t want your columns to simply stack in smaller devices? Use the xsmall
+and small device grid props by adding `xsmall={*}`
+`small={*}` to your columns. See the example below for a
+better idea of how it all works.
+
+<MobileDesktopExample/>
+
+```js
+<Row>
+  <Col xsmall={2} small={8}>...</Col>
+  <Col xsmall={2} small={4}>...</Col>
+</Row>
+
+<Row>
+  <Col xsmall={4} small={4}>...</Col>
+  <Col xsmall={4} small={4}>...</Col>
+  <Col xsmall={4} small={4}>...</Col>
+</Row>
+
+<Row>
+  <Col xsmall={2}>...</Col>
+  <Col xsmall={2}>...</Col>
+</Row>
+```
+
+
+#### No Gutters
+
+The padding in container and the gutter between rows and columns can be
+removed with no-gutters prop on `<Container no-gutters>` or `<Row no-gutters>`.
+
+<NoGuttersExample />
+
+```js
+<Row no-gutters>
+  <Col medium={6}>medium={6}</Col>
+  <Col medium={6}>medium={6}</Col>
+</Row>
+```
+
+#### Hide Component
+
+If you need to hide some elements in your UI, you can use the
+`<Hide>` component.
+
+`<Hide>` receives the same props as the
+`<Col>` component, they are:
+
+<ul>
+  <li>xsmall</li>
+  <li>small</li>
+  <li>medium</li>
+  <li>large</li>
+</ul>
+
+#### Example: Hiding elements in xsmall devices
+
+<HideExample /> 
+
+```js
+<Hide xsmall>
+  <Row>
+    <Col>...</Col>
+    <Col>...</Col>
+  </Row>
+</Hide>
+```
+
+#### Offsetting columns
+
+Move columns to the right using 
+`<Col [breakpoint]-offset={2}>` props. These props increase
+the left gap of a column by * columns. For example,
+`<Col small-offset={2} />` moves the column over two
+columns on small devices up.
+
+<OffsetExample />
+
+```js
+<Row>
+  <Col small={2} small-offset={2}>small-offset={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+  <Col small={2}>small={2}</Col>
+</Row>
+```
+
+You can pass offset to all predefined props:
+
+<ul>
+  <li>xsmall-offset</li>
+  <li>small-offset</li>
+  <li>medium-offset</li>
+  <li>large-offset</li>
+</ul>
