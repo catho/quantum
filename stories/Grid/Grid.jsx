@@ -1,25 +1,12 @@
 import styled from 'styled-components';
 
 import { Row, Col, Hide } from '../../components/Grid';
+import Table from '../shared/Table';
 
 const StyledCol = styled(Col)`
   background-color: #f6f8fa;
   padding: 8px;
   font-size: 14px;
-`;
-
-const StyledTable = styled.table`
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 40px;
-  th,
-  td {
-    padding: 24px 8px;
-    text-align: left;
-  }
-  tr:nth-child(even) {
-    background-color: #f6f8fa;
-  }
 `;
 
 const tableHeadRow = {
@@ -123,7 +110,7 @@ const tableBodyRows = [
 ];
 
 export const SizesTable = () => (
-  <StyledTable>
+  <Table>
     <thead>
       <tr>
         {Object.keys(tableHeadRow).map(key => (
@@ -140,7 +127,7 @@ export const SizesTable = () => (
         </tr>
       ))}
     </tbody>
-  </StyledTable>
+  </Table>
 );
 
 export const HorizontalExample = () => (

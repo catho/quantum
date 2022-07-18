@@ -1,7 +1,7 @@
 
 import { Meta } from '@storybook/addon-docs';
 
-import StyledHeader from '../shared/StyledHeader';
+import Header from '../shared/Header';
 import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, HideExample, OffsetExample } from './Grid';
 
 <Meta 
@@ -16,14 +16,14 @@ import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, 
   }}
 />
 
-<StyledHeader title="Grid">
+<Header title="Grid">
   This Grid is based on &nbsp;
     <a href="https://material.io/design/layout/responsive-layout-grid.html">
     Material Design Grid definition
     </a>
     &nbsp;It is adaptable to screen size and orientation and has columns
     definitions to each resolution.
-</StyledHeader>
+</Header>
 
 ## Importing Grid
 
@@ -31,7 +31,7 @@ import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, 
 import { Container, Row, Col, Hide } from '@catho/quantum';
 ```
 
-### Usage
+## Usage
 
 #### Containers
 
@@ -90,7 +90,7 @@ The `<Col>` component accepts this props for breakpoints:
   <li>large</li>
 </ul>
 
-#### Example: Stacked-to-horizontal
+#### Example
 
 You can create a basic grid system that starts out stacked on mobile
 devices and tablet devices before becoming horizontal on desktop devices.
