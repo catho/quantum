@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Title } from '@catho/quantum-storybook-ui';
 import { Row, Col } from '../../components/Grid';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
@@ -27,11 +26,6 @@ class Catalogue extends Component {
     return (
       <>
         <Row>
-          <Col medium={12}>
-            <Title as="h2">Available Icons </Title>
-          </Col>
-        </Row>
-        <Row style={{ marginTop: '-40px' }}>
           <Col medium={8}>
             <p>
               Here&apos;s a list of all available Icons. Click on a respective
@@ -42,7 +36,6 @@ class Catalogue extends Component {
             <Input label="Search" onChange={this.filterIcons} />
           </Col>
         </Row>
-
         <Row>
           {filtered.map(name => (
             <IconToClipboard name={name} key={name} />
