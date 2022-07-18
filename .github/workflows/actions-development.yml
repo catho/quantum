@@ -25,3 +25,6 @@ jobs:
 
       - name: run the regression tests
         run: yarn build:regression
+        
+      - name: run storybook
+        run: yarn storybook
