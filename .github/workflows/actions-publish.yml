@@ -29,6 +29,9 @@ jobs:
       - name: run the regression tests
         run: yarn build:regression
 
+      - name: run storybook
+        run: yarn storybook --ci
+
   publish:
     needs: tests
     runs-on: ubuntu-20.04
