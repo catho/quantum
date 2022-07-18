@@ -27,4 +27,4 @@ jobs:
         run: yarn build:regression
         
       - name: run storybook
-        run: yarn storybook
+        run: yarn storybook --ci
