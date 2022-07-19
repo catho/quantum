@@ -20,11 +20,11 @@ jobs:
       - name: Install the dependencies
         run: yarn
 
+      - name: run storybook
+        run: yarn build-storybook
+
       - name: run unit tests
         run: yarn test:components
 
       - name: run the regression tests
         run: yarn build:regression
-        
-      - name: run storybook
-        run: yarn storybook --ci
