@@ -42,6 +42,4 @@ export const ExampleIncorrectIcons = () =>
     <IconWrapper key={`${icon.props.name}_${index}`}>{icon}</IconWrapper>
   ));
 
-export const Teste = children => <div>{children}</div>;
-
 export default ExampleIcons;
