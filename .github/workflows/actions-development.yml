@@ -20,6 +20,9 @@ jobs:
       - name: Install the dependencies
         run: yarn
 
+      - name: run storybook
+        run: yarn storybook --smoke-test
+
       - name: run unit tests
         run: yarn test:components
 
