@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import styled from 'styled-components';
 import Icon from '../../components/Icon';
 import { colors } from '../../components/shared/theme';
@@ -32,13 +33,11 @@ const exampleIncorrectIcons = [
 
 export const ExampleIcons = () =>
   exampleIcons.map((icon, index) => (
-    // eslint-disable-next-line react/no-array-index-key
     <IconWrapper key={`${icon.props.name}_${index}`}>{icon}</IconWrapper>
   ));
 
 export const ExampleIncorrectIcons = () =>
   exampleIncorrectIcons.map((icon, index) => (
-    // eslint-disable-next-line react/no-array-index-key
     <IconWrapper key={`${icon.props.name}_${index}`}>{icon}</IconWrapper>
   ));
 
