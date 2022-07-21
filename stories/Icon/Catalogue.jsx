@@ -20,6 +20,10 @@ class Catalogue extends Component {
     this.setState({ filtered });
   };
 
+  resetFilteredIcons = () => {
+    this.setState({ filtered: Icons });
+  };
+
   render() {
     const { filtered } = this.state;
 
@@ -33,7 +37,11 @@ class Catalogue extends Component {
             </p>
           </Col>
           <Col medium={4}>
-            <Input label="Search" onChange={this.filterIcons} />
+            <Input
+              label="Search"
+              onChange={this.filterIcons}
+              onClean={this.resetFilteredIcons}
+            />
           </Col>
         </Row>
         <Row>
