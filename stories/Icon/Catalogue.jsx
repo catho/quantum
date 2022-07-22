@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Title } from '@catho/quantum-storybook-ui';
 import { Row, Col } from '../../components/Grid';
 import Input from '../../components/Input';
 import IconToClipboard from './IconToClipboard';
@@ -21,17 +20,16 @@ class Catalogue extends Component {
     this.setState({ filtered });
   };
 
+  resetFilteredIcons = () => {
+    this.setState({ filtered: Icons });
+  };
+
   render() {
     const { filtered } = this.state;
 
     return (
       <>
         <Row>
-          <Col medium={12}>
-            <Title as="h2">Available Icons </Title>
-          </Col>
-        </Row>
-        <Row style={{ marginTop: '-40px' }}>
           <Col medium={8}>
             <p>
               Here&apos;s a list of all available Icons. Click on a respective
@@ -39,10 +37,13 @@ class Catalogue extends Component {
             </p>
           </Col>
           <Col medium={4}>
-            <Input label="Search" onChange={this.filterIcons} />
+            <Input
+              label="Search"
+              onChange={this.filterIcons}
+              onClean={this.resetFilteredIcons}
+            />
           </Col>
         </Row>
-
         <Row>
           {filtered.map(name => (
             <IconToClipboard name={name} key={name} />
