@@ -36,7 +36,8 @@
     "react/prefer-stateless-function": ["off", { "extensions": [".d.ts"] }],
     "no-undef": ["off", { "extensions": [".d.ts"] }],
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": ["off", { "extensions": [".js"] }]
   },
   "globals": {
     "window": true,
