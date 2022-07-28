@@ -1,0 +1,48 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Header } from '../shared';
+
+import { Link } from '../../components';
+
+import { 
+  Default, 
+  Dark,
+} from './Link.stories.jsx';
+
+<Meta 
+  title="Foundation/Link"
+  Component={Link}
+/>
+
+<Header title="Link">
+  The component Link make it easy to quickly style a anchor tag
+</Header>
+
+- [Importing](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing
+
+```js
+import { Link } from '@catho/quantum';
+```
+or
+```js
+// This option is recommended in case you want to reduce the size of the package
+import Link from 'catho/quantum/Link';
+```
+
+## <a id="api"></a>API
+
+<ArgsTable of={Link} />
+
+## <a id="examples"></a>Examples
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+<Canvas>
+  <Story story={Dark} />
+</Canvas>
