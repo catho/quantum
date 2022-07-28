@@ -1,0 +1,77 @@
+import { Meta } from '@storybook/addon-docs';
+
+import { Header } from '../shared';
+import { Alert } from '../../components';
+
+<Meta 
+  title="Hooks/useMaxWithMediaQuery"
+/>
+
+<Header title="UseMaxWithMediaQuery" />
+
+- [Importing](#importing)
+- [Usage](#usage)
+
+## <a id="importing"></a>Importing
+
+```js
+import useMaxWidthMediaQuery from '@catho/quantum/shared/hooks';
+```
+
+<Alert icon="warning" skin="warning">
+  <strong>Important:</strong>
+  <p>
+    Due to jest{' '}
+    <a href="https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom">
+      not supporting windows.matchMedia yet
+    </a>
+    , we recommend that you use the below mock in your tests. Just add this
+    function to the jest-config file or inside a before all in the
+    component's test file.
+  </p>
+</Alert>
+
+```js
+import matchMediaMock from '@catho/quantum/shared/helpers'
+
+describe('My tests', () => {
+  beforeAll(() => {
+    matchMediaMock()
+  });
+});
+```
+
+## <a id="usage"></a>Usage
+
+This hook uses css media query(max-width) to check browser resize. Instead
+of firing with every pixel change, like useWindowSize, it will fire only
+when browser goes through the defined media query; It will return a
+boolean.
+
+```js
+import useMaxWidthMediaQuery from '@catho/quantum/shared/hooks';
+
+import { theme } from '@catho/quantum/shared';
+
+const {
+  breakpoints: { medium },
+} = theme;
+const Component = () => {
+  const isBreakpoint = useMaxWidthMediaQuery(medium.width)
+  return (
+    <>
+      { isBreakpoint ? (
+        <div>
+          <Componente1 />
+        </div>
+      ) : (
+        <div>
+          <Componente2 />
+        </div>
+      )}
+    </>
+  )
+}
+
+export default Component;
+```
