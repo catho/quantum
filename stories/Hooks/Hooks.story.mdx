@@ -67,17 +67,9 @@ const {
 const Component = () => {
   const isBreakpoint = useMaxWidthMediaQuery(medium.width)
   return (
-    <>
-      { isBreakpoint ? (
-        <div>
-          <Componente1 />
-        </div>
-      ) : (
-        <div>
-          <Componente2 />
-        </div>
-      )}
-    </>
+    <div>
+      {isBreakpoint ? <Componente1 /> : <Componente2 />}
+    </div>
   )
 }
 
