@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, createRef } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 
@@ -24,9 +24,11 @@ const Popover = ({
   ...rest
 }) => {
   const [isVisible, setIsVisible] = useState(visible);
+  const [wrapperNode, setWrapperNode] = useState(null);
 
-  const wrapperRef = createRef();
-  let contentRef = useRef(null);
+  const wrapperRef = useRef();
+  let contentRef = useRef();
+  const triggerRef = useRef();
 
   const setPopoverPosition = () => {
     const {
@@ -66,6 +68,8 @@ const Popover = ({
     if (isVisible) {
       setPopoverPosition();
     }
+
+    console.log(wrapperRef);
   }, [isVisible]);
 
   const handleVisible = newVisibleValue => {
@@ -76,10 +80,18 @@ const Popover = ({
     }
   };
 
+  const measuredRef = useCallback(node => {
+    console.log('measuredRef');
+    if (node !== null) {
+      setWrapperNode(node);
+    }
+  }, []);
+
   return (
-    <Wrapper ref={wrapperRef}>
-      {isVisible && (
+    <Wrapper ref={measuredRef}>
+      {wrapperNode && (
         <Content
+          anchorEl={wrapperNode}
           placement={placement}
           visible={isVisible}
           onPopoverClose={() => handleVisible(false)}
@@ -91,7 +103,9 @@ const Popover = ({
           {children}
         </Content>
       )}
-      <TriggerBlock onClick={() => handleVisible(true)}>{trigger}</TriggerBlock>
+      <TriggerBlock ref={triggerRef} onClick={() => handleVisible(true)}>
+        {trigger}
+      </TriggerBlock>
     </Wrapper>
   );
 };

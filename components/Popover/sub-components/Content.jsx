@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { useEffect, useLayoutEffect } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -90,60 +90,64 @@ const CloseButton = styled(Button.Icon).attrs({
 
 const PopoverChildren = styled.div``;
 
-class Content extends Component {
-  constructor(props) {
-    super(props);
+const Content = props => {
+  const {
+    placement,
+    children,
+    onPopoverClose,
+    theme,
+    skin,
+    inverted,
+    anchorEl,
+    visible,
+    ...rest
+  } = props;
 
-    this.wrapper = document.createElement('section');
+  useEffect(() => {
+    console.log('props content', props);
+    if (visible && !anchorEl) {
+      document.body.appendChild(props.anchorEl);
+    }
+
+    return () => {
+      if (visible && !anchorEl) {
+        document.body.removeChild(props.anchorEl);
+      }
+    };
+  }, []);
+
+  if (!visible) {
+    return <p>OPA</p>;
   }
 
-  componentDidMount() {
-    document.body.appendChild(this.wrapper);
-  }
-
-  componentWillUnmount() {
-    document.body.removeChild(this.wrapper);
-  }
-
-  render() {
-    const {
-      placement,
-      children,
-      onPopoverClose,
-      theme,
-      skin,
-      inverted,
-      ...rest
-    } = this.props;
-
-    return ReactDOM.createPortal(
-      <PopoverContent
+  return ReactDOM.createPortal(
+    <PopoverContent
+      theme={theme}
+      inverted={inverted}
+      placement={placement}
+      skin={skin}
+      ref={element => {
+        this.innerContentRef = element;
+      }}
+      {...rest}
+    >
+      <PopoverChildren>{children}</PopoverChildren>
+      <CloseButton
+        skin={skin}
         theme={theme}
         inverted={inverted}
-        placement={placement}
-        skin={skin}
-        ref={element => {
-          this.innerContentRef = element;
-        }}
-        {...rest}
-      >
-        <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton
-          skin={skin}
-          theme={theme}
-          inverted={inverted}
-          onClick={onPopoverClose}
-        />
-      </PopoverContent>,
-      this.wrapper,
-    );
-  }
-}
+        onClick={onPopoverClose}
+      />
+    </PopoverContent>,
+    this.anchorEl,
+  );
+};
 
 CloseButton.displayName = 'CloseButton';
 PopoverChildren.displayName = 'PopoverChildren';
 
 Content.propTypes = {
+  anchorEl: PropTypes.element,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -165,6 +169,7 @@ Content.propTypes = {
 
 /* istanbul ignore next */
 Content.defaultProps = {
+  anchorEl: undefined,
   inverted: false,
   placement: 'top',
   onPopoverClose: () => {},
