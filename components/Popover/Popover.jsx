@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 
@@ -24,13 +24,13 @@ const Popover = ({
   ...rest
 }) => {
   const [isVisible, setIsVisible] = useState(visible);
-  const [wrapperNode, setWrapperNode] = useState(null);
 
   const wrapperRef = useRef();
-  let contentRef = useRef();
-  const triggerRef = useRef();
+  const contentRef = useRef();
 
   const setPopoverPosition = () => {
+    if (!contentRef?.current) return;
+
     const {
       current: {
         offsetTop: popoverWrapperTopValue,
@@ -39,13 +39,12 @@ const Popover = ({
         offsetHeight: triggerHeightValue,
       },
     } = wrapperRef;
+    const { current: innerContentRef } = contentRef;
+
     const {
-      innerContentRef,
-      innerContentRef: {
-        offsetWidth: popoverContentWidth,
-        offsetHeight: popoverContentHeight,
-      },
-    } = contentRef;
+      offsetWidth: popoverContentWidth,
+      offsetHeight: popoverContentHeight,
+    } = innerContentRef;
 
     const position = popoverPosition({
       popoverWrapperTopValue,
@@ -55,6 +54,9 @@ const Popover = ({
       triggerWidthValue,
       triggerHeightValue,
     });
+
+    console.log(position);
+    console.log(placement);
 
     innerContentRef.style.left = `${position[placement].left}px`;
     innerContentRef.style.top = `${position[placement].top}px`;
@@ -68,8 +70,6 @@ const Popover = ({
     if (isVisible) {
       setPopoverPosition();
     }
-
-    console.log(wrapperRef);
   }, [isVisible]);
 
   const handleVisible = newVisibleValue => {
@@ -80,32 +80,21 @@ const Popover = ({
     }
   };
 
-  const measuredRef = useCallback(node => {
-    console.log('measuredRef');
-    if (node !== null) {
-      setWrapperNode(node);
-    }
-  }, []);
-
   return (
-    <Wrapper ref={measuredRef}>
-      {wrapperNode && (
+    <Wrapper ref={wrapperRef}>
+      {isVisible && (
         <Content
-          anchorEl={wrapperNode}
+          anchorEl={wrapperRef.current}
           placement={placement}
           visible={isVisible}
           onPopoverClose={() => handleVisible(false)}
-          ref={element => {
-            contentRef = element;
-          }}
+          ref={contentRef}
           {...rest}
         >
           {children}
         </Content>
       )}
-      <TriggerBlock ref={triggerRef} onClick={() => handleVisible(true)}>
-        {trigger}
-      </TriggerBlock>
+      <TriggerBlock onClick={() => handleVisible(true)}>{trigger}</TriggerBlock>
     </Wrapper>
   );
 };

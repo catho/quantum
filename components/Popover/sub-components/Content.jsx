@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+/* eslint-disable react/prop-types */
+import { forwardRef } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -90,64 +91,47 @@ const CloseButton = styled(Button.Icon).attrs({
 
 const PopoverChildren = styled.div``;
 
-const Content = props => {
-  const {
-    placement,
-    children,
-    onPopoverClose,
-    theme,
-    skin,
-    inverted,
-    anchorEl,
-    visible,
-    ...rest
-  } = props;
-
-  useEffect(() => {
-    console.log('props content', props);
-    if (visible && !anchorEl) {
-      document.body.appendChild(props.anchorEl);
-    }
-
-    return () => {
-      if (visible && !anchorEl) {
-        document.body.removeChild(props.anchorEl);
-      }
-    };
-  }, []);
-
-  if (!visible) {
-    return <p>OPA</p>;
-  }
-
-  return ReactDOM.createPortal(
-    <PopoverContent
-      theme={theme}
-      inverted={inverted}
-      placement={placement}
-      skin={skin}
-      ref={element => {
-        this.innerContentRef = element;
-      }}
-      {...rest}
-    >
-      <PopoverChildren>{children}</PopoverChildren>
-      <CloseButton
-        skin={skin}
+const Content = forwardRef(
+  (
+    {
+      placement,
+      children,
+      onPopoverClose,
+      theme,
+      skin,
+      inverted,
+      anchorEl,
+      visible,
+      ...rest
+    },
+    ref,
+  ) =>
+    ReactDOM.createPortal(
+      <PopoverContent
         theme={theme}
         inverted={inverted}
-        onClick={onPopoverClose}
-      />
-    </PopoverContent>,
-    this.anchorEl,
-  );
-};
+        placement={placement}
+        skin={skin}
+        ref={ref}
+        {...rest}
+      >
+        <PopoverChildren>{children}</PopoverChildren>
+        <CloseButton
+          skin={skin}
+          theme={theme}
+          inverted={inverted}
+          onClick={onPopoverClose}
+        />
+      </PopoverContent>,
+      anchorEl,
+    ),
+);
 
 CloseButton.displayName = 'CloseButton';
 PopoverChildren.displayName = 'PopoverChildren';
 
 Content.propTypes = {
-  anchorEl: PropTypes.element,
+  anchorEl: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
