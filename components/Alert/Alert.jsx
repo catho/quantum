@@ -127,7 +127,7 @@ Alert.propTypes = {
   /** At least one children is required for Alert component properly works */
   children: PropTypes.node.isRequired,
   /** Icon name. The full catalogue can be found
-   * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
+   * [here](/?path=/docs/foundation-icons--page) */
   icon: PropTypes.string,
   /** You must pass a callback that is called when close button is clicked */
   onClose: PropTypes.func,
