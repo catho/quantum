@@ -2,12 +2,150 @@
 
 exports[`Popover component should match snapshots 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -16,6 +154,34 @@ exports[`Popover component should match snapshots 1`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -29,12 +195,150 @@ exports[`Popover component should match snapshots 1`] = `
 
 exports[`Popover component should match snapshots 2`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -43,6 +347,34 @@ exports[`Popover component should match snapshots 2`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -56,12 +388,154 @@ exports[`Popover component should match snapshots 2`] = `
 
 exports[`Popover component should match snapshots 3`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #3b610f;
+  color: #ffffff;
+  border: 2px solid #3b610f;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(0,77,64,0.2),0px 4px 5px 0px rgba(0,77,64,0.14),0px 1px 10px 0px rgba(0,77,64,0.12);
+  background-color: #004D40;
+  border-color: #004D40;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(59,97,15,0.2),0px 4px 5px 0px rgba(59,97,15,0.14),0px 1px 10px 0px rgba(59,97,15,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,77,64,0.2),0px 8px 10px 1px rgba(0,77,64,0.14),0px 3px 14px 2px rgba(0,77,64,0.12);
+  background-color: #004D40;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(126,211,33,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(201,237,162,0.4);
+  color: #3b610f;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(201,237,162,0.5);
+  color: #3b610f;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #dcedc8;
+  color: #004D40;
+}
+
+.c1:before {
+  color: #dcedc8;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #004D40;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #004D40;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -70,6 +544,34 @@ exports[`Popover component should match snapshots 3`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -83,12 +585,158 @@ exports[`Popover component should match snapshots 3`] = `
 
 exports[`Popover component should match snapshots 4`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f09100;
+  color: #ffffff;
+  border: 2px solid #f09100;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(209,73,0,0.2),0px 4px 5px 0px rgba(209,73,0,0.14),0px 1px 10px 0px rgba(209,73,0,0.12);
+  background-color: #d14900;
+  border-color: #d14900;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(209,73,0,0.2),0px 8px 10px 1px rgba(209,73,0,0.14),0px 3px 14px 2px rgba(209,73,0,0.12);
+  background-color: #d14900;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(255,193,7,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(255,218,106,0.4);
+  color: #f09100;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(255,218,106,0.5);
+  color: #f09100;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffefd6;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffefd6;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -97,6 +745,34 @@ exports[`Popover component should match snapshots 4`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -110,12 +786,162 @@ exports[`Popover component should match snapshots 4`] = `
 
 exports[`Popover component should match snapshots 5`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #e91b0c;
+  color: #ffffff;
+  border: 2px solid #e91b0c;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
+  background-color: #ac001a;
+  border-color: #ac001a;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
+  background-color: #ac001a;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c10 .c5 {
+  margin-right: 0;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(236,88,78,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(248,142,134,0.4);
+  color: #e91b0c;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(248,142,134,0.5);
+  color: #e91b0c;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #fff5f5;
+  color: #424242;
+}
+
+.c1:before {
+  color: #fff5f5;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -124,6 +950,34 @@ exports[`Popover component should match snapshots 5`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -137,12 +991,162 @@ exports[`Popover component should match snapshots 5`] = `
 
 exports[`Popover component should match snapshots 6`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c10 .c5 {
+  margin-right: 0;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  top: -4px;
+  content: '▲';
+  left: 50%;
+  text-shadow: 0px -3px 4px rgba(66,66,66,0.2);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -151,6 +1155,34 @@ exports[`Popover component should match snapshots 6`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: 15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -164,12 +1196,159 @@ exports[`Popover component should match snapshots 6`] = `
 
 exports[`Popover component should match snapshots 7`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c10 .c5 {
+  margin-right: 0;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '▶';
+  right: -8px;
+  text-shadow: 4px 1px 4px rgba(66,66,66,0.2);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -178,6 +1357,34 @@ exports[`Popover component should match snapshots 7`] = `
   >
     <div
       class="c1"
+      style="left: -15px; top: 0px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -191,12 +1398,159 @@ exports[`Popover component should match snapshots 7`] = `
 
 exports[`Popover component should match snapshots 8`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c10 .c5 {
+  margin-right: 0;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+.c1:before {
+  color: #ffffff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 50%;
+  content: '◀';
+  left: -8px;
+  text-shadow: -4px 1px 4px rgba(66,66,66,0.2);
+}
+
+.c4 {
+  color: #424242;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #424242;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -205,6 +1559,34 @@ exports[`Popover component should match snapshots 8`] = `
   >
     <div
       class="c1"
+      style="left: 15px; top: 0px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
@@ -218,12 +1600,162 @@ exports[`Popover component should match snapshots 8`] = `
 
 exports[`Popover component should match snapshots 9`] = `
 <DocumentFragment>
-  .c0 {
+  .c6 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c6.with-children {
+  margin-right: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c2:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c2:focus,
+.c2:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c2:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c3 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c3 .c5 {
+  margin-right: 0;
+}
+
+.c3:hover,
+.c3:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c3:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c8 .c5 {
+  margin-right: 0;
+}
+
+.c9 .c5 {
+  margin-right: 0;
+}
+
+.c10 .c5 {
+  margin-right: 0;
+}
+
+.c1 {
+  box-shadow: 0px 3px 5px -1px rgba(66,66,66,0.2),0px 5px 8px 0px rgba(66,66,66,0.14),0px 1px 14px 0px rgba(66,66,66,0.12);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  font-size: 16px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px;
+  position: absolute;
+  line-height: 0;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+.c1:before {
+  color: #424242;
+  font-size: 16px;
+  position: absolute;
+  content: '▼';
+  left: 50%;
+  text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  color: #ffffff;
+  display: inherit;
+  height: auto;
+  margin-left: 16px;
+  min-height: auto;
+  opacity: 0.8;
+  padding: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  width: auto;
+}
+
+.c4:hover {
+  background: none;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.c0 {
   display: inline-block;
   position: relative;
 }
 
-.c1 {
+.c7 {
   cursor: pointer;
 }
 
@@ -232,6 +1764,34 @@ exports[`Popover component should match snapshots 9`] = `
   >
     <div
       class="c1"
+      style="left: 0px; top: -15px;"
+    >
+      <div
+        class="Content__PopoverChildren-sc-1005q1-2"
+      >
+        This is a hint
+      </div>
+      <button
+        class="c2 c3 c4"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5 c6"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c7"
     >
       <button
         type="button"
