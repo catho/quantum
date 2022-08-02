@@ -46,6 +46,7 @@ const PopoverContent = styled.div`
   display: flex;
   border-radius: 4px;
   font-size: 16px;
+  width: max-content;
   ${({
     theme: {
       spacing: { xsmall },

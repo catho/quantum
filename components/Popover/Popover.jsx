@@ -32,38 +32,24 @@ const Popover = ({
     if (!contentRef?.current) return;
 
     const {
-      current: {
-        offsetTop: popoverWrapperTopValue,
-        offsetLeft: triggerLeftValue,
-        offsetWidth: triggerWidthValue,
-        offsetHeight: triggerHeightValue,
-      },
-    } = wrapperRef;
-    const { current: innerContentRef } = contentRef;
+      offsetWidth: triggerWidthValue,
+      offsetHeight: triggerHeightValue,
+    } = wrapperRef.current;
 
     const {
       offsetWidth: popoverContentWidth,
       offsetHeight: popoverContentHeight,
-    } = innerContentRef;
+    } = contentRef.current;
 
     const position = popoverPosition({
-      popoverWrapperTopValue,
       popoverContentWidth,
       popoverContentHeight,
-      triggerLeftValue,
       triggerWidthValue,
       triggerHeightValue,
     });
 
-    console.log(position);
-    console.log(placement);
-
-    innerContentRef.style.left = `${position[placement].left}px`;
-    innerContentRef.style.top = `${position[placement].top}px`;
-
-    if (placement === 'right' || placement === 'left') {
-      innerContentRef.style.transform = 'translateY(-50%)';
-    }
+    contentRef.current.style.left = `${position[placement].left}px`;
+    contentRef.current.style.top = `${position[placement].top}px`;
   };
 
   useEffect(() => {
