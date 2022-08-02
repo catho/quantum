@@ -1,0 +1,42 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Accordion } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  KeepOnlyOneOpen,
+} from './Accordion.stories.jsx';
+
+<Meta title="Accordion" component={Accordion}  />
+
+<Header title="Accordion">
+  An accordion is a vertical stack of interactive headings used to toggle the display of further information; each item can be 'collapsed', with just a short label visible, or 'expanded' to show the complete content.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Accordion } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Accordion} />
+
+## <a id="examples"></a>Examples
+
+### Keep only one open
+
+<Canvas>
+  <Story story={KeepOnlyOneOpen} />
+</Canvas>

@@ -298,14 +298,6 @@ Accordion.defaultProps = {
 };
 
 Accordion.propTypes = {
-  /** Theme natively passed by Quantum theme. Don't change this prop */
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
-  /** Set true to keep only one item open and close the remainings on click */
-  keepOnlyOneOpen: PropTypes.bool,
   /**
    * this prop receives an array of objects to render the content of component.
    *
@@ -320,6 +312,14 @@ Accordion.propTypes = {
       onClick: PropTypes.func,
     }),
   ).isRequired,
+  /** Set true to keep only one item open and close the remainings on click */
+  keepOnlyOneOpen: PropTypes.bool,
+  /** Theme natively passed by Quantum theme. Don't change this prop */
+  theme: PropTypes.shape({
+    colors: PropTypes.object,
+    spacing: PropTypes.object,
+    baseFontSize: PropTypes.number,
+  }),
 };
 
 export default Accordion;

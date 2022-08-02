@@ -116,64 +116,8 @@ const mockWithAllItemsClosed = {
   items: [{ ...institucionalItem }, { ...companiesItem }, { ...educationItem }],
 };
 
-const mockCode = `
-  items: [
-    {
-      title: 'Institucional',
-      content: (
-        <ul>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Contatos</a>
-          </li>
-          ...
-        </ul>
-      ),
-    },
-    {
-      title: 'Para candidato',
-      content: (
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <br />
-          Ut orci metus, auctor et viverra nec, consectetur vel diam.
-          ...
-        </p>
-      ),
-      opened: true,
-    },
-    {
-      title: 'Para Empresa',
-      content: (
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <br />
-          Ut orci metus, auctor et viverra nec, consectetur vel diam.
-          <br />
-          Pellentesque non dui id ex fringilla posuere. Donec at hendrerit leo.
-          ...
-        </p>
-      ),
-    },
-    {
-      title: 'Educação',
-      content: (
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <br />
-          Ut orci metus, auctor et viverra nec, consectetur vel diam.
-          ...
-        </p>
-      ),
-    },
-  ];
-`;
-
 export {
   mock as default,
-  mockCode,
   mockWithFirstItemOpened,
   mockWithLastItemOpened,
   mockWithAllItemsClosed,
