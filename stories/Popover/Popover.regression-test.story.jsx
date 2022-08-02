@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Popover, Button, Row, Col } from '../../components';
 
 const handleDirectionPosition = direction => {
@@ -10,11 +9,6 @@ const handleDirectionPosition = direction => {
 
 const Template = args => {
   const { direction, skin } = args;
-  const [isVisible, setIsVisivle] = useState(false);
-
-  const handleVisibility = () => {
-    setIsVisivle(state => !state);
-  };
 
   return (
     <div>
@@ -23,10 +17,8 @@ const Template = args => {
           <Popover
             placement={direction}
             skin={skin}
-            trigger={
-              <Button onClick={handleVisibility}>Popover trigger</Button>
-            }
-            visible={isVisible}
+            trigger={<Button>Popover trigger</Button>}
+            visible
           >
             Some text
           </Popover>

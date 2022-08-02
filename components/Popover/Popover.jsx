@@ -70,7 +70,6 @@ const Popover = ({
     <Wrapper ref={wrapperRef}>
       {isVisible && (
         <Content
-          anchorEl={wrapperRef.current}
           placement={placement}
           visible={isVisible}
           onPopoverClose={() => handleVisible(false)}

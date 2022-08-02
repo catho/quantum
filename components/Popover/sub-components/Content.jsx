@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { forwardRef } from 'react';
-import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -106,26 +105,24 @@ const Content = forwardRef(
       ...rest
     },
     ref,
-  ) =>
-    ReactDOM.createPortal(
-      <PopoverContent
+  ) => (
+    <PopoverContent
+      theme={theme}
+      inverted={inverted}
+      placement={placement}
+      skin={skin}
+      ref={ref}
+      {...rest}
+    >
+      <PopoverChildren>{children}</PopoverChildren>
+      <CloseButton
+        skin={skin}
         theme={theme}
         inverted={inverted}
-        placement={placement}
-        skin={skin}
-        ref={ref}
-        {...rest}
-      >
-        <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton
-          skin={skin}
-          theme={theme}
-          inverted={inverted}
-          onClick={onPopoverClose}
-        />
-      </PopoverContent>,
-      anchorEl,
-    ),
+        onClick={onPopoverClose}
+      />
+    </PopoverContent>
+  ),
 );
 
 CloseButton.displayName = 'CloseButton';
