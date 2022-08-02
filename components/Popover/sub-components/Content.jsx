@@ -101,7 +101,6 @@ const Content = forwardRef(
       skin,
       inverted,
       anchorEl,
-      visible,
       ...rest
     },
     ref,

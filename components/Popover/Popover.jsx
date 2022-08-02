@@ -71,7 +71,6 @@ const Popover = ({
       {isVisible && (
         <Content
           placement={placement}
-          visible={isVisible}
           onPopoverClose={() => handleVisible(false)}
           ref={contentRef}
           {...rest}
