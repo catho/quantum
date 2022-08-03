@@ -1,0 +1,74 @@
+import { Meta } from '@storybook/addon-docs';
+
+import { Alert } from '../../components';
+import { Header } from '../shared'
+import { StyledDivExample } from './styles'
+
+<Meta 
+  title="Foundation/Breakpoints" 
+  parameters={{
+    previewTabs: { 
+      'storybook/docs/panel': null, 
+      canvas: {
+        hidden: true,
+      },
+    },
+  }}
+/>
+
+<Header title="Breakpoints">
+  Breakpoints - Quantum provides a breakpoints object that you can use with
+  styled components.
+  <br />
+  You can create different style rules following the Quantum breakpoints.
+</Header>
+
+## How to use
+
+First import `BREAKPOINTS` from `shared`. Second
+import `query` function from `Grid` shared.
+
+```js
+import { BREAKPOINTS } from '@catho/quantum/shared';
+import { query } from '@catho/quantum/Grid/sub-components/shared';
+```
+
+Create a constant variable calling `query` with `BREAKPOINTS` as parameter. After, create a styled component
+and introduce the variable. In this example we will use a `div`.
+
+The variable provides `min-widths` media queries with the following sizes:
+
+- small: 600px
+- medium: 1024px
+- large: 1440px
+
+In each resolution we will change the div background color:
+
+- Blue color for `small` resolution.
+- Green color for `medium` resolution.
+- Black color for `large` resolution.
+
+```js
+const mediaQueries = query(BREAKPOINTS);
+const StyledDiv = styled.div`
+  padding: 15px 20px;
+  color: white;
+  background-color: red;
+
+  ${mediaQueries.small`
+    background-color: blue;
+  `}
+
+  ${mediaQueries.medium`
+    background-color: green;
+  `}
+
+  ${mediaQueries.large`
+    background-color: black;
+  `}
+`;
+```
+
+Test the div in differents sizes:
+
+<StyledDivExample>Test me in different sizes =)</StyledDivExample>

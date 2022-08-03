@@ -1,0 +1,64 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Alert } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  Primary,
+  Success,
+  Error,
+  WithIcon
+} from './Alert.stories.jsx';
+
+<Meta title="Alert" component={Alert}  />
+
+<Header title="Alert">
+  Alerts are used for items that need to be labeled,
+  categorized, or organized using keywords that describe them.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Alert } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Alert} />
+
+## <a id="examples"></a>Examples
+
+### Primary
+
+<Canvas>
+  <Story story={Primary} />
+</Canvas>
+
+### Success
+
+<Canvas>
+  <Story story={Success} />
+</Canvas>
+
+### Error
+
+<Canvas>
+  <Story story={Error} />
+</Canvas>
+
+### With Icon
+
+<Canvas>
+  <Story story={WithIcon} />
+</Canvas>
