@@ -1,10 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes, { oneOf } from 'prop-types';
 
 import Content from './sub-components/Content';
-
-import popoverPosition from './options';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -25,39 +23,6 @@ const Popover = ({
 }) => {
   const [isVisible, setIsVisible] = useState(visible);
 
-  const wrapperRef = useRef();
-  const contentRef = useRef();
-
-  const setPopoverPosition = () => {
-    if (!contentRef?.current) return;
-
-    const {
-      offsetWidth: triggerWidthValue,
-      offsetHeight: triggerHeightValue,
-    } = wrapperRef.current;
-
-    const {
-      offsetWidth: popoverContentWidth,
-      offsetHeight: popoverContentHeight,
-    } = contentRef.current;
-
-    const position = popoverPosition({
-      popoverContentWidth,
-      popoverContentHeight,
-      triggerWidthValue,
-      triggerHeightValue,
-    });
-
-    contentRef.current.style.left = `${position[placement].left}px`;
-    contentRef.current.style.top = `${position[placement].top}px`;
-  };
-
-  useEffect(() => {
-    if (isVisible) {
-      setPopoverPosition();
-    }
-  }, [isVisible]);
-
   const handleVisible = newVisibleValue => {
     setIsVisible(newVisibleValue);
 
@@ -67,12 +32,11 @@ const Popover = ({
   };
 
   return (
-    <Wrapper ref={wrapperRef}>
+    <Wrapper>
       {isVisible && (
         <Content
           placement={placement}
           onPopoverClose={() => handleVisible(false)}
-          ref={contentRef}
           {...rest}
         >
           {children}

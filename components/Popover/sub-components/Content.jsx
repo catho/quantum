@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
-import { forwardRef } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { components, spacing, colors, breakpoints } from '../../shared/theme';
@@ -39,6 +37,29 @@ const _getTextColor = ({
   inverted,
 }) => `color: ${inverted ? background : text};`;
 
+const contentPositions = {
+  top: css`
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  `,
+  bottom: css`
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  `,
+  left: css`
+    top: 50%;
+    left: -15px;
+    transform: translate(-100%, -50%);
+  `,
+  right: css`
+    top: 50%;
+    right: -15px;
+    transform: translate(100%, -50%);
+  `,
+};
+
 const PopoverContent = styled.div`
   ${shadow(5)};
   align-items: center;
@@ -53,6 +74,8 @@ const PopoverContent = styled.div`
   }) => `padding: ${xsmall}px;`}
 
   position: absolute;
+  ${({ placement }) => contentPositions[placement]};
+
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
@@ -91,37 +114,30 @@ const CloseButton = styled(Button.Icon).attrs({
 
 const PopoverChildren = styled.div``;
 
-const Content = forwardRef(
-  (
-    {
-      placement,
-      children,
-      onPopoverClose,
-      theme,
-      skin,
-      inverted,
-      anchorEl,
-      ...rest
-    },
-    ref,
-  ) => (
-    <PopoverContent
+const Content = ({
+  placement,
+  children,
+  onPopoverClose,
+  theme,
+  skin,
+  inverted,
+  ...rest
+}) => (
+  <PopoverContent
+    theme={theme}
+    inverted={inverted}
+    placement={placement}
+    skin={skin}
+    {...rest}
+  >
+    <PopoverChildren>{children}</PopoverChildren>
+    <CloseButton
+      skin={skin}
       theme={theme}
       inverted={inverted}
-      placement={placement}
-      skin={skin}
-      ref={ref}
-      {...rest}
-    >
-      <PopoverChildren>{children}</PopoverChildren>
-      <CloseButton
-        skin={skin}
-        theme={theme}
-        inverted={inverted}
-        onClick={onPopoverClose}
-      />
-    </PopoverContent>
-  ),
+      onClick={onPopoverClose}
+    />
+  </PopoverContent>
 );
 
 CloseButton.displayName = 'CloseButton';

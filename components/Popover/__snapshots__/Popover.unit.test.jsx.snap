@@ -100,6 +100,11 @@ exports[`Popover component should match snapshots 1`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -154,7 +159,6 @@ exports[`Popover component should match snapshots 1`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -293,6 +297,11 @@ exports[`Popover component should match snapshots 2`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -347,7 +356,6 @@ exports[`Popover component should match snapshots 2`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -490,6 +498,11 @@ exports[`Popover component should match snapshots 3`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -544,7 +557,6 @@ exports[`Popover component should match snapshots 3`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -691,6 +703,11 @@ exports[`Popover component should match snapshots 4`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -745,7 +762,6 @@ exports[`Popover component should match snapshots 4`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -896,6 +912,11 @@ exports[`Popover component should match snapshots 5`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -950,7 +971,6 @@ exports[`Popover component should match snapshots 5`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -1101,6 +1121,11 @@ exports[`Popover component should match snapshots 6`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,100%);
+  -ms-transform: translate(-50%,100%);
+  transform: translate(-50%,100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -1155,7 +1180,6 @@ exports[`Popover component should match snapshots 6`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: 15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -1306,6 +1330,11 @@ exports[`Popover component should match snapshots 7`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: 50%;
+  left: -15px;
+  -webkit-transform: translate(-100%,-50%);
+  -ms-transform: translate(-100%,-50%);
+  transform: translate(-100%,-50%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -1357,7 +1386,6 @@ exports[`Popover component should match snapshots 7`] = `
   >
     <div
       class="c1"
-      style="left: -15px; top: 0px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -1508,6 +1536,11 @@ exports[`Popover component should match snapshots 8`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: 50%;
+  right: -15px;
+  -webkit-transform: translate(100%,-50%);
+  -ms-transform: translate(100%,-50%);
+  transform: translate(100%,-50%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -1559,7 +1592,6 @@ exports[`Popover component should match snapshots 8`] = `
   >
     <div
       class="c1"
-      style="left: 15px; top: 0px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
@@ -1710,6 +1742,11 @@ exports[`Popover component should match snapshots 9`] = `
   width: max-content;
   padding: 8px;
   position: absolute;
+  top: -15px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-100%);
+  -ms-transform: translate(-50%,-100%);
+  transform: translate(-50%,-100%);
   line-height: 0;
   -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
@@ -1764,7 +1801,6 @@ exports[`Popover component should match snapshots 9`] = `
   >
     <div
       class="c1"
-      style="left: 0px; top: -15px;"
     >
       <div
         class="Content__PopoverChildren-sc-1005q1-2"
