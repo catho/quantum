@@ -1,0 +1,86 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Carousel from '../../components/Carousel';
+import Alert from '../../components/Alert';
+import { Default, WithSmallCards, WithLargeCards, WithEllipsisForLongTexts } from './Carousel.stories.jsx';
+import { Header } from '../shared';
+
+<Meta title="Carousel" component={Carousel}  />
+
+<Header title="Carousel">
+    Carousel is a component that presents cards to go through a series of
+    content. Works with a series of image, text, or custom markup. Also
+    includes support for indicator and previous / next controls.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import Carousel from '@catho/quantum/Carousel';
+```
+
+<Alert icon="warning" skin="warning">
+  <strong>Important:</strong>
+  <p>
+    The Carousel component uses{' '}
+    <a
+      href="https://react-slick.neostack.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      react-slick lib
+    </a>{' '}
+    as dependency, Because of that, is necessary to implement the code
+    of source url bellow. it should be implemented before the imports,
+    in unit tests, that will use Carousel component.
+  </p>
+  <p>
+    source:{' '}
+    <a
+      href="https://github.com/akiran/react-slick/issues/742#issuecomment-460281987"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Issue in react-slick
+    </a>
+  </p>
+  <p>
+    <strong>Without this code, the unit tests will break. </strong>
+  </p>
+</Alert>
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+<Alert icon="info" skin="neutral">
+  The carousel controls (arrows) hides on screen smaller than 1024px.
+</Alert>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Carousel} />
+
+## <a id="examples"></a>Examples
+
+### With small cards
+
+<Canvas>
+  <Story story={WithSmallCards}/>
+</Canvas>
+
+### With large cards
+
+<Canvas>
+  <Story story={WithLargeCards}/>
+</Canvas>
+
+### With ellipsis for long texts
+
+<Canvas>
+  <Story story={WithEllipsisForLongTexts}/>
+</Canvas>
