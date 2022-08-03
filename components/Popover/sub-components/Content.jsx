@@ -128,7 +128,6 @@ CloseButton.displayName = 'CloseButton';
 PopoverChildren.displayName = 'PopoverChildren';
 
 Content.propTypes = {
-  anchorEl: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -150,7 +149,6 @@ Content.propTypes = {
 
 /* istanbul ignore next */
 Content.defaultProps = {
-  anchorEl: undefined,
   inverted: false,
   placement: 'top',
   onPopoverClose: () => {},
