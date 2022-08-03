@@ -37,7 +37,7 @@ const _getTextColor = ({
   inverted,
 }) => `color: ${inverted ? background : text};`;
 
-const contentPositions = {
+const contentPositionVariations = {
   top: css`
     top: -15px;
     left: 50%;
@@ -74,7 +74,7 @@ const PopoverContent = styled.div`
   }) => `padding: ${xsmall}px;`}
 
   position: absolute;
-  ${({ placement }) => contentPositions[placement]};
+  ${({ placement }) => contentPositionVariations[placement]};
 
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
