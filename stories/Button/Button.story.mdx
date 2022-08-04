@@ -4,15 +4,12 @@ import Button from '../../components/Button';
 import { 
   Default, 
   FullWidth, 
-  Centered, 
-  Secondary, 
-  WithInfoIcon, 
-  WithSearchIcon, 
-  WithAccessibleIcon, 
-  WithErrorIcon, 
-  WithCreditCardIcon, 
-  WithLockedIcon, 
-  WithDoneIcon 
+  Centered,
+  Success,
+  Secondary,
+  Error, 
+  Disabled,
+  WithIcon
 } from './Button.stories.jsx';
 
 <Meta title="Button" component={Button}  />
@@ -55,40 +52,34 @@ import Button from '@catho/quantum/Button';
   <Story story={Centered}/>
 </Canvas>
 
+### Success
+
+<Canvas>
+  <Story story={Success}/>
+</Canvas>
+
 ### Secondary
 
 <Canvas>
   <Story story={Secondary}/>
 </Canvas>
 
-### With Icons
-
-The full catalogue of icons can be found [here](?path=/docs/foundation-icons--page#catalog)
+### Error
 
 <Canvas>
-  <Story story={WithInfoIcon}/>
+  <Story story={Error}/>
 </Canvas>
 
-<Canvas>
-  <Story story={WithSearchIcon}/>
-</Canvas>
+### Disabled
 
 <Canvas>
-  <Story story={WithAccessibleIcon}/>
+  <Story story={Disabled}/>
 </Canvas>
 
-<Canvas>
-  <Story story={WithErrorIcon}/>
-</Canvas>
+### With Icon
+
+The full catalogue of icons can be found [here](?path=/docs/foundation-icons--page)
 
 <Canvas>
-  <Story story={WithCreditCardIcon}/>
-</Canvas>
-
-<Canvas>
-  <Story story={WithLockedIcon}/>
-</Canvas>
-
-<Canvas>
-  <Story story={WithDoneIcon}/>
+  <Story story={WithIcon}/>
 </Canvas>
