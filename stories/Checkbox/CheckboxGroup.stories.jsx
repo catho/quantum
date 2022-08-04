@@ -1,13 +1,23 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
 
 const options = [
-  { label: 'Banana', name: 'banana' },
-  { label: 'Orange', name: 'orange', checked: true },
-  { label: 'Lemon', name: 'lemon', checked: true, disabled: true },
-  { label: 'Strawberry', name: 'strawberry', disabled: true },
-  { label: 'Blueberry', name: 'blueberry' },
+  { label: 'Banana', name: 'banana', key: 'banana' },
+  { label: 'Orange', name: 'orange', checked: true, key: 'orange' },
+  {
+    label: 'Lemon',
+    name: 'lemon',
+    checked: true,
+    disabled: true,
+    key: 'lemon',
+  },
+  {
+    label: 'Strawberry',
+    name: 'strawberry',
+    disabled: true,
+    key: 'strawberry',
+  },
+  { label: 'Blueberry', name: 'blueberry', key: 'blueberry' },
 ];
 
 const buttonGroupOptions = [
@@ -25,6 +35,7 @@ const getChildren = () =>
         name={name}
         checked={checked}
         disabled={disabled}
+        key={name}
       />
     </>
   ));

@@ -37,7 +37,8 @@
     "no-undef": ["off", { "extensions": [".d.ts"] }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "import/prefer-default-export": ["off", { "extensions": [".js"] }]
+    "import/prefer-default-export": ["off", { "extensions": [".js"] }],
+    "react/prop-types": ["off", { "extensions": [".stories.jsx"] }]
   },
   "globals": {
     "window": true,
