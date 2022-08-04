@@ -240,7 +240,7 @@ Button.propTypes = {
   stroked: PropTypes.bool,
   full: PropTypes.bool,
   /** Icon name. The full catalogue can be found
-   * [here](/?selectedKind=1.%20Foundation&selectedStory=Icons) */
+   * [here](/?path=/docs/foundation-icons--page#catalog) */
   icon: PropTypes.string,
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   skin: PropTypes.oneOf([
