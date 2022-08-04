@@ -1,6 +1,4 @@
-import { Component } from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { components, spacing, colors, breakpoints } from '../../shared/theme';
@@ -39,12 +37,36 @@ const _getTextColor = ({
   inverted,
 }) => `color: ${inverted ? background : text};`;
 
+const contentPositionVariations = {
+  top: css`
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  `,
+  bottom: css`
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  `,
+  left: css`
+    top: 50%;
+    left: -15px;
+    transform: translate(-100%, -50%);
+  `,
+  right: css`
+    top: 50%;
+    right: -15px;
+    transform: translate(100%, -50%);
+  `,
+};
+
 const PopoverContent = styled.div`
   ${shadow(5)};
   align-items: center;
   display: flex;
   border-radius: 4px;
   font-size: 16px;
+  width: max-content;
   ${({
     theme: {
       spacing: { xsmall },
@@ -52,6 +74,8 @@ const PopoverContent = styled.div`
   }) => `padding: ${xsmall}px;`}
 
   position: absolute;
+  ${({ placement }) => contentPositionVariations[placement]};
+
   line-height: 0;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   z-index: 100;
@@ -90,55 +114,31 @@ const CloseButton = styled(Button.Icon).attrs({
 
 const PopoverChildren = styled.div``;
 
-class Content extends Component {
-  constructor(props) {
-    super(props);
-
-    this.wrapper = document.createElement('section');
-  }
-
-  componentDidMount() {
-    document.body.appendChild(this.wrapper);
-  }
-
-  componentWillUnmount() {
-    document.body.removeChild(this.wrapper);
-  }
-
-  render() {
-    const {
-      placement,
-      children,
-      onPopoverClose,
-      theme,
-      skin,
-      inverted,
-      ...rest
-    } = this.props;
-
-    return ReactDOM.createPortal(
-      <PopoverContent
-        theme={theme}
-        inverted={inverted}
-        placement={placement}
-        skin={skin}
-        ref={element => {
-          this.innerContentRef = element;
-        }}
-        {...rest}
-      >
-        <PopoverChildren>{children}</PopoverChildren>
-        <CloseButton
-          skin={skin}
-          theme={theme}
-          inverted={inverted}
-          onClick={onPopoverClose}
-        />
-      </PopoverContent>,
-      this.wrapper,
-    );
-  }
-}
+const Content = ({
+  placement,
+  children,
+  onPopoverClose,
+  theme,
+  skin,
+  inverted,
+  ...rest
+}) => (
+  <PopoverContent
+    theme={theme}
+    inverted={inverted}
+    placement={placement}
+    skin={skin}
+    {...rest}
+  >
+    <PopoverChildren>{children}</PopoverChildren>
+    <CloseButton
+      skin={skin}
+      theme={theme}
+      inverted={inverted}
+      onClick={onPopoverClose}
+    />
+  </PopoverContent>
+);
 
 CloseButton.displayName = 'CloseButton';
 PopoverChildren.displayName = 'PopoverChildren';
