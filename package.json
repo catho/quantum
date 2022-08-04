@@ -31,7 +31,7 @@
     "lint:all": "yarn lint:components && yarn lint:stories && yarn lint:js",
     "lint": "eslint --ext js,jsx --quiet",
     "prepush": "yarn lint:all && yarn test:components",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook --port 9007",
     "format": "prettier --write ./**/*.{js,jsx,json}",
     "semantic-release": "semantic-release",
     "deploy-storybook": "storybook-to-ghpages",

@@ -1,0 +1,127 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Input, Alert } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  Label,
+  Error,
+  Disabled,
+  DescriptionLabel,
+  HelperText,
+  Searchable,
+  CEP,
+  CNPJ,
+  CPF,
+  Date,
+  Phone,
+  Password,
+  Skin,
+  ControlledExample,
+} from './Input.stories.jsx';
+
+<Meta title="Forms/Input" component={Input}  />
+
+<Header title="Input">
+  The Input component is used to create interactive controls for web-based forms in order to accept data from the user.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Input } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Input} />
+
+## <a id="examples"></a>Examples
+
+### With label
+<Canvas>
+  <Story story={Label} />
+</Canvas>
+
+### With error
+<Canvas>
+  <Story story={Error} />
+</Canvas>
+
+### Disabled
+<Canvas>
+  <Story story={Disabled} />
+</Canvas>
+
+### Description label
+<Canvas>
+  <Story story={DescriptionLabel} />
+</Canvas>
+
+### Helper text
+<Canvas>
+  <Story story={HelperText} />
+</Canvas>
+
+### Searchable
+<Canvas>
+  <Story story={Searchable} />
+</Canvas>
+
+### CEP
+<Canvas>
+  <Story story={CEP} />
+</Canvas>
+
+### CNPJ
+<Canvas>
+  <Story story={CNPJ} />
+</Canvas>
+
+### CPF
+<Canvas>
+  <Story story={CPF} />
+</Canvas>
+
+### Date
+<Canvas>
+  <Story story={Date} />
+</Canvas>
+
+### Phone
+<Canvas>
+  <Story story={Phone} />
+</Canvas>
+
+### Password
+<Canvas>
+  <Story story={Password} />
+</Canvas>
+
+### Skin
+
+<Canvas>
+  <Story story={Skin} />
+</Canvas>
+
+<Alert icon="info" skin="primary">
+  The use of dark skin in input should be applied to backgrounds that
+  have a high level of contrast for accessibility and reading
+  purposes, so use it with a Primary 700 theme or higher in contrast
+  level, avoid light backgrounds.
+</Alert>
+
+### Controlled example
+<Canvas>
+  <Story story={ControlledExample} />
+</Canvas>
