@@ -10,7 +10,7 @@ import {
   Disabled,
 } from './Checkbox.stories.jsx';
 
-<Meta title="Checkbox" component={Checkbox}  />
+<Meta title="Forms/Checkbox" component={Checkbox}  />
 
 <Header title="Checkbox">
   Alerts are used for items that need to be labeled,
@@ -19,7 +19,7 @@ import {
 
 - [Importing and usage](#importing)
 - [API](#api)
-- [Checkbox group](#checkbox-group)
+- [Examples](#examples)
 
 ## <a id="importing"></a>Importing and usage
 
@@ -29,18 +29,22 @@ import { Checkbox } from '@catho/quantum';
 
 <Canvas>
   <Story story={Default} />
-  <Story story={Checked} />
-  <Story story={Disabled} />
 </Canvas>
 
 ## <a id="api"></a>API
 
 <ArgsTable of={Checkbox} />
 
-## <a id="checkbox-group"></a>Checkbox group
+## <a id="examples"></a>Examples
 
-`CheckboxGroup` component has the ability to manage, get
-values via a single `onChange` callback prop and apply a
-single error message to a group of checkboxes. Also, it offers an
-alternative way to instantiate checkbox items, with{' '}
-`options` prop:
+### Checked
+
+<Canvas>
+  <Story story={Checked} />
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story story={Disabled} />
+</Canvas>
