@@ -1,0 +1,46 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { Checkbox } from '../../components';
+
+import { Header } from '../shared';
+
+import {
+  Default,
+  Checked,
+  Disabled,
+} from './Checkbox.stories.jsx';
+
+<Meta title="Checkbox" component={Checkbox}  />
+
+<Header title="Checkbox">
+  Alerts are used for items that need to be labeled,
+  categorized, or organized using keywords that describe them.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Checkbox group](#checkbox-group)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Checkbox } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+  <Story story={Checked} />
+  <Story story={Disabled} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Checkbox} />
+
+## <a id="checkbox-group"></a>Checkbox group
+
+`CheckboxGroup` component has the ability to manage, get
+values via a single `onChange` callback prop and apply a
+single error message to a group of checkboxes. Also, it offers an
+alternative way to instantiate checkbox items, with{' '}
+`options` prop:
