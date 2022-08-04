@@ -22,22 +22,10 @@ Centered.args = {
   children: 'Centered',
 };
 
-export const Success = Template.bind({});
-Success.args = {
+export const WithSkin = Template.bind({});
+WithSkin.args = {
   skin: 'success',
   children: 'Success',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  skin: 'secondary',
-  children: 'Secondary',
-};
-
-export const Error = Template.bind({});
-Error.args = {
-  skin: 'error',
-  children: 'Error',
 };
 
 export const Disabled = Template.bind({});
@@ -46,34 +34,10 @@ Disabled.args = {
   children: 'Disabled',
 };
 
-export const Xsmall = Template.bind({});
-Xsmall.args = {
-  size: 'xsmall',
-  children: 'xsmall',
-};
-
-export const Small = Template.bind({});
-Small.args = {
+export const WithSize = Template.bind({});
+WithSize.args = {
   size: 'small',
-  children: 'small',
-};
-
-export const Medium = Template.bind({});
-Medium.args = {
-  size: 'medium',
-  children: 'medium',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  children: 'large',
-};
-
-export const Xlarge = Template.bind({});
-Xlarge.args = {
-  size: 'xlarge',
-  children: 'xlarge',
+  children: 'Small',
 };
 
 export const WithIcon = Template.bind({});
