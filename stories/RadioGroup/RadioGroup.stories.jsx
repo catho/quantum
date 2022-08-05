@@ -52,12 +52,6 @@ Button.args = {
   type: 'button',
 };
 
-export const Size = Template.bind({});
-Size.args = {
-  ...Button.args,
-  size: 'xlarge',
-};
-
 export const Inline = Template.bind({});
 Inline.args = {
   ...Button.args,
