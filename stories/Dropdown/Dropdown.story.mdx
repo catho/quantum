@@ -1,0 +1,102 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { Header } from '../shared';
+import Alert from '../../components/Alert';
+import Dropdown from '../../components/Dropdown';
+import { 
+  Default,
+  CustomLabel,
+  RequiredMark,
+  WithError,
+  Disabled,
+  WithPlaceholder,
+  WithImages,
+  WithSkin,
+  Controlled
+} from './Dropdown.stories.jsx';
+
+<Meta title="Forms/Dropdown" component={Dropdown}  />
+
+<Header title="Dropdown">
+    A dropdown receives user input, allowing it to choose one of several
+    options.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import Dropdown from '@catho/quantum/Dropdown';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+
+<Alert icon="warning" skin="warning">
+  <strong>Important:</strong>
+  <p>
+      The prop autocomplete was deprecated, in case you still using it,
+      we strongly suggest to switch to the component{' '}
+      <strong>
+      <a href="?path=/docs/forms--auto-complete">Auto Complete.</a>
+      </strong>
+  </p>
+</Alert>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Dropdown} />
+
+## <a id="examples"></a>Examples
+
+### With custom label
+
+<Canvas>
+  <Story story={CustomLabel}/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story story={RequiredMark}/>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story story={Disabled}/>
+</Canvas>
+
+### With error
+
+<Canvas>
+  <Story story={WithError}/>
+</Canvas>
+
+### With custom placeholder
+
+<Canvas>
+  <Story story={WithPlaceholder}/>
+</Canvas>
+
+### With images
+
+<Canvas>
+  <Story story={WithImages}/>
+</Canvas>
+
+### With skin
+
+<Canvas>
+  <Story story={WithSkin}/>
+</Canvas>
+
+### Controlled
+
+<Canvas>
+  <Story story={Controlled}/>
+</Canvas>
