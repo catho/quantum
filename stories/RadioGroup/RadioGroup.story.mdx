@@ -1,0 +1,70 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { RadioGroup, Alert } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithChildren,
+  DefaultValue,
+  Error,
+  Inline,
+  Button,
+} from './RadioGroup.stories.jsx';
+
+<Meta title="Forms/RadioGroup" component={RadioGroup}  />
+
+<Header title="Radio group">
+  Radio group is a list of radio buttons that are used when a list of two or
+  more options are mutually exclusive, meaning the user must select only one
+  option.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { RadioGroup } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+<Alert icon="info" skin="primary">
+  Also, it's possible use an alternative way to instantiate radio items, using children:
+</Alert>
+
+<Canvas>
+  <Story story={WithChildren} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={RadioGroup} />
+
+## <a id="examples"></a>Examples
+
+### Default Value
+<Canvas>
+  <Story story={DefaultValue} />
+</Canvas>
+
+### Error
+<Canvas>
+  <Story story={Error} />
+</Canvas>
+
+### Button
+<Canvas>
+  <Story story={Button} />
+</Canvas>
+
+### Inline
+<Canvas>
+  <Story story={Inline} />
+</Canvas>
