@@ -29,15 +29,13 @@ const buttonGroupOptions = [
 
 const getChildren = () =>
   options.map(({ label, name, checked, disabled }) => (
-    <>
-      <CheckboxGroup.Checkbox
-        label={label}
-        name={name}
-        checked={checked}
-        disabled={disabled}
-        key={name}
-      />
-    </>
+    <CheckboxGroup.Checkbox
+      label={label}
+      name={name}
+      checked={checked}
+      disabled={disabled}
+      key={name}
+    />
   ));
 
 const Template = ({ children, ...otherArgs }) => (
