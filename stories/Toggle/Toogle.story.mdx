@@ -1,0 +1,52 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Toggle from '../../components/Toggle';
+import { Default, Checked, WithLeftLabel, WithRightLabel } from './Toggle.stories.jsx';
+import { Header } from '../shared';
+
+<Meta title="Forms/Toggle" component={Toggle}  />
+
+<Header title="Toggle">
+    Toggle is a control that is used to quickly switch
+    between two possible states.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import Toggle from '@catho/quantum/Toggle';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Toggle} />
+
+## <a id="examples"></a>Examples
+
+### Checked
+
+<Canvas>
+  <Story story={Checked}/>
+</Canvas>
+
+### With left label
+
+<Canvas>
+  <Story story={WithLeftLabel}/>
+</Canvas>
+
+### With right label
+
+<Canvas>
+  <Story story={WithRightLabel}/>
+</Canvas>
+
+
