@@ -35,7 +35,7 @@ const TextAreaTag = styled(TextInput)`
 const FONT_SIZE = 16;
 const LINE_HEIGHT = 1.5;
 
-export const TextArea = forwardRef((props, ref) => {
+const TextArea = forwardRef((props, ref) => {
   const {
     id = ID_GENERATOR.next().value,
     value,
