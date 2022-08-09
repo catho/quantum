@@ -54,14 +54,14 @@ CustomTooltipText.args = {
 export const ControlledExample = () => {
   const [value, setValue] = useState(0);
 
-  const handleChange = updatedValue => {
+  const handleChange = (event, updatedValue) => {
     setValue(updatedValue);
   };
 
   return (
     <>
       Slider value: {value}
-      <RangeSlider defaultValue={value} onChange={handleChange} />
+      <RangeSlider defaultValue={value} onChangeCommitted={handleChange} />
     </>
   );
 };
