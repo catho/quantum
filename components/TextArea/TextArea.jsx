@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { useState, useEffect, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -36,7 +35,7 @@ const TextAreaTag = styled(TextInput)`
 const FONT_SIZE = 16;
 const LINE_HEIGHT = 1.5;
 
-export const TextAreaComponent = props => {
+const TextArea = forwardRef((props, ref) => {
   const {
     id = ID_GENERATOR.next().value,
     value,
@@ -52,7 +51,6 @@ export const TextAreaComponent = props => {
     isAutoResize,
     autoResizeConfig: { initialRows, minRows, maxRows },
     // eslint-disable-next-line react/prop-types
-    innerRef,
     ...rest
   } = props;
 
@@ -102,7 +100,7 @@ export const TextAreaComponent = props => {
       )}
       <TextAreaTag
         {...rest}
-        ref={innerRef}
+        ref={ref}
         isAutoResize={isAutoResize}
         rows={isAutoResize ? rows : undefined}
         hasDefaultValue={hasDefaultValue}
@@ -125,9 +123,9 @@ export const TextAreaComponent = props => {
       )}
     </FieldGroup>
   );
-};
+});
 
-TextAreaComponent.defaultProps = {
+TextArea.defaultProps = {
   /** Disables the default resize and activates the auto resize */
   isAutoResize: false,
   autoResizeConfig: {
@@ -148,7 +146,7 @@ TextAreaComponent.defaultProps = {
   skin: 'default',
 };
 
-TextAreaComponent.propTypes = {
+TextArea.propTypes = {
   isAutoResize: PropTypes.bool,
   autoResizeConfig: PropTypes.shape({
     initialRows: PropTypes.number,
@@ -174,6 +172,4 @@ TextAreaComponent.propTypes = {
 
 TextAreaTag.displayName = 'TextAreaTag';
 
-export default forwardRef((props, ref) => (
-  <TextAreaComponent {...props} innerRef={ref} />
-));
+export default TextArea;

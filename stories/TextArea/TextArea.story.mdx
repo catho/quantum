@@ -1,0 +1,73 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { Header } from '../shared';
+import TextArea from '../../components/TextArea';
+import { Default, Disabled, Required, WithAutoSize, WithCustomAutoSize, WithHelperText, WithError, WithLabel } from './TextArea.stories.jsx';
+
+<Meta title="Forms/TextArea" component={TextArea}  />
+
+<Header title="TextArea">
+    The TextArea component is used to make a text input field with multiple lines in a form. It is defined with the textarea tag and can hold an unlimited number of characters.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import TextArea from '@catho/quantum/TextArea';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={TextArea} />
+
+## <a id="examples"></a>Examples
+
+### Required
+
+<Canvas>
+  <Story story={Required}/>
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story story={Disabled}/>
+</Canvas>
+
+### With Auto Size
+
+<Canvas>
+  <Story story={WithAutoSize}/>
+</Canvas>
+
+### With Custom Auto Size
+
+<Canvas>
+  <Story story={WithCustomAutoSize}/>
+</Canvas>
+
+
+### With Helper Text
+
+<Canvas>
+  <Story story={WithHelperText}/>
+</Canvas>
+
+### With Label
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
+
+### With Error
+
+<Canvas>
+  <Story story={WithError}/>
+</Canvas>
