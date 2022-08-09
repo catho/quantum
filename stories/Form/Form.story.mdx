@@ -1,0 +1,63 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { Header } from '../shared';
+import { Form, Validations } from '../../components/Form';
+import {
+  ValidationList,
+  Default,
+  WithValidation,
+  WithCustomValidation
+} from './Form.stories.jsx';
+
+<Meta title="Forms/Form" component={Form}  />
+
+<Header title="Form">
+    A Form displays a set of related user input fields in a structured way,
+    some other components like validation adds check behavior of the data
+    against a set of criteria before passing it along to the server.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Form } from '@catho/quantum/Form';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Form} />
+
+## <a id="examples"></a>Examples
+
+### With validation
+
+Each child of `Form` has an property `validate`.
+It is not required but you can provide validations on it to be fired 
+when your form is submitted.
+
+<Canvas>
+  <Story story={WithValidation}/>
+</Canvas>
+
+As you can see in the example above, we also provide some useful
+validations:
+
+<ValidationList/>
+
+You can add as many validations as you want!
+
+### With custom validation
+
+You can write your custom validate function with custom error
+messages.
+
+<Canvas>
+  <Story story={WithCustomValidation}/>
+</Canvas>
