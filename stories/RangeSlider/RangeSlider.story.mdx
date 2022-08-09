@@ -1,0 +1,88 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { RangeSlider } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithMarks,
+  Disabled,
+  MinAndMax,
+  RangeUsage,
+  CustomTooltipText,
+  ControlledExample,
+} from './RangeSlider.stories.jsx';
+
+<Meta title="Forms/RangeSlider" component={RangeSlider}  />
+
+<Header title="RangeSlider">
+  RangeSlider is a component to select a value from a predefined range.
+  Through component props it's possible to set the minimum and maximum
+  values to be selected, format tooltip and label texts or disable the
+  component itself.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { RangeSlider } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={RangeSlider} />
+
+## <a id="examples"></a>Examples
+
+### With Marks
+<Canvas>
+  <Story story={WithMarks} />
+</Canvas>
+
+### Disabled
+<Canvas>
+  <Story story={Disabled} />
+</Canvas>
+
+### Min & Max
+
+You can limit the available range to be selected
+
+<Canvas>
+  <Story story={MinAndMax} />
+</Canvas>
+
+### Range usage
+
+Set value prop with an object with "to" and "from" properties
+
+<Canvas>
+  <Story story={RangeUsage} />
+</Canvas>
+
+### Custom tooltip texts
+
+You can format tooltip text through `tipFormatter` prop.
+It receives a function and should return a string. *You can hover example to see.*
+
+<Canvas>
+  <Story story={CustomTooltipText} />
+</Canvas>
+
+### Controlled example
+
+It's needed an [controlled component](https://reactjs.org/docs/react-component.html#setstate) to change the RangeSlider value.
+The same is applied when is passed an object to value prop.
+
+<Canvas>
+  <Story story={ControlledExample} />
+</Canvas>
