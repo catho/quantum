@@ -40,6 +40,7 @@ const icons = [
   'exit_to_app',
   'expand_less',
   'expand_more',
+  'favorite',
   'favorite_border',
   'filter_list',
   'folder',
