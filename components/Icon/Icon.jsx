@@ -42,6 +42,7 @@ import EventAvailable from '@material-ui/icons/EventAvailable';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 import FilterList from '@material-ui/icons/FilterList';
 import Folder from '@material-ui/icons/Folder';
@@ -142,6 +143,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     exit_to_app: ExitToApp,
     expand_less: ExpandLess,
     expand_more: ExpandMore,
+    favorite: Favorite,
     favorite_border: FavoriteBorder,
     filter_list: FilterList,
     folder: Folder,
