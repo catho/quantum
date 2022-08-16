@@ -185,7 +185,6 @@ const AutoComplete = ({
     const filteredValues = filterItems(value);
     setShowSuggestions(!!filteredValues.length);
     setFilterSuggestions(filteredValues);
-    setFilterSuggestionsLength(filteredValues.length);
   };
 
   const handleChange = value => {
@@ -204,7 +203,6 @@ const AutoComplete = ({
   const handleInputClick = () => {
     const filteredItem = filterItems(userTypedValue);
     setFilterSuggestions(filteredItem);
-    setFilterSuggestionsLength(filteredItem.length);
     setShowSuggestions(true);
   };
 
@@ -216,6 +214,8 @@ const AutoComplete = ({
 
   const handleClearValue = () => {
     setUserTypedValue('');
+    onChange('');
+    setFilterSuggestions(suggestions);
     setCursor(0);
   };
 
@@ -264,6 +264,10 @@ const AutoComplete = ({
   const upPress = useKeyPress('ArrowUp');
   const enterPress = useKeyPress('Enter');
   const tabPress = useKeyPress('Tab');
+
+  useEffect(() => {
+    setFilterSuggestionsLength(filterSuggestions?.length);
+  }, [filterSuggestions]);
 
   /* istanbul ignore next */
   useEffect(() => {
@@ -348,6 +352,7 @@ const AutoComplete = ({
           onClick={() => handleInputClick()}
           onChange={e => handleChange(e.target.value)}
           skin={skin}
+          required={required}
         />
         {userTypedValue && !error && !disabled && (
           <InputIcon
