@@ -62,7 +62,7 @@ exports[`Checkbox group should match snapshots 1`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -76,7 +76,7 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -95,7 +95,7 @@ exports[`Checkbox group should match snapshots 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -109,7 +109,7 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -128,7 +128,7 @@ exports[`Checkbox group should match snapshots 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -142,7 +142,7 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -226,7 +226,7 @@ exports[`Checkbox group should match snapshots 2`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -241,7 +241,7 @@ exports[`Checkbox group should match snapshots 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -260,7 +260,7 @@ exports[`Checkbox group should match snapshots 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -275,7 +275,7 @@ exports[`Checkbox group should match snapshots 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -359,7 +359,7 @@ exports[`Checkbox group should match snapshots 3`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -374,7 +374,7 @@ exports[`Checkbox group should match snapshots 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -393,7 +393,7 @@ exports[`Checkbox group should match snapshots 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -408,7 +408,7 @@ exports[`Checkbox group should match snapshots 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -492,7 +492,7 @@ exports[`Checkbox group should match snapshots 4`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -506,7 +506,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -525,7 +525,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -539,7 +539,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -558,7 +558,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -572,7 +572,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -591,7 +591,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -606,7 +606,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -625,7 +625,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -640,7 +640,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -659,7 +659,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -674,7 +674,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -693,7 +693,7 @@ exports[`Checkbox group should match snapshots 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -708,7 +708,7 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -807,7 +807,7 @@ exports[`Checkbox group should match snapshots 5`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -821,7 +821,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -840,7 +840,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -854,7 +854,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -873,7 +873,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -887,7 +887,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -906,7 +906,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -921,7 +921,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -940,7 +940,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -955,7 +955,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -974,7 +974,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -989,7 +989,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1008,7 +1008,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1023,7 +1023,7 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1116,7 +1116,7 @@ exports[`Checkbox group should match snapshots 6`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1130,7 +1130,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1149,7 +1149,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1163,7 +1163,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1182,7 +1182,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1196,7 +1196,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1215,7 +1215,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1230,7 +1230,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1249,7 +1249,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1264,7 +1264,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1283,7 +1283,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1298,7 +1298,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1317,7 +1317,7 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1332,7 +1332,7 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1420,7 +1420,7 @@ exports[`Checkbox group should match snapshots 7`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1434,7 +1434,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1453,7 +1453,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1467,7 +1467,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1486,7 +1486,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1500,7 +1500,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1519,7 +1519,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1534,7 +1534,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1553,7 +1553,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1568,7 +1568,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1587,7 +1587,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1602,7 +1602,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1621,7 +1621,7 @@ exports[`Checkbox group should match snapshots 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1636,7 +1636,7 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1720,7 +1720,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1734,7 +1734,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1753,7 +1753,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1767,7 +1767,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1786,7 +1786,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1800,7 +1800,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1819,7 +1819,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1834,7 +1834,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1853,7 +1853,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1868,7 +1868,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1887,7 +1887,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1902,7 +1902,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -1921,7 +1921,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -1936,7 +1936,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2020,7 +2020,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2034,7 +2034,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2053,7 +2053,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2067,7 +2067,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2086,7 +2086,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2100,7 +2100,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2119,7 +2119,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2134,7 +2134,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2153,7 +2153,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2168,7 +2168,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2187,7 +2187,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2202,7 +2202,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2221,7 +2221,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2236,7 +2236,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2320,7 +2320,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2334,7 +2334,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2353,7 +2353,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2367,7 +2367,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2386,7 +2386,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2400,7 +2400,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2419,7 +2419,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2434,7 +2434,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2453,7 +2453,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2468,7 +2468,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2487,7 +2487,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2502,7 +2502,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2521,7 +2521,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2536,7 +2536,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2620,7 +2620,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2634,7 +2634,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2653,7 +2653,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2667,7 +2667,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2686,7 +2686,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2700,7 +2700,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2719,7 +2719,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2734,7 +2734,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2753,7 +2753,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2768,7 +2768,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2787,7 +2787,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2802,7 +2802,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2821,7 +2821,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2836,7 +2836,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2920,7 +2920,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2934,7 +2934,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2953,7 +2953,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -2967,7 +2967,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -2986,7 +2986,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3000,7 +3000,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3019,7 +3019,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3034,7 +3034,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3053,7 +3053,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3068,7 +3068,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3087,7 +3087,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3102,7 +3102,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3121,7 +3121,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3136,7 +3136,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3220,7 +3220,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3234,7 +3234,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3253,7 +3253,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3267,7 +3267,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3286,7 +3286,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3300,7 +3300,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3319,7 +3319,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3334,7 +3334,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3353,7 +3353,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3368,7 +3368,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3387,7 +3387,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3402,7 +3402,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3421,7 +3421,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3436,7 +3436,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3520,7 +3520,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3534,7 +3534,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3553,7 +3553,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3567,7 +3567,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3586,7 +3586,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3600,7 +3600,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3619,7 +3619,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3634,7 +3634,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3653,7 +3653,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3668,7 +3668,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3687,7 +3687,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3702,7 +3702,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3721,7 +3721,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3736,7 +3736,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3820,7 +3820,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
     class="c0 c1"
   >
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3834,7 +3834,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3853,7 +3853,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3867,7 +3867,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3886,7 +3886,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3900,7 +3900,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3919,7 +3919,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3934,7 +3934,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3953,7 +3953,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -3968,7 +3968,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -3987,7 +3987,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -4002,7 +4002,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4021,7 +4021,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="Checkbox__Wrapper-sc-1ca5whm-0"
+      class=""
     >
       <div
         class="c2"
@@ -4036,7 +4036,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root Checkbox__CheckIcon-sc-1ca5whm-3"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4102,7 +4102,7 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
         for="checkbox-button-0"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-0"
           name="Foo"
           type="checkbox"
@@ -4119,7 +4119,7 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
         for="checkbox-button-1"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-1"
           name="Bar"
           type="checkbox"
@@ -4136,7 +4136,7 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
         for="checkbox-button-2"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-2"
           name="Baz"
           type="checkbox"
@@ -4194,7 +4194,7 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-3"
           name="Checked Option 1"
           type="checkbox"
@@ -4212,7 +4212,7 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-4"
           name="Checked Option 2"
           type="checkbox"
@@ -4270,7 +4270,7 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         for="checkbox-button-5"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-5"
           name="Disabled Option 1"
@@ -4280,7 +4280,7 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4301,7 +4301,7 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         for="checkbox-button-6"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-6"
           name="Disabled Option 2"
@@ -4311,7 +4311,7 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4371,7 +4371,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         for="checkbox-button-7"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-7"
           name="Foo"
           type="checkbox"
@@ -4388,7 +4388,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         for="checkbox-button-8"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-8"
           name="Bar"
           type="checkbox"
@@ -4405,7 +4405,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         for="checkbox-button-9"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-9"
           name="Baz"
           type="checkbox"
@@ -4423,7 +4423,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-10"
           name="Checked Option 1"
           type="checkbox"
@@ -4441,7 +4441,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-11"
           name="Checked Option 2"
           type="checkbox"
@@ -4459,7 +4459,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         for="checkbox-button-12"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-12"
           name="Disabled Option 1"
@@ -4469,7 +4469,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4490,7 +4490,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         for="checkbox-button-13"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-13"
           name="Disabled Option 2"
@@ -4500,7 +4500,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4571,7 +4571,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         for="checkbox-button-14"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-14"
           name="Foo"
           type="checkbox"
@@ -4588,7 +4588,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         for="checkbox-button-15"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-15"
           name="Bar"
           type="checkbox"
@@ -4605,7 +4605,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         for="checkbox-button-16"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-16"
           name="Baz"
           type="checkbox"
@@ -4623,7 +4623,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-17"
           name="Checked Option 1"
           type="checkbox"
@@ -4641,7 +4641,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-18"
           name="Checked Option 2"
           type="checkbox"
@@ -4659,7 +4659,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         for="checkbox-button-19"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-19"
           name="Disabled Option 1"
@@ -4669,7 +4669,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4690,7 +4690,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         for="checkbox-button-20"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-20"
           name="Disabled Option 2"
@@ -4700,7 +4700,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4775,7 +4775,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         for="checkbox-button-21"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-21"
           name="Foo"
           type="checkbox"
@@ -4792,7 +4792,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         for="checkbox-button-22"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-22"
           name="Bar"
           type="checkbox"
@@ -4809,7 +4809,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         for="checkbox-button-23"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-23"
           name="Baz"
           type="checkbox"
@@ -4827,7 +4827,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-24"
           name="Checked Option 1"
           type="checkbox"
@@ -4845,7 +4845,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-25"
           name="Checked Option 2"
           type="checkbox"
@@ -4863,7 +4863,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         for="checkbox-button-26"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-26"
           name="Disabled Option 1"
@@ -4873,7 +4873,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4894,7 +4894,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         for="checkbox-button-27"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-27"
           name="Disabled Option 2"
@@ -4904,7 +4904,7 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -4964,7 +4964,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-28"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-28"
           name="Foo"
           type="checkbox"
@@ -4981,7 +4981,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-29"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-29"
           name="Bar"
           type="checkbox"
@@ -4998,7 +4998,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-30"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-30"
           name="Baz"
           type="checkbox"
@@ -5016,7 +5016,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-31"
           name="Checked Option 1"
           type="checkbox"
@@ -5034,7 +5034,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-32"
           name="Checked Option 2"
           type="checkbox"
@@ -5052,7 +5052,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-33"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-33"
           name="Disabled Option 1"
@@ -5062,7 +5062,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5083,7 +5083,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-34"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-34"
           name="Disabled Option 2"
@@ -5093,7 +5093,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5113,7 +5113,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-35"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-35"
           name="With value"
           type="checkbox"
@@ -5130,7 +5130,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         for="checkbox-button-36"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-36"
           name="Another name"
           type="checkbox"
@@ -5187,7 +5187,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-37"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-37"
           name="Foo"
           type="checkbox"
@@ -5204,7 +5204,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-38"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-38"
           name="Bar"
           type="checkbox"
@@ -5221,7 +5221,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-39"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-39"
           name="Baz"
           type="checkbox"
@@ -5239,7 +5239,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-40"
           name="Checked Option 1"
           type="checkbox"
@@ -5257,7 +5257,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-41"
           name="Checked Option 2"
           type="checkbox"
@@ -5275,7 +5275,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-42"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-42"
           name="Disabled Option 1"
@@ -5285,7 +5285,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5306,7 +5306,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-43"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-43"
           name="Disabled Option 2"
@@ -5316,7 +5316,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5386,7 +5386,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-44"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-44"
           name="Foo"
           type="checkbox"
@@ -5403,7 +5403,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-45"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-45"
           name="Bar"
           type="checkbox"
@@ -5420,7 +5420,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-46"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-46"
           name="Baz"
           type="checkbox"
@@ -5438,7 +5438,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-47"
           name="Checked Option 1"
           type="checkbox"
@@ -5456,7 +5456,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-48"
           name="Checked Option 2"
           type="checkbox"
@@ -5474,7 +5474,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-49"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-49"
           name="Disabled Option 1"
@@ -5484,7 +5484,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5505,7 +5505,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-50"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-50"
           name="Disabled Option 2"
@@ -5515,7 +5515,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5575,7 +5575,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-51"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-51"
           name="Foo"
           type="checkbox"
@@ -5592,7 +5592,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-52"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-52"
           name="Bar"
           type="checkbox"
@@ -5609,7 +5609,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-53"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-53"
           name="Baz"
           type="checkbox"
@@ -5627,7 +5627,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-54"
           name="Checked Option 1"
           type="checkbox"
@@ -5645,7 +5645,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-55"
           name="Checked Option 2"
           type="checkbox"
@@ -5663,7 +5663,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-56"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-56"
           name="Disabled Option 1"
@@ -5673,7 +5673,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5694,7 +5694,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-57"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-57"
           name="Disabled Option 2"
@@ -5704,7 +5704,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5774,7 +5774,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-58"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-58"
           name="Foo"
           type="checkbox"
@@ -5791,7 +5791,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-59"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-59"
           name="Bar"
           type="checkbox"
@@ -5808,7 +5808,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-60"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-60"
           name="Baz"
           type="checkbox"
@@ -5826,7 +5826,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-61"
           name="Checked Option 1"
           type="checkbox"
@@ -5844,7 +5844,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-62"
           name="Checked Option 2"
           type="checkbox"
@@ -5862,7 +5862,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-63"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-63"
           name="Disabled Option 1"
@@ -5872,7 +5872,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5893,7 +5893,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-64"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-64"
           name="Disabled Option 2"
@@ -5903,7 +5903,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -5963,7 +5963,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-65"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-65"
           name="Foo"
           type="checkbox"
@@ -5980,7 +5980,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-66"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-66"
           name="Bar"
           type="checkbox"
@@ -5997,7 +5997,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-67"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-67"
           name="Baz"
           type="checkbox"
@@ -6015,7 +6015,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-68"
           name="Checked Option 1"
           type="checkbox"
@@ -6033,7 +6033,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-69"
           name="Checked Option 2"
           type="checkbox"
@@ -6051,7 +6051,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-70"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-70"
           name="Disabled Option 1"
@@ -6061,7 +6061,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6082,7 +6082,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-71"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-71"
           name="Disabled Option 2"
@@ -6092,7 +6092,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6162,7 +6162,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-72"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-72"
           name="Foo"
           type="checkbox"
@@ -6179,7 +6179,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-73"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-73"
           name="Bar"
           type="checkbox"
@@ -6196,7 +6196,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-74"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-74"
           name="Baz"
           type="checkbox"
@@ -6214,7 +6214,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-75"
           name="Checked Option 1"
           type="checkbox"
@@ -6232,7 +6232,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-76"
           name="Checked Option 2"
           type="checkbox"
@@ -6250,7 +6250,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-77"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-77"
           name="Disabled Option 1"
@@ -6260,7 +6260,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6281,7 +6281,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-78"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-78"
           name="Disabled Option 2"
@@ -6291,7 +6291,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6351,7 +6351,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-79"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-79"
           name="Foo"
           type="checkbox"
@@ -6368,7 +6368,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-80"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-80"
           name="Bar"
           type="checkbox"
@@ -6385,7 +6385,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-81"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-81"
           name="Baz"
           type="checkbox"
@@ -6403,7 +6403,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-82"
           name="Checked Option 1"
           type="checkbox"
@@ -6421,7 +6421,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           id="checkbox-button-83"
           name="Checked Option 2"
           type="checkbox"
@@ -6439,7 +6439,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-84"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-84"
           name="Disabled Option 1"
@@ -6449,7 +6449,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6470,7 +6470,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-85"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c3"
+          class="c3"
           disabled=""
           id="checkbox-button-85"
           name="Disabled Option 2"
@@ -6480,7 +6480,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6550,7 +6550,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-86"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-86"
           name="Foo"
           type="checkbox"
@@ -6567,7 +6567,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-87"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-87"
           name="Bar"
           type="checkbox"
@@ -6584,7 +6584,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-88"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-88"
           name="Baz"
           type="checkbox"
@@ -6602,7 +6602,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-89"
           name="Checked Option 1"
           type="checkbox"
@@ -6620,7 +6620,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       >
         <input
           checked=""
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           id="checkbox-button-90"
           name="Checked Option 2"
           type="checkbox"
@@ -6638,7 +6638,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-91"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-91"
           name="Disabled Option 1"
@@ -6648,7 +6648,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -6669,7 +6669,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         for="checkbox-button-92"
       >
         <input
-          class="CheckboxButton__HiddenCheckbox-sc-1rvg70v-0 c4"
+          class="c4"
           disabled=""
           id="checkbox-button-92"
           name="Disabled Option 2"
@@ -6679,7 +6679,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root CheckboxButton__LockIcon-sc-1rvg70v-1"
+          class="MuiSvgIcon-root "
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"

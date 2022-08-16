@@ -21,7 +21,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -60,7 +60,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -102,7 +102,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -159,7 +159,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -212,7 +212,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -254,7 +254,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"
@@ -353,7 +353,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 <div
-  class="RadioButton__Wrapper-sc-1q7g63p-2"
+  class=""
 >
   <label
     class="c0"

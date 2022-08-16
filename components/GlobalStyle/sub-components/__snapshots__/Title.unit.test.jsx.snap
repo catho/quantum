@@ -3,7 +3,7 @@
 exports[`<Title /> Should match the snapshot 1`] = `
 <DocumentFragment>
   <h1
-    class="Title-sc-1vnr32k-0"
+    class=""
   />
 </DocumentFragment>
 `;

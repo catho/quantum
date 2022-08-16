@@ -588,7 +588,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   </div>
   
   <span
-    class="InputErrorMessage-sc-s0eyav-0 c5"
+    class="c5"
   >
     Error message
   </span>
@@ -2369,7 +2369,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
   </div>
   
   <span
-    class="InputErrorMessage-sc-s0eyav-0 c5"
+    class="c5"
   >
     Error message
   </span>

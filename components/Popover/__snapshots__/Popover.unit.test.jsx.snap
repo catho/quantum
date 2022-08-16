@@ -161,7 +161,7 @@ exports[`Popover component should match snapshots 1`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -358,7 +358,7 @@ exports[`Popover component should match snapshots 2`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -559,7 +559,7 @@ exports[`Popover component should match snapshots 3`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -764,7 +764,7 @@ exports[`Popover component should match snapshots 4`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -973,7 +973,7 @@ exports[`Popover component should match snapshots 5`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -1182,7 +1182,7 @@ exports[`Popover component should match snapshots 6`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -1388,7 +1388,7 @@ exports[`Popover component should match snapshots 7`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -1594,7 +1594,7 @@ exports[`Popover component should match snapshots 8`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
@@ -1803,7 +1803,7 @@ exports[`Popover component should match snapshots 9`] = `
       class="c1"
     >
       <div
-        class="Content__PopoverChildren-sc-1005q1-2"
+        class=""
       >
         This is a hint
       </div>
