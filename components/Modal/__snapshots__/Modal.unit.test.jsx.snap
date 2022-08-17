@@ -265,41 +265,228 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 `;
 
 exports[`<Modal /> Snapshots should match the snapshot 2`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px 16px 0;
+}
+
+.c3 > * {
+  margin-right: 16px;
+}
+
+.c3 > *:last-child {
+  margin-right: 0;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+}
+
+.c6 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.c8 {
+  margin: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.c10 {
+  padding: 0 16px 16px;
+}
+
+.c0 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: #ffffff;
+}
+
+.c15 {
+  pointer-events: none;
+  width: 24px;
+}
+
+.c15.with-children {
+  margin-right: 8px;
+}
+
+.c11 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: undefinedpx;
+  line-height: NaNpx;
+  min-height: 40px;
+  padding: 4px 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #424242;
+  color: #ffffff;
+  border: 2px solid #424242;
+  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+}
+
+.c11:hover {
+  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
+  background-color: #191919;
+  border-color: #191919;
+}
+
+.c11:focus,
+.c11:focus-within {
+  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+}
+
+.c11:active {
+  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
+  background-color: #191919;
+}
+
+.c12 {
+  border-radius: 50%;
+  border: none;
+  color: rgba(153,153,153,0.5);
+  width: 40px;
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.c12 .c14 {
+  margin-right: 0;
+}
+
+.c12:hover,
+.c12:focus {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.4);
+  color: #424242;
+}
+
+.c12:active {
+  box-shadow: none;
+  background-color: rgba(224,224,224,0.5);
+  color: #424242;
+}
+
+.c9 {
+  font-size: 16px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.c4 {
+  padding: 16px 16px 0;
+}
+
+.c7 {
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.c1 .c2 {
+  padding-right: 64px;
+}
+
+.c13 {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+@media (min-width:0px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .c1 {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    width: 800px;
+  }
+}
+
 <article
-  class="Card__CardWrapper-sc-om5cci-0 byYZDy Modal__ModalCard-sc-300qpr-0 hSBPjY"
+  class="c0 c1"
   tabindex="0"
 >
   <header
-    class="Header-sc-1u94v40-0 Header-sc-13ddtbk-0 dCgzVJ fDbxUf"
+    class="c2 c3 c4"
   >
     <div
-      class="HeaderText-sc-15zd9gn-0 ijgygi"
+      class="c5"
     >
       <h2
-        class="Title__Heading-sc-14fvmc0-0 dcJnxG Title-sc-hr7zki-0 ifyqdA"
+        class="c6 c7"
       >
         Modal title
       </h2>
     </div>
   </header>
   <div
-    class="Content-sc-6vzg5x-0 Content-sc-9f5o6t-0 fTmjTS eUxRPn"
+    class="c8 c9"
   >
     Modal Content
   </div>
   <footer
-    class="Footer-sc-pp401c-0 hbvQdI"
+    class="c10"
   >
     ModalFooter
   </footer>
   <button
     aria-label="close dialog"
-    class="Button__StyledButton-sc-1ovnfsw-1 bUDDDV Button__IconButton-sc-1ovnfsw-2 Modal__CloseIcon-sc-300qpr-1 gZOwys ivpFOB"
+    class="c11 c12 c13"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root Button__ButtonIcon-sc-1ovnfsw-0 dLtiPk"
+      class="MuiSvgIcon-root c14 c15"
       data-qtm-preloader="icon"
       focusable="false"
       style="font-size: 24px; max-width: 24px;"

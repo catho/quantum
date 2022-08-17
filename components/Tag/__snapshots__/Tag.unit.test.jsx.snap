@@ -16,7 +16,7 @@ exports[`<Tag /> Inverted prop error 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -39,7 +39,7 @@ exports[`<Tag /> Inverted prop neutral 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -62,7 +62,7 @@ exports[`<Tag /> Inverted prop primary 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -85,7 +85,7 @@ exports[`<Tag /> Inverted prop success 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -108,7 +108,7 @@ exports[`<Tag /> Inverted prop warning 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -132,7 +132,7 @@ exports[`<Tag /> Sizes large 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -155,7 +155,7 @@ exports[`<Tag /> Sizes medium 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -181,7 +181,7 @@ exports[`<Tag /> Sizes small 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -204,7 +204,7 @@ exports[`<Tag /> Skins error 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -227,7 +227,7 @@ exports[`<Tag /> Skins primary 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -250,7 +250,7 @@ exports[`<Tag /> Skins success 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -273,7 +273,7 @@ exports[`<Tag /> Skins warning 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -296,7 +296,7 @@ exports[`<Tag /> Stroked prop error 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -319,7 +319,7 @@ exports[`<Tag /> Stroked prop neutral 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -342,7 +342,7 @@ exports[`<Tag /> Stroked prop primary 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -365,7 +365,7 @@ exports[`<Tag /> Stroked prop success 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -388,7 +388,7 @@ exports[`<Tag /> Stroked prop warning 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -1882,7 +1882,7 @@ exports[`<Tag /> with bold prop 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>
@@ -1905,7 +1905,7 @@ exports[`<Tag /> with only text prop / children 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     example
   </div>
@@ -1928,7 +1928,7 @@ exports[`<Tag /> with only text prop / children 2`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     example
   </div>
@@ -1951,7 +1951,7 @@ exports[`<Tag /> without props 1`] = `
   class="c0"
 >
   <div
-    class="Tag__Content-sc-1i8fike-1"
+    class=""
   >
     Tag text
   </div>

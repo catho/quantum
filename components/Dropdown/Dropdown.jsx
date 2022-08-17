@@ -169,8 +169,8 @@ DropContainer.displayName = 'DropContainer';
 
 const _getValue = item => (item ? item.value || item.label || item : '');
 const _getLabel = item => (item ? item.label || item.value || item : '');
-const _getImage = item => (item ? item.img : null);
-const _getImageAlt = item => (item ? item.alt : null);
+const _getImage = ({ img }) => img;
+const _getImageAlt = ({ alt }) => alt;
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
 
 const itemPropType = PropTypes.oneOfType([

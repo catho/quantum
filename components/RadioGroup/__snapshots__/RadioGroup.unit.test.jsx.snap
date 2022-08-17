@@ -103,7 +103,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   role="radiogroup"
 >
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"
@@ -120,7 +120,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"
@@ -137,7 +137,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     </label>
   </div>
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"
@@ -446,7 +446,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   role="radiogroup"
 >
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"
@@ -463,7 +463,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     </label>
   </div>
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"
@@ -480,7 +480,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     </label>
   </div>
   <div
-    class="RadioButton__Wrapper-sc-1q7g63p-2"
+    class=""
   >
     <label
       class="c2"

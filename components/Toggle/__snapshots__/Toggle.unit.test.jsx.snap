@@ -69,7 +69,7 @@ exports[`<Toggle />  should match snapshot with checked prop 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root Toggle__CloseIcon-sc-17b9usn-1"
+        class="MuiSvgIcon-root "
         data-qtm-preloader="icon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
@@ -81,7 +81,7 @@ exports[`<Toggle />  should match snapshot with checked prop 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root Toggle__CheckIcon-sc-17b9usn-0"
+        class="MuiSvgIcon-root "
         data-qtm-preloader="icon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
@@ -164,7 +164,7 @@ exports[`<Toggle />  should match snapshot without props 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root Toggle__CloseIcon-sc-17b9usn-1"
+        class="MuiSvgIcon-root "
         data-qtm-preloader="icon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
@@ -176,7 +176,7 @@ exports[`<Toggle />  should match snapshot without props 1`] = `
       </svg>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root Toggle__CheckIcon-sc-17b9usn-0"
+        class="MuiSvgIcon-root "
         data-qtm-preloader="icon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
