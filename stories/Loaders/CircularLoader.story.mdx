@@ -1,0 +1,43 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+import Header from '../shared/Header';
+import CircularLoader from '../../components/CircularLoader';
+import { Default, WithSkin, WithSize } from './CircularLoader.stories.jsx';
+
+<Meta title="Loaders/CircularLoader" component={CircularLoader} />
+
+<Header title="CircularLoader">
+    CircularLoaders are used to give the user the impression of loading while a component is not ready to be displayed.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import CircularLoader from '@catho/quantum/CircularLoader';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={CircularLoader} />
+
+## <a id="examples"></a>Examples
+
+### With skin
+
+<Canvas>
+  <Story story={WithSkin}/>
+</Canvas>
+
+### With size
+
+<Canvas>
+  <Story story={WithSize}/>
+</Canvas>

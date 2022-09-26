@@ -1,0 +1,50 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+import Header from '../shared/Header';
+import ProgressBar from '../../components/ProgressBar';
+import { Default, WithProgressPercent, WithProgressText, WithLabel} from './ProgressBar.stories.jsx';
+
+<Meta title="Loaders/ProgressBar" component={ProgressBar} />
+
+<Header title="ProgressBar">
+    Progress bars are used to give the user a feedback to the progress of a process or an action.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import ProgressBar from '@catho/quantum/ProgressBar';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={ProgressBar} />
+
+## <a id="examples"></a>Examples
+
+### With progress percent
+
+<Canvas>
+  <Story story={WithProgressPercent}/>
+</Canvas>
+
+### With progress text
+
+<Canvas>
+  <Story story={WithProgressText}/>
+</Canvas>
+
+
+### With label
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
