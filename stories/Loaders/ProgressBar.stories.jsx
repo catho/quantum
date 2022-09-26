@@ -11,7 +11,7 @@ WithProgressPercent.args = {
 
 export const WithProgressText = Template.bind({});
 WithProgressText.args = {
-  progressText: 'percent to finish ',
+  progressText: 1,
 };
 
 export const WithLabel = Template.bind({});

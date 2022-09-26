@@ -4,17 +4,7 @@ import Header from '../shared/Header';
 import CircularLoader from '../../components/CircularLoader';
 import { Default, WithSkin, WithSize } from './CircularLoader.stories.jsx';
 
-<Meta 
-  title="Loaders/CircularLoader" 
-  parameters={{
-    previewTabs: { 
-      'storybook/docs/panel': null, 
-      canvas: {
-        hidden: true,
-      },
-    },
-  }}
-/>
+<Meta title="Loaders/CircularLoader" component={CircularLoader} />
 
 <Header title="CircularLoader">
     CircularLoaders are used to give the user the impression of loading while a component is not ready to be displayed.

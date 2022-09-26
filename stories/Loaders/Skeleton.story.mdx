@@ -5,17 +5,7 @@ import Header from '../shared/Header';
 import Skeleton from '../../components/Skeleton';
 import { Default, WithType, WithSize } from './Skeleton.stories.jsx';
 
-<Meta 
-  title="Loaders/Skeleton" 
-  parameters={{
-    previewTabs: { 
-      'storybook/docs/panel': null, 
-      canvas: {
-        hidden: true,
-      },
-    },
-  }}
-/>
+<Meta title="Loaders/Skeleton" component={Skeleton} />
 
 <Header title="Skeleton">
     A component that replaces others while they are loading or not ready to render.

@@ -4,17 +4,7 @@ import Header from '../shared/Header';
 import ProgressBar from '../../components/ProgressBar';
 import { Default, WithProgressPercent, WithProgressText, WithLabel} from './ProgressBar.stories.jsx';
 
-<Meta 
-  title="Loaders/ProgressBar" 
-  parameters={{
-    previewTabs: { 
-      'storybook/docs/panel': null, 
-      canvas: {
-        hidden: true,
-      },
-    },
-  }}
-/>
+<Meta title="Loaders/ProgressBar" component={ProgressBar} />
 
 <Header title="ProgressBar">
     Progress bars are used to give the user a feedback to the progress of a process or an action.
