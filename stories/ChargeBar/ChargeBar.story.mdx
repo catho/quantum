@@ -1,0 +1,49 @@
+
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { Header } from '../shared';
+import ChargeBar from '../../components/ChargeBar';
+import { Default, WithSkin, WithProgressPercent, WithLabel } from './ChargeBar.stories.jsx';
+
+<Meta title="ChargeBar" component={ChargeBar}  />
+
+<Header title="ChargeBar">
+    ChargeBar shows the level the user is to be able to complete their stats to the maximum.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import ChargeBar from '@catho/quantum/ChargeBar';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={ChargeBar} />
+
+## <a id="examples"></a>Examples
+
+### With skin
+
+<Canvas>
+  <Story story={WithSkin}/>
+</Canvas>
+
+### With progress percent
+
+<Canvas>
+  <Story story={WithProgressPercent}/>
+</Canvas>
+
+### With custom label
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
