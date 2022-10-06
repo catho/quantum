@@ -66,6 +66,14 @@ describe('<Pagination />', () => {
         render(<Pagination totalPages={10} />).asFragment(),
       ).toMatchSnapshot();
     });
+
+    it('should match snapshot when last pagination is not displayed', () => {
+      expect(
+        render(
+          <Pagination totalPages={10} showLastPagination={false} />,
+        ).asFragment(),
+      ).toMatchSnapshot();
+    });
   });
 
   describe('onPageClick prop', () => {

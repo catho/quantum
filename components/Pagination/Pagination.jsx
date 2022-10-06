@@ -33,6 +33,7 @@ class Pagination extends Component {
       infoFormatter,
       tabIndex,
       followOnlyFirstPage,
+      showLastPagination,
       ...props
     } = this.props;
 
@@ -70,6 +71,7 @@ class Pagination extends Component {
       pageAriaLabel,
       infoFormatter,
       followOnlyFirstPage,
+      showLastPagination,
     };
     return (
       <>
@@ -113,6 +115,8 @@ Pagination.propTypes = {
   infoFormatter: PropTypes.func,
   /** If true, add rel="nofollow" property to all pagination buttons except page 1. */
   followOnlyFirstPage: PropTypes.bool,
+  /** If false, total pages will disappear. */
+  showLastPagination: PropTypes.bool,
 };
 
 Pagination.defaultProps = {
@@ -127,6 +131,7 @@ Pagination.defaultProps = {
   onPageClick: undefined,
   infoFormatter: undefined,
   followOnlyFirstPage: false,
+  showLastPagination: true,
 };
 
 export default Pagination;

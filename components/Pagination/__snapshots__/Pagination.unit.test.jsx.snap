@@ -1,5 +1,399 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Pagination /> Snapshots should match snapshot when last pagination is not displayed 1`] = `
+<DocumentFragment>
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c5 {
+  display: inline-block;
+  margin: 0 4px;
+  min-width: 22px;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c6,
+.c6:after,
+.c6:before {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.c6:after,
+.c6:before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.c6:after {
+  left: 8px;
+}
+
+.c6:before {
+  left: 16px;
+}
+
+.c3 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #1250C4;
+  border: 1px solid #1250C4;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #002F7B;
+  border-color: #002F7B;
+  color: #ffffff;
+}
+
+.c4 {
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #424242;
+  font-size: 16px;
+  margin: 0 4px;
+  padding: 4px 8px;
+}
+
+.c4:hover,
+.c4:focus {
+  background-color: #E5EDFC;
+  border-color: #1250C4;
+  color: #1250C4;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+}
+
+@media (min-width:1440px) {
+
+}
+
+<div
+    class="c0"
+  >
+    <nav
+      aria-label="pagination"
+      class="c1"
+    >
+      <a
+        aria-disabled="true"
+        class="c2"
+        tabindex="0"
+      >
+        Previous
+      </a>
+      <a
+        aria-current="page"
+        aria-label="Current Page, Page 1"
+        class="c3"
+        tabindex="0"
+      >
+        1
+      </a>
+      <a
+        aria-current="false"
+        aria-label="Page 2"
+        class="c4"
+        tabindex="0"
+      >
+        2
+      </a>
+      <a
+        aria-current="false"
+        aria-label="Page 3"
+        class="c4"
+        tabindex="0"
+      >
+        3
+      </a>
+      <a
+        aria-current="false"
+        aria-label="Page 4"
+        class="c4"
+        tabindex="0"
+      >
+        4
+      </a>
+      <div
+        class="c5"
+      >
+        <span
+          class="c6"
+        />
+      </div>
+      <a
+        aria-disabled="false"
+        class="c2"
+        tabindex="0"
+      >
+        Next
+      </a>
+    </nav>
+  </div>
+  .c2 {
+  cursor: pointer;
+  font-weight: normal;
+  outline: none;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  margin: 0 4px;
+  padding: 8px 16px;
+  color: #1250C4;
+}
+
+.c2[aria-disabled=true] {
+  display: none;
+}
+
+.c2[aria-disabled=false]:hover,
+.c2[aria-disabled=false]:focus {
+  background-color: #E5EDFC;
+  border: 2px solid #1250C4;
+}
+
+.c4 {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-color: #e0e0e0;
+  color: #424242;
+  padding: 8px 16px;
+}
+
+.c3 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.c3[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c3[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c5 {
+  border-color: #e0e0e0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+
+.c5[aria-disabled=true] {
+  color: #e0e0e0;
+  display: block;
+}
+
+.c5[aria-disabled=false]:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (max-width:599px) {
+
+}
+
+@media (min-width:600px) and (max-width:1023px) {
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1440px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <nav
+      aria-label="pagination"
+      class="c1"
+    >
+      <a
+        aria-disabled="true"
+        class="c2 c3"
+        tabindex="0"
+      >
+        Previous
+      </a>
+      <span
+        class="c4"
+      >
+        1 of 10
+      </span>
+      <a
+        aria-disabled="false"
+        class="c2 c5"
+        tabindex="0"
+      >
+        Next
+      </a>
+    </nav>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
 <DocumentFragment>
   .c2 {
