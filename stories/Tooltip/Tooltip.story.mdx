@@ -1,0 +1,58 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Tooltip from '../../components/Tooltip';
+import {
+  Default,
+  Multiline,
+  WithPlacement,
+  Visible,
+} from './Tooltip.stories.jsx';
+import { Header } from '../shared';
+
+<Meta
+  title="Tooltip"
+  component={Tooltip}
+/>
+
+<Header title="Tooltip">
+  Tooltips provide additional information upon hover or focus. They often
+  contain helper text that is contextual to an element.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import Tooltip from '@catho/quantum/Tooltip';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Tooltip} />
+
+## <a id="examples"></a>Examples
+
+### Multiline
+
+<Canvas>
+  <Story story={Multiline} />
+</Canvas>
+
+### With placement
+
+<Canvas>
+  <Story story={WithPlacement} />
+</Canvas>
+
+### Visible
+
+<Canvas>
+  <Story story={Visible} />
+</Canvas>
