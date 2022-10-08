@@ -78,7 +78,6 @@ Desktop.propTypes = {
   nextButtonText: PropTypes.string,
   pageAriaLabel: PropTypes.string,
   followOnlyFirstPage: PropTypes.bool,
-  showLastPagination: PropTypes.bool,
 };
 
 Desktop.defaultProps = {
@@ -91,7 +90,6 @@ Desktop.defaultProps = {
   prevButtonText: 'Previous',
   handlePageClick: undefined,
   followOnlyFirstPage: false,
-  showLastPagination: true,
 };
 
 export default Desktop;
