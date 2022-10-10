@@ -25,7 +25,7 @@ const getNumberPages = (active, total) => {
 const pagination = ({
   totalPages = 1,
   activePage = 1,
-  showLastPagination = true,
+  showLastPagination,
 } = {}) => {
   if (totalPages <= 5) {
     return Array.from({ length: totalPages }, (_, i) => i + 1);

@@ -78,6 +78,7 @@ Desktop.propTypes = {
   nextButtonText: PropTypes.string,
   pageAriaLabel: PropTypes.string,
   followOnlyFirstPage: PropTypes.bool,
+  showLastPagination: PropTypes.bool.isRequired,
 };
 
 Desktop.defaultProps = {
