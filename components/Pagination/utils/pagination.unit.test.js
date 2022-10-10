@@ -25,9 +25,7 @@ describe('Pagination', () => {
         });
 
         it('should return [1, 2, 3, 4, "...", 7] when totalPages is 7', () => {
-          expect(
-            pagination({ totalPages: 7, showLastPagination: true }),
-          ).toEqual([1, 2, 3, 4, '...', 7]);
+          expect(pagination({ totalPages: 7 })).toEqual([1, 2, 3, 4, '...', 7]);
         });
 
         it('should return [1, 2, 3, 4, "..."] when totalPages is 7 and showLastPagination as false', () => {
@@ -44,7 +42,6 @@ describe('Pagination', () => {
           pagination({
             totalPages: 100,
             activePage: 50,
-            showLastPagination: true,
           }),
         ).toEqual([1, '...', 49, 50, 51, '...', 100]);
       });
