@@ -1,0 +1,66 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Tag from '../../components/Tag';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  Skin,
+  Inverted,
+  Stroked,
+  Closable
+} from './Tag.stories.jsx';
+
+<Meta title="Tag" component={Tag} />
+
+<Header title="Tag">
+  Tags are Used to make stylized markings.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Tag } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Tag} />
+
+## <a id="examples"></a>Examples
+
+### Skin
+
+<Canvas>
+  <Story story={Skin} />
+</Canvas>
+
+### Inverted
+
+<Canvas>
+  <Story story={Inverted} />
+</Canvas>
+
+### Stroked
+
+<Canvas>
+  <Story story={Stroked} />
+</Canvas>
+
+### Stroked
+
+<Canvas>
+  <Story story={Closable} />
+</Canvas>
+
+
+
