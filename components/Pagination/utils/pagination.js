@@ -22,7 +22,11 @@ const getNumberPages = (active, total) => {
   return 3;
 };
 
-const pagination = ({ totalPages = 1, activePage = 1 } = {}) => {
+const pagination = ({
+  totalPages = 1,
+  activePage = 1,
+  showLastPagination = true,
+} = {}) => {
   if (totalPages <= 5) {
     return Array.from({ length: totalPages }, (_, i) => i + 1);
   }
@@ -65,7 +69,11 @@ const pagination = ({ totalPages = 1, activePage = 1 } = {}) => {
   lastPage = visiblePages[visiblePages.length - 1];
 
   if (penultimatePage < lastPage - 2) {
-    visiblePages = [...visiblePages.slice(0, -1), '...', lastPage];
+    visiblePages = [...visiblePages.slice(0, -1), '...'];
+
+    if (showLastPagination) {
+      visiblePages = [...visiblePages, lastPage];
+    }
   }
 
   return visiblePages;

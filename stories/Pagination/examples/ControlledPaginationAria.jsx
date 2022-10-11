@@ -27,6 +27,7 @@ class ControlledPaginationAria extends Component {
         totalPages={totalPages}
         activePage={activePage}
         onPageClick={this.handleClick}
+        showLastPagination={false}
       />
     );
   }

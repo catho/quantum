@@ -32,3 +32,9 @@ export const HelperText = Template.bind({});
 HelperText.args = {
   infoFormatter: (activePage, totalPage) => `${activePage} of ${totalPage}`,
 };
+
+export const WithoutTotalPages = Template.bind({});
+WithoutTotalPages.args = {
+  totalPages: 10,
+  showLastPagination: false,
+};
