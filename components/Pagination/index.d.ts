@@ -13,6 +13,7 @@ export interface PaginationProps {
     onPageClick?: (page?: number) => void;
     infoFormatter?: (activePage?: number, lastPage?: number) => void;
     followOnlyFirstPage?: boolean;
+    hideLastPagination?: boolean;
 }
 
 export default class Pagination extends Component<PaginationProps> {}
