@@ -28,9 +28,9 @@ describe('Pagination', () => {
           expect(pagination({ totalPages: 7 })).toEqual([1, 2, 3, 4, '...', 7]);
         });
 
-        it('should return [1, 2, 3, 4, "..."] when totalPages is 7 and showLastPagination as false', () => {
+        it('should return [1, 2, 3, 4, "..."] when totalPages is 7 and hideLastPagination as true', () => {
           expect(
-            pagination({ totalPages: 7, showLastPagination: false }),
+            pagination({ totalPages: 7, hideLastPagination: true }),
           ).toEqual([1, 2, 3, 4, '...']);
         });
       });
@@ -46,12 +46,12 @@ describe('Pagination', () => {
         ).toEqual([1, '...', 49, 50, 51, '...', 100]);
       });
 
-      it('should return [1, "...", 49, 50, 51, "..."] when activePage are 50 and totalPages are 100 as showLastPagination as false', () => {
+      it('should return [1, "...", 49, 50, 51, "..."] when activePage are 50 and totalPages are 100 as hideLastPagination as true', () => {
         expect(
           pagination({
             totalPages: 100,
             activePage: 50,
-            showLastPagination: false,
+            hideLastPagination: true,
           }),
         ).toEqual([1, '...', 49, 50, 51, '...']);
       });
