@@ -8,6 +8,9 @@ const Template = args => {
 export const Default = Template.bind({});
 
 export const Skin = Template.bind({});
+Skin.args = {
+  skin: 'success',
+};
 
 export const Inverted = Template.bind({});
 Inverted.args = {
@@ -17,9 +20,4 @@ Inverted.args = {
 export const Stroked = Template.bind({});
 Stroked.args = {
   stroked: true,
-};
-
-export const Closable = Template.bind({});
-Closable.args = {
-  onClose: () => {},
 };
