@@ -19,7 +19,7 @@ const Desktop = ({
   pageAriaLabel,
   tabIndex,
   followOnlyFirstPage,
-  showLastPagination,
+  hideLastPagination,
 }) => (
   <>
     <ActionButton
@@ -32,7 +32,7 @@ const Desktop = ({
       {prevButtonText}
     </ActionButton>
 
-    {pagination({ totalPages, activePage, showLastPagination }).map(page => {
+    {pagination({ totalPages, activePage, hideLastPagination }).map(page => {
       if (page === '...') {
         return <Dots key={DOT_KEY_GENERATOR.next().value} />;
       }
@@ -78,7 +78,7 @@ Desktop.propTypes = {
   nextButtonText: PropTypes.string,
   pageAriaLabel: PropTypes.string,
   followOnlyFirstPage: PropTypes.bool,
-  showLastPagination: PropTypes.bool.isRequired,
+  hideLastPagination: PropTypes.bool.isRequired,
 };
 
 Desktop.defaultProps = {
