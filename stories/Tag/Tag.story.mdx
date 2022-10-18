@@ -1,0 +1,72 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Tag from '../../components/Tag';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithSkin,
+  Inverted,
+  Stroked,
+  Bold,
+  WithSize
+} from './Tag.stories.jsx';
+
+<Meta title="Tag" component={Tag} />
+
+<Header title="Tag">
+  Tags are used for items that need to be labeled, categorized, or organized using keywords that describe them.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Tag } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Tag} />
+
+## <a id="examples"></a>Examples
+
+### With Skin
+
+<Canvas>
+  <Story story={WithSkin} />
+</Canvas>
+
+### Inverted
+
+<Canvas>
+  <Story story={Inverted} />
+</Canvas>
+
+### Stroked
+
+<Canvas>
+  <Story story={Stroked} />
+</Canvas>
+
+### Bold
+
+<Canvas>
+  <Story story={Bold} />
+</Canvas>
+
+### With Size
+
+<Canvas>
+  <Story story={WithSize} />
+</Canvas>
+
+
