@@ -34,3 +34,8 @@ export const Inverted = Template.bind({});
 Inverted.args = {
   inverted: true,
 };
+
+export const Visible = Template.bind({});
+Visible.args = {
+  visible: true,
+};
