@@ -1,0 +1,64 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Popover from '../../components/Popover';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithSkin,
+  WithPlacement,
+  Inverted,
+  Visible
+} from './Popover.stories.jsx';
+
+<Meta title="Popover" component={Popover} />
+
+<Header title="Popover">
+    Popovers are used for showing quantity of something, as warnings, inbox
+      messages and others.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Popover } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Popover} />
+
+## <a id="examples"></a>Examples
+
+### With Skin  
+
+<Canvas>
+  <Story story={WithSkin} />
+</Canvas>
+
+### With Placement
+
+<Canvas>
+  <Story story={WithPlacement} />
+</Canvas>
+
+### Inverted
+
+<Canvas>
+  <Story story={Inverted} />
+</Canvas>
+
+### Visible
+
+<Canvas>
+  <Story story={Visible} />
+</Canvas>

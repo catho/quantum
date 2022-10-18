@@ -33,121 +33,121 @@ export default {
   component: Popover,
 };
 
-export const NeutralTop = Template.bind(null);
+export const NeutralTop = Template.bind({});
 NeutralTop.args = {
   direction: 'top',
   skin: 'neutral',
 };
 
-export const NeutralBottom = Template.bind(null);
+export const NeutralBottom = Template.bind({});
 NeutralBottom.args = {
   direction: 'bottom',
   skin: 'neutral',
 };
 
-export const NeutralLeft = Template.bind(null);
+export const NeutralLeft = Template.bind({});
 NeutralLeft.args = {
   direction: 'left',
   skin: 'neutral',
 };
 
-export const NeutralRight = Template.bind(null);
+export const NeutralRight = Template.bind({});
 NeutralRight.args = {
   direction: 'right',
   skin: 'neutral',
 };
 
-export const PrimaryTop = Template.bind(null);
+export const PrimaryTop = Template.bind({});
 PrimaryTop.args = {
   direction: 'top',
   skin: 'primary',
 };
 
-export const PrimaryBottom = Template.bind(null);
+export const PrimaryBottom = Template.bind({});
 PrimaryBottom.args = {
   direction: 'bottom',
   skin: 'primary',
 };
 
-export const PrimaryLeft = Template.bind(null);
+export const PrimaryLeft = Template.bind({});
 PrimaryLeft.args = {
   direction: 'left',
   skin: 'primary',
 };
 
-export const PrimaryRight = Template.bind(null);
+export const PrimaryRight = Template.bind({});
 PrimaryRight.args = {
   direction: 'right',
   skin: 'primary',
 };
 
-export const SuccessTop = Template.bind(null);
+export const SuccessTop = Template.bind({});
 SuccessTop.args = {
   direction: 'top',
   skin: 'success',
 };
 
-export const SuccessBottom = Template.bind(null);
+export const SuccessBottom = Template.bind({});
 SuccessBottom.args = {
   direction: 'bottom',
   skin: 'success',
 };
 
-export const SuccessLeft = Template.bind(null);
+export const SuccessLeft = Template.bind({});
 SuccessLeft.args = {
   direction: 'left',
   skin: 'success',
 };
 
-export const SuccessRight = Template.bind(null);
+export const SuccessRight = Template.bind({});
 SuccessRight.args = {
   direction: 'right',
   skin: 'success',
 };
 
-export const WarningTop = Template.bind(null);
+export const WarningTop = Template.bind({});
 WarningTop.args = {
   direction: 'top',
   skin: 'warning',
 };
 
-export const WarningBottom = Template.bind(null);
+export const WarningBottom = Template.bind({});
 WarningBottom.args = {
   direction: 'bottom',
   skin: 'warning',
 };
 
-export const WarningLeft = Template.bind(null);
+export const WarningLeft = Template.bind({});
 WarningLeft.args = {
   direction: 'left',
   skin: 'warning',
 };
 
-export const WarningRight = Template.bind(null);
+export const WarningRight = Template.bind({});
 WarningRight.args = {
   direction: 'right',
   skin: 'warning',
 };
 
-export const ErrorTop = Template.bind(null);
+export const ErrorTop = Template.bind({});
 ErrorTop.args = {
   direction: 'top',
   skin: 'error',
 };
 
-export const ErrorBottom = Template.bind(null);
+export const ErrorBottom = Template.bind({});
 ErrorBottom.args = {
   direction: 'bottom',
   skin: 'error',
 };
 
-export const ErrorLeft = Template.bind(null);
+export const ErrorLeft = Template.bind({});
 ErrorLeft.args = {
   direction: 'left',
   skin: 'error',
 };
 
-export const ErrorRight = Template.bind(null);
+export const ErrorRight = Template.bind({});
 ErrorRight.args = {
   direction: 'right',
   skin: 'error',
