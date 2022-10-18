@@ -9,13 +9,14 @@ import {
   Skin,
   Inverted,
   Stroked,
-  Closable
+  Bold,
+  Size
 } from './Tag.stories.jsx';
 
 <Meta title="Tag" component={Tag} />
 
 <Header title="Tag">
-  Tags are Used to make stylized markings.
+  Tags are used for items that need to be labeled, categorized, or organized using keywords that describe them.
 </Header>
 
 - [Importing and usage](#importing)
@@ -54,6 +55,18 @@ import { Tag } from '@catho/quantum';
 
 <Canvas>
   <Story story={Stroked} />
+</Canvas>
+
+### Bold
+
+<Canvas>
+  <Story story={Bold} />
+</Canvas>
+
+### Size
+
+<Canvas>
+  <Story story={Size} />
 </Canvas>
 
 

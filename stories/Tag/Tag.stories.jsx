@@ -21,3 +21,11 @@ export const Stroked = Template.bind({});
 Stroked.args = {
   stroked: true,
 };
+export const Bold = Template.bind({});
+Bold.args = {
+  bold: true,
+};
+export const Size = Template.bind({});
+Size.args = {
+  size: 'large',
+};
