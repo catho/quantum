@@ -6,11 +6,7 @@ const Template = args => {
   return (
     <Row
       style={{
-        padding: '44px 0',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
+        padding: '72px',
       }}
     >
       <Col>
@@ -23,11 +19,9 @@ const Template = args => {
 };
 
 export const Default = Template.bind({});
-Default.args = {};
 
 export const WithSkin = Template.bind({});
 WithSkin.args = {
-  placement: 'top',
   skin: 'success',
 };
 
