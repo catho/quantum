@@ -7,8 +7,8 @@ const Template = args => {
 
 export const Default = Template.bind({});
 
-export const Skin = Template.bind({});
-Skin.args = {
+export const WithSkin = Template.bind({});
+WithSkin.args = {
   skin: 'success',
 };
 
@@ -25,7 +25,7 @@ export const Bold = Template.bind({});
 Bold.args = {
   bold: true,
 };
-export const Size = Template.bind({});
-Size.args = {
+export const WithSize = Template.bind({});
+WithSize.args = {
   size: 'large',
 };
