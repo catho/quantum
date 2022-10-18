@@ -69,9 +69,7 @@ describe('<Pagination />', () => {
 
     it('should match snapshot when last pagination is not displayed', () => {
       expect(
-        render(
-          <Pagination totalPages={10} showLastPagination={false} />,
-        ).asFragment(),
+        render(<Pagination totalPages={10} hideLastPagination />).asFragment(),
       ).toMatchSnapshot();
     });
   });

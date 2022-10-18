@@ -36,5 +36,5 @@ HelperText.args = {
 export const WithoutTotalPages = Template.bind({});
 WithoutTotalPages.args = {
   totalPages: 10,
-  showLastPagination: false,
+  hideLastPagination: true,
 };
