@@ -1,0 +1,65 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { Header } from '../shared';
+import Card from '../../components/Card';
+import {
+  Default,
+  CompoundComponentsList,
+  AdvancedCard
+} from './Card.stories.jsx';
+
+<Meta title="Card" component={Card}  />
+
+<Header title="Card">
+    Cards contain content and actions about a single subject.
+</Header>
+
+- [Importing and usage](#importing)
+- [Compound component](#compoundComponent)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import Card from '@catho/quantum/Card';
+```
+
+<Canvas>
+  <Story story={Default}/>
+</Canvas>
+
+## <a id="compoundComponent"></a> Compound component
+
+We provide a few components to build your Card.
+
+<CompoundComponentsList />
+
+## <a id="api"></a>API
+
+### Card
+
+<ArgsTable of={Card} />
+
+### Title
+
+<ArgsTable of={Card.Title} />
+
+### Description
+
+<ArgsTable of={Card.Description} />
+
+### Thumbnail
+
+<ArgsTable of={Card.Thumbnail} />
+
+### Media
+
+<ArgsTable of={Card.Media} />
+
+## <a id="examples"></a>Examples
+
+### Advanced card
+
+<Canvas>
+  <Story story={AdvancedCard}/>
+</Canvas>
