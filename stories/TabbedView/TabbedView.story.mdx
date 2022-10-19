@@ -7,7 +7,8 @@ import { Header } from '../shared';
 import { 
   Default,
   WithFluid,
-  WithSkin
+  WithSkin,
+  ActiveTab
 } from './TabbedView.stories.jsx';
 
 <Meta title="TabbedView" component={TabbedView} />
@@ -17,9 +18,19 @@ import {
       separate views where only one view can be visible at a time.
 </Header>
 
+
 - [Importing and usage](#importing)
 - [API](#api)
 - [Examples](#examples)
+
+
+
+<p>Think in TabbedView as a RadioGroup proper to group big context such
+    as menus, dynamic forms, navigation, and so on.</p>
+    <p>To do this, we provide <code>TabbedView</code>,{' '}
+        <code>TabbedView.Tab</code>, and <code>Tab</code>.
+          </p>
+
 
 ## <a id="importing"></a>Importing and usage
 
@@ -47,6 +58,12 @@ import { TabbedView } from '@catho/quantum';
 
 <Canvas>
   <Story story={WithSkin} />
+</Canvas>
+
+### Active Tab
+
+<Canvas>
+  <Story story={ActiveTab} />
 </Canvas>
 
 

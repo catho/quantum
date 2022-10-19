@@ -1,10 +1,5 @@
 import { TabbedView, Tab } from '../../components';
 
-export default {
-  title: 'TabbedView',
-  component: TabbedView,
-};
-
 const Template = args => (
   <TabbedView {...args}>
     <Tab title="Candidates">Candidates content</Tab>
@@ -23,4 +18,8 @@ WithFluid.args = {
 export const WithSkin = Template.bind({});
 WithSkin.args = {
   skin: 'primary',
+};
+export const ActiveTab = Template.bind({});
+ActiveTab.args = {
+  activeTab: 'Companies',
 };
