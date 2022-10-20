@@ -1,6 +1,6 @@
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
 
-import {TabbedView} from '../../components';
+import { TabbedView } from '../../components';
 
 import { Header } from '../shared';
 
@@ -8,7 +8,8 @@ import {
   Default,
   WithFluid,
   WithSkin,
-  ActiveTab
+  ActiveTab,
+  WithIconAndBadge
 } from './TabbedView.stories.jsx';
 
 <Meta title="TabbedView" component={TabbedView} />
@@ -64,6 +65,12 @@ import { TabbedView } from '@catho/quantum';
 
 <Canvas>
   <Story story={ActiveTab} />
+</Canvas>
+
+### With icon and badge
+
+<Canvas>
+  <Story story={WithIconAndBadge} />
 </Canvas>
 
 
