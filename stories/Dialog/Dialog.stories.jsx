@@ -15,14 +15,13 @@ const ContentExample = styled.div`
 `;
 
 const Template = args => {
-  const { children, ...rest } = args;
   const [openDialog, setOpenDialog] = useState(false);
 
   return (
     <>
       <Button onClick={() => setOpenDialog(true)}>Click to open dialog</Button>
       {openDialog && (
-        <Dialog onClose={() => setOpenDialog(false)} {...rest}>
+        <Dialog onClose={() => setOpenDialog(false)} {...args}>
           <ContentExample>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <Button onClick={() => setOpenDialog(false)}>Close dialog</Button>
