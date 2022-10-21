@@ -1,0 +1,45 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Modal from '../../components/Modal';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithButtonActions
+} from './Modal.stories.jsx';
+
+<Meta title="Modal" component={Modal} />
+
+<Header title="Modal">
+   Modals inform users about a task and can contain critical information,
+      require decisions, or involve multiple tasks.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Modal } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Modal} />
+
+## <a id="examples"></a>Examples
+
+## With Button Actions
+<Canvas>
+  <Story story={WithButtonActions}/>
+</Canvas>
+
+
+
