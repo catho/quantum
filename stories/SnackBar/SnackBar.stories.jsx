@@ -52,10 +52,6 @@ WithSecondsToClose.args = {
 export const Inverted = Template.bind({});
 Inverted.args = {
   inverted: true,
-  actionTrigger: {
-    title: 'HIDE',
-    callbackFn: () => {},
-  },
 };
 
 export const WithActionTrigger = Template.bind({});
