@@ -26,6 +26,22 @@ import {
 import { Modal, Button } from '@catho/quantum';
 ```
 
+```jsx
+...
+import { Modal, Button } from '@catho/quantum';
+
+export default function ModalWithButton() {
+  const [openModal, setOpenModal] = useState(false);
+
+  return (
+    <>
+      <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
+      {openModal && <Modal>Content...</Modal>}
+    </>
+  );
+}
+```
+
 <Canvas>
   <Story story={Default} />
 </Canvas>
