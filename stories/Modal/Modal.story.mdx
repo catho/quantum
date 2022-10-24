@@ -6,7 +6,7 @@ import { Header } from '../shared';
 
 import { 
   Default,
-  WithButtonActions
+  WithClosingDisabled
 } from './Modal.stories.jsx';
 
 <Meta title="Modal" component={Modal} />
@@ -23,7 +23,23 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import { Modal } from '@catho/quantum';
+import { Modal, Button } from '@catho/quantum';
+```
+
+```jsx
+...
+import { Modal, Button } from '@catho/quantum';
+
+export default function ModalWithButton() {
+  const [openModal, setOpenModal] = useState(false);
+
+  return (
+    <>
+      <Button onClick={() => setOpenModal(true)}>Click to open Modal</Button>
+      {openModal && <Modal>Content...</Modal>}
+    </>
+  );
+}
 ```
 
 <Canvas>
@@ -36,10 +52,30 @@ import { Modal } from '@catho/quantum';
 
 ## <a id="examples"></a>Examples
 
-## With Button Actions
-<Canvas>
-  <Story story={WithButtonActions}/>
+
+### With Closing Disabled
+
+```jsx
+...
+import { Modal, Button } from '@catho/quantum';
+
+export default function ModalWithClosingDisabled() {
+  const [openModal, setOpenModal] = useState(false);
+
+  return (
+    <>
+      <Button onClick={() => setOpenModal(true)}>Click to open Modal</Button>
+      {openModal && <Modal WithClosingDisabled >Content...</Modal>}
+    </>
+  );
+}
+```
+
+<Canvas withSource="none">
+  <Story story={WithClosingDisabled}/>
 </Canvas>
+
+
 
 
 

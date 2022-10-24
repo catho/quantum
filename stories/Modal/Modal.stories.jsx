@@ -1,31 +1,41 @@
 import { useState } from 'react';
-import styled from 'styled-components';
 import { Modal, Button } from '../../components';
-
-const ContentExample = styled.div`
-  background: white;
-  margin: auto;
-  padding: 8px;
-  width: 300px;
-
-  button {
-    display: flex;
-    width: 100%;
-  }
-`;
 
 const Template = args => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Click to open Modal</Button>
+      <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
       {openModal && (
         <Modal onClose={() => setOpenModal(false)} {...args}>
-          <ContentExample>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Button onClick={() => setOpenModal(false)}>Close Modal</Button>
-          </ContentExample>
+          <Modal.Header>
+            <Modal.HeaderText>
+              <Modal.Title>
+                Are you sure you want to delete this item?
+              </Modal.Title>
+            </Modal.HeaderText>
+          </Modal.Header>
+          <Modal.Content>
+            You will not be able to recover this item later.
+          </Modal.Content>
+          <Modal.Footer>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}
+            >
+              <Button
+                style={{ marginRight: 24 }}
+                onClick={() => setOpenModal(false)}
+                stroked
+              >
+                Cancel
+              </Button>
+              <Button onClick={() => setOpenModal(false)}>Delete</Button>
+            </div>
+          </Modal.Footer>
         </Modal>
       )}
     </>
@@ -34,21 +44,7 @@ const Template = args => {
 
 export const Default = Template.bind({});
 
-export const WithButtonActions = Template.bind({});
-WithButtonActions.args = {
-  footer: (
-    <Modal.Footer>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
-        }}
-      >
-        <Button style={{ marginRight: 24 }} stroked>
-          Cancel
-        </Button>
-        <Button>Delete</Button>
-      </div>
-    </Modal.Footer>
-  ),
+export const WithClosingDisabled = Template.bind({});
+WithClosingDisabled.args = {
+  onClose: () => true,
 };
