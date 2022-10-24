@@ -1,0 +1,180 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import SnackBar from '../../components/SnackBar';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithText,
+  WithSkin,
+  WithHideIcon,
+  WithSecondsToClose,
+  Inverted,
+  WithActionTrigger
+} from './SnackBar.stories.jsx';
+
+<Meta title="SnackBar" component={SnackBar} />
+
+<Header title="SnackBar">
+    SnackBars are used to give a actions support that have just been maded: 
+    delete or archive content by accident (undo), resend messages that not 
+    been sended for any reason or try to reconnect to internet (retry).
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={SnackBar} />
+
+## <a id="examples"></a>Examples
+
+### With text
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar onClose={() => setOpenSnackbar(false)} text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={WithText} />
+</Canvas>
+
+### Inverted
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar inverted onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={Inverted} />
+</Canvas>
+
+### With skin
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar skin="success" onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={WithSkin} />
+</Canvas>
+
+### With hide icon
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar skin="success" hideIcon onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={WithHideIcon} />
+</Canvas>
+
+### With seconds to close
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar secondsToClose={3} onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas>
+  <Story story={WithSecondsToClose} />
+</Canvas>
+
+### With action trigger
+
+```jsx
+...
+import { SnackBar } from '@catho/quantum';
+
+export default function Template () {
+  const [openSnackBar, setOpenSnackbar] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
+      {openSnackBar && <SnackBar actionTrigger={{ title: 'HIDE', callbackFn: () => setOpenSnackbar(false)}} onClose={() => setOpenSnackbar(false)} />}
+    </>
+  );
+};
+```
+
+<Canvas withSource="none">
+  <Story story={WithActionTrigger} />
+</Canvas>
