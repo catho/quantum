@@ -5,8 +5,8 @@ import Modal from '../../components/Modal';
 import { Header } from '../shared';
 
 import { 
-  Default,
-  WithClosingDisabled
+  SimpleModal,
+  WithButtonActions,
 } from './Modal.stories.jsx';
 
 <Meta title="Modal" component={Modal} />
@@ -43,7 +43,7 @@ export default function ModalWithButton() {
 ```
 
 <Canvas>
-  <Story story={Default} />
+  <Story story={SimpleModal} />
 </Canvas>
 
 ## <a id="api"></a>API
@@ -53,27 +53,28 @@ export default function ModalWithButton() {
 ## <a id="examples"></a>Examples
 
 
-### With Closing Disabled
+### With Button Actions
 
 ```jsx
 ...
 import { Modal, Button } from '@catho/quantum';
 
-export default function ModalWithClosingDisabled() {
+export default function WithButtonActions() {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
       <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
-      {openModal && <Modal WithClosingDisabled >Content...</Modal>}
+      {openModal && <Modal>Content...</Modal>}
     </>
   );
 }
 ```
 
 <Canvas withSource="none">
-  <Story story={WithClosingDisabled}/>
+  <Story story={WithButtonActions}/>
 </Canvas>
+
 
 
 

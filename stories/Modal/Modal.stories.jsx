@@ -3,6 +3,22 @@ import { Modal, Button } from '../../components';
 
 const Template = args => {
   const [openModal, setOpenModal] = useState(false);
+  return (
+    <>
+      <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
+      {openModal && (
+        <Modal onClose={() => setOpenModal(false)} {...args}>
+          <Modal.Content>
+            You will not be able to recover this item later.
+          </Modal.Content>
+        </Modal>
+      )}
+    </>
+  );
+};
+
+const TemplateWithButtonActions = args => {
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
@@ -42,9 +58,5 @@ const Template = args => {
   );
 };
 
-export const Default = Template.bind({});
-
-export const WithClosingDisabled = Template.bind({});
-WithClosingDisabled.args = {
-  onClose: () => true,
-};
+export const SimpleModal = Template.bind({});
+export const WithButtonActions = TemplateWithButtonActions.bind({});
