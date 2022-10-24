@@ -6,7 +6,7 @@ import { Header } from '../shared';
 
 import { 
   SimpleModal,
-  WithButtonActions,
+  AdvancedModal,
 } from './Modal.stories.jsx';
 
 <Meta title="Modal" component={Modal} />
@@ -35,14 +35,20 @@ export default function SimpleModal() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
-      {openModal && <Modal>Content...</Modal>}
+     <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
+      {openModal && (
+        <Modal onClose={() => setOpenModal(false)} {...args}>
+          <Modal.Content>
+            You will not be able to recover this item later.
+          </Modal.Content>
+        </Modal>
+      )}
     </>
   );
 }
 ```
 
-<Canvas>
+<Canvas withSource="none">
   <Story story={SimpleModal} />
 </Canvas>
 
@@ -53,26 +59,56 @@ export default function SimpleModal() {
 ## <a id="examples"></a>Examples
 
 
-### With Button Actions
+### Advanced Modal
 
 ```jsx
 ...
 import { Modal, Button } from '@catho/quantum';
 
-export default function WithButtonActions() {
+export default function AdvancedModal() {
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
       <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
-      {openModal && <Modal>Content...</Modal>}
+      {openModal && (
+        <Modal onClose={() => setOpenModal(false)} {...args}>
+          <Modal.Header>
+            <Modal.HeaderText>
+              <Modal.Title>
+                Are you sure you want to delete this item?
+              </Modal.Title>
+            </Modal.HeaderText>
+          </Modal.Header>
+          <Modal.Content>
+            You will not be able to recover this item later.
+          </Modal.Content>
+          <Modal.Footer>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}
+            >
+              <Button
+                style={{ marginRight: 24 }}
+                onClick={() => setOpenModal(false)}
+                stroked
+              >
+                Cancel
+              </Button>
+              <Button onClick={() => setOpenModal(false)}>Delete</Button>
+            </div>
+          </Modal.Footer>
+        </Modal>
+      )}
     </>
   );
 }
 ```
 
 <Canvas withSource="none">
-  <Story story={WithButtonActions}/>
+  <Story story={AdvancedModal}/>
 </Canvas>
 
 

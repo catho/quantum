@@ -8,16 +8,14 @@ const Template = args => {
       <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
       {openModal && (
         <Modal onClose={() => setOpenModal(false)} {...args}>
-          <Modal.Content>
-            You will not be able to recover this item later.
-          </Modal.Content>
+          You will not be able to recover this item later.
         </Modal>
       )}
     </>
   );
 };
 
-const TemplateWithButtonActions = args => {
+const TemplateModalAdvanced = args => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -59,4 +57,4 @@ const TemplateWithButtonActions = args => {
 };
 
 export const SimpleModal = Template.bind({});
-export const WithButtonActions = TemplateWithButtonActions.bind({});
+export const AdvancedModal = TemplateModalAdvanced.bind({});
