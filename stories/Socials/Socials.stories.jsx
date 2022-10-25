@@ -5,17 +5,17 @@ const Template = args => <Socials {...args} />;
 const allItems = [
   {
     name: 'facebook',
-    url: 'http://facebook.com',
+    url: 'https://facebook.com',
     description: 'facebook description of the purpose of this icon',
   },
   {
     name: 'twitter',
-    url: 'http://twitter.com',
+    url: 'https://twitter.com',
     description: 'twitter description of the purpose of this icon',
   },
   {
     name: 'youtube',
-    url: 'http://youtube.com',
+    url: 'https://youtube.com',
     description: 'youtube description of the purpose of this icon',
   },
 ];
