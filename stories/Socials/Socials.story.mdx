@@ -1,0 +1,62 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Socials from '../../components/Socials';
+
+import { Header } from '../shared';
+
+import { 
+  AllItems,
+  AllItemsWithoutBox,
+  AllItems24px,
+  OneItemWithouBox
+} from './Socials.stories.jsx';
+
+<Meta title="Socials" component={Socials} />
+
+<Header title="Socials">
+  Socials are used for showing quantity of something, as warnings, inbox messages and others.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Socials } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={AllItems} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Socials} />
+
+## <a id="examples"></a>Examples
+
+### All Items Without Box
+
+<Canvas>
+  <Story story={AllItemsWithoutBox} />
+</Canvas>
+
+### One Item Without Box
+
+<Canvas>
+  <Story story={OneItemWithouBox} />
+</Canvas>
+
+### All Items 24 px
+
+<Canvas>
+  <Story story={AllItems24px} />
+</Canvas>
+
+
+
+
+
+
