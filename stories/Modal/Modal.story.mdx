@@ -38,9 +38,7 @@ export default function SimpleModal() {
      <Button onClick={() => setOpenModal(true)}>Open Modal</Button>
       {openModal && (
         <Modal onClose={() => setOpenModal(false)} {...args}>
-          <Modal.Content>
             You will not be able to recover this item later.
-          </Modal.Content>
         </Modal>
       )}
     </>
