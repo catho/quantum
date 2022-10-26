@@ -5,10 +5,10 @@ import Socials from '../../components/Socials';
 import { Header } from '../shared';
 
 import { 
-  AllItems,
-  AllItemsWithoutBox,
-  AllItems24px,
-  OneItemWithouBox
+  Default,
+  WithoutBox,
+  WithSize,
+  AllItems
 } from './Socials.stories.jsx';
 
 <Meta title="Socials" component={Socials} />
@@ -28,7 +28,7 @@ import { Socials } from '@catho/quantum';
 ```
 
 <Canvas>
-  <Story story={AllItems} />
+  <Story story={Default} />
 </Canvas>
 
 ## <a id="api"></a>API
@@ -37,22 +37,22 @@ import { Socials } from '@catho/quantum';
 
 ## <a id="examples"></a>Examples
 
-### All Items Without Box
+### Without Box
 
 <Canvas>
-  <Story story={AllItemsWithoutBox} />
+  <Story story={WithoutBox} />
 </Canvas>
 
-### One Item Without Box
+### All Items
 
 <Canvas>
-  <Story story={OneItemWithouBox} />
+  <Story story={AllItems} />
 </Canvas>
 
-### All Items 24 px
+### With Size
 
 <Canvas>
-  <Story story={AllItems24px} />
+  <Story story={WithSize} />
 </Canvas>
 
 
