@@ -86,6 +86,7 @@ import Warning from '@material-ui/icons/Warning';
 import WatchLater from '@material-ui/icons/WatchLater';
 import Whatshot from '@material-ui/icons/Whatshot';
 import Work from '@material-ui/icons/Work';
+import Help from '@material-ui/icons/Help';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -149,6 +150,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     folder: Folder,
     group: Group,
     home: Home,
+    help: Help,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
     keyboard_arrow_left: KeyboardArrowLeft,
