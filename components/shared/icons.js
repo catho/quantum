@@ -46,6 +46,7 @@ const icons = [
   'folder',
   'group',
   'home',
+  'help',
   'info',
   'keyboard_arrow_down',
   'keyboard_arrow_left',
