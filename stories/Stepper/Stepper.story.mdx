@@ -1,0 +1,82 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import Stepper from '../../components/Stepper';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithIndex,
+  WithSkin,
+  WithCurrentStepText,
+  WithNextStepText,
+  WithI18n,
+  WithTotal
+} from './Stepper.stories.jsx';
+
+<Meta title="Stepper" component={Stepper} />
+
+<Header title="Stepper">
+  The stepper component is used to update the progress status using logical
+    and numbered steps.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Stepper } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Stepper} />
+
+## <a id="examples"></a>Examples
+
+### With Index
+
+<Canvas>
+  <Story story={WithIndex} />
+</Canvas>
+
+### With Skin
+
+<Canvas>
+  <Story story={WithSkin} />
+</Canvas>
+
+### With Current Step Text
+
+<Canvas>
+  <Story story={WithCurrentStepText} />
+</Canvas>
+
+### With Next Step Text
+
+<Canvas>
+  <Story story={WithNextStepText} />
+</Canvas>
+
+### With Total
+
+<Canvas>
+  <Story story={WithTotal} />
+</Canvas>
+
+### With i18n
+
+<Canvas>
+  <Story story={WithI18n} />
+</Canvas>
+
+
+
+
