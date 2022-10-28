@@ -5,24 +5,6 @@ const Template = args => {
   return <Stepper {...rest}>{Component}</Stepper>;
 };
 
-const i18n = {
-  paginationPreposition: 'de',
-  nextWord: 'próximo',
-};
-
-export const StepperWithI18n = () => (
-  <div>
-    <Stepper
-      i18n={i18n}
-      isPtBR
-      index={1}
-      total={2}
-      currentStepText="Salários / benefícios"
-      nextStepText="Contrato / Local"
-    />
-  </div>
-);
-
 export const Default = Template.bind({});
 
 export const WithIndex = Template.bind({});
@@ -46,7 +28,12 @@ WithSkin.args = {
   skin: 'success',
 };
 
-export const WithI18n = StepperWithI18n.bind({});
+export const WithTotal = Template.bind({});
+WithTotal.args = {
+  total: 3,
+};
+
+export const WithI18n = Template.bind({});
 WithI18n.args = {
   i18n: {
     paginationPreposition: 'de',

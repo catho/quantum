@@ -10,7 +10,8 @@ import {
   WithSkin,
   WithCurrentStepText,
   WithNextStepText,
-  WithI18n
+  WithI18n,
+  WithTotal
 } from './Stepper.stories.jsx';
 
 <Meta title="Stepper" component={Stepper} />
@@ -64,11 +65,18 @@ import { Stepper } from '@catho/quantum';
   <Story story={WithNextStepText} />
 </Canvas>
 
+### With Total
+
+<Canvas>
+  <Story story={WithTotal} />
+</Canvas>
+
 ### With i18n
 
 <Canvas>
   <Story story={WithI18n} />
 </Canvas>
+
 
 
 
