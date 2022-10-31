@@ -1,0 +1,64 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import SegmentedControl from '../../components/SegmentedControl';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  TextWith2Items,
+  IconWith5Items,
+  DarkThemeWith3ItemsAndNoItemChecked,
+  DarkThemeWith5ItemsAndNoItemChecked
+} from './SegmentedControl.stories.jsx';
+
+<Meta title="SegmentedControl" component={SegmentedControl} />
+
+<Header title="SegmentedControl">
+  The Segmented control component is a linear set of two or more alternation
+      buttons, with all segments with same width.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { SegmentedControl } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={SegmentedControl} />
+
+## <a id="examples"></a>Examples
+
+### Text With 2 Items
+
+<Canvas>
+  <Story story={TextWith2Items} />
+</Canvas>
+
+### Icon With 5 Items
+
+<Canvas>
+  <Story story={IconWith5Items} />
+</Canvas>
+
+### Dark Theme With 3 Items And No Item Checked
+
+<Canvas>
+  <Story story={DarkThemeWith3ItemsAndNoItemChecked} />
+</Canvas>
+
+### Dark Theme With 5 Items And No Item Checked
+
+<Canvas>
+  <Story story={DarkThemeWith5ItemsAndNoItemChecked} />
+</Canvas>
