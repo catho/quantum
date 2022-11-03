@@ -3,6 +3,7 @@ require('colors');
 const fs = require('fs');
 
 const componentTemplates = require('./templates/component');
+const componentStoryTemplates = require('./templates/component-story');
 
 const updateStoriesFile = component => {
   const file = './.storybook/stories.js';
@@ -77,6 +78,17 @@ try {
   generatedComponentTemplates.forEach(generatedTemplate => {
     fs.writeFileSync(
       `${componentDirectory}/${generatedTemplate.name}`,
+      generatedTemplate.content,
+    );
+  });
+
+  const generatedComponentStoryTemplates = componentStoryTemplates(
+    componentName,
+  );
+
+  generatedComponentStoryTemplates.forEach(generatedTemplate => {
+    fs.writeFileSync(
+      `${componentStoryDirectory}/${generatedTemplate.name}`,
       generatedTemplate.content,
     );
   });
