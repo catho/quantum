@@ -1,41 +1,33 @@
 module.exports = componentName => [
   {
     content: `// Generated with scripts/create-componnent.js
-import {
-  AutoExample,
-  Tab,
-  StoryContainer,
-  Title,
-  Example,
-} from '@catho/quantum-storybook-ui';
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import { ${componentName} } from '../../components';
 
-import ${componentName} from '../../components/${componentName}';
+import { Header } from '../shared';
 
-const TabExample = (
-  <Tab title="Examples">
-    <StoryContainer>
-      <Title as="h3">${componentName} default</Title>
-      <Example
-        component={<${componentName} />}
-        code="<${componentName} />"
-      />
-    </StoryContainer>
-  </Tab>
-)
+import { 
+  Default
+} from './${componentName}.stories.jsx';
 
-export default {
-  title: '${componentName}',
-};
+<Meta title="${componentName}" component={${componentName}}  />
 
-export const ${componentName}Story = () => (
-  <AutoExample
-    description="Some description for component"
-    component={${componentName}}
-    additionalTabs={TabExample}
-  />
-)
+<Header title="${componentName}">
+      Some description for component.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
     `,
-    name: `${componentName}.story.jsx`,
+    name: `${componentName}.story.mdx`,
   },
   {
     content: `// Generated with scripts/create-componnent.js
@@ -52,5 +44,21 @@ const Template = args => <${componentName} {...args} />;
 export const Default = Template.bind({})
     `,
     name: `${componentName}.regression-test.story.jsx`,
+  },
+  {
+    content: `// Generated with scripts/create-componnent.js
+
+import ${componentName} from '../../components/${componentName}';
+
+export default {
+  title: '${componentName}',
+  component: ${componentName},
+};
+
+const Template = args => <${componentName} {...args} />;
+
+export const Default = Template.bind({})
+    `,
+    name: `${componentName}.stories.jsx`,
   },
 ];
