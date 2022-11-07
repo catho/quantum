@@ -18,7 +18,6 @@ import {
 
 - [Importing and usage](#importing)
 - [API](#api)
-- [Examples](#examples)
 
 ## <a id="importing"></a>Importing and usage
 
@@ -29,13 +28,12 @@ import {
 ## <a id="api"></a>API
 
 <ArgsTable of={${componentName}} />
-    
 
     `,
     name: `${componentName}.story.mdx`,
   },
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `
 
 import ${componentName} from '../../components/${componentName}';
 
@@ -51,14 +49,9 @@ export const Default = Template.bind({})
     name: `${componentName}.regression-test.story.jsx`,
   },
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `
 
 import ${componentName} from '../../components/${componentName}';
-
-export default {
-  title: '${componentName}',
-  component: ${componentName},
-};
 
 const Template = args => <${componentName} {...args} />;
 
