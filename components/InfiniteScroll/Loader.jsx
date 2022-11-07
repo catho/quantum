@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { CircularLoader } from '@catho/quantum';
-import { theme, hexToRgba } from '@catho/quantum/shared';
+import CircularLoader from '../CircularLoader';
+import { theme, hexToRgba } from '../shared';
 
 const {
   colors: { neutral },
