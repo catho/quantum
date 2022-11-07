@@ -38,6 +38,7 @@ import Dialog from './Dialog';
 import AutoComplete from './AutoComplete';
 import Breadcrumbs from './Breadcrumbs';
 import Link from './Link';
+import InfiniteScroll from './InfiniteScroll';
 
 export {
   Accordion,
@@ -87,4 +88,5 @@ export {
   AutoComplete,
   Breadcrumbs,
   Link,
+  InfiniteScroll,
 };
