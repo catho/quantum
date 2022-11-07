@@ -1,8 +1,8 @@
 module.exports = componentName => [
   {
-    content: `// Generated with scripts/create-componnent.js
+    content: `
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
-import { ${componentName} } from '../../components';
+import  ${componentName}  from '../../components/${componentName}';
 
 import { Header } from '../shared';
 
@@ -25,6 +25,11 @@ import {
 <Canvas>
   <Story story={Default} />
 </Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={${componentName}} />
+    
 
     `,
     name: `${componentName}.story.mdx`,
