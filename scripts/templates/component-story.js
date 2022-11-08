@@ -1,14 +1,13 @@
-crasis = require('./mock');
+const crasis = `${'```'}`;
 
 module.exports = componentName => [
   {
     content: `
-import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
-import  ${componentName}  from '../../components/${componentName}';
-
-
-import { Header } from '../shared';
-
+    import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+    import  ${componentName}  from '../../components/${componentName}';
+    
+    import { Header } from '../shared';
+    
 import { 
   Default
 } from './${componentName}.stories.jsx';
