@@ -1,8 +1,11 @@
+crasis = require('./mock');
+
 module.exports = componentName => [
   {
     content: `
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
 import  ${componentName}  from '../../components/${componentName}';
+
 
 import { Header } from '../shared';
 
@@ -21,6 +24,10 @@ import {
 
 ## <a id="importing"></a>Importing and usage
 
+${crasis}js
+import { ${componentName} } from '@catho/quantum';
+${crasis}
+
 <Canvas>
   <Story story={Default} />
 </Canvas>
@@ -33,7 +40,7 @@ import {
     name: `${componentName}.story.mdx`,
   },
   {
-    content: `
+    content: `// Generated with scripts/create-componnent.js
 
 import ${componentName} from '../../components/${componentName}';
 
@@ -49,7 +56,7 @@ export const Default = Template.bind({})
     name: `${componentName}.regression-test.story.jsx`,
   },
   {
-    content: `
+    content: `// Generated with scripts/create-componnent.js
 
 import ${componentName} from '../../components/${componentName}';
 
