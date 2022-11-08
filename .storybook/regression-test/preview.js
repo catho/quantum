@@ -1,5 +1,4 @@
 import 'loki/configure-react';
-import { UiStyle } from '@catho/quantum-storybook-ui';
 import GlobalStyle from '../../components/GlobalStyle';
 
 const CSSDecorator = (Story, context) => (
@@ -9,4 +8,4 @@ const CSSDecorator = (Story, context) => (
   </div>
 );
 
-export const decorators = [UiStyle, CSSDecorator];
+export const decorators = [CSSDecorator];
