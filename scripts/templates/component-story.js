@@ -1,13 +1,11 @@
-const crasis = `${'```'}`;
-
 module.exports = componentName => [
   {
-    content: `
-    import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
-    import  ${componentName}  from '../../components/${componentName}';
-    
-    import { Header } from '../shared';
-    
+    content: `<!-- Generated with scripts/create-componnent.js -->
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import  ${componentName}  from '../../components/${componentName}';
+
+import { Header } from '../shared';
+
 import { 
   Default
 } from './${componentName}.stories.jsx';
@@ -23,9 +21,9 @@ import {
 
 ## <a id="importing"></a>Importing and usage
 
-${crasis}js
+\`\`\`js
 import { ${componentName} } from '@catho/quantum';
-${crasis}
+\`\`\`
 
 <Canvas>
   <Story story={Default} />
@@ -34,7 +32,6 @@ ${crasis}
 ## <a id="api"></a>API
 
 <ArgsTable of={${componentName}} />
-
     `,
     name: `${componentName}.story.mdx`,
   },
