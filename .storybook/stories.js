@@ -8,6 +8,7 @@ const foundation = [
   'Icon',
   'Breakpoints',
   'List',
+  'InfiniteScroll',
 ].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
 const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);

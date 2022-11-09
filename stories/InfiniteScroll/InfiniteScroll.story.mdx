@@ -1,0 +1,105 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+
+import { InfiniteScroll } from '../../components';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  Reverse,
+  WithLoaderIndicator
+} from './InfiniteScroll.stories.jsx';
+
+<Meta title="InfiniteScroll" component={InfiniteScroll}  />
+
+<Header title="InfiniteScroll">
+  Infinite scroll is used to load content as the user scrolls the page.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and usage
+
+```jsx
+...
+import { InfiniteScroll } from '@catho/quantum';
+
+export default function SimpleInfiniteScroll() {
+  const [items, setItems] = useState(['1','2','3','4','5','6','7','8','9','10']);
+
+  const pushItems = () => setItems(['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20']);
+
+  return (
+    <InfiniteScroll onScrollEnd={pushItems}>
+      <ul>
+        {items.map(number => <li key={number}>{number}</li>)}
+      </ul>
+    </InfiniteScroll>
+  );
+}
+```
+
+<Canvas withSource="none">
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={InfiniteScroll} />
+
+## <a id="examples"></a>Examples
+
+### Reverse
+
+```jsx
+export default function ReverseInfiniteScroll() {
+  const [items, setItems] = useState(['10','9','8','7','6','5','4','3','2','1']);
+
+  const pushItems = () => setItems(['20','19','18','17','16','15','14','13','12','11','10','9','8','7','6','5','4','3','2','1']);
+
+  return (
+    <InfiniteScroll reverse onScrollEnd={pushItems}>
+      <ul>
+        {items.map(number => <li key={number}>{number}</li>)}
+      </ul>
+    </InfiniteScroll>
+  );
+}
+```
+
+<Canvas withSource="none">
+  <Story story={Reverse} />
+</Canvas>
+
+### With loader indicator
+
+```jsx
+const fakePromisse = () => new Promise(resolve => setTimeout(resolve, 1000));
+
+export default function InfiniteScrollWithLoader() {
+  const [items, setItems] = useState(['1','2','3','4','5','6','7','8','9','10']);
+  const [loading, setLoading] = useState(false);
+
+  const pushItems = async () => {
+    setLoading(true);
+
+    await fakePromisse();
+    setItems(['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20']);
+
+    setLoading(false);
+  };
+
+  return (
+    <InfiniteScroll loading={loading} onScrollEnd={pushItems}>
+      <ul>
+        {items.map(number => <li key={number}>{number}</li>)}
+      </ul>
+    </InfiniteScroll>
+  );
+}
+```
+<Canvas withSource="none">
+  <Story story={WithLoaderIndicator} />
+</Canvas>

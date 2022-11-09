@@ -87,3 +87,5 @@ export const Tooltip: StyledComponent<typeof TooltipComponent, TooltipProps>;
 export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialButtonProps>;
 export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent, SegmentedControlProps>;
 export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
+export { InfiniteScroll } from './InfiniteScroll';
+export const InfiniteScroll: StyledComponent<typeof InfiniteScrollComponent, InfiniteScrollProps>;
