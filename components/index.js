@@ -39,6 +39,7 @@ import AutoComplete from './AutoComplete';
 import Breadcrumbs from './Breadcrumbs';
 import Link from './Link';
 import InfiniteScroll from './InfiniteScroll';
+import DropdownLight from './DropdownLight';
 
 export {
   Accordion,
@@ -89,4 +90,5 @@ export {
   Breadcrumbs,
   Link,
   InfiniteScroll,
+  DropdownLight,
 };
