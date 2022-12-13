@@ -36,12 +36,11 @@ const DropdownLight = ({
       label={label}
       placeholder={placeholder}
       items={items}
-      key={itemsMock}
       selectedItem={selectedItem}
       theme={theme}
     >
       {itemsMock.map(item => (
-        <OptionsItems>{item}</OptionsItems>
+        <OptionsItems key={itemsMock}>{item}</OptionsItems>
       ))}
     </DropList>
   </>
