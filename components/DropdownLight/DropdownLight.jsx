@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, spacing, baseFontSize } from '../shared/theme';
-// import { itemsMock } from '../../stories/DropdownLight/mock';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -39,7 +38,7 @@ const DropdownLight = ({
       theme={theme}
     >
       {items.map(item => (
-        <OptionsItems key={items}>{item}</OptionsItems>
+        <OptionsItems key={items.value}>{item.label}</OptionsItems>
       ))}
     </DropList>
   </>

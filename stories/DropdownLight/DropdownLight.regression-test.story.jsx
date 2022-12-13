@@ -1,15 +1,12 @@
-// Generated with scripts/create-componnent.js
-
 import DropdownLight from '../../components/DropdownLight';
+import { itemsMock } from './mock';
 
 export default {
   title: 'DropdownLight',
   component: DropdownLight,
 };
 
-const items = ['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado'];
-
-const Template = args => <DropdownLight items={items} {...args} />;
+const Template = args => <DropdownLight items={itemsMock} {...args} />;
 
 export const Default = Template.bind({});
 
