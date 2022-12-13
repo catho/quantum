@@ -3,7 +3,7 @@ import { itemsMock } from './mock';
 
 const Template = args => {
   const { items = itemsMock, ...rest } = args;
-  return <DropdownLight {...rest} items={items} />;
+  return <DropdownLight items={items} {...rest} />;
 };
 
 export const Default = Template.bind({});

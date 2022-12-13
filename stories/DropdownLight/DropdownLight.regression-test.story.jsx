@@ -7,7 +7,9 @@ export default {
   component: DropdownLight,
 };
 
-const Template = args => <DropdownLight {...args} />;
+const items = ['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado'];
+
+const Template = args => <DropdownLight items={items} {...args} />;
 
 export const Default = Template.bind({});
 

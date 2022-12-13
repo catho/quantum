@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, spacing, baseFontSize } from '../shared/theme';
-import { itemsMock } from '../../stories/DropdownLight/mock';
+// import { itemsMock } from '../../stories/DropdownLight/mock';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -35,12 +35,11 @@ const DropdownLight = ({
       onChange={onChange}
       label={label}
       placeholder={placeholder}
-      items={items}
       selectedItem={selectedItem}
       theme={theme}
     >
-      {itemsMock.map(item => (
-        <OptionsItems key={itemsMock}>{item}</OptionsItems>
+      {items.map(item => (
+        <OptionsItems key={items}>{item}</OptionsItems>
       ))}
     </DropList>
   </>
