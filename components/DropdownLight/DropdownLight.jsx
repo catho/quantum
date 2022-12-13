@@ -21,6 +21,7 @@ const OptionsItems = styled.option`
 `;
 
 const DropdownLight = ({
+  disabled,
   label,
   placeholder,
   items,
@@ -30,6 +31,7 @@ const DropdownLight = ({
 }) => (
   <>
     <DropList
+      disabled={disabled}
       onChange={onChange}
       label={label}
       placeholder={placeholder}
@@ -45,6 +47,7 @@ const DropdownLight = ({
 );
 
 DropdownLight.propTypes = {
+  disabled: PropTypes.bool,
   label: PropTypes.string,
   placeholder: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
@@ -58,6 +61,7 @@ DropdownLight.propTypes = {
 };
 
 DropdownLight.defaultProps = {
+  disabled: false,
   label: '',
   placeholder: 'Select an option',
   selectedItem: null,
