@@ -13,10 +13,10 @@ const itemPropType = PropTypes.oneOfType([
 const DropList = styled.select`
   width: 100%;
   height: 44px;
-  font-size: 16px;
+  font-size: ${baseFontSize};
 `;
 const OptionsItems = styled.option`
-  font-size: 16px;
+  font-size: ${baseFontSize};
 `;
 
 const DropdownLight = ({
