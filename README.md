@@ -1,3 +1,5 @@
+[remover]
+
 # Quantum
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
@@ -16,6 +18,7 @@ It can be installed via npm or yarn.
 ```sh
 yarn add @catho/quantum styled-components
 ```
+
 ### :warning: Quantum is compatible with react@16.14.0 or higher
 
 To use a component, it need to be imported in your project:
@@ -65,6 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
