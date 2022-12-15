@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 
 const itemPropType = PropTypes.oneOfType([
@@ -13,32 +13,21 @@ const itemPropType = PropTypes.oneOfType([
 const DropList = styled.select`
   width: 100%;
   height: 44px;
-  font-size: ${baseFontSize};
-`;
-const OptionsItems = styled.option`
-  font-size: ${baseFontSize};
+
+  ${({ theme }) => {
+    const { baseFontSize: baseFontSizeDropList } = theme;
+
+    return css`
+      font-size: ${baseFontSizeDropList}px;
+    `;
+  }}
 `;
 
-const DropdownLight = ({
-  disabled,
-  label,
-  placeholder,
-  items,
-  selectedItem,
-  onChange,
-  theme,
-}) => (
+const DropdownLight = ({ disabled, items, theme }) => (
   <>
-    <DropList
-      disabled={disabled}
-      onChange={onChange}
-      label={label}
-      placeholder={placeholder}
-      selectedItem={selectedItem}
-      theme={theme}
-    >
+    <DropList disabled={disabled} theme={theme}>
       {items.map(item => (
-        <OptionsItems key={items.value}>{item.label}</OptionsItems>
+        <option key={items.value}>{item.label}</option>
       ))}
     </DropList>
   </>
@@ -46,11 +35,7 @@ const DropdownLight = ({
 
 DropdownLight.propTypes = {
   disabled: PropTypes.bool,
-  label: PropTypes.string,
-  placeholder: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType),
-  selectedItem: itemPropType,
-  onChange: PropTypes.func,
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
@@ -60,11 +45,7 @@ DropdownLight.propTypes = {
 
 DropdownLight.defaultProps = {
   disabled: false,
-  label: '',
-  placeholder: 'Select an option',
-  selectedItem: null,
   items: [],
-  onChange: () => {},
   theme: { colors, spacing, baseFontSize },
 };
 
