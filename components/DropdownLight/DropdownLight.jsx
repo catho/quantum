@@ -10,26 +10,26 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const DropList = styled.select`
+const DropdownSelect = styled.select`
   width: 100%;
   height: 44px;
 
   ${({ theme }) => {
-    const { baseFontSize: baseFontSizeDropList } = theme;
+    const { baseFontSize: baseFontSizeDropdownSelect } = theme;
 
     return css`
-      font-size: ${baseFontSizeDropList}px;
+      font-size: ${baseFontSizeDropdownSelect}px;
     `;
   }}
 `;
 
 const DropdownLight = ({ disabled, items, theme }) => (
   <>
-    <DropList disabled={disabled} theme={theme}>
+    <DropdownSelect disabled={disabled} theme={theme}>
       {items.map(item => (
-        <option key={items.value}>{item.label}</option>
+        <option key={items.value || items}>{item.label || item}</option>
       ))}
-    </DropList>
+    </DropdownSelect>
   </>
 );
 

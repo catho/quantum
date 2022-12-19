@@ -10,6 +10,22 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 <select
     class="c0"
-  />
+  >
+    <option>
+      Lemon
+    </option>
+    <option>
+      Banana
+    </option>
+    <option>
+      Strawberry
+    </option>
+    <option>
+      Orange
+    </option>
+    <option>
+      Avocado
+    </option>
+  </select>
 </DocumentFragment>
 `;
