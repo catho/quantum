@@ -11,19 +11,29 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 <select
     class="c0"
   >
-    <option>
+    <option
+      value="Lemon"
+    >
       Lemon
     </option>
-    <option>
+    <option
+      value="Banana"
+    >
       Banana
     </option>
-    <option>
+    <option
+      value="Strawberry"
+    >
       Strawberry
     </option>
-    <option>
+    <option
+      value="Orange"
+    >
       Orange
     </option>
-    <option>
+    <option
+      value="Avocado"
+    >
       Avocado
     </option>
   </select>
