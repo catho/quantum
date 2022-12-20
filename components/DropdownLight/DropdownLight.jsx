@@ -27,7 +27,9 @@ const DropdownLight = ({ disabled, items, theme }) => (
   <>
     <DropdownSelect disabled={disabled} theme={theme}>
       {items.map(item => (
-        <option key={items.value || item}>{item.label || item}</option>
+        <option value={item?.value || item} key={item?.value || item}>
+          {item?.label || item}
+        </option>
       ))}
     </DropdownSelect>
   </>
@@ -35,7 +37,7 @@ const DropdownLight = ({ disabled, items, theme }) => (
 
 DropdownLight.propTypes = {
   disabled: PropTypes.bool,
-  items: PropTypes.arrayOf(itemPropType),
+  items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
     spacing: PropTypes.object,
@@ -45,7 +47,6 @@ DropdownLight.propTypes = {
 
 DropdownLight.defaultProps = {
   disabled: false,
-  items: [],
   theme: { colors, spacing, baseFontSize },
 };
 

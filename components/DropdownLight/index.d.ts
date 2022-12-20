@@ -7,8 +7,7 @@ export type ItemPropType = string | { value: string | number; label: string };
 
 export interface DropdownLightProps {
   disabled?: boolean;
-  
-  items?: ItemPropType[];
+  items: ItemPropType[];
   theme?: {
     colors?: {};
     spacing?: {};
