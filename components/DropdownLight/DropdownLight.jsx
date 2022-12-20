@@ -27,7 +27,7 @@ const DropdownLight = ({ disabled, items, theme }) => (
   <>
     <DropdownSelect disabled={disabled} theme={theme}>
       {items.map(item => (
-        <option key={items.value || items}>{item.label || item}</option>
+        <option key={items.value || item}>{item.label || item}</option>
       ))}
     </DropdownSelect>
   </>

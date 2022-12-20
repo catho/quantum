@@ -7,15 +7,8 @@ export type ItemPropType = string | { value: string | number; label: string };
 
 export interface DropdownLightProps {
   disabled?: boolean;
-  label?: string;
-  placeholder?: string;
-  selectedItem?: ItemPropType;
-
-  onChange?: (
-    selectedItem: ItemPropType | null,
-  ) => void;
+  
   items?: ItemPropType[];
-  skin?: 'default' | 'dark',
   theme?: {
     colors?: {};
     spacing?: {};
