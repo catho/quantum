@@ -89,3 +89,6 @@ export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent,
 export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
 export { InfiniteScroll } from './InfiniteScroll';
 export const InfiniteScroll: StyledComponent<typeof InfiniteScrollComponent, InfiniteScrollProps>;
+
+export { DropdownLight } from './DropdownLight';
+export const DropdownLight: StyledComponent<typeof DropdownLightComponent, DropdownLightProps>;
