@@ -30,6 +30,9 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => (
       theme={theme}
       defaultValue={placeholder}
     >
+      <option value="default" hidden>
+        {placeholder}
+      </option>
       {items.map(item => (
         <option value={item?.value || item} key={item?.value || item}>
           {item?.label || item}

@@ -12,6 +12,12 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
     class="c0"
   >
     <option
+      hidden=""
+      value="default"
+    >
+      Select an option
+    </option>
+    <option
       value="Lemon"
     >
       Lemon

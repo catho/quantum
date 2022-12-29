@@ -37,4 +37,13 @@ describe('<DropdownLight />', () => {
 
     expect(dropdown.value).toEqual(lemonItem);
   });
+
+  it('should return default value with [Select an option]', () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    const dropdown = screen.getByRole('combobox');
+    const select = screen.getByText('Select an option');
+
+    expect(dropdown.value).toEqual(select.value);
+  });
 });
