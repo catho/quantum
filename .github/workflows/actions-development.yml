@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Read .nvmrc
-        run: echo NVMRC={cat .nvmrc} >> $GITHUB_OUTPUT
+        run: echo NVMRC=$(cat .nvmrc) >> $GITHUB_OUTPUT
         id: nvm
 
       - name: Setup node
