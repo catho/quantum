@@ -13,7 +13,8 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   >
     <option
       hidden=""
-      value="default"
+      selected=""
+      value=""
     >
       Select an option
     </option>

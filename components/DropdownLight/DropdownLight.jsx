@@ -25,12 +25,8 @@ const DropdownSelect = styled.select`
 
 const DropdownLight = ({ disabled, items, theme, placeholder }) => (
   <>
-    <DropdownSelect
-      disabled={disabled}
-      theme={theme}
-      defaultValue={placeholder}
-    >
-      <option value="default" hidden>
+    <DropdownSelect disabled={disabled} theme={theme} defaultValue="">
+      <option value="" hidden>
         {placeholder}
       </option>
       {items.map(item => (
