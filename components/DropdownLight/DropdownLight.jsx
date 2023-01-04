@@ -23,9 +23,12 @@ const DropdownSelect = styled.select`
   }}
 `;
 
-const DropdownLight = ({ disabled, items, theme }) => (
+const DropdownLight = ({ disabled, items, theme, placeholder }) => (
   <>
-    <DropdownSelect disabled={disabled} theme={theme}>
+    <DropdownSelect disabled={disabled} theme={theme} defaultValue="">
+      <option value="" hidden>
+        {placeholder}
+      </option>
       {items.map(item => (
         <option value={item?.value || item} key={item?.value || item}>
           {item?.label || item}
@@ -37,6 +40,7 @@ const DropdownLight = ({ disabled, items, theme }) => (
 
 DropdownLight.propTypes = {
   disabled: PropTypes.bool,
+  placeholder: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
@@ -48,6 +52,7 @@ DropdownLight.propTypes = {
 DropdownLight.defaultProps = {
   disabled: false,
   theme: { colors, spacing, baseFontSize },
+  placeholder: 'Select an option',
 };
 
 export default DropdownLight;
