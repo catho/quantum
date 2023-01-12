@@ -127,7 +127,6 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
         <DropdownSelect disabled={disabled} theme={theme}>
           {items.map(item => (
             <OptionItem
-              value={item?.value || item}
               key={item?.value || item}
               onClick={() => handleClose(item)}
             >
