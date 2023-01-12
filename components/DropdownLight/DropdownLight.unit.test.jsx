@@ -1,12 +1,12 @@
 // Generated with scripts/create-component.js
-import { render } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import DropdownLight from './DropdownLight';
 
 import {
   itemsStringMock,
-  // itemsObjectMock,
+  itemsObjectMock,
 } from '../../stories/DropdownLight/mock';
 
 describe('<DropdownLight />', () => {
@@ -16,34 +16,40 @@ describe('<DropdownLight />', () => {
     ).toMatchSnapshot();
   });
 
-  // it('should return a value from item, using a object items', () => {
-  //   render(<DropdownLight items={itemsObjectMock} />);
+  it('should return a value from item, using a object items', () => {
+    render(<DropdownLight items={itemsObjectMock} />);
 
-  //   const dropdown = screen.getByRole('combobox');
-  //   userEvent.selectOptions(dropdown, 'Lemon');
+    const dropdown = screen.getByRole('button');
+    userEvent.click(dropdown, 'Select an option');
 
-  //   const lemonItem = itemsObjectMock[0].value.toString();
+    const dropInput = screen.getByRole('list');
+    const dropItemsFormat = dropInput.textContent.match('Lemon').toString();
 
-  //   expect(dropdown.value).toEqual(lemonItem);
-  // });
+    const lemonItem = itemsObjectMock[0].label.toString();
 
-  // it('should return a value from item, using a string items', () => {
-  //   render(<DropdownLight items={itemsStringMock} />);
+    expect(dropItemsFormat).toEqual(lemonItem);
+  });
 
-  //   const dropdown = screen.getByRole('combobox');
-  //   userEvent.selectOptions(dropdown, 'Lemon');
+  it('should return a value from item, using a string items', () => {
+    render(<DropdownLight items={itemsStringMock} />);
 
-  //   const lemonItem = itemsStringMock[0];
+    const dropdown = screen.getByRole('button');
+    userEvent.click(dropdown, 'Select an option');
 
-  //   expect(dropdown.value).toEqual(lemonItem);
-  // });
+    const dropInput = screen.getByRole('list');
+    const dropItemsFormat = dropInput.textContent.match('Lemon').toString();
 
-  // it('should return default value with [Select an option]', () => {
-  //   render(<DropdownLight items={itemsStringMock} />);
+    const lemonItem = itemsStringMock[0];
 
-  //   const dropdown = screen.getByRole('combobox');
-  //   const select = screen.getByText('Select an option');
+    expect(dropItemsFormat).toEqual(lemonItem);
+  });
 
-  //   expect(dropdown.value).toEqual(select.value);
-  // });
+  it('should return default value with [Select an option]', () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    const dropdown = screen.getByRole('button');
+    const select = screen.getByText('Select an option');
+
+    expect(dropdown.textContent).toEqual(select.textContent);
+  });
 });
