@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 import Icon from '../Icon/Icon';
+import useKeyPress from './SubComponents/UseKeyPress';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -105,17 +106,92 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
 
+  const [cursor, setCursor] = useState(0);
+  const wrapperRef = useRef();
+  const listOptions = useRef();
+
+  const downPress = useKeyPress('ArrowDown');
+  const upPress = useKeyPress('ArrowUp');
+  const enterPress = useKeyPress('Enter');
+  const EscapeKeyPressValue = 'Escape';
+
+  const handleItemClick = item => {
+    console.log(`esse aqui: ${item?.value || item}`);
+  };
+
   const handleClose = item => {
     setIsOpen(false);
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
+    handleItemClick(item);
   };
+
+  const handleClickOutside = event => {
+    if (!wrapperRef.current?.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  const handleEscPress = ({ key }) => {
+    const node = wrapperRef.current;
+    if (node && key === EscapeKeyPressValue) {
+      setIsOpen(false);
+      setCursor(0);
+    }
+  };
+
+  const handleEnterPress = ({ key }) => {
+    const node = wrapperRef.current;
+    if (node && key === enterPress) {
+      setIsOpen(false);
+      handleItemClick(cursor);
+    }
+  };
+
+  useEffect(() => {
+    console.log(cursor);
+  }, [cursor]);
+
+  useEffect(() => {
+    if (isOpen && downPress && items.length) {
+      const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
+      setCursor(selectedCursor);
+      listOptions.current.children[selectedCursor].focus();
+    }
+  }, [downPress, items, isOpen]);
+
+  useEffect(() => {
+    if (isOpen && upPress && items.length && cursor > 0) {
+      const selectedCursor = cursor - 1;
+      setCursor(selectedCursor);
+      listOptions.current.children[selectedCursor].focus();
+    }
+  }, [upPress, items, isOpen]);
+
+  useEffect(() => {
+    window.addEventListener('click', handleClickOutside);
+    window.addEventListener('keydown', handleEscPress);
+    window.addEventListener('keydown', handleEnterPress);
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+      window.removeEventListener('keydown', handleEscPress);
+      window.removeEventListener('keydown', handleEnterPress);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isOpen && enterPress) {
+      setIsOpen(false);
+      handleItemClick(cursor);
+    }
+    console.log('#Esse cursor', cursor);
+  }, [enterPress, isOpen]);
 
   return (
     <>
       <Input type="hidden" value={selectedItem} />
 
-      <ButtonField onClick={() => setIsOpen(!isOpen)}>
+      <ButtonField onClick={() => setIsOpen(!isOpen)} ref={wrapperRef}>
         {itemLabel}
         <ArrowIcon
           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
@@ -124,10 +200,14 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
       </ButtonField>
 
       {isOpen && (
-        <DropdownSelect disabled={disabled} theme={theme}>
-          {items.map(item => (
+        <DropdownSelect disabled={disabled} theme={theme} ref={listOptions}>
+          {items.map((item, index) => (
             <OptionItem
               key={item?.value || item}
+              aria-posinset={index}
+              aria-selected={index === cursor}
+              role="option"
+              tabIndex="-1"
               onClick={() => handleClose(item)}
             >
               {item?.label || item}
