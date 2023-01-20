@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import { colors, spacing, baseFontSize, components } from '../shared/theme';
 import Icon from '../Icon/Icon';
 
 const itemPropType = PropTypes.oneOfType([
@@ -12,65 +12,31 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const ITEM_HEIGHT = '44px';
+const ITEM_HEIGHT = '30px';
 const MAX_ITEMS_VISIBILITY = 7;
-
-const DropdownSelect = styled.ul`
-  border-radius: 4px;
-  box-sizing: border-box;
-  list-style: none;
-  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
-  overflow: auto;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
-
-  ${({ theme }) => {
-    const { baseFontSize: baseFontSizeDropdownSelect } = theme;
-
-    return css`
-      font-size: ${baseFontSizeDropdownSelect}px;
-    `;
-  }}
-`;
-
-const Input = styled.input`
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-`;
 
 const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
   width: 24px;
-
-  ${({ selectedItem }) =>
-    !selectedItem &&
-    `
-    color: inherit;
-  `}
 `;
 
 const ButtonField = styled.button`
-  width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  border-radius: 4px;
+  width: ${components.container.breakpoints.small};
+  padding: ${spacing.xsmall}px ${spacing.medium}px;
+  border-radius: ${spacing.xxsmall}px;
   box-sizing: border-box;
-  font-size: ${baseFontSize};
+  font-size: ${baseFontSize}px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  margin-top: 0px;
 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
+  background-color: ${colors.neutral['0']};
   border: 2px solid ${colors.neutral['500']};
   color: ${colors.neutral['700']};
 
@@ -87,14 +53,39 @@ const ButtonField = styled.button`
   }
 `;
 
+const DropdownSelect = styled.ul`
+  border-radius: 4px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  list-style: none;
+  height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
+  overflow: auto;
+  padding: 0;
+  position: absolute;
+  width: 96%;
+  z-index: 9999;
+  background-color: ${colors.neutral['0']};
+
+  ${({ theme }) => {
+    const { baseFontSize: baseFontSizeDropdownSelect } = theme;
+
+    return css`
+      font-size: ${baseFontSizeDropdownSelect}px;
+    `;
+  }}
+
+  box-shadow: 0px 3px 5px -1px rgba(224,224,224,0.2),0px 5px 8px 0px rgba(224,224,224,0.14),0px 1px 14px 0px rgba(224,224,224,0.12);
+`;
+
 const OptionItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
+  font-size: 14px;
   cursor: pointer;
-  min-height: 42px;
-  padding: 8px 16px;
+  min-height: ${spacing.xxlarge}px;
+  padding: ${spacing.xsmall}px ${spacing.medium}px;
   :hover {
     background-color: ${colors.neutral['100']};
   }
@@ -113,7 +104,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
 
   return (
     <>
-      <Input type="hidden" value={selectedItem} />
+      <input type="hidden" value={selectedItem} />
 
       <ButtonField onClick={() => setIsOpen(!isOpen)}>
         {itemLabel}

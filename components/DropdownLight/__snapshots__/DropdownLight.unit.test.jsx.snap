@@ -2,25 +2,7 @@
 
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
-  .c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: left;
-}
-
-<input
-    class="c0"
+  <input
     type="hidden"
     value=""
   />
@@ -28,16 +10,14 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-  color: inherit;
 }
 
 .c0 {
   width: 100%;
-  margin-top: 0px;
   padding: 8px 16px;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16;
+  font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,6 +31,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
+  margin-top: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
