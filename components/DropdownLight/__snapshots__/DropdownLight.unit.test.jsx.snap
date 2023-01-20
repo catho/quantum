@@ -3,6 +3,7 @@
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
   <input
+    aria-label="selecione uma opcao"
     type="hidden"
     value=""
   />

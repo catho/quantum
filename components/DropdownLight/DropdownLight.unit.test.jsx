@@ -20,27 +20,31 @@ describe('<DropdownLight />', () => {
     render(<DropdownLight items={itemsObjectMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown, 'Select an option');
+    userEvent.click(dropdown);
 
-    const dropInput = screen.getByRole('list');
-    const dropItemsFormat = dropInput.textContent.match('Lemon').toString();
+    const optionItem = screen.getByText('Lemon');
+    userEvent.click(optionItem);
 
-    const lemonItem = itemsObjectMock[0].label.toString();
+    const input = Number(screen.getByLabelText('selecione uma opcao').value);
 
-    expect(dropItemsFormat).toEqual(lemonItem);
+    const lemonItem = itemsObjectMock[0].value;
+
+    expect(input).toEqual(lemonItem);
   });
 
   it('should return a value from item, using a string items', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown, 'Select an option');
+    userEvent.click(dropdown);
 
-    const dropInput = screen.getByRole('list');
-    const dropItemsFormat = dropInput.textContent.match('Lemon').toString();
+    const optionItem = screen.getByText('Lemon');
+    userEvent.click(optionItem);
+
+    const input = screen.getByLabelText('selecione uma opcao').value;
 
     const lemonItem = itemsStringMock[0];
 
-    expect(dropItemsFormat).toEqual(lemonItem);
+    expect(input).toEqual(lemonItem);
   });
 });

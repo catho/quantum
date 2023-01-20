@@ -15,6 +15,23 @@ const itemPropType = PropTypes.oneOfType([
 const ITEM_HEIGHT = '30px';
 const MAX_ITEMS_VISIBILITY = 7;
 
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})`
+  ${({
+    selectedItem,
+    theme: {
+      colors: {
+        primary: { 700: primary700 },
+      },
+    },
+  }) =>
+    !selectedItem &&
+    `
+    color: ${primary700};
+  `}
+`;
+
 const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
@@ -104,7 +121,11 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
 
   return (
     <>
-      <input type="hidden" value={selectedItem} />
+      <input
+        type="hidden"
+        value={selectedItem}
+        aria-label="selecione uma opcao"
+      />
 
       <ButtonField onClick={() => setIsOpen(!isOpen)}>
         {itemLabel}
@@ -122,6 +143,8 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
               onClick={() => handleClose(item)}
             >
               {item?.label || item}
+
+              {selectedItem === item.value && <CheckIcon theme={theme} />}
             </OptionItem>
           ))}
         </DropdownSelect>
