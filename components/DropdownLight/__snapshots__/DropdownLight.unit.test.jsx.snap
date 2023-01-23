@@ -15,10 +15,8 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 .c0 {
   width: 100%;
-  padding: 8px 16px;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -36,6 +34,8 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   -webkit-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
   color: #424242;

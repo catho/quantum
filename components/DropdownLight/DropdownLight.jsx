@@ -40,10 +40,8 @@ const ArrowIcon = styled(Icon)`
 
 const ButtonField = styled.button`
   width: 100%;
-  padding: ${spacing.xsmall}px ${spacing.medium}px;
-  border-radius: ${spacing.xxsmall}px;
+  border-radius: 4px;
   box-sizing: border-box;
-  font-size: ${baseFontSize}px;
 
   display: flex;
   align-items: center;
@@ -53,26 +51,40 @@ const ButtonField = styled.button`
 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: ${colors.neutral['0']};
-  border: 2px solid ${colors.neutral['500']};
-  color: ${colors.neutral['700']};
 
-  :hover {
-    border-color: ${colors.primary['700']};
-    box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
-      0px 2px 2px 0px rgb(18 80 196 / 14%), 0px 1px 5px 0px rgb(18 80 196 / 12%);
-  }
+  ${({ theme }) => {
+    const {
+      baseFontSize: baseFontSizeButton,
+      colors: colorsButton,
+      spacing: spacingButton,
+    } = theme;
 
-  :focus {
-    border-color: ${colors.primary['700']};
-    box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
-      0px 2px 2px 0px rgb(18 80 196 / 14%), 0px 1px 5px 0px rgb(18 80 196 / 12%);
-  }
+    return css`
+      font-size: ${baseFontSizeButton}px;
+      padding: ${spacingButton.xsmall}px ${spacingButton.medium}px;
+      background-color: ${colorsButton.neutral['0']};
+      border: 2px solid ${colorsButton.neutral['500']};
+      color: ${colorsButton.neutral['700']};
+
+      :hover {
+        border-color: ${colorsButton.primary['700']};
+        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+          0px 2px 2px 0px rgb(18 80 196 / 14%),
+          0px 1px 5px 0px rgb(18 80 196 / 12%);
+      }
+
+      :focus {
+        border-color: ${colorsButton.primary['700']};
+        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+          0px 2px 2px 0px rgb(18 80 196 / 14%),
+          0px 1px 5px 0px rgb(18 80 196 / 12%);
+      }
+    `;
+  }}
 `;
 
 const DropdownSelect = styled.ul`
-  border-radius: ${spacing.xxsmall}px;
-  margin-top: ${spacing.xxsmall}px;
+  border-radius: 4px;
   box-sizing: border-box;
   list-style: none;
   height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
@@ -81,17 +93,23 @@ const DropdownSelect = styled.ul`
   position: absolute;
   width: 96%;
   z-index: 9999;
-  background-color: ${colors.neutral['0']};
+  box-shadow: 0px 3px 5px -1px rgba(224, 224, 224, 0.2),
+    0px 5px 8px 0px rgba(224, 224, 224, 0.14),
+    0px 1px 14px 0px rgba(224, 224, 224, 0.12);
 
   ${({ theme }) => {
-    const { baseFontSize: baseFontSizeDropdownSelect } = theme;
+    const {
+      baseFontSize: baseFontSizeDropdownSelect,
+      colors: colorsDropdownSelect,
+      spacing: spacingDropdownSelect,
+    } = theme;
 
     return css`
       font-size: ${baseFontSizeDropdownSelect}px;
+      margin-top: ${spacingDropdownSelect.xxsmall}px;
+      background-color: ${colorsDropdownSelect.neutral['0']};
     `;
   }}
-
-  box-shadow: 0px 3px 5px -1px rgba(224,224,224,0.2),0px 5px 8px 0px rgba(224,224,224,0.14),0px 1px 14px 0px rgba(224,224,224,0.12);
 `;
 
 const OptionItem = styled.li`
@@ -99,13 +117,25 @@ const OptionItem = styled.li`
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  font-size: ${baseFontSize}px;
   cursor: pointer;
-  min-height: ${spacing.xxlarge}px;
-  padding: ${spacing.xsmall}px ${spacing.medium}px;
-  :hover {
-    background-color: ${colors.neutral['100']};
-  }
+  min-height: 40px;
+
+  ${({ theme }) => {
+    const {
+      baseFontSize: baseFontSizeDropdownOption,
+      colors: colorsOption,
+      spacing: spacingOption,
+    } = theme;
+
+    return css`
+      font-size: ${baseFontSizeDropdownOption * 0.875}px;
+      padding: ${spacingOption.xsmall}px ${spacingOption.medium}px;
+
+      :hover {
+        background-color: ${colorsOption.neutral['100']};
+      }
+    `;
+  }}
 `;
 
 const DropdownLight = ({ disabled, items, theme, placeholder }) => {
@@ -127,7 +157,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
         aria-label="selecione uma opcao"
       />
 
-      <ButtonField onClick={() => setIsOpen(!isOpen)}>
+      <ButtonField onClick={() => setIsOpen(!isOpen)} theme={theme}>
         {itemLabel}
         <ArrowIcon
           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
@@ -139,6 +169,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
         <DropdownSelect disabled={disabled} theme={theme}>
           {items.map(item => (
             <OptionItem
+              theme={theme}
               key={item?.value || item}
               onClick={() => handleClose(item)}
             >
