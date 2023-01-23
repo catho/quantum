@@ -39,7 +39,7 @@ const ArrowIcon = styled(Icon)`
 `;
 
 const ButtonField = styled.button`
-  width: ${components.container.breakpoints.small};
+  width: 100%;
   padding: ${spacing.xsmall}px ${spacing.medium}px;
   border-radius: ${spacing.xxsmall}px;
   box-sizing: border-box;
