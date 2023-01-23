@@ -2,18 +2,17 @@
 
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
-  <input
-    aria-label="selecione uma opcao"
-    type="hidden"
-    value=""
-  />
-  .c1 {
+  .c2 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
 .c0 {
+  position: relative;
+}
+
+.c1 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -41,33 +40,50 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   color: #424242;
 }
 
-.c0:hover {
+.c1:disabled {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c1:hover:not(:disabled) {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c0:focus {
+.c1:focus:not(:disabled) {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-<button
+<div
     class="c0"
   >
-    Select an option
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root c1"
-      data-qtm-preloader="icon"
-      focusable="false"
-      style="font-size: 24px; max-width: 24px;"
-      theme="[object Object]"
-      viewBox="0 0 24 24"
+    <input
+      aria-label="selecione uma opcao"
+      type="hidden"
+      value=""
+    />
+    <button
+      class="c1"
     >
-      <path
-        d="M7 10l5 5 5-5z"
-      />
-    </svg>
-  </button>
+      Select an option
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root c2"
+        data-qtm-preloader="icon"
+        focusable="false"
+        style="font-size: 24px; max-width: 24px;"
+        theme="[object Object]"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </button>
+  </div>
 </DocumentFragment>
 `;

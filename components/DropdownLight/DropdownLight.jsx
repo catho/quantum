@@ -19,14 +19,12 @@ const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })`
   ${({
-    selectedItem,
     theme: {
       colors: {
         primary: { 700: primary700 },
       },
     },
   }) =>
-    !selectedItem &&
     `
     color: ${primary700};
   `}
@@ -36,6 +34,10 @@ const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
   width: 24px;
+`;
+
+const WrapperDropdown = styled.div`
+  position: relative;
 `;
 
 const ButtonField = styled.button`
@@ -66,14 +68,22 @@ const ButtonField = styled.button`
       border: 2px solid ${colorsButton.neutral['500']};
       color: ${colorsButton.neutral['700']};
 
-      :hover {
+      :disabled {
+        background-color: ${colorsButton.neutral['100']};
+        border-color: ${colorsButton.neutral['500']};
+        color: ${colorsButton.neutral['500']};
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+
+      :hover :not(:disabled) {
         border-color: ${colorsButton.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
 
-      :focus {
+      :focus :not(:disabled) {
         border-color: ${colorsButton.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
@@ -91,7 +101,7 @@ const DropdownSelect = styled.ul`
   overflow: auto;
   padding: 0;
   position: absolute;
-  width: 96%;
+  width: 100%;
   z-index: 9999;
   box-shadow: 0px 3px 5px -1px rgba(224, 224, 224, 0.2),
     0px 5px 8px 0px rgba(224, 224, 224, 0.14),
@@ -113,6 +123,7 @@ const DropdownSelect = styled.ul`
 `;
 
 const OptionItem = styled.li`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,37 +162,43 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
 
   return (
     <>
-      <input
-        type="hidden"
-        value={selectedItem}
-        aria-label="selecione uma opcao"
-      />
-
-      <ButtonField onClick={() => setIsOpen(!isOpen)} theme={theme}>
-        {itemLabel}
-        <ArrowIcon
-          name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-          theme={theme}
+      <WrapperDropdown>
+        <input
+          type="hidden"
+          value={selectedItem}
+          aria-label="selecione uma opcao"
         />
-      </ButtonField>
 
-      {isOpen && (
-        <DropdownSelect disabled={disabled} theme={theme}>
-          {items.map(item => (
-            <OptionItem
-              theme={theme}
-              key={item?.value || item}
-              onClick={() => handleClose(item)}
-            >
-              {item?.label || item}
+        <ButtonField
+          onClick={() => setIsOpen(!isOpen)}
+          theme={theme}
+          disabled={disabled}
+        >
+          {itemLabel}
+          <ArrowIcon
+            name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
+            theme={theme}
+          />
+        </ButtonField>
 
-              {(selectedItem === item?.value || selectedItem === item) && (
-                <CheckIcon theme={theme} />
-              )}
-            </OptionItem>
-          ))}
-        </DropdownSelect>
-      )}
+        {isOpen && (
+          <DropdownSelect theme={theme}>
+            {items.map(item => (
+              <OptionItem
+                theme={theme}
+                key={item?.value || item}
+                onClick={() => handleClose(item)}
+              >
+                {item?.label || item}
+
+                {(selectedItem === item?.value || selectedItem === item) && (
+                  <CheckIcon theme={theme} />
+                )}
+              </OptionItem>
+            ))}
+          </DropdownSelect>
+        )}
+      </WrapperDropdown>
     </>
   );
 };
