@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, spacing, baseFontSize, components } from '../shared/theme';
+import { colors, spacing, baseFontSize } from '../shared/theme';
 import Icon from '../Icon/Icon';
 
 const itemPropType = PropTypes.oneOfType([
