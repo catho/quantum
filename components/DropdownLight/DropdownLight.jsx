@@ -71,8 +71,8 @@ const ButtonField = styled.button`
 `;
 
 const DropdownSelect = styled.ul`
-  border-radius: 4px;
-  margin-top: 4px;
+  border-radius: ${spacing.xxsmall}px;
+  margin-top: ${spacing.xxsmall}px;
   box-sizing: border-box;
   list-style: none;
   height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
@@ -99,7 +99,7 @@ const OptionItem = styled.li`
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: ${baseFontSize}px;
   cursor: pointer;
   min-height: ${spacing.xxlarge}px;
   padding: ${spacing.xsmall}px ${spacing.medium}px;
@@ -144,7 +144,9 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
             >
               {item?.label || item}
 
-              {selectedItem === item.value && <CheckIcon theme={theme} />}
+              {(selectedItem === item?.value || selectedItem === item) && (
+                <CheckIcon theme={theme} />
+              )}
             </OptionItem>
           ))}
         </DropdownSelect>
