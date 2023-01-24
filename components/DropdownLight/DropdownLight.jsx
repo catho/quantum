@@ -115,15 +115,10 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
   const enterPress = useKeyPress('Enter');
   const EscapeKeyPressValue = 'Escape';
 
-  const handleItemClick = item => {
-    console.log(`esse aqui: ${item?.value || item}`);
-  };
-
   const handleClose = item => {
     setIsOpen(false);
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
-    handleItemClick(item);
   };
 
   const handleClickOutside = event => {
@@ -144,13 +139,8 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
     const node = wrapperRef.current;
     if (node && key === enterPress) {
       setIsOpen(false);
-      handleItemClick(cursor);
     }
   };
-
-  useEffect(() => {
-    console.log(cursor);
-  }, [cursor]);
 
   useEffect(() => {
     if (isOpen && downPress && items.length) {
@@ -182,9 +172,8 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
   useEffect(() => {
     if (isOpen && enterPress) {
       setIsOpen(false);
-      handleItemClick(cursor);
+      handleClose(items[cursor]);
     }
-    console.log('#Esse cursor', cursor);
   }, [enterPress, isOpen]);
 
   return (
