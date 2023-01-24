@@ -76,14 +76,14 @@ const ButtonField = styled.button`
         cursor: not-allowed;
       }
 
-      :hover :not(:disabled) {
+      :hover :enabled {
         border-color: ${colorsButton.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
 
-      :focus :not(:disabled) {
+      :focus :enabled {
         border-color: ${colorsButton.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
