@@ -32,6 +32,11 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   margin: 0 0 0 12px;
 }
 
+.c5 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c2 {
   cursor: pointer;
   height: 100%;
@@ -121,6 +126,11 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 .c5 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c5 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c7[disabled] ~ .c3 {
@@ -223,6 +233,11 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   margin: 0 0 0 12px;
 }
 
+.c5 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c7[disabled] ~ .c3 {
   color: #999999;
 }
@@ -313,6 +328,11 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   margin: 0 0 0 12px;
 }
 
+.c5 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c2 {
   cursor: pointer;
   height: 100%;
@@ -396,6 +416,11 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 .c5 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c5 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c2 {
@@ -483,6 +508,11 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   margin: 0 0 0 12px;
 }
 
+.c5 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c2 {
   cursor: pointer;
   height: 100%;
@@ -567,6 +597,11 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
 .c5 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c5 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c2 {
