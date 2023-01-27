@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import {
+  colors as colorsDefault,
+  spacing as spacingDefault,
+  baseFontSize as baseFontSizeDefault,
+} from '../shared/theme';
 import Icon from '../Icon/Icon';
 
 const itemPropType = PropTypes.oneOfType([
@@ -12,22 +16,22 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const ITEM_HEIGHT = '30px';
 const MAX_ITEMS_VISIBILITY = 7;
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })`
-  ${({
-    theme: {
+  ${({ theme }) => {
+    const {
       colors: {
         primary: { 700: primary700 },
       },
-    },
-  }) =>
-    `
-    color: ${primary700};
-  `}
+    } = theme;
+
+    return css`
+      color: ${primary700};
+    `;
+  }}
 `;
 
 const ArrowIcon = styled(Icon)`
@@ -36,11 +40,11 @@ const ArrowIcon = styled(Icon)`
   width: 24px;
 `;
 
-const WrapperDropdown = styled.div`
+const Wrapper = styled.div`
   position: relative;
 `;
 
-const ButtonField = styled.button`
+const Button = styled.button`
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -55,36 +59,32 @@ const ButtonField = styled.button`
   transition: all 0.2s ease-in-out;
 
   ${({ theme }) => {
-    const {
-      baseFontSize: baseFontSizeButton,
-      colors: colorsButton,
-      spacing: spacingButton,
-    } = theme;
+    const { baseFontSize, spacing, colors } = theme;
 
     return css`
-      font-size: ${baseFontSizeButton}px;
-      padding: ${spacingButton.xsmall}px ${spacingButton.medium}px;
-      background-color: ${colorsButton.neutral['0']};
-      border: 2px solid ${colorsButton.neutral['500']};
-      color: ${colorsButton.neutral['700']};
+      font-size: ${baseFontSize}px;
+      padding: ${spacing.xsmall}px ${spacing.medium}px;
+      background-color: ${colors.neutral['0']};
+      border: 2px solid ${colors.neutral['500']};
+      color: ${colors.neutral['700']};
 
       :disabled {
-        background-color: ${colorsButton.neutral['100']};
-        border-color: ${colorsButton.neutral['500']};
-        color: ${colorsButton.neutral['500']};
+        background-color: ${colors.neutral['100']};
+        border-color: ${colors.neutral['500']};
+        color: ${colors.neutral['500']};
         box-shadow: none;
         cursor: not-allowed;
       }
 
       :hover :enabled {
-        border-color: ${colorsButton.primary['700']};
+        border-color: ${colors.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
 
       :focus :enabled {
-        border-color: ${colorsButton.primary['700']};
+        border-color: ${colors.primary['700']};
         box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
@@ -93,11 +93,11 @@ const ButtonField = styled.button`
   }}
 `;
 
-const DropdownSelect = styled.ul`
+const SelectionList = styled.ul`
   border-radius: 4px;
   box-sizing: border-box;
   list-style: none;
-  height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
+  height: calc(30px * ${MAX_ITEMS_VISIBILITY});
   overflow: auto;
   padding: 0;
   position: absolute;
@@ -108,21 +108,17 @@ const DropdownSelect = styled.ul`
     0px 1px 14px 0px rgba(224, 224, 224, 0.12);
 
   ${({ theme }) => {
-    const {
-      baseFontSize: baseFontSizeDropdownSelect,
-      colors: colorsDropdownSelect,
-      spacing: spacingDropdownSelect,
-    } = theme;
+    const { baseFontSize, spacing, colors } = theme;
 
     return css`
-      font-size: ${baseFontSizeDropdownSelect}px;
-      margin-top: ${spacingDropdownSelect.xxsmall}px;
-      background-color: ${colorsDropdownSelect.neutral['0']};
+      font-size: ${baseFontSize}px;
+      margin-top: ${spacing.xxsmall}px;
+      background-color: ${colors.neutral['0']};
     `;
   }}
 `;
 
-const OptionItem = styled.li`
+const SelectionListItem = styled.li`
   width: 100%;
   display: flex;
   align-items: center;
@@ -132,24 +128,20 @@ const OptionItem = styled.li`
   min-height: 40px;
 
   ${({ theme }) => {
-    const {
-      baseFontSize: baseFontSizeDropdownOption,
-      colors: colorsOption,
-      spacing: spacingOption,
-    } = theme;
+    const { baseFontSize, spacing, colors } = theme;
 
     return css`
-      font-size: ${baseFontSizeDropdownOption * 0.875}px;
-      padding: ${spacingOption.xsmall}px ${spacingOption.medium}px;
+      font-size: ${baseFontSize * 0.875}px;
+      padding: ${spacing.xsmall}px ${spacing.medium}px;
 
       :hover {
-        background-color: ${colorsOption.neutral['100']};
+        background-color: ${colors.neutral['100']};
       }
     `;
   }}
 `;
 
-const DropdownLight = ({ disabled, items, theme, placeholder }) => {
+const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
@@ -162,14 +154,18 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
 
   return (
     <>
-      <WrapperDropdown>
+      <Wrapper>
         <input
-          type="hidden"
-          value={selectedItem}
-          aria-label="selecione uma opcao"
+          type="text"
+          hidden
+          name={name}
+          defaultValue={selectedItem}
+          aria-label="selecione uma opção"
         />
 
-        <ButtonField
+        <Button
+          aria-haspopup="true"
+          aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
           onClick={() => setIsOpen(!isOpen)}
           theme={theme}
           disabled={disabled}
@@ -179,12 +175,13 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
             name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
             theme={theme}
           />
-        </ButtonField>
+        </Button>
 
         {isOpen && (
-          <DropdownSelect theme={theme}>
+          <SelectionList theme={theme}>
             {items.map(item => (
-              <OptionItem
+              <SelectionListItem
+                role="option"
                 theme={theme}
                 key={item?.value || item}
                 onClick={() => handleClose(item)}
@@ -194,11 +191,11 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
                 {(selectedItem === item?.value || selectedItem === item) && (
                   <CheckIcon theme={theme} />
                 )}
-              </OptionItem>
+              </SelectionListItem>
             ))}
-          </DropdownSelect>
+          </SelectionList>
         )}
-      </WrapperDropdown>
+      </Wrapper>
     </>
   );
 };
@@ -212,12 +209,18 @@ DropdownLight.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  name: PropTypes.string,
 };
 
 DropdownLight.defaultProps = {
   disabled: false,
-  theme: { colors, spacing, baseFontSize },
+  theme: {
+    colors: colorsDefault,
+    spacing: spacingDefault,
+    baseFontSize: baseFontSizeDefault,
+  },
   placeholder: 'Select an option',
+  name: '',
 };
 
 export default DropdownLight;
