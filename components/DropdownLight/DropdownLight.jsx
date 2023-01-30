@@ -1,7 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import {
+  colors as colorsDefault,
+  spacing as spacingDefault,
+  baseFontSize as baseFontSizeDefault,
+} from '../shared/theme';
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
 
@@ -13,95 +17,132 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 
-const DropdownSelect = styled.ul`
-  border-radius: 4px;
-  box-sizing: border-box;
-  list-style: none;
-  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
-  overflow: auto;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
-
+const CheckIcon = styled(Icon).attrs({
+  name: 'check',
+})`
   ${({ theme }) => {
-    const { baseFontSize: baseFontSizeDropdownSelect } = theme;
+    const {
+      colors: {
+        primary: { 700: primary700 },
+      },
+    } = theme;
 
     return css`
-      font-size: ${baseFontSizeDropdownSelect}px;
+      color: ${primary700};
     `;
   }}
-`;
-
-const Input = styled.input`
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
 `;
 
 const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
   width: 24px;
-
-  ${({ selectedItem }) =>
-    !selectedItem &&
-    `
-    color: inherit;
-  `}
 `;
 
-const ButtonField = styled.button`
+const Wrapper = styled.div`
+  position: relative;
+`;
+
+const Button = styled.button`
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: ${baseFontSize};
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  margin-top: 0px;
 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  border: 2px solid ${colors.neutral['500']};
-  color: ${colors.neutral['700']};
 
-  :hover {
-    border-color: ${colors.primary['700']};
-    box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
-      0px 2px 2px 0px rgb(18 80 196 / 14%), 0px 1px 5px 0px rgb(18 80 196 / 12%);
-  }
+  ${({ theme }) => {
+    const { baseFontSize, spacing, colors } = theme;
 
-  :focus {
-    border-color: ${colors.primary['700']};
-    box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
-      0px 2px 2px 0px rgb(18 80 196 / 14%), 0px 1px 5px 0px rgb(18 80 196 / 12%);
-  }
+    return css`
+      font-size: ${baseFontSize}px;
+      padding: ${spacing.xsmall}px ${spacing.medium}px;
+      background-color: ${colors.neutral['0']};
+      border: 2px solid ${colors.neutral['500']};
+      color: ${colors.neutral['700']};
+
+      :disabled {
+        background-color: ${colors.neutral['100']};
+        border-color: ${colors.neutral['500']};
+        color: ${colors.neutral['500']};
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+
+      :hover :enabled {
+        border-color: ${colors.primary['700']};
+        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+          0px 2px 2px 0px rgb(18 80 196 / 14%),
+          0px 1px 5px 0px rgb(18 80 196 / 12%);
+      }
+
+      :focus :enabled {
+        border-color: ${colors.primary['700']};
+        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+          0px 2px 2px 0px rgb(18 80 196 / 14%),
+          0px 1px 5px 0px rgb(18 80 196 / 12%);
+      }
+    `;
+  }}
 `;
 
-const OptionItem = styled.li`
+const SelectionList = styled.ul`
+  border-radius: 4px;
+  box-sizing: border-box;
+  list-style: none;
+  height: calc(30px * ${MAX_ITEMS_VISIBILITY});
+  overflow: auto;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 3px 5px -1px rgba(224, 224, 224, 0.2),
+    0px 5px 8px 0px rgba(224, 224, 224, 0.14),
+    0px 1px 14px 0px rgba(224, 224, 224, 0.12);
+
+  ${({ theme }) => {
+    const { baseFontSize, spacing, colors } = theme;
+
+    return css`
+      font-size: ${baseFontSize}px;
+      margin-top: ${spacing.xxsmall}px;
+      background-color: ${colors.neutral['0']};
+    `;
+  }}
+`;
+
+const SelectionListItem = styled.li`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   cursor: pointer;
-  min-height: 42px;
-  padding: 8px 16px;
-  :hover {
-    background-color: ${colors.neutral['100']};
-  }
+  min-height: 40px;
+
+  ${({ theme }) => {
+    const { baseFontSize, spacing, colors } = theme;
+
+    return css`
+      font-size: ${baseFontSize * 0.875}px;
+      padding: ${spacing.xsmall}px ${spacing.medium}px;
+
+      :hover {
+        background-color: ${colors.neutral['100']};
+      }
+    `;
+  }}
 `;
 
-const DropdownLight = ({ disabled, items, theme, placeholder }) => {
+const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
@@ -177,34 +218,52 @@ const DropdownLight = ({ disabled, items, theme, placeholder }) => {
   }, [enterPress, isOpen]);
 
   return (
-    <>
-      <Input type="hidden" value={selectedItem} />
+    <Wrapper>
+      <input
+        type="text"
+        hidden
+        name={name}
+        defaultValue={selectedItem}
+        aria-label="selecione uma opção"
+      />
 
-      <ButtonField onClick={() => setIsOpen(!isOpen)} ref={wrapperRef}>
+      <Button
+        aria-haspopup="true"
+        aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
+        onClick={() => setIsOpen(!isOpen)}
+        theme={theme}
+        disabled={disabled}
+        ref={wrapperRef}
+      >
         {itemLabel}
         <ArrowIcon
           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
           theme={theme}
         />
-      </ButtonField>
+      </Button>
 
       {isOpen && (
-        <DropdownSelect disabled={disabled} theme={theme} ref={listOptions}>
+        <SelectionList theme={theme} ref={listOptions}>
           {items.map((item, index) => (
-            <OptionItem
+            <SelectionListItem
+              role="option"
+              theme={theme}
               key={item?.value || item}
+              onClick={() => handleClose(item)}
               aria-posinset={index}
               aria-selected={index === cursor}
-              role="option"
               tabIndex="-1"
-              onClick={() => handleClose(item)}
             >
               {item?.label || item}
-            </OptionItem>
+
+              {(selectedItem === item?.value || selectedItem === item) && (
+                <CheckIcon theme={theme} />
+              )}
+            </SelectionListItem>
           ))}
-        </DropdownSelect>
+        </SelectionList>
       )}
-    </>
+    </Wrapper>
   );
 };
 
@@ -217,12 +276,18 @@ DropdownLight.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
+  name: PropTypes.string,
 };
 
 DropdownLight.defaultProps = {
   disabled: false,
-  theme: { colors, spacing, baseFontSize },
+  theme: {
+    colors: colorsDefault,
+    spacing: spacingDefault,
+    baseFontSize: baseFontSizeDefault,
+  },
   placeholder: 'Select an option',
+  name: '',
 };
 
 export default DropdownLight;
