@@ -169,22 +169,20 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   };
 
   const handleEscPress = ({ key }) => {
-    const node = wrapperRef.current;
-    if (node && key === EscapeKeyPressValue) {
+    if (key === EscapeKeyPressValue) {
       setIsOpen(false);
       setCursor(0);
     }
   };
 
   const handleEnterPress = ({ key }) => {
-    const node = wrapperRef.current;
-    if (node && key === enterPress) {
-      setIsOpen(false);
+    if (!isOpen && key === enterPress) {
+      setIsOpen(true);
     }
   };
 
   useEffect(() => {
-    if (isOpen && downPress && items.length) {
+    if (isOpen && downPress) {
       const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
       setCursor(selectedCursor);
       listOptions.current.children[selectedCursor].focus();
@@ -192,7 +190,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   }, [downPress, items, isOpen]);
 
   useEffect(() => {
-    if (isOpen && upPress && items.length && cursor > 0) {
+    if (isOpen && upPress && cursor > 0) {
       const selectedCursor = cursor - 1;
       setCursor(selectedCursor);
       listOptions.current.children[selectedCursor].focus();
@@ -201,12 +199,10 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
 
   useEffect(() => {
     window.addEventListener('click', handleClickOutside);
-    window.addEventListener('keydown', handleEscPress);
-    window.addEventListener('keydown', handleEnterPress);
+    window.addEventListener('keydown', handleEscPress, handleEnterPress);
     return () => {
       window.removeEventListener('click', handleClickOutside);
-      window.removeEventListener('keydown', handleEscPress);
-      window.removeEventListener('keydown', handleEnterPress);
+      window.removeEventListener('keydown', handleEscPress, handleEnterPress);
     };
   }, []);
 
