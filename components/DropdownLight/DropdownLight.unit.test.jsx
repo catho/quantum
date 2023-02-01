@@ -81,4 +81,12 @@ describe('<DropdownLight />', () => {
 
     expect(input.name).toMatch(INPUT_NAME);
   });
+
+  // it('should check if the escape button has been clicked', () => {
+  //   render(<DropdownLight items={itemsStringMock} />);
+  //   const enterClick = screen.
+  //   const input = screen.getByRole('textbox', { hidden: true });
+
+  //   expect(input.name).toMatch(INPUT_NAME);
+  // });
 });

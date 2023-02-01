@@ -148,7 +148,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const [itemLabel, setItemLabel] = useState(placeholder);
 
   const [cursor, setCursor] = useState(0);
-  const wrapperRef = useRef();
+  const buttonRef = useRef();
   const listOptions = useRef();
 
   const downPress = useKeyPress('ArrowDown');
@@ -156,14 +156,18 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const enterPress = useKeyPress('Enter');
   const EscapeKeyPressValue = 'Escape';
 
-  const handleClose = item => {
-    setIsOpen(false);
+  const selectItem = item => {
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
   };
 
+  const handleOnClickListItem = item => {
+    setIsOpen(false);
+    selectItem(item);
+  };
+
   const handleClickOutside = event => {
-    if (!wrapperRef.current?.contains(event.target)) {
+    if (!buttonRef.current?.contains(event.target)) {
       setIsOpen(false);
     }
   };
@@ -172,12 +176,6 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
     if (key === EscapeKeyPressValue) {
       setIsOpen(false);
       setCursor(0);
-    }
-  };
-
-  const handleEnterPress = ({ key }) => {
-    if (!isOpen && key === enterPress) {
-      setIsOpen(true);
     }
   };
 
@@ -199,19 +197,33 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
 
   useEffect(() => {
     window.addEventListener('click', handleClickOutside);
-    window.addEventListener('keydown', handleEscPress, handleEnterPress);
+    window.addEventListener('keydown', handleEscPress);
     return () => {
       window.removeEventListener('click', handleClickOutside);
-      window.removeEventListener('keydown', handleEscPress, handleEnterPress);
+      window.removeEventListener('keydown', handleEscPress);
     };
   }, []);
 
   useEffect(() => {
-    if (isOpen && enterPress) {
-      setIsOpen(false);
-      handleClose(items[cursor]);
+    if (document.activeElement === buttonRef.current && enterPress) {
+      setIsOpen(!isOpen);
     }
-  }, [enterPress, isOpen]);
+    console.log('enterPress', enterPress);
+
+    if (document.activeElement !== buttonRef.current && enterPress) {
+      setIsOpen(false);
+      console.log('Aleatorio');
+      if (!listOptions.current) {
+        return;
+      }
+
+      const itemsList = [...listOptions.current.children];
+
+      if (itemsList.some(element => element === document.activeElement)) {
+        selectItem(items[cursor]);
+      }
+    }
+  }, [enterPress]);
 
   return (
     <Wrapper>
@@ -226,10 +238,14 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
       <Button
         aria-haspopup="true"
         aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          if (!enterPress) {
+            setIsOpen(!isOpen);
+          }
+        }}
         theme={theme}
         disabled={disabled}
-        ref={wrapperRef}
+        ref={buttonRef}
       >
         {itemLabel}
         <ArrowIcon
@@ -245,7 +261,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
               role="option"
               theme={theme}
               key={item?.value || item}
-              onClick={() => handleClose(item)}
+              onClick={() => handleOnClickListItem(item)}
               aria-posinset={index}
               aria-selected={index === cursor}
               tabIndex="-1"
