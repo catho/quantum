@@ -163,6 +163,16 @@ const DropdownLight = ({
   const enterPress = useKeyPress('Enter');
   const EscapeKeyPressValue = 'Escape';
 
+  const handleToggleDropdown = () => {
+    if (!enterPress) {
+      setIsOpen(!isOpen);
+    }
+
+    if (isOpen) {
+      listOptions.current.children[0].focus();
+    }
+  };
+
   const selectItem = item => {
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
@@ -244,11 +254,7 @@ const DropdownLight = ({
       <Button
         aria-haspopup="true"
         aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-        onClick={() => {
-          if (!enterPress) {
-            setIsOpen(!isOpen);
-          }
-        }}
+        onClick={handleToggleDropdown}
         theme={theme}
         disabled={disabled}
         ref={buttonRef}
