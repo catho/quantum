@@ -142,7 +142,14 @@ const SelectionListItem = styled.li`
   }}
 `;
 
-const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
+const DropdownLight = ({
+  disabled,
+  items,
+  theme,
+  placeholder,
+  name,
+  onChange,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
@@ -159,6 +166,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const selectItem = item => {
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
+    onChange(item?.value || item);
   };
 
   const handleOnClickListItem = item => {
@@ -208,11 +216,9 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
     if (document.activeElement === buttonRef.current && enterPress) {
       setIsOpen(!isOpen);
     }
-    console.log('enterPress', enterPress);
 
     if (document.activeElement !== buttonRef.current && enterPress) {
       setIsOpen(false);
-      console.log('Aleatorio');
       if (!listOptions.current) {
         return;
       }
@@ -289,6 +295,7 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
+  onChange: PropTypes.func,
 };
 
 DropdownLight.defaultProps = {
@@ -300,6 +307,7 @@ DropdownLight.defaultProps = {
   },
   placeholder: 'Select an option',
   name: '',
+  onChange: () => {},
 };
 
 export default DropdownLight;

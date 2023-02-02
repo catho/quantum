@@ -82,11 +82,60 @@ describe('<DropdownLight />', () => {
     expect(input.name).toMatch(INPUT_NAME);
   });
 
-  // it('should check if the escape button has been clicked', () => {
-  //   render(<DropdownLight items={itemsStringMock} />);
-  //   const enterClick = screen.
-  //   const input = screen.getByRole('textbox', { hidden: true });
+  it('should close Dropdown Options when user press Escape', () => {
+    render(<DropdownLight items={itemsStringMock} />);
 
-  //   expect(input.name).toMatch(INPUT_NAME);
-  // });
+    const dropdown = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
+    userEvent.click(dropdown);
+
+    expect(
+      screen.getByRole('button', { name: 'fechar lista de itens' }),
+    ).toBeInTheDocument();
+
+    userEvent.keyboard('{Escape}');
+
+    expect(
+      screen.queryByRole('button', { name: 'fechar lista de itens' }),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: 'abrir lista de itens' }),
+    ).toBeInTheDocument();
+  });
+
+  it('should allow User to select an option using only arrowKeys and Enter', () => {
+    const onChangeMock = jest.fn();
+    render(<DropdownLight items={itemsStringMock} onChange={onChangeMock} />);
+
+    const dropdown = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
+    userEvent.click(dropdown);
+
+    userEvent.keyboard('{ArrowDown}{ArrowDown}{ArrowUp}{Enter}');
+
+    expect(onChangeMock).toHaveBeenCalledTimes(1);
+    expect(onChangeMock).toHaveBeenCalledWith('Banana');
+  });
+
+  it('should open select when user press enter on it', () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    userEvent.tab();
+    userEvent.keyboard('{Enter}');
+
+    expect(
+      screen.getByRole('button', { name: 'fechar lista de itens' }),
+    ).toBeInTheDocument();
+
+    userEvent.keyboard('{Enter}');
+
+    expect(
+      screen.getByRole('button', { name: 'abrir lista de itens' }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: 'fechar lista de itens' }),
+    ).not.toBeInTheDocument();
+  });
 });
