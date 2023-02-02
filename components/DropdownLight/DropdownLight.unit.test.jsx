@@ -27,8 +27,14 @@ describe('<DropdownLight />', () => {
   it('should return a value from item, using a object items', () => {
     render(<DropdownLight items={itemsObjectMock} />);
 
-    const dropdown = screen.getByRole('button');
+    const dropdown = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
     userEvent.click(dropdown);
+
+    expect(
+      screen.getByRole('button', { name: 'fechar lista de itens' }),
+    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
 
@@ -44,8 +50,14 @@ describe('<DropdownLight />', () => {
   it('should return a value from item, using a string items', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button');
+    const dropdown = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
     userEvent.click(dropdown);
+
+    expect(
+      screen.getByRole('button', { name: 'fechar lista de itens' }),
+    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
     userEvent.click(optionItem);
@@ -61,8 +73,14 @@ describe('<DropdownLight />', () => {
   it('should show the check icon when the item from list selected', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button');
+    const dropdown = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
     userEvent.click(dropdown);
+
+    expect(
+      screen.getByRole('button', { name: 'fechar lista de itens' }),
+    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
     userEvent.click(optionItem);
