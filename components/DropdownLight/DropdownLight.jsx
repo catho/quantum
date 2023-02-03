@@ -177,6 +177,7 @@ const DropdownLight = ({
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
     onChange(item?.value || item);
+    buttonRef.current.focus();
   };
 
   const handleOnClickListItem = item => {

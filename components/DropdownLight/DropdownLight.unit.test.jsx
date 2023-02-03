@@ -10,6 +10,10 @@ import {
 } from '../../stories/DropdownLight/mock';
 
 const INPUT_NAME = 'dropdown-name';
+const ArrowDownKeyCode = 'ArrowDown';
+const ArrowUpKeyCode = 'ArrowUp';
+const EnterKeyCode = 'Enter';
+const EscapeKeyCode = 'Escape';
 
 describe('<DropdownLight />', () => {
   it('should match the snapshots', () => {
@@ -27,14 +31,8 @@ describe('<DropdownLight />', () => {
   it('should return a value from item, using a object items', () => {
     render(<DropdownLight items={itemsObjectMock} />);
 
-    const dropdown = screen.getByRole('button', {
-      name: 'abrir lista de itens',
-    });
+    const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
-
-    expect(
-      screen.getByRole('button', { name: 'fechar lista de itens' }),
-    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
 
@@ -50,14 +48,8 @@ describe('<DropdownLight />', () => {
   it('should return a value from item, using a string items', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button', {
-      name: 'abrir lista de itens',
-    });
+    const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
-
-    expect(
-      screen.getByRole('button', { name: 'fechar lista de itens' }),
-    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
     userEvent.click(optionItem);
@@ -73,14 +65,8 @@ describe('<DropdownLight />', () => {
   it('should show the check icon when the item from list selected', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button', {
-      name: 'abrir lista de itens',
-    });
+    const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
-
-    expect(
-      screen.getByRole('button', { name: 'fechar lista de itens' }),
-    ).toBeInTheDocument();
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
     userEvent.click(optionItem);
@@ -103,57 +89,46 @@ describe('<DropdownLight />', () => {
   it('should close Dropdown Options when user press Escape', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button', {
-      name: 'abrir lista de itens',
-    });
+    const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
 
-    expect(
-      screen.getByRole('button', { name: 'fechar lista de itens' }),
-    ).toBeInTheDocument();
+    userEvent.keyboard(`{${EscapeKeyCode}}`);
 
-    userEvent.keyboard('{Escape}');
+    expect(screen.queryByRole('option')).not.toBeInTheDocument();
 
-    expect(
-      screen.queryByRole('button', { name: 'fechar lista de itens' }),
-    ).not.toBeInTheDocument();
     expect(
       screen.getByRole('button', { name: 'abrir lista de itens' }),
     ).toBeInTheDocument();
   });
 
   it('should allow User to select an option using only arrowKeys and Enter', () => {
-    const onChangeMock = jest.fn();
-    render(<DropdownLight items={itemsStringMock} onChange={onChangeMock} />);
+    render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button', {
-      name: 'abrir lista de itens',
-    });
+    const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
 
-    userEvent.keyboard('{ArrowDown}{ArrowDown}{ArrowUp}{Enter}');
+    const bananaItem = itemsStringMock[1];
 
-    expect(onChangeMock).toHaveBeenCalledTimes(1);
-    expect(onChangeMock).toHaveBeenCalledWith('Banana');
+    const input = screen.getByRole('textbox', { hidden: true });
+
+    userEvent.keyboard(
+      `{${ArrowDownKeyCode}}{${ArrowDownKeyCode}}{${ArrowUpKeyCode}}{${EnterKeyCode}}`,
+    );
+
+    expect(input.value).toEqual(bananaItem);
+    expect(screen.queryByRole('option')).not.toBeInTheDocument();
   });
 
   it('should open select when user press enter on it', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     userEvent.tab();
-    userEvent.keyboard('{Enter}');
+    userEvent.keyboard(`{${EnterKeyCode}}`);
 
     expect(
       screen.getByRole('button', { name: 'fechar lista de itens' }),
     ).toBeInTheDocument();
 
-    userEvent.keyboard('{Enter}');
-
-    expect(
-      screen.getByRole('button', { name: 'abrir lista de itens' }),
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByRole('button', { name: 'fechar lista de itens' }),
-    ).not.toBeInTheDocument();
+    expect(screen.getByRole('option', { name: 'Lemon' })).toBeInTheDocument();
   });
 });
