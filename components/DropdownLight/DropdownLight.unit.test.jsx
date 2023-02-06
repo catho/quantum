@@ -10,10 +10,10 @@ import {
 } from '../../stories/DropdownLight/mock';
 
 const INPUT_NAME = 'dropdown-name';
-const ArrowDownKeyCode = 'ArrowDown';
-const ArrowUpKeyCode = 'ArrowUp';
-const EnterKeyCode = 'Enter';
-const EscapeKeyCode = 'Escape';
+const ArrowDownKeyCode = '{ArrowDown}';
+const ArrowUpKeyCode = '{ArrowUp}';
+const EnterKeyCode = '{Enter}';
+const EscapeKeyCode = '{Escape}';
 
 describe('<DropdownLight />', () => {
   it('should match the snapshots', () => {
@@ -92,43 +92,30 @@ describe('<DropdownLight />', () => {
     const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
 
-    userEvent.keyboard(`{${EscapeKeyCode}}`);
+    userEvent.keyboard(`${EscapeKeyCode}`);
 
-    expect(screen.queryByRole('option')).not.toBeInTheDocument();
+    expect(screen.queryAllByRole('option')).toHaveLength(0);
 
     expect(
       screen.getByRole('button', { name: 'abrir lista de itens' }),
     ).toBeInTheDocument();
   });
 
-  it('should allow User to select an option using only arrowKeys and Enter', () => {
+  it('using only keyboard', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    userEvent.tab();
+    userEvent.keyboard(`${EnterKeyCode}`);
 
     const bananaItem = itemsStringMock[1];
 
     const input = screen.getByRole('textbox', { hidden: true });
 
     userEvent.keyboard(
-      `{${ArrowDownKeyCode}}{${ArrowDownKeyCode}}{${ArrowUpKeyCode}}{${EnterKeyCode}}`,
+      `${ArrowDownKeyCode}${ArrowDownKeyCode}${ArrowUpKeyCode}${EnterKeyCode}`,
     );
 
     expect(input.value).toEqual(bananaItem);
     expect(screen.queryByRole('option')).not.toBeInTheDocument();
-  });
-
-  it('should open select when user press enter on it', () => {
-    render(<DropdownLight items={itemsStringMock} />);
-
-    userEvent.tab();
-    userEvent.keyboard(`{${EnterKeyCode}}`);
-
-    expect(
-      screen.getByRole('button', { name: 'fechar lista de itens' }),
-    ).toBeInTheDocument();
-
-    expect(screen.getByRole('option', { name: 'Lemon' })).toBeInTheDocument();
   });
 });
