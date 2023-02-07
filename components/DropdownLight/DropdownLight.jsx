@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -6,6 +6,7 @@ import {
   spacing as spacingDefault,
   baseFontSize as baseFontSizeDefault,
 } from '../shared/theme';
+import { InputLabel, RequiredMark } from '../Input/sub-components';
 import Icon from '../Icon/Icon';
 
 const itemPropType = PropTypes.oneOfType([
@@ -141,10 +142,26 @@ const SelectionListItem = styled.li`
   }}
 `;
 
-const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
+const InputWrapper = styled.div`
+  position: relative;
+`;
+
+const DropdownLight = ({
+  disabled,
+  items,
+  theme,
+  placeholder,
+  name,
+  id,
+  label,
+  error,
+  required,
+  helperText,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
+  const wrapperRef = useRef();
 
   const handleClose = item => {
     setIsOpen(false);
@@ -155,30 +172,39 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   return (
     <>
       <Wrapper>
-        <input
-          type="text"
-          hidden
-          name={name}
-          defaultValue={selectedItem}
-          aria-label="selecione uma opção"
-        />
-
-        <Button
-          aria-haspopup="true"
-          aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-          onClick={() => setIsOpen(!isOpen)}
-          theme={theme}
-          disabled={disabled}
-        >
-          {itemLabel}
-          <ArrowIcon
-            name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-            theme={theme}
+        <InputWrapper ref={wrapperRef}>
+          <InputLabel htmlFor={id} error={error}>
+            {label}
+            {required && <RequiredMark>*</RequiredMark>}
+          </InputLabel>
+          <input
+            type="text"
+            hidden
+            name={name}
+            defaultValue={selectedItem}
+            aria-label="selecione uma opção"
+            htmlFor={id}
           />
-        </Button>
+
+          <Button
+            aria-haspopup="true"
+            aria-label={
+              isOpen ? 'fechar lista de itens' : 'abrir lista de itens'
+            }
+            onClick={() => setIsOpen(!isOpen)}
+            theme={theme}
+            disabled={disabled}
+          >
+            {itemLabel}
+            <ArrowIcon
+              name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
+              theme={theme}
+            />
+          </Button>
+        </InputWrapper>
 
         {isOpen && (
-          <SelectionList theme={theme}>
+          <SelectionList id={id} theme={theme}>
             {items.map(item => (
               <SelectionListItem
                 role="option"
@@ -201,6 +227,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
 };
 
 DropdownLight.propTypes = {
+  id: PropTypes.string,
   disabled: PropTypes.bool,
   placeholder: PropTypes.string,
   items: PropTypes.arrayOf(itemPropType).isRequired,
@@ -210,9 +237,17 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
+  label: PropTypes.string,
+  error: PropTypes.string,
+  required: PropTypes.bool,
+  helperText: PropTypes.string,
 };
 
 DropdownLight.defaultProps = {
+  id: '',
+  label: '',
+  error: '',
+  required: false,
   disabled: false,
   theme: {
     colors: colorsDefault,
@@ -221,6 +256,7 @@ DropdownLight.defaultProps = {
   },
   placeholder: 'Select an option',
   name: '',
+  helperText: '',
 };
 
 export default DropdownLight;

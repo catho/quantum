@@ -3,6 +3,13 @@
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
   .c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+  color: inherit;
+}
+
+.c4 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
@@ -12,7 +19,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   position: relative;
 }
 
-.c1 {
+.c3 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -40,7 +47,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   color: #424242;
 }
 
-.c1:disabled {
+.c3:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -48,46 +55,59 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c1:hover:enabled {
+.c3:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1:focus:enabled {
+.c3:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
     class="c0"
   >
-    <input
-      aria-label="selecione uma opção"
-      hidden=""
-      name=""
-      type="text"
-      value=""
-    />
-    <button
-      aria-haspopup="true"
-      aria-label="abrir lista de itens"
+    <div
       class="c1"
     >
-      Select an option
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root c2"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
-        viewBox="0 0 24 24"
+      <label
+        class="c2"
+        for=""
+      />
+      <input
+        aria-label="selecione uma opção"
+        for=""
+        hidden=""
+        name=""
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c3"
       >
-        <path
-          d="M7 10l5 5 5-5z"
-        />
-      </svg>
-    </button>
+        Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -95,6 +115,13 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 exports[`<DropdownLight /> should match the snapshots 2`] = `
 <DocumentFragment>
   .c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+  color: inherit;
+}
+
+.c4 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
@@ -104,7 +131,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   position: relative;
 }
 
-.c1 {
+.c3 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -132,7 +159,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   color: #424242;
 }
 
-.c1:disabled {
+.c3:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -140,46 +167,59 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c1:hover:enabled {
+.c3:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1:focus:enabled {
+.c3:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
 }
 
 <div
     class="c0"
   >
-    <input
-      aria-label="selecione uma opção"
-      hidden=""
-      name="dropdown-name"
-      type="text"
-      value=""
-    />
-    <button
-      aria-haspopup="true"
-      aria-label="abrir lista de itens"
+    <div
       class="c1"
     >
-      Select an option
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root c2"
-        data-qtm-preloader="icon"
-        focusable="false"
-        style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
-        viewBox="0 0 24 24"
+      <label
+        class="c2"
+        for=""
+      />
+      <input
+        aria-label="selecione uma opção"
+        for=""
+        hidden=""
+        name="dropdown-name"
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c3"
       >
-        <path
-          d="M7 10l5 5 5-5z"
-        />
-      </svg>
-    </button>
+        Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c4"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          theme="[object Object]"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

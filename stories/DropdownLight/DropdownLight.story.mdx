@@ -7,7 +7,9 @@ import { Header } from '../shared';
 import { 
   Default,
   Disabled,
-  WithArrayOfString
+  WithArrayOfString,
+  WithError,
+  RequiredMark
 } from './DropdownLight.stories.jsx';
 
 <Meta title="DropdownLight" component={DropdownLight}  />
@@ -47,4 +49,16 @@ import { DropdownLight } from '@catho/quantum';
 
 <Canvas>
   <Story story={WithArrayOfString}/>
+</Canvas>
+
+### RequiredMark
+
+<Canvas>
+  <Story story={RequiredMark}/>
+</Canvas>
+
+### WithError
+
+<Canvas>
+  <Story story={WithError}/>
 </Canvas>
