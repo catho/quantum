@@ -187,6 +187,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
     if (key === EscapeKeyPressValue) {
       setIsOpen(false);
       setCursor(0);
+      buttonRef.current.focus();
     }
   };
 
