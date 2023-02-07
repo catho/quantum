@@ -92,9 +92,9 @@ describe('<DropdownLight />', () => {
     const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
 
-    userEvent.keyboard(`${EscapeKeyCode}`);
+    userEvent.keyboard(EscapeKeyCode);
 
-    expect(screen.queryAllByRole('option')).toHaveLength(0);
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
 
     expect(
       screen.getByRole('button', { name: 'abrir lista de itens' }),
@@ -105,15 +105,17 @@ describe('<DropdownLight />', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     userEvent.tab();
-    userEvent.keyboard(`${EnterKeyCode}`);
+    userEvent.keyboard(EnterKeyCode);
 
-    const bananaItem = itemsStringMock[1];
-
-    const input = screen.getByRole('textbox', { hidden: true });
+    expect(screen.getByRole('list')).toBeInTheDocument();
 
     userEvent.keyboard(
       `${ArrowDownKeyCode}${ArrowDownKeyCode}${ArrowUpKeyCode}${EnterKeyCode}`,
     );
+
+    const bananaItem = itemsStringMock[1];
+
+    const input = screen.getByRole('textbox', { hidden: true });
 
     expect(input.value).toEqual(bananaItem);
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
