@@ -142,14 +142,7 @@ const SelectionListItem = styled.li`
   }}
 `;
 
-const DropdownLight = ({
-  disabled,
-  items,
-  theme,
-  placeholder,
-  name,
-  onChange,
-}) => {
+const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
@@ -176,7 +169,6 @@ const DropdownLight = ({
   const selectItem = item => {
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
-    onChange(item?.value || item);
     buttonRef.current.focus();
   };
 
@@ -302,7 +294,6 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
-  onChange: PropTypes.func,
 };
 
 DropdownLight.defaultProps = {
@@ -314,7 +305,6 @@ DropdownLight.defaultProps = {
   },
   placeholder: 'Select an option',
   name: '',
-  onChange: () => {},
 };
 
 export default DropdownLight;

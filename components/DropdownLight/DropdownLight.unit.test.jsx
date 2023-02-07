@@ -101,7 +101,7 @@ describe('<DropdownLight />', () => {
     ).toBeInTheDocument();
   });
 
-  it('using only keyboard', () => {
+  it('should allow User to select an option using only keyboard', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     userEvent.tab();
@@ -116,6 +116,6 @@ describe('<DropdownLight />', () => {
     );
 
     expect(input.value).toEqual(bananaItem);
-    expect(screen.queryByRole('option')).not.toBeInTheDocument();
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 });
