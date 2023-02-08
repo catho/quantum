@@ -2,14 +2,71 @@
 
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
   color: inherit;
 }
 
-.c4 {
+.c6 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
@@ -17,9 +74,10 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 .c0 {
   position: relative;
+  color: #424242;
 }
 
-.c3 {
+.c5 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -47,7 +105,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   color: #424242;
 }
 
-.c3:disabled {
+.c5:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -55,18 +113,22 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c3:hover:enabled {
+.c5:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c3:focus:enabled {
+.c5:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
 .c1 {
   position: relative;
+}
+
+.c4 {
+  margin-top: 8px;
 }
 
 <div
@@ -81,21 +143,23 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
       />
       <input
         aria-label="selecione uma opção"
+        class="c3 c4"
         for=""
         hidden=""
         name=""
+        placeholder="Select an option"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c3"
+        class="c5"
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root c6"
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
@@ -114,14 +178,71 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 exports[`<DropdownLight /> should match the snapshots 2`] = `
 <DocumentFragment>
-  .c2 {
+  .c3 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c3::-webkit-inner-spin-button,
+.c3::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c3::-webkit-calendar-picker-indicator,
+.c3::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:hover,
+.c3:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c3[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c3:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c3[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2 {
   display: block;
   font-weight: bold;
   margin: 8px 0 0;
   color: inherit;
 }
 
-.c4 {
+.c6 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
@@ -129,9 +250,10 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
 
 .c0 {
   position: relative;
+  color: #424242;
 }
 
-.c3 {
+.c5 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -159,7 +281,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   color: #424242;
 }
 
-.c3:disabled {
+.c5:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -167,18 +289,22 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c3:hover:enabled {
+.c5:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c3:focus:enabled {
+.c5:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
 .c1 {
   position: relative;
+}
+
+.c4 {
+  margin-top: 8px;
 }
 
 <div
@@ -193,21 +319,23 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
       />
       <input
         aria-label="selecione uma opção"
+        class="c3 c4"
         for=""
         hidden=""
         name="dropdown-name"
+        placeholder="Select an option"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c3"
+        class="c5"
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root c6"
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"

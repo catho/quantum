@@ -81,4 +81,11 @@ describe('<DropdownLight />', () => {
 
     expect(input.name).toMatch(INPUT_NAME);
   });
+
+  it.todo('should check if it is disabled');
+  it.todo('should check if it is required');
+  it.todo('should check if it is with error');
+  it.todo('should check if it is with HelperText');
+  it.todo('should check if it is with Label');
+  it.todo('should check if it is with PlaceHolder');
 });

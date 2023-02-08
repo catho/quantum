@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -6,7 +6,13 @@ import {
   spacing as spacingDefault,
   baseFontSize as baseFontSizeDefault,
 } from '../shared/theme';
-import { InputLabel, RequiredMark } from '../Input/sub-components';
+import {
+  InputLabel,
+  RequiredMark,
+  TextInput,
+  HelperText,
+  InputErrorMessage,
+} from '../Input/sub-components';
 import Icon from '../Icon/Icon';
 
 const itemPropType = PropTypes.oneOfType([
@@ -41,8 +47,16 @@ const ArrowIcon = styled(Icon)`
   width: 24px;
 `;
 
-const Wrapper = styled.div`
-  position: relative;
+const ComponentWrapper = styled.div`
+  ${({
+    theme: {
+      colors: { neutral },
+    },
+    skin = 'default',
+  }) => css`
+    position: relative;
+    color: ${skin === 'default' ? neutral[700] : neutral[0]};
+  `}
 `;
 
 const Button = styled.button`
@@ -146,6 +160,44 @@ const InputWrapper = styled.div`
   position: relative;
 `;
 
+const InputText = styled(TextInput)`
+  ${({
+    theme: {
+      spacing: { xsmall },
+    },
+  }) => css`
+    margin-top: ${xsmall}px;
+  `}
+`;
+
+const InputIcon = styled(Icon)`
+  cursor: pointer;
+  position: absolute;
+  ${({
+    theme: {
+      spacing: { xsmall, medium },
+      baseFontSize,
+    },
+  }) => css`
+    right: ${medium}px;
+    bottom: ${xsmall * 1.25}px;
+    width: ${baseFontSize * 1.5}px;
+  `}
+`;
+
+const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
+  ${({
+    theme: {
+      colors: {
+        error: { 700: error700 },
+      },
+    },
+    skin,
+  }) => css`
+    color: ${skin === 'default' ? error700 : 'inherit'};
+  `}
+`;
+
 const DropdownLight = ({
   disabled,
   items,
@@ -157,11 +209,13 @@ const DropdownLight = ({
   error,
   required,
   helperText,
+  skin,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
   const wrapperRef = useRef();
+  const inputRef = useRef();
 
   const handleClose = item => {
     setIsOpen(false);
@@ -169,18 +223,28 @@ const DropdownLight = ({
     setItemLabel(item?.label || item);
   };
 
+  useEffect(() => {
+    if (error) {
+      inputRef.current.style.borderColor = colorsDefault.error['700'];
+    }
+  }, [error]);
+
   return (
     <>
-      <Wrapper>
+      <ComponentWrapper theme={theme} skin={skin}>
         <InputWrapper ref={wrapperRef}>
           <InputLabel htmlFor={id} error={error}>
             {label}
-            {required && <RequiredMark>*</RequiredMark>}
+            {required && <RequiredMark skin={skin}>*</RequiredMark>}
           </InputLabel>
-          <input
+          <InputText
             type="text"
             hidden
+            error={error}
+            ref={inputRef}
+            skin={skin}
             name={name}
+            placeholder={placeholder}
             defaultValue={selectedItem}
             aria-label="selecione uma opção"
             htmlFor={id}
@@ -196,12 +260,22 @@ const DropdownLight = ({
             disabled={disabled}
           >
             {itemLabel}
-            <ArrowIcon
-              name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-              theme={theme}
-            />
+            {error ? (
+              <InputErrorIcon description={error} theme={theme} skin={skin} />
+            ) : (
+              <ArrowIcon
+                name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
+                theme={theme}
+              />
+            )}
           </Button>
         </InputWrapper>
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <InputErrorMessage theme={theme} skin={skin}>
+            {error}
+          </InputErrorMessage>
+        )}
 
         {isOpen && (
           <SelectionList id={id} theme={theme}>
@@ -221,7 +295,7 @@ const DropdownLight = ({
             ))}
           </SelectionList>
         )}
-      </Wrapper>
+      </ComponentWrapper>
     </>
   );
 };
@@ -241,6 +315,7 @@ DropdownLight.propTypes = {
   error: PropTypes.string,
   required: PropTypes.bool,
   helperText: PropTypes.string,
+  skin: PropTypes.oneOf(['default', 'dark']),
 };
 
 DropdownLight.defaultProps = {
@@ -257,6 +332,7 @@ DropdownLight.defaultProps = {
   placeholder: 'Select an option',
   name: '',
   helperText: '',
+  skin: 'default',
 };
 
 export default DropdownLight;

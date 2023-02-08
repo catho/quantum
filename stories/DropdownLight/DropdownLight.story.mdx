@@ -9,7 +9,10 @@ import {
   Disabled,
   WithArrayOfString,
   WithError,
-  RequiredMark
+  Required,
+  WithHelperText,
+  WithLabel,
+  WithPlaceholder,
 } from './DropdownLight.stories.jsx';
 
 <Meta title="DropdownLight" component={DropdownLight}  />
@@ -51,14 +54,32 @@ import { DropdownLight } from '@catho/quantum';
   <Story story={WithArrayOfString}/>
 </Canvas>
 
-### RequiredMark
+### Required
 
 <Canvas>
-  <Story story={RequiredMark}/>
+  <Story story={Required}/>
 </Canvas>
 
 ### WithError
 
 <Canvas>
   <Story story={WithError}/>
+</Canvas>
+
+### WithHelperText
+
+<Canvas>
+  <Story story={WithHelperText}/>
+</Canvas>
+
+### WithLabel
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
+
+### WithPlaceholder
+
+<Canvas>
+  <Story story={WithPlaceholder}/>
 </Canvas>
