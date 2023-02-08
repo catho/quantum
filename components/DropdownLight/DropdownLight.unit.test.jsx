@@ -82,10 +82,58 @@ describe('<DropdownLight />', () => {
     expect(input.name).toMatch(INPUT_NAME);
   });
 
-  it.todo('should check if it is disabled');
-  it.todo('should check if it is required');
-  it.todo('should check if it is with error');
-  it.todo('should check if it is with HelperText');
-  it.todo('should check if it is with Label');
-  it.todo('should check if it is with PlaceHolder');
+  it('should check if it is disabled', () => {
+    render(<DropdownLight items={itemsStringMock} disabled />);
+
+    const dropdown = screen.getByRole('button');
+    userEvent.click(dropdown);
+
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+  });
+  it('should check if it is required', () => {
+    const { container } = render(
+      <DropdownLight items={itemsStringMock} required />,
+    );
+
+    expect(container.querySelector('em')).toHaveTextContent('*');
+  });
+  it('should check if it is with error', () => {
+    render(<DropdownLight items={itemsStringMock} error="Some Error Text" />);
+
+    const dropdown = screen.getByRole('button');
+    const InputErrorIconElement = dropdown.querySelector('svg');
+
+    expect(InputErrorIconElement).toBeInTheDocument();
+  });
+  it('should check if it is with HelperText', () => {
+    const helperTextContent = 'this is a helper text';
+    render(
+      <DropdownLight items={itemsStringMock} helperText={helperTextContent} />,
+    );
+
+    expect(screen.getByText(helperTextContent)).toBeInTheDocument();
+  });
+
+  it('should check if it is with Label', () => {
+    const descriptionLabelContent = 'this is a description label';
+    render(
+      <DropdownLight items={itemsStringMock} label={descriptionLabelContent} />,
+    );
+
+    expect(screen.getByText(descriptionLabelContent)).toBeInTheDocument();
+  });
+  it('should check if it is with PlaceHolder', () => {
+    const placeholderContent = 'this is a input placeholder';
+    render(
+      <DropdownLight
+        items={itemsStringMock}
+        label="label of input"
+        placeholder={placeholderContent}
+      />,
+    );
+
+    const input = screen.getByRole('textbox', { hidden: true });
+
+    expect(input.getAttribute('placeholder')).toMatch(placeholderContent);
+  });
 });

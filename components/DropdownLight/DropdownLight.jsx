@@ -224,8 +224,8 @@ const DropdownLight = ({
   };
 
   useEffect(() => {
-    if (error) {
-      inputRef.current.style.borderColor = colorsDefault.error['700'];
+    if (error !== '') {
+      inputRef.current.style.borderColor = 'red';
     }
   }, [error]);
 
@@ -248,6 +248,7 @@ const DropdownLight = ({
             defaultValue={selectedItem}
             aria-label="selecione uma opção"
             htmlFor={id}
+            required={required}
           />
 
           <Button
