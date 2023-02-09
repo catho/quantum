@@ -19,11 +19,6 @@ export interface DropdownLightProps {
   required?: boolean,
   helperText: string,
   skin?: 'default' | 'dark',
-  theme?: {
-    colors?: {};
-    spacing?: {};
-    baseFontSize?: number;
-  };
 }
 
 export default class DropdownLight extends Component<DropdownLightProps> {}
