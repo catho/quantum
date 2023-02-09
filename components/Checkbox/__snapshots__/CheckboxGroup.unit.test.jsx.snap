@@ -40,6 +40,11 @@ exports[`Checkbox group should match snapshots 1`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -204,6 +209,11 @@ exports[`Checkbox group should match snapshots 2`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -337,6 +347,11 @@ exports[`Checkbox group should match snapshots 3`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -468,6 +483,11 @@ exports[`Checkbox group should match snapshots 4`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {
@@ -781,6 +801,11 @@ exports[`Checkbox group should match snapshots 5`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c9[disabled] ~ .c5 {
   color: #999999;
 }
@@ -1090,6 +1115,11 @@ exports[`Checkbox group should match snapshots 6`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -1392,6 +1422,11 @@ exports[`Checkbox group should match snapshots 7`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {
@@ -1698,6 +1733,11 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -1996,6 +2036,11 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {
@@ -2298,6 +2343,11 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -2596,6 +2646,11 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {
@@ -2898,6 +2953,11 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -3196,6 +3256,11 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {
@@ -3498,6 +3563,11 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
   margin: 0 0 0 12px;
 }
 
+.c7 a {
+  position: relative;
+  z-index: 5;
+}
+
 .c4 {
   cursor: pointer;
   height: 100%;
@@ -3796,6 +3866,11 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
 .c7 {
   color: #424242;
   margin: 0 0 0 12px;
+}
+
+.c7 a {
+  position: relative;
+  z-index: 5;
 }
 
 .c4 {

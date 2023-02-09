@@ -3,10 +3,10 @@ import { Component, ChangeEventHandler, ComponentType, ReactNode } from 'react';
 export interface CheckboxProps {
     checked?: boolean;
     disabled?: boolean;
-    children?: string;
+    children?: ReactNode;
     error?: string;
     id?: string;
-    label?: string;
+    label?: ReactNode;
     name: string;
     value?: string;
     onChange?: ChangeEventHandler<HTMLInputElement>;
