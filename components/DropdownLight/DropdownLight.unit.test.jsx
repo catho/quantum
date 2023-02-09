@@ -10,10 +10,10 @@ import {
 } from '../../stories/DropdownLight/mock';
 
 const INPUT_NAME = 'dropdown-name';
-const ArrowDownKeyCode = '{ArrowDown}';
-const ArrowUpKeyCode = '{ArrowUp}';
-const EnterKeyCode = '{Enter}';
-const EscapeKeyCode = '{Escape}';
+const ARROW_DOWN_KEY_CODE = '{ArrowDown}';
+const ARROW_UP_KEY_CODE = '{ArrowUp}';
+const ENTER_KEY_CODE = '{Enter}';
+const ESCAPE_KEY_CODE = '{Escape}';
 
 describe('<DropdownLight />', () => {
   it('should match the snapshots', () => {
@@ -92,7 +92,7 @@ describe('<DropdownLight />', () => {
     const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
 
-    userEvent.keyboard(EscapeKeyCode);
+    userEvent.keyboard(ESCAPE_KEY_CODE);
 
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
 
@@ -105,12 +105,12 @@ describe('<DropdownLight />', () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     userEvent.tab();
-    userEvent.keyboard(EnterKeyCode);
+    userEvent.keyboard(ENTER_KEY_CODE);
 
     expect(screen.getByRole('list')).toBeInTheDocument();
 
     userEvent.keyboard(
-      `${ArrowDownKeyCode}${ArrowDownKeyCode}${ArrowUpKeyCode}${EnterKeyCode}`,
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}${ENTER_KEY_CODE}`,
     );
 
     const bananaItem = itemsStringMock[1];
