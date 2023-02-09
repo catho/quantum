@@ -142,7 +142,15 @@ const SelectionListItem = styled.li`
   }}
 `;
 
-const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
+const DropdownLight = ({
+  disabled,
+  items,
+  theme,
+  placeholder,
+  name,
+  onChange,
+  onSelectedItem,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
@@ -169,12 +177,14 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const selectItem = item => {
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
+    onChange(item?.value || item);
     buttonRef.current.focus();
   };
 
   const handleOnClickListItem = item => {
     setIsOpen(false);
     selectItem(item);
+    onSelectedItem(item);
   };
 
   const handleClickOutside = event => {
@@ -243,6 +253,7 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
         name={name}
         defaultValue={selectedItem}
         aria-label="selecione uma opção"
+        onChange={onChange}
       />
 
       <Button
@@ -295,6 +306,8 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
+  onChange: PropTypes.func,
+  onSelectedItem: PropTypes.func,
 };
 
 DropdownLight.defaultProps = {
@@ -306,6 +319,8 @@ DropdownLight.defaultProps = {
   },
   placeholder: 'Select an option',
   name: '',
+  onChange: () => {},
+  onSelectedItem: () => {},
 };
 
 export default DropdownLight;

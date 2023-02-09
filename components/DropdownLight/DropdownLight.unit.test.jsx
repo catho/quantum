@@ -120,4 +120,36 @@ describe('<DropdownLight />', () => {
     expect(input.value).toEqual(bananaItem);
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
+
+  it('should call onChangeMock when prop is chosen', () => {
+    const onChangeMock = jest.fn();
+    render(<DropdownLight items={itemsStringMock} onChange={onChangeMock} />);
+
+    userEvent.tab();
+    userEvent.keyboard(EnterKeyCode);
+
+    userEvent.keyboard(`${ArrowDownKeyCode}${ArrowDownKeyCode}${EnterKeyCode}`);
+
+    expect(onChangeMock).toHaveBeenCalledTimes(1);
+    expect(onChangeMock).toHaveBeenCalledWith('Strawberry');
+  });
+
+  it('should call selectedItemMock when prop is chosen', () => {
+    const selectedItemMock = jest.fn();
+    render(
+      <DropdownLight
+        items={itemsStringMock}
+        onSelectedItem={selectedItemMock}
+      />,
+    );
+
+    const dropdown = screen.getByRole('button');
+    userEvent.click(dropdown);
+
+    const optionItem = screen.getByRole('option', { name: 'Orange' });
+    userEvent.click(optionItem);
+
+    expect(selectedItemMock).toHaveBeenCalled();
+    expect(selectedItemMock).toHaveBeenCalledWith('Orange');
+  });
 });
