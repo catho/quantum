@@ -73,14 +73,14 @@ const Button = styled.button`
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  ${({ theme }) => {
+  ${({ theme, error }) => {
     const { baseFontSize, spacing, colors } = theme;
 
     return css`
       font-size: ${baseFontSize}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
       background-color: ${colors.neutral['0']};
-      border: 2px solid ${colors.neutral['500']};
+      border: 2px solid ${error ? colors.error['700'] : colors.neutral['500']};
       color: ${colors.neutral['700']};
 
       :disabled {
@@ -215,7 +215,6 @@ const DropdownLight = ({
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
   const wrapperRef = useRef();
-  const inputRef = useRef();
 
   const handleClose = item => {
     setIsOpen(false);
@@ -235,7 +234,6 @@ const DropdownLight = ({
             type="text"
             hidden
             error={error}
-            ref={inputRef}
             skin={skin}
             name={name}
             placeholder={placeholder}
@@ -244,7 +242,6 @@ const DropdownLight = ({
             htmlFor={id}
             required={required}
           />
-
           <Button
             aria-haspopup="true"
             aria-label={
@@ -252,6 +249,8 @@ const DropdownLight = ({
             }
             onClick={() => setIsOpen(!isOpen)}
             theme={theme}
+            skin={skin}
+            error={error}
             disabled={disabled}
           >
             {itemLabel}
