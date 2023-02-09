@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -7,6 +7,7 @@ import {
   baseFontSize as baseFontSizeDefault,
 } from '../shared/theme';
 import Icon from '../Icon/Icon';
+import useKeyPress from './SubComponents/UseKeyPress';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -146,57 +147,141 @@ const DropdownLight = ({ disabled, items, theme, placeholder, name }) => {
   const [selectedItem, setSelectedItem] = useState('');
   const [itemLabel, setItemLabel] = useState(placeholder);
 
-  const handleClose = item => {
-    setIsOpen(false);
-    setSelectedItem(item?.value || item);
-    setItemLabel(item?.label || item);
+  const [cursor, setCursor] = useState(0);
+  const buttonRef = useRef();
+  const listOptions = useRef();
+
+  const downPress = useKeyPress('ArrowDown');
+  const upPress = useKeyPress('ArrowUp');
+  const enterPress = useKeyPress('Enter');
+  const EscapeKeyPressValue = 'Escape';
+
+  const handleToggleDropdown = () => {
+    if (!enterPress) {
+      setIsOpen(!isOpen);
+    }
+
+    if (isOpen) {
+      listOptions.current.children[0].focus();
+    }
   };
 
+  const selectItem = item => {
+    setSelectedItem(item?.value || item);
+    setItemLabel(item?.label || item);
+    buttonRef.current.focus();
+  };
+
+  const handleOnClickListItem = item => {
+    setIsOpen(false);
+    selectItem(item);
+  };
+
+  const handleClickOutside = event => {
+    if (!buttonRef.current?.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  const handleEscPress = ({ key }) => {
+    if (key === EscapeKeyPressValue) {
+      setIsOpen(false);
+      setCursor(0);
+      buttonRef.current.focus();
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen && downPress) {
+      const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
+      setCursor(selectedCursor);
+      listOptions.current.children[selectedCursor].focus();
+    }
+  }, [downPress, items, isOpen]);
+
+  useEffect(() => {
+    if (isOpen && upPress && cursor > 0) {
+      const selectedCursor = cursor - 1;
+      setCursor(selectedCursor);
+      listOptions.current.children[selectedCursor].focus();
+    }
+  }, [upPress, items, isOpen]);
+
+  useEffect(() => {
+    window.addEventListener('click', handleClickOutside);
+    window.addEventListener('keydown', handleEscPress);
+    return () => {
+      window.removeEventListener('click', handleClickOutside);
+      window.removeEventListener('keydown', handleEscPress);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (document.activeElement === buttonRef.current && enterPress) {
+      setIsOpen(!isOpen);
+    }
+
+    if (document.activeElement !== buttonRef.current && enterPress) {
+      setIsOpen(false);
+      if (!listOptions.current) {
+        return;
+      }
+
+      const itemsList = [...listOptions.current.children];
+
+      if (itemsList.some(element => element === document.activeElement)) {
+        selectItem(items[cursor]);
+      }
+    }
+  }, [enterPress]);
+
   return (
-    <>
-      <Wrapper>
-        <input
-          type="text"
-          hidden
-          name={name}
-          defaultValue={selectedItem}
-          aria-label="selecione uma opção"
-        />
+    <Wrapper>
+      <input
+        type="text"
+        hidden
+        name={name}
+        defaultValue={selectedItem}
+        aria-label="selecione uma opção"
+      />
 
-        <Button
-          aria-haspopup="true"
-          aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-          onClick={() => setIsOpen(!isOpen)}
+      <Button
+        aria-haspopup="true"
+        aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
+        onClick={handleToggleDropdown}
+        theme={theme}
+        disabled={disabled}
+        ref={buttonRef}
+      >
+        {itemLabel}
+        <ArrowIcon
+          name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
           theme={theme}
-          disabled={disabled}
-        >
-          {itemLabel}
-          <ArrowIcon
-            name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-            theme={theme}
-          />
-        </Button>
+        />
+      </Button>
 
-        {isOpen && (
-          <SelectionList theme={theme}>
-            {items.map(item => (
-              <SelectionListItem
-                role="option"
-                theme={theme}
-                key={item?.value || item}
-                onClick={() => handleClose(item)}
-              >
-                {item?.label || item}
+      {isOpen && (
+        <SelectionList theme={theme} ref={listOptions}>
+          {items.map((item, index) => (
+            <SelectionListItem
+              role="option"
+              theme={theme}
+              key={item?.value || item}
+              onClick={() => handleOnClickListItem(item)}
+              aria-posinset={index}
+              aria-selected={index === cursor}
+              tabIndex="-1"
+            >
+              {item?.label || item}
 
-                {(selectedItem === item?.value || selectedItem === item) && (
-                  <CheckIcon theme={theme} />
-                )}
-              </SelectionListItem>
-            ))}
-          </SelectionList>
-        )}
-      </Wrapper>
-    </>
+              {(selectedItem === item?.value || selectedItem === item) && (
+                <CheckIcon theme={theme} />
+              )}
+            </SelectionListItem>
+          ))}
+        </SelectionList>
+      )}
+    </Wrapper>
   );
 };
 
