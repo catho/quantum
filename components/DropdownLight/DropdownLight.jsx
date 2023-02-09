@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -222,12 +222,6 @@ const DropdownLight = ({
     setSelectedItem(item?.value || item);
     setItemLabel(item?.label || item);
   };
-
-  useEffect(() => {
-    if (error !== '') {
-      inputRef.current.style.borderColor = 'red';
-    }
-  }, [error]);
 
   return (
     <>

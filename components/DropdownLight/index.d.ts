@@ -14,6 +14,16 @@ export interface DropdownLightProps {
     spacing?: {};
     baseFontSize?: number;
   };
+  label: string,
+  error?: string,
+  required?: boolean,
+  helperText: string,
+  skin?: 'default' | 'dark',
+  theme?: {
+    colors?: {};
+    spacing?: {};
+    baseFontSize?: number;
+  };
 }
 
 export default class DropdownLight extends Component<DropdownLightProps> {}
