@@ -149,11 +149,12 @@ const DropdownLight = ({
   placeholder,
   name,
   onChange,
-  onSelectedItem,
+  selectedItem,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState('');
-  const [itemLabel, setItemLabel] = useState(placeholder);
+  const [selectedOptionItem, setSelectedOptionItem] = useState(
+    selectedItem || '',
+  );
 
   const [cursor, setCursor] = useState(0);
   const buttonRef = useRef();
@@ -175,16 +176,14 @@ const DropdownLight = ({
   };
 
   const selectItem = item => {
-    setSelectedItem(item?.value || item);
-    setItemLabel(item?.label || item);
-    onChange(item?.value || item);
+    setSelectedOptionItem(item?.value || item);
+    onChange(item);
     buttonRef.current.focus();
   };
 
   const handleOnClickListItem = item => {
     setIsOpen(false);
     selectItem(item);
-    onSelectedItem(item);
   };
 
   const handleClickOutside = event => {
@@ -251,7 +250,7 @@ const DropdownLight = ({
         type="text"
         hidden
         name={name}
-        defaultValue={selectedItem}
+        value={selectedOptionItem.value || selectedOptionItem}
         aria-label="selecione uma opção"
         onChange={onChange}
       />
@@ -264,7 +263,9 @@ const DropdownLight = ({
         disabled={disabled}
         ref={buttonRef}
       >
-        {itemLabel}
+        {selectedOptionItem
+          ? selectedOptionItem.label || selectedOptionItem
+          : placeholder}
         <ArrowIcon
           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
           theme={theme}
@@ -285,9 +286,8 @@ const DropdownLight = ({
             >
               {item?.label || item}
 
-              {(selectedItem === item?.value || selectedItem === item) && (
-                <CheckIcon theme={theme} />
-              )}
+              {(selectedOptionItem === item?.value ||
+                selectedOptionItem === item) && <CheckIcon theme={theme} />}
             </SelectionListItem>
           ))}
         </SelectionList>
@@ -307,7 +307,7 @@ DropdownLight.propTypes = {
   }),
   name: PropTypes.string,
   onChange: PropTypes.func,
-  onSelectedItem: PropTypes.func,
+  selectedItem: itemPropType,
 };
 
 DropdownLight.defaultProps = {
@@ -320,7 +320,7 @@ DropdownLight.defaultProps = {
   placeholder: 'Select an option',
   name: '',
   onChange: () => {},
-  onSelectedItem: () => {},
+  selectedItem: null,
 };
 
 export default DropdownLight;
