@@ -35,6 +35,11 @@ const CheckboxLabel = styled(Label)`
   }) => `
     color: ${neutralColor};
     margin: 0 0 0 ${small}px;
+
+    a {
+      position: relative;
+      z-index: 5;
+    }
   `}
 `;
 
@@ -206,10 +211,10 @@ const Checkbox = ({
 Checkbox.propTypes = {
   checked: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.node,
   error: PropTypes.string,
   id: PropTypes.string,
-  label: PropTypes.string,
+  label: PropTypes.node,
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,

@@ -10,6 +10,10 @@ import {
 } from '../../stories/DropdownLight/mock';
 
 const INPUT_NAME = 'dropdown-name';
+const ARROW_DOWN_KEY_CODE = '{ArrowDown}';
+const ARROW_UP_KEY_CODE = '{ArrowUp}';
+const ENTER_KEY_CODE = '{Enter}';
+const ESCAPE_KEY_CODE = '{Escape}';
 
 describe('<DropdownLight />', () => {
   it('should match the snapshots', () => {
@@ -87,9 +91,9 @@ describe('<DropdownLight />', () => {
 
     const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
-
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
+
   it('should check if it is required', () => {
     const { container } = render(
       <DropdownLight items={itemsStringMock} required />,
@@ -97,6 +101,7 @@ describe('<DropdownLight />', () => {
 
     expect(container.querySelector('em')).toHaveTextContent('*');
   });
+
   it('should check if it is with error', () => {
     render(<DropdownLight items={itemsStringMock} error="Some Error Text" />);
 
@@ -122,6 +127,39 @@ describe('<DropdownLight />', () => {
 
     expect(screen.getByText(descriptionLabelContent)).toBeInTheDocument();
   });
+
+  it('should close Dropdown Options when user press Escape', () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    userEvent.keyboard(ESCAPE_KEY_CODE);
+
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+
+    expect(
+      screen.getByRole('button', { name: 'abrir lista de itens' }),
+    ).toBeInTheDocument();
+  });
+
+  it('should allow User to select an option using only keyboard', () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    userEvent.tab();
+    userEvent.keyboard(ENTER_KEY_CODE);
+
+    expect(screen.getByRole('list')).toBeInTheDocument();
+
+    userEvent.keyboard(
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}${ENTER_KEY_CODE}`,
+    );
+
+    const bananaItem = itemsStringMock[1];
+
+    const input = screen.getByRole('textbox', { hidden: true });
+
+    expect(input.value).toEqual(bananaItem);
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+  });
+
   it('should check if it is with PlaceHolder', () => {
     const placeholderContent = 'this is a input placeholder';
     render(
