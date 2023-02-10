@@ -126,9 +126,11 @@ describe('<DropdownLight />', () => {
     render(<DropdownLight items={itemsStringMock} onChange={onChangeMock} />);
 
     userEvent.tab();
-    userEvent.keyboard(EnterKeyCode);
+    userEvent.keyboard(ENTER_KEY_CODE);
 
-    userEvent.keyboard(`${ArrowDownKeyCode}${ArrowDownKeyCode}${EnterKeyCode}`);
+    userEvent.keyboard(
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ENTER_KEY_CODE}`,
+    );
 
     expect(onChangeMock).toHaveBeenCalled();
     expect(onChangeMock).toHaveBeenCalledWith('Strawberry');
