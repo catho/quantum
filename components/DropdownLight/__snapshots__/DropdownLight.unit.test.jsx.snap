@@ -144,7 +144,6 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
       <input
         aria-label="selecione uma opção"
         class="c3 c4"
-        for=""
         hidden=""
         name=""
         placeholder="Select an option"
@@ -163,7 +162,6 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
@@ -320,7 +318,6 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
       <input
         aria-label="selecione uma opção"
         class="c3 c4"
-        for=""
         hidden=""
         name="dropdown-name"
         placeholder="Select an option"
@@ -339,7 +336,6 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
           data-qtm-preloader="icon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path

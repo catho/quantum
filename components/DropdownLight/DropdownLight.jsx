@@ -171,34 +171,6 @@ const InputText = styled(TextInput)`
   `}
 `;
 
-const InputIcon = styled(Icon)`
-  cursor: pointer;
-  position: absolute;
-  ${({
-    theme: {
-      spacing: { xsmall, medium },
-      baseFontSize,
-    },
-  }) => css`
-    right: ${medium}px;
-    bottom: ${xsmall * 1.25}px;
-    width: ${baseFontSize * 1.5}px;
-  `}
-`;
-
-const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
-  ${({
-    theme: {
-      colors: {
-        error: { 700: error700 },
-      },
-    },
-    skin,
-  }) => css`
-    color: ${skin === 'default' ? error700 : 'inherit'};
-  `}
-`;
-
 const DropdownLight = ({
   disabled,
   items,
@@ -306,7 +278,6 @@ const DropdownLight = ({
   }, [enterPress]);
 
   return (
-    // <<<<<<< HEAD
     <>
       <ComponentWrapper theme={theme} skin={skin}>
         <InputWrapper ref={wrapperRef}>
@@ -317,13 +288,11 @@ const DropdownLight = ({
           <InputText
             type="text"
             hidden
-            error={error}
             skin={skin}
             name={name}
             placeholder={placeholder}
             defaultValue={selectedItem}
             aria-label="selecione uma opção"
-            htmlFor={id}
             required={required}
           />
           <Button
@@ -339,14 +308,7 @@ const DropdownLight = ({
             ref={buttonRef}
           >
             {itemLabel}
-            {error ? (
-              <InputErrorIcon description={error} theme={theme} skin={skin} />
-            ) : (
-              <ArrowIcon
-                name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-                theme={theme}
-              />
-            )}
+            <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
           </Button>
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
@@ -379,54 +341,6 @@ const DropdownLight = ({
         )}
       </ComponentWrapper>
     </>
-    // =======
-    //     <Wrapper>
-    //       <input
-    //         type="text"
-    //         hidden
-    //         name={name}
-    //         defaultValue={selectedItem}
-    //         aria-label="selecione uma opção"
-    //       />
-
-    //       <Button
-    //         aria-haspopup="true"
-    //         aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-    //         onClick={handleToggleDropdown}
-    //         theme={theme}
-    //         disabled={disabled}
-    //         ref={buttonRef}
-    //       >
-    //         {itemLabel}
-    //         <ArrowIcon
-    //           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-    //           theme={theme}
-    //         />
-    //       </Button>
-
-    //       {isOpen && (
-    //         <SelectionList theme={theme} ref={listOptions}>
-    //           {items.map((item, index) => (
-    //             <SelectionListItem
-    //               role="option"
-    //               theme={theme}
-    //               key={item?.value || item}
-    //               onClick={() => handleOnClickListItem(item)}
-    //               aria-posinset={index}
-    //               aria-selected={index === cursor}
-    //               tabIndex="-1"
-    //             >
-    //               {item?.label || item}
-
-    //               {(selectedItem === item?.value || selectedItem === item) && (
-    //                 <CheckIcon theme={theme} />
-    //               )}
-    //             </SelectionListItem>
-    //           ))}
-    //         </SelectionList>
-    //       )}
-    //     </Wrapper>
-    // >>>>>>> QTM-412
   );
 };
 
