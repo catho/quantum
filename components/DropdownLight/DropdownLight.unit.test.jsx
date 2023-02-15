@@ -95,20 +95,15 @@ describe('<DropdownLight />', () => {
   });
 
   it('should check if it is required', () => {
-    const { container } = render(
-      <DropdownLight items={itemsStringMock} required />,
-    );
+    render(<DropdownLight items={itemsStringMock} required />);
 
-    expect(container.querySelector('em')).toHaveTextContent('*');
+    expect(screen.getByLabelText('campo obrigatório')).toBeInTheDocument();
   });
 
   it('should check if it is with error', () => {
     render(<DropdownLight items={itemsStringMock} error="Some Error Text" />);
 
-    const dropdown = screen.getByRole('button');
-    const InputErrorIconElement = dropdown.querySelector('svg');
-
-    expect(InputErrorIconElement).toBeInTheDocument();
+    expect(screen.getByLabelText('mensagem de erro')).toBeInTheDocument();
   });
   it('should check if it is with HelperText', () => {
     const helperTextContent = 'this is a helper text';
@@ -165,13 +160,12 @@ describe('<DropdownLight />', () => {
     render(
       <DropdownLight
         items={itemsStringMock}
-        label="label of input"
         placeholder={placeholderContent}
       />,
     );
 
-    const input = screen.getByRole('textbox', { hidden: true });
-
-    expect(input.getAttribute('placeholder')).toMatch(placeholderContent);
+    expect(screen.getByLabelText('abrir lista de itens')).toHaveTextContent(
+      placeholderContent,
+    );
   });
 });

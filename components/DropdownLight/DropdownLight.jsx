@@ -283,14 +283,17 @@ const DropdownLight = ({
         <InputWrapper ref={wrapperRef}>
           <InputLabel htmlFor={id} error={error}>
             {label}
-            {required && <RequiredMark skin={skin}>*</RequiredMark>}
+            {required && (
+              <RequiredMark aria-label="campo obrigatório" skin={skin}>
+                *
+              </RequiredMark>
+            )}
           </InputLabel>
           <InputText
             type="text"
             hidden
             skin={skin}
             name={name}
-            placeholder={placeholder}
             defaultValue={selectedItem}
             aria-label="selecione uma opção"
             required={required}
@@ -313,7 +316,11 @@ const DropdownLight = ({
         </InputWrapper>
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
-          <InputErrorMessage theme={theme} skin={skin}>
+          <InputErrorMessage
+            aria-label="mensagem de erro"
+            theme={theme}
+            skin={skin}
+          >
             {error}
           </InputErrorMessage>
         )}
