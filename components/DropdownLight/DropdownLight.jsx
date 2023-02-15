@@ -281,14 +281,16 @@ const DropdownLight = ({
     <>
       <ComponentWrapper theme={theme} skin={skin}>
         <InputWrapper ref={wrapperRef}>
-          <InputLabel htmlFor={id} error={error}>
-            {label}
-            {required && (
-              <RequiredMark aria-label="campo obrigatório" skin={skin}>
-                *
-              </RequiredMark>
-            )}
-          </InputLabel>
+          {label && (
+            <InputLabel error={error}>
+              {label}
+              {required && (
+                <RequiredMark aria-label="campo obrigatório" skin={skin}>
+                  *
+                </RequiredMark>
+              )}
+            </InputLabel>
+          )}
           <InputText
             type="text"
             hidden
@@ -309,12 +311,15 @@ const DropdownLight = ({
             error={error}
             disabled={disabled}
             ref={buttonRef}
+            id={id}
           >
             {itemLabel}
             <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
           </Button>
         </InputWrapper>
-        {helperText && <HelperText>{helperText}</HelperText>}
+        {helperText && (
+          <HelperText aria-label="texto auxiliar">{helperText}</HelperText>
+        )}
         {error && (
           <InputErrorMessage
             aria-label="mensagem de erro"

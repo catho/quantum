@@ -111,7 +111,7 @@ describe('<DropdownLight />', () => {
       <DropdownLight items={itemsStringMock} helperText={helperTextContent} />,
     );
 
-    expect(screen.getByText(helperTextContent)).toBeInTheDocument();
+    expect(screen.getByLabelText('texto auxiliar')).toBeInTheDocument();
   });
 
   it('should check if it is with Label', () => {
