@@ -14,10 +14,10 @@ export interface DropdownLightProps {
     spacing?: {};
     baseFontSize?: number;
   };
-  label: string,
+  label?: string,
   error?: string,
   required?: boolean,
-  helperText: string,
+  helperText?: string,
   skin?: 'default' | 'dark',
 }
 

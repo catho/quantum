@@ -95,15 +95,19 @@ describe('<DropdownLight />', () => {
   });
 
   it('should check if it is required', () => {
-    render(<DropdownLight items={itemsStringMock} required />);
+    const labelContent = 'some text';
+    render(
+      <DropdownLight items={itemsStringMock} label={labelContent} required />,
+    );
 
-    expect(screen.getByLabelText('campo obrigatório')).toBeInTheDocument();
+    expect(screen.getByText('*')).toBeInTheDocument();
   });
 
   it('should check if it is with error', () => {
-    render(<DropdownLight items={itemsStringMock} error="Some Error Text" />);
+    const someErrorText = 'Some Error Text';
+    render(<DropdownLight items={itemsStringMock} error={someErrorText} />);
 
-    expect(screen.getByLabelText('mensagem de erro')).toBeInTheDocument();
+    expect(screen.getByText(someErrorText)).toBeInTheDocument();
   });
   it('should check if it is with HelperText', () => {
     const helperTextContent = 'this is a helper text';
@@ -111,7 +115,7 @@ describe('<DropdownLight />', () => {
       <DropdownLight items={itemsStringMock} helperText={helperTextContent} />,
     );
 
-    expect(screen.getByLabelText('texto auxiliar')).toBeInTheDocument();
+    expect(screen.getByText(helperTextContent)).toBeInTheDocument();
   });
 
   it('should check if it is with Label', () => {
@@ -120,7 +124,7 @@ describe('<DropdownLight />', () => {
       <DropdownLight items={itemsStringMock} label={descriptionLabelContent} />,
     );
 
-    expect(screen.getByText(descriptionLabelContent)).toBeInTheDocument();
+    expect(screen.getByText('this is a description label')).toBeInTheDocument();
   });
 
   it('should close Dropdown Options when user press Escape', () => {
