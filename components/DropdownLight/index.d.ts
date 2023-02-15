@@ -16,7 +16,7 @@ export interface DropdownLightProps {
   };
   selectedItem?: ItemPropType;
   onChange?: (
-    selectedItem: ItemPropType | null,
+    selectedItem?: ItemPropType,
   ) => void;
 }
 

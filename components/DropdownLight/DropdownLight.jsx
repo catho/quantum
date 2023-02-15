@@ -252,7 +252,6 @@ const DropdownLight = ({
         name={name}
         value={selectedOptionItem?.value || selectedOptionItem}
         aria-label="selecione uma opção"
-        onChange={onChange}
       />
 
       <Button

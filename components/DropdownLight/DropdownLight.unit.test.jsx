@@ -132,7 +132,6 @@ describe('<DropdownLight />', () => {
       `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ENTER_KEY_CODE}`,
     );
 
-    expect(onChangeMock).toHaveBeenCalled();
     expect(onChangeMock).toHaveBeenCalledWith({
       label: 'Strawberry',
       value: 'Strawberry',
