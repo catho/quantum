@@ -281,16 +281,14 @@ const DropdownLight = ({
     <>
       <ComponentWrapper theme={theme} skin={skin}>
         <InputWrapper ref={wrapperRef}>
-          {label && (
-            <InputLabel error={error}>
-              {label}
-              {required && (
-                <RequiredMark aria-label="campo obrigatório" skin={skin}>
-                  *
-                </RequiredMark>
-              )}
-            </InputLabel>
-          )}
+          <InputLabel error={error}>
+            {label}
+            {required && (
+              <RequiredMark aria-label="campo obrigatório" skin={skin}>
+                *
+              </RequiredMark>
+            )}
+          </InputLabel>
           <InputText
             type="text"
             hidden

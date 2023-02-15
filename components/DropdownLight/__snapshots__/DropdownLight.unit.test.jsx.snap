@@ -139,7 +139,6 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
     >
       <label
         class="c2"
-        for=""
       />
       <input
         aria-label="selecione uma opção"
@@ -153,6 +152,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
         aria-haspopup="true"
         aria-label="abrir lista de itens"
         class="c5"
+        id=""
       >
         Select an option
         <svg
@@ -312,7 +312,6 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
     >
       <label
         class="c2"
-        for=""
       />
       <input
         aria-label="selecione uma opção"
@@ -326,6 +325,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
         aria-haspopup="true"
         aria-label="abrir lista de itens"
         class="c5"
+        id=""
       >
         Select an option
         <svg
