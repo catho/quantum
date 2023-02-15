@@ -123,7 +123,7 @@ describe('<DropdownLight />', () => {
 
   it('should call onChange when a list item is selected using keyboard', () => {
     const onChangeMock = jest.fn();
-    render(<DropdownLight items={itemsStringMock} onChange={onChangeMock} />);
+    render(<DropdownLight items={itemsObjectMock} onChange={onChangeMock} />);
 
     userEvent.tab();
     userEvent.keyboard(ENTER_KEY_CODE);
@@ -133,6 +133,9 @@ describe('<DropdownLight />', () => {
     );
 
     expect(onChangeMock).toHaveBeenCalled();
-    expect(onChangeMock).toHaveBeenCalledWith('Strawberry');
+    expect(onChangeMock).toHaveBeenCalledWith({
+      label: 'Strawberry',
+      value: 'Strawberry',
+    });
   });
 });

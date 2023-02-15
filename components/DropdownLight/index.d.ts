@@ -14,8 +14,10 @@ export interface DropdownLightProps {
     spacing?: {};
     baseFontSize?: number;
   };
-  onChange?: (value: string) => void;
   selectedItem?: ItemPropType;
+  onChange?: (
+    selectedItem: ItemPropType | null,
+  ) => void;
 }
 
 export default class DropdownLight extends Component<DropdownLightProps> {}

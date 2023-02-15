@@ -23,9 +23,14 @@ export const Controlled = () => {
   const fruits = [
     { value: 'Lemon', label: 'Lemon' },
     { value: 'Banana', label: 'Banana' },
+    { value: 'Orange', label: 'Orange' },
     { value: 'Strawberry', label: 'Strawberry' },
+    { value: 'Ovacado', label: 'Ovacado' },
   ];
-  const [selectedFruit, setSelectedFruit] = useState({ label: 'Banana' });
+  const [selectedFruit, setSelectedFruit] = useState({
+    value: 'Banana',
+    label: 'Banana',
+  });
 
   return (
     <DropdownLight

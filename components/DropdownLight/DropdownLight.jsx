@@ -250,7 +250,7 @@ const DropdownLight = ({
         type="text"
         hidden
         name={name}
-        value={selectedOptionItem.value || selectedOptionItem}
+        value={selectedOptionItem?.value || selectedOptionItem}
         aria-label="selecione uma opção"
         onChange={onChange}
       />
@@ -264,7 +264,7 @@ const DropdownLight = ({
         ref={buttonRef}
       >
         {selectedOptionItem
-          ? selectedOptionItem.label || selectedOptionItem
+          ? selectedOptionItem?.label || selectedOptionItem
           : placeholder}
         <ArrowIcon
           name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
