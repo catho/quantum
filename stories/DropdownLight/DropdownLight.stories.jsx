@@ -19,14 +19,7 @@ Disabled.args = {
   disabled: true,
 };
 
-export const Controlled = () => {
-  const fruits = [
-    { value: 'Lemon', label: 'Lemon' },
-    { value: 'Banana', label: 'Banana' },
-    { value: 'Orange', label: 'Orange' },
-    { value: 'Strawberry', label: 'Strawberry' },
-    { value: 'Ovacado', label: 'Ovacado' },
-  ];
+export const SelectedItemControlled = () => {
   const [selectedFruit, setSelectedFruit] = useState({
     value: 'Banana',
     label: 'Banana',
@@ -36,7 +29,7 @@ export const Controlled = () => {
     <DropdownLight
       label="Fruits"
       placeholder="Select a fruit"
-      items={fruits}
+      items={itemsObjectMock}
       selectedItem={selectedFruit}
       onChange={item => setSelectedFruit(item)}
     />
