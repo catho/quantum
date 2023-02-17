@@ -313,12 +313,6 @@ const DropdownLight = ({
             <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
           </Button>
         </InputWrapper>
-        {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage theme={theme} skin={skin}>
-            {error}
-          </InputErrorMessage>
-        )}
 
         {isOpen && (
           <SelectionList id={id} theme={theme} ref={listOptions}>
@@ -340,6 +334,12 @@ const DropdownLight = ({
               </SelectionListItem>
             ))}
           </SelectionList>
+        )}
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <InputErrorMessage theme={theme} skin={skin}>
+            {error}
+          </InputErrorMessage>
         )}
       </ComponentWrapper>
     </>

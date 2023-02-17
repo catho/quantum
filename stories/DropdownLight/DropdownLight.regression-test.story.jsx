@@ -31,6 +31,12 @@ WithHelperText.args = {
   helperText: 'Some text...',
 };
 
+export const WithHelperTextAndError = Template.bind({});
+WithHelperTextAndError.args = {
+  helperText: 'Some text...',
+  error: "Don't worry, this is just an example error message ;)",
+};
+
 export const WithLabel = Template.bind({});
 WithLabel.args = {
   label: 'Some text label...',
