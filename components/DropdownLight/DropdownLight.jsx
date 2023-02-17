@@ -230,11 +230,12 @@ const DropdownLight = ({
       setIsOpen(!isOpen);
     }
 
-    if (document.activeElement !== buttonRef.current && enterPress) {
+    if (
+      document.activeElement !== buttonRef.current &&
+      enterPress &&
+      listOptions.current
+    ) {
       setIsOpen(false);
-      if (!listOptions.current) {
-        return;
-      }
 
       const itemsList = [...listOptions.current.children];
 
