@@ -250,7 +250,7 @@ const DropdownLight = ({
         type="text"
         hidden
         name={name}
-        value={selectedOptionItem?.value || selectedOptionItem}
+        defaultValue={selectedOptionItem?.value || selectedOptionItem}
         aria-label="selecione uma opção"
       />
 
