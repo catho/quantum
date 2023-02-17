@@ -284,7 +284,11 @@ const DropdownLight = ({
           {label && (
             <InputLabel error={error}>
               {label}
-              {required && <RequiredMark skin={skin}>*</RequiredMark>}
+              {required && (
+                <RequiredMark skin={skin} aria-label="campo obrigatório">
+                  *
+                </RequiredMark>
+              )}
             </InputLabel>
           )}
           <InputText

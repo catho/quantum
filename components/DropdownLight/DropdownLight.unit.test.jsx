@@ -56,6 +56,10 @@ describe('<DropdownLight />', () => {
         />,
       ).asFragment(),
     ).toMatchSnapshot();
+
+    expect(
+      render(<DropdownLight items={itemsStringMock} disabled />).asFragment(),
+    ).toMatchSnapshot();
   });
 
   it('should return a value from item, using a object items', () => {
@@ -129,7 +133,9 @@ describe('<DropdownLight />', () => {
     render(
       <DropdownLight items={itemsStringMock} label={labelContent} required />,
     );
+    const inputText = screen.getByRole('textbox', { hidden: true });
 
+    expect(inputText).toHaveAttribute('required');
     expect(screen.getByText('*')).toBeInTheDocument();
   });
 
