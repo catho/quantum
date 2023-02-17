@@ -69,7 +69,6 @@ const Button = styled.button`
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  margin-top: 0px;
 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -79,6 +78,7 @@ const Button = styled.button`
 
     return css`
       font-size: ${baseFontSize}px;
+      margin-top: ${spacing.xsmall}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
       background-color: ${colors.neutral['0']};
       border: 2px solid ${error ? colors.error['700'] : colors.neutral['500']};

@@ -26,6 +26,36 @@ describe('<DropdownLight />', () => {
         <DropdownLight name={INPUT_NAME} items={itemsStringMock} />,
       ).asFragment(),
     ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight items={itemsStringMock} label="some text" required />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight items={itemsStringMock} error="Some error text..." />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight
+          items={itemsStringMock}
+          helperText="'this is a helper text'"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight
+          items={itemsStringMock}
+          placeholder="this is a input placeholder"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
   });
 
   it('should return a value from item, using a object items', () => {

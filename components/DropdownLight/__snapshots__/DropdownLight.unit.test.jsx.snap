@@ -87,11 +87,11 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  margin-top: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
+  margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
@@ -250,11 +250,11 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  margin-top: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   font-size: 16px;
+  margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
   border: 2px solid #999999;
@@ -308,6 +308,716 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
         id=""
       >
         Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DropdownLight /> should match the snapshots 3`] = `
+<DocumentFragment>
+  .c4 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c4::-webkit-inner-spin-button,
+.c4::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c4::-webkit-calendar-picker-indicator,
+.c4::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c4::-ms-clear {
+  display: none;
+}
+
+.c4:hover,
+.c4:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c4[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c4:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c4[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c2 {
+  display: block;
+  font-weight: bold;
+  margin: 8px 0 0;
+  color: inherit;
+}
+
+.c3 {
+  color: #ec584e;
+}
+
+.c7 {
+  display: inline-block;
+  pointer-events: none;
+  width: 24px;
+}
+
+.c0 {
+  position: relative;
+  color: #424242;
+}
+
+.c6 {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c6:disabled {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c6:hover:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c6:focus:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
+}
+
+.c5 {
+  margin-top: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2"
+      >
+        some text
+        <em
+          class="c3"
+        >
+          *
+        </em>
+      </label>
+      <input
+        aria-label="selecione uma opção"
+        class="c4 c5"
+        hidden=""
+        name=""
+        required=""
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c6"
+        id=""
+      >
+        Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c7"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DropdownLight /> should match the snapshots 4`] = `
+<DocumentFragment>
+  .c6 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c5 {
+  display: inline-block;
+  pointer-events: none;
+  width: 24px;
+}
+
+.c0 {
+  position: relative;
+  color: #424242;
+}
+
+.c4 {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #e91b0c;
+  color: #424242;
+}
+
+.c4:disabled {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4:hover:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c4:focus:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  margin-top: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <input
+        aria-label="selecione uma opção"
+        class="c2 c3"
+        hidden=""
+        name=""
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c4"
+        id=""
+      >
+        Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
+    <span
+      class="c6"
+    >
+      Some error text...
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DropdownLight /> should match the snapshots 5`] = `
+<DocumentFragment>
+  .c6 {
+  color: #ac001a;
+  margin-top: 8px;
+  cursor: text;
+  display: block;
+  line-height: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c7 {
+  color: inherit;
+}
+
+.c5 {
+  display: inline-block;
+  pointer-events: none;
+  width: 24px;
+}
+
+.c0 {
+  position: relative;
+  color: #424242;
+}
+
+.c4 {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c4:disabled {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4:hover:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c4:focus:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  margin-top: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <input
+        aria-label="selecione uma opção"
+        class="c2 c3"
+        hidden=""
+        name=""
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c4"
+        id=""
+      >
+        Select an option
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root c5"
+          data-qtm-preloader="icon"
+          focusable="false"
+          style="font-size: 24px; max-width: 24px;"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </button>
+    </div>
+    <span
+      class="c6 c7"
+    >
+      'this is a helper text'
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<DropdownLight /> should match the snapshots 6`] = `
+<DocumentFragment>
+  .c2 {
+  -webkit-appearance: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: initial;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin-top: 0px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c2::-webkit-inner-spin-button,
+.c2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.c2::-webkit-calendar-picker-indicator,
+.c2::-webkit-search-cancel-button {
+  display: none;
+}
+
+.c2::-ms-clear {
+  display: none;
+}
+
+.c2:hover,
+.c2:focus {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
+}
+
+.c2[disabled] {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+}
+
+.c2:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff5f5 inset;
+}
+
+.c2[disabled] {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c5 {
+  display: inline-block;
+  pointer-events: none;
+  width: 24px;
+}
+
+.c0 {
+  position: relative;
+  color: #424242;
+}
+
+.c4 {
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  color: #424242;
+}
+
+.c4:disabled {
+  background-color: #f2f2f2;
+  border-color: #999999;
+  color: #999999;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.c4:hover:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c4:focus:enabled {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
+}
+
+.c1 {
+  position: relative;
+}
+
+.c3 {
+  margin-top: 8px;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <input
+        aria-label="selecione uma opção"
+        class="c2 c3"
+        hidden=""
+        name=""
+        type="text"
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="abrir lista de itens"
+        class="c4"
+        id=""
+      >
+        this is a input placeholder
         <svg
           aria-hidden="true"
           class="MuiSvgIcon-root c5"
