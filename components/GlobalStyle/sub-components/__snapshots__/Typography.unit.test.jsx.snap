@@ -27,10 +27,11 @@ exports[`Typography component Should match snapshot 1`] = `
 }
 
 <link
-    as="style"
+    as="font"
     crossorigin="anonymous"
     href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
     rel="preload"
+    type="font/woff2"
   />
   @media (min-width:1024px) {
 
@@ -57,6 +58,7 @@ exports[`Typography component Should match snapshot 1`] = `
 }
 
 <link
+    as="style"
     href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,400i,600i,700i&display=swap"
     rel="stylesheet"
   />
