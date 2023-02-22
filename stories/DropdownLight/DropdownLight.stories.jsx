@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import DropdownLight from '../../components/DropdownLight/DropdownLight';
 import { itemsObjectMock, itemsStringMock } from './mock';
 
@@ -16,4 +17,21 @@ WithArrayOfString.args = {
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
+};
+
+export const SelectedItemControlled = () => {
+  const [selectedFruit, setSelectedFruit] = useState({
+    value: 'Banana',
+    label: 'Banana',
+  });
+
+  return (
+    <DropdownLight
+      label="Fruits"
+      placeholder="Select a fruit"
+      items={itemsObjectMock}
+      selectedItem={selectedFruit}
+      onChange={item => setSelectedFruit(item)}
+    />
+  );
 };
