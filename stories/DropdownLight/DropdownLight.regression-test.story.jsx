@@ -46,3 +46,8 @@ export const WithPlaceholder = Template.bind({});
 WithPlaceholder.args = {
   placeholder: 'What fruit do you prefer?',
 };
+
+export const WithSkin = Template.bind({});
+WithSkin.args = {
+  skin: 'dark',
+};
