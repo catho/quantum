@@ -73,16 +73,20 @@ const Button = styled.button`
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  ${({ theme, error }) => {
+  ${({ theme, error, skin }) => {
     const { baseFontSize, spacing, colors } = theme;
 
     return css`
       font-size: ${baseFontSize}px;
       margin-top: ${spacing.xsmall}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
-      background-color: ${colors.neutral['0']};
+      background-color: ${skin === 'default'
+        ? colors.neutral['0']
+        : colors.neutral['700']};
+      color: ${skin === 'default'
+        ? colors.neutral['700']
+        : colors.neutral['0']};
       border: 2px solid ${error ? colors.error['700'] : colors.neutral['500']};
-      color: ${colors.neutral['700']};
 
       :disabled {
         background-color: ${colors.neutral['100']};
@@ -123,13 +127,16 @@ const SelectionList = styled.ul`
     0px 5px 8px 0px rgba(224, 224, 224, 0.14),
     0px 1px 14px 0px rgba(224, 224, 224, 0.12);
 
-  ${({ theme }) => {
+  ${({ theme, skin }) => {
     const { baseFontSize, spacing, colors } = theme;
 
     return css`
       font-size: ${baseFontSize}px;
       margin-top: ${spacing.xxsmall}px;
       background-color: ${colors.neutral['0']};
+      color: ${skin === 'default'
+        ? colors.neutral['0']
+        : colors.neutral['700']};
     `;
   }}
 `;
@@ -165,9 +172,14 @@ const InputText = styled(TextInput)`
   ${({
     theme: {
       spacing: { xsmall },
+      colors,
     },
+    skin,
   }) => css`
     margin-top: ${xsmall}px;
+    background-color: ${skin === 'default'
+      ? colors.neutral['0']
+      : colors.neutral['700']};
   `}
 `;
 

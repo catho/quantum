@@ -45,6 +45,11 @@ WithPlaceholder.args = {
   placeholder: 'What fruit do you prefer?',
 };
 
+export const WithSkin = Template.bind({});
+WithSkin.args = {
+  skin: 'dark',
+};
+
 export const SelectedItemControlled = () => {
   const [selectedFruit, setSelectedFruit] = useState({
     value: 'Banana',

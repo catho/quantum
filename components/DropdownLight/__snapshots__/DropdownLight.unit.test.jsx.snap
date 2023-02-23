@@ -94,8 +94,8 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c4:disabled {
@@ -122,6 +122,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -257,8 +258,8 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c4:disabled {
@@ -285,6 +286,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -431,8 +433,8 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c6:disabled {
@@ -459,6 +461,7 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
 
 .c5 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -617,8 +620,8 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #e91b0c;
   color: #424242;
+  border: 2px solid #e91b0c;
 }
 
 .c4:disabled {
@@ -645,6 +648,7 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -800,8 +804,8 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c4:disabled {
@@ -828,6 +832,7 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -968,8 +973,8 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c4:disabled {
@@ -996,6 +1001,7 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
@@ -1131,8 +1137,8 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
   margin-top: 8px;
   padding: 8px 16px;
   background-color: #ffffff;
-  border: 2px solid #999999;
   color: #424242;
+  border: 2px solid #999999;
 }
 
 .c4:disabled {
@@ -1159,6 +1165,7 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
 
 .c3 {
   margin-top: 8px;
+  background-color: #ffffff;
 }
 
 <div
