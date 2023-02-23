@@ -48,12 +48,12 @@ const ArrowIcon = styled(Icon)`
   width: 24px;
 `;
 
-const ComponentWrapper = styled.div`
+const Wrapper = styled.div`
   ${({
     theme: {
       colors: { neutral },
     },
-    skin = 'default',
+    skin,
   }) => css`
     position: relative;
     color: ${skin === 'default' ? neutral[700] : neutral[0]};
@@ -279,7 +279,7 @@ const DropdownLight = ({
 
   return (
     <>
-      <ComponentWrapper theme={theme} skin={skin}>
+      <Wrapper theme={theme} skin={skin}>
         <InputWrapper ref={wrapperRef}>
           {label && (
             <InputLabel error={error}>
@@ -345,15 +345,17 @@ const DropdownLight = ({
             {error}
           </InputErrorMessage>
         )}
-      </ComponentWrapper>
+      </Wrapper>
     </>
   );
 };
 
 DropdownLight.propTypes = {
   id: PropTypes.string,
+  /** Disables component */
   disabled: PropTypes.bool,
   placeholder: PropTypes.string,
+  /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
@@ -361,9 +363,13 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
+  /** Displays a label text that describes the field */
   label: PropTypes.string,
+  /** Displays an error message and changes border color to error color */
   error: PropTypes.string,
+  /** Displays a mark to shows thats component is required */
   required: PropTypes.bool,
+  /** Displays a helper text below the component */
   helperText: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'dark']),
 };
