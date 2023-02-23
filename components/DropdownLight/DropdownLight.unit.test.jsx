@@ -195,6 +195,23 @@ describe('<DropdownLight />', () => {
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 
+  it('should call onChange when a list item is selected using keyboard', () => {
+    const onChangeMock = jest.fn();
+    render(<DropdownLight items={itemsObjectMock} onChange={onChangeMock} />);
+
+    userEvent.tab();
+    userEvent.keyboard(ENTER_KEY_CODE);
+
+    userEvent.keyboard(
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ENTER_KEY_CODE}`,
+    );
+
+    expect(onChangeMock).toHaveBeenCalledWith({
+      label: 'Strawberry',
+      value: 'Strawberry',
+    });
+  });
+
   it('should check if it is with PlaceHolder', () => {
     const placeholderContent = 'this is a input placeholder';
     render(

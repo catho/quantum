@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import DropdownLight from '../../components/DropdownLight/DropdownLight';
 import { itemsObjectMock, itemsStringMock } from './mock';
 
@@ -42,4 +43,21 @@ WithLabel.args = {
 export const WithPlaceholder = Template.bind({});
 WithPlaceholder.args = {
   placeholder: 'What fruit do you prefer?',
+};
+
+export const SelectedItemControlled = () => {
+  const [selectedFruit, setSelectedFruit] = useState({
+    value: 'Banana',
+    label: 'Banana',
+  });
+
+  return (
+    <DropdownLight
+      label="Fruits"
+      placeholder="Select a fruit"
+      items={itemsObjectMock}
+      selectedItem={selectedFruit}
+      onChange={item => setSelectedFruit(item)}
+    />
+  );
 };

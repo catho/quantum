@@ -183,11 +183,13 @@ const DropdownLight = ({
   required,
   helperText,
   skin,
+  onChange,
+  selectedItem,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState('');
-  const [itemLabel, setItemLabel] = useState(placeholder);
-  const wrapperRef = useRef();
+  const [selectedOptionItem, setSelectedOptionItem] = useState(
+    selectedItem || '',
+  );
 
   const [cursor, setCursor] = useState(0);
   const buttonRef = useRef();
@@ -209,8 +211,8 @@ const DropdownLight = ({
   };
 
   const selectItem = item => {
-    setSelectedItem(item?.value || item);
-    setItemLabel(item?.label || item);
+    setSelectedOptionItem(item?.value || item);
+    onChange(item);
     buttonRef.current.focus();
   };
 
@@ -263,11 +265,12 @@ const DropdownLight = ({
       setIsOpen(!isOpen);
     }
 
-    if (document.activeElement !== buttonRef.current && enterPress) {
+    if (
+      document.activeElement !== buttonRef.current &&
+      enterPress &&
+      listOptions.current
+    ) {
       setIsOpen(false);
-      if (!listOptions.current) {
-        return;
-      }
 
       const itemsList = [...listOptions.current.children];
 
@@ -280,7 +283,7 @@ const DropdownLight = ({
   return (
     <>
       <Wrapper theme={theme} skin={skin}>
-        <InputWrapper ref={wrapperRef}>
+        <InputWrapper>
           {label && (
             <InputLabel error={error}>
               {label}
@@ -296,7 +299,7 @@ const DropdownLight = ({
             hidden
             skin={skin}
             name={name}
-            defaultValue={selectedItem}
+            defaultValue={selectedOptionItem?.value || selectedOptionItem}
             aria-label="selecione uma opção"
             required={required}
           />
@@ -313,7 +316,9 @@ const DropdownLight = ({
             ref={buttonRef}
             id={id}
           >
-            {itemLabel}
+            {selectedOptionItem
+              ? selectedOptionItem?.label || selectedOptionItem
+              : placeholder}
             <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
           </Button>
         </InputWrapper>
@@ -332,9 +337,8 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
-                {(selectedItem === item?.value || selectedItem === item) && (
-                  <CheckIcon theme={theme} />
-                )}
+                {(selectedOptionItem === item?.value ||
+                  selectedOptionItem === item) && <CheckIcon theme={theme} />}
               </SelectionListItem>
             ))}
           </SelectionList>
@@ -372,6 +376,8 @@ DropdownLight.propTypes = {
   /** Displays a helper text below the component */
   helperText: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'dark']),
+  onChange: PropTypes.func,
+  selectedItem: itemPropType,
 };
 
 DropdownLight.defaultProps = {
@@ -389,6 +395,8 @@ DropdownLight.defaultProps = {
   name: '',
   helperText: '',
   skin: 'default',
+  onChange: () => {},
+  selectedItem: null,
 };
 
 export default DropdownLight;

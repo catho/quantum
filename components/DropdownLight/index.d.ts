@@ -6,6 +6,7 @@ export type ItemPropType = string | { value: string | number; label: string };
 
 
 export interface DropdownLightProps {
+  name?: string;
   disabled?: boolean;
   items: ItemPropType[];
   placeholder?: string;
@@ -19,6 +20,10 @@ export interface DropdownLightProps {
   required?: boolean,
   helperText?: string,
   skin?: 'default' | 'dark',
+  selectedItem?: ItemPropType;
+  onChange?: (
+    selectedItem?: ItemPropType,
+  ) => void;
 }
 
 export default class DropdownLight extends Component<DropdownLightProps> {}
