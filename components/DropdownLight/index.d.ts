@@ -15,6 +15,11 @@ export interface DropdownLightProps {
     spacing?: {};
     baseFontSize?: number;
   };
+  label?: string,
+  error?: string,
+  required?: boolean,
+  helperText?: string,
+  skin?: 'default' | 'dark',
   selectedItem?: ItemPropType;
   onChange?: (
     selectedItem?: ItemPropType,

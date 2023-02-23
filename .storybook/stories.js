@@ -9,7 +9,6 @@ const foundation = [
   'Breakpoints',
   'List',
   'InfiniteScroll',
-  'DropdownLight',
 ].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
 
 const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);

@@ -8,10 +8,16 @@ import {
   Default,
   Disabled,
   WithArrayOfString,
+  WithError,
+  Required,
+  WithHelperText,
+  WithLabel,
+  WithPlaceholder,
+  WithSkin,
   SelectedItemControlled
 } from './DropdownLight.stories.jsx';
 
-<Meta title="DropdownLight" component={DropdownLight}  />
+<Meta title="Forms/DropdownLight" component={DropdownLight}  />
 
 <Header title="DropdownLight">
       A dropdown receives user input, allowing it to choose one of several options.
@@ -50,8 +56,45 @@ import { DropdownLight } from '@catho/quantum';
   <Story story={WithArrayOfString}/>
 </Canvas>
 
+### Required
+
+<Canvas>
+  <Story story={Required}/>
+</Canvas>
+
+### WithError
+
+<Canvas>
+  <Story story={WithError}/>
+</Canvas>
+
+### WithHelperText
+
+<Canvas>
+  <Story story={WithHelperText}/>
+</Canvas>
+
+### WithLabel
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
+
+### WithPlaceholder
+
+<Canvas>
+  <Story story={WithPlaceholder}/>
+</Canvas>
+
+### With Skin
+
+<Canvas>
+  <Story story={WithSkin}/>
+</Canvas>
+
 ### With a item selected
 
 <Canvas>
   <Story story={SelectedItemControlled}/>
 </Canvas>
+

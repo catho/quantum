@@ -6,6 +6,13 @@ import {
   spacing as spacingDefault,
   baseFontSize as baseFontSizeDefault,
 } from '../shared/theme';
+import {
+  InputLabel,
+  RequiredMark,
+  TextInput,
+  HelperText,
+  InputErrorMessage,
+} from '../Input/sub-components';
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
 
@@ -42,7 +49,15 @@ const ArrowIcon = styled(Icon)`
 `;
 
 const Wrapper = styled.div`
-  position: relative;
+  ${({
+    theme: {
+      colors: { neutral },
+    },
+    skin,
+  }) => css`
+    position: relative;
+    color: ${skin === 'default' ? neutral[700] : neutral[0]};
+  `}
 `;
 
 const Button = styled.button`
@@ -54,20 +69,24 @@ const Button = styled.button`
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  margin-top: 0px;
 
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  ${({ theme }) => {
+  ${({ theme, error, skin }) => {
     const { baseFontSize, spacing, colors } = theme;
 
     return css`
       font-size: ${baseFontSize}px;
+      margin-top: ${spacing.xsmall}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
-      background-color: ${colors.neutral['0']};
-      border: 2px solid ${colors.neutral['500']};
-      color: ${colors.neutral['700']};
+      background-color: ${skin === 'default'
+        ? colors.neutral['0']
+        : colors.neutral['700']};
+      color: ${skin === 'default'
+        ? colors.neutral['700']
+        : colors.neutral['0']};
+      border: 2px solid ${error ? colors.error['700'] : colors.neutral['500']};
 
       :disabled {
         background-color: ${colors.neutral['100']};
@@ -108,13 +127,16 @@ const SelectionList = styled.ul`
     0px 5px 8px 0px rgba(224, 224, 224, 0.14),
     0px 1px 14px 0px rgba(224, 224, 224, 0.12);
 
-  ${({ theme }) => {
+  ${({ theme, skin }) => {
     const { baseFontSize, spacing, colors } = theme;
 
     return css`
       font-size: ${baseFontSize}px;
       margin-top: ${spacing.xxsmall}px;
       background-color: ${colors.neutral['0']};
+      color: ${skin === 'default'
+        ? colors.neutral['0']
+        : colors.neutral['700']};
     `;
   }}
 `;
@@ -142,12 +164,37 @@ const SelectionListItem = styled.li`
   }}
 `;
 
+const InputWrapper = styled.div`
+  position: relative;
+`;
+
+const InputText = styled(TextInput)`
+  ${({
+    theme: {
+      spacing: { xsmall },
+      colors,
+    },
+    skin,
+  }) => css`
+    margin-top: ${xsmall}px;
+    background-color: ${skin === 'default'
+      ? colors.neutral['0']
+      : colors.neutral['700']};
+  `}
+`;
+
 const DropdownLight = ({
   disabled,
   items,
   theme,
   placeholder,
   name,
+  id,
+  label,
+  error,
+  required,
+  helperText,
+  skin,
   onChange,
   selectedItem,
 }) => {
@@ -246,59 +293,85 @@ const DropdownLight = ({
   }, [enterPress]);
 
   return (
-    <Wrapper>
-      <input
-        type="text"
-        hidden
-        name={name}
-        defaultValue={selectedOptionItem?.value || selectedOptionItem}
-        aria-label="selecione uma opção"
-      />
+    <>
+      <Wrapper theme={theme} skin={skin}>
+        <InputWrapper>
+          {label && (
+            <InputLabel error={error}>
+              {label}
+              {required && (
+                <RequiredMark skin={skin} aria-label="campo obrigatório">
+                  *
+                </RequiredMark>
+              )}
+            </InputLabel>
+          )}
+          <InputText
+            type="text"
+            hidden
+            skin={skin}
+            name={name}
+            defaultValue={selectedOptionItem?.value || selectedOptionItem}
+            aria-label="selecione uma opção"
+            required={required}
+          />
+          <Button
+            aria-haspopup="true"
+            aria-label={
+              isOpen ? 'fechar lista de itens' : 'abrir lista de itens'
+            }
+            onClick={handleToggleDropdown}
+            theme={theme}
+            skin={skin}
+            error={error}
+            disabled={disabled}
+            ref={buttonRef}
+            id={id}
+          >
+            {selectedOptionItem
+              ? selectedOptionItem?.label || selectedOptionItem
+              : placeholder}
+            <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
+          </Button>
+        </InputWrapper>
 
-      <Button
-        aria-haspopup="true"
-        aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
-        onClick={handleToggleDropdown}
-        theme={theme}
-        disabled={disabled}
-        ref={buttonRef}
-      >
-        {selectedOptionItem
-          ? selectedOptionItem?.label || selectedOptionItem
-          : placeholder}
-        <ArrowIcon
-          name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-          theme={theme}
-        />
-      </Button>
+        {isOpen && (
+          <SelectionList id={id} theme={theme} ref={listOptions}>
+            {items.map((item, index) => (
+              <SelectionListItem
+                role="option"
+                theme={theme}
+                key={item?.value || item}
+                onClick={() => handleOnClickListItem(item)}
+                aria-posinset={index}
+                aria-selected={index === cursor}
+                tabIndex="-1"
+              >
+                {item?.label || item}
 
-      {isOpen && (
-        <SelectionList theme={theme} ref={listOptions}>
-          {items.map((item, index) => (
-            <SelectionListItem
-              role="option"
-              theme={theme}
-              key={item?.value || item}
-              onClick={() => handleOnClickListItem(item)}
-              aria-posinset={index}
-              aria-selected={index === cursor}
-              tabIndex="-1"
-            >
-              {item?.label || item}
-
-              {(selectedOptionItem === item?.value ||
-                selectedOptionItem === item) && <CheckIcon theme={theme} />}
-            </SelectionListItem>
-          ))}
-        </SelectionList>
-      )}
-    </Wrapper>
+                {(selectedOptionItem === item?.value ||
+                  selectedOptionItem === item) && <CheckIcon theme={theme} />}
+              </SelectionListItem>
+            ))}
+          </SelectionList>
+        )}
+        {helperText && <HelperText>{helperText}</HelperText>}
+        {error && (
+          <InputErrorMessage theme={theme} skin={skin}>
+            {error}
+          </InputErrorMessage>
+        )}
+      </Wrapper>
+    </>
   );
 };
 
 DropdownLight.propTypes = {
+  id: PropTypes.string,
+  /** Disables component */
   disabled: PropTypes.bool,
   placeholder: PropTypes.string,
+  /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.object,
@@ -306,11 +379,24 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   name: PropTypes.string,
+  /** Displays a label text that describes the field */
+  label: PropTypes.string,
+  /** Displays an error message and changes border color to error color */
+  error: PropTypes.string,
+  /** Displays a mark to shows thats component is required */
+  required: PropTypes.bool,
+  /** Displays a helper text below the component */
+  helperText: PropTypes.string,
+  skin: PropTypes.oneOf(['default', 'dark']),
   onChange: PropTypes.func,
   selectedItem: itemPropType,
 };
 
 DropdownLight.defaultProps = {
+  id: '',
+  label: '',
+  error: '',
+  required: false,
   disabled: false,
   theme: {
     colors: colorsDefault,
@@ -319,6 +405,8 @@ DropdownLight.defaultProps = {
   },
   placeholder: 'Select an option',
   name: '',
+  helperText: '',
+  skin: 'default',
   onChange: () => {},
   selectedItem: null,
 };

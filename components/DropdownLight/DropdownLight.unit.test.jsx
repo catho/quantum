@@ -26,6 +26,40 @@ describe('<DropdownLight />', () => {
         <DropdownLight name={INPUT_NAME} items={itemsStringMock} />,
       ).asFragment(),
     ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight items={itemsStringMock} label="some text" required />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight items={itemsStringMock} error="Some error text..." />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight
+          items={itemsStringMock}
+          helperText="'this is a helper text'"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(
+        <DropdownLight
+          items={itemsStringMock}
+          placeholder="this is a input placeholder"
+        />,
+      ).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<DropdownLight items={itemsStringMock} disabled />).asFragment(),
+    ).toMatchSnapshot();
   });
 
   it('should return a value from item, using a object items', () => {
@@ -86,11 +120,51 @@ describe('<DropdownLight />', () => {
     expect(input.name).toMatch(INPUT_NAME);
   });
 
-  it('should close Dropdown Options when user press Escape', () => {
-    render(<DropdownLight items={itemsStringMock} />);
+  it('should check if it is disabled', () => {
+    render(<DropdownLight items={itemsStringMock} disabled />);
 
     const dropdown = screen.getByRole('button');
     userEvent.click(dropdown);
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+  });
+
+  it('should check if it is required', () => {
+    const labelContent = 'some text';
+    render(
+      <DropdownLight items={itemsStringMock} label={labelContent} required />,
+    );
+    const inputText = screen.getByRole('textbox', { hidden: true });
+
+    expect(inputText).toHaveAttribute('required');
+    expect(screen.getByText('*')).toBeInTheDocument();
+  });
+
+  it('should check if it is with error', () => {
+    const someErrorText = 'Some Error Text';
+    render(<DropdownLight items={itemsStringMock} error={someErrorText} />);
+
+    expect(screen.getByText(someErrorText)).toBeInTheDocument();
+  });
+  it('should check if it is with HelperText', () => {
+    const helperTextContent = 'this is a helper text';
+    render(
+      <DropdownLight items={itemsStringMock} helperText={helperTextContent} />,
+    );
+
+    expect(screen.getByText(helperTextContent)).toBeInTheDocument();
+  });
+
+  it('should check if it is with Label', () => {
+    const descriptionLabelContent = 'this is a description label';
+    render(
+      <DropdownLight items={itemsStringMock} label={descriptionLabelContent} />,
+    );
+
+    expect(screen.getByText('this is a description label')).toBeInTheDocument();
+  });
+
+  it('should close Dropdown Options when user press Escape', () => {
+    render(<DropdownLight items={itemsStringMock} />);
 
     userEvent.keyboard(ESCAPE_KEY_CODE);
 
@@ -136,5 +210,19 @@ describe('<DropdownLight />', () => {
       label: 'Strawberry',
       value: 'Strawberry',
     });
+  });
+
+  it('should check if it is with PlaceHolder', () => {
+    const placeholderContent = 'this is a input placeholder';
+    render(
+      <DropdownLight
+        items={itemsStringMock}
+        placeholder={placeholderContent}
+      />,
+    );
+
+    expect(screen.getByLabelText('abrir lista de itens')).toHaveTextContent(
+      placeholderContent,
+    );
   });
 });
