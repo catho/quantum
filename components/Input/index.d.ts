@@ -1,4 +1,4 @@
-import { Component, InputHTMLAttributes, MouseEventHandler, ChangeEventHandler } from 'react';
+import { InputHTMLAttributes, MouseEventHandler, ChangeEventHandler } from 'react';
 
 import { Validations } from '../Form';
 
@@ -41,4 +41,15 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   };
 }
 
-export default class Input extends Component<InputProps> {}
+interface CompoundedInput extends React.FunctionComponent<InputProps> {
+  CEP: React.FunctionComponent<InputProps>;
+  CNPJ: React.FunctionComponent<InputProps>;
+  CPF: React.FunctionComponent<InputProps>;
+  Date: React.FunctionComponent<InputProps>;
+  Password: React.FunctionComponent<InputProps>;
+  Phone: React.FunctionComponent<InputProps>;
+}
+
+const Input: CompoundedInput = () => null
+
+export default Input;
