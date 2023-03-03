@@ -63,4 +63,4 @@ nvm use
 
 ## Submitting a Pull Request
 
-Open your pull request, if you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+Open your pull request, if you don't know how do it, check out this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
