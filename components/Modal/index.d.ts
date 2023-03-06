@@ -1,7 +1,4 @@
-import { Component, ComponentType, ReactNode, TouchEvent, MouseEventHandler } from 'react';
-import HeaderText from '../Card/HeaderText';
-import Title from '../Card/Title';
-import Footer from '../Card/Footer';
+import { ComponentType, ReactNode, TouchEvent, MouseEventHandler } from 'react';
 
 interface StaticProps {
   theme?: {
@@ -27,14 +24,14 @@ export interface ModalProps {
   };
 }
 
-export default class Modal extends Component<ModalProps> {
-  static Header: ModalHeader;
-
-  static Title: Title;
-
-  static HeaderText: HeaderText;
-
-  static Content: ModalContent;
-
-  static Footer: Footer;
+interface CompoundedModal extends React.FunctionComponent<ModalProps> {
+  Header: React.FunctionComponent<ModalProps>;
+  Title: React.FunctionComponent<ModalProps>;
+  HeaderText: React.FunctionComponent<ModalProps>;
+  Content: React.FunctionComponent<ModalProps>;
+  Footer: React.FunctionComponent<ModalProps>;
 }
+
+const Modal: CompoundedModal = () => null;
+
+export default Modal;
