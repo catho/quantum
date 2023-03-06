@@ -1,5 +1,12 @@
 # Contributor's Guide
 
+
+## Summary
+
+ - [Contribution Prerequisites](#contribution-prerequisites)
+ - [Getting Started](#getting-started)
+ - [Submitting a Pull Request](#submitting-a-pull-request)
+  
 You can contribute in many ways: opening or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
 
 ## Contribution Prerequisites
@@ -63,4 +70,4 @@ nvm use
 
 ## Submitting a Pull Request
 
-Open your pull request, if you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+Open your pull request, if you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
