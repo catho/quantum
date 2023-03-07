@@ -367,10 +367,22 @@ const DropdownLight = ({
 };
 
 DropdownLight.propTypes = {
-  id: PropTypes.string,
   /** Disables component */
   disabled: PropTypes.bool,
+  /** Displays a mark to shows thats component is required */
+  required: PropTypes.bool,
+  /** Displays an error message and changes border color to error color */
+  error: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  /** Displays a label text that describes the field */
+  label: PropTypes.string,
   placeholder: PropTypes.string,
+  /** Receives the item of the list to be selected */
+  selectedItem: itemPropType,
+  /** Displays a helper text below the component */
+  helperText: PropTypes.string,
+  onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
@@ -378,18 +390,7 @@ DropdownLight.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-  name: PropTypes.string,
-  /** Displays a label text that describes the field */
-  label: PropTypes.string,
-  /** Displays an error message and changes border color to error color */
-  error: PropTypes.string,
-  /** Displays a mark to shows thats component is required */
-  required: PropTypes.bool,
-  /** Displays a helper text below the component */
-  helperText: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'dark']),
-  onChange: PropTypes.func,
-  selectedItem: itemPropType,
 };
 
 DropdownLight.defaultProps = {
