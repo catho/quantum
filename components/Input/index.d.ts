@@ -42,12 +42,12 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 interface CompoundedInput extends React.FunctionComponent<InputProps> {
-  CEP: React.FunctionComponent<InputProps>;
-  CNPJ: React.FunctionComponent<InputProps>;
-  CPF: React.FunctionComponent<InputProps>;
-  Date: React.FunctionComponent<InputProps>;
-  Password: React.FunctionComponent<InputProps>;
-  Phone: React.FunctionComponent<InputProps>;
+  CEP: React.FunctionComponent;
+  CNPJ: React.FunctionComponent;
+  CPF: React.FunctionComponent;
+  Date: React.FunctionComponent;
+  Password: React.FunctionComponent;
+  Phone: React.FunctionComponent;
 }
 
 const Input: CompoundedInput = () => null
