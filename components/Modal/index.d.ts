@@ -24,12 +24,42 @@ export interface ModalProps {
   };
 }
 
+  
+  interface ModalHeaderProps {
+    theme?: {
+      spacing?: {};
+    };
+  }
+
+  interface ModalTitleProps {
+    theme?: { 
+      baseFontSize?: {}; 
+    };
+}
+
+
+interface ModalContentProps {
+  theme?: { 
+    baseFontSize?: number;
+     spacing?: {} 
+    };
+}
+
+interface ModalFooterProps {
+  theme?: {
+    spacing?: {};
+  };
+}
+
+
+
+
 interface CompoundedModal extends React.FunctionComponent<ModalProps> {
-  Header: React.FunctionComponent<ModalProps>;
-  Title: React.FunctionComponent<ModalProps>;
-  HeaderText: React.FunctionComponent<ModalProps>;
-  Content: React.FunctionComponent<ModalProps>;
-  Footer: React.FunctionComponent<ModalProps>;
+  Header: React.FunctionComponent<ModalHeaderProps>;
+  Title: React.FunctionComponent<ModalTitleProps>;
+  HeaderText: React.FunctionComponent;
+  Content: React.FunctionComponent<ModalContentProps>;
+  Footer: React.FunctionComponent<ModalFooterProps>;
 }
 
 const Modal: CompoundedModal = () => null;
