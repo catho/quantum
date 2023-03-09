@@ -184,7 +184,7 @@ const InputText = styled(TextInput)`
   `}
 `;
 
-const DropItemImage = styled.img`
+const SelectionItemImage = styled.img`
   width: ${DROPITEM_IMAGE_SIZE};
   height: ${DROPITEM_IMAGE_SIZE};
   margin-left: ${spacingDefault.xsmall}px;
@@ -356,7 +356,10 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
-                {item?.img && <DropItemImage src={item.img} alt={item.alt} />}
+                {item.img && (
+                  <SelectionItemImage src={item.img} alt={item?.alt} />
+                )}
+
                 {(selectedOptionItem === item?.value ||
                   selectedOptionItem === item) && <CheckIcon theme={theme} />}
               </SelectionListItem>
