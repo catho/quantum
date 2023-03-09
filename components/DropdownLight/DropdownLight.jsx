@@ -25,6 +25,7 @@ const itemPropType = PropTypes.oneOfType([
 ]);
 
 const MAX_ITEMS_VISIBILITY = 7;
+const DROPITEM_IMAGE_SIZE = '24px';
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
@@ -181,6 +182,12 @@ const InputText = styled(TextInput)`
       ? colors.neutral['0']
       : colors.neutral['700']};
   `}
+`;
+
+const DropItemImage = styled.img`
+  width: ${DROPITEM_IMAGE_SIZE};
+  height: ${DROPITEM_IMAGE_SIZE};
+  margin-left: ${spacingDefault.xsmall}px;
 `;
 
 const DropdownLight = ({
@@ -349,6 +356,7 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
+                {item?.img && <DropItemImage src={item.img} alt={item.alt} />}
                 {(selectedOptionItem === item?.value ||
                   selectedOptionItem === item) && <CheckIcon theme={theme} />}
               </SelectionListItem>

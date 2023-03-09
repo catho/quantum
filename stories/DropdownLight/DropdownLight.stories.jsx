@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import DropdownLight from '../../components/DropdownLight/DropdownLight';
-import { itemsObjectMock, itemsStringMock } from './mock';
+import { itemsObjectMock, itemsStringMock, itemsWithImageMock } from './mock';
 
 const Template = args => {
   const { items = itemsObjectMock, ...rest } = args;
@@ -48,6 +48,11 @@ WithPlaceholder.args = {
 export const WithSkin = Template.bind({});
 WithSkin.args = {
   skin: 'dark',
+};
+
+export const WithImages = Template.bind({});
+WithImages.args = {
+  items: itemsWithImageMock,
 };
 
 export const SelectedItemControlled = () => {
