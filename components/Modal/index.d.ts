@@ -22,6 +22,7 @@ export interface ModalProps {
   }
 
   interface ModalTitleProps {
+    small?: boolean;
     theme?: { 
       baseFontSize?: {}; 
     };
