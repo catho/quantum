@@ -1,8 +1,4 @@
 import { InputHTMLAttributes, MouseEventHandler, ChangeEventHandler } from 'react';
-import masks from '../shared/masks';
-import Input from './Input';
-
-
 import { Validations } from '../Form';
 
 export type MaskFunction = (rawValue: string) => string[];
