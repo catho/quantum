@@ -356,12 +356,20 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
-                {item?.img && (
-                  <SelectionItemImage src={item?.img} alt={item?.alt} />
+                {item?.img ? (
+                  <>
+                    <SelectionItemImage src={item?.img} alt={item?.alt} />
+                    {selectedOptionItem === item?.value ||
+                      selectedOptionItem === item}
+                  </>
+                ) : (
+                  <>
+                    {(selectedOptionItem === item?.value ||
+                      selectedOptionItem === item) && (
+                      <CheckIcon theme={theme} />
+                    )}
+                  </>
                 )}
-
-                {(selectedOptionItem === item?.value ||
-                  selectedOptionItem === item) && <CheckIcon theme={theme} />}
               </SelectionListItem>
             ))}
           </SelectionList>
