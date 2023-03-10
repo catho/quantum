@@ -61,6 +61,10 @@ describe('<DropdownLight />', () => {
     expect(
       render(<DropdownLight items={itemsStringMock} disabled />).asFragment(),
     ).toMatchSnapshot();
+
+    expect(
+      render(<DropdownLight items={itemsWithImageMock} />).asFragment(),
+    ).toMatchSnapshot();
   });
 
   it('should return a value from item, using a object items', () => {
@@ -227,7 +231,7 @@ describe('<DropdownLight />', () => {
     );
   });
 
-  it('should show if there is icon', () => {
+  it('should show if there is icon at item', () => {
     render(<DropdownLight items={itemsWithImageMock} />);
 
     const dropdown = screen.getByRole('button');
