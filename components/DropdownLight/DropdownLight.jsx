@@ -356,8 +356,8 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
-                {item.img && (
-                  <SelectionItemImage src={item.img} alt={item?.alt} />
+                {item?.img && (
+                  <SelectionItemImage src={item?.img} alt={item?.alt} />
                 )}
 
                 {(selectedOptionItem === item?.value ||
