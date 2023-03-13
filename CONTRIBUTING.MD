@@ -7,26 +7,38 @@
  - [Getting Started](#getting-started)
  - [Submitting a Pull Request](#submitting-a-pull-request)
   
+
+
 You can contribute in many ways: opening or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
 
 ## Contribution Prerequisites
-- Node;
-- Docker for the visual tests.
 
-We have .nvmrc, so just use [nvm](https://github.com/nvm-sh/nvm) to sets the repo default version of node
-```sh
-nvm use
-```
+- To collaborate with this project, for security reasons, a Token is needed. More info in [confluence of the project](https://confluence.catho.com.br/pages/viewpage.action?pageId=51675150);
+
+- Node v16.15.1;
+
+Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same version based on the .nvmrc file in the repository.
+
+- Yarn;
+
+* Docker for the visual tests;
+
+* Commitizen.
+
+Why _commitizen_? To enforce a padronization to the commits and make sure every commit follows the same profile.
+
+---
 
 ## Getting Started
 1.  Fork the project, [Help Guide to Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 2.  Clone the project.
 3. Create a branch specific to the issue you are working on.
+
     ```sh
     git checkout -b update-readme-file
     ```
-4.  Open up the project in your favorite text editor, select the file you want to contribute and make your changes. 
-    
+4.  Open up the project in your favorite text editor; select the file which you want to contribute and make your changes.
+
     - If your contribution is a new component you can use our script to generate initial structure for a new component:
 
         ```sh
@@ -52,7 +64,7 @@ nvm use
     yarn commitizen
     ```
 
-7.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
+1.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
 
     - Select the type of change that you're committing (required)
     - What is the scope of this change (e.g. component or file name)?
@@ -61,12 +73,12 @@ nvm use
     - Are they any breaking changes? (y/N)
     - Does this change affect any open issues? (y/N)
 
-8.  Push your commits to your Fork:
+2.  Push your commits to your Fork:
 
     ```sh
     git push -u origin branch-name
     ```
-9.  Submit a pull request.
+3.  Submit a pull request.
 
 ## Submitting a Pull Request
 
