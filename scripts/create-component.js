@@ -41,10 +41,9 @@ const updateIndexTSFile = component => {
     encoding: 'utf-8',
   });
 
-  const exportComponent = `export { ${component} } from './${component}';\n`;
   const exportTypedComponent = `export const ${component}: StyledComponent<typeof ${component}Component, ${component}Props>;\n`;
 
-  const dataUpdated = `${data}\n${exportComponent}${exportTypedComponent}`;
+  const dataUpdated = `${data}\n${exportTypedComponent}`;
 
   fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
 };
