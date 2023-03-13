@@ -46,7 +46,7 @@ nvm use
     ```
 
 7.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
-    
+
     - Select the type of change that you're committing (required)
     - What is the scope of this change (e.g. component or file name)?
     - Write a short, imperative tense description of the change (required)
