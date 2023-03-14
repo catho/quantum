@@ -5,6 +5,7 @@
 
  - [Contribution Prerequisites](#contribution-prerequisites)
  - [Getting Started](#getting-started)
+ - [Editing a Component](#editing-a-component)
 
 
 
@@ -146,3 +147,5 @@ The branch merging **can only be done by the team**, _never_ by the requester.
 The publication is automatically done after merging. As soon as the task is approved, it will be merged by the team. It will go through the CI/CD proccess and be distributed on semantic-release. The library version will be defined according to the semantic standard of the commits.
 
 ---
+
+## Editing a Component
