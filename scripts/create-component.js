@@ -5,18 +5,6 @@ const fs = require('fs');
 const componentTemplates = require('./templates/component');
 const componentStoryTemplates = require('./templates/component-story');
 
-const updateStoriesFile = component => {
-  const file = './.storybook/stories.js';
-
-  const data = fs.readFileSync(file, {
-    encoding: 'utf-8',
-  });
-
-  const dataUpdated = data.replace(',\n]', `,\n\t'${component}',\n]`);
-
-  fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
-};
-
 const updateIndexFile = component => {
   const file = './components/index.js';
 
@@ -92,7 +80,6 @@ try {
     );
   });
 
-  updateStoriesFile(componentName);
   updateIndexFile(componentName);
   updateIndexTSFile(componentName);
 
