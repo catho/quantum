@@ -8,7 +8,7 @@
  - [Editing a Component](#editing-a-component)
 
 
-
+---
 You can contribute in many ways: opening or participating of a issue, reporting a bug, sending a [pull request](#submitting-a-pull-request).
 
 ## Contribution Prerequisites
@@ -58,23 +58,24 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 6.  If there are visual changes, run the Regression Tests.
 
-To update the Regression Tests, revise the file `stories/<nome do componente criado>.regression-test.story.jsx`.
+    To update the Regression Tests, revise the file `stories/<nome do componente criado>.regression-test.story.jsx`.
 
-To run Regression Tests, you must get the Storybook running first. You can do it with the command:
+    To run Regression Tests, you must get the Storybook running first. You can do it with the command:
 
         yarn test:regression:storybook
 
-After the Storybook is up, run the following to check if there are any visual differences:
+    After the Storybook is up, run the following to check if there are any visual differences:
 
         yarn test:regression
 
-This will run a pixel-perfect comparison to protect any visual changes that may happen on the component. If the desired change is detected and according to the desired output, run:
+
+    This will run a pixel-perfect comparison to protect any visual changes that may happen on the component. If the desired change is detected and according to the desired output, run:
 
         yarn test:regression:approve
 
 7. Update the live documentation (Storybook).
 
-Every component must be on the dynamic documentation of the Storybook. For this reason, every behavior of the component must be documented and up to date within the files `stories/<nome do componente criado>.stories.jsx` and `stories/<nome do componente criado>.story.mdx`.
+    Every component must be on the dynamic documentation of the Storybook. For this reason, every behavior of the component must be documented and up to date within the files `stories/<nome do componente criado>.stories.jsx` and `stories/<nome do componente criado>.story.mdx`.
 
 
 8.  After making your changes in the new git branch, add your modified files to git, [How to add, commit, push and go](http://readwrite.com/2013/10/02/github-for-beginners-part-2/).
@@ -113,13 +114,13 @@ Every component must be on the dynamic documentation of the Storybook. For this 
 
 11.  You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project.
 
-- Select the type of change that you're committing (required)
-- What is the scope of this change (e.g. component or file name)?
-- Write a short, imperative tense description of the change (required)
-- Provide a longer description of the change
-- Are they any breaking changes? (y/N)
-- Does this change affect any open issues? (y/N)
-  
+     - Select the type of change that you're committing (required)
+     - What is the scope of this change (e.g. component or file name)?
+     - Write a short, imperative tense description of the change (required)
+     - Provide a longer description of the change
+     - Are they any breaking changes? (y/N)
+     - Does this change affect any open issues? (y/N)
+
 
 12.  Push your commits to your Fork:
 
@@ -139,12 +140,12 @@ Every component must be on the dynamic documentation of the Storybook. For this 
     - The `status:ready-to-review` label;
     - Be assigned to the collaborator who submitted it;
 
-The Pull Request will be approved after receiving two review approvals.
+    The Pull Request will be approved after receiving two review approvals.
 The branch merging **can only be done by the team**, _never_ by the requester.
 
 15.  Publishing on NPM
 
-The publication is automatically done after merging. As soon as the task is approved, it will be merged by the team. It will go through the CI/CD proccess and be distributed on semantic-release. The library version will be defined according to the semantic standard of the commits.
+        The publication is automatically done after merging. As soon as the task is approved, it will be merged by the team. It will go through the CI/CD proccess and be distributed on semantic-release. The library version will be defined according to the semantic standard of the commits.
 
 ---
 
