@@ -13,8 +13,6 @@ You can contribute in many ways: opening or participating of a issue, reporting 
 
 ## Contribution Prerequisites
 
-- To collaborate with this project, for security reasons, a Token is needed. More info in [confluence of the project](https://confluence.catho.com.br/pages/viewpage.action?pageId=51675150);
-
 - Node v16.15.1;
 
 Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same version based on the .nvmrc file in the repository.
