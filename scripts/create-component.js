@@ -29,9 +29,11 @@ const updateIndexTSFile = component => {
     encoding: 'utf-8',
   });
 
+  const importComponent = `\nimport { default as ${component}Component, ${component}Props } from './${component}';\n`;
+
   const exportTypedComponent = `export const ${component}: StyledComponent<typeof ${component}Component, ${component}Props>;\n`;
 
-  const dataUpdated = `${data}\n${exportTypedComponent}`;
+  const dataUpdated = `${data}\n${importComponent}${exportTypedComponent}`;
 
   fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
 };
