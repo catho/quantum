@@ -148,3 +148,9 @@ The branch merging **can only be done by the team**, _never_ by the requester.
 ---
 
 ## Editing a Component
+
+Follow steps [1 and 2](#getting-started) from Getting Started.
+
+3. Run Storybook;
+
+        yarn storybook
