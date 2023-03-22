@@ -6,6 +6,7 @@ export type ItemPropType = string | { value: string | number; label: string };
 
 
 export interface DropdownLightProps {
+  id?: string;
   name?: string;
   disabled?: boolean;
   items: ItemPropType[];

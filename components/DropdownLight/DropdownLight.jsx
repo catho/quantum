@@ -343,7 +343,7 @@ const DropdownLight = ({
         </InputWrapper>
 
         {isOpen && (
-          <SelectionList id={id} theme={theme} ref={listOptions}>
+          <SelectionList theme={theme} ref={listOptions}>
             {items.map((item, index) => (
               <SelectionListItem
                 role="option"
