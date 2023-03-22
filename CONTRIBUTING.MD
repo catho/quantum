@@ -127,7 +127,7 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 13.  Submit a pull request;
 
-        Open your pull request, if you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+        Open your pull request. PIf you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 14. Review flow for Pull Requests:
 
@@ -149,8 +149,90 @@ The branch merging **can only be done by the team**, _never_ by the requester.
 
 ## Editing a Component
 
+
 Follow steps [1 and 2](#getting-started) from Getting Started.
 
-3. Run Storybook;
+3. Run Storybook to understand the current behavior of the component;
 
         yarn storybook
+
+    The components are subfolders of the `components` folders; therefore, if you want to edit the `Footer`, the path will be `components\footer`.
+
+    All the corresponding documentation and regressive tests will be at `story\footer`.
+
+4. Proceed with the desired changes.
+
+    The storybook will provide real-time updates of the component.
+
+5. Update Unit Tests, if needed;
+
+    The component must have 100% coverage of the tests. To run Unit Tests, execute:
+
+        yarn test components/<name-of-the-edited-component>/
+
+    To check the test coverage,run:
+
+        yarn test:coverage
+
+6. Update the Regression Tests, if needed;
+
+    If a behavior that changes the visual aspect of the component is included, this new behavior must be included in the Regression Tests.
+
+    To update the Regression Test, just edit the file `stories/<name-of-the-edited-component>.regression-test.story.jsx`. 
+
+    To run the Regression Test, you must get up the Testing Storybook first:
+
+        yarn test:regression:storybook
+
+    With the Testing Storybook running, execute the following command to compare the visual changes, if there's any:
+
+        yarn test:regression
+
+    This command will run a pixel-perfect comparative test to protect the visual changes of the components, if they happen. If the desired change is detected, execute:
+
+        yarn test:regression:approve
+
+7. Update the live documentation (Storybook);
+
+    Each component must be on the dynamic documentation of the Storybook. Therefore, all the components' behaviors must be registered and updated in the files `stories/<name-of-the-edited-component>.stories.jsx` and `stories/<name-of-the-edited-component>.story.mdx`.
+
+8. Commit your changes using [commitizen](http://commitizen.github.io/cz-cli/);
+
+     ```sh
+      yarn commitizen
+     ```
+
+9. You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards defined by project;
+
+     - Select the type of change that you're committing (required)
+     - What is the scope of this change (e.g. component or file name)?
+     - Write a short, imperative tense description of the change (required)
+     - Provide a longer description of the change
+     - Are they any breaking changes? (y/N)
+     - Does this change affect any open issues? (y/N)
+
+10.  Push your commits to your Fork:
+
+
+            git push -u origin branch-name
+
+11.  Submit a pull request;
+
+        Open your pull request. If you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+
+12. Review flow for Pull Requests:
+
+    A Pull Resquest will be opened with the following contract:
+
+    - The URL from Jira with the task's description;
+    - A checklist with the items to be reviewed (automatically generated);
+    - The `status:ready-to-review` label;
+    - Be assigned to the collaborator who submitted it;
+
+    The Pull Request will be approved after receiving two review approvals.
+The branch merging **can only be done by the team**, _never_ by the requester.
+
+13.  Publishing on NPM.
+
+        The publication is automatically done after merging. As soon as the task is approved, it will be merged by the team. It will go through the CI/CD proccess and be distributed on semantic-release. The library version will be defined according to the semantic standard of the commits.
+
