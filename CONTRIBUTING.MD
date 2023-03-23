@@ -156,9 +156,9 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
 
         yarn storybook
 
-    The components are subfolders of the `components` folders; therefore, if you want to edit the `Footer`, the path will be `components\footer`.
+    The components are subfolders of the `components` folder; therefore, if you want to edit the `Footer`, the path will be `components/footer`.
 
-    All the corresponding documentation and regressive tests will be at `story\footer`.
+    All the corresponding documentation and regression tests will be at `story/footer`.
 
 4. Proceed with the desired changes.
 
@@ -166,11 +166,11 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
 
 5. Update Unit Tests, if needed;
 
-    The component must have 100% coverage of the tests. To run Unit Tests, execute:
+    The component must have 100% coverage on the tests. To run Unit Tests, execute:
 
         yarn test components/<name-of-the-edited-component>/
 
-    To check the test coverage,run:
+    To check the test coverage, run:
 
         yarn test:coverage
 
