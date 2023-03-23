@@ -127,7 +127,7 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 13.  Submit a pull request;
 
-        Open your pull request. PIf you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+        Open your pull request. If you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 14. Review flow for Pull Requests:
 
