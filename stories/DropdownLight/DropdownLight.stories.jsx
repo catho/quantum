@@ -56,10 +56,7 @@ WithImages.args = {
 };
 
 export const SelectedItemControlled = () => {
-  const [selectedFruit, setSelectedFruit] = useState({
-    value: 'Banana',
-    label: 'Banana',
-  });
+  const [selectedFruit, setSelectedFruit] = useState('');
 
   return (
     <DropdownLight

@@ -19,8 +19,8 @@ import useKeyPress from './SubComponents/UseKeyPress';
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.shape({
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     label: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
 ]);
 
@@ -80,6 +80,7 @@ const Button = styled.button`
     return css`
       font-size: ${baseFontSize}px;
       margin-top: ${spacing.xsmall}px;
+      margin-bottom: ${spacing.medium}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
       background-color: ${skin === 'default'
         ? colors.neutral['0']
@@ -230,7 +231,7 @@ const DropdownLight = ({
   };
 
   const selectItem = item => {
-    setSelectedOptionItem(item?.value || item);
+    setSelectedOptionItem(item?.label || item);
     onChange(item);
     buttonRef.current.focus();
   };
@@ -318,7 +319,7 @@ const DropdownLight = ({
             hidden
             skin={skin}
             name={name}
-            defaultValue={selectedOptionItem?.value || selectedOptionItem}
+            defaultValue={selectedOptionItem?.label || selectedOptionItem}
             aria-label="selecione uma opção"
             required={required}
           />
@@ -359,12 +360,12 @@ const DropdownLight = ({
                 {item?.img ? (
                   <>
                     <SelectionItemImage src={item?.img} alt={item?.alt} />
-                    {selectedOptionItem === item?.value ||
+                    {selectedOptionItem === item?.label ||
                       selectedOptionItem === item}
                   </>
                 ) : (
                   <>
-                    {(selectedOptionItem === item?.value ||
+                    {(selectedOptionItem === item?.label ||
                       selectedOptionItem === item) && (
                       <CheckIcon theme={theme} />
                     )}
