@@ -92,6 +92,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -256,6 +257,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -431,6 +433,7 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -618,6 +621,7 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -802,6 +806,7 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -971,6 +976,7 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -1135,6 +1141,7 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
@@ -1300,6 +1307,7 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
   transition: all 0.2s ease-in-out;
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 16px;
   padding: 8px 16px;
   background-color: #ffffff;
   color: #424242;
