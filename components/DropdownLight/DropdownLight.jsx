@@ -80,7 +80,6 @@ const Button = styled.button`
     return css`
       font-size: ${baseFontSize}px;
       margin-top: ${spacing.xsmall}px;
-      margin-bottom: ${spacing.medium}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
       background-color: ${skin === 'default'
         ? colors.neutral['0']
