@@ -15,6 +15,7 @@ import {
 } from '../Input/sub-components';
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
+import { FieldGroup } from '../shared';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -47,18 +48,6 @@ const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
   width: 24px;
-`;
-
-const Wrapper = styled.div`
-  ${({
-    theme: {
-      colors: { neutral },
-    },
-    skin,
-  }) => css`
-    position: relative;
-    color: ${skin === 'default' ? neutral[700] : neutral[0]};
-  `}
 `;
 
 const Button = styled.button`
@@ -301,7 +290,7 @@ const DropdownLight = ({
 
   return (
     <>
-      <Wrapper theme={theme} skin={skin}>
+      <FieldGroup theme={theme} skin={skin}>
         <InputWrapper>
           {label && (
             <InputLabel error={error}>
@@ -380,7 +369,7 @@ const DropdownLight = ({
             {error}
           </InputErrorMessage>
         )}
-      </Wrapper>
+      </FieldGroup>
     </>
   );
 };

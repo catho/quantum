@@ -2,7 +2,15 @@
 
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -63,11 +71,6 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -166,7 +169,15 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 exports[`<DropdownLight /> should match the snapshots 2`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -227,11 +238,6 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -330,7 +336,15 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
 
 exports[`<DropdownLight /> should match the snapshots 3`] = `
 <DocumentFragment>
-  .c4 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c4 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -402,11 +416,6 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c6 {
@@ -528,6 +537,14 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   font-weight: 600;
 }
 
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
 .c2 {
   -webkit-appearance: none;
   border-radius: 4px;
@@ -589,11 +606,6 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -708,6 +720,14 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   font-weight: 600;
 }
 
+.c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
 .c2 {
   -webkit-appearance: none;
   border-radius: 4px;
@@ -773,11 +793,6 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -881,7 +896,15 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
 
 exports[`<DropdownLight /> should match the snapshots 6`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -942,11 +965,6 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -1045,7 +1063,15 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
 
 exports[`<DropdownLight /> should match the snapshots 7`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1106,11 +1132,6 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
@@ -1210,7 +1231,15 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
 
 exports[`<DropdownLight /> should match the snapshots 8`] = `
 <DocumentFragment>
-  .c2 {
+  .c0 {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 100%;
+  color: #424242;
+}
+
+.c2 {
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1271,11 +1300,6 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
   display: inline-block;
   pointer-events: none;
   width: 24px;
-}
-
-.c0 {
-  position: relative;
-  color: #424242;
 }
 
 .c4 {
