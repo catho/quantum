@@ -1,16 +1,4 @@
-import { Component, ComponentType, ReactNode, TouchEvent, MouseEventHandler } from 'react';
-import HeaderText from '../Card/HeaderText';
-import Title from '../Card/Title';
-import Footer from '../Card/Footer';
-
-interface StaticProps {
-  theme?: {
-    spacing?: {};
-  };
-}
-
-export type ModalHeader = ComponentType<StaticProps>;
-export type ModalContent = ComponentType<StaticProps>;
+import { ReactNode, TouchEvent, MouseEventHandler } from 'react';
 
 export interface ModalProps {
   children?: ReactNode[] | ReactNode;
@@ -27,14 +15,41 @@ export interface ModalProps {
   };
 }
 
-export default class Modal extends Component<ModalProps> {
-  static Header: ModalHeader;
+  interface ModalHeaderProps {
+    theme?: {
+      spacing?: {};
+    };
+  }
 
-  static Title: Title;
-
-  static HeaderText: HeaderText;
-
-  static Content: ModalContent;
-
-  static Footer: Footer;
+  interface ModalTitleProps {
+    small?: boolean;
+    theme?: { 
+      baseFontSize?: {}; 
+    };
 }
+
+
+interface ModalContentProps {
+  theme?: { 
+    baseFontSize?: number;
+     spacing?: {} 
+    };
+}
+
+interface ModalFooterProps {
+  theme?: {
+    spacing?: {};
+  };
+}
+
+interface CompoundedModal extends React.FunctionComponent<ModalProps> {
+  Header: React.FunctionComponent<ModalHeaderProps>;
+  Title: React.FunctionComponent<ModalTitleProps>;
+  HeaderText: React.FunctionComponent;
+  Content: React.FunctionComponent<ModalContentProps>;
+  Footer: React.FunctionComponent<ModalFooterProps>;
+}
+
+const Modal: CompoundedModal = () => null;
+
+export default Modal;

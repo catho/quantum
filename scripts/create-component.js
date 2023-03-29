@@ -5,18 +5,6 @@ const fs = require('fs');
 const componentTemplates = require('./templates/component');
 const componentStoryTemplates = require('./templates/component-story');
 
-const updateStoriesFile = component => {
-  const file = './.storybook/stories.js';
-
-  const data = fs.readFileSync(file, {
-    encoding: 'utf-8',
-  });
-
-  const dataUpdated = data.replace(',\n]', `,\n\t'${component}',\n]`);
-
-  fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
-};
-
 const updateIndexFile = component => {
   const file = './components/index.js';
 
@@ -41,10 +29,11 @@ const updateIndexTSFile = component => {
     encoding: 'utf-8',
   });
 
-  const exportComponent = `export { ${component} } from './${component}';\n`;
+  const importComponent = `\nimport { default as ${component}Component, ${component}Props } from './${component}';\n`;
+
   const exportTypedComponent = `export const ${component}: StyledComponent<typeof ${component}Component, ${component}Props>;\n`;
 
-  const dataUpdated = `${data}\n${exportComponent}${exportTypedComponent}`;
+  const dataUpdated = `${data}\n${importComponent}${exportTypedComponent}`;
 
   fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
 };
@@ -93,7 +82,6 @@ try {
     );
   });
 
-  updateStoriesFile(componentName);
   updateIndexFile(componentName);
   updateIndexTSFile(componentName);
 

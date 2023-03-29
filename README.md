@@ -33,8 +33,8 @@ You can find a list of all available components and full documentation on how to
 
 ## Contributing
 
-- Check the [issues](https://github.com/catho/quantum/issues) to ensure that there is not someone already working on it
-- Check our [contribution guide](https://github.com/catho/quantum/blob/master/CONTRIBUTING.MD)
+- Check the [issues](https://github.com/catho/quantum/issues) to ensure that there is not someone already working on it.
+- Check our [contribution guide](https://github.com/catho/quantum/blob/master/CONTRIBUTING.MD).
 
 ## Contributors ✨
 
