@@ -15,16 +15,18 @@ import {
 } from '../Input/sub-components';
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
+import { FieldGroup } from '../shared';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.shape({
-    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     label: PropTypes.string,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   }),
 ]);
 
 const MAX_ITEMS_VISIBILITY = 7;
+const DROPITEM_IMAGE_SIZE = '24px';
 
 const CheckIcon = styled(Icon).attrs({
   name: 'check',
@@ -46,18 +48,6 @@ const ArrowIcon = styled(Icon)`
   display: inline-block;
   pointer-events: none;
   width: 24px;
-`;
-
-const Wrapper = styled.div`
-  ${({
-    theme: {
-      colors: { neutral },
-    },
-    skin,
-  }) => css`
-    position: relative;
-    color: ${skin === 'default' ? neutral[700] : neutral[0]};
-  `}
 `;
 
 const Button = styled.button`
@@ -183,6 +173,12 @@ const InputText = styled(TextInput)`
   `}
 `;
 
+const SelectionItemImage = styled.img`
+  width: ${DROPITEM_IMAGE_SIZE};
+  height: ${DROPITEM_IMAGE_SIZE};
+  margin-left: ${spacingDefault.xsmall}px;
+`;
+
 const DropdownLight = ({
   disabled,
   items,
@@ -223,7 +219,7 @@ const DropdownLight = ({
   };
 
   const selectItem = item => {
-    setSelectedOptionItem(item?.value || item);
+    setSelectedOptionItem(item?.label || item);
     onChange(item);
     buttonRef.current.focus();
   };
@@ -294,7 +290,7 @@ const DropdownLight = ({
 
   return (
     <>
-      <Wrapper theme={theme} skin={skin}>
+      <FieldGroup theme={theme} skin={skin}>
         <InputWrapper>
           {label && (
             <InputLabel error={error}>
@@ -311,7 +307,7 @@ const DropdownLight = ({
             hidden
             skin={skin}
             name={name}
-            defaultValue={selectedOptionItem?.value || selectedOptionItem}
+            defaultValue={selectedOptionItem?.label || selectedOptionItem}
             aria-label="selecione uma opção"
             required={required}
           />
@@ -336,7 +332,7 @@ const DropdownLight = ({
         </InputWrapper>
 
         {isOpen && (
-          <SelectionList id={id} theme={theme} ref={listOptions}>
+          <SelectionList theme={theme} ref={listOptions}>
             {items.map((item, index) => (
               <SelectionListItem
                 role="option"
@@ -349,8 +345,20 @@ const DropdownLight = ({
               >
                 {item?.label || item}
 
-                {(selectedOptionItem === item?.value ||
-                  selectedOptionItem === item) && <CheckIcon theme={theme} />}
+                {item?.img ? (
+                  <>
+                    <SelectionItemImage src={item?.img} alt={item?.alt} />
+                    {selectedOptionItem === item?.label ||
+                      selectedOptionItem === item}
+                  </>
+                ) : (
+                  <>
+                    {(selectedOptionItem === item?.label ||
+                      selectedOptionItem === item) && (
+                      <CheckIcon theme={theme} />
+                    )}
+                  </>
+                )}
               </SelectionListItem>
             ))}
           </SelectionList>
@@ -361,16 +369,28 @@ const DropdownLight = ({
             {error}
           </InputErrorMessage>
         )}
-      </Wrapper>
+      </FieldGroup>
     </>
   );
 };
 
 DropdownLight.propTypes = {
-  id: PropTypes.string,
   /** Disables component */
   disabled: PropTypes.bool,
+  /** Displays a mark to shows thats component is required */
+  required: PropTypes.bool,
+  /** Displays an error message and changes border color to error color */
+  error: PropTypes.string,
+  id: PropTypes.string,
+  name: PropTypes.string,
+  /** Displays a label text that describes the field */
+  label: PropTypes.string,
   placeholder: PropTypes.string,
+  /** Receives the item of the list to be selected */
+  selectedItem: itemPropType,
+  /** Displays a helper text below the component */
+  helperText: PropTypes.string,
+  onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType).isRequired,
   theme: PropTypes.shape({
@@ -378,18 +398,7 @@ DropdownLight.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-  name: PropTypes.string,
-  /** Displays a label text that describes the field */
-  label: PropTypes.string,
-  /** Displays an error message and changes border color to error color */
-  error: PropTypes.string,
-  /** Displays a mark to shows thats component is required */
-  required: PropTypes.bool,
-  /** Displays a helper text below the component */
-  helperText: PropTypes.string,
   skin: PropTypes.oneOf(['default', 'dark']),
-  onChange: PropTypes.func,
-  selectedItem: itemPropType,
 };
 
 DropdownLight.defaultProps = {

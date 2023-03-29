@@ -7,6 +7,7 @@ import DropdownLight from './DropdownLight';
 import {
   itemsStringMock,
   itemsObjectMock,
+  itemsWithImageMock,
 } from '../../stories/DropdownLight/mock';
 
 const INPUT_NAME = 'dropdown-name';
@@ -59,6 +60,10 @@ describe('<DropdownLight />', () => {
 
     expect(
       render(<DropdownLight items={itemsStringMock} disabled />).asFragment(),
+    ).toMatchSnapshot();
+
+    expect(
+      render(<DropdownLight items={itemsWithImageMock} />).asFragment(),
     ).toMatchSnapshot();
   });
 
@@ -224,5 +229,20 @@ describe('<DropdownLight />', () => {
     expect(screen.getByLabelText('abrir lista de itens')).toHaveTextContent(
       placeholderContent,
     );
+  });
+
+  it('should show if there is icon at item', () => {
+    render(<DropdownLight items={itemsWithImageMock} />);
+
+    const dropdown = screen.getByRole('button');
+    userEvent.click(dropdown);
+
+    const optionItem = screen.getByRole('option', {
+      name: 'Visa image description',
+    });
+
+    const selectionItemImage = optionItem.querySelector('img');
+
+    expect(selectionItemImage).toBeInTheDocument();
   });
 });

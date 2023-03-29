@@ -14,6 +14,7 @@ import {
   WithLabel,
   WithPlaceholder,
   WithSkin,
+  WithImages,
   SelectedItemControlled
 } from './DropdownLight.stories.jsx';
 
@@ -31,7 +32,7 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import { DropdownLight } from '@catho/quantum';
+import { DropdownLight } from '@catho/quantum/DropdownLight';
 ```
 
 <Canvas>
@@ -50,7 +51,7 @@ import { DropdownLight } from '@catho/quantum';
   <Story story={Disabled}/>
 </Canvas>
 
-### WithArrayOfString
+### With Array Of String
 
 <Canvas>
   <Story story={WithArrayOfString}/>
@@ -62,13 +63,13 @@ import { DropdownLight } from '@catho/quantum';
   <Story story={Required}/>
 </Canvas>
 
-### WithError
+### With Error
 
 <Canvas>
   <Story story={WithError}/>
 </Canvas>
 
-### WithHelperText
+### With HelperText
 
 <Canvas>
   <Story story={WithHelperText}/>
@@ -80,7 +81,7 @@ import { DropdownLight } from '@catho/quantum';
   <Story story={WithLabel}/>
 </Canvas>
 
-### WithPlaceholder
+### With Placeholder
 
 <Canvas>
   <Story story={WithPlaceholder}/>
@@ -90,6 +91,12 @@ import { DropdownLight } from '@catho/quantum';
 
 <Canvas>
   <Story story={WithSkin}/>
+</Canvas>
+
+### With Images
+
+<Canvas>
+  <Story story={WithImages}/>
 </Canvas>
 
 ### With a item selected

@@ -1,5 +1,5 @@
 import DropdownLight from '../../components/DropdownLight';
-import { itemsObjectMock } from './mock';
+import { itemsObjectMock, itemsWithImageMock } from './mock';
 
 export default {
   title: 'DropdownLight',
@@ -50,4 +50,9 @@ WithPlaceholder.args = {
 export const WithSkin = Template.bind({});
 WithSkin.args = {
   skin: 'dark',
+};
+
+export const WithImages = Template.bind({});
+WithImages.args = {
+  items: itemsWithImageMock,
 };
