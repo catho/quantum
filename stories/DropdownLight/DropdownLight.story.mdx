@@ -1,0 +1,107 @@
+<!-- Generated with scripts/create-componnent.js -->
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import  DropdownLight  from '../../components/DropdownLight';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  Disabled,
+  WithArrayOfString,
+  WithError,
+  Required,
+  WithHelperText,
+  WithLabel,
+  WithPlaceholder,
+  WithSkin,
+  WithImages,
+  SelectedItemControlled
+} from './DropdownLight.stories.jsx';
+
+<Meta title="Forms/DropdownLight" component={DropdownLight}  />
+
+<Header title="DropdownLight">
+      A dropdown receives user input, allowing it to choose one of several options.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+- [Examples](#examples)
+
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { DropdownLight } from '@catho/quantum/DropdownLight';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={DropdownLight} />
+
+## <a id="examples"></a>Examples
+
+### Disabled
+
+<Canvas>
+  <Story story={Disabled}/>
+</Canvas>
+
+### With Array Of String
+
+<Canvas>
+  <Story story={WithArrayOfString}/>
+</Canvas>
+
+### Required
+
+<Canvas>
+  <Story story={Required}/>
+</Canvas>
+
+### With Error
+
+<Canvas>
+  <Story story={WithError}/>
+</Canvas>
+
+### With HelperText
+
+<Canvas>
+  <Story story={WithHelperText}/>
+</Canvas>
+
+### WithLabel
+
+<Canvas>
+  <Story story={WithLabel}/>
+</Canvas>
+
+### With Placeholder
+
+<Canvas>
+  <Story story={WithPlaceholder}/>
+</Canvas>
+
+### With Skin
+
+<Canvas>
+  <Story story={WithSkin}/>
+</Canvas>
+
+### With Images
+
+<Canvas>
+  <Story story={WithImages}/>
+</Canvas>
+
+### With a item selected
+
+<Canvas>
+  <Story story={SelectedItemControlled}/>
+</Canvas>
+

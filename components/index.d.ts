@@ -16,6 +16,7 @@ import { Checkbox as CheckboxComponent, CheckboxGroup as CheckboxGroupComponent,
 import { default as CircularLoaderComponent, CircularLoaderProps } from "./CircularLoader"
 import { default as DialogComponent, DialogProps } from "./Dialog"
 import { default as DropdownComponent, DropdownProps } from "./Dropdown"
+import { default as DropdownLightComponent, DropdownLightProps } from "./DropdownLight"
 import { Container as ContainerComponent, Col as ColComponent, Row as RowComponent, ColProps, RowProps, ContainerProps } from './Grid';
 import { default as HamburgerComponent, HamburgerProps } from "./Hamburger"
 import { default as Icon, IconProps } from "./Icon"
@@ -87,5 +88,5 @@ export const Tooltip: StyledComponent<typeof TooltipComponent, TooltipProps>;
 export const SocialButton: StyledComponent<typeof SocialButtonComponent, SocialButtonProps>;
 export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent, SegmentedControlProps>;
 export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
-export { InfiniteScroll } from './InfiniteScroll';
 export const InfiniteScroll: StyledComponent<typeof InfiniteScrollComponent, InfiniteScrollProps>;
+export const DropdownLight: StyledComponent<typeof DropdownLightComponent, DropdownLightProps>;
