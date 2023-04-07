@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import Slider from 'react-slick';
 import Proptypes from 'prop-types';
 import SlickSliderWrapper from './slick';
@@ -18,43 +19,42 @@ const Carousel = props => {
     arrowColor,
   } = props;
 
-  const settings = {
-    dots: cardSize !== 'small' ? dotsPagination : false,
-    infinite: true,
-    variableWidth: true,
-    slidesToShow: -1,
-    speed,
-    slidesToScroll,
-
-    nextArrow: <Arrow theme={theme} targeting="right" color={arrowColor} />,
-    prevArrow: <Arrow theme={theme} targeting="left" color={arrowColor} />,
-    responsive: [
-      {
-        breakpoint: MOBILE_BREAKPOINT,
-        settings: {
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          dots: false,
-        },
-      },
-    ],
-  };
+  const Cards = useMemo(
+    () =>
+      cards.map(card => (
+        <CarouselCard
+          key={card.title}
+          card={card}
+          cardSize={cardSize}
+          theme={theme}
+        />
+      )),
+    [cards, cardSize, theme],
+  );
 
   return (
     <SlickSliderWrapper theme={theme}>
-      <Slider {...settings}>
-        {cards.map(card => (
-          <CarouselCard
-            key={card.title}
-            card={card}
-            cardSize={cardSize}
-            theme={theme}
-          />
-        ))}
+      <Slider
+        dots={cardSize !== 'small' ? dotsPagination : false}
+        infinite
+        variableWidth
+        slidesToShow={-1}
+        speed={speed}
+        slidesToScroll={slidesToScroll}
+        nextArrow={<Arrow theme={theme} targeting="right" color={arrowColor} />}
+        prevArrow={<Arrow theme={theme} targeting="left" color={arrowColor} />}
+        responsive={[
+          {
+            breakpoint: MOBILE_BREAKPOINT,
+            settings: { arrows: false },
+          },
+          {
+            breakpoint: 320,
+            settings: { dots: false },
+          },
+        ]}
+      >
+        {Cards}
       </Slider>
     </SlickSliderWrapper>
   );
