@@ -198,4 +198,11 @@ describe('AutoComplete', () => {
       screen.getByRole('option', { name: 'melancia' }),
     ).toBeInTheDocument();
   });
+
+  it('Should have a value when prop value is set', () => {
+    const initialValue = 'initial value';
+    render(<AutoComplete value={initialValue} suggestions={[]} />);
+    const autoCompleteInput = screen.getByRole('combobox');
+    expect(autoCompleteInput).toHaveAttribute('value', initialValue);
+  });
 });
