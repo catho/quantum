@@ -146,6 +146,7 @@ const AutoComplete = ({
   id,
   name,
   label,
+  value,
   error,
   disabled,
   helperText,
@@ -157,7 +158,7 @@ const AutoComplete = ({
   required,
   skin,
 }) => {
-  const [userTypedValue, setUserTypedValue] = useState('');
+  const [userTypedValue, setUserTypedValue] = useState(value);
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
   const [filterSuggestionsLength, setFilterSuggestionsLength] = useState(
     filterSuggestions.length,
@@ -174,24 +175,24 @@ const AutoComplete = ({
   } 
   ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
 
-  const filterItems = value =>
+  const filterItems = currentValue =>
     suggestions.filter(suggestion => {
       let option = normalizeChars(suggestion.toLowerCase());
       option = normalizeChars(option);
-      return option.indexOf(normalizeChars(value.toLowerCase())) > -1;
+      return option.indexOf(normalizeChars(currentValue.toLowerCase())) > -1;
     });
 
-  const handleFilter = value => {
-    const filteredValues = filterItems(value);
+  const handleFilter = currentValue => {
+    const filteredValues = filterItems(currentValue);
     setShowSuggestions(!!filteredValues.length);
     setFilterSuggestions(filteredValues);
   };
 
-  const handleChange = value => {
-    setUserTypedValue(value);
-    onChange(value);
+  const handleChange = currentValue => {
+    setUserTypedValue(currentValue);
+    onChange(currentValue);
     setCursor(0);
-    handleFilter(value);
+    handleFilter(currentValue);
   };
 
   const handleClickOutside = event => {
@@ -393,6 +394,7 @@ AutoComplete.propTypes = {
   disabled: PropTypes.bool,
   /** Displays a label text that describes the field */
   label: PropTypes.string,
+  value: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
   /** Callback function to receive what the user is typing */
@@ -413,6 +415,7 @@ AutoComplete.defaultProps = {
   id: '',
   name: '',
   label: '',
+  value: '',
   helperText: '',
   error: '',
   disabled: false,
