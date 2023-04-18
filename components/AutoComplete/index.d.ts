@@ -9,6 +9,7 @@ export interface AutoCompleteProps {
   id?: string;
   name?: string;
   label?: string;
+  value?: string;
   helperText?: string;
   error?: string;
   disabled?: boolean;
