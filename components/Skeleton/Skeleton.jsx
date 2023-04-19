@@ -1,74 +1,45 @@
 import PropTypes from 'prop-types';
-// eslint-disable-next-line import/no-cycle
-import SkeletonTypes from './SkeletonTypes';
-import { spacing, baseFontSize as defaultBaseFontSize } from '../shared/theme';
-import {
-  SkeletonRect,
-  SkeletonCircle,
-  SkeletonText,
-  SkeletonButton,
-  SkeletonTag,
-} from './sub-components';
+import { theme as defaultTheme } from '../shared';
+import { Circle, Text, Button, Tag, Rect } from './sub-components';
 
-const Skeleton = props => {
-  const { type, size, theme, height, width } = props;
+const Skeleton = ({ type, ...props }) => {
+  switch (type) {
+    case 'circle':
+      return <Circle {...props} />;
 
-  const rectProps = {
-    height,
-    width,
-  };
-  const circleProps = {
-    height,
-    width,
-  };
+    case 'text':
+      return <Text {...props} />;
 
-  const textProps = {
-    height,
-    width,
-  };
+    case 'button':
+      return <Button {...props} />;
 
-  const buttonProps = {
-    size,
-    theme,
-    width,
-  };
+    case 'tag':
+      return <Tag {...props} />;
 
-  const tagProps = {
-    size,
-    theme,
-    width,
-  };
-
-  return (
-    <>
-      {type === 'rect' && <SkeletonRect {...rectProps} />}
-      {type === 'circle' && <SkeletonCircle {...circleProps} />}
-      {type === 'text' && <SkeletonText {...textProps} />}
-      {type === 'button' && <SkeletonButton {...buttonProps} />}
-      {type === 'tag' && <SkeletonTag {...tagProps} />}
-    </>
-  );
+    default:
+      return <Rect {...props} />;
+  }
 };
 
 Skeleton.defaultProps = {
   type: 'rect',
+  as: 'div',
   width: '100%',
   height: '14px',
   size: 'medium',
-  theme: {
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-  },
+  theme: defaultTheme,
 };
 
 Skeleton.propTypes = {
   /** Sets the component behavior */
   type: PropTypes.oneOf(['rect', 'circle', 'text', 'button', 'tag']),
+  as: PropTypes.oneOf(['div', 'span']),
   width: PropTypes.string,
-  /** Will affect only types that not uses the prop `size` */
   height: PropTypes.string,
-  /** Will affect only `Tag` and `Button` types.  */
+
+  /** Will affect only types that not uses the prop `size` */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
+
   /** Used only for themification.  */
   theme: PropTypes.shape({
     spacing: PropTypes.object,
@@ -76,10 +47,38 @@ Skeleton.propTypes = {
   }),
 };
 
-// Types
-Skeleton.Button = SkeletonTypes.Button;
-Skeleton.Circle = SkeletonTypes.Circle;
-Skeleton.Text = SkeletonTypes.Text;
-Skeleton.Tag = SkeletonTypes.Tag;
+Skeleton.Rect = ({ theme, width, height, as }) => (
+  <Skeleton theme={theme} width={width} height={height} as={as} />
+);
+
+Skeleton.Circle = ({ theme, width, height, as }) => (
+  <Skeleton theme={theme} width={width} height={height} as={as} type="circle" />
+);
+
+Skeleton.Text = ({ theme, width, height, as = 'span' }) => (
+  <Skeleton theme={theme} width={width} height={height} as={as} type="text" />
+);
+
+Skeleton.Button = ({ theme, size, width, height, as }) => (
+  <Skeleton
+    theme={theme}
+    width={width}
+    height={height}
+    as={as}
+    size={size}
+    type="button"
+  />
+);
+
+Skeleton.Tag = ({ theme, size, width, height, as }) => (
+  <Skeleton
+    theme={theme}
+    width={width}
+    height={height}
+    as={as}
+    size={size}
+    type="tag"
+  />
+);
 
 export default Skeleton;
