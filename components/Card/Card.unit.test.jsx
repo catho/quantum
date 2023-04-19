@@ -18,7 +18,12 @@ describe('<Card />', () => {
         </Card>,
       );
 
+      const { container: withBackgroundOpacity } = render(
+        <Card backgroundOpacity={0.5} />,
+      );
+
       expect(container.firstChild).toMatchSnapshot();
+      expect(withBackgroundOpacity.firstChild).toMatchSnapshot();
     });
 
     it('should match snapshot with rounded Thumbnail', () => {
