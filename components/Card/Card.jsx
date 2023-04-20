@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { shadow } from '../shared';
+import { hexToRgba, shadow } from '../shared';
 import { colors } from '../shared/theme';
 
 import {
@@ -15,6 +15,9 @@ import {
   Content,
   Footer,
 } from './sub-components';
+import alphaNumber, {
+  isValidAlphaNumber,
+} from './alphaNumberPropTypesValidator';
 
 const CardWrapper = styled.article`
   border-radius: 8px;
@@ -30,8 +33,13 @@ const CardWrapper = styled.article`
         neutral: { 0: neutral0 },
       },
     },
+    backgroundOpacity,
   }) => `
-    background-color: ${neutral0};
+    background-color: ${
+      isValidAlphaNumber(backgroundOpacity)
+        ? hexToRgba(neutral0, backgroundOpacity)
+        : neutral0
+    };
   `}
 `;
 
@@ -59,12 +67,15 @@ Card.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
+  /** alpha value (number in range [0,1]) to set background opacity. 0 is fully transparent and 1 is fully opaque. */
+  backgroundOpacity: alphaNumber,
 };
 
 Card.defaultProps = {
   theme: {
     colors,
   },
+  backgroundOpacity: undefined,
 };
 
 export default Card;

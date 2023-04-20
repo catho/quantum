@@ -8,7 +8,17 @@ export default {
   component: Card,
 };
 
+const Wrapper = ({ children }) => (
+  <div style={{ backgroundColor: '#1250C4', padding: 8 }}>{children}</div>
+);
+
 export const Simple = () => <SimpleCard />;
+
+export const SimpleWithOpacity = () => (
+  <Wrapper>
+    <SimpleCard backgroundOpacity={0.5} />
+  </Wrapper>
+);
 
 export const JobAd = () => <JobAdCard />;
 

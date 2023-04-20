@@ -111,6 +111,26 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 </article>
 `;
 
+exports[`<Card /> Snapshots Should match the snapshot 2`] = `
+.c0 {
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
+  background-color: rgba(255,255,255,0.5);
+}
+
+<article
+  class="c0"
+/>
+`;
+
 exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
 .c0 {
   border-radius: 50%;

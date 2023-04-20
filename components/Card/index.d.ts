@@ -12,7 +12,8 @@ type Props = {
     onClick?: (e: MouseEvent) => void;
     theme?: {
         colors?: object
-    }
+    },
+    backgroundOpacity?: number
 }
 
 export default class Card extends Component<Props> {
