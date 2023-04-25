@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Button from '../Button';
 import HiddenInput from '../shared/HiddenInput';
 import Icon from '../Icon';
-import uniqId from '../shared/uniqId';
+import { createUniqId } from '../shared/uniqId';
 import {
   colors,
   spacing,
@@ -12,7 +12,7 @@ import {
   baseFontSize as defaultBaseFontSize,
 } from '../shared/theme';
 
-const ID_GENERATOR = uniqId('radio-button-');
+const uniqId = createUniqId('radio-button-');
 
 const LockIcon = styled(Icon).attrs({
   name: 'lock',
@@ -78,7 +78,7 @@ class Radio extends Component {
 
     const { id } = props;
 
-    this._id = id || ID_GENERATOR.next().value;
+    this._id = id || uniqId();
   }
 
   render() {
