@@ -19,8 +19,9 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="0"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -49,8 +50,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="1"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -79,8 +81,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="1"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -98,6 +101,10 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   height: 24px;
 }
 
+.c2 {
+  color: #191919;
+}
+
 .c1 {
   position: absolute;
   width: 7px;
@@ -105,12 +112,8 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   border: solid 2px #ffffff;
   top: 0;
   right: 0;
-  border-radius: 7px;
+  border-radius: 100%;
   background-color: #e91b0c;
-}
-
-.c2 {
-  color: #191919;
 }
 
 <div
@@ -124,8 +127,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c2"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="1"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -154,8 +158,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="1"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -184,8 +189,9 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="0"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -203,6 +209,10 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
   height: 24px;
 }
 
+.c2 {
+  color: #ffffff;
+}
+
 .c1 {
   position: absolute;
   width: 7px;
@@ -210,12 +220,8 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
   border: solid 2px #000000;
   top: 0;
   right: 0;
-  border-radius: 7px;
+  border-radius: 100%;
   background-color: #e91b0c;
-}
-
-.c2 {
-  color: #ffffff;
 }
 
 <div
@@ -229,8 +235,9 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c2"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="0"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
@@ -259,8 +266,9 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
   <svg
     aria-hidden="true"
     class="MuiSvgIcon-root c1"
+    data-qtm-preloader="icon"
     focusable="false"
-    inverted="0"
+    style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
