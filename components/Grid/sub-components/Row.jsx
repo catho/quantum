@@ -1,4 +1,4 @@
-import { Component, cloneElement } from 'react';
+import { Component, cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
@@ -109,17 +109,26 @@ class Row extends Component {
   render() {
     const { children, 'no-gutters': noGutters, ...rest } = this.props;
 
+    const IsNumberOrString = child =>
+      typeof child === 'string' || typeof child === 'number';
+
     const applyNoGutters = child => {
+      if (IsNumberOrString(child)) {
+        return child;
+      }
+
       const ChildWithNoGutters = cloneElement(child, {
-        'no-gutters':
-          child.props && child.props['no-gutters'] === true ? true : noGutters,
+        'no-gutters': child?.props?.['no-gutters'] || noGutters || undefined,
+        key: `${Math.random().toString()}`,
       });
       return ChildWithNoGutters;
     };
 
     const applyChildrenProps = c =>
       Array.isArray(c)
-        ? c.map(child => applyNoGutters(child))
+        ? c
+            .filter(child => isValidElement(child) || IsNumberOrString(child))
+            .map(child => applyNoGutters(child))
         : applyNoGutters(c);
 
     return (
@@ -132,10 +141,7 @@ class Row extends Component {
 
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]).isRequired,
+  children: PropTypes.node.isRequired,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
