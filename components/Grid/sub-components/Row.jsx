@@ -109,11 +109,11 @@ class Row extends Component {
   render() {
     const { children, 'no-gutters': rowNoGutters, ...rest } = this.props;
 
-    const IsNumberOrString = child =>
+    const isNumberOrString = child =>
       typeof child === 'string' || typeof child === 'number';
 
     const applyNoGutters = child => {
-      if (IsNumberOrString(child)) {
+      if (isNumberOrString(child)) {
         return child;
       }
 
@@ -128,7 +128,7 @@ class Row extends Component {
     const applyChildrenProps = c =>
       Array.isArray(c)
         ? c
-            .filter(child => isValidElement(child) || IsNumberOrString(child))
+            .filter(child => isValidElement(child) || isNumberOrString(child))
             .map(child => applyNoGutters(child))
         : applyNoGutters(c);
 
