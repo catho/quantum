@@ -107,7 +107,7 @@ class Row extends Component {
   }
 
   render() {
-    const { children, 'no-gutters': noGutters, ...rest } = this.props;
+    const { children, 'no-gutters': rowNoGutters, ...rest } = this.props;
 
     const IsNumberOrString = child =>
       typeof child === 'string' || typeof child === 'number';
@@ -117,9 +117,10 @@ class Row extends Component {
         return child;
       }
 
+      const { 'no-gutters': childNoGutters } = child?.props;
+
       const ChildWithNoGutters = cloneElement(child, {
-        'no-gutters': child?.props?.['no-gutters'] || noGutters || undefined,
-        key: `${Math.random().toString()}`,
+        'no-gutters': childNoGutters || rowNoGutters || undefined,
       });
       return ChildWithNoGutters;
     };
@@ -132,7 +133,7 @@ class Row extends Component {
         : applyNoGutters(c);
 
     return (
-      <StyledRow {...rest} no-gutters={noGutters}>
+      <StyledRow {...rest} no-gutters={rowNoGutters}>
         {applyChildrenProps(children)}
       </StyledRow>
     );

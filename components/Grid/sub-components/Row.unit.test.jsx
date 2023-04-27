@@ -11,11 +11,11 @@ describe('<Row />', () => {
       <Row>
         <span>{samplePhrase}</span>
         <Col>{samplePhrase}</Col>
-        {false}{' '}
+        {false}
         {/* returned in conditional rendering (ex: condition && <element/>) */}
-        {null}{' '}
+        {null}
         {/* returned in conditional rendering (ex: condition ? <element/> : null) */}
-        {undefined}{' '}
+        {undefined}
         {/* returned when rendering an object's undefined prop (ex: <div{obj.prop}</div>) */}
         {number}
       </Row>,
