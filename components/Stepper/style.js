@@ -68,6 +68,7 @@ const RadialProgressOverlay = styled.div`
   }) => `
     background: ${neutral[0]};
   `}
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
