@@ -35,6 +35,7 @@ exports[`<Stepper /> should match snapshots 1`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
@@ -178,6 +179,7 @@ exports[`<Stepper /> should match snapshots 2`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
@@ -325,6 +327,7 @@ exports[`<Stepper /> should match snapshots 3`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
@@ -476,6 +479,7 @@ exports[`<Stepper /> should match snapshots 4`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
@@ -631,6 +635,7 @@ exports[`<Stepper /> should match snapshots 5`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
@@ -790,6 +795,7 @@ exports[`<Stepper /> should match snapshots 6`] = `
 
 .c2 {
   background: #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
   margin: auto;
   text-align: center;
