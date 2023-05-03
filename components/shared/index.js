@@ -5,12 +5,13 @@ import icons from './icons';
 import masks from './masks';
 import * as theme from './theme';
 import BREAKPOINTS from './breakpoints';
-import uniqId from './uniqId';
 import * as INPUT_STYLE from './inputStyle';
 import hexToRgba from './hexToRgba';
 import shadow from './shadow';
 import HiddenInput from './HiddenInput';
 import normalizeChars from './normalizeChars';
+
+export * from './uniqId';
 
 export {
   ErrorMessage,
@@ -21,7 +22,6 @@ export {
   theme,
   BREAKPOINTS,
   INPUT_STYLE,
-  uniqId,
   hexToRgba,
   shadow,
   HiddenInput,

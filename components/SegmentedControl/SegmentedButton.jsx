@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from '../Button';
 import Icon from '../Icon';
 import HiddenInput from '../shared/HiddenInput';
-import uniqId from '../shared/uniqId';
+import { createUniqId } from '../shared/uniqId';
 
 const LabelButton = styled(Button).attrs({ forwardedAs: 'label' })`
   width: 100%;
@@ -18,7 +18,7 @@ const LabelButton = styled(Button).attrs({ forwardedAs: 'label' })`
 LabelButton.displayName = 'LabelButton';
 HiddenInput.displayName = 'HiddenInput';
 
-const ID_GENERATOR = uniqId('segmented-button-');
+const uniqId = createUniqId('segmented-button-');
 
 const a11yCheckedIndex = checked =>
   checked ? { tabIndex: -1, className: 'input-checked' } : { tabIndex: 0 };
@@ -32,7 +32,7 @@ const SegmentedButton = ({
   icon,
   darkMode,
 }) => {
-  const ID = ID_GENERATOR.next().value;
+  const ID = uniqId();
 
   const handleStroke = () => (darkMode ? checked : !checked);
 

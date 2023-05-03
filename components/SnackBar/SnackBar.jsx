@@ -7,7 +7,7 @@ import { query } from '../Grid/sub-components/shared';
 import { hexToRgba, BREAKPOINTS } from '../shared';
 import Button from '../Button';
 import { Row, Col } from '../Grid';
-import uniqId from '../shared/uniqId';
+import { createUniqId } from '../shared/uniqId';
 import {
   components,
   spacing,
@@ -20,7 +20,7 @@ import { GetSkinIcon } from './IconTypes';
 
 const mediaQueries = query(BREAKPOINTS);
 
-const ID_GENERATOR = uniqId('snackbar-dialog-');
+const uniqId = createUniqId('snackbar-dialog-');
 
 const getBackgroundAndTextColorBySkin = ({
   skin,
@@ -197,7 +197,7 @@ class SnackBar extends Component {
     super(props);
     const { id } = props;
     this.snackBarSection = document.createElement('section');
-    this._id = id || ID_GENERATOR.next().value;
+    this._id = id || uniqId();
   }
 
   componentDidMount() {

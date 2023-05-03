@@ -2,12 +2,12 @@ import { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import HiddenInput from '../shared/HiddenInput';
-import uniqId from '../shared/uniqId';
+import { createUniqId } from '../shared/uniqId';
 import Icon from '../Icon';
 import Button from '../Button';
 import CheckboxGroupContext from './CheckboxGroupContext';
 
-const ID_GENERATOR = uniqId('checkbox-button-');
+const uniqId = createUniqId('checkbox-button-');
 
 const HiddenCheckbox = styled(HiddenInput).attrs({
   type: 'checkbox',
@@ -63,7 +63,7 @@ const CheckboxButton = ({
     inline,
     size,
   } = useContext(CheckboxGroupContext);
-  const [_id] = useState(id || ID_GENERATOR.next().value);
+  const [_id] = useState(id || uniqId());
 
   let checkSkin;
 

@@ -109,7 +109,6 @@
   "dependencies": {
     "@material-ui/core": "^4.5.1",
     "@material-ui/icons": "^4.9.1",
-    "babel-polyfill": "^6.26.0",
     "datalist-polyfill": "^1.23.1",
     "downshift": "^3.1.10",
     "prop-types": "^15.6.2",
