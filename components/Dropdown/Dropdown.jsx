@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import Icon from '../Icon/Icon';
-import { FieldGroup, shadow, uniqId, normalizeChars } from '../shared';
+import { FieldGroup, shadow, createUniqId, normalizeChars } from '../shared';
 import { colors, spacing, baseFontSize } from '../shared/theme';
 
 import {
@@ -14,7 +14,7 @@ import {
   HelperText,
 } from '../Input/sub-components';
 
-const ID_GENERATOR = uniqId('dropdown-');
+const uniqId = createUniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
@@ -268,7 +268,7 @@ const Dropdown = ({
 
   const hasLabel = !!label;
 
-  const [_id] = useState(id || ID_GENERATOR.next().value);
+  const [_id] = useState(id || uniqId());
 
   const inputFilter = value =>
     items.filter(item => {

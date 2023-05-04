@@ -4,9 +4,9 @@ import ActionButton from './ActionButton';
 import Dots from './Dots';
 import PageButton from './PageButton';
 import pagination from '../utils/pagination';
-import uniqId from '../../shared/uniqId';
+import { createUniqId } from '../../shared/uniqId';
 
-const DOT_KEY_GENERATOR = uniqId('dot-');
+const uniqId = createUniqId('dot-');
 
 const Desktop = ({
   activePage,
@@ -34,7 +34,7 @@ const Desktop = ({
 
     {pagination({ totalPages, activePage, hideLastPagination }).map(page => {
       if (page === '...') {
-        return <Dots key={DOT_KEY_GENERATOR.next().value} />;
+        return <Dots key={uniqId()} />;
       }
 
       return (

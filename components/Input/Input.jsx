@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import MaskedInput from 'react-text-mask';
 
-import { FieldGroup, uniqId } from '../shared';
+import { FieldGroup, createUniqId } from '../shared';
 import Icon from '../Icon';
 // eslint-disable-next-line import/no-cycle
 import InputTypes from './InputTypes';
@@ -17,7 +17,7 @@ import {
 } from './sub-components';
 import { spacing, colors, baseFontSize } from '../shared/theme';
 
-const ID_GENERATOR = uniqId('input-');
+const uniqId = createUniqId('input-');
 
 const InputIcon = styled(Icon)`
   cursor: pointer;
@@ -90,7 +90,7 @@ class Input extends Component {
       hasDefaultValue: value !== null && value[0],
     };
 
-    this._id = id || ID_GENERATOR.next().value;
+    this._id = id || uniqId();
   }
 
   componentDidUpdate(prevProps, prevState) {

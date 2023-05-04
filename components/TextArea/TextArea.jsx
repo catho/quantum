@@ -1,7 +1,7 @@
 import { useState, useEffect, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { FieldGroup, uniqId } from '../shared';
+import { FieldGroup, createUniqId } from '../shared';
 import {
   InputLabel,
   InputErrorMessage,
@@ -11,7 +11,7 @@ import {
 } from '../Input/sub-components';
 import { spacing, colors, baseFontSize } from '../shared/theme';
 
-const ID_GENERATOR = uniqId('textarea-');
+const uniqId = createUniqId('textarea-');
 
 const CUSTOM_HEIGHT = 108;
 
@@ -37,7 +37,7 @@ const LINE_HEIGHT = 1.5;
 
 const TextArea = forwardRef((props, ref) => {
   const {
-    id = ID_GENERATOR.next().value,
+    id = uniqId(),
     value,
     onChange,
     label,

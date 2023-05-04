@@ -1,4 +1,4 @@
-import { Component, cloneElement } from 'react';
+import { Component, cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
@@ -107,23 +107,33 @@ class Row extends Component {
   }
 
   render() {
-    const { children, 'no-gutters': noGutters, ...rest } = this.props;
+    const { children, 'no-gutters': rowNoGutters, ...rest } = this.props;
+
+    const isNumberOrString = child =>
+      typeof child === 'string' || typeof child === 'number';
 
     const applyNoGutters = child => {
+      if (isNumberOrString(child)) {
+        return child;
+      }
+
+      const { 'no-gutters': childNoGutters } = child?.props;
+
       const ChildWithNoGutters = cloneElement(child, {
-        'no-gutters':
-          child.props && child.props['no-gutters'] === true ? true : noGutters,
+        'no-gutters': childNoGutters || rowNoGutters || undefined,
       });
       return ChildWithNoGutters;
     };
 
     const applyChildrenProps = c =>
       Array.isArray(c)
-        ? c.map(child => applyNoGutters(child))
+        ? c
+            .filter(child => isValidElement(child) || isNumberOrString(child))
+            .map(child => applyNoGutters(child))
         : applyNoGutters(c);
 
     return (
-      <StyledRow {...rest} no-gutters={noGutters}>
+      <StyledRow {...rest} no-gutters={rowNoGutters}>
         {applyChildrenProps(children)}
       </StyledRow>
     );
@@ -132,10 +142,7 @@ class Row extends Component {
 
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]).isRequired,
+  children: PropTypes.node.isRequired,
   hide: PropTypes.oneOfType([
     PropTypes.oneOf(Object.keys(defaultTheme.breakpoints)),
     PropTypes.arrayOf(PropTypes.oneOf(Object.keys(defaultTheme.breakpoints))),
