@@ -9,8 +9,8 @@ describe('<Row />', () => {
 
     render(
       <Row>
-        <span>{samplePhrase}</span>
-        <Col>{samplePhrase}</Col>
+        <span key={1}>{samplePhrase}</span>
+        <Col key={2}>{samplePhrase}</Col>
         {false}
         {/* returned in conditional rendering (ex: condition && <element/>) */}
         {null}
