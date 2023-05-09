@@ -87,6 +87,7 @@ import WatchLater from '@material-ui/icons/WatchLater';
 import Whatshot from '@material-ui/icons/Whatshot';
 import Work from '@material-ui/icons/Work';
 import Help from '@material-ui/icons/Help';
+import FlashOn from '@material-ui/icons/FlashOn';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -147,6 +148,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     favorite: Favorite,
     favorite_border: FavoriteBorder,
     filter_list: FilterList,
+    flash_on: FlashOn,
     folder: Folder,
     group: Group,
     home: Home,

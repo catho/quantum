@@ -44,6 +44,7 @@ const icons = [
   'favorite_border',
   'filter_list',
   'folder',
+  'flash_on',
   'group',
   'home',
   'help',
