@@ -1,4 +1,4 @@
-import './watchMedia.mock';
+import '../../test-utils/mocks/Carousel/watchMedia.mock';
 
 import { render, screen } from '@testing-library/react';
 

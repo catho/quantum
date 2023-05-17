@@ -1,5 +1,8 @@
 import Carousel from '../../components/Carousel';
-import { content, contentWithLongTexts } from './Content';
+import {
+  content,
+  contentWithLongTexts,
+} from '../../test-utils/mocks/Carousel/Content';
 
 const Template = args => {
   const { cards = content, ...rest } = args;

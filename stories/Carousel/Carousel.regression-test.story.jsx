@@ -1,5 +1,8 @@
 import Carousel from '../../components/Carousel';
-import { content, contentWithLongTexts } from './Content';
+import {
+  content,
+  contentWithLongTexts,
+} from '../../test-utils/mocks/Carousel/Content';
 
 export default {
   title: 'Carousel',
