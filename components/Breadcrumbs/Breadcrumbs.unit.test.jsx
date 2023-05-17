@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 
 import Breadcrumbs from './Breadcrumbs';
-import defaultContent from './exampleContents';
+import defaultContent from '../../test-utils/mocks/Breadcrumb/exampleContents';
 
 const mockScrollWidth = (value = 450) => {
   // eslint-disable-next-line no-undef

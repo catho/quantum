@@ -1,7 +1,7 @@
 // Generated with scripts/create-componnent.js
 
 import Breadcrumbs from '../../components/Breadcrumbs';
-import defaultContent from '../../components/Breadcrumbs/exampleContents';
+import defaultContent from '../../test-utils/mocks/Breadcrumb/exampleContents';
 
 export default {
   title: 'Breadcrumbs',
