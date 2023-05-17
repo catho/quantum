@@ -7,7 +7,7 @@ import {
   fiveContentsWithFirstChecked,
   fiveContentsWithIconAndWithoutCheckedItems,
   threeContentsWithIcon,
-} from '../../components/SegmentedControl/exampleContents';
+} from '../../test-utils/mocks/SegmentedControl/exampleContents';
 
 export default {
   title: 'Segmented control',
