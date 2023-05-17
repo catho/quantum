@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import Typography from './Typography';
 
-import { expectCSSMatches } from '../test.utils';
+import { expectCSSMatches } from '../../../test-utils/helpers/shared/test.utils';
 
 describe('Typography component', () => {
   it('Should match snapshot', () => {
