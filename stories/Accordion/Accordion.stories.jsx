@@ -1,4 +1,4 @@
-import mockedProps from '../../components/Accordion/mock';
+import mockedProps from '../../test-utils/mocks/Accordion/mock';
 
 import { Accordion } from '../../components';
 

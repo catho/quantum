@@ -2,7 +2,7 @@ import mockedProps, {
   mockWithFirstItemOpened,
   mockWithLastItemOpened,
   mockWithAllItemsClosed,
-} from '../../components/Accordion/mock';
+} from '../../test-utils/mocks/Accordion/mock';
 
 import { Accordion } from '../../components';
 

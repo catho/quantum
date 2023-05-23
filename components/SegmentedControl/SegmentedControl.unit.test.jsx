@@ -6,7 +6,7 @@ import {
   fiveContentsWithIcon,
   threeContentsWithIcon,
   nContents,
-} from './exampleContents';
+} from '../../test-utils/mocks/SegmentedControl/exampleContents';
 
 describe('<SegmentedControl />', () => {
   it('should match the snapshots', () => {

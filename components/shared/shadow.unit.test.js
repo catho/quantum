@@ -1,7 +1,7 @@
 import shadow from './shadow';
 import theme, { colors } from './theme';
 import hexToRgba from './hexToRgba';
-import { normalizeCSS } from '../GlobalStyle/test.utils';
+import { normalizeCSS } from '../../test-utils/helpers/shared/test.utils';
 
 const [opacity0, opacity1, opacity2] = [0.2, 0.14, 0.12];
 const normalize = str => normalizeCSS(str.trimLeft().split('\n'));

@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { colors, spacing } from '../shared/theme';
 import Accordion from './Accordion';
-import mock from './mock';
+import mock from '../../test-utils/mocks/Accordion/mock';
 
 const closeMock = m => {
   const newMock = m;
