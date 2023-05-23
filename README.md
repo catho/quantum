@@ -1,35 +1,34 @@
-[remover]
-
-# Quantum
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
-
-This is the default pack of components and layout principles that dictates Catho Frontend applications.
-
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Build Status](https://travis-ci.org/catho/quantum.svg?branch=master)](https://travis-ci.org/catho/quantum)
-[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
+[![Quantum CI - publish](https://github.com/catho/quantum/actions/workflows/actions-publish.yml/badge.svg)](https://github.com/catho/quantum/actions/workflows/actions-publish.yml)
 [![npm version](https://badge.fury.io/js/%40catho%2Fquantum.svg)](https://badge.fury.io/js/%40catho%2Fquantum)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-## Instalation & Usage
+<div align="center">
+  <img src="https://assets.catho.com.br/quantum/quantum_logo.svg" height="80" width="200">
+</div>
 
-It can be installed via npm or yarn.
+**Quantum** is a react component library that dictates Catho Frontend applications.
+
+> **Warning**
+> Quantum requires react@16.14.0 or higher.
+
+## Getting started
+
+Quantum is available as an [npm package](https://github.com/catho/quantum/pkgs/npm/quantum). It can be installed using:
 
 ```sh
 yarn add @catho/quantum styled-components
+# or npm install @catho/quantum styled-components
 ```
 
-### :warning: Quantum is compatible with react@16.14.0 or higher
+In order to use a component, it need to be imported in your project as follow:
 
-To use a component, it need to be imported in your project:
-
-```js
+```jsx
 import { Button } from '@catho/quantum';
-// or
-import Button from '@catho/quantum/Button';
+// or import Button from '@catho/quantum/Button';
 ```
 
-You can find a list of all available components and full documentation on how to use them at our [Storybook](https://catho.github.io/quantum/)
+The list of all components and their documentation can be found at [**our storybook**](https://catho.github.io/quantum/)
 
 ## Contributing
 
@@ -71,4 +70,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
+<br>Contributions of any kind welcome!
