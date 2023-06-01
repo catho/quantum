@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const Icon = styled(BaseIcon).withConfig({
-  shouldForwardProp: prop => prop != 'inverted',
+  shouldForwardProp: prop => prop !== 'inverted',
 })`
   color: ${props => (props.inverted ? colors.neutral[900] : colors.neutral[0])};
 `;
