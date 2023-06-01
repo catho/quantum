@@ -1,43 +1,28 @@
 import PropTypes from 'prop-types';
-import HamburgerIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
-
 import styled from 'styled-components';
+import BaseIcon from '../Icon';
 import { colors } from '../shared/theme';
 
-const HAMBURGER_SIZE = 24;
-const NOTIFICATION_SIZE = 7;
-
-const getColors = ({ inverted }) => {
-  const weight = !inverted ? 0 : 900;
-
-  return colors.neutral[weight];
-};
-
-const HamburgerWrapper = styled.div`
+const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  width: ${HAMBURGER_SIZE}px;
-  height: ${HAMBURGER_SIZE}px;
+  width: 24px;
+  height: 24px;
 `;
 
-const NotificationIcon = styled.span`
+const Icon = styled(BaseIcon)`
+  color: ${props => (props.inverted ? colors.neutral[900] : colors.neutral[0])};
+`;
+
+const IconDot = styled.span`
   position: absolute;
-  width: ${NOTIFICATION_SIZE}px;
-  height: ${NOTIFICATION_SIZE}px;
+  width: 7px;
+  height: 7px;
   border: solid 2px ${props => colors.neutral[props.inverted ? 0 : 1000]};
   top: 0;
   right: 0;
-  border-radius: ${NOTIFICATION_SIZE}px;
+  border-radius: 100%;
   background-color: ${colors.error[700]};
-`;
-
-const HamburgerIconWrapper = styled(HamburgerIcon)`
-  color: ${getColors};
-`;
-
-const CloseIconWrapper = styled(CloseIcon)`
-  color: ${getColors};
 `;
 
 const Hamburger = ({
@@ -46,35 +31,26 @@ const Hamburger = ({
   inverted,
   ariaLabelDescription,
 }) => {
-  const HamburgerBlock = (
+  const Block = (
     <>
       {showNotification && (
-        <NotificationIcon
-          aria-label={ariaLabelDescription}
-          inverted={inverted}
-        />
+        <IconDot aria-label={ariaLabelDescription} inverted={inverted} />
       )}
-      <HamburgerIconWrapper inverted={inverted ? 1 : 0} />
+      <Icon name="menu" inverted={inverted} />
     </>
   );
 
   return (
-    <HamburgerWrapper aria-live="polite">
-      {!isOpened ? (
-        HamburgerBlock
-      ) : (
-        <CloseIconWrapper inverted={inverted ? 1 : 0} />
-      )}
-    </HamburgerWrapper>
+    <Wrapper aria-live="polite">
+      {isOpened ? <Icon name="close" inverted={inverted} /> : Block}
+    </Wrapper>
   );
 };
-
-HamburgerWrapper.displayName = 'HamburgerWrapper';
-Hamburger.displayName = 'Hamburger';
 
 Hamburger.propTypes = {
   showNotification: PropTypes.bool,
   isOpened: PropTypes.bool,
+
   /** Swap background and text color */
   inverted: PropTypes.bool,
   ariaLabelDescription: PropTypes.string,
