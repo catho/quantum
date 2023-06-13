@@ -4,7 +4,7 @@
   "env": {
     "jest": true
   },
-  "parser": ["babel-eslint", "@typescript-eslint/parser"],
+  "parser": "babel-eslint",
   "rules": {
     "strict": 0,
     "import/no-extraneous-dependencies": 0,
@@ -43,5 +43,13 @@
   "globals": {
     "window": true,
     "document": true
-  }
+  },
+  "overrides": [
+    {
+      "files": "*.d.ts",
+      "excludedFiles": ["*.js, *.jsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"]
+    }
+  ]
 }
