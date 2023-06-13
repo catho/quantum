@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface TabProps {
     title: string;
@@ -7,7 +7,6 @@ export interface TabProps {
     children: ReactNode[] | ReactNode;
 }
 
-export type Tab = Component<TabProps>;
 
 export interface TabbedViewProps {
     fluid?: boolean;
@@ -25,6 +24,9 @@ export interface TabbedViewProps {
     onTabClick?: () => void;
 }
 
-export default class TabbedView extends Component<TabbedViewProps> {
-    static Tab: Tab;
+declare const Tab: FC<TabProps>;
+declare const TabbedView: FC<TabbedViewProps> & {
+    Tab: typeof Tab;
 }
+
+export default TabbedView;

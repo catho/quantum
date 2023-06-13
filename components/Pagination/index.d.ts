@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface PaginationProps {
     tabIndex?: number;
@@ -16,4 +16,5 @@ export interface PaginationProps {
     hideLastPagination?: boolean;
 }
 
-export default class Pagination extends Component<PaginationProps> {}
+declare const Pagination: FC<PaginationProps>;
+export default Pagination;

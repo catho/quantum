@@ -18,3 +18,4 @@ export interface StepperProps {
 }
 
 declare const Stepper: FC<StepperProps>;
+export default Stepper;

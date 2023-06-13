@@ -1,5 +1,7 @@
-import { Component, FC } from 'react';
+import { FC } from 'react';
 
-export default class GlobalStyle extends Component {}
+declare const GlobalStyle: FC;
+declare const Typography: FC;
 
-export const Typography: FC;
+export { Typography, GlobalStyle };
+export default GlobalStyle;

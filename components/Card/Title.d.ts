@@ -1,10 +1,12 @@
-import { ComponentType } from 'react';
+import { FC } from 'react';
 
-type Title = ComponentType<{
+export interface TitleProps {
     small?: boolean;
     theme?: { baseFontSize?: object };
-}> & {
-    displayName: 'Card.Title';
+}
+
+declare const Title: FC<TitleProps> & {
+    displayName: "Card.Title";
 };
 
 export default Title;

@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface DialogProps {
   children: ReactNode[] | ReactNode;
@@ -7,8 +7,9 @@ export interface DialogProps {
   };
   onClose?: () => void;
   onClickOutside?: () => void;
-  disableClickOutside: boolean;
+  disableClickOutside?: boolean;
   closeOnTime?: number;
 }
 
-export default class Dialog extends Component<DialogProps> {}
+declare const Dialog: FC<DialogProps>;
+export default Dialog;

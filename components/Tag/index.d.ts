@@ -1,6 +1,6 @@
-import { Component, ReactNode, MouseEventHandler } from 'react';
+import { ReactNode, MouseEventHandler, FC, HTMLAttributes } from 'react';
 
-export interface TagProps {
+export interface TagProps extends HTMLAttributes<HTMLInputElement> {
     bold?: boolean;
     inverted?: boolean;
     children?: ReactNode[] | ReactNode;
@@ -18,4 +18,5 @@ export interface TagProps {
     };
 }
 
-export default class Tag extends Component<TagProps> {}
+declare const Tag: FC<TagProps>;
+export default Tag;

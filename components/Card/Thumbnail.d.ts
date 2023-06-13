@@ -1,12 +1,14 @@
-import { ComponentType } from 'react';
+import { FC } from 'react';
 
-type Thumbnail = ComponentType<{
+export interface ThumbnailProps {
     src: string;
     alt: string;
     rounded?: boolean;
     theme?: { colors?: object };
-}> & {
-    displayName: 'Card.Thumbnail';
+}
+
+declare const Thumbnail: FC<ThumbnailProps> & {
+    displayName: "Card.Thumbnail";
 };
 
 export default Thumbnail;

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface CircularLoaderProps {
     size?: 'medium' | 'large' | 'xlarge' | 'xxlarge' | 'xxxlarge';
@@ -9,4 +9,6 @@ export interface CircularLoaderProps {
     };
 }
 
-export default class CircularLoader extends Component<CircularLoaderProps> {}
+declare const CircularLoader: FC<CircularLoaderProps>;
+
+export default CircularLoader

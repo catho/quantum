@@ -1,11 +1,11 @@
-import { ComponentType } from 'react';
+import { FC, HTMLAttributes } from 'react';
 
-type Media = ComponentType<{
-    className?: string;
-    style?: {};
+export interface MediaProps extends HTMLAttributes<HTMLImageElement> {
     theme?: { colors?: {}; spacing?: {} };
-}> & {
-    displayName: 'Card.Media';
+}
+
+declare const Media: FC<MediaProps> & {
+    displayName: "Card.Media";
 };
 
 export default Media;

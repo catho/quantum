@@ -1,35 +1,30 @@
-import { Component, MouseEvent } from 'react';
-import Content from './Content';
-import Description from './Description';
-import Footer from './Footer';
-import Header from './Header';
-import HeaderText from './HeaderText';
-import Media from './Media';
-import Thumbnail from './Thumbnail';
-import Title from './Title';
+import { FC, MouseEvent } from 'react';
+import { ContentProps } from './Content';
+import { DescriptionProps } from './Description';
+import { FooterProps } from './Footer';
+import { HeaderProps } from './Header';
+import { HeaderTextProps } from './HeaderText';
+import { MediaProps } from './Media';
+import { ThumbnailProps } from './Thumbnail';
+import { TitleProps } from './Title';
 
-type Props = {
+export interface CardProps {
     onClick?: (e: MouseEvent) => void;
     theme?: {
-        colors?: object
+        colors?: object;
     },
-    backgroundOpacity?: number
+    backgroundOpacity?: number;
 }
 
-export default class Card extends Component<Props> {
-    static Content: Content;
-
-    static Description: Description;
-
-    static Footer: Footer;
-
-    static Header: Header;
-
-    static HeaderText: HeaderText;
-
-    static Media: Media;
-
-    static Thumbnail: Thumbnail;
-
-    static Title: Title;
+declare const Card: FC<CardProps> & {
+    Content: FC<ContentProps>;
+    Description: FC<DescriptionProps>;
+    Footer: FC<FooterProps>;
+    Header: FC<HeaderProps>;
+    HeaderText: FC<HeaderTextProps>;
+    Media: FC<MediaProps>;
+    Thumbnail: FC<ThumbnailProps>;
+    Title: FC<TitleProps>;
 }
+
+export default Card;

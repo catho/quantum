@@ -1,6 +1,10 @@
-import { ComponentType } from 'react';
+import { FC, ReactNode } from 'react';
 
-type HeaderText = ComponentType & {
+export interface HeaderTextProps {
+    children: ReactNode | ReactNode[];
+}
+
+declare const HeaderText: FC<HeaderTextProps> & {
     displayName: 'Card.HeaderText';
 };
 

@@ -1,9 +1,9 @@
-import { Component, ReactNode } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 import Breakpoints from '../Breakpoints';
 
 export type BreakpointsType = keyof typeof Breakpoints;
 
-export interface ColProps {
+export interface ColProps extends HTMLAttributes<HTMLDivElement> {
     'no-gutters'?: boolean;
     xsmall?: number;
     small?: number;
@@ -16,9 +16,8 @@ export interface ColProps {
     hide?: BreakpointsType | BreakpointsType[];
 }
 
-export class Col extends Component<ColProps> {}
 
-export interface ContainerProps {
+export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
     withBreakpoints?: boolean;
     fluid?: boolean;
     hide?: BreakpointsType | string[];
@@ -29,9 +28,8 @@ export interface ContainerProps {
     'no-gutters'?: boolean;
 }
 
-export class Container extends Component<ContainerProps> {}
 
-export interface HideProps {
+export interface HideProps extends HTMLAttributes<HTMLDivElement> {
     large?: boolean;
     medium?: boolean;
     small?: boolean;
@@ -41,9 +39,7 @@ export interface HideProps {
     };
 }
 
-export class Hide extends Component<HideProps> {}
-
-export interface RowProps {
+export interface RowProps extends HTMLAttributes<HTMLDivElement> {
     'no-gutters'?: boolean;
     children: ReactNode[] | ReactNode;
     hide?: BreakpointsType | BreakpointsType[];
@@ -52,4 +48,7 @@ export interface RowProps {
     };
 }
 
-export class Row extends Component<RowProps> {}
+export const Row: FC<RowProps>;
+export const Col: FC<ColProps>;
+export const Hide: FC<HideProps>;
+export const Container: FC<ContainerProps>;

@@ -1,4 +1,4 @@
-import { Component, ChangeEventHandler } from 'react';
+import { FC, ChangeEventHandler } from 'react';
 
 export interface RangeSliderProps {
     step?: number;
@@ -24,4 +24,5 @@ export interface RangeSliderProps {
     };
 }
 
-export default class RangeSlider extends Component<RangeSliderProps> {}
+declare const RangeSlider: FC<RangeSliderProps>;
+export default RangeSlider;

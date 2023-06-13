@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export type NonEmptyArray<T> = [T, ...T[]];
 
@@ -8,7 +8,7 @@ export interface CarouselProps {
   slidesToScroll?: number,
   arrowColor?: 'primary' | 'success' | 'error' | 'neutral' | 'warning',
   cardSize?: 'small' | 'medium' | 'large',
-  cards:NonEmptyArray<{
+  cards: NonEmptyArray<{
     imagePath?: string,
     imageDescription?: string,
     title?: string,
@@ -22,4 +22,5 @@ export interface CarouselProps {
   };
 }
 
-export default class Carousel extends Component<CarouselProps> {}
+declare const Carousel: FC<CarouselProps>;
+export default Carousel;

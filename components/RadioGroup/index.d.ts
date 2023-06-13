@@ -1,10 +1,10 @@
-import { Component, ReactNode, ChangeEventHandler, ComponentType } from 'react';
+import { FC, ReactNode, ChangeEventHandler, ComponentType } from 'react';
 import { IconNames } from '../Icon';
 
 export interface RadioProps {
   disabled?: boolean;
   error?: boolean;
-  children?: string | ReactNode[] | ReactNode;
+  children?: ReactNode[] | ReactNode;
   label?: string;
   onChange?: ChangeEventHandler<HTMLInputElement>;
   theme?: {
@@ -14,7 +14,6 @@ export interface RadioProps {
   value: string;
 }
 
-export type Radio = ComponentType<RadioProps>;
 
 export interface RadioButtonProps {
   checked?: boolean;
@@ -39,8 +38,6 @@ export interface RadioButtonProps {
   value: string;
 }
 
-export type RadioButton = ComponentType<RadioButtonProps>;
-
 export interface RadioGroupProps {
   type?: 'radio' | 'button';
   size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
@@ -62,8 +59,12 @@ export interface RadioGroupProps {
   required?: boolean;
 }
 
-export default class RadioGroup extends Component<RadioGroupProps> {
-  static Radio: Radio;
-
-  static Button: RadioButton;
+declare const Radio: FC<RadioProps>;
+declare const RadioButton: FC<RadioButtonProps>;
+declare const RadioGroup: FC<RadioGroupProps> & {
+  Radio: typeof Radio;
+  Button: typeof RadioButton;
 }
+
+export { Radio, RadioButton };
+export default RadioGroup;

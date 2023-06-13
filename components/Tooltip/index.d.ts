@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface TooltipProps {
     text: string;
@@ -13,4 +13,5 @@ export interface TooltipProps {
     };
 }
 
-export default class Tooltip extends Component<TooltipProps> {}
+declare const Tooltip: FC<TooltipProps>;
+export default Tooltip;
