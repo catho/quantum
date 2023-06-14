@@ -8,7 +8,7 @@ interface ItemContent {
 
 interface ListItem {
   icon?: IconNames | string;
-  content?: ItemContent;
+  content?: ItemContent | string;
 }
 
 export interface ListProps {
