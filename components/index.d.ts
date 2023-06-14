@@ -43,10 +43,10 @@ import { default as InfiniteScrollComponent, InfiniteScrollProps } from "./Infin
 import { default as SkeletonComponent, SkeletonProps } from "./Skeleton";
 
 export { default as BREAKPOINTS } from './Breakpoints';
-export { default as Colors } from "./Colors"
-export { Form, Validations } from './Form';
-export { default as GlobalStyle, IconFont, Typography } from "./GlobalStyle"
-export { default as shared } from "./shared"
+export { default as Colors } from "./Colors";
+export { default as Form, Validations } from './Form';
+export { default as GlobalStyle, Typography } from "./GlobalStyle";
+export { default as shared } from "./shared";
 
 export const Accordion: StyledComponent<typeof AccordionComponent, AccordionProps>;
 export const Alert: StyledComponent<typeof AlertComponent, AlertProps>;

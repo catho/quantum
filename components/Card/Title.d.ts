@@ -1,12 +1,10 @@
-import { FC } from 'react';
+import { FC, HTMLAttributes } from 'react';
 
-export interface TitleProps {
+export interface TitleProps extends HTMLAttributes<HTMLHeadingElement> {
     small?: boolean;
     theme?: { baseFontSize?: object };
 }
 
-declare const Title: FC<TitleProps> & {
-    displayName: "Card.Title";
-};
+declare const Title: FC<TitleProps>;
 
 export default Title;

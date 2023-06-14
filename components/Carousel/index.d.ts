@@ -1,6 +1,5 @@
 import { FC } from 'react';
-
-export type NonEmptyArray<T> = [T, ...T[]];
+import { NonEmptyArray } from '../shared/types';
 
 export interface CarouselProps {
   dotsPagination?: boolean,

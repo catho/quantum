@@ -1,12 +1,12 @@
 import { FC, MouseEvent } from 'react';
-import { ContentProps } from './Content';
-import { DescriptionProps } from './Description';
-import { FooterProps } from './Footer';
-import { HeaderProps } from './Header';
-import { HeaderTextProps } from './HeaderText';
-import { MediaProps } from './Media';
-import { ThumbnailProps } from './Thumbnail';
-import { TitleProps } from './Title';
+import Content from './Content';
+import Description from './Description';
+import Footer from './Footer';
+import Header from './Header';
+import HeaderText from './HeaderText';
+import Media from './Media';
+import Thumbnail from './Thumbnail';
+import Title from './Title';
 
 export interface CardProps {
     onClick?: (e: MouseEvent) => void;
@@ -17,14 +17,14 @@ export interface CardProps {
 }
 
 declare const Card: FC<CardProps> & {
-    Content: FC<ContentProps>;
-    Description: FC<DescriptionProps>;
-    Footer: FC<FooterProps>;
-    Header: FC<HeaderProps>;
-    HeaderText: FC<HeaderTextProps>;
-    Media: FC<MediaProps>;
-    Thumbnail: FC<ThumbnailProps>;
-    Title: FC<TitleProps>;
+    Content: typeof Content;
+    Description: typeof Description;
+    Footer: typeof Footer;
+    Header: typeof Header;
+    HeaderText: typeof HeaderText;
+    Media: typeof Media;
+    Thumbnail: typeof Thumbnail;
+    Title: typeof Title;
 }
 
 export default Card;

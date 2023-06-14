@@ -1,4 +1,5 @@
 import { FC, ReactNode } from 'react';
+import { baseFontSizeType, breakpointsProps, colorsProps, componentsProps, spacingProps } from '../shared/theme';
 
 export interface TabProps {
     title: string;
@@ -15,11 +16,11 @@ export interface TabbedViewProps {
     skin?: 'neutral' | 'primary';
     theme?: {
         components?: {
-            tabbedView?: {};
+            tabbedView?: componentsProps["tabbedView"];
         };
-        baseFontSize?: number;
-        breakpoints?: {};
-        spacing?: {};
+        baseFontSize?: baseFontSizeType;
+        breakpoints?: breakpointsProps;
+        spacing?: spacingProps;
     };
     onTabClick?: () => void;
 }
@@ -29,4 +30,5 @@ declare const TabbedView: FC<TabbedViewProps> & {
     Tab: typeof Tab;
 }
 
+export { TabbedView, Tab};
 export default TabbedView;

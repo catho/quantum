@@ -2,6 +2,7 @@ import hexToRgba from './hexToRgba';
 
 const breakpoints = {
   xsmall: {
+    width: 1,
     columns: 4,
   },
   small: {

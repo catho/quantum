@@ -1,13 +1,11 @@
-import { ReactNode, FC } from 'react';
+import { ReactNode, FC, HTMLAttributes } from 'react';
 
-export interface DescriptionProps {
+export interface DescriptionProps extends HTMLAttributes<HTMLDivElement> {
     small?: boolean;
     theme?: { baseFontSize?: number; spacing?: object };
     children: ReactNode | ReactNode[];
 }
 
-declare const Description: FC<DescriptionProps> & {
-    displayName: 'Card.Description';
-};
+declare const Description: FC<DescriptionProps>;
     
 export default Description;

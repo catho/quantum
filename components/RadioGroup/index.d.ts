@@ -1,4 +1,4 @@
-import { FC, ReactNode, ChangeEventHandler, ComponentType } from 'react';
+import { FC, ReactNode, ChangeEventHandler, ComponentType, FormEvent } from 'react';
 import { IconNames } from '../Icon';
 
 export interface RadioProps {
@@ -48,7 +48,7 @@ export interface RadioGroupProps {
   }>;
   children?: ReactNode[] | ReactNode;
   inline?: boolean;
-  onChange?: () => {} | ChangeEventHandler<HTMLInputElement>;
+  onChange?: (values: { value: string; label: string }, event: FormEvent<HTMLInputElement>) => void;
   defaultValue?: string;
   name: string;
   error?: string;

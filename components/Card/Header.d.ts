@@ -1,12 +1,10 @@
-import { FC, ReactNode } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 
-export interface HeaderProps {
+export interface HeaderProps extends HTMLAttributes<HTMLElement> {
     theme?: { spacing?: object };
     children: ReactNode | ReactNode[];
 }
 
-declare const Header: FC<HeaderProps> & {
-    displayName: 'Card.Header';
-};
+declare const Header: FC<HeaderProps>;
     
 export default Header;

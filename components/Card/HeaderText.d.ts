@@ -1,11 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 
-export interface HeaderTextProps {
+export interface HeaderTextProps extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode | ReactNode[];
 }
 
-declare const HeaderText: FC<HeaderTextProps> & {
-    displayName: 'Card.HeaderText';
-};
+declare const HeaderText: FC<HeaderTextProps>;
 
 export default HeaderText;
