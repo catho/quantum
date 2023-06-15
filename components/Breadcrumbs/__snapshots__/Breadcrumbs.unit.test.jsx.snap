@@ -484,12 +484,12 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         <li
 -         aria-hidden=\\"false\\"
 +         aria-hidden=\\"true\\"
-          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 gKyFCs\\"
 +         hidden=\\"\\"
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\"
             data-qtm-preloader=\\"icon\\"
 @@ -46,21 +47,21 @@
               d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
@@ -500,7 +500,7 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
 -           aria-expanded=\\"false\\"
 +           aria-expanded=\\"true\\"
             aria-label=\\"Exibir todas as opções\\"
-            class=\\"Breadcrumbs__ExpandButton-sc-d5msik-3 cOtvQf\\"
+            class=\\"Breadcrumbs__ExpandButton-sc-d5msik-3 dPyeD\\"
             title=\\"Exibir todas as opções\\"
             type=\\"button\\"
           >
@@ -510,11 +510,11 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         <li
 -         aria-hidden=\\"true\\"
 +         aria-hidden=\\"false\\"
-          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 gKyFCs\\"
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\"
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\"
 @@ -81,11 +82,11 @@
           >
             Quantum
@@ -523,9 +523,9 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         <li
 -         aria-hidden=\\"true\\"
 +         aria-hidden=\\"false\\"
-          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 cWkJmI\\"
+          class=\\"Breadcrumbs__BreadcrumbItem-sc-d5msik-1 gKyFCs\\"
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 jEpugD\\""
+            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\""
 `;

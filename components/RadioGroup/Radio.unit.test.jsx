@@ -1,26 +1,26 @@
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Radio from './Radio';
 
 describe('<RadioGroup.Radio />', () => {
   describe('snapshot', () => {
     it('simple', () => {
       const component = <Radio value="Foo" label="Foo" />;
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
 
     it('disabled', () => {
       const component = <Radio value="Foo" label="Foo" disabled />;
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
 
     it('error', () => {
       const component = <Radio value="Foo" label="Foo" error />;
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
 
     it('children', () => {
       const component = <Radio value="Foo">Foo</Radio>;
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
 
     it('children with element', () => {
@@ -29,7 +29,7 @@ describe('<RadioGroup.Radio />', () => {
           <span>Foo</span>
         </Radio>
       );
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
 
     it('required', () => {
@@ -38,7 +38,7 @@ describe('<RadioGroup.Radio />', () => {
           Foo
         </Radio>
       );
-      expect(renderer.create(component).toJSON()).toMatchSnapshot();
+      expect(render(component).asFragment()).toMatchSnapshot();
     });
   });
 });

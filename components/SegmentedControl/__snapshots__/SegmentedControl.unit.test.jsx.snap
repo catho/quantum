@@ -225,7 +225,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-0"
@@ -242,7 +241,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
         tabindex="-1"
         type="button"
       >
-        
         <input
           checked=""
           class="c5"
@@ -260,7 +258,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-2"
@@ -500,7 +497,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-3"
@@ -529,7 +525,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="-1"
         type="button"
       >
-        
         <input
           checked=""
           class="c5"
@@ -559,7 +554,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-5"
@@ -588,7 +582,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-6"
@@ -617,7 +610,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-7"
@@ -869,7 +861,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-8"
@@ -898,7 +889,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
         tabindex="-1"
         type="button"
       >
-        
         <input
           checked=""
           class="c5"
@@ -928,7 +918,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-10"
@@ -1180,7 +1169,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-11"
@@ -1209,7 +1197,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
         tabindex="-1"
         type="button"
       >
-        
         <input
           checked=""
           class="c5"
@@ -1239,7 +1226,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
         tabindex="0"
         type="button"
       >
-        
         <input
           class="c5"
           id="segmented-button-13"

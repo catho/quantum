@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: block;
   margin-bottom: 5px;
 }
@@ -87,137 +88,133 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 }
 
 <label
-  className="c0 c1"
-  disabled={false}
->
-  <input
-    className="c2 c3"
-    disabled={false}
-    onChange={[Function]}
-    required={false}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
-    Foo
-  </span>
-</label>
-`;
-
-exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
-.c0 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c5 {
-  border-radius: 50%;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  height: 24px;
-  position: relative;
-  top: 6px;
-  width: 24px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  margin-right: 8px;
-}
-
-.c5:after {
-  border-radius: 50%;
-  content: '';
-  display: none;
-  height: 60%;
-  left: 20%;
-  position: absolute;
-  top: 20%;
-  width: 60%;
-  background-color: #1250C4;
-}
-
-.c1 {
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c1 .c2:checked ~ .c4 {
-  border-color: #1250C4;
-}
-
-.c1 .c2:checked ~ .c4:after {
-  background-color: #1250C4;
-  display: block;
-}
-
-.c1 .c2:focus ~ .c4 {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
-}
-
-.c1:hover .c4,
-.c1:focus .c4 {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
-}
-
-.c1 .c2:checked:disabled ~ .c4 {
-  background-color: #999999;
-  border-color: #999999;
-  box-shadow: inset 0 0 0 3.5px #ffffff;
-}
-
-<label
-  className="c0 c1"
-  disabled={false}
->
-  <input
-    className="c2 c3"
-    disabled={false}
-    onChange={[Function]}
-    required={false}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
+    class="c0 c1"
+  >
+    <input
+      class="c2 c3"
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
     <span>
       Foo
     </span>
-  </span>
-</label>
+  </label>
+</DocumentFragment>
+`;
+
+exports[`<RadioGroup.Radio /> snapshot children with element 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c5 {
+  border-radius: 50%;
+  box-sizing: border-box;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 24px;
+  position: relative;
+  top: 6px;
+  width: 24px;
+  background-color: #ffffff;
+  border: 2px solid #999999;
+  margin-right: 8px;
+}
+
+.c5:after {
+  border-radius: 50%;
+  content: '';
+  display: none;
+  height: 60%;
+  left: 20%;
+  position: absolute;
+  top: 20%;
+  width: 60%;
+  background-color: #1250C4;
+}
+
+.c1 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 .c2:checked ~ .c4 {
+  border-color: #1250C4;
+}
+
+.c1 .c2:checked ~ .c4:after {
+  background-color: #1250C4;
+  display: block;
+}
+
+.c1 .c2:focus ~ .c4 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  border-color: #1250C4;
+  box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
+}
+
+.c1 .c2:checked:disabled ~ .c4 {
+  background-color: #999999;
+  border-color: #999999;
+  box-shadow: inset 0 0 0 3.5px #ffffff;
+}
+
+<label
+    class="c0 c1"
+  >
+    <input
+      class="c2 c3"
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
+    <span>
+      <span>
+        Foo
+      </span>
+    </span>
+  </label>
+</DocumentFragment>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: block;
   margin-bottom: 5px;
 }
@@ -341,28 +338,28 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 }
 
 <label
-  className="c0 c1"
-  disabled={true}
->
-  <input
-    className="c2 c3"
-    disabled={true}
-    onChange={[Function]}
-    required={false}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
-    Foo
-  </span>
-</label>
+    class="c0 c1"
+    disabled=""
+  >
+    <input
+      class="c2 c3"
+      disabled=""
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
+    <span>
+      Foo
+    </span>
+  </label>
+</DocumentFragment>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: block;
   margin-bottom: 5px;
 }
@@ -472,28 +469,26 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 }
 
 <label
-  className="c0 c1"
-  disabled={false}
->
-  <input
-    className="c2 c3"
-    disabled={false}
-    onChange={[Function]}
-    required={false}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
-    Foo
-  </span>
-</label>
+    class="c0 c1"
+  >
+    <input
+      class="c2 c3"
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
+    <span>
+      Foo
+    </span>
+  </label>
+</DocumentFragment>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot required 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: block;
   margin-bottom: 5px;
 }
@@ -579,28 +574,27 @@ exports[`<RadioGroup.Radio /> snapshot required 1`] = `
 }
 
 <label
-  className="c0 c1"
-  disabled={false}
->
-  <input
-    className="c2 c3"
-    disabled={false}
-    onChange={[Function]}
-    required={true}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
-    Foo
-  </span>
-</label>
+    class="c0 c1"
+  >
+    <input
+      class="c2 c3"
+      required=""
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
+    <span>
+      Foo
+    </span>
+  </label>
+</DocumentFragment>
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   display: block;
   margin-bottom: 5px;
 }
@@ -686,22 +680,19 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
 }
 
 <label
-  className="c0 c1"
-  disabled={false}
->
-  <input
-    className="c2 c3"
-    disabled={false}
-    onChange={[Function]}
-    required={false}
-    type="radio"
-    value="Foo"
-  />
-  <span
-    className="c4 c5"
-  />
-  <span>
-    Foo
-  </span>
-</label>
+    class="c0 c1"
+  >
+    <input
+      class="c2 c3"
+      type="radio"
+      value="Foo"
+    />
+    <span
+      class="c4 c5"
+    />
+    <span>
+      Foo
+    </span>
+  </label>
+</DocumentFragment>
 `;

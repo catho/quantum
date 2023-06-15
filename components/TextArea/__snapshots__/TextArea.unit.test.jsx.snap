@@ -83,8 +83,6 @@ exports[`TextArea component should match snapshots 1`] = `
     id="textarea-0"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -174,8 +172,6 @@ exports[`TextArea component should match snapshots 2`] = `
   >
     foo
   </textarea>
-  
-  
 </div>
 `;
 
@@ -275,8 +271,6 @@ exports[`TextArea component should match snapshots 3`] = `
     id="textarea-2"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -386,8 +380,6 @@ exports[`TextArea component should match snapshots 4`] = `
     placeholder=""
     required=""
   />
-  
-  
 </div>
 `;
 
@@ -475,8 +467,6 @@ exports[`TextArea component should match snapshots 5`] = `
     id="textarea-4"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -563,8 +553,6 @@ exports[`TextArea component should match snapshots 6`] = `
     id="textarea-5"
     placeholder="this input has a placeholder"
   />
-  
-  
 </div>
 `;
 
@@ -671,7 +659,6 @@ exports[`TextArea component should match snapshots 7`] = `
   >
     this is a helper text
   </span>
-  
 </div>
 `;
 
@@ -770,7 +757,6 @@ exports[`TextArea component should match snapshots 8`] = `
     id="textarea-7"
     placeholder=""
   />
-  
   <span
     class="c3"
   >
@@ -872,8 +858,6 @@ exports[`TextArea component should match snapshots 9`] = `
     id="textarea-8"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -972,8 +956,6 @@ exports[`TextArea component should match snapshots 10`] = `
   >
     foo
   </textarea>
-  
-  
 </div>
 `;
 
@@ -1083,8 +1065,6 @@ exports[`TextArea component should match snapshots 11`] = `
     id="textarea-10"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -1204,8 +1184,6 @@ exports[`TextArea component should match snapshots 12`] = `
     placeholder=""
     required=""
   />
-  
-  
 </div>
 `;
 
@@ -1303,8 +1281,6 @@ exports[`TextArea component should match snapshots 13`] = `
     id="textarea-12"
     placeholder=""
   />
-  
-  
 </div>
 `;
 
@@ -1401,8 +1377,6 @@ exports[`TextArea component should match snapshots 14`] = `
     id="textarea-13"
     placeholder="this input has a placeholder"
   />
-  
-  
 </div>
 `;
 
@@ -1519,7 +1493,6 @@ exports[`TextArea component should match snapshots 15`] = `
   >
     this is a helper text
   </span>
-  
 </div>
 `;
 
@@ -1632,7 +1605,6 @@ exports[`TextArea component should match snapshots 16`] = `
     id="textarea-15"
     placeholder=""
   />
-  
   <span
     class="c3 c4"
   >
@@ -1725,7 +1697,5 @@ exports[`TextArea component should match snapshots 17`] = `
     placeholder=""
     rows="1"
   />
-  
-  
 </div>
 `;

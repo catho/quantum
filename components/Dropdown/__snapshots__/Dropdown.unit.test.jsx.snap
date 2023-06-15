@@ -104,7 +104,6 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-0-label"
@@ -139,8 +138,6 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -248,7 +245,6 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-1-label"
@@ -283,8 +279,6 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -395,7 +389,6 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-2-label"
@@ -414,7 +407,6 @@ exports[`Dropdown component  should match the snapshot 3`] = `
       role="button"
       type="button"
     >
-      
       <svg
         aria-hidden="true"
         class="MuiSvgIcon-root c4"
@@ -430,8 +422,6 @@ exports[`Dropdown component  should match the snapshot 3`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -551,7 +541,6 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-3-label"
@@ -586,7 +575,6 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       </svg>
     </button>
   </div>
-  
   <span
     class="c5"
   >
@@ -699,7 +687,6 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-4-label"
@@ -735,8 +722,6 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -892,8 +877,6 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1058,8 +1041,6 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1162,7 +1143,6 @@ exports[`Dropdown component  should match the snapshot 8`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-7-label"
@@ -1187,8 +1167,6 @@ exports[`Dropdown component  should match the snapshot 8`] = `
       />
     </div>
   </div>
-  
-  
 </div>
 `;
 
@@ -1296,7 +1274,6 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-8-label"
@@ -1331,8 +1308,6 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1440,7 +1415,6 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-9-label"
@@ -1475,8 +1449,6 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1632,8 +1604,6 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1741,7 +1711,6 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-11-label"
@@ -1776,8 +1745,6 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -1885,7 +1852,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-12-label"
@@ -1920,8 +1886,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2029,7 +1993,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-13-label"
@@ -2064,8 +2027,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2176,7 +2137,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-14-label"
@@ -2195,7 +2155,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
       role="button"
       type="button"
     >
-      
       <svg
         aria-hidden="true"
         class="MuiSvgIcon-root c4"
@@ -2211,8 +2170,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2332,7 +2289,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-15-label"
@@ -2367,7 +2323,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
       </svg>
     </button>
   </div>
-  
   <span
     class="c5"
   >
@@ -2480,7 +2435,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-16-label"
@@ -2516,8 +2470,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2673,8 +2625,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2839,8 +2789,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
       </svg>
     </button>
   </div>
-  
-  
 </div>
 `;
 
@@ -2943,7 +2891,6 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
     class="c1"
     role="combobox"
   >
-    
     <input
       aria-autocomplete="list"
       aria-labelledby="downshift-19-label"
@@ -2968,7 +2915,5 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
       />
     </div>
   </div>
-  
-  
 </div>
 `;

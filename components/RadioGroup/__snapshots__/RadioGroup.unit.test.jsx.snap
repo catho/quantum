@@ -15,12 +15,12 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
         class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
         <label
-          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+          class=\\"RadioButton-sc-1q7g63p-3 jYJGZV\\"
 -         for=\\"radio-button-9\\"
 +         for=\\"radio-button-12\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
 -           id=\\"radio-button-9\\"
 +           id=\\"radio-button-12\\"
             name=\\"foo\\"
@@ -33,12 +33,12 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
         class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
         <label
-          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+          class=\\"RadioButton-sc-1q7g63p-3 jYJGZV\\"
 -         for=\\"radio-button-10\\"
 +         for=\\"radio-button-13\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
 -           id=\\"radio-button-10\\"
 +           id=\\"radio-button-13\\"
             name=\\"foo\\"
@@ -51,12 +51,12 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
         class=\\"RadioButton__Wrapper-sc-1q7g63p-2\\"
       >
         <label
-          class=\\"RadioButton-sc-1q7g63p-3 jqwsQt\\"
+          class=\\"RadioButton-sc-1q7g63p-3 jYJGZV\\"
 -         for=\\"radio-button-11\\"
 +         for=\\"radio-button-14\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 dAMkUb\\"
+            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
 -           id=\\"radio-button-11\\"
 +           id=\\"radio-button-14\\"
             name=\\"foo\\"

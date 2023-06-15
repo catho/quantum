@@ -99,9 +99,7 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
     <label
       class="c2"
       for=""
-    >
-      
-    </label>
+    />
     <input
       aria-autocomplete="both"
       aria-expanded="false"
@@ -115,11 +113,7 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
       type="text"
       value=""
     />
-    
-    
   </div>
-  
-  
   <div
     aria-atomic="true"
     aria-live="polite"
@@ -240,9 +234,7 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
     <label
       class="c2"
       for=""
-    >
-      
-    </label>
+    />
     <input
       aria-autocomplete="both"
       aria-expanded="false"
@@ -256,11 +248,7 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
       type="text"
       value=""
     />
-    
-    
   </div>
-  
-  
   <div
     aria-atomic="true"
     aria-live="polite"

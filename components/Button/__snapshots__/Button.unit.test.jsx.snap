@@ -50,7 +50,6 @@ exports[`Button component Should match the snapshot 1`] = `
   class="c0"
   type="button"
 >
-  
   Text
 </button>
 `;
@@ -482,7 +481,6 @@ exports[`Button component when center prop is set 1`] = `
   class="c0"
   type="button"
 >
-  
   Text
 </button>
 `;
@@ -538,7 +536,6 @@ exports[`Button component when full prop is set 1`] = `
   class="c0"
   type="button"
 >
-  
   Text
 </button>
 `;
@@ -593,7 +590,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   neutral
 </button>
 `;
@@ -648,7 +644,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   primary
 </button>
 `;
@@ -703,7 +698,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   success
 </button>
 `;
@@ -758,7 +752,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   warning
 </button>
 `;
@@ -813,7 +806,6 @@ exports[`Button component when there is a skin set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   error
 </button>
 `;
@@ -868,7 +860,6 @@ exports[`Button component when there is a type set should match secondary snapsh
   class="c0"
   type="button"
 >
-  
   button
 </button>
 `;
@@ -923,7 +914,6 @@ exports[`Button component when there is a type set should match secondary snapsh
   class="c0"
   type="reset"
 >
-  
   reset
 </button>
 `;
@@ -978,7 +968,6 @@ exports[`Button component when there is a type set should match secondary snapsh
   class="c0"
   type="submit"
 >
-  
   submit
 </button>
 `;

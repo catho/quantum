@@ -43,7 +43,6 @@ exports[`<Badge /> Should match snapshot With number 1`] = `
   >
     10
   </span>
-  
 </div>
 `;
 
@@ -140,9 +139,7 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   <button
     class="c2"
     type="button"
-  >
-    
-  </button>
+  />
 </div>
 `;
 
@@ -189,7 +186,6 @@ exports[`<Badge /> Should match snapshot with skin 1`] = `
   >
     10
   </span>
-  
 </div>
 `;
 
@@ -236,6 +232,5 @@ exports[`<Badge /> Should match snapshot with skin inverted 1`] = `
   >
     10
   </span>
-  
 </div>
 `;
