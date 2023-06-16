@@ -1,4 +1,4 @@
-import { Component, MouseEventHandler, TouchEventHandler } from 'react';
+import { FC, MouseEventHandler, TouchEventHandler } from 'react';
 
 export interface SnackBarProps {
   actionTrigger?: {
@@ -25,4 +25,5 @@ export interface SnackBarProps {
   id?: string;
 }
 
-export default class SnackBar extends Component<SnackBarProps> {}
+declare const SnackBar: FC<SnackBarProps>;
+export default SnackBar;

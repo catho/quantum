@@ -1,4 +1,4 @@
-import { Component, ButtonHTMLAttributes, ReactNode, MouseEventHandler } from 'react';
+import { FC, ButtonHTMLAttributes, ReactNode, MouseEventHandler } from 'react';
 import { IconNames } from '../Icon';
 import IconButton from './IconButton';
 
@@ -25,6 +25,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     };
 }
 
-export default class Button extends Component<ButtonProps> {
-    static Icon: IconButton;
-}
+declare const Button: FC<ButtonProps> & {
+    Icon: IconButton;
+};
+
+export default Button;

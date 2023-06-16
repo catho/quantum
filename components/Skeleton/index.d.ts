@@ -1,4 +1,4 @@
-import { Component, ComponentType } from 'react';
+import { FC } from 'react';
 
 export interface SkeletonButtonProps {
   size?: 'xsmall' | 'small' | 'medium' | 'large';
@@ -6,19 +6,6 @@ export interface SkeletonButtonProps {
     spacing?: {};
   };
 }
-
-export type SkeletonButton = ComponentType<SkeletonButtonProps>;
-
-export type SkeletonCircle = ComponentType;
-export interface SkeletonTagProps {
-  size?: 'xsmall' | 'small' | 'medium' | 'large';
-  theme?: {
-    spacing?: {};
-    baseFontSize?: number;
-  };
-}
-
-export type SkeletonTag = ComponentType<SkeletonTagProps>;
 
 export interface SkeletonProps {
   type?: 'rect' | 'circle' | 'text' | 'button' | 'tag';
@@ -31,15 +18,25 @@ export interface SkeletonProps {
     baseFontSize?: number;
   };
 }
-
-export type SkeletonText = ComponentType<SkeletonProps>;
-
-export default class Skeleton extends Component<SkeletonProps> {
-  static Button: SkeletonButton;
-
-  static Circle: SkeletonCircle;
-
-  static Text: SkeletonText;
-
-  static Tag: SkeletonTag;
+export interface SkeletonTagProps {
+  size?: 'xsmall' | 'small' | 'medium' | 'large';
+  theme?: {
+    spacing?: {};
+    baseFontSize?: number;
+  };
 }
+
+declare const SkeletonText: FC<SkeletonProps>;
+declare const SkeletonButton: FC<SkeletonButtonProps>;
+declare const SkeletonTag: FC<SkeletonTagProps>;
+declare const SkeletonCircle: FC;
+
+declare const Skeleton: FC<SkeletonProps> & {
+  Button: typeof SkeletonButton;
+  Circle: typeof SkeletonCircle;
+  Text: typeof SkeletonText;
+  Tag: typeof SkeletonTag;
+}
+
+export { SkeletonText, SkeletonButton, SkeletonTag, SkeletonCircle};
+export default Skeleton;

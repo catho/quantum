@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface ChargeBarProps {
     skin?: 'neutral' | 'primary' | 'secondary' | 'success';
@@ -14,4 +14,5 @@ export interface ChargeBarProps {
     label?: string;
 }
 
-export default class ChargeBar extends Component<ChargeBarProps> {}
+declare const ChargeBar: FC<ChargeBarProps>;
+export default ChargeBar;

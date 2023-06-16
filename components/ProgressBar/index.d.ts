@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface ProgressBarProps {
     skin?: 'neutral' | 'primary' | 'secondary';
@@ -13,5 +13,6 @@ export interface ProgressBarProps {
     progressPercent?: number;
     label?: string;
 }
+declare const ProgressBar: FC<ProgressBarProps>;
 
-export default class ProgressBar extends Component<ProgressBarProps> {}
+export default ProgressBar

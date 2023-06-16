@@ -1,6 +1,6 @@
-import { Component, ChangeEventHandler, TextareaHTMLAttributes } from 'react';
+import { FC, ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 
-export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends Omit<TextareaHTMLAttributes<HTMLTextAreaElement>, "onChange" | "id"> {
     disabled?: boolean;
     isAutoResize?: boolean;
     autoResizeConfig?: {
@@ -24,4 +24,5 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
     }
 }
 
-export default class TextArea extends Component<TextAreaProps> {}
+declare const TextArea: FC<TextAreaProps>;
+export default TextArea;

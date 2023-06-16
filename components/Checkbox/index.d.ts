@@ -1,4 +1,4 @@
-import { Component, ChangeEventHandler, ComponentType, ReactNode } from 'react';
+import { FC, ReactNode, ChangeEventHandler, ChangeEvent } from 'react';
 
 export interface CheckboxProps {
     checked?: boolean;
@@ -17,25 +17,34 @@ export interface CheckboxProps {
     };
 }
 
-export class Checkbox extends Component<CheckboxProps> {}
-export type CheckboxType = ComponentType<CheckboxProps>;
-
 export interface CheckboxButtonProps {
-  children?: ReactNode[] | ReactNode;
-  skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
-  size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
-  checked?: boolean;
-  disabled?: boolean;
-  error?: string;
-  id?: string;
-  icon?: string;
-  label?: string;
-  name: string;
-  onChange?: ChangeEventHandler<HTMLInputElement>;
-  value?: string;
+    children?: ReactNode[] | ReactNode;
+    skin?: 'neutral' | 'primary' | 'success' | 'warning' | 'error';
+    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
+    checked?: boolean;
+    disabled?: boolean;
+    error?: string;
+    id?: string;
+    icon?: string;
+    label?: string;
+    name: string;
+    onChange?: ChangeEventHandler<HTMLInputElement>;
+    value?: string;
 }
 
-export type CheckboxButton = ComponentType<CheckboxButtonProps>;
+export interface CheckboxGroupProps {
+    children?: JSX.Element[] | JSX.Element;
+    error?: string;
+    inline?: boolean;
+    onChange?: (items?: Options, event?: ChangeEvent<HTMLInputElement>) => void;
+    options?: Options;
+    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
+    type?: 'checkbox' | 'button';
+    theme?: {
+        colors?: {};
+        spacing?: {};
+    };
+}
 
 export type Options = Array<{
     checked?: boolean;
@@ -44,22 +53,13 @@ export type Options = Array<{
     name: string;
     value?: string;
 }>;
-export interface CheckboxGroupProps {
-    children?: JSX.Element[] | JSX.Element;
-    error?: string;
-    inline?: boolean;
-    onChange?: (items?: Options, event?: ChangeEvent<HTMLInputElement>) => void;
-    options?: Options;
-    size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
-    type: 'checkbox' | 'button';
-    theme?: {
-        colors?: {};
-        spacing?: {};
-    };
+
+declare const Checkbox: FC<CheckboxProps>;
+declare const CheckboxButton: FC<CheckboxButtonProps>;
+declare const CheckboxGroup: FC<CheckboxGroupProps> & {
+    Checkbox: typeof Checkbox;
+    Button: typeof CheckboxButton;
 }
 
-export class CheckboxGroup extends Component<CheckboxGroupProps> {
-    static Checkbox: CheckboxType;
-
-    static Button: CheckboxButton;
-}
+export { Checkbox, CheckboxButton, CheckboxGroup };
+export default Checkbox;

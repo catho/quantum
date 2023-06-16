@@ -1,9 +1,8 @@
 
 // Generated with scripts/create-component.js
-import { Component } from 'react';
+import { FC } from 'react';
 
 export type ItemPropType = string | { value: string | number; label: string };
-
 
 export interface DropdownLightProps {
   id?: string;
@@ -27,5 +26,6 @@ export interface DropdownLightProps {
   ) => void;
 }
 
-export default class DropdownLight extends Component<DropdownLightProps> {}
+declare const DropdownLight: FC<DropdownLightProps>;
+export default DropdownLight;
     

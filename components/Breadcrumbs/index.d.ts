@@ -1,5 +1,5 @@
 
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface BreadcrumbsProps {
   items: Array<{
@@ -13,5 +13,6 @@ export interface BreadcrumbsProps {
   };
 }
 
-export default class Breadcrumbs extends Component<BreadcrumbsProps> {}
+declare const Breadcrumbs: FC<BreadcrumbsProps>;
+export default Breadcrumbs;
     

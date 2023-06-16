@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface AvatarProps {
     picture?: string;
@@ -9,4 +9,5 @@ export interface AvatarProps {
     onClick?: () => void;
 }
 
-export default class Avatar extends Component<AvatarProps> { }
+declare const Avatar: FC<AvatarProps>;
+export default Avatar;

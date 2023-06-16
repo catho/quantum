@@ -1,9 +1,12 @@
-import { ReactNode, AnchorHTMLAttributes }  from 'react';
+import { ReactNode, AnchorHTMLAttributes, FC }  from 'react';
 
-export interface Link extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   theme?: {
     colors?: {};
   };
   skin?: 'default' | 'dark';
   children?: ReactNode[] | ReactNode;
 }
+
+declare const Link: FC<LinkProps>;
+export default Link

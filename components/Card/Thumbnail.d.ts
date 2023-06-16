@@ -1,12 +1,12 @@
-import { ComponentType } from 'react';
+import { FC, HTMLAttributes } from 'react';
 
-type Thumbnail = ComponentType<{
+export interface ThumbnailProps extends HTMLAttributes<HTMLImageElement> {
     src: string;
     alt: string;
     rounded?: boolean;
     theme?: { colors?: object };
-}> & {
-    displayName: 'Card.Thumbnail';
-};
+}
+
+declare const Thumbnail: FC<ThumbnailProps>;
 
 export default Thumbnail;

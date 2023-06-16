@@ -1,6 +1,5 @@
-import { Component } from 'react';
-
-export type NonEmptyArray<T> = [T, ...T[]];
+import { FC } from 'react';
+import { NonEmptyArray } from '../shared/types';
 
 export interface CarouselProps {
   dotsPagination?: boolean,
@@ -8,7 +7,7 @@ export interface CarouselProps {
   slidesToScroll?: number,
   arrowColor?: 'primary' | 'success' | 'error' | 'neutral' | 'warning',
   cardSize?: 'small' | 'medium' | 'large',
-  cards:NonEmptyArray<{
+  cards: NonEmptyArray<{
     imagePath?: string,
     imageDescription?: string,
     title?: string,
@@ -22,4 +21,5 @@ export interface CarouselProps {
   };
 }
 
-export default class Carousel extends Component<CarouselProps> {}
+declare const Carousel: FC<CarouselProps>;
+export default Carousel;

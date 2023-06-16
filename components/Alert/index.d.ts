@@ -1,4 +1,4 @@
-import { ReactNode, MouseEventHandler, TouchEventHandler, Component } from 'react';
+import { ReactNode, MouseEventHandler, TouchEventHandler, FC } from 'react';
 import { IconNames } from '../Icon';
 
 export interface AlertProps {
@@ -17,4 +17,5 @@ export interface AlertProps {
     };
 }
 
-export default class Alert extends Component<AlertProps> {}
+declare const Alert: FC<AlertProps>;
+export default Alert;

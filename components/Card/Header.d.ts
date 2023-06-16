@@ -1,9 +1,10 @@
-import { ComponentType } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 
-type Header = ComponentType<{
+export interface HeaderProps extends HTMLAttributes<HTMLElement> {
     theme?: { spacing?: object };
-}> & {
-    displayName: 'Card.Header';
-};
+    children: ReactNode | ReactNode[];
+}
 
+declare const Header: FC<HeaderProps>;
+    
 export default Header;

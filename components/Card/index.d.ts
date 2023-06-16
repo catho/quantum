@@ -1,4 +1,4 @@
-import { Component, MouseEvent } from 'react';
+import { FC, MouseEvent } from 'react';
 import Content from './Content';
 import Description from './Description';
 import Footer from './Footer';
@@ -8,28 +8,23 @@ import Media from './Media';
 import Thumbnail from './Thumbnail';
 import Title from './Title';
 
-type Props = {
+export interface CardProps {
     onClick?: (e: MouseEvent) => void;
     theme?: {
-        colors?: object
+        colors?: object;
     },
-    backgroundOpacity?: number
+    backgroundOpacity?: number;
 }
 
-export default class Card extends Component<Props> {
-    static Content: Content;
-
-    static Description: Description;
-
-    static Footer: Footer;
-
-    static Header: Header;
-
-    static HeaderText: HeaderText;
-
-    static Media: Media;
-
-    static Thumbnail: Thumbnail;
-
-    static Title: Title;
+declare const Card: FC<CardProps> & {
+    Content: typeof Content;
+    Description: typeof Description;
+    Footer: typeof Footer;
+    Header: typeof Header;
+    HeaderText: typeof HeaderText;
+    Media: typeof Media;
+    Thumbnail: typeof Thumbnail;
+    Title: typeof Title;
 }
+
+export default Card;

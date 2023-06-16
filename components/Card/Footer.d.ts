@@ -1,9 +1,10 @@
-import { ComponentType } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 
-type Footer = ComponentType<{
+export interface FooterProps extends HTMLAttributes<HTMLElement> {
     theme?: { spacing?: object };
-}> & {
-    displayName: 'Card.Footer';
-};
+    children: ReactNode | ReactNode[];
+}
 
+declare const Footer: FC<FooterProps>;
+    
 export default Footer;

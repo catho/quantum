@@ -1,5 +1,4 @@
-import { Component } from 'react';
-
+import { FC } from 'react';
 export interface AutoCompleteProps {
   theme?: {
     colors?: object;
@@ -19,4 +18,5 @@ export interface AutoCompleteProps {
   onSelectedItem?: (item: string) => void;
 }
 
-export default class AutoComplete extends Component<AutoCompleteProps> { }
+declare const AutoComplete: FC<AutoCompleteProps>;
+export default AutoComplete;
