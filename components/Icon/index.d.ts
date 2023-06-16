@@ -1,4 +1,4 @@
-import { Component, CSSProperties } from 'react';
+import { FC, CSSProperties } from 'react';
 
 export type IconNames =
     | 'access_alarm'
@@ -939,4 +939,5 @@ export interface IconProps {
     size?: 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge';
 }
 
-export default class Icon extends Component<IconProps> {}
+declare const Icon: FC<IconProps>;
+export default Icon;

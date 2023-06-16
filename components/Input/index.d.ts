@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, MouseEventHandler, ChangeEventHandler } from 'react';
+import { InputHTMLAttributes, MouseEventHandler, ChangeEventHandler, FC } from 'react';
 import { Validations } from '../Form';
 
 export type MaskFunction = (rawValue: string) => string[];
@@ -40,16 +40,13 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   };
 }
 
-
-interface CompoundedInput extends React.FunctionComponent<InputProps> {
-  CEP: React.FunctionComponent<InputProps>;
-  CNPJ: React.FunctionComponent<InputProps>;
-  CPF: React.FunctionComponent<InputProps>;
-  Date: React.FunctionComponent<InputProps>;
-  Password: React.FunctionComponent<InputProps>;
-  Phone: React.FunctionComponent<InputProps>;
-}
-
-const Input: CompoundedInput = () => null
+declare const Input: FC<InputProps> & {
+  CEP: FC<InputProps>;
+  CNPJ: FC<InputProps>;
+  CPF: FC<InputProps>;
+  Date: FC<InputProps>;
+  Password: FC<InputProps>;
+  Phone: FC<InputProps>;
+};
 
 export default Input;

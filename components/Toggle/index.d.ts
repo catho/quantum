@@ -1,6 +1,6 @@
-import { Component, ChangeEventHandler } from 'react';
+import { ChangeEventHandler, FC, HTMLAttributes } from 'react';
 
-export interface ToggleProps {
+export interface ToggleProps extends HTMLAttributes<HTMLInputElement>{
   onChange?: ChangeEventHandler<HTMLInputElement>;
   id?: string;
   checked?: boolean;
@@ -11,4 +11,5 @@ export interface ToggleProps {
   };
 }
 
-export default class Toggle extends Component<ToggleProps> {}
+declare const Toggle: FC<ToggleProps>;
+export default Toggle;

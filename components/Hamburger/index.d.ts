@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface HamburgerProps {
     showNotification?: boolean;
@@ -7,4 +7,5 @@ export interface HamburgerProps {
     ariaLabelDescription?: string;
 }
 
-export default class Hamburger extends Component<HamburgerProps> {}
+declare const Hamburger: FC<HamburgerProps>;
+export default Hamburger;

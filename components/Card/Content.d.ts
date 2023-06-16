@@ -1,9 +1,10 @@
-import { ComponentType } from 'react';
+import { FC, HTMLAttributes, ReactNode } from 'react';
 
-type Content = ComponentType<{
+export interface ContentProps extends HTMLAttributes<HTMLDivElement> {
     theme?: { baseFontSize?: number; spacing?: object };
-}> & {
-    displayName: 'Card.Content';
-};
+    children: ReactNode | ReactNode[];
+}
 
+declare const Content: FC<ContentProps>;
+    
 export default Content;

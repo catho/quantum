@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface BadgeProps {
     skin?: 'primary' | 'secondary' | 'success' | 'error' | 'neutral';
@@ -15,4 +15,5 @@ export interface BadgeProps {
     };
 }
 
-export default class Badge extends Component<BadgeProps> {}
+declare const Badge: FC<BadgeProps>;
+export default Badge;

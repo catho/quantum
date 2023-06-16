@@ -1,6 +1,6 @@
 
 // Generated with scripts/create-component.js
-import { Component } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface InfiniteScrollProps {
   children: ReactNode[] | ReactNode;
@@ -8,5 +8,6 @@ export interface InfiniteScrollProps {
   onScrollEnd?: () => void;
 }
 
-export default class InfiniteScroll extends Component<InfiniteScrollProps> {}
+declare const InfiniteScroll: FC<InfiniteScrollProps>;
+export default InfiniteScroll;
     

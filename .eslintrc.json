@@ -43,5 +43,13 @@
   "globals": {
     "window": true,
     "document": true
-  }
+  },
+  "overrides": [
+    {
+      "files": "*.d.ts",
+      "excludedFiles": ["*.js, *.jsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"]
+    }
+  ]
 }

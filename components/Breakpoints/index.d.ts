@@ -16,6 +16,6 @@ export interface Breakpoints {
         columns: number;
     };
 }
-declare const breakPoints: Breakpoints;
+declare const breakpoints: Breakpoints;
 
-export default breakPoints;
+export default breakpoints;

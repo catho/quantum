@@ -1,55 +1,61 @@
-import { ReactNode, TouchEvent, MouseEventHandler } from 'react';
+import { ReactNode, TouchEvent, MouseEventHandler, FC, HTMLAttributes } from 'react';
 
 export interface ModalProps {
   children?: ReactNode[] | ReactNode;
-  onClick?: (e?: MouseEvent | TouchEvent) => void;
+  onClick?: (e?: MouseEvent | TouchEvent) => void; // braking change
   onClose?: MouseEventHandler<HTMLButtonElement>;
   closeButtonAriaLabel?: string;
   theme?: {
-    breakpoints?: {};
-    colors?: {};
-    spacing?: {};
+    breakpoints?: object;
+    colors?: object;
+    spacing?: object;
     components?: {
-      button?: {};
+      button?: object;
     };
   };
 }
 
-  interface ModalHeaderProps {
+  interface ModalHeaderProps  extends HTMLAttributes<HTMLElement> {
+    children?: ReactNode[] | ReactNode;
     theme?: {
-      spacing?: {};
+      spacing?: object;
     };
   }
 
-  interface ModalTitleProps {
+  interface ModalTitleProps extends HTMLAttributes<HTMLHeadingElement> {
+    children?: ReactNode[] | ReactNode;
     small?: boolean;
     theme?: { 
-      baseFontSize?: {}; 
+      baseFontSize?: object; 
     };
 }
 
 
-interface ModalContentProps {
+interface ModalContentProps extends HTMLAttributes<HTMLDivElement> {
+  children?: ReactNode[] | ReactNode;
   theme?: { 
     baseFontSize?: number;
      spacing?: {} 
     };
 }
 
-interface ModalFooterProps {
+interface ModalFooterProps extends HTMLAttributes<HTMLElement> {
+  children?: ReactNode[] | ReactNode;
   theme?: {
     spacing?: {};
   };
 }
 
-interface CompoundedModal extends React.FunctionComponent<ModalProps> {
-  Header: React.FunctionComponent<ModalHeaderProps>;
-  Title: React.FunctionComponent<ModalTitleProps>;
-  HeaderText: React.FunctionComponent;
-  Content: React.FunctionComponent<ModalContentProps>;
-  Footer: React.FunctionComponent<ModalFooterProps>;
+interface HeaderTextProps  extends HTMLAttributes<HTMLDivElement> {
+  children?: ReactNode[] | ReactNode;
 }
 
-const Modal: CompoundedModal = () => null;
+declare const Modal: FC<ModalProps> & {
+  Header: FC<ModalHeaderProps>;
+  Title: FC<ModalTitleProps>;
+  HeaderText: FC<HeaderTextProps>;
+  Content: FC<ModalContentProps>;
+  Footer: FC<ModalFooterProps>;
+};
 
 export default Modal;

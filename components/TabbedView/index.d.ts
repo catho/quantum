@@ -1,4 +1,5 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
+import { baseFontSizeType, breakpointsProps, colorsProps, componentsProps, spacingProps } from '../shared/theme';
 
 export interface TabProps {
     title: string;
@@ -7,7 +8,6 @@ export interface TabProps {
     children: ReactNode[] | ReactNode;
 }
 
-export type Tab = Component<TabProps>;
 
 export interface TabbedViewProps {
     fluid?: boolean;
@@ -16,15 +16,19 @@ export interface TabbedViewProps {
     skin?: 'neutral' | 'primary';
     theme?: {
         components?: {
-            tabbedView?: {};
+            tabbedView?: componentsProps["tabbedView"];
         };
-        baseFontSize?: number;
-        breakpoints?: {};
-        spacing?: {};
+        baseFontSize?: baseFontSizeType;
+        breakpoints?: breakpointsProps;
+        spacing?: spacingProps;
     };
     onTabClick?: () => void;
 }
 
-export default class TabbedView extends Component<TabbedViewProps> {
-    static Tab: Tab;
+declare const Tab: FC<TabProps>;
+declare const TabbedView: FC<TabbedViewProps> & {
+    Tab: typeof Tab;
 }
+
+export { TabbedView, Tab};
+export default TabbedView;

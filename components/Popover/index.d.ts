@@ -1,4 +1,4 @@
-import { Component, ReactNode } from 'react';
+import { FC, ReactNode } from 'react';
 
 export interface PopoverProps {
     inverted?: boolean;
@@ -10,4 +10,5 @@ export interface PopoverProps {
     onClose?: () => void;
 }
 
-export default class Popover extends Component<PopoverProps> {}
+declare const Popover: FC<PopoverProps>;
+export default Popover;

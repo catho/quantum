@@ -1,8 +1,9 @@
-import { Component } from 'react';
+import { FC } from 'react';
 import { ButtonProps } from '../Button';
 
-interface SocialButtonProps extends ButtonProps {
+export interface SocialButtonProps extends ButtonProps {
   provider: string;
 }
 
-export default class SocialButton extends Component<SocialButtonProps> {}
+declare const SocialButton: FC<SocialButtonProps>;
+export default SocialButton;

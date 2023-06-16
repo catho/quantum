@@ -1,4 +1,4 @@
-import { ReactNode, Component } from 'react';
+import { ReactNode, FC } from 'react';
 
 export interface AccordionProps {
     theme?: {
@@ -15,4 +15,5 @@ export interface AccordionProps {
     }>;
 }
 
-export default class Accordion extends Component<AccordionProps> {}
+declare const Accordion: FC<AccordionProps>;
+export default Accordion;
