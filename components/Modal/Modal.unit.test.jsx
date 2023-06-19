@@ -112,7 +112,7 @@ describe('<Modal />', () => {
       expect(article).toHaveFocus();
     });
 
-    it('should change focus to link when tab is pressed', () => {
+    it('should change focus to link when tab is pressed', async () => {
       render(
         <Modal>
           <Modal.Content>
@@ -129,7 +129,7 @@ describe('<Modal />', () => {
 
       expect(screen.getByRole('article')).toHaveFocus();
 
-      userEvent.tab();
+      await userEvent.tab();
 
       expect(screen.getByRole('link')).toHaveFocus();
     });
@@ -157,7 +157,7 @@ describe('<Modal />', () => {
       expect(screen.getByRole('article')).toHaveFocus();
     });
 
-    it('should change focus to ok button when shift + tab is pressed two times', () => {
+    it('should change focus to ok button when shift + tab is pressed two times', async () => {
       render(
         <Modal>
           <Modal.Content>
@@ -174,8 +174,8 @@ describe('<Modal />', () => {
 
       expect(screen.getByRole('article')).toHaveFocus();
 
-      userEvent.tab({ shift: true });
-      userEvent.tab({ shift: true });
+      await userEvent.tab({ shift: true });
+      await userEvent.tab({ shift: true });
 
       expect(screen.getByText('Ok')).toHaveFocus();
     });

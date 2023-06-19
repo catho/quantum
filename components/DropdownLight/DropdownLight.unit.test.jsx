@@ -67,15 +67,15 @@ describe('<DropdownLight />', () => {
     ).toMatchSnapshot();
   });
 
-  it('should return a value from item, using a object items', () => {
+  it('should return a value from item, using a object items', async () => {
     render(<DropdownLight items={itemsObjectMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
 
-    userEvent.click(optionItem);
+    await userEvent.click(optionItem);
 
     const input = screen.getByRole('textbox', { hidden: true });
 
@@ -84,16 +84,16 @@ describe('<DropdownLight />', () => {
     expect(input.value).toEqual(lemonItem);
   });
 
-  it('should return a value from item, using a string items', () => {
+  it('should return a value from item, using a string items', async () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
-    userEvent.click(optionItem);
+    await userEvent.click(optionItem);
 
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
     const input = screen.getByRole('textbox', { hidden: true });
 
     const lemonItem = itemsStringMock[0];
@@ -101,16 +101,16 @@ describe('<DropdownLight />', () => {
     expect(input.value).toEqual(lemonItem);
   });
 
-  it('should show the check icon when the item from list selected', () => {
+  it('should show the check icon when the item from list selected', async () => {
     render(<DropdownLight items={itemsStringMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
 
     const optionItem = screen.getByRole('option', { name: 'Lemon' });
-    userEvent.click(optionItem);
+    await userEvent.click(optionItem);
 
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
 
     const optionItemChecked = screen.getByRole('option', { name: 'Lemon' });
     const checkIcon = optionItemChecked.querySelector('svg');
@@ -125,11 +125,11 @@ describe('<DropdownLight />', () => {
     expect(input.name).toMatch(INPUT_NAME);
   });
 
-  it('should check if it is disabled', () => {
+  it('should check if it is disabled', async () => {
     render(<DropdownLight items={itemsStringMock} disabled />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 
@@ -168,10 +168,10 @@ describe('<DropdownLight />', () => {
     expect(screen.getByText('this is a description label')).toBeInTheDocument();
   });
 
-  it('should close Dropdown Options when user press Escape', () => {
+  it('should close Dropdown Options when user press Escape', async () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    userEvent.keyboard(ESCAPE_KEY_CODE);
+    await userEvent.keyboard(ESCAPE_KEY_CODE);
 
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
 
@@ -180,15 +180,15 @@ describe('<DropdownLight />', () => {
     ).toBeInTheDocument();
   });
 
-  it('should allow User to select an option using only keyboard', () => {
+  it('should allow User to select an option using only keyboard', async () => {
     render(<DropdownLight items={itemsStringMock} />);
 
-    userEvent.tab();
-    userEvent.keyboard(ENTER_KEY_CODE);
+    await userEvent.tab();
+    await userEvent.keyboard(ENTER_KEY_CODE);
 
     expect(screen.getByRole('list')).toBeInTheDocument();
 
-    userEvent.keyboard(
+    await userEvent.keyboard(
       `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}${ENTER_KEY_CODE}`,
     );
 
@@ -200,14 +200,14 @@ describe('<DropdownLight />', () => {
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 
-  it('should call onChange when a list item is selected using keyboard', () => {
+  it('should call onChange when a list item is selected using keyboard', async () => {
     const onChangeMock = jest.fn();
     render(<DropdownLight items={itemsObjectMock} onChange={onChangeMock} />);
 
-    userEvent.tab();
-    userEvent.keyboard(ENTER_KEY_CODE);
+    await userEvent.tab();
+    await userEvent.keyboard(ENTER_KEY_CODE);
 
-    userEvent.keyboard(
+    await userEvent.keyboard(
       `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ENTER_KEY_CODE}`,
     );
 
@@ -231,11 +231,11 @@ describe('<DropdownLight />', () => {
     );
   });
 
-  it('should show if there is icon at item', () => {
+  it('should show if there is icon at item', async () => {
     render(<DropdownLight items={itemsWithImageMock} />);
 
     const dropdown = screen.getByRole('button');
-    userEvent.click(dropdown);
+    await userEvent.click(dropdown);
 
     const optionItem = screen.getByRole('option', {
       name: 'Visa image description',

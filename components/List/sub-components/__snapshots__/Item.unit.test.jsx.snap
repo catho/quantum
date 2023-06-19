@@ -34,14 +34,12 @@ exports[`<Item /> Should match the snapshot 1`] = `
   <div
     class="c0"
   >
-    
     <div
       class="c1"
     >
       <span
         class="c2"
       />
-      
     </div>
   </div>
 </li>

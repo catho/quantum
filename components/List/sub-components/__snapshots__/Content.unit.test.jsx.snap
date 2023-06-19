@@ -21,6 +21,5 @@ exports[`<Content /> Should match the snapshot 1`] = `
   <span
     class="c1"
   />
-  
 </div>
 `;

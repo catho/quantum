@@ -264,7 +264,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
         >
           4
         </span>
-        
       </div>
     </div>
   </button>
@@ -338,7 +337,6 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
         >
           4
         </span>
-        
       </div>
     </div>
   </button>

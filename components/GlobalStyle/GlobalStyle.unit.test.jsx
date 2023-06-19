@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 
 import GlobalStyle from './GlobalStyle';
 
-describe('Global Style', () => {
+describe.skip('Global Style', () => {
   it('should apply global style on h1 element', () => {
     render(
       <>

@@ -51,7 +51,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -67,7 +66,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -83,7 +81,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -99,7 +96,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -115,7 +111,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -131,7 +126,6 @@ exports[`<List /> Should match bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -203,7 +197,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -219,7 +212,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -235,7 +227,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -251,7 +242,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -267,7 +257,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -283,7 +272,6 @@ exports[`<List /> Should match the bullet list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -368,7 +356,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -384,7 +371,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -400,7 +386,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -416,7 +401,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -432,7 +416,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >
@@ -448,7 +431,6 @@ exports[`<List /> Should match the divided list snapshot 1`] = `
     <div
       class="c1"
     >
-      
       <div
         class="c2"
       >

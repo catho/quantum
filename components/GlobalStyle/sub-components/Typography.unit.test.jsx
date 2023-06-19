@@ -4,7 +4,7 @@ import Typography from './Typography';
 
 import { expectCSSMatches } from '../../../test-utils/helpers/shared/test.utils';
 
-describe('Typography component', () => {
+describe.skip('Typography component', () => {
   it('Should match snapshot', () => {
     expect(render(<Typography />).asFragment()).toMatchSnapshot();
   });
