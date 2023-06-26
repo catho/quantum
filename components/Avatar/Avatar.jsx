@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Person from '@material-ui/icons/Person';
+import Person from '@mui/icons-material/Person';
 import Icon from '../Icon/Icon';
 import { colors } from '../shared/theme';
 
