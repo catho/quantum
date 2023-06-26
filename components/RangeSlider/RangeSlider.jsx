@@ -1,9 +1,9 @@
 import { createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import MaterialSlider from '@material-ui/core/Slider';
-import withStyles from '@material-ui/core/styles/withStyles';
-
+import MaterialSlider from '@mui/material/Slider';
+import StyledEngineProvider from '@mui/material/StyledEngineProvider';
+import withStyles from '@mui/styles/withStyles';
 import {
   colors,
   spacing,
@@ -43,7 +43,7 @@ const RangeSlider = props => {
 
   const {
     colors: { neutral, primary },
-    spacing: { xsmall, small, large },
+    spacing: { xxsmall, xsmall, small, large },
     baseFontSize,
   } = theme;
 
@@ -53,32 +53,39 @@ const RangeSlider = props => {
 
   const StyledSlider = withStyles({
     root: {
-      color: primary[600],
+      color: `${primary[700]} !important`,
       height: 8,
     },
     thumb: {
-      backgroundColor: disabled ? neutral[500] : primary[700],
+      backgroundColor: `${disabled ? neutral[500] : primary[700]} !important`,
       border: 'none',
       height: `${large}px !important`,
       width: `${large}px !important`,
-      marginTop: `-${xsmall}px !important`,
-      marginLeft: `-${large / 2}px !important`,
+      marginTop: `0px !important`,
       '&:focus,&:hover': {
         '& > *': {
           transform: `scale(1) translateX(-${halfMeasure}) !important`,
         },
       },
+      '&::before': {
+        boxShadow: 'none !important',
+      },
     },
     valueLabel: {
       width: 'auto',
       top: '-50px',
-      left: halfMeasure,
+      left: `${halfMeasure} !important`,
+      padding: '0px !important',
+      backgroundColor: `${disabled ? neutral[500] : primary[700]} !important`,
       transform:
         valueLabelDisplay === 'on'
           ? `scale(1) translateX(-${halfMeasure}) !important`
           : 'scale(0)',
       '&:focus,&:hover': {
         transform: `scale(1) translateX(-${halfMeasure}) !important`,
+      },
+      '&::before': {
+        display: `none !important`,
       },
       '&::after': {
         borderLeft: `${arrowSize}px solid transparent`,
@@ -113,20 +120,20 @@ const RangeSlider = props => {
       display: 'none',
     },
     markLabel: {
-      marginTop: `${xsmall}px`,
+      marginTop: `${xxsmall}px`,
     },
     track: {
-      height: 8,
-      borderRadius: 4,
-      backgroundColor: hexToRgba(primary[700], 0.5),
+      height: `8px !important`,
+      borderRadius: `4px !important`,
+      border: 'none !important',
+      backgroundColor: `${hexToRgba(primary[700], 0.5)} !important`,
     },
     rail: {
-      height: 8,
-      borderRadius: 4,
+      height: `8px !important`,
+      borderRadius: `4px !important`,
+      color: `${disabled ? neutral[500] : primary[700]} !important`,
     },
   })(MaterialSlider);
-
-  StyledSlider.displayName = 'SliderComponent';
 
   const formatedValue =
     typeof value === 'object' ? [value.from, value.to] : value;
@@ -137,24 +144,26 @@ const RangeSlider = props => {
 
   return (
     <SliderWrapper theme={theme}>
-      <StyledSlider
-        aria-labelledby={ariaLabelledby}
-        defaultValue={disabled ? 0 : formatedDefaultValue}
-        disabled={disabled}
-        getAriaLabel={tipFormatter}
-        getAriaValueText={tipFormatter}
-        marks={marks}
-        max={max}
-        min={min}
-        onChange={onChange}
-        onChangeCommitted={onChangeCommitted}
-        ref={createRef()}
-        step={step}
-        track={track}
-        value={disabled ? 0 : formatedValue}
-        valueLabelDisplay={disabled ? 'off' : valueLabelDisplay}
-        valueLabelFormat={tipFormatter}
-      />
+      <StyledEngineProvider injectFirst>
+        <StyledSlider
+          aria-labelledby={ariaLabelledby}
+          defaultValue={disabled ? 0 : formatedDefaultValue}
+          disabled={disabled}
+          getAriaLabel={tipFormatter}
+          getAriaValueText={tipFormatter}
+          marks={marks}
+          max={max}
+          min={min}
+          onChange={onChange}
+          onChangeCommitted={onChangeCommitted}
+          ref={createRef()}
+          step={step}
+          track={track}
+          value={disabled ? 0 : formatedValue}
+          valueLabelDisplay={disabled ? 'off' : valueLabelDisplay}
+          valueLabelFormat={tipFormatter}
+        />
+      </StyledEngineProvider>
     </SliderWrapper>
   );
 };
