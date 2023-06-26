@@ -151,14 +151,15 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -318,14 +319,15 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -508,14 +510,15 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c7"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c7 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -686,14 +689,15 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -873,14 +877,15 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -1045,14 +1050,15 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
         this is a input placeholder
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -1213,14 +1219,15 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>
@@ -1380,14 +1387,15 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c5"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="ArrowDropDownIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7 10l5 5 5-5z"
+            d="m7 10 5 5 5-5z"
           />
         </svg>
       </button>

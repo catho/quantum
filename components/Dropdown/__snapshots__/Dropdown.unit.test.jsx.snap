@@ -125,15 +125,15 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -266,15 +266,15 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -409,15 +409,15 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -562,15 +562,15 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -709,15 +709,15 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -864,15 +864,15 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c5"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1028,15 +1028,15 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c6"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c6 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1295,15 +1295,15 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1436,15 +1436,15 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       baz
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1591,15 +1591,15 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       What credit card do you prefer?
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c5"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1732,15 +1732,15 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -1873,15 +1873,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2014,15 +2014,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2157,15 +2157,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2310,15 +2310,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2457,15 +2457,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2612,15 +2612,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c5"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>
@@ -2776,15 +2776,15 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c6"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c6 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ArrowDropDownIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7 10l5 5 5-5z"
+          d="m7 10 5 5 5-5z"
         />
       </svg>
     </button>

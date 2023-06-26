@@ -374,14 +374,15 @@ exports[`<Carousel /> should match the snapshot 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-prev"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-prev css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowLeftIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
         />
       </svg>
       <div
@@ -1267,14 +1268,15 @@ exports[`<Carousel /> should match the snapshot 1`] = `
       </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-next"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-next css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowRightIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
         />
       </svg>
       <ul
@@ -1666,14 +1668,15 @@ exports[`<Carousel /> should match the snapshot 2`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-prev"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-prev css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowLeftIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
         />
       </svg>
       <div
@@ -2223,14 +2226,15 @@ exports[`<Carousel /> should match the snapshot 2`] = `
       </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-next"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-next css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowRightIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
         />
       </svg>
     </div>
@@ -2612,14 +2616,15 @@ exports[`<Carousel /> should match the snapshot 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-prev"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-prev css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowLeftIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
         />
       </svg>
       <div
@@ -3505,14 +3510,15 @@ exports[`<Carousel /> should match the snapshot 3`] = `
       </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-next"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-next css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowRightIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
         />
       </svg>
       <ul
@@ -3955,14 +3961,15 @@ exports[`<Carousel /> should match the snapshot 4`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-prev"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-prev css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowLeftIcon"
         focusable="false"
         style="color: rgb(18, 80, 196); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
         />
       </svg>
       <div
@@ -4848,14 +4855,15 @@ exports[`<Carousel /> should match the snapshot 4`] = `
       </div>
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root slick-arrow slick-next"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium slick-arrow slick-next css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="KeyboardArrowRightIcon"
         focusable="false"
         style="color: rgb(18, 80, 196); font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
         />
       </svg>
       <ul

@@ -119,11 +119,11 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root c2"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
+      data-testid="LockIcon"
       focusable="false"
       style="font-size: 24px; max-width: 24px;"
-      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
@@ -176,11 +176,11 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root c2"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
+      data-testid="LockIcon"
       focusable="false"
       style="font-size: 24px; max-width: 24px;"
-      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
@@ -268,15 +268,15 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root c2"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
+      data-testid="CheckIcon"
       focusable="false"
       style="font-size: 24px; max-width: 24px;"
-      theme="[object Object]"
       viewBox="0 0 24 24"
     >
       <path
-        d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+        d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
       />
     </svg>
     Foo

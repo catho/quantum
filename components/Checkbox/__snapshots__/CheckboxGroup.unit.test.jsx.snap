@@ -81,14 +81,15 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -114,14 +115,15 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -147,14 +149,15 @@ exports[`Checkbox group should match snapshots 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -251,14 +254,15 @@ exports[`Checkbox group should match snapshots 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -285,14 +289,15 @@ exports[`Checkbox group should match snapshots 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -389,14 +394,15 @@ exports[`Checkbox group should match snapshots 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -423,14 +429,15 @@ exports[`Checkbox group should match snapshots 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -526,14 +533,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -559,14 +567,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -592,14 +601,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -626,14 +636,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -660,14 +671,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -694,14 +706,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -728,14 +741,15 @@ exports[`Checkbox group should match snapshots 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -846,14 +860,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -879,14 +894,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -912,14 +928,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -946,14 +963,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -980,14 +998,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1014,14 +1033,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1048,14 +1068,15 @@ exports[`Checkbox group should match snapshots 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1160,14 +1181,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1193,14 +1215,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1226,14 +1249,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1260,14 +1284,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1294,14 +1319,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1328,14 +1354,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1362,14 +1389,15 @@ exports[`Checkbox group should match snapshots 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1469,14 +1497,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1502,14 +1531,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1535,14 +1565,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1569,14 +1600,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1603,14 +1635,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1637,14 +1670,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1671,14 +1705,15 @@ exports[`Checkbox group should match snapshots 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1774,14 +1809,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1807,14 +1843,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1840,14 +1877,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1874,14 +1912,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1908,14 +1947,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1942,14 +1982,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -1976,14 +2017,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2079,14 +2121,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2112,14 +2155,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2145,14 +2189,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2179,14 +2224,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2213,14 +2259,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2247,14 +2294,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2281,14 +2329,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2384,14 +2433,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2417,14 +2467,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2450,14 +2501,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2484,14 +2536,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2518,14 +2571,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2552,14 +2606,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2586,14 +2641,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2689,14 +2745,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2722,14 +2779,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2755,14 +2813,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2789,14 +2848,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2823,14 +2883,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2857,14 +2918,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2891,14 +2953,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -2994,14 +3057,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3027,14 +3091,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3060,14 +3125,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3094,14 +3160,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3128,14 +3195,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3162,14 +3230,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3196,14 +3265,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3299,14 +3369,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3332,14 +3403,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3365,14 +3437,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3399,14 +3472,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3433,14 +3507,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3467,14 +3542,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3501,14 +3577,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3604,14 +3681,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3637,14 +3715,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3670,14 +3749,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3704,14 +3784,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3738,14 +3819,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3772,14 +3854,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3806,14 +3889,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3909,14 +3993,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3942,14 +4027,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -3975,14 +4061,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -4009,14 +4096,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -4043,14 +4131,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -4077,14 +4166,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -4111,14 +4201,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
         />
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="CheckIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+            d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
           />
         </svg>
         <label
@@ -4355,8 +4446,9 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4386,8 +4478,9 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4544,8 +4637,9 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4575,8 +4669,9 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4744,8 +4839,9 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4775,8 +4871,9 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4948,8 +5045,9 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -4979,8 +5077,9 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5137,8 +5236,9 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5168,8 +5268,9 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5360,8 +5461,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5391,8 +5493,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5559,8 +5662,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5590,8 +5694,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5748,8 +5853,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5779,8 +5885,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5947,8 +6054,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -5978,8 +6086,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6136,8 +6245,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6167,8 +6277,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6335,8 +6446,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6366,8 +6478,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6524,8 +6637,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6555,8 +6669,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6723,8 +6838,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 1
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"
@@ -6754,8 +6870,9 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
         Disabled Checked Label - 2
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root "
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="LockIcon"
           focusable="false"
           style="font-size: 24px; max-width: 24px;"
           viewBox="0 0 24 24"

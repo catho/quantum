@@ -190,16 +190,16 @@ exports[`Input component should match snapshots 2`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ClearIcon"
         description=""
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </div>
@@ -425,12 +425,12 @@ exports[`Input component should match snapshots 4`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="ErrorIcon"
         description=""
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
@@ -633,12 +633,12 @@ exports[`Input component should match snapshots 6`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c2 c3"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="SearchIcon"
         description=""
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
@@ -1073,12 +1073,12 @@ exports[`Input component should match snapshots 10`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="SearchIcon"
         description="this is a description label"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path
@@ -1743,12 +1743,12 @@ exports[`Input component should match snapshots 17`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="VisibilityIcon"
         description=""
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
-        theme="[object Object]"
         viewBox="0 0 24 24"
       >
         <path

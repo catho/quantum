@@ -118,11 +118,11 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root c3"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
             data-qtm-preloader="icon"
+            data-testid="HomeIcon"
             focusable="false"
             style="font-size: 16px; max-width: 16px;"
-            theme="[object Object]"
             viewBox="0 0 24 24"
           >
             <path
@@ -139,15 +139,15 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <button
@@ -167,15 +167,15 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <a
@@ -192,15 +192,15 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <a
@@ -216,15 +216,15 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <span>
@@ -354,11 +354,11 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
         >
           <svg
             aria-hidden="true"
-            class="MuiSvgIcon-root c3"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
             data-qtm-preloader="icon"
+            data-testid="HomeIcon"
             focusable="false"
             style="font-size: 16px; max-width: 16px;"
-            theme="[object Object]"
             viewBox="0 0 24 24"
           >
             <path
@@ -374,15 +374,15 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <button
@@ -402,15 +402,15 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <a
@@ -427,15 +427,15 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <a
@@ -451,15 +451,15 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root c4"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
+          data-testid="KeyboardArrowRightIcon"
           focusable="false"
           style="font-size: 16px; max-width: 16px;"
-          theme="[object Object]"
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
           />
         </svg>
         <span>
@@ -489,10 +489,10 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD css-1696fkf-MuiSvgIcon-root\\"
             data-qtm-preloader=\\"icon\\"
 @@ -46,21 +47,21 @@
-              d=\\"M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
+              d=\\"M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
             />
           </svg>
           <button
@@ -514,7 +514,7 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\"
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD css-1696fkf-MuiSvgIcon-root\\"
 @@ -81,11 +82,11 @@
           >
             Quantum
@@ -527,5 +527,5 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
         >
           <svg
             aria-hidden=\\"true\\"
-            class=\\"MuiSvgIcon-root Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD\\""
+            class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD css-1696fkf-MuiSvgIcon-root\\""
 `;

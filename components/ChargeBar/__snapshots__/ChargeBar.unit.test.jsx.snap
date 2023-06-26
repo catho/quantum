@@ -93,8 +93,9 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="WhatshotIcon"
         focusable="false"
         style="color: rgb(18, 80, 196); font-size: 16px; max-width: 16px;"
         viewBox="0 0 24 24"
@@ -228,8 +229,9 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 2`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="WhatshotIcon"
         focusable="false"
         style="color: rgb(222, 0, 89); font-size: 16px; max-width: 16px;"
         viewBox="0 0 24 24"
@@ -367,8 +369,9 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="WhatshotIcon"
         focusable="false"
         style="color: rgb(59, 97, 15); font-size: 16px; max-width: 16px;"
         viewBox="0 0 24 24"
@@ -510,8 +513,9 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 4`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="WhatshotIcon"
         focusable="false"
         style="color: rgb(66, 66, 66); font-size: 16px; max-width: 16px;"
         viewBox="0 0 24 24"
@@ -653,8 +657,9 @@ exports[`ChargeBar component Should match the snapshot of ChargeBar 5`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="WhatshotIcon"
         focusable="false"
         style="color: rgb(18, 80, 196); font-size: 16px; max-width: 16px;"
         viewBox="0 0 24 24"
