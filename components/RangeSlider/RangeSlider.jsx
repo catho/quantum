@@ -2,8 +2,6 @@ import { createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import MaterialSlider from '@mui/material/Slider';
-import StyledEngineProvider from '@mui/material/StyledEngineProvider';
-import withStyles from '@mui/styles/withStyles';
 import {
   colors,
   spacing,
@@ -51,7 +49,7 @@ const RangeSlider = props => {
 
   const halfMeasure = '50%';
 
-  const stylerStyles = {
+  const sliderStyles = {
     '&.MuiSlider-root': {
       height: xsmall,
     },
@@ -144,7 +142,7 @@ const RangeSlider = props => {
   return (
     <SliderWrapper theme={theme}>
       <MaterialSlider
-        sx={stylerStyles}
+        sx={sliderStyles}
         aria-labelledby={ariaLabelledby}
         defaultValue={disabled ? 0 : formatedDefaultValue}
         disabled={disabled}
