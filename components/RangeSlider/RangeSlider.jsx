@@ -51,11 +51,11 @@ const RangeSlider = props => {
 
   const halfMeasure = '50%';
 
-  const StyledSlider = withStyles({
-    root: {
-      height: 8,
+  const stylerStyles = {
+    '&.MuiSlider-root': {
+      height: xsmall,
     },
-    thumb: {
+    '& .MuiSlider-thumb': {
       backgroundColor: disabled ? neutral[500] : primary[700],
       border: 'none',
       height: large,
@@ -70,7 +70,7 @@ const RangeSlider = props => {
         boxShadow: 'none',
       },
     },
-    valueLabel: {
+    '& .MuiSlider-valueLabel': {
       width: 'auto',
       top: '-50px',
       left: halfMeasure,
@@ -103,7 +103,7 @@ const RangeSlider = props => {
         color: neutral[0],
         fontSize: baseFontSize,
         padding: `${xsmall}px ${small}px`,
-        borderRadius: 4,
+        borderRadius: `${xxsmall}px`,
         height: large,
         transform: 'none',
         width: 'auto',
@@ -115,24 +115,24 @@ const RangeSlider = props => {
         },
       },
     },
-    mark: {
+    '& .MuiSlider-mark': {
       display: 'none',
     },
-    markLabel: {
-      marginTop: xxsmall,
+    '& .MuiSlider-markLabel': {
+      marginTop: `${xxsmall}px`,
     },
-    track: {
+    '& .MuiSlider-track': {
       height: 8,
-      borderRadius: 4,
+      borderRadius: `${xxsmall}px`,
       border: 'none',
       backgroundColor: hexToRgba(primary[700], 0.5),
     },
-    rail: {
+    '& .MuiSlider-rail': {
       height: 8,
-      borderRadius: 4,
+      borderRadius: `${xxsmall}px`,
       color: disabled ? neutral[500] : primary[700],
     },
-  })(MaterialSlider);
+  };
 
   const formatedValue =
     typeof value === 'object' ? [value.from, value.to] : value;
@@ -143,26 +143,25 @@ const RangeSlider = props => {
 
   return (
     <SliderWrapper theme={theme}>
-      <StyledEngineProvider injectFirst>
-        <StyledSlider
-          aria-labelledby={ariaLabelledby}
-          defaultValue={disabled ? 0 : formatedDefaultValue}
-          disabled={disabled}
-          getAriaLabel={tipFormatter}
-          getAriaValueText={tipFormatter}
-          marks={marks}
-          max={max}
-          min={min}
-          onChange={onChange}
-          onChangeCommitted={onChangeCommitted}
-          ref={createRef()}
-          step={step}
-          track={track}
-          value={disabled ? 0 : formatedValue}
-          valueLabelDisplay={disabled ? 'off' : valueLabelDisplay}
-          valueLabelFormat={tipFormatter}
-        />
-      </StyledEngineProvider>
+      <MaterialSlider
+        sx={stylerStyles}
+        aria-labelledby={ariaLabelledby}
+        defaultValue={disabled ? 0 : formatedDefaultValue}
+        disabled={disabled}
+        getAriaLabel={tipFormatter}
+        getAriaValueText={tipFormatter}
+        marks={marks}
+        max={max}
+        min={min}
+        onChange={onChange}
+        onChangeCommitted={onChangeCommitted}
+        ref={createRef()}
+        step={step}
+        track={track}
+        value={disabled ? 0 : formatedValue}
+        valueLabelDisplay={disabled ? 'off' : valueLabelDisplay}
+        valueLabelFormat={tipFormatter}
+      />
     </SliderWrapper>
   );
 };
