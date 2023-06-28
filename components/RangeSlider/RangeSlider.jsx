@@ -53,39 +53,38 @@ const RangeSlider = props => {
 
   const StyledSlider = withStyles({
     root: {
-      color: `${primary[700]} !important`,
       height: 8,
     },
     thumb: {
-      backgroundColor: `${disabled ? neutral[500] : primary[700]} !important`,
+      backgroundColor: disabled ? neutral[500] : primary[700],
       border: 'none',
-      height: `${large}px !important`,
-      width: `${large}px !important`,
-      marginTop: `0px !important`,
+      height: large,
+      width: large,
+      marginTop: 0,
       '&:focus,&:hover': {
         '& > *': {
           transform: `scale(1) translateX(-${halfMeasure}) !important`,
         },
       },
       '&::before': {
-        boxShadow: 'none !important',
+        boxShadow: 'none',
       },
     },
     valueLabel: {
       width: 'auto',
       top: '-50px',
-      left: `${halfMeasure} !important`,
-      padding: '0px !important',
-      backgroundColor: `${disabled ? neutral[500] : primary[700]} !important`,
+      left: halfMeasure,
+      padding: 0,
+      backgroundColor: disabled ? neutral[500] : primary[700],
       transform:
         valueLabelDisplay === 'on'
           ? `scale(1) translateX(-${halfMeasure}) !important`
           : 'scale(0)',
       '&:focus,&:hover': {
-        transform: `scale(1) translateX(-${halfMeasure}) !important`,
+        transform: `scale(1) translateX(-${halfMeasure})`,
       },
       '&::before': {
-        display: `none !important`,
+        display: `none`,
       },
       '&::after': {
         borderLeft: `${arrowSize}px solid transparent`,
@@ -102,10 +101,10 @@ const RangeSlider = props => {
       '& > *': {
         background: neutral[700],
         color: neutral[0],
-        fontSize: `${baseFontSize}px`,
+        fontSize: baseFontSize,
         padding: `${xsmall}px ${small}px`,
-        borderRadius: '4px',
-        height: `${large}px`,
+        borderRadius: 4,
+        height: large,
         transform: 'none',
         width: 'auto',
         whiteSpace: 'nowrap',
@@ -120,18 +119,18 @@ const RangeSlider = props => {
       display: 'none',
     },
     markLabel: {
-      marginTop: `${xxsmall}px`,
+      marginTop: xxsmall,
     },
     track: {
-      height: `8px !important`,
-      borderRadius: `4px !important`,
-      border: 'none !important',
-      backgroundColor: `${hexToRgba(primary[700], 0.5)} !important`,
+      height: 8,
+      borderRadius: 4,
+      border: 'none',
+      backgroundColor: hexToRgba(primary[700], 0.5),
     },
     rail: {
-      height: `8px !important`,
-      borderRadius: `4px !important`,
-      color: `${disabled ? neutral[500] : primary[700]} !important`,
+      height: 8,
+      borderRadius: 4,
+      color: disabled ? neutral[500] : primary[700],
     },
   })(MaterialSlider);
 
