@@ -41,7 +41,7 @@ const RangeSlider = props => {
 
   const {
     colors: { neutral, primary },
-    spacing: { xxsmall, xsmall, small, large },
+    spacing: { xxsmall, xsmall, small },
     baseFontSize,
   } = theme;
 
@@ -51,13 +51,13 @@ const RangeSlider = props => {
 
   const sliderStyles = {
     '&.MuiSlider-root': {
-      height: xsmall,
+      height: 8,
     },
     '& .MuiSlider-thumb': {
       backgroundColor: disabled ? neutral[500] : primary[700],
       border: 'none',
-      height: large,
-      width: large,
+      height: 24,
+      width: 24,
       marginTop: 0,
       '&:focus,&:hover': {
         '& > *': {
@@ -101,8 +101,8 @@ const RangeSlider = props => {
         color: neutral[0],
         fontSize: baseFontSize,
         padding: `${xsmall}px ${small}px`,
-        borderRadius: `${xxsmall}px`,
-        height: large,
+        borderRadius: '4px',
+        height: 24,
         transform: 'none',
         width: 'auto',
         whiteSpace: 'nowrap',
@@ -121,13 +121,13 @@ const RangeSlider = props => {
     },
     '& .MuiSlider-track': {
       height: 8,
-      borderRadius: `${xxsmall}px`,
+      borderRadius: '4px',
       border: 'none',
       backgroundColor: hexToRgba(primary[700], 0.5),
     },
     '& .MuiSlider-rail': {
       height: 8,
-      borderRadius: `${xxsmall}px`,
+      borderRadius: '4px',
       color: disabled ? neutral[500] : primary[700],
     },
   };
