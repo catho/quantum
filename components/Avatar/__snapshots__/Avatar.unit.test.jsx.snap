@@ -27,7 +27,8 @@ exports[`<Avatar /> Should match snapshot With href 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
+    data-testid="PersonIcon"
     focusable="false"
     style="color: rgb(224, 224, 224); font-size: 18px;"
     viewBox="0 0 24 24"
@@ -75,7 +76,8 @@ exports[`<Avatar /> Should match snapshot With notification 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
+    data-testid="PersonIcon"
     focusable="false"
     style="color: rgb(224, 224, 224); font-size: 18px;"
     viewBox="0 0 24 24"
@@ -159,7 +161,8 @@ exports[`<Avatar /> Should match snapshot With text 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
+    data-testid="PersonIcon"
     focusable="false"
     style="color: rgb(224, 224, 224); font-size: 18px;"
     viewBox="0 0 24 24"
@@ -206,7 +209,8 @@ exports[`<Avatar /> Should match snapshot With toggle icon 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
+    data-testid="PersonIcon"
     focusable="false"
     style="color: rgb(224, 224, 224); font-size: 18px;"
     viewBox="0 0 24 24"
@@ -217,14 +221,15 @@ exports[`<Avatar /> Should match snapshot With toggle icon 1`] = `
   </svg>
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c2"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="KeyboardArrowDownIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
-      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+      d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
     />
   </svg>
 </span>
@@ -256,7 +261,8 @@ exports[`<Avatar /> Should match snapshot Without picture 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
+    data-testid="PersonIcon"
     focusable="false"
     style="color: rgb(224, 224, 224); font-size: 18px;"
     viewBox="0 0 24 24"

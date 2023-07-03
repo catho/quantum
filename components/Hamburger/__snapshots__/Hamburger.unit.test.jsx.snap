@@ -18,8 +18,9 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="MenuIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
@@ -49,8 +50,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="MenuIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
@@ -80,14 +82,15 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and isOpened 1
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="CloseIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
-      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
     />
   </svg>
 </div>
@@ -126,8 +129,9 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
   />
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c2"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="MenuIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
@@ -157,14 +161,15 @@ exports[`<Hamburger /> Should match snapshot with props: inverted, showNotificat
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="CloseIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
-      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
     />
   </svg>
 </div>
@@ -188,14 +193,15 @@ exports[`<Hamburger /> Should match snapshot with props: isOpened 1`] = `
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="CloseIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
-      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
     />
   </svg>
 </div>
@@ -234,8 +240,9 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
   />
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c2"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="MenuIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
@@ -265,14 +272,15 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification and is
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root c1"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
+    data-testid="CloseIcon"
     focusable="false"
     style="font-size: 24px; max-width: 24px;"
     viewBox="0 0 24 24"
   >
     <path
-      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
     />
   </svg>
 </div>

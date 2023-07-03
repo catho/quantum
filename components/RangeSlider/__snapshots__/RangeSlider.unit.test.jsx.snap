@@ -10,31 +10,37 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when <RangeSlider /
   class="c0"
 >
   <span
-    class="MuiSlider-root WithStyles(ForwardRef(Slider))-root-25 MuiSlider-colorPrimary Mui-disabled"
+    class="MuiSlider-root Mui-disabled MuiSlider-colorPrimary MuiSlider-sizeMedium css-16b9jz-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail WithStyles(ForwardRef(Slider))-rail-31"
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track WithStyles(ForwardRef(Slider))-track-30"
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
       style="left: 0%; width: 0%;"
     />
-    <input
-      type="hidden"
-      value="0"
-    />
     <span
-      aria-label="0"
-      aria-orientation="horizontal"
-      aria-valuemax="100"
-      aria-valuemin="0"
-      aria-valuenow="0"
-      aria-valuetext="0"
-      class="MuiSlider-thumb WithStyles(ForwardRef(Slider))-thumb-26 MuiSlider-thumbColorPrimary Mui-disabled"
+      class="MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
       data-index="0"
-      role="slider"
       style="left: 0%;"
-    />
+    >
+      <input
+        aria-label="0"
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        aria-valuetext="0"
+        data-index="0"
+        disabled=""
+        max="100"
+        min="0"
+        step="1"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="0"
+      />
+    </span>
   </span>
 </div>
 `;
@@ -49,40 +55,44 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when <RangeSlider /
   class="c0"
 >
   <span
-    class="MuiSlider-root WithStyles(ForwardRef(Slider))-root-37 MuiSlider-colorPrimary"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1dfi1up-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail WithStyles(ForwardRef(Slider))-rail-43"
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track WithStyles(ForwardRef(Slider))-track-42"
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
       style="left: 0%; width: 30%;"
     />
-    <input
-      type="hidden"
-      value="30"
-    />
     <span
-      aria-label="0"
-      aria-orientation="horizontal"
-      aria-valuemax="100"
-      aria-valuemin="0"
-      aria-valuenow="30"
-      aria-valuetext="30"
-      class="MuiSlider-thumb WithStyles(ForwardRef(Slider))-thumb-38 MuiSlider-thumbColorPrimary PrivateValueLabel-open-45 PrivateValueLabel-thumb-44"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
       data-index="0"
-      role="slider"
       style="left: 30%;"
-      tabindex="0"
     >
+      <input
+        aria-label="0"
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="30"
+        aria-valuetext="30"
+        data-index="0"
+        max="100"
+        min="0"
+        step="1"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="30"
+      />
       <span
-        class="PrivateValueLabel-offset-46 MuiSlider-valueLabel WithStyles(ForwardRef(Slider))-valueLabel-39"
+        aria-hidden="true"
+        class="MuiSlider-valueLabelOpen MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
       >
         <span
-          class="PrivateValueLabel-circle-47"
+          class="MuiSlider-valueLabelCircle"
         >
           <span
-            class="PrivateValueLabel-label-48"
+            class="MuiSlider-valueLabelLabel"
           >
             30
           </span>
@@ -103,40 +113,44 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have just one 
   class="c0"
 >
   <span
-    class="MuiSlider-root WithStyles(ForwardRef(Slider))-root-1 MuiSlider-colorPrimary"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1jfcvfl-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail WithStyles(ForwardRef(Slider))-rail-7"
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track WithStyles(ForwardRef(Slider))-track-6"
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
       style="left: 0%; width: 10%;"
     />
-    <input
-      type="hidden"
-      value="10"
-    />
     <span
-      aria-label="0"
-      aria-orientation="horizontal"
-      aria-valuemax="100"
-      aria-valuemin="0"
-      aria-valuenow="10"
-      aria-valuetext="10"
-      class="MuiSlider-thumb WithStyles(ForwardRef(Slider))-thumb-2 MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-8"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
       data-index="0"
-      role="slider"
       style="left: 10%;"
-      tabindex="0"
     >
+      <input
+        aria-label="0"
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="10"
+        aria-valuetext="10"
+        data-index="0"
+        max="100"
+        min="0"
+        step="1"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="10"
+      />
       <span
-        class="PrivateValueLabel-offset-10 MuiSlider-valueLabel WithStyles(ForwardRef(Slider))-valueLabel-3"
+        aria-hidden="true"
+        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
       >
         <span
-          class="PrivateValueLabel-circle-11"
+          class="MuiSlider-valueLabelCircle"
         >
           <span
-            class="PrivateValueLabel-label-12"
+            class="MuiSlider-valueLabelLabel"
           >
             10
           </span>
@@ -157,40 +171,44 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
   class="c0"
 >
   <span
-    class="MuiSlider-root WithStyles(ForwardRef(Slider))-root-13 MuiSlider-colorPrimary"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1jfcvfl-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail WithStyles(ForwardRef(Slider))-rail-19"
+      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track WithStyles(ForwardRef(Slider))-track-18"
+      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
       style="left: 10%; width: 20%;"
     />
-    <input
-      type="hidden"
-      value="10,30"
-    />
     <span
-      aria-label="0"
-      aria-orientation="horizontal"
-      aria-valuemax="100"
-      aria-valuemin="0"
-      aria-valuenow="10"
-      aria-valuetext="10"
-      class="MuiSlider-thumb WithStyles(ForwardRef(Slider))-thumb-14 MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-20"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
       data-index="0"
-      role="slider"
       style="left: 10%;"
-      tabindex="0"
     >
+      <input
+        aria-label="0"
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="10"
+        aria-valuetext="10"
+        data-index="0"
+        max="100"
+        min="0"
+        step="1"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="10"
+      />
       <span
-        class="PrivateValueLabel-offset-22 MuiSlider-valueLabel WithStyles(ForwardRef(Slider))-valueLabel-15"
+        aria-hidden="true"
+        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
       >
         <span
-          class="PrivateValueLabel-circle-23"
+          class="MuiSlider-valueLabelCircle"
         >
           <span
-            class="PrivateValueLabel-label-24"
+            class="MuiSlider-valueLabelLabel"
           >
             10
           </span>
@@ -198,26 +216,34 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
       </span>
     </span>
     <span
-      aria-label="1"
-      aria-orientation="horizontal"
-      aria-valuemax="100"
-      aria-valuemin="0"
-      aria-valuenow="30"
-      aria-valuetext="30"
-      class="MuiSlider-thumb WithStyles(ForwardRef(Slider))-thumb-14 MuiSlider-thumbColorPrimary PrivateValueLabel-thumb-20"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
       data-index="1"
-      role="slider"
       style="left: 30%;"
-      tabindex="0"
     >
+      <input
+        aria-label="1"
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="30"
+        aria-valuetext="30"
+        data-index="1"
+        max="100"
+        min="0"
+        step="1"
+        style="border: 0px; height: 100%; margin: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 100%; direction: ltr;"
+        type="range"
+        value="30"
+      />
       <span
-        class="PrivateValueLabel-offset-22 MuiSlider-valueLabel WithStyles(ForwardRef(Slider))-valueLabel-15"
+        aria-hidden="true"
+        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
       >
         <span
-          class="PrivateValueLabel-circle-23"
+          class="MuiSlider-valueLabelCircle"
         >
           <span
-            class="PrivateValueLabel-label-24"
+            class="MuiSlider-valueLabelLabel"
           >
             30
           </span>

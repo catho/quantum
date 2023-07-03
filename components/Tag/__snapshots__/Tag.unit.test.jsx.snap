@@ -448,14 +448,15 @@ exports[`<Tag /> onClose Prop is rendering well 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -521,14 +522,15 @@ exports[`<Tag /> onClose Prop is rendering well 2`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -599,14 +601,15 @@ exports[`<Tag /> onClose Prop is rendering well 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -682,14 +685,15 @@ exports[`<Tag /> onClose Prop is rendering well 4`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -770,14 +774,15 @@ exports[`<Tag /> onClose Prop is rendering well 5`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -863,14 +868,15 @@ exports[`<Tag /> onClose Prop is rendering well 6`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -961,14 +967,15 @@ exports[`<Tag /> onClose Prop is rendering well 7`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1064,14 +1071,15 @@ exports[`<Tag /> onClose Prop is rendering well 8`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1172,14 +1180,15 @@ exports[`<Tag /> onClose Prop is rendering well 9`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1285,14 +1294,15 @@ exports[`<Tag /> onClose Prop is rendering well 10`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1398,14 +1408,15 @@ exports[`<Tag /> onClose Prop is rendering well 11`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1511,14 +1522,15 @@ exports[`<Tag /> onClose Prop is rendering well 12`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1624,14 +1636,15 @@ exports[`<Tag /> onClose Prop is rendering well 13`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1737,14 +1750,15 @@ exports[`<Tag /> onClose Prop is rendering well 14`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>
@@ -1850,14 +1864,15 @@ exports[`<Tag /> onClose Prop is rendering well 15`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root c3 c4"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
+        data-testid="CloseIcon"
         focusable="false"
         style="font-size: 24px; max-width: 24px;"
         viewBox="0 0 24 24"
       >
         <path
-          d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+          d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
         />
       </svg>
     </button>

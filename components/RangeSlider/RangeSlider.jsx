@@ -1,9 +1,7 @@
 import { createRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import MaterialSlider from '@material-ui/core/Slider';
-import withStyles from '@material-ui/core/styles/withStyles';
-
+import MaterialSlider from '@mui/material/Slider';
 import {
   colors,
   spacing,
@@ -43,7 +41,7 @@ const RangeSlider = props => {
 
   const {
     colors: { neutral, primary },
-    spacing: { xsmall, small, large },
+    spacing: { xxsmall, xsmall, small },
     baseFontSize,
   } = theme;
 
@@ -51,34 +49,40 @@ const RangeSlider = props => {
 
   const halfMeasure = '50%';
 
-  const StyledSlider = withStyles({
-    root: {
-      color: primary[600],
+  const sliderStyles = {
+    '&.MuiSlider-root': {
       height: 8,
     },
-    thumb: {
+    '& .MuiSlider-thumb': {
       backgroundColor: disabled ? neutral[500] : primary[700],
       border: 'none',
-      height: `${large}px !important`,
-      width: `${large}px !important`,
-      marginTop: `-${xsmall}px !important`,
-      marginLeft: `-${large / 2}px !important`,
+      height: 24,
+      width: 24,
+      marginTop: 0,
       '&:focus,&:hover': {
         '& > *': {
           transform: `scale(1) translateX(-${halfMeasure}) !important`,
         },
       },
+      '&::before': {
+        boxShadow: 'none',
+      },
     },
-    valueLabel: {
+    '& .MuiSlider-valueLabel': {
       width: 'auto',
       top: '-50px',
       left: halfMeasure,
+      padding: 0,
+      backgroundColor: disabled ? neutral[500] : primary[700],
       transform:
         valueLabelDisplay === 'on'
           ? `scale(1) translateX(-${halfMeasure}) !important`
           : 'scale(0)',
       '&:focus,&:hover': {
-        transform: `scale(1) translateX(-${halfMeasure}) !important`,
+        transform: `scale(1) translateX(-${halfMeasure})`,
+      },
+      '&::before': {
+        display: `none`,
       },
       '&::after': {
         borderLeft: `${arrowSize}px solid transparent`,
@@ -95,10 +99,10 @@ const RangeSlider = props => {
       '& > *': {
         background: neutral[700],
         color: neutral[0],
-        fontSize: `${baseFontSize}px`,
+        fontSize: baseFontSize,
         padding: `${xsmall}px ${small}px`,
         borderRadius: '4px',
-        height: `${large}px`,
+        height: 24,
         transform: 'none',
         width: 'auto',
         whiteSpace: 'nowrap',
@@ -109,24 +113,24 @@ const RangeSlider = props => {
         },
       },
     },
-    mark: {
+    '& .MuiSlider-mark': {
       display: 'none',
     },
-    markLabel: {
-      marginTop: `${xsmall}px`,
+    '& .MuiSlider-markLabel': {
+      marginTop: `${xxsmall}px`,
     },
-    track: {
+    '& .MuiSlider-track': {
       height: 8,
-      borderRadius: 4,
+      borderRadius: '4px',
+      border: 'none',
       backgroundColor: hexToRgba(primary[700], 0.5),
     },
-    rail: {
+    '& .MuiSlider-rail': {
       height: 8,
-      borderRadius: 4,
+      borderRadius: '4px',
+      color: disabled ? neutral[500] : primary[700],
     },
-  })(MaterialSlider);
-
-  StyledSlider.displayName = 'SliderComponent';
+  };
 
   const formatedValue =
     typeof value === 'object' ? [value.from, value.to] : value;
@@ -137,7 +141,8 @@ const RangeSlider = props => {
 
   return (
     <SliderWrapper theme={theme}>
-      <StyledSlider
+      <MaterialSlider
+        sx={sliderStyles}
         aria-labelledby={ariaLabelledby}
         defaultValue={disabled ? 0 : formatedDefaultValue}
         disabled={disabled}
