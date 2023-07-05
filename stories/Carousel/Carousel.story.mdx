@@ -8,8 +8,7 @@ import { Header } from '../shared';
 <Meta title="Carousel" component={Carousel}  />
 
 <Header title="Carousel">
-    Carousel is a component that presents cards to go through a series of
-    content. Works with a series of image, text, or custom markup. Also
+    Carousel is an interactive component that cycles cards of related content. Works with a series of image, text, or custom markup. Also
     includes support for indicator and previous / next controls.
 </Header>
 
@@ -34,12 +33,12 @@ import Carousel from '@catho/quantum/Carousel';
     >
       react-slick lib
     </a>{' '}
-    as dependency, Because of that, is necessary to implement the code
-    of source url bellow. it should be implemented before the imports,
-    in unit tests, that will use Carousel component.
+    as dependency. Therefore, it is necessary to implement the code
+    of source bellow. It must be implemented before the imports
+    in the unit tests that will use Carousel component.
   </p>
   <p>
-    source:{' '}
+    Source:{' '}
     <a
       href="https://github.com/akiran/react-slick/issues/742#issuecomment-460281987"
       target="_blank"
@@ -58,7 +57,7 @@ import Carousel from '@catho/quantum/Carousel';
 </Canvas>
 
 <Alert icon="info" skin="neutral">
-  The carousel controls (arrows) hides on screen smaller than 1024px.
+  The carousel controls (arrows) hides on screens smaller than 1024px.
 </Alert>
 
 ## <a id="api"></a>API

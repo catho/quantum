@@ -24,7 +24,7 @@ const Template = args => {
         <Dialog onClose={() => setOpenDialog(false)} {...args}>
           <ContentExample>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Button onClick={() => setOpenDialog(false)}>Close dialog</Button>
+            <Button onClick={() => setOpenDialog(false)}>Close Dialog</Button>
           </ContentExample>
         </Dialog>
       )}

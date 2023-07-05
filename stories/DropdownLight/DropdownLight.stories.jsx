@@ -27,7 +27,7 @@ Required.args = {
 
 export const WithError = Template.bind({});
 WithError.args = {
-  error: "Don't worry, this is just an example error message ;)",
+  error: "Don't worry! This is just an example error message ;)",
 };
 
 export const WithHelperText = Template.bind({});

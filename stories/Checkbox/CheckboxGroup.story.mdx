@@ -20,6 +20,8 @@ import {
   CheckboxGroup component has the ability to manage, get
   values via a single onChange callback prop and apply a
   single error message to a group of checkboxes.
+  Checkboxe groups are used when the user can select none or more than one option.
+
 </Header>
 
 - [Importing and usage](#importing)
@@ -29,7 +31,7 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
+import CheckboxGroup from @catho/quantum/Checkbox/CheckboxGroup;
 ```
 
 <Canvas>
@@ -37,7 +39,7 @@ import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
 </Canvas>
 
 <Alert icon="info" skin="primary">
-  Also, it's possible use an alternative way to instantiate checkbox items, using children:
+  Also, it's possible use an alternative way to instantiate checkbox items using children:
 </Alert>
 
 <Canvas>
@@ -72,8 +74,8 @@ import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
 
 <Alert icon="info" skin="primary">
   A controlled group triggers its changes via <code>onChange</code>
-  callback prop, wich is called with the current changed checkbox
-  event and a list of checkboxes values.
+  callback prop, which is called with the current changed checkbox
+  event and a list of checkbox values.
 </Alert>
 
 <Canvas>

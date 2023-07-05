@@ -78,7 +78,7 @@ const AdvancedCardTemplate = args => (
       />
       <Card.HeaderText>
         <Card.Title small>Title</Card.Title>
-        <Card.Description>Lorem ipsum dolor sit amet.</Card.Description>
+        <Card.Description>Card Description</Card.Description>
       </Card.HeaderText>
     </Card.Header>
     <Card.Media
@@ -86,16 +86,16 @@ const AdvancedCardTemplate = args => (
       alt="A beautiful Cat"
     />
     <Card.Content>
-      Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed
-      metus elit. In hac habitasse platea dictumst. Fusce non purus a dui semper
-      molestie vitae in sapien. In a odio quis nisi placerat varius eget et
-      magna. Donec nec cursus mauris. Donec a cursus velit.
+      Card Content: Duis ac enim non leo dapibus placerat ut vel ligula.
+      Pellentesque sed metus elit. In hac habitasse platea dictumst. Fusce non
+      purus a dui semper molestie vitae in sapien. In a odio quis nisi placerat
+      varius eget et magna. Donec nec cursus mauris. Donec a cursus velit.
     </Card.Content>
     <Card.Footer>
-      Duis ac enim non leo dapibus placerat ut vel ligula. Pellentesque sed
-      metus elit. In hac habitasse platea dictumst. Fusce non purus a dui semper
-      molestie vitae in sapien. In a odio quis nisi placerat varius eget et
-      magna. Donec nec cursus mauris. Donec a cursus velit.
+      Card Footer: Duis ac enim non leo dapibus placerat ut vel ligula.
+      Pellentesque sed metus elit. In hac habitasse platea dictumst. Fusce non
+      purus a dui semper molestie vitae in sapien. In a odio quis nisi placerat
+      varius eget et magna. Donec nec cursus mauris. Donec a cursus velit.
     </Card.Footer>
   </Card>
 );

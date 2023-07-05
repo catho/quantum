@@ -17,15 +17,15 @@ import { StyledDivExample } from './styles'
 />
 
 <Header title="Breakpoints">
-  Breakpoints - Quantum provides a breakpoints object that you can use with
+  Breakpoints - Quantum provides a breakpoints object to use with
   styled components.
   <br />
-  You can create different style rules following the Quantum breakpoints.
+  You can create different styled rules following Quantum breakpoints.
 </Header>
 
 ## How to use
 
-First import `BREAKPOINTS` from `shared`. Second
+Firstly, import `BREAKPOINTS` from `shared`. Second
 import `query` function from `Grid` shared.
 
 ```js
@@ -33,8 +33,8 @@ import BREAKPOINTS from '@catho/quantum/shared/breakpoints';
 import { query } from '@catho/quantum/Grid/sub-components/shared';
 ```
 
-Create a constant variable calling `query` with `BREAKPOINTS` as parameter. After, create a styled component
-and introduce the variable. In this example we will use a `div`.
+Create a constant variable calling `query` with `BREAKPOINTS` as parameter. Then, create a styled component
+and introduce the variable. In this example, we will use a `div`.
 
 The variable provides `min-widths` media queries with the following sizes:
 
@@ -69,6 +69,6 @@ const StyledDiv = styled.div`
 `;
 ```
 
-Test the div in differents sizes:
+Test the div in different sizes:
 
 <StyledDivExample>Test me in different sizes =)</StyledDivExample>

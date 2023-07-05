@@ -11,9 +11,9 @@ import {
 <Meta title="Forms/Form" component={Form}  />
 
 <Header title="Form">
-    A Form displays a set of related user input fields in a structured way,
-    some other components like validation adds check behavior of the data
-    against a set of criteria before passing it along to the server.
+    A Form displays a set of related input fields and labels in a structured way where the user should insert their data. It can contain
+    some other components such as validation. It can also check the values of the data
+    against a set of criteria before submitting it to the server.
 </Header>
 
 - [Importing and usage](#importing)
@@ -23,7 +23,7 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import { Form } from '@catho/quantum/Form';
+import Form from '@catho/quantum/Form';
 ```
 
 <Canvas>
@@ -38,7 +38,7 @@ import { Form } from '@catho/quantum/Form';
 
 ### With validation
 
-Each child of `Form` has an property `validate`.
+Each child of `Form` has a property called `validate`.
 It is not required but you can provide validations on it to be fired 
 when your form is submitted.
 
