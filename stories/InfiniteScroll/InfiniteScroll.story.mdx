@@ -13,7 +13,7 @@ import {
 <Meta title="InfiniteScroll" component={InfiniteScroll}  />
 
 <Header title="InfiniteScroll">
-  Infinite scroll is used to load content as the user scrolls the page.
+  Infinite scroll is used to load more content as the user scrolls down the page.
 </Header>
 
 - [Importing and usage](#importing)
@@ -24,7 +24,7 @@ import {
 
 ```jsx
 ...
-import { InfiniteScroll } from '@catho/quantum';
+import InfiniteScroll from '@catho/quantum/InfiniteScroll';
 
 export default function SimpleInfiniteScroll() {
   const [items, setItems] = useState(['1','2','3','4','5','6','7','8','9','10']);

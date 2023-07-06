@@ -12,8 +12,8 @@ import {
 <Meta title="Modal" component={Modal} />
 
 <Header title="Modal">
-   Modals inform users about a task and can contain critical information,
-      require decisions, or involve multiple tasks.
+   Modals inform users about a task. It can contain critical information,
+      questions, or involve multiple tasks.
 </Header>
 
 - [Importing and usage](#importing)
@@ -23,12 +23,14 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import { Modal, Button } from '@catho/quantum';
+import Modal from '@catho/quantum/Modal';
+import Button from '@catho/quantum/Button';
 ```
 
 ```jsx
 ...
-import { Modal, Button } from '@catho/quantum';
+import Modal from '@catho/quantum/Modal';
+import Button from '@catho/quantum/Button';
 
 export default function SimpleModal() {
   const [openModal, setOpenModal] = useState(false);
@@ -61,7 +63,8 @@ export default function SimpleModal() {
 
 ```jsx
 ...
-import { Modal, Button } from '@catho/quantum';
+import Modal from '@catho/quantum/Modal';
+import Button from '@catho/quantum/Button';
 
 export default function AdvancedModal() {
   const [openModal, setOpenModal] = useState(false);

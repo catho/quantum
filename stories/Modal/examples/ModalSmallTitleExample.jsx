@@ -57,7 +57,8 @@ class ModalSmallTitleExample extends Component {
 }
 
 ModalSmallTitleExample.code = `import { Component } from 'react';
-import { Button, Modal } from '@catho/quantum';
+import Modal from '@catho/quantum/Modal';
+import Button from '@catho/quantum/Button';
 
 class ModalExample extends Component {
   constructor() {
