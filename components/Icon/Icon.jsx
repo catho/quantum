@@ -88,6 +88,9 @@ import Whatshot from '@mui/icons-material/Whatshot';
 import Work from '@mui/icons-material/Work';
 import Help from '@mui/icons-material/Help';
 import FlashOn from '@mui/icons-material/FlashOn';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
+import AutoGraphIcon from '@mui/icons-material/AutoGraph';
+import StarsIcon from '@mui/icons-material/Stars';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -120,6 +123,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     assignment_ind: AssignmentInd,
     assignment_turned_in: AssignmentTurnedIn,
     attach_money: AttachMoney,
+    auto_graph: AutoGraphIcon,
     block: Block,
     cached: Cached,
     camera: CameraAlt,
@@ -151,6 +155,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     flash_on: FlashOn,
     folder: Folder,
     group: Group,
+    group_add: GroupAddIcon,
     home: Home,
     help: Help,
     info: Info,
@@ -182,6 +187,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     star_border: StarBorder,
     star_half: StarHalf,
     star: Star,
+    stars: StarsIcon,
     swap_vert: SwapVert,
     trending_up: TrendingUp,
     tune: Tune,
