@@ -187,7 +187,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     star_border: StarBorder,
     star_half: StarHalf,
     star: Star,
-    stars: StarsIcon,
+    stars: Stars,
     swap_vert: SwapVert,
     trending_up: TrendingUp,
     tune: Tune,
