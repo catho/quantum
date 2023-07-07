@@ -123,7 +123,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     assignment_ind: AssignmentInd,
     assignment_turned_in: AssignmentTurnedIn,
     attach_money: AttachMoney,
-    auto_graph: AutoGraphIcon,
+    auto_graph: AutoGraph,
     block: Block,
     cached: Cached,
     camera: CameraAlt,
