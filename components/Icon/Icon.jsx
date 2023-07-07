@@ -155,7 +155,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     flash_on: FlashOn,
     folder: Folder,
     group: Group,
-    group_add: GroupAddIcon,
+    group_add: GroupAdd,
     home: Home,
     help: Help,
     info: Info,
