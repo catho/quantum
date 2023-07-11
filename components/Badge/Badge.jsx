@@ -115,7 +115,7 @@ StyledBadge.displayName = 'StyledBadge';
 Badge.displayName = 'Badge';
 
 Badge.propTypes = {
-  /** Define background and text color */
+  /** Set background and text colors */
   skin: PropTypes.oneOf([
     'primary',
     'secondary',
@@ -123,15 +123,16 @@ Badge.propTypes = {
     'error',
     'neutral',
   ]),
-  /** When passed a children to <Badge />, the badge will be displayed at top-right corner of the children. */
+  /** When passed a children to &lt;Badge /&gt;, the badge will be displayed at top-right corner of the children. */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  /** Number to be displayed inside badge. When number is higher than 99 will be displayed "99+" instead of number value */
+  /** Number to be displayed inside badge. When number is bigger than 99, it will show "99+" instead of the exact number. */
   number: PropTypes.number,
-  /** Swap background and text color */
+  /** Swap background and text colors. */
   inverted: PropTypes.bool,
+  /** Shows only a dot, without any number. */
   dot: PropTypes.bool,
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,

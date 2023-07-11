@@ -3,11 +3,11 @@ import { Meta } from '@storybook/addon-docs';
 import { Header } from '../shared'
 import Colors from './Colors'
 
-<Meta 
-  title="Foundation/Colors" 
+<Meta
+  title="Foundation/Colors"
   parameters={{
-    previewTabs: { 
-      'storybook/docs/panel': null, 
+    previewTabs: {
+      'storybook/docs/panel': null,
       canvas: {
         hidden: true,
       },
@@ -16,25 +16,34 @@ import Colors from './Colors'
 />
 
 <Header title="Colors">
-  Catho's color palette consists of brand, support and neutral accents.
-  All colors are imported by the default theme.
+  Catho's color palette consists of bland, support and neutral accents.
+  All colors are imported in the default theme.
 </Header>
 
-## Importing Colors
 
+- [Importing and usage](#importing)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and Usage
+
+
+### Importing
 ```js
-import { Colors } from '@catho/quantum';
+import Colors from '@catho/quantum/Colors';
 ```
 
 ### Usage
-Colors is a object that expose the pallete and can be used in multiple places
+Colors is an object that brings forward the Catho's color palette and has multiple uses.
+
+
 
 ```js
-console.log(Colors.primary['500']);	
+console.log(Colors.primary['500']);
 /*returns: #0CC0EA;*/	
 
-console.log(Colors.secondary['500'])	
-/*returns: #E91E63/*
-```
+console.log(Colors.secondary['500'])
+/*returns: #E91E63*/
 
+```
+## <a id="examples"></a>Examples
 <Colors />

@@ -20,11 +20,14 @@ import { Headings, Texts, Lists } from './Components'
   our design and content as clearly and efficiently as possible.
 </Header>
 
+- [Importing and usage](#importing)
+- [Examples](#examples)
 
-## Usage
+## <a id="importing"></a>Importing and Usage
+
 
 ```js
-import { GlobalStyle } from '@catho/quantum';
+import GlobalStyle from '@catho/quantum/GlobalStyle';
 ```
 
 Usually, it is used before the application component
@@ -41,12 +44,12 @@ ReactDOM
 
 The `<GlobalStyle />` will add and set automatically all the base configuration for font and [Icons](?path=/docs/foundation-icons--page).
 
-If you want to include one of those separately, you can import each one as you like to:
+If you want to include one of those separately, you can import each as you'd like to:
 
 ```js
-import { Typography } from '@catho/quantum';
+import Typography from '@catho/quantum/GlobalStyle/Typography';
 ```
-
+## <a id="examples"></a>Examples
 ## Components
 
 ### Headings

@@ -28,14 +28,15 @@ files if you wish to only include a portion of Style Guide in your
 project.
 
 ### React based
-We have chosen React as our preferred front-end framework. To that end, we
-maintain the sibling project UI Components, which implements Style Guide
+We have chosen React as our preferred front-end framework. Due to that, we
+maintain the sibling project UI Components, which implements the Style Guide
 as React Components. If you are building a feature in React, prefer this
 library because the components encapsulate logic, markup, and (in the
 future) styles. Repository Storybook On NPM.
+_____
 
 ### Installing and using Quantum
-Add as a dependency:
+Add Quantum as a dependency:
 ```sh
 yarn add @catho/quantum
 ```
@@ -45,7 +46,7 @@ yarn add @catho/quantum
 </Alert>
 
 ```js
-import { Button } from '@catho/quantum';
+import Button from '@catho/quantum/Button';
 
 export default () => <Button>Click here!</Buttom>;
 ```

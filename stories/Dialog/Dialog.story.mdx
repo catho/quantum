@@ -11,8 +11,8 @@ import {
 
 <Header title="Dialog">
     Dialog is a type of window with a backdrop that appears in front of all
-    content when displayed, normally used to provide information or ask for
-    some user interaciont.
+    content when displayed and blocks navigation while active. It is normally used to provide information or ask for
+    some user interacion.
 </Header>
 
 - [Importing and usage](#importing)
@@ -23,7 +23,8 @@ import {
 
 ```jsx
 ...
-import { Dialog, Button } from '@catho/quantum';
+import Dialog from '@catho/quantum/Dialog';
+import Button from '@catho/quantum/Button';
 
 export default function SimpleDialog() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -51,7 +52,8 @@ export default function SimpleDialog() {
 
 ```jsx
 ...
-import { Dialog, Button } from '@catho/quantum';
+import Dialog from '@catho/quantum/Dialog';
+import Button from '@catho/quantum/Button';
 
 export default function SimpleDialog() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -73,7 +75,8 @@ export default function SimpleDialog() {
 
 ```jsx
 ...
-import { Dialog, Button } from '@catho/quantum';
+import Dialog from '@catho/quantum/Dialog';
+import Button from '@catho/quantum/Button';
 
 export default function SimpleDialog() {
   const [openDialog, setOpenDialog] = useState(false);

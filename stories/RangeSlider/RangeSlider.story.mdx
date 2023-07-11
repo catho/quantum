@@ -18,8 +18,8 @@ import {
 
 <Header title="RangeSlider">
   RangeSlider is a component to select a value from a predefined range.
-  Through component props it's possible to set the minimum and maximum
-  values to be selected, format tooltip and label texts or disable the
+  Through component's props, it's possible to set the minimum and maximum
+  values, format tooltip, label texts, or disable the
   component itself.
 </Header>
 
@@ -30,7 +30,7 @@ import {
 ## <a id="importing"></a>Importing and usage
 
 ```js
-import { RangeSlider } from '@catho/quantum';
+import RangeSlider from '@catho/quantum/RangeSlider';
 ```
 
 <Canvas>
@@ -55,7 +55,7 @@ import { RangeSlider } from '@catho/quantum';
 
 ### Min & Max
 
-You can limit the available range to be selected
+You can limit the available range to be selected.
 
 <Canvas>
   <Story story={MinAndMax} />
@@ -63,7 +63,7 @@ You can limit the available range to be selected
 
 ### Range usage
 
-Set value prop with an object with "to" and "from" properties
+Set value prop with an object with "from" and "to" properties.
 
 <Canvas>
   <Story story={RangeUsage} />
@@ -80,8 +80,8 @@ It receives a function and should return a string. *You can hover example to see
 
 ### Controlled example
 
-It's needed an [controlled component](https://reactjs.org/docs/react-component.html#setstate) to change the RangeSlider value.
-The same is applied when is passed an object to value prop.
+It needs a [controlled component](https://reactjs.org/docs/react-component.html#setstate) to change the RangeSlider value.
+The same is applied when an object is used in value prop.
 
 <Canvas>
   <Story story={ControlledExample} />

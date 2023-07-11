@@ -17,26 +17,32 @@ import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, 
 />
 
 <Header title="Grid">
-  This Grid is based on &nbsp;
+  This Grid is based on&nbsp;
     <a href="https://material.io/design/layout/responsive-layout-grid.html">
     Material Design Grid definition
     </a>
-    &nbsp;It is adaptable to screen size and orientation and has columns
-    definitions to each resolution.
+    &nbsp;. It adapts to screen's size and orientation and has column
+    definitions according to each resolution.
 </Header>
 
-## Importing Grid
+- [Importing and usage](#importing)
+- [Examples](#examples)
+
+## <a id="importing"></a>Importing and Usage
 
 ```js
-import { Container, Row, Col, Hide } from '@catho/quantum';
+import Container from '@catho/quantum/Grid/sub-components/Container';
+import Col from '@catho/quantum/Grid/sub-components/Col';
+import Hide from '@catho/quantum/Grid/sub-components/Hide';
+import Row from '@catho/quantum/Grid/sub-components/Row';
 ```
 
 ## Usage
 
 #### Containers
 
-You may choose one of three containers or all to use in your projects.
-Note that, due to padding and more, neither container is nestable.
+You may choose one of the three containers or all of them to use in your projects.
+Note that, due to padding and more, none of the containers are nestable.
 
 Use `<Container></Container>` for a responsive fixed width
 container.
@@ -57,7 +63,7 @@ for a container with quantum breakpoints.
 ```
 
 Use `<Container fluid></Container>` for a full width
-container, spanning the entire width of your viewport.
+container, spanning for the entire width of your viewport.
 
 ```js
 <Container fluid>
@@ -67,14 +73,14 @@ container, spanning the entire width of your viewport.
 
 #### Row
 
-Rows are wrappers for columns. Each column has horizontal space `column gap`
+Rows are wrappers for columns. Each column has a horizontal space `column gap`
 (called a gutter) for controlling the space between them.
 
 #### Breakpoints
 
 Material Design provides responsive layouts based on the following column
 structures. Layouts using 4-column, 8-column, and 12-column grids are
-available for use across different screens, devices, and orientations.
+available to use across different screens, devices, and orientations.
 
 Each breakpoint range determines the number of columns, and recommended
 margins and gutters, for each display size.
@@ -90,7 +96,7 @@ The `<Col>` component accepts this props for breakpoints:
   <li>large</li>
 </ul>
 
-## Example
+## <a id="examples"></a>Examples
 
 #### Stacked-to-horizontal
 

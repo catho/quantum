@@ -1,24 +1,26 @@
 import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 
 import Header from '../shared/Header';
-
+import { Alert } from '../../components';
 import Pagination from '../../components/Pagination';
 import { Default, WithSeveralPagesAndActivePage, WithCustomNextAndPrevButtonText, HideLastPage, WithPageHref, MobileWithCustomHelperText, ControlledPagination } from './Pagination.stories.jsx';
 
 <Meta title="Pagination" component={Pagination} />
 
 <Header title="Pagination">
-    Add pagination buttons to help split up your long content into shorter, easier to understand blocks.
+    Pagination helps splitting up your long content into shorter, easy to understand blocks.
 </Header>
 
 - [Importing and usage](#importing)
 - [API](#api)
 - [Examples](#examples)
 
-The Pagination component will render a mobile-friendly component if the viewport width is below small breakpoint value else it will 
+The Pagination component will render a mobile-friendly component if the viewport width is below the small breakpoint value, or else it will 
 render a dotted component.
 
-** It's highly recommended to avoid pagination and use infinite scroll in small devices. **
+<Alert icon="info" skin="warning">
+It's highly recommended to avoid pagination and use infinite scroll in small devices.
+</Alert>
 
 ## <a id="importing"></a>Importing and usage
 
