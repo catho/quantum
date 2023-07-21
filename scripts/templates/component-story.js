@@ -1,4 +1,4 @@
-module.exports = componentName => [
+module.exports = (componentName) => [
   {
     content: `<!-- Generated with scripts/create-componnent.js -->
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';

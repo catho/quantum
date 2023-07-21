@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const useKeyPress = targetKey => {
+const useKeyPress = (targetKey) => {
   const [keyPressed, setKeyPressed] = useState(false);
 
   /* istanbul ignore next */

@@ -4,7 +4,7 @@ const hide = ({ hide: hideProp, theme: { breakpoints } }) =>
   hideProp &&
   []
     .concat([], hideProp)
-    .map(breakpoint => hideQueries(breakpoints)[breakpoint]());
+    .map((breakpoint) => hideQueries(breakpoints)[breakpoint]());
 
 const calcGutter = (gutter, noGuttersProp, onlyValue = false) => {
   let returnValue = '0';

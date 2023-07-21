@@ -17,7 +17,7 @@ export default {
   component: Modal,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { header = modalHeader(), footer = modalFooterSimple } = args;
   return (
     <Modal>
@@ -30,7 +30,7 @@ const Template = args => {
   );
 };
 
-const TemplateWithInput = args => {
+const TemplateWithInput = (args) => {
   const { header = modalHeader(), footer = modalFooterSimple } = args;
   return (
     <Modal>

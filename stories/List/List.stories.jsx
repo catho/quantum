@@ -6,7 +6,7 @@ import {
   exampleItemsWithIcon,
 } from './objectReference';
 
-const Template = args => <List {...args} />;
+const Template = (args) => <List {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

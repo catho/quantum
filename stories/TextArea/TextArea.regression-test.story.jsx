@@ -12,8 +12,8 @@ const parameters = {
   },
 };
 
-const Template = args => <TextArea {...args} />;
-const TemplateDark = args => <TextArea skin="dark" {...args} />;
+const Template = (args) => <TextArea {...args} />;
+const TemplateDark = (args) => <TextArea skin="dark" {...args} />;
 
 export const Default = Template.bind({});
 

@@ -26,7 +26,7 @@ const _colors = ({
   text: inverted && !stroked ? background : text,
 });
 
-const wrapperColors = props => {
+const wrapperColors = (props) => {
   const { background, text } = _colors(props);
   const {
     stroked,
@@ -58,7 +58,7 @@ const wrapperSize = ({
     large: `
     font-size: ${baseFontSize * 1.125}px;
   `,
-  }[propSize]);
+  })[propSize];
 
 const Wrapper = styled.div`
   border-radius: 8px;
@@ -85,7 +85,7 @@ const iconSize = ({ size, theme: { baseFontSize } }) =>
     small: `${baseFontSize * 0.875}px`,
     medium: `${baseFontSize * 1.125}px`,
     large: `${baseFontSize * 1.25}px`,
-  }[size]);
+  })[size];
 
 const CloseIcon = styled(Icon)`
   width: ${defaultBaseFontSize * 1.125}px;
@@ -105,7 +105,7 @@ const CloseButton = styled.button`
 
   ${CloseIcon} {
     font-size: ${iconSize} !important;
-    color: ${props => _colors(props).text};
+    color: ${(props) => _colors(props).text};
   }
 `;
 

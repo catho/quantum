@@ -83,7 +83,7 @@ describe('<SnackBar />', () => {
       <SnackBar skin="error" inverted />,
     ];
 
-    SNACKBARS.forEach(snackbar => {
+    SNACKBARS.forEach((snackbar) => {
       const { container } = render(snackbar);
       expect(container.firstChild).toMatchSnapshot();
     });

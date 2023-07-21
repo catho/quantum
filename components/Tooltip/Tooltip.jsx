@@ -16,7 +16,9 @@ const Tip = styled.div`
   position: absolute;
   line-height: 0;
   text-align: center;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out;
   z-index: 100;
 
   ${({
@@ -66,7 +68,7 @@ class Tooltip extends Component {
     this.state = { visible };
   }
 
-  isVisible = visible => this.setState({ visible });
+  isVisible = (visible) => this.setState({ visible });
 
   render() {
     const {

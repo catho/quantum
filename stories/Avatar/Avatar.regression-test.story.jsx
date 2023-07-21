@@ -8,7 +8,7 @@ export default {
   component: Avatar,
 };
 
-const Template = args => <Avatar {...args} />;
+const Template = (args) => <Avatar {...args} />;
 
 export const Default = Template.bind({});
 

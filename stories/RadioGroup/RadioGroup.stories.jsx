@@ -22,7 +22,7 @@ const getChildren = () =>
     />
   ));
 
-const Template = args => <RadioGroup name="name-radio" {...args} />;
+const Template = (args) => <RadioGroup name="name-radio" {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -23,7 +23,7 @@ const Popover = ({
 }) => {
   const [isVisible, setIsVisible] = useState(visible);
 
-  const handleVisible = newVisibleValue => {
+  const handleVisible = (newVisibleValue) => {
     setIsVisible(newVisibleValue);
 
     if (!isVisible) {

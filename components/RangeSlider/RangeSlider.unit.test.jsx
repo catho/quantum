@@ -28,7 +28,9 @@ describe('<RangeSlider />', () => {
 
   describe('tipFormatter prop', () => {
     it('should format Tooltip text and display it correctly when have just one handle', () => {
-      render(<RangeSlider value={10} tipFormatter={value => `R$ ${value}`} />);
+      render(
+        <RangeSlider value={10} tipFormatter={(value) => `R$ ${value}`} />,
+      );
 
       expect(screen.getByText('R$ 10')).toBeInTheDocument();
     });
@@ -37,7 +39,7 @@ describe('<RangeSlider />', () => {
       render(
         <RangeSlider
           value={{ from: 10, to: 40 }}
-          tipFormatter={value => `${value}km`}
+          tipFormatter={(value) => `${value}km`}
         />,
       );
 

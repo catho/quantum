@@ -8,6 +8,6 @@ export default {
   component: Breadcrumbs,
 };
 
-const Template = args => <Breadcrumbs items={defaultContent} {...args} />;
+const Template = (args) => <Breadcrumbs items={defaultContent} {...args} />;
 
 export const Default = Template.bind({});

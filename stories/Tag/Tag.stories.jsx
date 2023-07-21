@@ -1,6 +1,6 @@
 import Tag from '../../components/Tag';
 
-const Template = args => {
+const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Tag {...rest}>{Component}</Tag>;
 };

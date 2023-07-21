@@ -1,7 +1,7 @@
 import Proptypes from 'prop-types';
 import Icon from '../../Icon';
 
-const Arrow = props => {
+const Arrow = (props) => {
   const { className, onClick, theme, targeting, color } = props;
   const { colors: themeColors } = theme;
 

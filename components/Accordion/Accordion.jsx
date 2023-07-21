@@ -124,7 +124,9 @@ const StyledIcon = styled(Icon)`
 `;
 
 const AccordionItem = styled.li`
-  transition: border 0.2s linear, margin 0.2s linear;
+  transition:
+    border 0.2s linear,
+    margin 0.2s linear;
   overflow: hidden;
   ${({
     theme: {
@@ -188,7 +190,7 @@ class Accordion extends Component {
     this.setState({ items });
   }
 
-  toggleItem = indexToChange => {
+  toggleItem = (indexToChange) => {
     const { items } = this.state;
     const { keepOnlyOneOpen } = this.props;
     let newItems = items;
@@ -202,10 +204,10 @@ class Accordion extends Component {
     this.setAccordionItems(newItems);
   };
 
-  handleCustomItem = items =>
+  handleCustomItem = (items) =>
     items.map((item, index) => {
       const customItem = item;
-      customItem.onItemClick = i => {
+      customItem.onItemClick = (i) => {
         if (typeof item.onClick === 'function') {
           item.onClick();
         }
@@ -218,7 +220,7 @@ class Accordion extends Component {
 
   closeAllContents() {
     const { items } = this.state;
-    return items.map(item => ({ ...item, opened: false }));
+    return items.map((item) => ({ ...item, opened: false }));
   }
 
   toggleItemVisibility(newItems, indexToChange) {

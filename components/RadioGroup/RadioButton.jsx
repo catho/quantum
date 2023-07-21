@@ -117,7 +117,7 @@ class Radio extends Component {
             checked={checked}
             disabled={disabled}
             id={this._id}
-            onChange={e => onChange({ value, label }, e)}
+            onChange={(e) => onChange({ value, label }, e)}
             value={value}
             skin={skin}
             error={error}

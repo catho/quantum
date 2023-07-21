@@ -25,7 +25,7 @@ const itemsWithIconMock = [
   },
 ];
 
-const Template = args => {
+const Template = (args) => {
   const { items = itemsMock, ...rest } = args;
 
   return (

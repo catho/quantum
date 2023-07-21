@@ -5,7 +5,7 @@ const fs = require('fs');
 const componentTemplates = require('./templates/component');
 const componentStoryTemplates = require('./templates/component-story');
 
-const updateIndexFile = component => {
+const updateIndexFile = (component) => {
   const file = './components/index.js';
 
   const data = fs.readFileSync(file, {
@@ -22,7 +22,7 @@ const updateIndexFile = component => {
   fs.writeFileSync(file, dataUpdated, { encoding: 'utf-8' });
 };
 
-const updateIndexTSFile = component => {
+const updateIndexTSFile = (component) => {
   const file = './components/index.d.ts';
 
   const data = fs.readFileSync(file, {
@@ -64,18 +64,17 @@ try {
 
   const generatedComponentTemplates = componentTemplates(componentName);
 
-  generatedComponentTemplates.forEach(generatedTemplate => {
+  generatedComponentTemplates.forEach((generatedTemplate) => {
     fs.writeFileSync(
       `${componentDirectory}/${generatedTemplate.name}`,
       generatedTemplate.content,
     );
   });
 
-  const generatedComponentStoryTemplates = componentStoryTemplates(
-    componentName,
-  );
+  const generatedComponentStoryTemplates =
+    componentStoryTemplates(componentName);
 
-  generatedComponentStoryTemplates.forEach(generatedTemplate => {
+  generatedComponentStoryTemplates.forEach((generatedTemplate) => {
     fs.writeFileSync(
       `${componentStoryDirectory}/${generatedTemplate.name}`,
       generatedTemplate.content,

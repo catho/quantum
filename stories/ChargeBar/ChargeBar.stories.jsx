@@ -1,6 +1,6 @@
 import ChargeBar from '../../components/ChargeBar';
 
-const Template = args => <ChargeBar {...args} />;
+const Template = (args) => <ChargeBar {...args} />;
 
 export const Default = Template.bind({});
 

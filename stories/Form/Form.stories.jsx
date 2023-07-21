@@ -5,14 +5,14 @@ import Button from '../../components/Button';
 export const ValidationList = () => (
   <ul>
     {Object.getOwnPropertyNames(Validations)
-      .filter(name => !['name', 'length', 'prototype'].includes(name))
-      .map(validate => (
+      .filter((name) => !['name', 'length', 'prototype'].includes(name))
+      .map((validate) => (
         <li key={validate}>{validate}</li>
       ))}
   </ul>
 );
 
-const Template = args => {
+const Template = (args) => {
   const { children, ...rest } = args;
   return (
     <Form {...rest}>

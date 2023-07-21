@@ -2,8 +2,9 @@ const ARROW_SIZE = 6;
 const PERCENTAGE_X = 50;
 const BOX_MARGIN = 6;
 const PERCENTAGE_Y = 100;
-const tipPositionDistance = `calc(${PERCENTAGE_Y}% + ${ARROW_SIZE +
-  BOX_MARGIN}px);`;
+const tipPositionDistance = `calc(${PERCENTAGE_Y}% + ${
+  ARROW_SIZE + BOX_MARGIN
+}px);`;
 
 const upDownBorders = `
   border-left: ${ARROW_SIZE}px solid transparent;

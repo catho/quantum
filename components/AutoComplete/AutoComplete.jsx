@@ -175,27 +175,27 @@ const AutoComplete = ({
   } 
   ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
 
-  const filterItems = currentValue =>
-    suggestions.filter(suggestion => {
+  const filterItems = (currentValue) =>
+    suggestions.filter((suggestion) => {
       let option = normalizeChars(suggestion.toLowerCase());
       option = normalizeChars(option);
       return option.indexOf(normalizeChars(currentValue.toLowerCase())) > -1;
     });
 
-  const handleFilter = currentValue => {
+  const handleFilter = (currentValue) => {
     const filteredValues = filterItems(currentValue);
     setShowSuggestions(!!filteredValues.length);
     setFilterSuggestions(filteredValues);
   };
 
-  const handleChange = currentValue => {
+  const handleChange = (currentValue) => {
     setUserTypedValue(currentValue);
     onChange(currentValue);
     setCursor(0);
     handleFilter(currentValue);
   };
 
-  const handleClickOutside = event => {
+  const handleClickOutside = (event) => {
     if (!wrapperRef.current?.contains(event.target)) {
       setShowSuggestions(false);
     }
@@ -207,7 +207,7 @@ const AutoComplete = ({
     setShowSuggestions(true);
   };
 
-  const handleItemClick = item => {
+  const handleItemClick = (item) => {
     setUserTypedValue(item);
     onSelectedItem(item);
     setShowSuggestions(false);
@@ -351,7 +351,7 @@ const AutoComplete = ({
           aria-expanded={showSuggestions}
           value={userTypedValue}
           onClick={() => handleInputClick()}
-          onChange={e => handleChange(e.target.value)}
+          onChange={(e) => handleChange(e.target.value)}
           skin={skin}
           required={required}
         />

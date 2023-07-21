@@ -1,6 +1,6 @@
 import { Link } from '../../components';
 
-const Template = args => (
+const Template = (args) => (
   <Link href="_blank" rel="noreferrer" {...args}>
     Some link
   </Link>

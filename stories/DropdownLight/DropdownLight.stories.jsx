@@ -2,7 +2,7 @@ import { useState } from 'react';
 import DropdownLight from '../../components/DropdownLight/DropdownLight';
 import { itemsObjectMock, itemsStringMock, itemsWithImageMock } from './mock';
 
-const Template = args => {
+const Template = (args) => {
   const { items = itemsObjectMock, ...rest } = args;
   return <DropdownLight items={items} {...rest} />;
 };
@@ -64,7 +64,7 @@ export const SelectedItemControlled = () => {
       placeholder="Select a fruit"
       items={itemsObjectMock}
       selectedItem={selectedFruit}
-      onChange={item => setSelectedFruit(item)}
+      onChange={(item) => setSelectedFruit(item)}
     />
   );
 };

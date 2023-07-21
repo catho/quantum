@@ -17,7 +17,7 @@ describe('<SegmentedControl />', () => {
       <SegmentedControl items={threeContentsWithIcon} darkmode />,
     ];
 
-    SegmentedControls.forEach(segmentedControl => {
+    SegmentedControls.forEach((segmentedControl) => {
       const { container } = render(segmentedControl);
       expect(container.firstChild).toMatchSnapshot();
     });
@@ -79,7 +79,7 @@ describe('<SegmentedControl />', () => {
     render(<SegmentedControl items={defaultContentWithoutCheckedItems} />);
     const inputs = screen.getAllByRole('radio');
 
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
       expect(input).not.toHaveAttribute('checked');
     });
   });

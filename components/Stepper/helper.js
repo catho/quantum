@@ -2,7 +2,7 @@
 const MAXIMUM_STEPS = 6;
 const MINIMUM_STEPS = 1;
 
-const handlerValuePrepare = total => {
+const handlerValuePrepare = (total) => {
   if (total > MAXIMUM_STEPS && total > 0) return MAXIMUM_STEPS;
   if (total < MINIMUM_STEPS) return MINIMUM_STEPS;
 
@@ -26,7 +26,7 @@ const handleProgressPosition = (progressPercent, isOverHalf) => {
   return Math.round((position * 180) / 50) - 90;
 };
 
-const percentToDegrees = progressPercent => {
+const percentToDegrees = (progressPercent) => {
   const isOverHalf = progressPercent > 50;
   const firstDegree = isOverHalf ? -90 : 90;
   const secondDegree = handleProgressPosition(progressPercent, isOverHalf);

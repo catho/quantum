@@ -1,6 +1,6 @@
 import Button from '../../components/Button';
 
-const Template = args => {
+const Template = (args) => {
   const { children, ...rest } = args;
   return <Button {...rest}>{children}</Button>;
 };

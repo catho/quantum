@@ -7,7 +7,7 @@ export default {
   component: AutoComplete,
 };
 
-const Template = args => <AutoComplete {...args} />;
+const Template = (args) => <AutoComplete {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

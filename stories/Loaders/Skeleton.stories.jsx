@@ -1,6 +1,6 @@
 import Skeleton from '../../components/Skeleton';
 
-const Template = args => <Skeleton {...args} />;
+const Template = (args) => <Skeleton {...args} />;
 
 export const Default = Template.bind({});
 

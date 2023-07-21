@@ -62,7 +62,7 @@ const TextArea = forwardRef((props, ref) => {
     setCurrentValue(value);
   }, [value]);
 
-  const onChangeTextArea = event => {
+  const onChangeTextArea = (event) => {
     const { target } = event;
     const textareaLineHeightInPx = FONT_SIZE * LINE_HEIGHT;
     const previousNumberRows = target.rows;

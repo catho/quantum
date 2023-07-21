@@ -50,7 +50,7 @@ const getBackgroundAndTextColorBySkin = ({
   };
 };
 
-const a11yFocusTab = props => {
+const a11yFocusTab = (props) => {
   const { text } = getBackgroundAndTextColorBySkin(props);
 
   return `
@@ -75,7 +75,7 @@ const SnackBarDialog = styled.div`
     margin: 0 ${xsmall}px;
   `}
 
-  ${props => {
+  ${(props) => {
     const { background, text } = getBackgroundAndTextColorBySkin(props);
     return css`
       background-color: ${background};
@@ -217,12 +217,12 @@ class SnackBar extends Component {
     clearTimeout(this.closeEventtimeOut);
   }
 
-  handleKeyPress = event => {
+  handleKeyPress = (event) => {
     const { onClose } = this.props;
     if (event.key === 'Enter') onClose();
   };
 
-  objectFocus = element => {
+  objectFocus = (element) => {
     if (element && element !== null) element.focus();
   };
 

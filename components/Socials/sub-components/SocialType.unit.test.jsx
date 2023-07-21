@@ -22,7 +22,7 @@ describe('<SocialType />', () => {
       />,
     ];
 
-    SOCIAL_TYPES.forEach(socialType => {
+    SOCIAL_TYPES.forEach((socialType) => {
       expect(render(socialType).asFragment()).toMatchSnapshot();
     });
   });

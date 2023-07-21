@@ -1,7 +1,7 @@
 import Popover from '../../components/Popover';
 import { Row, Col } from '../../components';
 
-const Template = args => {
+const Template = (args) => {
   const { ...rest } = args;
   return (
     <Row

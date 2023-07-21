@@ -23,7 +23,7 @@ const itemsWithImageMock = [
   },
 ];
 
-const Template = args => {
+const Template = (args) => {
   const { items = itemsMock, ...rest } = args;
   return <Dropdown {...rest} items={items} />;
 };
@@ -82,7 +82,7 @@ export const Controlled = () => {
       placeholder="Select a fruit"
       items={fruits}
       selectedItem={selectedFruit}
-      onChange={item => setSelectedFruit(item)}
+      onChange={(item) => setSelectedFruit(item)}
     />
   );
 };

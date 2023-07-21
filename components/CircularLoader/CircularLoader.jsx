@@ -83,7 +83,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const CircularLoader = props => {
+const CircularLoader = (props) => {
   const {
     size,
     skin,

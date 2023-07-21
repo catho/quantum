@@ -33,10 +33,10 @@ const columnGridLess = ({
   const offsetStyle = offset
     ? `
     margin-left: calc(${calculedOffset.toFixed(3)}% + ${
-        calculedGutter > 0
-          ? `(${calculedGutter}px / (${maxColumns} / ${offset})`
-          : `0px`
-      } ) );
+      calculedGutter > 0
+        ? `(${calculedGutter}px / (${maxColumns} / ${offset})`
+        : `0px`
+    } ) );
 
     &:first-child {
       margin-left: 0px;
@@ -64,8 +64,9 @@ const columnGridLess = ({
     calculedGutter > 0
       ? `calc(${calculedWidth.toFixed(
           3,
-        )}% - ${calculedGutter}px + (${calculedGutter}px / (${maxColumns} / ${size ||
-          maxColumns}) ) )`
+        )}% - ${calculedGutter}px + (${calculedGutter}px / (${maxColumns} / ${
+          size || maxColumns
+        }) ) )`
       : `${calculedWidth.toFixed(3)}%`;
 
   return `
@@ -137,8 +138,8 @@ const columnPosition = (
 };
 
 const Col = styled.div`
-  ${props =>
-    Object.keys(props.theme.breakpoints).map(breakpoint =>
+  ${(props) =>
+    Object.keys(props.theme.breakpoints).map((breakpoint) =>
       columnPosition(props, breakpoint),
     )};
 

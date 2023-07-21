@@ -10,11 +10,11 @@ export default {
   component: List,
 };
 
-const Template = args => <List items={exampleItemsDefault} {...args} />;
-const TemplateWithIcon = args => (
+const Template = (args) => <List items={exampleItemsDefault} {...args} />;
+const TemplateWithIcon = (args) => (
   <List items={exampleItemsWithIcon} {...args} />
 );
-const TemplateWithHeaderAndSubHeader = args => (
+const TemplateWithHeaderAndSubHeader = (args) => (
   <List items={exampleItemsWithHeaderAndSubHeader} {...args} />
 );
 
@@ -47,9 +47,8 @@ UnorderedWithBulletsAndIcons.args = {
   ...UnorderedWithBullets.args,
 };
 
-export const UnorderedWithHeaderAndSubheader = TemplateWithHeaderAndSubHeader.bind(
-  {},
-);
+export const UnorderedWithHeaderAndSubheader =
+  TemplateWithHeaderAndSubHeader.bind({});
 UnorderedWithHeaderAndSubheader.args = {
   ...UnorderedWithBullets.args,
 };
@@ -70,9 +69,8 @@ OrderedWithIcons.args = {
   ...Ordered.args,
 };
 
-export const OrderedWithHeaderAndSubheader = TemplateWithHeaderAndSubHeader.bind(
-  {},
-);
+export const OrderedWithHeaderAndSubheader =
+  TemplateWithHeaderAndSubHeader.bind({});
 OrderedWithHeaderAndSubheader.args = {
   ...Ordered.args,
 };

@@ -186,7 +186,7 @@ const Breadcrumbs = ({ items, theme }) => {
           </ExpandButton>
         </BreadcrumbItem>
 
-        {restItems.map(item => (
+        {restItems.map((item) => (
           <BreadcrumbItem
             key={item.label}
             theme={theme}

@@ -11,16 +11,17 @@ const Wrapper = styled.div`
 `;
 
 const Icon = styled(BaseIcon).withConfig({
-  shouldForwardProp: prop => prop !== 'inverted',
+  shouldForwardProp: (prop) => prop !== 'inverted',
 })`
-  color: ${props => (props.inverted ? colors.neutral[900] : colors.neutral[0])};
+  color: ${(props) =>
+    props.inverted ? colors.neutral[900] : colors.neutral[0]};
 `;
 
 const IconDot = styled.span`
   position: absolute;
   width: 7px;
   height: 7px;
-  border: solid 2px ${props => colors.neutral[props.inverted ? 0 : 1000]};
+  border: solid 2px ${(props) => colors.neutral[props.inverted ? 0 : 1000]};
   top: 0;
   right: 0;
   border-radius: 100%;

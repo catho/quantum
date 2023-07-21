@@ -9,8 +9,8 @@ export default {
   component: Carousel,
 };
 
-const Template = args => <Carousel cards={content} {...args} />;
-const TemplateWithLongText = args => (
+const Template = (args) => <Carousel cards={content} {...args} />;
+const TemplateWithLongText = (args) => (
   <Carousel cards={contentWithLongTexts} {...args} />
 );
 

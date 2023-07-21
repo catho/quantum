@@ -23,7 +23,7 @@ describe('Input component', () => {
       <Input.Password />,
     ];
 
-    INPUTS.forEach(input => {
+    INPUTS.forEach((input) => {
       const { container } = render(input);
       expect(container).toMatchSnapshot();
     });

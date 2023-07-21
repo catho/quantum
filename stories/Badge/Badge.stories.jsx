@@ -1,7 +1,7 @@
 import Badge from '../../components/Badge';
 import Button from '../../components/Button';
 
-const Template = args => {
+const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Badge {...rest}>{Component}</Badge>;
 };

@@ -39,7 +39,7 @@ describe('<List />', () => {
 
   it('render six Item components', () => {
     render(<List items={items} />);
-    items.forEach(item => {
+    items.forEach((item) => {
       expect(screen.getByText(item)).toBeInTheDocument();
     });
   });

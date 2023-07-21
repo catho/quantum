@@ -34,10 +34,10 @@ const InfiniteScroll = forwardRef(
       }
     };
 
-    const handleMutations = useCallback(mutations => {
+    const handleMutations = useCallback((mutations) => {
       if (mutations?.length > 1) {
         const wrapperEl = wrapperRef.current;
-        setScrollHeight(state => wrapperEl.scrollHeight - state);
+        setScrollHeight((state) => wrapperEl.scrollHeight - state);
       }
     }, []);
 
