@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 import hexToRgba from './hexToRgba';
 
 const SHADOWS = {
@@ -125,10 +126,8 @@ const shadowWithTheme = (
 };
 
 const shadow =
-  // eslint-disable-next-line default-param-last
-
-    (elevation = 0, color) =>
-    ({ theme }) =>
-      shadowWithTheme(theme, elevation, color);
+  (elevation = 0, color) =>
+  ({ theme }) =>
+    shadowWithTheme(theme, elevation, color);
 
 export default shadow;
