@@ -1,7 +1,7 @@
 const matchMediaMock = (match = false) =>
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
-    value: jest.fn().mockImplementation(query => ({
+    value: jest.fn().mockImplementation((query) => ({
       matches: match,
       media: query,
       onchange: null,
@@ -13,4 +13,4 @@ const matchMediaMock = (match = false) =>
     })),
   });
 
-export { matchMediaMock as default };
+export default matchMediaMock;

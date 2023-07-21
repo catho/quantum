@@ -62,7 +62,9 @@ describe('Dialog', () => {
     const onCloseTimeout = jest.fn();
     render(<Dialog onClose={onCloseTimeout} closeOnTime={1} />);
 
-    await new Promise(r => setTimeout(r, 1000));
+    await new Promise((r) => {
+      setTimeout(r, 1000);
+    });
 
     expect(onCloseTimeout).toHaveBeenCalled();
   });

@@ -93,17 +93,15 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => {
   };
 
   return (
-    <>
-      {show && (
-        <Wrapper theme={theme} {...rest} role="alert">
-          <Content>
-            {icon && <AlertIcon name={icon} />}
-            {children && <span>{children}</span>}
-            {onClose && <CloseButton theme={theme} onClick={handleClose} />}
-          </Content>
-        </Wrapper>
-      )}
-    </>
+    show && (
+      <Wrapper theme={theme} {...rest} role="alert">
+        <Content>
+          {icon && <AlertIcon name={icon} />}
+          {children && <span>{children}</span>}
+          {onClose && <CloseButton theme={theme} onClick={handleClose} />}
+        </Content>
+      </Wrapper>
+    )
   );
 };
 

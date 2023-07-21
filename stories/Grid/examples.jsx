@@ -85,23 +85,19 @@ export const HideExample = () => (
   </>
 );
 export const NoGuttersExample = () => (
-  <>
-    <Row no-gutters>
-      <StyledCol medium={6}>medium={6}</StyledCol>
-      <StyledCol medium={6}>medium={6}</StyledCol>
-    </Row>
-  </>
+  <Row no-gutters>
+    <StyledCol medium={6}>medium={6}</StyledCol>
+    <StyledCol medium={6}>medium={6}</StyledCol>
+  </Row>
 );
 export const OffsetExample = () => (
-  <>
-    <Row>
-      <StyledCol small={2} small-offset={2}>
-        small={2} small-offset={2}
-      </StyledCol>
-      <StyledCol small={2}>small={2}</StyledCol>
-      <StyledCol small={2}>small={2}</StyledCol>
-      <StyledCol small={2}>small={2}</StyledCol>
-      <StyledCol small={2}>small={2}</StyledCol>
-    </Row>
-  </>
+  <Row>
+    <StyledCol small={2} small-offset={2}>
+      small={2} small-offset={2}
+    </StyledCol>
+    <StyledCol small={2}>small={2}</StyledCol>
+    <StyledCol small={2}>small={2}</StyledCol>
+    <StyledCol small={2}>small={2}</StyledCol>
+    <StyledCol small={2}>small={2}</StyledCol>
+  </Row>
 );

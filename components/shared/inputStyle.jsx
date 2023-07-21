@@ -105,5 +105,7 @@ export {
   REQUIRED_MARK_STYLE,
   ERROR_MESSAGE_STYLE,
   AUTO_FILL_STYLE,
-  INPUT_STYLE as default,
+  INPUT_STYLE,
 };
+
+export default INPUT_STYLE;

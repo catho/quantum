@@ -124,7 +124,10 @@ const shadowWithTheme = (
   return `box-shadow: ${umbra}, ${penumbra}, ${ambient};`;
 };
 
-const shadow = (elevation = 0, color) => ({ theme }) =>
-  shadowWithTheme(theme, elevation, color);
+// eslint-disable-next-line default-param-last
+const shadow =
+  (elevation = 0, color) =>
+  ({ theme }) =>
+    shadowWithTheme(theme, elevation, color);
 
 export default shadow;

@@ -25,7 +25,7 @@ const renderResponsivesGridless = ({
   theme: { breakpoints, gutter },
   'no-gutters': noGutters,
 }) =>
-  Object.keys(breakpoints).map(breakpoint =>
+  Object.keys(breakpoints).map((breakpoint) =>
     renderBreakpoint(
       {
         theme: {
@@ -60,7 +60,7 @@ const renderResponsivesGrid = ({
   theme: { breakpoints, gutter },
   'no-gutters': noGutters,
 }) =>
-  Object.keys(breakpoints).map(breakpoint =>
+  Object.keys(breakpoints).map((breakpoint) =>
     renderColsProps(
       {
         theme: {
@@ -109,15 +109,15 @@ class Row extends Component {
   render() {
     const { children, 'no-gutters': rowNoGutters, ...rest } = this.props;
 
-    const isNumberOrString = child =>
+    const isNumberOrString = (child) =>
       typeof child === 'string' || typeof child === 'number';
 
-    const applyNoGutters = child => {
+    const applyNoGutters = (child) => {
       if (isNumberOrString(child)) {
         return child;
       }
 
-      const { 'no-gutters': childNoGutters } = child?.props;
+      const { 'no-gutters': childNoGutters } = child.props;
 
       const ChildWithNoGutters = cloneElement(child, {
         'no-gutters': childNoGutters || rowNoGutters || undefined,
@@ -125,11 +125,11 @@ class Row extends Component {
       return ChildWithNoGutters;
     };
 
-    const applyChildrenProps = c =>
+    const applyChildrenProps = (c) =>
       Array.isArray(c)
         ? c
-            .filter(child => isValidElement(child) || isNumberOrString(child))
-            .map(child => applyNoGutters(child))
+            .filter((child) => isValidElement(child) || isNumberOrString(child))
+            .map((child) => applyNoGutters(child))
         : applyNoGutters(c);
 
     return (

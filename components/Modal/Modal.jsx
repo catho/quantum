@@ -76,6 +76,16 @@ const ModalWrapper = styled.div`
 
 ModalWrapper.displayName = 'ModalWrapper';
 class Modal extends Component {
+  static Header = Header;
+
+  static HeaderText = HeaderText;
+
+  static Content = Content;
+
+  static Title = Title;
+
+  static Footer = Footer;
+
   parent = document.body;
 
   constructor(props) {
@@ -105,14 +115,14 @@ class Modal extends Component {
       [tabindex="0"]`,
     );
     const firstFocusableIndex = [...this.focusableElements].findIndex(
-      f => f.nodeName === 'INPUT',
+      (f) => f.nodeName === 'INPUT',
     ); // eslint-disable-line
-    this.firstFocusableElement = this.focusableElements[
-      firstFocusableIndex > -1 ? firstFocusableIndex : 0
-    ];
-    this.lastFocusableElement = this.focusableElements[
-      this.focusableElements.length - 1
-    ];
+    this.firstFocusableElement =
+      this.focusableElements[
+        firstFocusableIndex > -1 ? firstFocusableIndex : 0
+      ];
+    this.lastFocusableElement =
+      this.focusableElements[this.focusableElements.length - 1];
 
     this.firstFocusableElement.focus();
 
@@ -129,7 +139,7 @@ class Modal extends Component {
     window.removeEventListener('keydown', this.handleEscKey);
   }
 
-  setBodyOverflow = value => {
+  setBodyOverflow = (value) => {
     if (isSSR()) return;
     const { body } = document;
     body.style.overflow = value;
@@ -152,21 +162,21 @@ class Modal extends Component {
     }
   };
 
-  handleBackwardTab = e => {
+  handleBackwardTab = (e) => {
     if (document.activeElement === this.firstFocusableElement) {
       e.preventDefault();
       this.lastFocusableElement.focus();
     }
   };
 
-  handleFowardTab = e => {
+  handleFowardTab = (e) => {
     if (document.activeElement === this.lastFocusableElement) {
       e.preventDefault();
       this.firstFocusableElement.focus();
     }
   };
 
-  handleKeyDown = e => {
+  handleKeyDown = (e) => {
     if (e.key === 'Tab') {
       if (e.shiftKey) {
         return this.handleBackwardTab(e);
@@ -178,24 +188,9 @@ class Modal extends Component {
     return false;
   };
 
-  static Header = Header;
-
-  static HeaderText = HeaderText;
-
-  static Content = Content;
-
-  static Title = Title;
-
-  static Footer = Footer;
-
   render() {
-    const {
-      children,
-      onClose,
-      closeButtonAriaLabel,
-      theme,
-      ...rest
-    } = this.props;
+    const { children, onClose, closeButtonAriaLabel, theme, ...rest } =
+      this.props;
 
     return ReactDOM.createPortal(
       <ModalWrapper
