@@ -7,7 +7,9 @@ import { colors, spacing } from '../../shared/theme';
 const Info = styled.span`
   border-bottom: 1px solid;
   border-top: 1px solid;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
 
   ${({
     theme: {

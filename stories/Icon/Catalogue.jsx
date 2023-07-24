@@ -14,7 +14,7 @@ class Catalogue extends Component {
   filterIcons = ({ target: { value } }) => {
     const { icons } = this.state;
     const filtered = value
-      ? icons.filter(name => name.indexOf(value) >= 0)
+      ? icons.filter((name) => name.indexOf(value) >= 0)
       : icons;
 
     this.setState({ filtered });
@@ -45,7 +45,7 @@ class Catalogue extends Component {
           </Col>
         </Row>
         <Row>
-          {filtered.map(name => (
+          {filtered.map((name) => (
             <IconToClipboard name={name} key={name} />
           ))}
         </Row>

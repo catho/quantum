@@ -43,7 +43,9 @@ const Switch = styled.div`
     left: 0;
     top: 0;
     width: 42px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    transition:
+      background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out,
       transform 0.2s ease-in-out;
   }
 

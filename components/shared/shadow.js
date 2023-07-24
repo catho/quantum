@@ -1,3 +1,4 @@
+/* eslint-disable default-param-last */
 import hexToRgba from './hexToRgba';
 
 const SHADOWS = {
@@ -124,7 +125,9 @@ const shadowWithTheme = (
   return `box-shadow: ${umbra}, ${penumbra}, ${ambient};`;
 };
 
-const shadow = (elevation = 0, color) => ({ theme }) =>
-  shadowWithTheme(theme, elevation, color);
+const shadow =
+  (elevation = 0, color) =>
+  ({ theme }) =>
+    shadowWithTheme(theme, elevation, color);
 
 export default shadow;

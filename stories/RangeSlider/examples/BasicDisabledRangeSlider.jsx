@@ -1,6 +1,6 @@
 import RangeSlider from '../../../components/RangeSlider';
 
-const BasicDisabledRangeSlider = aditionalProps => (
+const BasicDisabledRangeSlider = (aditionalProps) => (
   <RangeSlider disabled defaultValue={50} {...aditionalProps} />
 );
 

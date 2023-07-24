@@ -17,7 +17,7 @@ const marks = [
   },
 ];
 
-const Template = args => <RangeSlider {...args} />;
+const Template = (args) => <RangeSlider {...args} />;
 
 export const Default = Template.bind({});
 
@@ -48,7 +48,7 @@ RangeUsage.args = {
 
 export const CustomTooltipText = Template.bind({});
 CustomTooltipText.args = {
-  tipFormatter: value => `R$ ${value}`,
+  tipFormatter: (value) => `R$ ${value}`,
 };
 
 export const ControlledExample = () => {

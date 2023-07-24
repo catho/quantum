@@ -1,6 +1,6 @@
 import TextArea from '../../components/TextArea';
 
-const Template = args => <TextArea {...args} />;
+const Template = (args) => <TextArea {...args} />;
 
 export const Default = Template.bind({});
 

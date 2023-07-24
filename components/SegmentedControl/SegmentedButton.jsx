@@ -20,7 +20,7 @@ HiddenInput.displayName = 'HiddenInput';
 
 const uniqId = createUniqId('segmented-button-');
 
-const a11yCheckedIndex = checked =>
+const a11yCheckedIndex = (checked) =>
   checked ? { tabIndex: -1, className: 'input-checked' } : { tabIndex: 0 };
 
 const SegmentedButton = ({
@@ -49,7 +49,7 @@ const SegmentedButton = ({
         name={name}
         value={value}
         checked={!!checked}
-        onChange={e => onChange(e, { value, label })}
+        onChange={(e) => onChange(e, { value, label })}
       />
       {icon ? <Icon name={icon} aria-label={label} /> : label}
     </LabelButton>

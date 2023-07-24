@@ -61,7 +61,7 @@ describe('Checkbox group', () => {
     expect(
       render(
         <CheckboxGroup>
-          {mixedOptions.map(item => (
+          {mixedOptions.map((item) => (
             <CheckboxGroup.Checkbox
               key={item.name}
               name={item.name}
@@ -130,7 +130,7 @@ describe('Checkbox group', () => {
 
     const uncheckedItems = screen.getAllByRole('checkbox', { checked: false });
 
-    uncheckedItems.forEach(item => {
+    uncheckedItems.forEach((item) => {
       fireEvent.click(item);
     });
 
@@ -142,7 +142,7 @@ describe('Checkbox group', () => {
 
     const checkedItems = screen.getAllByRole('checkbox', { checked: true });
 
-    checkedItems.forEach(item => {
+    checkedItems.forEach((item) => {
       fireEvent.click(item);
     });
 
@@ -196,7 +196,7 @@ describe('Checkbox group with checkbox button', () => {
       render(
         <CheckboxGroup>
           <>
-            {mixedOptions.map(item => (
+            {mixedOptions.map((item) => (
               <CheckboxGroup.Button
                 key={item.name}
                 name={item.name}
@@ -302,7 +302,7 @@ describe('Checkbox group with checkbox button', () => {
 
     const uncheckedItems = screen.getAllByRole('checkbox', { checked: false });
 
-    uncheckedItems.forEach(item => {
+    uncheckedItems.forEach((item) => {
       fireEvent.click(item);
     });
 
@@ -320,7 +320,7 @@ describe('Checkbox group with checkbox button', () => {
 
     const checkedItems = screen.getAllByRole('checkbox', { checked: true });
 
-    checkedItems.forEach(item => {
+    checkedItems.forEach((item) => {
       fireEvent.click(item);
     });
 
@@ -331,7 +331,7 @@ describe('Checkbox group with checkbox button', () => {
     render(
       <CheckboxGroup onChange={onChangeMock}>
         <>
-          {mixedOptions.map(item => (
+          {mixedOptions.map((item) => (
             <CheckboxGroup.Button
               key={item.name}
               name={item.name}
@@ -352,7 +352,7 @@ describe('Checkbox group with checkbox button', () => {
 
     const items = screen.getAllByRole('checkbox');
 
-    items.forEach(item => {
+    items.forEach((item) => {
       fireEvent.click(item);
     });
 

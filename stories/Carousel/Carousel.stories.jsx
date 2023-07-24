@@ -4,7 +4,7 @@ import {
   contentWithLongTexts,
 } from '../../test-utils/mocks/Carousel/Content';
 
-const Template = args => {
+const Template = (args) => {
   const { cards = content, ...rest } = args;
   return <Carousel cards={cards} {...rest} />;
 };

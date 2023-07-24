@@ -5,7 +5,7 @@ export default {
   component: Toggle,
 };
 
-const Template = args => <Toggle {...args} />;
+const Template = (args) => <Toggle {...args} />;
 
 export const Default = Template.bind({});
 

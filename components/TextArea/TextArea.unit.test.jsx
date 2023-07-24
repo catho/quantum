@@ -24,7 +24,7 @@ describe('TextArea component', () => {
       <TextArea isAutoResize />,
     ];
 
-    TEXT_AREAS.forEach(textArea => {
+    TEXT_AREAS.forEach((textArea) => {
       const { container } = render(textArea);
       expect(container.firstChild).toMatchSnapshot();
     });

@@ -1,13 +1,13 @@
 import { Popover, Button, Row, Col } from '../../components';
 
-const handleDirectionPosition = direction => {
+const handleDirectionPosition = (direction) => {
   if (direction === 'right') return { paddingTop: '80px', paddingLeft: '20px' };
   if (direction === 'bottom')
     return { paddingTop: '20px', paddingLeft: '160px' };
   return { paddingTop: '80px', paddingLeft: '160px' };
 };
 
-const Template = args => {
+const Template = (args) => {
   const { direction, skin } = args;
 
   return (

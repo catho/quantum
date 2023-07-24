@@ -29,7 +29,7 @@ export default {
   component: RadioGroup,
 };
 
-const Template = args => (
+const Template = (args) => (
   <RadioGroup name="groceries" options={options} {...args} />
 );
 

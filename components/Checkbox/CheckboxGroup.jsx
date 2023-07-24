@@ -12,7 +12,7 @@ const Group = styled(FieldGroup)`
 `;
 
 class CheckboxGroup extends Component {
-  _onChange = event => {
+  _onChange = (event) => {
     const {
       target: { checked, name },
     } = event;
@@ -22,7 +22,7 @@ class CheckboxGroup extends Component {
     const items = Children.map(children, ({ props }) => props) || options;
 
     onChange(
-      items.map(item => (item.name === name ? { ...item, checked } : item)),
+      items.map((item) => (item.name === name ? { ...item, checked } : item)),
       event,
     );
   };
@@ -33,11 +33,12 @@ class CheckboxGroup extends Component {
 
     const checkboxes =
       children ||
-      options.map(option => <ItemType {...option} key={option.name} />);
+      options.map((option) => <ItemType {...option} key={option.name} />);
 
     return (
       <Group theme={theme}>
         <CheckboxGroupContext.Provider
+          // eslint-disable-next-line react/jsx-no-constructed-context-values
           value={{
             error: Boolean(error),
             onChange: this._onChange,

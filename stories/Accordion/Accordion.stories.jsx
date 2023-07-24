@@ -2,7 +2,7 @@ import mockedProps from '../../test-utils/mocks/Accordion/mock';
 
 import { Accordion } from '../../components';
 
-const Template = args => <Accordion {...mockedProps} {...args} />;
+const Template = (args) => <Accordion {...mockedProps} {...args} />;
 
 export const Default = Template.bind({});
 

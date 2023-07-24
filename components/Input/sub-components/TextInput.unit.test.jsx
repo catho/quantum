@@ -29,7 +29,7 @@ describe('Input component', () => {
       <TextInput skin="dark" error="Error message" disabled />,
     ];
 
-    INPUTS.forEach(input => {
+    INPUTS.forEach((input) => {
       const { container } = render(input);
       expect(container).toMatchSnapshot();
     });

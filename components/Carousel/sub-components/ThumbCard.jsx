@@ -37,13 +37,11 @@ const Thumb = styled.img`
 `;
 
 const ThumbCard = ({ card, theme }) => (
-  <>
-    <AdaptedCard theme={theme}>
-      <Content>
-        <Thumb src={card.imagePath} alt={card.imageDescription} />
-      </Content>
-    </AdaptedCard>
-  </>
+  <AdaptedCard theme={theme}>
+    <Content>
+      <Thumb src={card.imagePath} alt={card.imageDescription} />
+    </Content>
+  </AdaptedCard>
 );
 
 ThumbCard.defaultProps = {

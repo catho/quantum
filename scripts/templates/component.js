@@ -1,4 +1,4 @@
-module.exports = componentName => [
+module.exports = (componentName) => [
   {
     content: `// Generated with scripts/create-component.js
 import PropTypes from 'prop-types';

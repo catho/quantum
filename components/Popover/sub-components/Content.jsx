@@ -77,7 +77,9 @@ const PopoverContent = styled.div`
   ${({ placement }) => contentPositionVariations[placement]};
 
   line-height: 0;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    visibility 0.2s ease-in-out;
   z-index: 100;
 
   &:before {

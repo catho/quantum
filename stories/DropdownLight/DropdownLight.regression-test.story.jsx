@@ -6,7 +6,7 @@ export default {
   component: DropdownLight,
 };
 
-const Template = args => <DropdownLight items={itemsObjectMock} {...args} />;
+const Template = (args) => <DropdownLight items={itemsObjectMock} {...args} />;
 
 export const Default = Template.bind({});
 

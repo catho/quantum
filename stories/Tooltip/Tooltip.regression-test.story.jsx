@@ -1,6 +1,6 @@
 import { Tooltip, Button, Row, Col } from '../../components';
 
-const decorator = Story => (
+const decorator = (Story) => (
   <Row style={{ padding: '50px 180px' }}>
     <Col>
       <Story />
@@ -14,7 +14,7 @@ export default {
   decorators: [decorator],
 };
 
-const Template = args => (
+const Template = (args) => (
   <Tooltip text="This is a hint." visible {...args}>
     <Button>Hover me</Button>
   </Tooltip>

@@ -326,12 +326,6 @@ const theme = {
   baseFontSize,
 };
 
-export {
-  breakpoints,
-  gutter,
-  colors,
-  components,
-  spacing,
-  baseFontSize,
-  theme as default,
-};
+export { breakpoints, gutter, colors, components, spacing, baseFontSize };
+
+export default theme;

@@ -37,7 +37,7 @@ export default {
     /\d/,
   ],
   date: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
-  phone: userInput => {
+  phone: (userInput) => {
     const numbers = userInput.match(/\d/g);
     const numberLength = numbers ? numbers.join('').length : 0;
 

@@ -1,6 +1,6 @@
 import Stepper from '../../components/Stepper';
 
-const Template = args => {
+const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Stepper {...rest}>{Component}</Stepper>;
 };

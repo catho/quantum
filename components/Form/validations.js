@@ -4,8 +4,8 @@ const msg = {
   CEP: 'CEP inválido',
   DATE: 'Data inválida',
   EMAIL: 'E-mail inválido',
-  MINLENGTH: min => `Mínimo de ${min} caracteres`,
-  MAXLENGTH: max => `Maximo de ${max} caracteres`,
+  MINLENGTH: (min) => `Mínimo de ${min} caracteres`,
+  MAXLENGTH: (max) => `Maximo de ${max} caracteres`,
 };
 
 function removeNonDigit(str) {
@@ -30,7 +30,7 @@ class Validations {
       }
     }
 
-    const validPosition = position => {
+    const validPosition = (position) => {
       let sum = 0;
       let rev;
 
@@ -76,12 +76,14 @@ class Validations {
   }
 
   static Email({ value }) {
-    const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const pattern =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return pattern.test(value) ? '' : msg.EMAIL;
   }
 
   static EmailBlockAccent({ value }) {
-    const pattern = /^(([^<>()[\]\\.,;:\s@À-úûüũÿ"]+(\.[^<>()[\]\\.,;:\s@À-úûüũÿ"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const pattern =
+      /^(([^<>()[\]\\.,;:\s@À-úûüũÿ"]+(\.[^<>()[\]\\.,;:\s@À-úûüũÿ"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return pattern.test(value) ? '' : msg.EMAIL;
   }
 }

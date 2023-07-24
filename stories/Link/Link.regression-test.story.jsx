@@ -6,9 +6,9 @@ export default {
   component: Link,
 };
 
-const Template = args => <Link {...args}>Example Link</Link>;
+const Template = (args) => <Link {...args}>Example Link</Link>;
 
-const DarkSkinTemplate = args => (
+const DarkSkinTemplate = (args) => (
   <DarkDiv>
     <Link {...args}>Example Link</Link>
   </DarkDiv>

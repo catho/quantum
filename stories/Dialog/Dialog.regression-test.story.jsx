@@ -6,7 +6,7 @@ export default {
   component: Dialog,
 };
 
-const Template = args => <Dialog {...args} />;
+const Template = (args) => <Dialog {...args} />;
 
 export const WithContent = Template.bind({});
 WithContent.args = {

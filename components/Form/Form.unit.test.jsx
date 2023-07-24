@@ -152,7 +152,7 @@ describe('Form component ', () => {
       ).not.toBeInTheDocument();
     });
 
-    validationTests.forEach(test => {
+    validationTests.forEach((test) => {
       it(`should validate ${test.validationName}`, async () => {
         render(FormWithValidations());
         const input = screen.getByRole('textbox', { name: test.fieldName });

@@ -98,7 +98,6 @@ const RadialProgressOverlay = styled.div`
     width: ${DESKTOP_OVERLAY_WIDTH}px;
     height: ${DESKTOP_OVERLAY_HEIGHT}px;
   `};
-
 `;
 
 const TextWrapper = styled.div`

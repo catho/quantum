@@ -167,8 +167,8 @@ SelectedItemLabel.displayName = 'SelectedItemLabel';
 DropItemImage.displayName = 'DropItemImage';
 DropContainer.displayName = 'DropContainer';
 
-const _getValue = item => (item ? item.value || item.label || item : '');
-const _getLabel = item => (item ? item.label || item.value || item : '');
+const _getValue = (item) => (item ? item.value || item.label || item : '');
+const _getLabel = (item) => (item ? item.label || item.value || item : '');
 const _getImage = ({ img }) => img;
 const _getImageAlt = ({ alt }) => alt;
 const _isEqual = (selected, item) => _getValue(selected) === _getValue(item);
@@ -183,7 +183,7 @@ const itemPropType = PropTypes.oneOfType([
 
 const List = ({ theme, items, selectedItem, getItemProps }) => (
   <DropList theme={theme}>
-    {items.map(item => (
+    {items.map((item) => (
       <DropItem
         theme={theme}
         {...getItemProps({
@@ -270,8 +270,8 @@ const Dropdown = ({
 
   const [_id] = useState(id || uniqId());
 
-  const inputFilter = value =>
-    items.filter(item => {
+  const inputFilter = (value) =>
+    items.filter((item) => {
       let itemValue = _getLabel(item).toLowerCase();
       if (ignoreSpecialChars) {
         itemValue = normalizeChars(itemValue);

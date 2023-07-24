@@ -5,11 +5,5 @@ import Subtitle from './sub-components/Subtitle';
 import Blockquote from './sub-components/Blockquote';
 import CSSVariables from './sub-components/CSSVariables';
 
-export {
-  GlobalStyle as default,
-  Typography,
-  Title,
-  Subtitle,
-  Blockquote,
-  CSSVariables,
-};
+export { Typography, Title, Subtitle, Blockquote, CSSVariables };
+export default GlobalStyle;

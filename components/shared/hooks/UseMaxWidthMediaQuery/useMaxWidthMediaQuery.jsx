@@ -1,9 +1,9 @@
 import { useState, useCallback, useEffect } from 'react';
 
-const useMaxWidthMediaQuery = width => {
+const useMaxWidthMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
   /* istanbul ignore next */
-  const updateTarget = useCallback(event => {
+  const updateTarget = useCallback((event) => {
     if (event.matches) {
       setTargetReached(true);
     } else {
@@ -15,11 +15,11 @@ const useMaxWidthMediaQuery = width => {
     const media = window.matchMedia(`(max-width: ${width}px)`);
 
     try {
-      media.addEventListener('change', e => updateTarget(e));
+      media.addEventListener('change', (e) => updateTarget(e));
     } catch (e1) {
       /* istanbul ignore next */
       try {
-        media.addListener(e => updateTarget(e));
+        media.addListener((e) => updateTarget(e));
       } catch (e2) {
         console.error(e2);
       }
@@ -31,7 +31,7 @@ const useMaxWidthMediaQuery = width => {
 
     return () => {
       try {
-        media.removeEventListener('change', e => updateTarget(e));
+        media.removeEventListener('change', (e) => updateTarget(e));
       } catch (e3) {
         /* istanbul ignore next */
         media.removeListener(updateTarget);

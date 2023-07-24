@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { baseFontSize } from '../../shared/theme';
 
 const Description = styled.span`
-${{
-  theme: {
-    baseFontSize,
-  },
-}}
+  ${{
+    theme: {
+      baseFontSize,
+    },
+  }}
   font-size: ${baseFontSize * 0.75}px;
 `;
 

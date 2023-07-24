@@ -60,7 +60,7 @@ const Unordered = styled.ul`
   margin: 0;
 
   ${inlineList}
-  
+
   ${bullets}
   
   ${dividedList}
@@ -100,6 +100,14 @@ const Ordered = styled.ol`
 Ordered.displayName = 'OrderedList';
 
 class List extends Component {
+  static Item = Item;
+
+  static Content = Content;
+
+  static Header = Header;
+
+  static SubHeader = SubHeader;
+
   constructor(props) {
     super(props);
 
@@ -109,26 +117,11 @@ class List extends Component {
     };
   }
 
-  _listType = ordered => (ordered ? this.types.ol : this.types.ul);
-
-  static Item = Item;
-
-  static Content = Content;
-
-  static Header = Header;
-
-  static SubHeader = SubHeader;
+  _listType = (ordered) => (ordered ? this.types.ol : this.types.ul);
 
   render() {
-    const {
-      ordered,
-      items,
-      children,
-      inline,
-      divided,
-      bullet,
-      theme,
-    } = this.props;
+    const { ordered, items, children, inline, divided, bullet, theme } =
+      this.props;
 
     const listItems = children || items.map(Item.create);
 

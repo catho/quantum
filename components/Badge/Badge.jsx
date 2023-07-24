@@ -33,7 +33,7 @@ const getColors = ({
 const BadgeWrapper = styled.div`
   display: inline-block;
 
-  ${props =>
+  ${(props) =>
     props.originalChildren
       ? `position: relative;`
       : `margin-left: 8px; margin-right: 8px;`}
@@ -68,7 +68,7 @@ const StyledBadge = styled.span`
       `;
   }}
 
-  ${props =>
+  ${(props) =>
     props.originalChildren &&
     `
     position: absolute;
@@ -76,7 +76,7 @@ const StyledBadge = styled.span`
     top: -10px;
   `}
 
-  ${props =>
+  ${(props) =>
     props.dot &&
     `
     right: -2px;

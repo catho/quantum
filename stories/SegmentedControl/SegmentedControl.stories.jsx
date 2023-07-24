@@ -7,7 +7,9 @@ import {
   fiveContentsWithIconAndWithoutCheckedItems,
 } from '../../test-utils/mocks/SegmentedControl/exampleContents';
 
-const Template = args => <SegmentedControl items={defaultContent} {...args} />;
+const Template = (args) => (
+  <SegmentedControl items={defaultContent} {...args} />
+);
 
 export const Default = Template.bind({});
 

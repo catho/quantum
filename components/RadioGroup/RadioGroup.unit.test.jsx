@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import RadioGroup from './RadioGroup';
 
-const _childrenTest = RadioItem => {
+const _childrenTest = (RadioItem) => {
   describe(`<${RadioItem.displayName} />`, () => {
     it(`should render three <${RadioItem.displayName} />`, () => {
       render(
@@ -25,7 +25,7 @@ const _childrenTest = RadioItem => {
       );
       const radios = screen.getAllByRole('radio');
 
-      radios.map(radio => expect(radio.getAttribute('name')).toEqual('foo'));
+      radios.map((radio) => expect(radio.getAttribute('name')).toEqual('foo'));
     });
 
     if (RadioItem.displayName === 'RadioGroup.Radio') {
@@ -55,7 +55,7 @@ const _childrenTest = RadioItem => {
 
       const radios = screen.getAllByRole('radio');
 
-      radios.map(radio => fireEvent.click(radio));
+      radios.map((radio) => fireEvent.click(radio));
 
       expect(onChangeMock).toBeCalledTimes(3);
     });

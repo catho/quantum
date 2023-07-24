@@ -48,7 +48,7 @@ describe('<Stepper />', () => {
       />,
     ];
 
-    Steppers.forEach(stepper => {
+    Steppers.forEach((stepper) => {
       expect(render(stepper).asFragment()).toMatchSnapshot();
     });
   });

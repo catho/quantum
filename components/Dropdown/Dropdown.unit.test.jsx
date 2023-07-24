@@ -165,7 +165,7 @@ describe('Dropdown component ', () => {
   });
 
   it('should render the label if value its not informed', () => {
-    const filteredItems = ITEMS.map(item => ({ label: item.label }));
+    const filteredItems = ITEMS.map((item) => ({ label: item.label }));
     render(<Dropdown items={filteredItems} />);
     const button = screen.getByRole('button');
     fireEvent.click(button);
@@ -175,7 +175,7 @@ describe('Dropdown component ', () => {
   });
 
   it('should render the value if label its not informed', () => {
-    const filteredItems = ITEMS.map(item => ({ value: item.value }));
+    const filteredItems = ITEMS.map((item) => ({ value: item.value }));
     render(<Dropdown items={filteredItems} />);
     const button = screen.getByRole('button');
     fireEvent.click(button);

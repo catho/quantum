@@ -1,4 +1,4 @@
-export const isValidAlphaNumber = value => {
+export const isValidAlphaNumber = (value) => {
   if (typeof value === 'number' && value >= 0 && value <= 1) {
     return true;
   }

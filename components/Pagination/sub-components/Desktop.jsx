@@ -32,7 +32,7 @@ const Desktop = ({
       {prevButtonText}
     </ActionButton>
 
-    {pagination({ totalPages, activePage, hideLastPagination }).map(page => {
+    {pagination({ totalPages, activePage, hideLastPagination }).map((page) => {
       if (page === '...') {
         return <Dots key={uniqId()} />;
       }

@@ -4,7 +4,7 @@ import Tag from './Tag';
 const testSnapshot = (props = {}) => {
   const propsList = Array.isArray(props) ? props : [props];
 
-  propsList.forEach(p => {
+  propsList.forEach((p) => {
     const { container } = render(<Tag {...p} />);
     expect(container.firstChild).toMatchSnapshot();
   });

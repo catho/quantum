@@ -14,7 +14,7 @@ export default {
   component: SnackBar,
 };
 
-const Template = args => (
+const Template = (args) => (
   <Wrapper>
     <SnackBar {...args} />
   </Wrapper>
