@@ -1,6 +1,11 @@
 import Card from '../../components/Card';
 import Table from '../shared/Table';
 
+export default {
+  title: 'Card',
+  component: Card,
+};
+
 const componentsList = [
   {
     component: '<Card/>',

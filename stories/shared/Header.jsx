@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
+import { Unstyled } from '@storybook/addon-docs';
 import { theme } from '../../components/shared';
 
 import ArrowLeft from '../../.storybook/static/arrow-left.png';
@@ -77,12 +77,14 @@ const Title = styled.h1`
 `;
 
 const Header = ({ title, children }) => (
-  <HeaderWrapper>
-    <Container>
-      <Title>{title}</Title>
-      <p>{children}</p>
-    </Container>
-  </HeaderWrapper>
+  <Unstyled>
+    <HeaderWrapper>
+      <Container>
+        <Title>{title}</Title>
+        <p>{children}</p>
+      </Container>
+    </HeaderWrapper>
+  </Unstyled>
 );
 
 Header.defaultProps = {

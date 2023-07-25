@@ -2,6 +2,11 @@ import { useState } from 'react';
 import DropdownLight from '../../components/DropdownLight/DropdownLight';
 import { itemsObjectMock, itemsStringMock, itemsWithImageMock } from './mock';
 
+export default {
+  title: 'Forms/DropdownLight',
+  component: DropdownLight,
+};
+
 const Template = args => {
   const { items = itemsObjectMock, ...rest } = args;
   return <DropdownLight items={items} {...rest} />;

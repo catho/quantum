@@ -2,6 +2,11 @@
 import { useState } from 'react';
 import InfiniteScroll from '../../components/InfiniteScroll';
 
+export default {
+  title: 'InfiniteScroll',
+  component: InfiniteScroll,
+};
+
 const itemsMock = [
   '1',
   '2',

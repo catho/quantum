@@ -1,5 +1,10 @@
 import AutoComplete from '../../components/AutoComplete';
 
+export default {
+  title: 'Forms/AutoComplete',
+  component: AutoComplete,
+};
+
 const itemsMock = [
   'Analista de Gestão de Incidentes',
   'Analista de Governança de TI',

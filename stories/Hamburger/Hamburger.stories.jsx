@@ -1,5 +1,10 @@
 import { Hamburger } from '../../components';
 
+export default {
+  title: 'Hamburger',
+  component: Hamburger,
+};
+
 const Template = args => {
   const { inverted, ...rest } = args;
   return (

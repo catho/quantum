@@ -2,6 +2,11 @@ import { Form, Validations } from '../../components/Form';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
+export default {
+  title: 'Forms/Form',
+  component: Form,
+};
+
 export const ValidationList = () => (
   <ul>
     {Object.getOwnPropertyNames(Validations)

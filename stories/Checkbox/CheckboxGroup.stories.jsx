@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import CheckboxGroup from '../../components/Checkbox/CheckboxGroup';
 
+export default {
+  title: 'Forms/Checkbox/CheckboxGroup',
+  component: CheckboxGroup,
+};
+
 const options = [
   { label: 'Banana', name: 'banana', key: 'banana' },
   { label: 'Orange', name: 'orange', checked: true, key: 'orange' },

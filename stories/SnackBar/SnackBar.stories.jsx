@@ -2,6 +2,11 @@ import { useState } from 'react';
 import SnackBar from '../../components/SnackBar';
 import { Button } from '../../components';
 
+export default {
+  title: 'SnackBar',
+  component: SnackBar,
+};
+
 const Template = args => {
   const { actionTrigger, ...rest } = args;
   const [openSnackBar, setOpenSnackbar] = useState(false);

@@ -1,5 +1,10 @@
 import Toggle from '../../components/Toggle';
 
+export default {
+  title: 'Forms/Toggle',
+  component: Toggle,
+};
+
 const Template = args => {
   const { label, labelPosition, id, ...rest } = args;
   return (

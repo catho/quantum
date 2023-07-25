@@ -1,5 +1,10 @@
 import Socials from '../../components/Socials';
 
+export default {
+  title: 'Socials',
+  component: Socials,
+};
+
 const allItems = [
   {
     name: 'facebook',

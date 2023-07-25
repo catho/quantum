@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import Dropdown from '../../components/Dropdown';
 
+export default {
+  title: 'Forms/Dropdown',
+  component: Dropdown,
+};
+
 const itemsMock = ['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado'];
 const itemsWithImageMock = [
   {

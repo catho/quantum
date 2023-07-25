@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { Input } from '../../components';
 
+export default {
+  title: 'Forms/Input',
+  component: Input,
+};
+
 const Template = args => <Input {...args} />;
 
 const TemplateWithType = ({ staticType, ...otherArgs }) => {

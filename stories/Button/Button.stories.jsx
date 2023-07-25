@@ -1,5 +1,10 @@
 import Button from '../../components/Button';
 
+export default {
+  title: 'Button',
+  component: Button,
+};
+
 const Template = args => {
   const { children, ...rest } = args;
   return <Button {...rest}>{children}</Button>;

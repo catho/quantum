@@ -1,5 +1,10 @@
 import TextArea from '../../components/TextArea';
 
+export default {
+  title: 'Forms/TextArea',
+  component: TextArea,
+};
+
 const Template = args => <TextArea {...args} />;
 
 export const Default = Template.bind({});

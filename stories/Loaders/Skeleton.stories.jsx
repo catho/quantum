@@ -1,5 +1,10 @@
 import Skeleton from '../../components/Skeleton';
 
+export default {
+  title: 'Loaders/Skeleton',
+  component: Skeleton,
+};
+
 const Template = args => <Skeleton {...args} />;
 
 export const Default = Template.bind({});

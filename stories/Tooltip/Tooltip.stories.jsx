@@ -1,5 +1,10 @@
 import { Row, Col, Tooltip } from '../../components';
 
+export default {
+  title: 'Tooltip',
+  component: Tooltip,
+};
+
 const Template = args => (
   <Row style={{ paddingTop: '72px' }}>
     <Col>

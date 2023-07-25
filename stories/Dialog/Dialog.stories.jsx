@@ -2,6 +2,11 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Dialog, Button } from '../../components';
 
+export default {
+  title: 'Dialog',
+  component: Dialog,
+};
+
 const ContentExample = styled.div`
   background: white;
   margin: auto;

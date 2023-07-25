@@ -1,5 +1,10 @@
 import ProgressBar from '../../components/ProgressBar';
 
+export default {
+  title: 'Loaders/ProgressBar',
+  component: ProgressBar,
+};
+
 const Template = args => <ProgressBar {...args} />;
 
 export const Default = Template.bind({});
