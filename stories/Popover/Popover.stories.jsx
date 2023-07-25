@@ -6,7 +6,7 @@ export default {
   component: Popover,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { ...rest } = args;
   return (
     <Row

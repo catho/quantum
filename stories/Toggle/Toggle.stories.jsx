@@ -5,7 +5,7 @@ export default {
   component: Toggle,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { label, labelPosition, id, ...rest } = args;
   return (
     <div style={{ display: 'flex', alignContent: 'center' }}>

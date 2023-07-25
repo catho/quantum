@@ -1,4 +1,4 @@
-const docs = ['Introduction'].map(s => `../stories/${s}/${s}.mdx`);
+const docs = ['Introduction'].map((s) => `../stories/${s}/${s}.mdx`);
 
 const foundation = [
   'Colors',
@@ -9,9 +9,9 @@ const foundation = [
   'Breakpoints',
   'List',
   'InfiniteScroll',
-].map(s => `../stories/${s}/${s}.mdx`);
+].map((s) => `../stories/${s}/${s}.mdx`);
 
-const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.mdx`);
+const hooks = ['Hooks'].map((s) => `../stories/${s}/${s}.mdx`);
 
 const components = ['../stories/**/!(*.regression).mdx'].filter(Boolean);
 

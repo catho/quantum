@@ -6,7 +6,7 @@ export default {
   component: Badge,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Badge {...rest}>{Component}</Badge>;
 };

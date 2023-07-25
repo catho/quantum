@@ -12,7 +12,9 @@ export default {
   component: SegmentedControl,
 };
 
-const Template = args => <SegmentedControl items={defaultContent} {...args} />;
+const Template = (args) => (
+  <SegmentedControl items={defaultContent} {...args} />
+);
 
 export const Default = Template.bind({});
 

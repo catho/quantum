@@ -10,7 +10,7 @@ export default {
   component: List,
 };
 
-const Template = args => <List {...args} />;
+const Template = (args) => <List {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

@@ -5,7 +5,7 @@ export default {
   component: Link,
 };
 
-const Template = args => (
+const Template = (args) => (
   <Link href="_blank" rel="noreferrer" {...args}>
     Some link
   </Link>

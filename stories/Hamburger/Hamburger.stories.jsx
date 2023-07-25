@@ -5,7 +5,7 @@ export default {
   component: Hamburger,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { inverted, ...rest } = args;
   return (
     <div style={{ backgroundColor: inverted ? '#fff' : '#000' }}>

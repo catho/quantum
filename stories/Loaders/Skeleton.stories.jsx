@@ -5,7 +5,7 @@ export default {
   component: Skeleton,
 };
 
-const Template = args => <Skeleton {...args} />;
+const Template = (args) => <Skeleton {...args} />;
 
 export const Default = Template.bind({});
 

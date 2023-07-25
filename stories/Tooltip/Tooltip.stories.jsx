@@ -5,7 +5,7 @@ export default {
   component: Tooltip,
 };
 
-const Template = args => (
+const Template = (args) => (
   <Row style={{ paddingTop: '72px' }}>
     <Col>
       <Tooltip text="Text..." {...args}>

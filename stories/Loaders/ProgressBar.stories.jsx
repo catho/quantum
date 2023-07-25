@@ -5,7 +5,7 @@ export default {
   component: ProgressBar,
 };
 
-const Template = args => <ProgressBar {...args} />;
+const Template = (args) => <ProgressBar {...args} />;
 
 export const Default = Template.bind({});
 

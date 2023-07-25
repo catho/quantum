@@ -6,7 +6,7 @@ export default {
   component: Accordion,
 };
 
-const Template = args => <Accordion {...mockedProps} {...args} />;
+const Template = (args) => <Accordion {...mockedProps} {...args} />;
 
 export const Default = Template.bind({});
 

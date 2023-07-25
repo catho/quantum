@@ -5,7 +5,7 @@ export default {
   component: Stepper,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Stepper {...rest}>{Component}</Stepper>;
 };

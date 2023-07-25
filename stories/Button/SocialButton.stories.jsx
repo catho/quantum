@@ -5,7 +5,7 @@ export default {
   component: SocialButton,
 };
 
-const Template = args => <SocialButton {...args} />;
+const Template = (args) => <SocialButton {...args} />;
 
 export const Google = Template.bind({});
 Google.args = {
