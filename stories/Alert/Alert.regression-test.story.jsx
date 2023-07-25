@@ -10,7 +10,7 @@ export default {
   component: Alert,
 };
 
-const Template = args => (
+const Template = (args) => (
   <Alert {...args}>
     <span>
       This is a <strong>sample</strong> message, a much bigger text could fit in

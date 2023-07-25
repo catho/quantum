@@ -15,7 +15,7 @@ const sliderProps = {
 
 const { mountMarksByArray } = rangeSliderUtils;
 
-const decorator = Story => (
+const decorator = (Story) => (
   <Row style={{ padding: '50px 180px' }}>
     <Col>
       <Story />
@@ -29,7 +29,7 @@ export default {
   decorators: [decorator],
 };
 
-const Template = args => <BasicRangeSlider {...args} {...sliderProps} />;
+const Template = (args) => <BasicRangeSlider {...args} {...sliderProps} />;
 
 export const Default = Template.bind({});
 
@@ -45,7 +45,7 @@ export const TipFormatter = () => <TipFormatterExample {...sliderProps} />;
 export const TipFormatterWithMarks = () => (
   <TipFormatterExample
     {...sliderProps}
-    marks={mountMarksByArray([0, 50, 100], v => `R$ ${v}`)}
+    marks={mountMarksByArray([0, 50, 100], (v) => `R$ ${v}`)}
   />
 );
 

@@ -9,7 +9,7 @@ export default {
   component: Button,
 };
 
-const Template = args => <Button {...args}>Catho</Button>;
+const Template = (args) => <Button {...args}>Catho</Button>;
 
 export const PrimaryDefault = Template.bind({});
 
@@ -143,7 +143,7 @@ WithIcon.args = {
   icon: 'info',
 };
 
-const TemplateIconOnly = args => <Button icon="info" {...args} />;
+const TemplateIconOnly = (args) => <Button icon="info" {...args} />;
 
 export const IconOnly = TemplateIconOnly.bind({});
 

@@ -29,13 +29,13 @@ const InfiniteScrollWithNewItems = () => {
   ]);
 
   const handleNewItems = () => {
-    setItems(state => [...state, 'sapo', 'macaco', 'onça']);
+    setItems((state) => [...state, 'sapo', 'macaco', 'onça']);
   };
 
   return (
     <InfiniteScroll onScrollEnd={handleNewItems}>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>

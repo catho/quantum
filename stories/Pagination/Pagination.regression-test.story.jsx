@@ -5,7 +5,7 @@ export default {
   component: Pagination,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { totalPages = 10, ...otherArgs } = args;
 
   return <Pagination totalPages={totalPages} {...otherArgs} />;

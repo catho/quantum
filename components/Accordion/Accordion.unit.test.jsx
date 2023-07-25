@@ -4,9 +4,9 @@ import { colors, spacing } from '../shared/theme';
 import Accordion from './Accordion';
 import mock from '../../test-utils/mocks/Accordion/mock';
 
-const closeMock = m => {
+const closeMock = (m) => {
   const newMock = m;
-  newMock.items = m.items.map(item => ({ ...item, opened: false }));
+  newMock.items = m.items.map((item) => ({ ...item, opened: false }));
   return newMock;
 };
 

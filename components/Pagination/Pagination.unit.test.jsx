@@ -196,7 +196,7 @@ describe('<Pagination />', () => {
         <Pagination
           totalPages={10}
           activePage={2}
-          pageHref={page => `/?page=${page}`}
+          pageHref={(page) => `/?page=${page}`}
         />,
       );
 
@@ -249,7 +249,7 @@ describe('<Pagination />', () => {
         <Pagination
           activePage={2}
           totalPages={10}
-          pageHref={page => `/?page=${page}`}
+          pageHref={(page) => `/?page=${page}`}
           followOnlyFirstPage
         />,
       );

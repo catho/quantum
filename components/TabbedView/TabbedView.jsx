@@ -66,7 +66,9 @@ const NavItem = styled.button.attrs({
   overflow: hidden;
   position: relative;
   text-align: center;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
 
   ${({
     skin,
@@ -80,13 +82,8 @@ const NavItem = styled.button.attrs({
     },
     fluid,
   }) => {
-    const {
-      background,
-      text,
-      activeText,
-      hoverBackground,
-      border,
-    } = getSkinByThemeColor(skin, skins);
+    const { background, text, activeText, hoverBackground, border } =
+      getSkinByThemeColor(skin, skins);
     return css`
       border-bottom: 1px solid ${border};
       background-color: ${background};
@@ -163,6 +160,8 @@ const TabPanel = styled.div`
 const RenderIf = ({ conditional, children }) => conditional && children;
 
 class TabbedView extends Component {
+  static Tab = Tab;
+
   constructor(props) {
     super(props);
 
@@ -185,14 +184,12 @@ class TabbedView extends Component {
     onTabClick();
   };
 
-  sanitize = str =>
+  sanitize = (str) =>
     str
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(' ', '-')
       .toLowerCase();
-
-  static Tab = Tab;
 
   render() {
     const { children, skin, theme, fluid, onTabClick } = this.props;

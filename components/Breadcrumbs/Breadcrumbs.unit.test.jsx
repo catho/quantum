@@ -52,7 +52,7 @@ describe('<Breadcrumbs />', () => {
     const links = screen.getAllByRole('link');
 
     const hasLinkWithoutHREFAttribute = links.some(
-      link => !link.hasAttribute('href'),
+      (link) => !link.hasAttribute('href'),
     );
 
     expect(hasLinkWithoutHREFAttribute).toBe(false);

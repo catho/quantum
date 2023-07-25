@@ -1,6 +1,6 @@
 import { components } from '../shared/theme';
 
-const GetSkinIcon = skin => {
+const GetSkinIcon = (skin) => {
   const {
     snackbar: {
       skins: {

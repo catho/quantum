@@ -36,7 +36,7 @@ const RadioGroup = ({
     required,
   };
 
-  const radioOptions = options.map(option =>
+  const radioOptions = options.map((option) =>
     Object.assign({}, option, {
       key: option.value,
       defaultChecked: option.value === defaultValue ? true : undefined,
@@ -45,13 +45,13 @@ const RadioGroup = ({
   );
 
   const items =
-    Children.map(children, child =>
+    Children.map(children, (child) =>
       cloneElement(child, {
         defaultChecked: child.props.value === defaultValue ? true : undefined,
         ...commonProps,
       }),
     ) ||
-    radioOptions.map(props =>
+    radioOptions.map((props) =>
       type === 'button' ? <RadioButton {...props} /> : <Radio {...props} />,
     );
 

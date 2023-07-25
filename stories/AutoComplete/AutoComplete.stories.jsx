@@ -19,7 +19,7 @@ const itemsMock = [
   'Cronoanalista',
 ];
 
-const Template = args => <AutoComplete suggestions={itemsMock} {...args} />;
+const Template = (args) => <AutoComplete suggestions={itemsMock} {...args} />;
 
 export const Default = Template.bind({});
 

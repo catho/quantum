@@ -7,7 +7,7 @@ export default {
   component: SnackBar,
 };
 
-const Template = args => {
+const Template = (args) => {
   const { actionTrigger, ...rest } = args;
   const [openSnackBar, setOpenSnackbar] = useState(false);
 
@@ -34,8 +34,7 @@ export const Default = Template.bind({});
 
 export const WithText = Template.bind({});
 WithText.args = {
-  text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
 export const WithSkin = Template.bind({});

@@ -84,7 +84,7 @@ const LabelInfo = styled.span`
 ProgressLabel.displayName = 'ProgressLabel';
 LabelInfo.displayName = 'LabelInfo';
 
-const ChargeBar = props => {
+const ChargeBar = (props) => {
   const {
     width,
     progressPercent,

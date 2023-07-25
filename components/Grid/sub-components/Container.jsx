@@ -32,7 +32,7 @@ const renderResponsives = ({
   'no-gutters': noGutters,
   withBreakpoints,
 }) =>
-  Object.keys(breakpoints).map(breakpoint =>
+  Object.keys(breakpoints).map((breakpoint) =>
     renderBreakpoint(
       {
         theme: {

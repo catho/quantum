@@ -60,7 +60,9 @@ class Card extends Component {
 
   static Footer = Footer;
 
-  render = () => <CardWrapper {...this.props} />;
+  render() {
+    return <CardWrapper {...this.props} />;
+  }
 }
 
 Card.propTypes = {

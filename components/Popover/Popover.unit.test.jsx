@@ -38,7 +38,7 @@ const POPOVERS = [
 
 describe('Popover component', () => {
   it('should match snapshots', () => {
-    POPOVERS.forEach(popover => {
+    POPOVERS.forEach((popover) => {
       expect(render(popover).asFragment()).toMatchSnapshot();
     });
   });

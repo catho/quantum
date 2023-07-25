@@ -87,29 +87,27 @@ const Description = styled(Card.Description)`
 Title.displayName = 'Title';
 Description.displayName = 'Description';
 
-const handleCardMeasures = cardSize => cardMeasures[cardSize];
+const handleCardMeasures = (cardSize) => cardMeasures[cardSize];
 
-const DescriptionCard = ({ card, cardSize, theme }) => {
+function DescriptionCard({ card, cardSize, theme }) {
   const cardMeasure = handleCardMeasures(cardSize);
 
   return (
-    <>
-      <AdaptedCard cardMeasure={cardMeasure} theme={theme}>
-        <Content>
-          <Media
-            cardMeasure={cardMeasure}
-            src={card.imagePath}
-            alt={card.imageDescription}
-          />
-          <Title theme={theme} small>
-            {card.title}
-          </Title>
-          <Description theme={theme}>{card.description}</Description>
-        </Content>
-      </AdaptedCard>
-    </>
+    <AdaptedCard cardMeasure={cardMeasure} theme={theme}>
+      <Content>
+        <Media
+          cardMeasure={cardMeasure}
+          src={card.imagePath}
+          alt={card.imageDescription}
+        />
+        <Title theme={theme} small>
+          {card.title}
+        </Title>
+        <Description theme={theme}>{card.description}</Description>
+      </Content>
+    </AdaptedCard>
   );
-};
+}
 
 DescriptionCard.defaultProps = {
   theme: {

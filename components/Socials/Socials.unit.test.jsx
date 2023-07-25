@@ -28,7 +28,7 @@ describe('<Socials />', () => {
       <Socials items={allSocialsList} size="24" />,
     ];
 
-    SOCIALS.forEach(social => {
+    SOCIALS.forEach((social) => {
       expect(render(social).asFragment()).toMatchSnapshot();
     });
   });

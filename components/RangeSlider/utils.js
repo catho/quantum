@@ -1,5 +1,5 @@
 const mountMarksByArray = (values, labelFunction) =>
-  values.map(value => ({
+  values.map((value) => ({
     value,
     label: labelFunction ? labelFunction(value) : value,
   }));

@@ -17,12 +17,12 @@ const MobileWrapper = styled.div`
 MobileWrapper.displayName = 'MobileWrapper';
 MobilePagination.displayName = 'Pagination';
 
-const Template = args => {
+const Template = (args) => {
   const { totalPages = 6, ...rest } = args;
   return <Pagination totalPages={totalPages} {...rest} />;
 };
 
-const MobileTemplate = args => {
+const MobileTemplate = (args) => {
   const { totalPages = 6, ...rest } = args;
   return (
     <MobileWrapper>
@@ -49,7 +49,7 @@ WithCustomNextAndPrevButtonText.args = {
 
 export const WithPageHref = Template.bind({});
 WithPageHref.args = {
-  pageHref: page => `/?page=${page}`,
+  pageHref: (page) => `/?page=${page}`,
 };
 
 export const HideLastPage = Template.bind({});
@@ -68,7 +68,7 @@ export const ControlledPagination = () => {
   const [totalPages] = useState(10);
   const [activePage, setActivePage] = useState(1);
 
-  const handlePageClick = page => setActivePage(page);
+  const handlePageClick = (page) => setActivePage(page);
 
   return (
     <Pagination

@@ -5,8 +5,8 @@ import SegmentedButton from './SegmentedButton';
 const MAX_NUM_BUTTONS = 5;
 
 const SegmentedButtons = ({ items, darkMode, name, onChange }) => {
-  const ButtonDefaultChecked = allItems => {
-    const itemChecked = allItems.filter(item => item.checked);
+  const ButtonDefaultChecked = (allItems) => {
+    const itemChecked = allItems.filter((item) => item.checked);
     if (itemChecked.length > 0) return itemChecked[0].value;
 
     return [];
@@ -19,11 +19,11 @@ const SegmentedButtons = ({ items, darkMode, name, onChange }) => {
     onChange({ value, label }, event);
   };
 
-  const isChecked = itemValue => itemValue === itemChecked;
+  const isChecked = (itemValue) => itemValue === itemChecked;
 
   return (
     <>
-      {items.slice(0, MAX_NUM_BUTTONS).map(item => (
+      {items.slice(0, MAX_NUM_BUTTONS).map((item) => (
         <SegmentedButton
           key={item.value}
           icon={item.icon}
@@ -31,7 +31,7 @@ const SegmentedButtons = ({ items, darkMode, name, onChange }) => {
           value={item.value}
           checked={isChecked(item.value)}
           name={name}
-          onChange={e => onValueChange(e, item.value, item.label)}
+          onChange={(e) => onValueChange(e, item.value, item.label)}
           darkMode={darkMode}
         />
       ))}

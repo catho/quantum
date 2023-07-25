@@ -19,7 +19,7 @@ const ContentExample = styled.div`
   }
 `;
 
-const Template = args => {
+const Template = (args) => {
   const [openDialog, setOpenDialog] = useState(false);
 
   return (

@@ -88,14 +88,16 @@ const Button = styled.button`
 
       :hover :enabled {
         border-color: ${colors.primary['700']};
-        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+        box-shadow:
+          0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
 
       :focus :enabled {
         border-color: ${colors.primary['700']};
-        box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),
+        box-shadow:
+          0px 3px 1px -2px rgb(18 80 196 / 20%),
           0px 2px 2px 0px rgb(18 80 196 / 14%),
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
@@ -113,7 +115,8 @@ const SelectionList = styled.ul`
   position: absolute;
   width: 100%;
   z-index: 9999;
-  box-shadow: 0px 3px 5px -1px rgba(224, 224, 224, 0.2),
+  box-shadow:
+    0px 3px 5px -1px rgba(224, 224, 224, 0.2),
     0px 5px 8px 0px rgba(224, 224, 224, 0.14),
     0px 1px 14px 0px rgba(224, 224, 224, 0.12);
 
@@ -218,18 +221,18 @@ const DropdownLight = ({
     }
   };
 
-  const selectItem = item => {
+  const selectItem = (item) => {
     setSelectedOptionItem(item?.label || item);
     onChange(item);
     buttonRef.current.focus();
   };
 
-  const handleOnClickListItem = item => {
+  const handleOnClickListItem = (item) => {
     setIsOpen(false);
     selectItem(item);
   };
 
-  const handleClickOutside = event => {
+  const handleClickOutside = (event) => {
     if (!buttonRef.current?.contains(event.target)) {
       setIsOpen(false);
     }
@@ -282,95 +285,87 @@ const DropdownLight = ({
 
       const itemsList = [...listOptions.current.children];
 
-      if (itemsList.some(element => element === document.activeElement)) {
+      if (itemsList.some((element) => element === document.activeElement)) {
         selectItem(items[cursor]);
       }
     }
   }, [enterPress]);
 
   return (
-    <>
-      <FieldGroup theme={theme} skin={skin}>
-        <InputWrapper>
-          {label && (
-            <InputLabel error={error}>
-              {label}
-              {required && (
-                <RequiredMark skin={skin} aria-label="campo obrigatório">
-                  *
-                </RequiredMark>
+    <FieldGroup theme={theme} skin={skin}>
+      <InputWrapper>
+        {label && (
+          <InputLabel error={error}>
+            {label}
+            {required && (
+              <RequiredMark skin={skin} aria-label="campo obrigatório">
+                *
+              </RequiredMark>
+            )}
+          </InputLabel>
+        )}
+        <InputText
+          type="text"
+          hidden
+          skin={skin}
+          name={name}
+          defaultValue={selectedOptionItem?.label || selectedOptionItem}
+          aria-label="selecione uma opção"
+          required={required}
+        />
+        <Button
+          aria-haspopup="true"
+          aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
+          onClick={handleToggleDropdown}
+          theme={theme}
+          skin={skin}
+          error={error}
+          disabled={disabled}
+          ref={buttonRef}
+          id={id}
+        >
+          {selectedOptionItem
+            ? selectedOptionItem?.label || selectedOptionItem
+            : placeholder}
+          <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
+        </Button>
+      </InputWrapper>
+
+      {isOpen && (
+        <SelectionList theme={theme} ref={listOptions}>
+          {items.map((item, index) => (
+            <SelectionListItem
+              role="option"
+              theme={theme}
+              key={item?.value || item}
+              onClick={() => handleOnClickListItem(item)}
+              aria-posinset={index}
+              aria-selected={index === cursor}
+              tabIndex="-1"
+            >
+              {item?.label || item}
+
+              {item?.img ? (
+                <>
+                  <SelectionItemImage src={item?.img} alt={item?.alt} />
+                  {selectedOptionItem === item?.label ||
+                    selectedOptionItem === item}
+                </>
+              ) : (
+                (selectedOptionItem === item?.label ||
+                  selectedOptionItem === item) && <CheckIcon theme={theme} />
               )}
-            </InputLabel>
-          )}
-          <InputText
-            type="text"
-            hidden
-            skin={skin}
-            name={name}
-            defaultValue={selectedOptionItem?.label || selectedOptionItem}
-            aria-label="selecione uma opção"
-            required={required}
-          />
-          <Button
-            aria-haspopup="true"
-            aria-label={
-              isOpen ? 'fechar lista de itens' : 'abrir lista de itens'
-            }
-            onClick={handleToggleDropdown}
-            theme={theme}
-            skin={skin}
-            error={error}
-            disabled={disabled}
-            ref={buttonRef}
-            id={id}
-          >
-            {selectedOptionItem
-              ? selectedOptionItem?.label || selectedOptionItem
-              : placeholder}
-            <ArrowIcon name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'} />
-          </Button>
-        </InputWrapper>
-
-        {isOpen && (
-          <SelectionList theme={theme} ref={listOptions}>
-            {items.map((item, index) => (
-              <SelectionListItem
-                role="option"
-                theme={theme}
-                key={item?.value || item}
-                onClick={() => handleOnClickListItem(item)}
-                aria-posinset={index}
-                aria-selected={index === cursor}
-                tabIndex="-1"
-              >
-                {item?.label || item}
-
-                {item?.img ? (
-                  <>
-                    <SelectionItemImage src={item?.img} alt={item?.alt} />
-                    {selectedOptionItem === item?.label ||
-                      selectedOptionItem === item}
-                  </>
-                ) : (
-                  <>
-                    {(selectedOptionItem === item?.label ||
-                      selectedOptionItem === item) && (
-                      <CheckIcon theme={theme} />
-                    )}
-                  </>
-                )}
-              </SelectionListItem>
-            ))}
-          </SelectionList>
-        )}
-        {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage theme={theme} skin={skin}>
-            {error}
-          </InputErrorMessage>
-        )}
-      </FieldGroup>
-    </>
+            </SelectionListItem>
+          ))}
+        </SelectionList>
+      )}
+      {helperText && <HelperText>{helperText}</HelperText>}
+      {error && (
+        <InputErrorMessage theme={theme} skin={skin}>
+          {error}
+        </InputErrorMessage>
+      )}
+    </FieldGroup>
   );
 };
 

@@ -31,7 +31,7 @@ ListItem.displayName = 'ListItem';
 const Socials = ({ items, size, theme, withBox }) => (
   <SocialWrapper>
     <List>
-      {items.map(item => (
+      {items.map((item) => (
         <ListItem theme={theme} key={`social-item-${item.name}`}>
           <SocialType
             key={`social-${item.name}`}

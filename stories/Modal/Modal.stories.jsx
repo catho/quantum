@@ -6,7 +6,7 @@ export default {
   component: Modal,
 };
 
-const Template = args => {
+const Template = (args) => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <>
@@ -20,7 +20,7 @@ const Template = args => {
   );
 };
 
-const TemplateModalAdvanced = args => {
+const TemplateModalAdvanced = (args) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (

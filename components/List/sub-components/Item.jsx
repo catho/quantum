@@ -47,7 +47,7 @@ const ListItem = styled.div`
 ListItem.displayName = 'ListItem';
 
 class Item extends Component {
-  static create = item => {
+  static create = (item) => {
     if (typeof item === 'string') {
       return <Item content={item} key={item} />;
     }

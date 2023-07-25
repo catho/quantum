@@ -12,8 +12,8 @@ const parameters = {
   },
 };
 
-const Template = args => <Input {...args} />;
-const TemplateDark = args => <Input skin="dark" {...args} />;
+const Template = (args) => <Input {...args} />;
+const TemplateDark = (args) => <Input skin="dark" {...args} />;
 
 export const Default = Template.bind({});
 

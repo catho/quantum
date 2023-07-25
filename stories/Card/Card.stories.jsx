@@ -55,9 +55,9 @@ export const CompoundComponentsList = () => (
       </tr>
     </thead>
     <tbody>
-      {componentsList.map(row => (
+      {componentsList.map((row) => (
         <tr key={row.component}>
-          {Object.keys(row).map(key => (
+          {Object.keys(row).map((key) => (
             <td key={row[key]}>{row[key]}</td>
           ))}
         </tr>
@@ -66,15 +66,13 @@ export const CompoundComponentsList = () => (
   </Table>
 );
 
-const Template = args => {
-  const {
-    children: Component = 'Lorem ipsum dolor sit amet...',
-    ...rest
-  } = args;
+const Template = (args) => {
+  const { children: Component = 'Lorem ipsum dolor sit amet...', ...rest } =
+    args;
   return <Card {...rest}>{Component}</Card>;
 };
 
-const AdvancedCardTemplate = args => (
+const AdvancedCardTemplate = (args) => (
   <Card {...args}>
     <Card.Header>
       <Card.Thumbnail

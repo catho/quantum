@@ -18,7 +18,7 @@ const allItems = [
   },
 ];
 
-const decorator = Story => (
+const decorator = (Story) => (
   <div>
     <Story />
   </div>
@@ -30,7 +30,7 @@ export default {
   decorators: [decorator],
 };
 
-const Template = args => <Socials {...args} />;
+const Template = (args) => <Socials {...args} />;
 
 export const AllItems = Template.bind({});
 AllItems.args = {

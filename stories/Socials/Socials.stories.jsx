@@ -23,7 +23,7 @@ const allItems = [
   },
 ];
 
-const Template = args => <Socials items={[allItems[1]]} {...args} />;
+const Template = (args) => <Socials items={[allItems[1]]} {...args} />;
 
 export const Default = Template.bind({});
 

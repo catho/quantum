@@ -8,7 +8,7 @@ export default {
   component: ChargeBar,
 };
 
-const Template = args => <ChargeBar {...args} />;
+const Template = (args) => <ChargeBar {...args} />;
 
 export const Neutral = Template.bind({});
 Neutral.args = {

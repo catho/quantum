@@ -57,7 +57,7 @@ const Dialog = ({
     }
   };
 
-  const handleClickOutside = event => {
+  const handleClickOutside = (event) => {
     if (event.target === dialogOver.current && !disableClickOutside) {
       handleClose();
     }
@@ -89,7 +89,7 @@ const Dialog = ({
     ? createPortal(
         <Wrapper
           ref={dialogOver}
-          onClick={event => handleClickOutside(event)}
+          onClick={(event) => handleClickOutside(event)}
           role="dialog"
           tabIndex="-1"
           theme={theme}

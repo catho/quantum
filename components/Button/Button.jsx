@@ -18,12 +18,11 @@ const ButtonIcon = styled(Icon)`
     theme: {
       spacing: { xsmall },
     },
-  }) =>
-    css`
-      &.with-children {
-        margin-right: ${xsmall}px;
-      }
-    `}
+  }) => css`
+    &.with-children {
+      margin-right: ${xsmall}px;
+    }
+  `}
 
   width: ${defaultBaseFontSize * 1.5}px;
 `;
@@ -57,12 +56,11 @@ const StyledButton = styled.button`
   display: flex;
   font-weight: bold;
   justify-content: center;
-  border-radius: 4px; 
+  border-radius: 4px;
 
-  ${({ disabled }) =>
-    css`
-      cursor: ${disabled ? 'not-allowed' : 'pointer'};
-    `}
+  ${({ disabled }) => css`
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+  `}
 
   ${buttonFontAndLineProps}
 
@@ -106,7 +104,7 @@ const StyledButton = styled.button`
     `;
   }}
 
-  ${props =>
+  ${(props) =>
     props.center &&
     css`
       margin-left: auto;
@@ -115,7 +113,7 @@ const StyledButton = styled.button`
 
   transition: all 0.2s ease-in-out;
 
-  ${props => props.full && `width: 100%;`}
+  ${(props) => props.full && `width: 100%;`}
 
   ${({ skin, theme, disabled, stroked }) => {
     const {

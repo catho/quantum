@@ -12,8 +12,8 @@ export default {
   component: Hamburger,
 };
 
-const Template = args => <Hamburger {...args} />;
-const TemplateInverted = args => (
+const Template = (args) => <Hamburger {...args} />;
+const TemplateInverted = (args) => (
   <InvertedBackground>
     <Hamburger {...args} />
   </InvertedBackground>

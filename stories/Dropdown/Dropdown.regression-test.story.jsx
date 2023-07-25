@@ -14,8 +14,8 @@ const parameters = {
 
 const items = ['Lemon', 'Banana', 'Strawberry', 'Orange', 'Avocado'];
 
-const Template = args => <Dropdown items={items} {...args} />;
-const TemplateWithDarkSkin = args => (
+const Template = (args) => <Dropdown items={items} {...args} />;
+const TemplateWithDarkSkin = (args) => (
   <Dropdown items={items} skin="dark" {...args} />
 );
 

@@ -113,15 +113,15 @@ export const SizesTable = () => (
   <Table>
     <thead>
       <tr>
-        {Object.keys(tableHeadRow).map(key => (
+        {Object.keys(tableHeadRow).map((key) => (
           <td>{tableHeadRow[key]}</td>
         ))}
       </tr>
     </thead>
     <tbody>
-      {tableBodyRows.map(row => (
+      {tableBodyRows.map((row) => (
         <tr>
-          {Object.keys(row).map(key => (
+          {Object.keys(row).map((key) => (
             <td>{row[key]}</td>
           ))}
         </tr>

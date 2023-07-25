@@ -15,18 +15,18 @@ const RadioMark = styled.span`
   width: ${radioSize};
 
   ${({
-      theme: {
-        colors: {
-          neutral: { 0: white, 500: gray },
-        },
-        spacing: { xsmall },
+    theme: {
+      colors: {
+        neutral: { 0: white, 500: gray },
       },
-    }) => `
+      spacing: { xsmall },
+    },
+  }) => `
     background-color: ${white};
     border: 2px solid ${gray};
     margin-right: ${xsmall}px;
   `}
-    :after {
+  :after {
     border-radius: 50%;
     content: '';
     display: none;
@@ -51,7 +51,7 @@ const RadioLabel = styled(Label)`
   display: flex;
   cursor: pointer;
   user-select: none;
-  
+
   ${HiddenInput} {
     :checked {
       ~ ${RadioMark} {
@@ -238,7 +238,7 @@ const Radio = ({
     <HiddenInput
       type="radio"
       disabled={disabled}
-      onChange={e => onChange({ value, label }, e)}
+      onChange={(e) => onChange({ value, label }, e)}
       value={value}
       required={required}
       {...rest}

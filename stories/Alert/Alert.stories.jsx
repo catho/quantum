@@ -16,7 +16,7 @@ const sampleChildren = (
   </span>
 );
 
-const Template = args => (
+const Template = (args) => (
   <Alert onClose={() => {}} {...args}>
     {sampleChildren}
   </Alert>

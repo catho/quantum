@@ -21,7 +21,7 @@ const SliderWrapper = styled.div`
     `}
 `;
 
-const RangeSlider = props => {
+const RangeSlider = (props) => {
   const {
     'aria-labelledby': ariaLabelledby,
     defaultValue,
@@ -176,7 +176,7 @@ RangeSlider.defaultProps = {
   disabled: false,
   onChange: () => {},
   onChangeCommitted: () => {},
-  tipFormatter: value => value.toString(),
+  tipFormatter: (value) => value.toString(),
   track: 'normal',
   'aria-labelledby': undefined,
   valueLabelDisplay: 'auto',

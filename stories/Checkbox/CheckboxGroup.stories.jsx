@@ -82,7 +82,7 @@ export const ControlledGroup = () => {
     <>
       <CheckboxGroup
         options={items}
-        onChange={newItems => setItems(newItems)}
+        onChange={(newItems) => setItems(newItems)}
       />
       <p>State:</p>
       <pre>{JSON.stringify(items, null, 2)}</pre>

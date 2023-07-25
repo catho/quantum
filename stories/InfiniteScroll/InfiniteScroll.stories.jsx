@@ -30,9 +30,12 @@ const itemsMock = [
   '20',
 ];
 
-const fakePromisse = () => new Promise(resolve => setTimeout(resolve, 1000));
+const fakePromisse = () =>
+  new Promise((resolve) => {
+    setTimeout(resolve, 1000);
+  });
 
-const Template = args => {
+const Template = (args) => {
   const { reverse, loading, ...rest } = args;
   const [items, setItems] = useState(
     reverse ? itemsMock.slice(0, 10).reverse() : itemsMock.slice(0, 10),
@@ -61,7 +64,7 @@ const Template = args => {
         onScrollEnd={pushItems}
       >
         <ul>
-          {items.map(number => (
+          {items.map((number) => (
             <li key={number}>{number}</li>
           ))}
         </ul>

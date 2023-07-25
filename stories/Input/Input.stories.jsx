@@ -6,7 +6,7 @@ export default {
   component: Input,
 };
 
-const Template = args => <Input {...args} />;
+const Template = (args) => <Input {...args} />;
 
 const TemplateWithType = ({ staticType, ...otherArgs }) => {
   const InputWithType = Input[staticType];
@@ -81,14 +81,14 @@ Skin.args = {
   skin: 'dark',
 };
 
-export const ControlledExample = props => {
+export const ControlledExample = (props) => {
   const [value, setValue] = useState('This is an example text');
 
   const onClean = () => {
     setValue('');
   };
 
-  const onChange = event => {
+  const onChange = (event) => {
     setValue(event.target.value);
   };
 

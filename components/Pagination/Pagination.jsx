@@ -37,7 +37,7 @@ class Pagination extends Component {
       ...props
     } = this.props;
 
-    const handlePageClick = page => e => {
+    const handlePageClick = (page) => (e) => {
       if (!onPageClick) {
         return undefined;
       }
@@ -51,7 +51,7 @@ class Pagination extends Component {
       return onPageClick(page, e);
     };
 
-    const handleHref = page => {
+    const handleHref = (page) => {
       if (!pageHref || onPageClick || page <= 0 || page > totalPages) {
         return undefined;
       }

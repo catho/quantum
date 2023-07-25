@@ -8,7 +8,7 @@ export default {
   component: TabbedView,
 };
 
-const Template = args => (
+const Template = (args) => (
   <TabbedView {...args}>
     <Tab title="Candidates">Candidates content</Tab>
     <Tab title="Companies">Companies content</Tab>

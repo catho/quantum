@@ -1,6 +1,6 @@
 import RangeSlider from '../../../components/RangeSlider';
 
-const Range = aditionalProps => (
+const Range = (aditionalProps) => (
   <RangeSlider defaultValue={{ from: 20, to: 80 }} {...aditionalProps} />
 );
 

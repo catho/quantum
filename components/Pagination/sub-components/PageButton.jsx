@@ -19,7 +19,9 @@ const PageButton = styled.a`
   min-width: 40px;
   outline: none;
   text-decoration: none;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
   user-select: none;
 

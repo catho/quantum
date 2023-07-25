@@ -15,11 +15,11 @@ function execValidate(validate, props) {
 }
 
 const typeNames = Object.values(InputTypes).map(
-  InputType => InputType.displayName,
+  (InputType) => InputType.displayName,
 );
 
 class Form extends Component {
-  static _isValidElement = element =>
+  static _isValidElement = (element) =>
     isValidElement(element) &&
     [Input.displayName, ...typeNames].includes(element.type.displayName);
 
@@ -35,7 +35,7 @@ class Form extends Component {
     const { children } = this.props;
     const { values } = this.state;
 
-    this._recursiveMap(children, child => {
+    this._recursiveMap(children, (child) => {
       if (!Form._isValidElement(child)) return;
 
       const {
@@ -45,10 +45,10 @@ class Form extends Component {
     });
   }
 
-  _createClones = children => {
+  _createClones = (children) => {
     const { values, errors } = this.state;
 
-    const generatedClones = this._recursiveMap(children, child => {
+    const generatedClones = this._recursiveMap(children, (child) => {
       if (!Form._isValidElement(child)) {
         return child;
       }
@@ -56,7 +56,7 @@ class Form extends Component {
       return cloneElement(child, {
         value: values[name],
         error: errors[name] || error,
-        onChange: e => {
+        onChange: (e) => {
           this._handleChange(e);
           onChange(e);
         },
@@ -66,7 +66,7 @@ class Form extends Component {
   };
 
   _recursiveMap = (children, fn) =>
-    Children.map(children, child => {
+    Children.map(children, (child) => {
       if (!isValidElement(child)) {
         return child;
       }
@@ -81,7 +81,7 @@ class Form extends Component {
       return fn(child);
     });
 
-  _findError = child => {
+  _findError = (child) => {
     const { props } = child;
     const { values } = this.state;
     const { validate = () => {} } = props;
@@ -111,10 +111,10 @@ class Form extends Component {
     return invalid;
   };
 
-  _validateError = children => {
+  _validateError = (children) => {
     const { errors } = this.state;
 
-    return this._recursiveMap(children, child => {
+    return this._recursiveMap(children, (child) => {
       const { name } = child.props;
 
       const _error = this._findError(child);
@@ -140,7 +140,7 @@ class Form extends Component {
     this.setState({ values: newValues });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
 
     const { onSubmit, onValidSubmit, children } = this.props;
@@ -148,7 +148,7 @@ class Form extends Component {
 
     this._validateError(children);
 
-    const isValid = !Object.values(errors).find(e => e);
+    const isValid = !Object.values(errors).find((e) => e);
 
     this.setState({ valid: isValid }, () => {
       const { valid: updatedValid } = this.state;

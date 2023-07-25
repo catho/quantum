@@ -7,7 +7,7 @@ import CarouselCard from './sub-components/CarouselCard';
 
 const MOBILE_BREAKPOINT = breakpoints.medium.width;
 
-const Carousel = props => {
+const Carousel = (props) => {
   const {
     theme,
     dotsPagination,
@@ -47,7 +47,7 @@ const Carousel = props => {
   return (
     <SlickSliderWrapper theme={theme}>
       <Slider {...settings}>
-        {cards.map(card => (
+        {cards.map((card) => (
           <CarouselCard
             key={card.title}
             card={card}

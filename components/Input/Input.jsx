@@ -79,6 +79,18 @@ DescriptionLabel.displayName = 'DescriptionLabel';
 
 /** A text field component to get user text data */
 class Input extends Component {
+  static CEP = InputTypes.CEP;
+
+  static CNPJ = InputTypes.CNPJ;
+
+  static CPF = InputTypes.CPF;
+
+  static Date = InputTypes.Date;
+
+  static Phone = InputTypes.Phone;
+
+  static Password = InputTypes.Password;
+
   constructor(props) {
     super(props);
 
@@ -103,7 +115,7 @@ class Input extends Component {
     }
   }
 
-  onChangeInput = ev => {
+  onChangeInput = (ev) => {
     const { onChange } = this.props;
     const inputValue = ev.currentTarget.value;
     this.setState({
@@ -114,7 +126,7 @@ class Input extends Component {
     onChange(ev);
   };
 
-  _changeType = type => {
+  _changeType = (type) => {
     this.setState({ type });
   };
 
@@ -122,18 +134,6 @@ class Input extends Component {
     const { type } = this.state;
     this._changeType(type === 'text' ? 'password' : 'text');
   };
-
-  static CEP = InputTypes.CEP;
-
-  static CNPJ = InputTypes.CNPJ;
-
-  static CPF = InputTypes.CPF;
-
-  static Date = InputTypes.Date;
-
-  static Phone = InputTypes.Phone;
-
-  static Password = InputTypes.Password;
 
   render() {
     const {
@@ -157,7 +157,7 @@ class Input extends Component {
     const hasValue = currentValue && currentValue[0];
     const _hasIcon = error || _isPassword || hasValue;
     const hasLabel = !!label;
-    const onCleanClick = e => {
+    const onCleanClick = (e) => {
       this.setState({
         currentValue: '',
         hasDefaultValue: false,
@@ -285,7 +285,7 @@ Input.defaultProps = {
   disabled: false,
   id: '',
   label: '',
-  mask: val => Array(val.length).fill(/./),
+  mask: (val) => Array(val.length).fill(/./),
   type: 'text',
   value: '',
   helperText: '',

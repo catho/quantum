@@ -9,7 +9,7 @@ export default {
   component: ProgressBar,
 };
 
-const Template = args => (
+const Template = (args) => (
   <ProgressBar
     progressPercent={progressPercent}
     progressText={progressText}
