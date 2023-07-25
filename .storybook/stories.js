@@ -1,4 +1,4 @@
-const docs = ['Introduction'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
+const docs = ['Introduction'].map(s => `../stories/${s}/${s}.mdx`);
 
 const foundation = [
   'Colors',
@@ -9,12 +9,18 @@ const foundation = [
   'Breakpoints',
   'List',
   'InfiniteScroll',
-].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
+].map(s => `../stories/${s}/${s}.mdx`);
 
-const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.story.@(jsx|mdx)`);
+const hooks = ['Hooks'].map(s => `../stories/${s}/${s}.mdx`);
 
-const components = ['../stories/**/!(*.regression).story.@(jsx|mdx)'].filter(
-  Boolean,
-);
+const components = ['../stories/**/!(*.regression).mdx'].filter(Boolean);
 
-module.exports = [...docs, ...foundation, ...hooks, ...components];
+const componentsStories = ['../stories/**/*.stories.jsx'];
+
+module.exports = [
+  ...docs,
+  ...foundation,
+  ...hooks,
+  ...components,
+  ...componentsStories,
+];

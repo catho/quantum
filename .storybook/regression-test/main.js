@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   stories: ['../../stories/**/*.regression-test.story.jsx'],
   addons: [
     {
@@ -14,4 +14,10 @@ module.exports = {
     },
     '@storybook/addon-a11y',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
 };
+
+export default config;
