@@ -1,5 +1,10 @@
 import { Alert } from '../../components';
 
+export default {
+  title: 'Alert',
+  component: Alert,
+};
+
 const sampleChildren = (
   <span>
     This is a <strong>sample</strong> message, a much bigger text could fit in

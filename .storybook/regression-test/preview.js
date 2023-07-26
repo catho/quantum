@@ -8,4 +8,6 @@ const CSSDecorator = (Story, context) => (
   </div>
 );
 
-export const decorators = [CSSDecorator];
+const decorators = [CSSDecorator];
+
+export default { decorators };

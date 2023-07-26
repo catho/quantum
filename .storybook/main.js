@@ -1,6 +1,5 @@
 const stories = require('./stories');
-
-module.exports = {
+const config = {
   stories,
   staticDirs: ['static'],
   addons: [
@@ -14,6 +13,11 @@ module.exports = {
         viewport: false,
       },
     },
-    '@storybook/addon-a11y',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
 };
+
+export default config;

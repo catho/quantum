@@ -1,5 +1,10 @@
 import { TabbedView, Tab, Icon, Badge } from '../../components';
 
+export default {
+  title: 'TabbedView',
+  component: TabbedView,
+};
+
 const itemsMock = [
   { title: 'Candidates', content: 'Candidates content' },
   { title: 'Companies', content: 'Companies content' },

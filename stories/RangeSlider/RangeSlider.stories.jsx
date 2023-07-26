@@ -1,6 +1,10 @@
 import { useState } from 'react';
-
 import { RangeSlider } from '../../components';
+
+export default {
+  title: 'Forms/RangeSlider',
+  component: RangeSlider,
+};
 
 const marks = [
   {

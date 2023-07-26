@@ -1,5 +1,10 @@
 import { RadioGroup } from '../../components';
 
+export default {
+  title: 'Forms/RadioGroup',
+  component: RadioGroup,
+};
+
 const options = [
   { value: 'Tomato sauce', label: 'Tomato sauce', disabled: true },
   { value: 'Mustard', label: 'Mustard' },

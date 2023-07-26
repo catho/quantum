@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { Modal, Button } from '../../components';
 
+export default {
+  title: 'Modal',
+  component: Modal,
+};
+
 const Template = (args) => {
   const [openModal, setOpenModal] = useState(false);
   return (

@@ -1,5 +1,10 @@
 import CircularLoader from '../../components/CircularLoader';
 
+export default {
+  title: 'Loaders/CircularLoader',
+  component: CircularLoader,
+};
+
 const Template = (args) => <CircularLoader {...args} />;
 
 export const Default = Template.bind({});

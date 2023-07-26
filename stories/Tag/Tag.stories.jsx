@@ -1,5 +1,10 @@
 import Tag from '../../components/Tag';
 
+export default {
+  title: 'Tag',
+  component: Tag,
+};
+
 const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Tag {...rest}>{Component}</Tag>;

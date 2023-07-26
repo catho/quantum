@@ -1,6 +1,11 @@
 import Popover from '../../components/Popover';
 import { Row, Col } from '../../components';
 
+export default {
+  title: 'Popover',
+  component: Popover,
+};
+
 const Template = (args) => {
   const { ...rest } = args;
   return (

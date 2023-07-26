@@ -1,5 +1,10 @@
 import Stepper from '../../components/Stepper';
 
+export default {
+  title: 'Stepper',
+  component: Stepper,
+};
+
 const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Stepper {...rest}>{Component}</Stepper>;

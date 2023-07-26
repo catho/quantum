@@ -3,6 +3,11 @@ import styled from 'styled-components';
 import Pagination from '../../components/Pagination';
 import MobilePagination from '../../components/Pagination/sub-components/Mobile';
 
+export default {
+  title: 'Pagination',
+  component: Pagination,
+};
+
 const MobileWrapper = styled.div`
   align-items: center;
   display: flex;

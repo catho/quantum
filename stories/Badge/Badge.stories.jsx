@@ -1,6 +1,11 @@
 import Badge from '../../components/Badge';
 import Button from '../../components/Button';
 
+export default {
+  title: 'Badge',
+  component: Badge,
+};
+
 const Template = (args) => {
   const { children: Component, ...rest } = args;
   return <Badge {...rest}>{Component}</Badge>;

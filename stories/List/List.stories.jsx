@@ -1,10 +1,14 @@
 import { List } from '../../components';
-
 import {
   exampleItemsDefault,
   exampleItemsWithHeaderAndSubHeader,
   exampleItemsWithIcon,
 } from './objectReference';
+
+export default {
+  title: 'Foundation/List',
+  component: List,
+};
 
 const Template = (args) => <List {...args} />;
 
