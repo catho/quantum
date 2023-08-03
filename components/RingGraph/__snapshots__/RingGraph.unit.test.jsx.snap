@@ -58,11 +58,11 @@ exports[`<RingGraph /> should match the snapshots 1`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       0% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -125,11 +125,11 @@ exports[`<RingGraph /> should match the snapshots 2`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       25% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -192,11 +192,11 @@ exports[`<RingGraph /> should match the snapshots 3`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       50% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -259,11 +259,11 @@ exports[`<RingGraph /> should match the snapshots 4`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       75% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -326,11 +326,11 @@ exports[`<RingGraph /> should match the snapshots 5`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       100% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;
@@ -393,11 +393,11 @@ exports[`<RingGraph /> should match the snapshots 6`] = `
         class="c2"
       />
     </div>
-    <div
+    <span
       class="c3"
     >
       100% compatível
-    </div>
+    </span>
   </div>
 </DocumentFragment>
 `;

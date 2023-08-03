@@ -63,7 +63,7 @@ const CircleOverlay = styled.div`
   }) => neutralColor};
 `;
 
-const ProgressWrapper = styled.div`
+const ProgressWrapper = styled.span`
   margin-left: 12px;
   ${({
     theme: {
