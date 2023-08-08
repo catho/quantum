@@ -16,6 +16,7 @@ import {
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
 import { FieldGroup } from '../shared';
+import useKeyboardSearchItems from './SubComponents/UseKeyboardSearchItems';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -202,34 +203,52 @@ const DropdownLight = ({
     selectedItem || '',
   );
 
-  const [cursor, setCursor] = useState(0);
+  const [cursor, setCursor] = useState(-1);
   const buttonRef = useRef();
   const listOptions = useRef();
 
   const downPress = useKeyPress('ArrowDown');
   const upPress = useKeyPress('ArrowUp');
   const enterPress = useKeyPress('Enter');
+  const filteredItemIndex = useKeyboardSearchItems(items, cursor);
   const EscapeKeyPressValue = 'Escape';
 
   const handleToggleDropdown = () => {
-    if (!enterPress) {
-      setIsOpen(!isOpen);
-    }
-
-    if (isOpen) {
-      listOptions.current.children[0].focus();
-    }
+    setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    if (typeof filteredItemIndex === 'number' && listOptions.current) {
+      setCursor(filteredItemIndex);
+      listOptions.current.children[filteredItemIndex].focus();
+    }
+  }, [filteredItemIndex]);
+
+  useEffect(() => {
+    if (isOpen) {
+      if (selectedOptionItem) {
+        const itemIndex = items.findIndex(
+          (item) => (item?.label || item) === selectedOptionItem,
+        );
+        if (itemIndex >= 0) {
+          setCursor(itemIndex);
+          listOptions.current.children[itemIndex].focus();
+        }
+      }
+    } else {
+      setCursor(-1);
+      buttonRef.current.focus();
+    }
+  }, [isOpen]);
 
   const selectItem = (item) => {
     setSelectedOptionItem(item?.label || item);
     onChange(item);
-    buttonRef.current.focus();
   };
 
   const handleOnClickListItem = (item) => {
-    setIsOpen(false);
     selectItem(item);
+    setIsOpen(false);
   };
 
   const handleClickOutside = (event) => {
@@ -242,7 +261,6 @@ const DropdownLight = ({
     if (key === EscapeKeyPressValue) {
       setIsOpen(false);
       setCursor(0);
-      buttonRef.current.focus();
     }
   };
 
