@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const useKeyboardSearchItems = (items = [], cursor = -1) => {
+const useKeyboardSearchItems = (items = [], cursor = -1, isOpen = false) => {
   const [pressedKey, setPressedKey] = useState(null);
-  const [selectedFilteredItemIndex, setSelectedFilteredItemIndex] =
-    useState(null);
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   const isEqual = (item, itemToCompare) =>
@@ -11,81 +9,64 @@ const useKeyboardSearchItems = (items = [], cursor = -1) => {
 
   useEffect(() => {
     setSelectedItemIndex(cursor >= 0 ? cursor : null);
-    setSelectedFilteredItemIndex(null);
   }, [cursor]);
 
   useEffect(() => {
-    if (pressedKey) {
-      const indexFilteredItems = selectedFilteredItemIndex || 0;
+    if (pressedKey && isOpen) {
       let indexItem = selectedItemIndex;
 
       const itemsWithLetterPressed = items.filter((item) =>
-        (item?.label || item).toLowerCase().startsWith(pressedKey),
+        (item?.label || item)
+          .toLowerCase()
+          .startsWith(pressedKey.toLowerCase()),
       );
 
       if (!itemsWithLetterPressed.length) {
         return;
       }
 
-      const selectedItemHaveFilteredItem = itemsWithLetterPressed.some((item) =>
-        isEqual(item, items[cursor]),
+      const selectedItemHasTheLetterPressed = itemsWithLetterPressed.some(
+        (item) => isEqual(item, items[cursor]),
       );
+      const firstItemInItemsWithLetterPressed = itemsWithLetterPressed[0];
+      const indexOfFirstItemWithLetterPressedOnItems = items.findIndex((item) =>
+        isEqual(item, firstItemInItemsWithLetterPressed),
+      );
+      const selectedItemIsBeforeTheFirstItemWithLetterPressed =
+        cursor < indexOfFirstItemWithLetterPressedOnItems;
+      const noItemSelected = typeof indexItem !== 'number';
 
       if (
-        typeof indexItem !== 'number' ||
-        (!selectedItemHaveFilteredItem &&
-          cursor <
-            items.findIndex((item) => isEqual(item, itemsWithLetterPressed[0])))
+        noItemSelected ||
+        (!selectedItemHasTheLetterPressed &&
+          selectedItemIsBeforeTheFirstItemWithLetterPressed)
       ) {
-        indexItem = items.findIndex((item) =>
-          isEqual(item, itemsWithLetterPressed[indexFilteredItems]),
-        );
-        setSelectedItemIndex(indexItem);
-        setSelectedFilteredItemIndex(indexFilteredItems);
+        setSelectedItemIndex(indexOfFirstItemWithLetterPressedOnItems);
         return;
       }
 
-      let nextFilteredItemIndex = indexFilteredItems + 1;
-      let nextFilteredItem = itemsWithLetterPressed[nextFilteredItemIndex];
+      const selectedItem = items[indexItem];
+      const selectedItemIndexInFilteredItem = itemsWithLetterPressed.findIndex(
+        (item) => isEqual(item, selectedItem),
+      );
+      const nextItemInItemsWithLetterPressed =
+        itemsWithLetterPressed[selectedItemIndexInFilteredItem + 1];
 
-      if (nextFilteredItem) {
-        if (indexItem >= 0) {
-          indexItem = items.findIndex((item) =>
-            isEqual(item, nextFilteredItem),
-          );
-          while (cursor >= indexItem && nextFilteredItem) {
-            nextFilteredItem =
-              itemsWithLetterPressed[nextFilteredItemIndex + 1];
-            if (nextFilteredItem) {
-              nextFilteredItemIndex += 1;
-              // eslint-disable-next-line no-loop-func
-              indexItem = items.findIndex((item) =>
-                isEqual(item, nextFilteredItem),
-              );
-            } else {
-              nextFilteredItemIndex = 0;
-              // eslint-disable-next-line no-loop-func
-              indexItem = items.findIndex((item) =>
-                isEqual(item, itemsWithLetterPressed[nextFilteredItemIndex]),
-              );
-            }
-          }
-          setSelectedItemIndex(indexItem);
-          setSelectedFilteredItemIndex(nextFilteredItem);
-        }
-      } else {
-        const firstFilteredItemIndex = 0;
-        indexItem = items.findIndex((item) =>
-          isEqual(item, itemsWithLetterPressed[firstFilteredItemIndex]),
-        );
-        setSelectedItemIndex(indexItem);
-        setSelectedFilteredItemIndex(firstFilteredItemIndex);
-      }
+      indexItem = items.findIndex((item) =>
+        isEqual(
+          item,
+          nextItemInItemsWithLetterPressed || firstItemInItemsWithLetterPressed,
+        ),
+      );
+
+      setSelectedItemIndex(indexItem);
     }
   }, [pressedKey]);
 
   const downHandler = ({ key }) => {
-    setPressedKey(key);
+    if (key.length === 1) {
+      setPressedKey(key);
+    }
   };
 
   const upHandler = () => {

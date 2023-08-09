@@ -15,6 +15,7 @@ export const itemsStringMock = [
   'Strawberry',
   'Orange',
   'Avocado',
+  'Açaí',
 ];
 
 export const itemsWithImageMock = [

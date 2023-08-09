@@ -210,7 +210,7 @@ const DropdownLight = ({
   const downPress = useKeyPress('ArrowDown');
   const upPress = useKeyPress('ArrowUp');
   const enterPress = useKeyPress('Enter');
-  const filteredItemIndex = useKeyboardSearchItems(items, cursor);
+  const filteredItemIndex = useKeyboardSearchItems(items, cursor, isOpen);
   const EscapeKeyPressValue = 'Escape';
 
   const handleToggleDropdown = () => {
@@ -218,37 +218,25 @@ const DropdownLight = ({
   };
 
   useEffect(() => {
-    if (typeof filteredItemIndex === 'number' && listOptions.current) {
-      setCursor(filteredItemIndex);
-      listOptions.current.children[filteredItemIndex].focus();
-    }
+    const hasItemSelected = typeof filteredItemIndex === 'number';
+    setCursor(hasItemSelected ? filteredItemIndex : -1);
   }, [filteredItemIndex]);
 
   useEffect(() => {
-    if (isOpen) {
-      if (selectedOptionItem) {
-        const itemIndex = items.findIndex(
-          (item) => (item?.label || item) === selectedOptionItem,
-        );
-        if (itemIndex >= 0) {
-          setCursor(itemIndex);
-          listOptions.current.children[itemIndex].focus();
-        }
-      }
-    } else {
-      setCursor(-1);
-      buttonRef.current.focus();
+    if (isOpen && cursor >= 0) {
+      listOptions.current.children[cursor].focus();
     }
-  }, [isOpen]);
+  }, [cursor, isOpen]);
 
   const selectItem = (item) => {
     setSelectedOptionItem(item?.label || item);
     onChange(item);
+    setCursor(-1);
+    buttonRef.current.focus();
   };
 
   const handleOnClickListItem = (item) => {
     selectItem(item);
-    setIsOpen(false);
   };
 
   const handleClickOutside = (event) => {
@@ -260,7 +248,8 @@ const DropdownLight = ({
   const handleEscPress = ({ key }) => {
     if (key === EscapeKeyPressValue) {
       setIsOpen(false);
-      setCursor(0);
+      setCursor(-1);
+      buttonRef.current.focus();
     }
   };
 
@@ -268,7 +257,6 @@ const DropdownLight = ({
     if (isOpen && downPress) {
       const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
       setCursor(selectedCursor);
-      listOptions.current.children[selectedCursor].focus();
     }
   }, [downPress, items, isOpen]);
 
@@ -276,7 +264,6 @@ const DropdownLight = ({
     if (isOpen && upPress && cursor > 0) {
       const selectedCursor = cursor - 1;
       setCursor(selectedCursor);
-      listOptions.current.children[selectedCursor].focus();
     }
   }, [upPress, items, isOpen]);
 
@@ -290,22 +277,29 @@ const DropdownLight = ({
   }, []);
 
   useEffect(() => {
-    if (document.activeElement === buttonRef.current && enterPress) {
-      setIsOpen(!isOpen);
+    if (
+      enterPress &&
+      !isOpen &&
+      document.activeElement === buttonRef.current &&
+      selectedOptionItem
+    ) {
+      const selectedItemIndex = items.findIndex(
+        (item) => (item?.label || item) === selectedOptionItem,
+      );
+      setCursor(selectedItemIndex);
     }
 
     if (
-      document.activeElement !== buttonRef.current &&
       enterPress &&
-      listOptions.current
+      isOpen &&
+      listOptions.current?.contains(document.activeElement)
     ) {
-      setIsOpen(false);
-
       const itemsList = [...listOptions.current.children];
+      const selectedItemIndex = itemsList.findIndex(
+        (item) => item === document.activeElement,
+      );
 
-      if (itemsList.some((element) => element === document.activeElement)) {
-        selectItem(items[cursor]);
-      }
+      selectItem(items[selectedItemIndex]);
     }
   }, [enterPress]);
 
