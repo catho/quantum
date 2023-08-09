@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RingGraph /> should match the snapshots 1`] = `
+exports[`<Score /> should match the snapshots 1`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;
@@ -67,7 +67,7 @@ exports[`<RingGraph /> should match the snapshots 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<RingGraph /> should match the snapshots 2`] = `
+exports[`<Score /> should match the snapshots 2`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;
@@ -134,7 +134,7 @@ exports[`<RingGraph /> should match the snapshots 2`] = `
 </DocumentFragment>
 `;
 
-exports[`<RingGraph /> should match the snapshots 3`] = `
+exports[`<Score /> should match the snapshots 3`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;
@@ -201,7 +201,7 @@ exports[`<RingGraph /> should match the snapshots 3`] = `
 </DocumentFragment>
 `;
 
-exports[`<RingGraph /> should match the snapshots 4`] = `
+exports[`<Score /> should match the snapshots 4`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;
@@ -268,7 +268,7 @@ exports[`<RingGraph /> should match the snapshots 4`] = `
 </DocumentFragment>
 `;
 
-exports[`<RingGraph /> should match the snapshots 5`] = `
+exports[`<Score /> should match the snapshots 5`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;
@@ -335,7 +335,7 @@ exports[`<RingGraph /> should match the snapshots 5`] = `
 </DocumentFragment>
 `;
 
-exports[`<RingGraph /> should match the snapshots 6`] = `
+exports[`<Score /> should match the snapshots 6`] = `
 <DocumentFragment>
   .c0 {
   display: -webkit-inline-box;

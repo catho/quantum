@@ -1,0 +1,55 @@
+{/* Generated with scripts/create-componnent.js */}
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import  Score  from '../../components/Score';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithoutRouded,
+  WithSkin,
+  WithCustomText
+} from './Score.stories.jsx';
+
+<Meta title="RingGraph/Score" component={Score}  />
+
+<Header title="Score">
+  The RingGraph component is used to update the user on the percentage of compatibility with a job vacancy
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Score } from '@catho/quantum';
+```
+
+<Canvas>
+  <Story story={Default} />
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Score} />
+
+## <a id="examples"></a>Examples
+
+### Without Rouded
+
+<Canvas>
+  <Story story={WithoutRouded} />
+</Canvas>
+
+### With Skin
+
+<Canvas>
+  <Story story={WithSkin} />
+</Canvas>
+
+### With Custom Text
+
+<Canvas>
+  <Story story={WithCustomText} />
+</Canvas>

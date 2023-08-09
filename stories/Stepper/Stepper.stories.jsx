@@ -1,7 +1,7 @@
 import Stepper from '../../components/Stepper';
 
 export default {
-  title: 'Stepper',
+  title: 'RingGraph/Stepper',
   component: Stepper,
 };
 

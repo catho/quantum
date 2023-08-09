@@ -1,13 +1,13 @@
 // Generated with scripts/create-componnent.js
 
-import RingGraph from '../../components/RingGraph';
+import Score from '../../components/Score';
 
 export default {
-  title: 'RingGraph',
-  component: RingGraph,
+  title: 'Score',
+  component: Score,
 };
 
-const Template = (args) => <RingGraph {...args} />;
+const Template = (args) => <Score {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

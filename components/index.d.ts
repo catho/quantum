@@ -41,7 +41,7 @@ import { default as SegmentedControlComponent, SegmentedControlProps } from "./S
 import { default as CarouselComponent, CarouselProps } from "./Carousel"
 import { default as InfiniteScrollComponent, InfiniteScrollProps } from "./InfiniteScroll"
 import { default as SkeletonComponent, SkeletonProps } from "./Skeleton";
-import { default as RingGraphComponent, RingGraphProps } from './RingGraph';
+import { default as ScoreComponent, ScoreProps } from './Score';
 
 export { default as BREAKPOINTS } from './Breakpoints';
 export { default as Colors } from "./Colors";
@@ -93,4 +93,4 @@ export const SegmentedControl: StyledComponent<typeof SegmentedControlComponent,
 export const Carousel: StyledComponent<typeof CarouselComponent, CarouselProps>;
 export const InfiniteScroll: StyledComponent<typeof InfiniteScrollComponent, InfiniteScrollProps>;
 export const DropdownLight: StyledComponent<typeof DropdownLightComponent, DropdownLightProps>;
-export const RingGraph: StyledComponent<typeof RingGraphComponent, RingGraphProps>;
+export const Score: StyledComponent<typeof ScoreComponent, ScoreProps>;

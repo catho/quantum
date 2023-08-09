@@ -2,7 +2,11 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { colors, baseFontSize as defaultBaseFontSize } from '../shared/theme';
+import {
+  colors,
+  baseFontSize as defaultBaseFontSize,
+  spacing as defaultSpacing,
+} from '../shared/theme';
 import { shadow } from '../shared';
 import { percentToDegrees } from '../Stepper/helper';
 
@@ -64,7 +68,11 @@ const CircleOverlay = styled.div`
 `;
 
 const ProgressWrapper = styled.span`
-  margin-left: 12px;
+  margin-left: ${({
+    theme: {
+      spacing: { small },
+    },
+  }) => `${small}px`};
   ${({
     theme: {
       baseFontSize,
@@ -83,13 +91,16 @@ const formatInPercentage = (number) =>
     maximumFractionDigits: 2,
   });
 
-const RingGraph = ({ percentage, round, skin, theme }) => {
+const Score = ({ percentage, round, text, skin, theme }) => {
   const [compatibilityPercentage, setCompatibilityPercentage] = useState(
     formatInPercentage(0),
   );
 
+  const isPercentageValid = (percentageValue) =>
+    percentageValue >= 0 && percentageValue <= 100;
+
   useEffect(() => {
-    if (percentage >= 0 && percentage <= 100) {
+    if (isPercentageValid(percentage)) {
       let percentageValue = percentage;
       if (round) {
         percentageValue = Math.round(percentageValue);
@@ -108,13 +119,14 @@ const RingGraph = ({ percentage, round, skin, theme }) => {
       </Circle>
       <ProgressWrapper
         theme={theme}
-      >{`${compatibilityPercentage} compatível`}</ProgressWrapper>
+      >{`${compatibilityPercentage} ${text}`}</ProgressWrapper>
     </Wrapper>
   );
 };
 
-RingGraph.propTypes = {
+Score.propTypes = {
   percentage: PropTypes.number,
+  text: PropTypes.string,
   round: PropTypes.bool,
   skin: PropTypes.oneOf([
     'primary',
@@ -127,17 +139,20 @@ RingGraph.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
     baseFontSize: PropTypes.number,
+    spacing: PropTypes.object,
   }),
 };
 
-RingGraph.defaultProps = {
+Score.defaultProps = {
   percentage: 0,
+  text: 'compatível',
   round: true,
   skin: 'primary',
   theme: {
     colors,
     baseFontSize: defaultBaseFontSize,
+    spacing: defaultSpacing,
   },
 };
 
-export default RingGraph;
+export default Score;
