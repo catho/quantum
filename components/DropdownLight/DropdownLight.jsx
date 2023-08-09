@@ -210,7 +210,7 @@ const DropdownLight = ({
   const downPress = useKeyPress('ArrowDown');
   const upPress = useKeyPress('ArrowUp');
   const enterPress = useKeyPress('Enter');
-  const filteredItemIndex = useKeyboardSearchItems(items, cursor, isOpen);
+  const focusedItemIndex = useKeyboardSearchItems(items, cursor, isOpen);
   const EscapeKeyPressValue = 'Escape';
 
   const handleToggleDropdown = () => {
@@ -218,9 +218,9 @@ const DropdownLight = ({
   };
 
   useEffect(() => {
-    const hasItemSelected = typeof filteredItemIndex === 'number';
-    setCursor(hasItemSelected ? filteredItemIndex : -1);
-  }, [filteredItemIndex]);
+    const hasItemSelected = typeof focusedItemIndex === 'number';
+    setCursor(hasItemSelected ? focusedItemIndex : -1);
+  }, [focusedItemIndex]);
 
   useEffect(() => {
     if (isOpen && cursor >= 0) {
