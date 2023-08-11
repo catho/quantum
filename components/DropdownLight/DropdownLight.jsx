@@ -16,6 +16,7 @@ import {
 import Icon from '../Icon/Icon';
 import useKeyPress from './SubComponents/UseKeyPress';
 import { FieldGroup } from '../shared';
+import useKeyboardSearchItems from './SubComponents/UseKeyboardSearchItems';
 
 const itemPropType = PropTypes.oneOfType([
   PropTypes.string,
@@ -202,33 +203,39 @@ const DropdownLight = ({
     selectedItem || '',
   );
 
-  const [cursor, setCursor] = useState(0);
+  const [cursor, setCursor] = useState(-1);
   const buttonRef = useRef();
   const listOptions = useRef();
 
   const downPress = useKeyPress('ArrowDown');
   const upPress = useKeyPress('ArrowUp');
   const enterPress = useKeyPress('Enter');
+  const focusedItemIndex = useKeyboardSearchItems(items, cursor, isOpen);
   const EscapeKeyPressValue = 'Escape';
 
   const handleToggleDropdown = () => {
-    if (!enterPress) {
-      setIsOpen(!isOpen);
-    }
-
-    if (isOpen) {
-      listOptions.current.children[0].focus();
-    }
+    setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const hasItemSelected = typeof focusedItemIndex === 'number';
+    setCursor(hasItemSelected ? focusedItemIndex : -1);
+  }, [focusedItemIndex]);
+
+  useEffect(() => {
+    if (isOpen && cursor >= 0) {
+      listOptions.current.children[cursor].focus();
+    }
+  }, [cursor, isOpen]);
 
   const selectItem = (item) => {
     setSelectedOptionItem(item?.label || item);
     onChange(item);
+    setCursor(-1);
     buttonRef.current.focus();
   };
 
   const handleOnClickListItem = (item) => {
-    setIsOpen(false);
     selectItem(item);
   };
 
@@ -241,7 +248,7 @@ const DropdownLight = ({
   const handleEscPress = ({ key }) => {
     if (key === EscapeKeyPressValue) {
       setIsOpen(false);
-      setCursor(0);
+      setCursor(-1);
       buttonRef.current.focus();
     }
   };
@@ -250,7 +257,6 @@ const DropdownLight = ({
     if (isOpen && downPress) {
       const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
       setCursor(selectedCursor);
-      listOptions.current.children[selectedCursor].focus();
     }
   }, [downPress, items, isOpen]);
 
@@ -258,7 +264,6 @@ const DropdownLight = ({
     if (isOpen && upPress && cursor > 0) {
       const selectedCursor = cursor - 1;
       setCursor(selectedCursor);
-      listOptions.current.children[selectedCursor].focus();
     }
   }, [upPress, items, isOpen]);
 
@@ -272,22 +277,29 @@ const DropdownLight = ({
   }, []);
 
   useEffect(() => {
-    if (document.activeElement === buttonRef.current && enterPress) {
-      setIsOpen(!isOpen);
+    if (
+      enterPress &&
+      !isOpen &&
+      document.activeElement === buttonRef.current &&
+      selectedOptionItem
+    ) {
+      const selectedItemIndex = items.findIndex(
+        (item) => (item?.label || item) === selectedOptionItem,
+      );
+      setCursor(selectedItemIndex);
     }
 
     if (
-      document.activeElement !== buttonRef.current &&
       enterPress &&
-      listOptions.current
+      isOpen &&
+      listOptions.current?.contains(document.activeElement)
     ) {
-      setIsOpen(false);
-
       const itemsList = [...listOptions.current.children];
+      const selectedItemIndex = itemsList.findIndex(
+        (item) => item === document.activeElement,
+      );
 
-      if (itemsList.some((element) => element === document.activeElement)) {
-        selectItem(items[cursor]);
-      }
+      selectItem(items[selectedItemIndex]);
     }
   }, [enterPress]);
 

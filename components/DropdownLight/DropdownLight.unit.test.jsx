@@ -14,6 +14,7 @@ const INPUT_NAME = 'dropdown-name';
 const ARROW_DOWN_KEY_CODE = '{ArrowDown}';
 const ARROW_UP_KEY_CODE = '{ArrowUp}';
 const ENTER_KEY_CODE = '{Enter}';
+const A_KEY_CODE = '{a}';
 const ESCAPE_KEY_CODE = '{Escape}';
 
 describe('<DropdownLight />', () => {
@@ -189,14 +190,48 @@ describe('<DropdownLight />', () => {
     expect(screen.getByRole('list')).toBeInTheDocument();
 
     await userEvent.keyboard(
-      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}${ENTER_KEY_CODE}`,
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}`,
     );
 
-    const bananaItem = itemsStringMock[1];
+    const bananaItemMock = itemsStringMock[1];
+    const bananaItem = screen.getByRole('option', { name: bananaItemMock });
+
+    expect(bananaItem).toHaveFocus();
+
+    await userEvent.keyboard(ENTER_KEY_CODE);
+    const input = screen.getByRole('textbox', { hidden: true });
+
+    expect(input.value).toEqual(bananaItemMock);
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+  });
+
+  it('should allow the User to navigate between items using the keys with the initial letter of each item', async () => {
+    render(<DropdownLight items={itemsStringMock} />);
+
+    await userEvent.tab();
+    await userEvent.keyboard(ENTER_KEY_CODE);
+
+    expect(screen.getByRole('list')).toBeInTheDocument();
+
+    await userEvent.keyboard(A_KEY_CODE);
+
+    const avocadoItemMock = itemsStringMock[4];
+    const avocadoItem = screen.getByRole('option', { name: avocadoItemMock });
+
+    expect(avocadoItem).toHaveFocus();
+
+    await userEvent.keyboard(A_KEY_CODE);
+
+    const acaiItemMock = itemsStringMock[5];
+    const acaiItem = screen.getByRole('option', { name: acaiItemMock });
+
+    expect(acaiItem).toHaveFocus();
+
+    await userEvent.keyboard(ENTER_KEY_CODE);
 
     const input = screen.getByRole('textbox', { hidden: true });
 
-    expect(input.value).toEqual(bananaItem);
+    expect(input.value).toEqual(acaiItemMock);
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
   });
 
@@ -212,8 +247,8 @@ describe('<DropdownLight />', () => {
     );
 
     expect(onChangeMock).toHaveBeenCalledWith({
-      label: 'Strawberry',
-      value: 'Strawberry',
+      label: 'Lime',
+      value: 'Lime',
     });
   });
 

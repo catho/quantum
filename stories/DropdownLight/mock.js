@@ -1,9 +1,12 @@
 export const itemsObjectMock = [
   { value: 'Lemon', label: 'Lemon' },
+  { value: 'Lime', label: 'Lime' },
   { value: 'Banana', label: 'Banana' },
+  { value: 'Açaí', label: 'Açaí' },
   { value: 'Strawberry', label: 'Strawberry' },
   { value: 'Orange', label: 'Orange' },
   { value: 'Avocado', label: 'Avocado' },
+  { value: 'Acerola', label: 'Acerola' },
 ];
 
 export const itemsStringMock = [
@@ -12,6 +15,7 @@ export const itemsStringMock = [
   'Strawberry',
   'Orange',
   'Avocado',
+  'Açaí',
 ];
 
 export const itemsWithImageMock = [
