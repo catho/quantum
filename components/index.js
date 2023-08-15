@@ -40,6 +40,7 @@ import Breadcrumbs from './Breadcrumbs';
 import Link from './Link';
 import InfiniteScroll from './InfiniteScroll';
 import DropdownLight from './DropdownLight';
+import Score from './Score';
 
 export {
   Accordion,
@@ -91,4 +92,5 @@ export {
   Link,
   InfiniteScroll,
   DropdownLight,
+  Score,
 };
