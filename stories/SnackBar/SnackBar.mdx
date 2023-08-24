@@ -85,7 +85,7 @@ export default function Template () {
   return (
     <>
       <Button onClick={() => setOpenSnackbar(true)}>Open snackbar</Button>
-      {openSnackBar && <SnackBar onClose={() => setOpenSnackbar(false)} text={<p><b>Lorem</b><br/>ipsum</p>} />}
+      {openSnackBar && <SnackBar onClose={() => setOpenSnackbar(false)} text={<p><strong>Lorem</strong><br/>ipsum</p>} />}
     </>
   );
 };
