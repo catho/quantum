@@ -37,6 +37,17 @@ WithText.args = {
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
+export const WithTextElement = Template.bind({});
+WithTextElement.args = {
+  text: (
+    <p>
+      <strong>Lorem</strong>
+      <br />
+      ipsum
+    </p>
+  ),
+};
+
 export const WithSkin = Template.bind({});
 WithSkin.args = {
   skin: 'success',
