@@ -1,4 +1,4 @@
-import { Component, Children } from 'react';
+import { Children, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
@@ -11,13 +11,20 @@ const Group = styled(FieldGroup)`
   position: relative;
 `;
 
-class CheckboxGroup extends Component {
-  _onChange = (event) => {
+const CheckboxGroup = ({
+  children,
+  onChange,
+  error,
+  options,
+  type,
+  inline,
+  theme,
+  size,
+}) => {
+  const _onChange = (event) => {
     const {
       target: { checked, name },
     } = event;
-
-    const { onChange, children, options } = this.props;
 
     const items = Children.map(children, ({ props }) => props) || options;
 
@@ -27,32 +34,33 @@ class CheckboxGroup extends Component {
     );
   };
 
-  render() {
-    const { children, error, options, type, inline, theme, size } = this.props;
+  const checkboxes = () => {
     const ItemType = type === 'checkbox' ? Checkbox : CheckboxButton;
-
-    const checkboxes =
-      children ||
-      options.map((option) => <ItemType {...option} key={option.name} />);
-
     return (
-      <Group theme={theme}>
-        <CheckboxGroupContext.Provider
-          // eslint-disable-next-line react/jsx-no-constructed-context-values
-          value={{
-            error: Boolean(error),
-            onChange: this._onChange,
-            inline,
-            size,
-          }}
-        >
-          {checkboxes}
-        </CheckboxGroupContext.Provider>
-        {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
-      </Group>
+      children ||
+      options.map((option) => <ItemType {...option} key={option.name} />)
     );
-  }
-}
+  };
+
+  const valueProvider = useMemo(
+    () => ({
+      error: Boolean(error),
+      onChange: _onChange,
+      inline,
+      size,
+    }),
+    [error, inline, size, _onChange],
+  );
+
+  return (
+    <Group theme={theme}>
+      <CheckboxGroupContext.Provider value={valueProvider}>
+        {checkboxes()}
+      </CheckboxGroupContext.Provider>
+      {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
+    </Group>
+  );
+};
 
 CheckboxGroup.Checkbox = Checkbox;
 CheckboxGroup.Button = CheckboxButton;
