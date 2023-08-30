@@ -72,7 +72,7 @@ const NavItem = styled.button.attrs({
 
   ${({
     skin,
-    children,
+    quantityOfItems,
     theme: {
       components: {
         tabbedView: { skins },
@@ -96,7 +96,7 @@ const NavItem = styled.button.attrs({
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: ${(100 / children.length).toFixed(2)}%;
+        width: ${(100 / quantityOfItems).toFixed(2)}%;
       `
         : null}
 
@@ -201,6 +201,7 @@ class TabbedView extends Component {
           {Children.map(children, ({ props: { title, badge, icon } }) => (
             <NavItem
               fluid={fluid}
+              quantityOfItems={Children.count(children)}
               key={title}
               onClick={() => this.onTabClick(title, onTabClick)}
               skin={skin}

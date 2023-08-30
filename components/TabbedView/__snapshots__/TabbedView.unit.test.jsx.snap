@@ -405,6 +405,239 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 100.00%;
+}
+
+.c1[aria-selected='true'] {
+  border-bottom: 1px solid #1250C4;
+  color: #1250C4;
+  cursor: default;
+}
+
+.c1[aria-selected='true']::after {
+  content: ' ';
+  background-color: #1250C4;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+}
+
+.c1:hover {
+  color: #1250C4;
+  border-bottom: 1px solid #1250C4;
+  background-color: #E5EDFC;
+}
+
+.c1:focus {
+  color: #1250C4;
+  border: 1px solid #1250C4;
+  background-color: #E5EDFC;
+  padding: 15px;
+}
+
+.c2 {
+  vertical-align: top;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    overflow-x: auto;
+  }
+}
+
+<nav
+  class="c0"
+  role="tablist"
+>
+  <button
+    aria-controls="candidates-panel"
+    aria-selected="true"
+    class="c1"
+    id="candidates-tab"
+    role="tab"
+  >
+    <span
+      class="c2"
+    >
+      Candidates
+    </span>
+  </button>
+</nav>
+`;
+
+exports[`<TabbedView />  Snapshot should match snapshot with fluid option 2`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  padding: 0;
+  max-width: 100%;
+  clear: left;
+  float: left;
+  background-color: transparent;
+  margin: 0 0 24px 0;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.c1 {
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 56px;
+  line-height: 1.5;
+  min-width: 90px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
+  font-size: 16px;
+  color: inherit;
+  padding: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50.00%;
+}
+
+.c1[aria-selected='true'] {
+  border-bottom: 1px solid #1250C4;
+  color: #1250C4;
+  cursor: default;
+}
+
+.c1[aria-selected='true']::after {
+  content: ' ';
+  background-color: #1250C4;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 3px;
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+}
+
+.c1:hover {
+  color: #1250C4;
+  border-bottom: 1px solid #1250C4;
+  background-color: #E5EDFC;
+}
+
+.c1:focus {
+  color: #1250C4;
+  border: 1px solid #1250C4;
+  background-color: #E5EDFC;
+  padding: 15px;
+}
+
+.c2 {
+  vertical-align: top;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    overflow-x: auto;
+  }
+}
+
+<nav
+  class="c0"
+  role="tablist"
+>
+  <button
+    aria-controls="candidates-panel"
+    aria-selected="true"
+    class="c1"
+    id="candidates-tab"
+    role="tab"
+  >
+    <span
+      class="c2"
+    >
+      Candidates
+    </span>
+  </button>
+  <button
+    aria-controls="companies-panel"
+    aria-selected="false"
+    class="c1"
+    id="companies-tab"
+    role="tab"
+  >
+    <span
+      class="c2"
+    >
+      Companies
+    </span>
+  </button>
+</nav>
+`;
+
+exports[`<TabbedView />  Snapshot should match snapshot with fluid option 3`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  padding: 0;
+  max-width: 100%;
+  clear: left;
+  float: left;
+  background-color: transparent;
+  margin: 0 0 24px 0;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.c1 {
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 56px;
+  line-height: 1.5;
+  min-width: 90px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
+  font-size: 16px;
+  color: inherit;
+  padding: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   width: 33.33%;
 }
 

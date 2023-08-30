@@ -21,7 +21,20 @@ describe('<TabbedView /> ', () => {
       expect(container.firstChild).toMatchSnapshot();
     });
     it('should match snapshot with fluid option', () => {
-      const { container } = render(
+      const { container: withOneTab } = render(
+        <TabbedView fluid>
+          <Tab title="Candidates">Candidates content</Tab>
+        </TabbedView>,
+      );
+
+      const { container: withTwoTabs } = render(
+        <TabbedView fluid>
+          <Tab title="Candidates">Candidates content</Tab>
+          <Tab title="Companies">Companies content</Tab>
+        </TabbedView>,
+      );
+
+      const { container: withThreeTabs } = render(
         <TabbedView fluid>
           <Tab title="Candidates">Candidates content</Tab>
           <Tab title="Companies">Companies content</Tab>
@@ -29,7 +42,9 @@ describe('<TabbedView /> ', () => {
         </TabbedView>,
       );
 
-      expect(container.firstChild).toMatchSnapshot();
+      expect(withOneTab.firstChild).toMatchSnapshot();
+      expect(withTwoTabs.firstChild).toMatchSnapshot();
+      expect(withThreeTabs.firstChild).toMatchSnapshot();
     });
     it('should match snapshot with badges and icons', () => {
       const { container } = render(
