@@ -7,6 +7,7 @@ import AccountBalanceWallet from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Add from '@mui/icons-material/Add';
 import AddCircle from '@mui/icons-material/AddCircle';
+import AddAlarm from '@mui/icons-material/AddAlarm';
 import Apps from '@mui/icons-material/Apps';
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUp from '@mui/icons-material/ArrowDropUp';
@@ -56,6 +57,7 @@ import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import Launch from '@mui/icons-material/Launch';
 import LocationCity from '@mui/icons-material/LocationCity';
 import Lock from '@mui/icons-material/Lock';
+import LockOpen from '@mui/icons-material/LockOpen';
 import Markunread from '@mui/icons-material/Markunread';
 import Menu from '@mui/icons-material/Menu';
 import MenuBook from '@mui/icons-material/MenuBook';
@@ -113,6 +115,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     add: Add,
     wallet: AccountBalanceWallet,
     add_circle: AddCircle,
+    add_alarm: AddAlarm,
     apps: Apps,
     arrow_drop_down: ArrowDropDown,
     arrow_drop_up: ArrowDropUp,
@@ -166,6 +169,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     launch: Launch,
     location_city: LocationCity,
     lock: Lock,
+    lock_open: LockOpen,
     markunread: Markunread,
     menu_book: MenuBook,
     menu: Menu,
