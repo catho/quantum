@@ -123,7 +123,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     arrow_drop_up: ArrowDropUp,
     arrow_left: ArrowLeft,
     arrow_right: ArrowRight,
-    arrow_up: ArrowUpward,
+    arrow_upward: ArrowUpward,
     assessment: Assessment,
     assignment: Assignment,
     assignment_ind: AssignmentInd,
