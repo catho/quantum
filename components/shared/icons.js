@@ -11,7 +11,7 @@ const icons = [
   'arrow_drop_up',
   'arrow_right',
   'arrow_left',
-  'arrow_up',
+  'arrow_upward',
   'assessment',
   'assignment',
   'assignment_ind',
