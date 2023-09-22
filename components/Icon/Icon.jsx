@@ -13,6 +13,7 @@ import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUp from '@mui/icons-material/ArrowDropUp';
 import ArrowLeft from '@mui/icons-material/ArrowLeft';
 import ArrowRight from '@mui/icons-material/ArrowRight';
+import ArrowUpward from '@mui/icons-material/ArrowUpward';
 import Assessment from '@mui/icons-material/Assessment';
 import Assignment from '@mui/icons-material/Assignment';
 import AssignmentInd from '@mui/icons-material/AssignmentInd';
@@ -31,6 +32,7 @@ import Close from '@mui/icons-material/Close';
 import Collections from '@mui/icons-material/Collections';
 import Contacts from '@mui/icons-material/Contacts';
 import ContactPhone from '@mui/icons-material/ContactPhone';
+import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
 import DateRange from '@mui/icons-material/DateRange';
 import Delete from '@mui/icons-material/Delete';
@@ -121,6 +123,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     arrow_drop_up: ArrowDropUp,
     arrow_left: ArrowLeft,
     arrow_right: ArrowRight,
+    arrow_upward: ArrowUpward,
     assessment: Assessment,
     assignment: Assignment,
     assignment_ind: AssignmentInd,
@@ -140,6 +143,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     collections: Collections,
     contacts: Contacts,
     contact_phone: ContactPhone,
+    contrast: Contrast,
     credit_card: CreditCard,
     date_range: DateRange,
     delete: Delete,
