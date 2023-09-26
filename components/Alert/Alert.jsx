@@ -10,6 +10,7 @@ import {
   baseFontSize as defaultBaseFontSize,
   breakpoints,
 } from '../shared/theme';
+import styles from './Alert.module.css';
 
 const Content = styled.div`
   align-items: start;
@@ -94,7 +95,7 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => {
 
   return (
     show && (
-      <Wrapper theme={theme} {...rest} role="alert">
+      <Wrapper theme={theme} {...rest} role="alert" className={styles.alert}>
         <Content>
           {icon && <AlertIcon name={icon} />}
           {children && <span>{children}</span>}

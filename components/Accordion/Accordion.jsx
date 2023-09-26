@@ -2,6 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import slugify from 'slugify';
+import styles from './Accordion.module.css';
 
 import {
   colors,
@@ -286,7 +287,14 @@ class Accordion extends Component {
     const { theme } = this.props;
     const { items } = this.state;
 
-    return <Wrapper theme={theme}>{this.handleCustomItem(items)}</Wrapper>;
+    return (
+      <Wrapper
+        className={`${styles['accordion-wrapper']} ${styles.alert}`}
+        theme={theme}
+      >
+        {this.handleCustomItem(items)}
+      </Wrapper>
+    );
   }
 }
 

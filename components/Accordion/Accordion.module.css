@@ -1,0 +1,10 @@
+@import "../theme.css";
+
+.accordion-wrapper {
+    border: 2px solid black;
+    background-color: var(--color-red);
+}
+
+.alert {
+    font-size: 32px;
+}
