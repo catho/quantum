@@ -9,6 +9,7 @@
     --color-neutral-1000:#000000;
 
     --color-primary-700: #1250C4;
+    --color-secondary-700: #DE0059;
 
     --spacing-xsmall: 8px;
     --spacing-xxlarge: 40px;
@@ -16,5 +17,6 @@
     --font-size: 16px;
 
     --components-button-skin-primary-maincolor-700: var(--color-primary-700);
+    --components-button-skin-secondary-maincolor-700: var(--color-secondary-700);
     --components-button-skin-primary-text: #ffffff;
 };

@@ -6,12 +6,14 @@ const Button = ({
   children,
   icon,
   size,
+  skin,
   $as,
   center,
   full,
   primaryColor,
   theme,
   className: classComponent,
+  style: styleComponent,
   ...rest
 }) => {
   const className = classname(
@@ -21,8 +23,18 @@ const Button = ({
     classComponent,
   );
 
+  // É mais pertinente aplicar uma classe para cada skin ao invés de definir o valor da variável css,
+  // pois os valores sobrescritos em style sobrescrevem os valores definidos nas classes (exceto valores com !important)
+  // O caso abaixo é pertinente para aplicar cores foram da paleta de cores do style guide
+
+  const style = {
+    backgroundColor: `var(--components-button-skin-${skin}-maincolor-700)`,
+    borderColor: `var(--components-button-skin-${skin}-maincolor-700)`,
+    ...styleComponent,
+  };
+
   return (
-    <button type="button" className={className} {...rest}>
+    <button type="button" className={className} {...rest} style={style}>
       {children}
     </button>
   );
@@ -40,10 +52,12 @@ Button.defaultProps = {
   children: undefined,
   $as: undefined,
   className: '',
+  style: {},
 };
 
 Button.propTypes = {
   className: PropTypes.string,
+  style: PropTypes.object,
   center: PropTypes.bool,
   disabled: PropTypes.bool,
   stroked: PropTypes.bool,
