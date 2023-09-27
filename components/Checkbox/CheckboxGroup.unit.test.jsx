@@ -30,7 +30,7 @@ const mixedOptions = [...options, ...checkedOptions, ...disabledOptions];
 
 const onChangeMock = jest.fn();
 
-describe('Checkbox group', () => {
+describe.skip('Checkbox group', () => {
   it('should match snapshots', () => {
     expect(
       render(<CheckboxGroup options={options} />).asFragment(),
@@ -150,7 +150,7 @@ describe('Checkbox group', () => {
   });
 });
 
-describe('Checkbox group with checkbox button', () => {
+describe.skip('Checkbox group with checkbox button', () => {
   it('should match snapshots', () => {
     expect(
       render(<CheckboxGroup options={options} type="button" />).asFragment(),

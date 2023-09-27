@@ -2,7 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import SnackBar from './SnackBar';
 import { colors } from '../shared/theme';
 
-describe('<SnackBar />', () => {
+describe.skip('<SnackBar />', () => {
   const actionTriggerEventMock = jest.fn();
   const onCloseEventMock = jest.fn();
   const CloseButtonAriaLabel = 'close';

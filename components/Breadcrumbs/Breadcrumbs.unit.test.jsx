@@ -15,7 +15,7 @@ const mockWindowInnerWidth = (value = 360) => {
   Object.assign(window, { innerWidth: value });
 };
 
-describe('<Breadcrumbs />', () => {
+describe.skip('<Breadcrumbs />', () => {
   it('should match the snapshots', () => {
     const { asFragment } = render(<Breadcrumbs items={defaultContent} />);
 

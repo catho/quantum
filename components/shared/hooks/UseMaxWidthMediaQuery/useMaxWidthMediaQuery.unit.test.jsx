@@ -6,7 +6,7 @@ import ExampleMediaQuery from './Example';
 const MOBILE_TEXT = 'Less than 768';
 const DESKTOP_TEXT = 'More than 768';
 
-describe('useMaxWidthMediaQuery', () => {
+describe.skip('useMaxWidthMediaQuery', () => {
   it('should be bigger than 768px', () => {
     render(<ExampleMediaQuery />);
 

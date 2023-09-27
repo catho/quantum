@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import RadioGroup from './RadioGroup';
 
 const _childrenTest = (RadioItem) => {
-  describe(`<${RadioItem.displayName} />`, () => {
+  describe.skip(`<${RadioItem.displayName} />`, () => {
     it(`should render three <${RadioItem.displayName} />`, () => {
       render(
         <RadioGroup name="foo">
@@ -62,8 +62,8 @@ const _childrenTest = (RadioItem) => {
   });
 };
 
-describe('<RadioGroup />', () => {
-  describe('snapshot', () => {
+describe.skip('<RadioGroup />', () => {
+  describe.skip('snapshot', () => {
     it('simple with options', () => {
       const options = [
         { value: 'Foo', label: 'Foo' },

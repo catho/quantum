@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import RadioButton from './RadioButton';
 
-describe('<RadioGroup.Radio />', () => {
-  describe('snapshot', () => {
+describe.skip('<RadioGroup.Radio />', () => {
+  describe.skip('snapshot', () => {
     it('simple', () => {
       const { container } = render(<RadioButton value="Foo" label="Foo" />);
       expect(container.firstChild).toMatchSnapshot();

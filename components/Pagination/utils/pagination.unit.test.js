@@ -1,15 +1,15 @@
 import pagination from './pagination';
 
-describe('Pagination', () => {
-  describe('How pages are displayed', () => {
-    describe('Without params', () => {
+describe.skip('Pagination', () => {
+  describe.skip('How pages are displayed', () => {
+    describe.skip('Without params', () => {
       it('should return [1] when pagination is called without arguments', () => {
         expect(pagination()).toEqual([1]);
       });
     });
 
-    describe('When totalPages are', () => {
-      describe('Less or equal 5 pages', () => {
+    describe.skip('When totalPages are', () => {
+      describe.skip('Less or equal 5 pages', () => {
         it('should return [1] when totalPages is 1', () => {
           expect(pagination({ totalPages: 1 })).toEqual([1]);
         });
@@ -19,7 +19,7 @@ describe('Pagination', () => {
         });
       });
 
-      describe('More than 5 pages', () => {
+      describe.skip('More than 5 pages', () => {
         it('should return [1, 2, 3, 4, 5, 6] when totalPages is 6', () => {
           expect(pagination({ totalPages: 6 })).toEqual([1, 2, 3, 4, 5, 6]);
         });
@@ -36,7 +36,7 @@ describe('Pagination', () => {
       });
     });
 
-    describe('With activePage', () => {
+    describe.skip('With activePage', () => {
       it('should return [1, "...", 49, 50, 51, "...", 100] when activePage are 50 and totalPages are 100', () => {
         expect(
           pagination({

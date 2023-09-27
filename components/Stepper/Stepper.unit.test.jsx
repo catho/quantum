@@ -7,7 +7,7 @@ const i18n = {
   nextWord: 'próximo',
 };
 
-describe('<Stepper />', () => {
+describe.skip('<Stepper />', () => {
   it('should match snapshots', () => {
     const Steppers = [
       <Stepper

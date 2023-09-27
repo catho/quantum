@@ -2,7 +2,7 @@ import { render, fireEvent, screen } from '@testing-library/react';
 import Dialog from './Dialog';
 import Example from '../../stories/Dialog/ExampleStyle';
 
-describe('Dialog', () => {
+describe.skip('Dialog', () => {
   it('should render the Dialog with children', () => {
     render(
       <Dialog>

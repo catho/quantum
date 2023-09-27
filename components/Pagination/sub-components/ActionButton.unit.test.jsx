@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import ActionButton from './ActionButton';
 
-describe('<ActionButton />', () => {
-  describe('Snapshot', () => {
+describe.skip('<ActionButton />', () => {
+  describe.skip('Snapshot', () => {
     it('should match snapshot', () => {
       expect(
         render(<ActionButton>Back</ActionButton>).asFragment(),

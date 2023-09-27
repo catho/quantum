@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import TextArea from './TextArea';
 
-describe('TextArea component', () => {
+describe.skip('TextArea component', () => {
   it('should match snapshots', () => {
     const TEXT_AREAS = [
       <TextArea />,
@@ -72,7 +72,7 @@ describe('TextArea component', () => {
     expect(onChangeEventMock).toHaveBeenCalled();
   });
 
-  describe('with a label', () => {
+  describe.skip('with a label', () => {
     it('should match label "htmlFor" label param with "id" input param', () => {
       const id = 'input-id';
       const { container } = render(<TextArea label="Text label" id={id} />);

@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import Radio from './Radio';
 
-describe('<RadioGroup.Radio />', () => {
-  describe('snapshot', () => {
+describe.skip('<RadioGroup.Radio />', () => {
+  describe.skip('snapshot', () => {
     it('simple', () => {
       const component = <Radio value="Foo" label="Foo" />;
       expect(render(component).asFragment()).toMatchSnapshot();

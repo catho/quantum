@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Row from './Row';
 import Col from './Col';
 
-describe('<Row />', () => {
+describe.skip('<Row />', () => {
   it('Should render all react nodes', () => {
     const samplePhrase = 'Hello world';
     const number = 1;

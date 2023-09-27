@@ -6,7 +6,25 @@ import alphaNumber, {
   isValidAlphaNumber,
 } from './alphaNumberPropTypesValidator';
 
+const NestedComponentMock = ({ children }) => <div>{children}</div>;
+
 class Card extends Component {
+  static Header = NestedComponentMock;
+
+  static HeaderText = NestedComponentMock;
+
+  static Title = NestedComponentMock;
+
+  static Description = NestedComponentMock;
+
+  static Media = NestedComponentMock;
+
+  static Thumbnail = NestedComponentMock;
+
+  static Content = NestedComponentMock;
+
+  static Footer = NestedComponentMock;
+
   render() {
     const {
       children,

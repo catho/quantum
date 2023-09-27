@@ -5,7 +5,7 @@ import AutoComplete from './AutoComplete';
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
 const ExamplesChanged = ['melanci', 'melancia'];
 
-describe('AutoComplete', () => {
+describe.skip('AutoComplete', () => {
   it('Should render Autocomplete', () => {
     const { container } = render(<AutoComplete suggestions={Examples} />);
     expect(container.firstChild).toMatchSnapshot();

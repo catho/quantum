@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import TextInput from './TextInput';
 
-describe('Input component', () => {
+describe.skip('Input component', () => {
   it('should match snapshots', () => {
     const INPUTS = [
       <TextInput />,

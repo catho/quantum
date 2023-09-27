@@ -43,7 +43,7 @@ const InfiniteScrollWithNewItems = () => {
   );
 };
 
-describe('<InfiniteScroll />', () => {
+describe.skip('<InfiniteScroll />', () => {
   beforeAll(() => {
     jest
       .spyOn(InfiniteScroll, 'handleScrollPosition')

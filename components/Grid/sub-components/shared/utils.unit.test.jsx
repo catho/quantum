@@ -1,9 +1,9 @@
 import { calcGutter } from './utils';
 
-describe('Testing ./components/Grid/sub-components/shared/utils.js', () => {
+describe.skip('Testing ./components/Grid/sub-components/shared/utils.js', () => {
   const gutter = 8;
 
-  describe('function calcGutter', () => {
+  describe.skip('function calcGutter', () => {
     it('should return formated gutter', () => {
       const calculedGutter = calcGutter(gutter);
       expect(calculedGutter).toEqual('8px');

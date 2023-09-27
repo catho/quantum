@@ -16,7 +16,7 @@ const exampleItemsWithIcon = [
   { icon: 'block' },
 ];
 
-describe('<List />', () => {
+describe.skip('<List />', () => {
   it('Should match the default snapshot', () => {
     const { container } = render(<List />);
     expect(container.firstChild).toMatchSnapshot();

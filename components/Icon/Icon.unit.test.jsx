@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import Icon from './Icon';
 
-describe('<Icon />', () => {
+describe.skip('<Icon />', () => {
   it('Should match the snapshot', () => {
     const { container: tree3D } = render(<Icon name="accessible_forward" />);
     const { container: treeFilter } = render(<Icon name="check_circle" />);

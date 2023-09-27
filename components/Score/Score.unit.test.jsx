@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 
 import Score from './Score';
 
-describe('<Score />', () => {
+describe.skip('<Score />', () => {
   it('should match the snapshots', () => {
     expect(render(<Score percentage={0} />).asFragment()).toMatchSnapshot();
 

@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import classname from 'classnames';
 import styles from './Button.module.css';
 
+const NestedComponentMock = ({ children }) => <div>{children}</div>;
+
 const Button = ({
   children,
   icon,
@@ -39,6 +41,8 @@ const Button = ({
     </button>
   );
 };
+
+Button.Icon = NestedComponentMock;
 
 Button.defaultProps = {
   center: false,

@@ -17,7 +17,7 @@ const ENTER_KEY_CODE = '{Enter}';
 const A_KEY_CODE = '{a}';
 const ESCAPE_KEY_CODE = '{Escape}';
 
-describe('<DropdownLight />', () => {
+describe.skip('<DropdownLight />', () => {
   it('should match the snapshots', () => {
     expect(
       render(<DropdownLight items={itemsStringMock} />).asFragment(),

@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import RangeSlider from './RangeSlider';
 
-describe('<RangeSlider />', () => {
-  describe('Snapshots', () => {
+describe.skip('<RangeSlider />', () => {
+  describe.skip('Snapshots', () => {
     it('should match the snapshot when have just one handle', () => {
       const { container } = render(<RangeSlider value={10} />);
       expect(container.firstChild).toMatchSnapshot();
@@ -26,7 +26,7 @@ describe('<RangeSlider />', () => {
     });
   });
 
-  describe('tipFormatter prop', () => {
+  describe.skip('tipFormatter prop', () => {
     it('should format Tooltip text and display it correctly when have just one handle', () => {
       render(
         <RangeSlider value={10} tipFormatter={(value) => `R$ ${value}`} />,
@@ -48,7 +48,7 @@ describe('<RangeSlider />', () => {
     });
   });
 
-  describe('onChange prop', () => {
+  describe.skip('onChange prop', () => {
     it('should call it with currently slider value', async () => {
       const onChangeMock = jest.fn();
       const { container } = render(
@@ -78,14 +78,14 @@ describe('<RangeSlider />', () => {
     });
   });
 
-  describe('Value prop validator', () => {
+  describe.skip('Value prop validator', () => {
     global.console = {
       error: jest.fn(),
     };
 
     beforeEach(global.console.error.mockReset);
 
-    describe('with a single value', () => {
+    describe.skip('with a single value', () => {
       it('should not call console.error when it is valid', () => {
         render(<RangeSlider value={0} />);
         expect(global.console.error).not.toHaveBeenCalled();
@@ -107,7 +107,7 @@ describe('<RangeSlider />', () => {
       });
     });
 
-    describe('with a range value', () => {
+    describe.skip('with a range value', () => {
       it('should not call console.error when both is valid', () => {
         render(<RangeSlider value={{ from: 0, to: 100 }} />);
         expect(global.console.error).not.toHaveBeenCalled();

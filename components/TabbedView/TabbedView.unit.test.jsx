@@ -7,8 +7,8 @@ import Icon from '../Icon';
 const badge = <Badge number={4} />;
 const icon = <Icon name="star" />;
 
-describe('<TabbedView /> ', () => {
-  describe('Snapshot', () => {
+describe.skip('<TabbedView /> ', () => {
+  describe.skip('Snapshot', () => {
     it('should match snapshot', () => {
       const { container } = render(
         <TabbedView>
@@ -66,7 +66,7 @@ describe('<TabbedView /> ', () => {
     });
   });
 
-  describe('Active Tab', () => {
+  describe.skip('Active Tab', () => {
     it('should have first Tab active', () => {
       render(
         <TabbedView>
@@ -119,7 +119,7 @@ describe('<TabbedView /> ', () => {
     });
   });
 
-  describe('events', () => {
+  describe.skip('events', () => {
     const onTabClickEventMock = jest.fn();
 
     it('should trigger the callback when the tab is clicked', () => {

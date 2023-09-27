@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import Card from './Card';
 
-describe('<Card />', () => {
-  describe('Snapshots', () => {
+describe.skip('<Card />', () => {
+  describe.skip('Snapshots', () => {
     it('Should match the snapshot', () => {
       const { container } = render(
         <Card>

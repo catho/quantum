@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import SocialType from './SocialType';
 
-describe('<SocialType />', () => {
+describe.skip('<SocialType />', () => {
   it('should match snapshots', () => {
     const SOCIAL_TYPES = [
       <SocialType

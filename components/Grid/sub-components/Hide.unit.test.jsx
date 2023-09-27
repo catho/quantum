@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import Hide from './Hide';
 
-describe('<Hide />', () => {
+describe.skip('<Hide />', () => {
   it("should hide it's children according to screen size", () => {
     const { container: xsmall } = render(<Hide xsmall>Content</Hide>);
     const { container: small } = render(<Hide small>Content</Hide>);

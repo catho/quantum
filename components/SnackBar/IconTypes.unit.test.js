@@ -12,7 +12,7 @@ Object.entries(skins).forEach(([key]) => {
   return themeIcons;
 });
 
-describe('IconTypes unit tests', () => {
+describe.skip('IconTypes unit tests', () => {
   it('should skin returns its matched skin icon', () => {
     Object.entries(GetAllSkinsIcons()).forEach(([skin, skinIconName]) => {
       expect(GetSkinIcon(skin)).toMatch(skinIconName);

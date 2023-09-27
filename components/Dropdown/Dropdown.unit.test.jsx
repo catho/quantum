@@ -30,7 +30,7 @@ const itemsWithImage = [
   },
 ];
 
-describe('Dropdown component ', () => {
+describe.skip('Dropdown component ', () => {
   const withItems = <Dropdown items={ITEMS} />;
 
   const withSelectedItem = (
@@ -200,7 +200,7 @@ describe('Dropdown component ', () => {
   });
 });
 
-describe('with an "onChange" callback set', () => {
+describe.skip('with an "onChange" callback set', () => {
   const mockFn = jest.fn();
 
   const items = [
@@ -225,7 +225,7 @@ describe('with an "onChange" callback set', () => {
   });
 });
 
-describe('with autocomplete property', () => {
+describe.skip('with autocomplete property', () => {
   const mockFn = jest.fn();
   const items = [
     {

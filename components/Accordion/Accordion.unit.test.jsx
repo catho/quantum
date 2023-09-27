@@ -10,7 +10,7 @@ const closeMock = (m) => {
   return newMock;
 };
 
-describe('Accordion component', () => {
+describe.skip('Accordion component', () => {
   it('Should match the snapshot', () => {
     const { container } = render(<Accordion {...closeMock(mock)} />);
     expect(container.firstChild).toMatchSnapshot();

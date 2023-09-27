@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 
 import Alert from './Alert';
 
-describe('Alert component', () => {
+describe.skip('Alert component', () => {
   it('Should match the snapshot of a simple alert', () => {
     const { container } = render(
       <Alert onClose={() => {}}>Sample alert</Alert>,

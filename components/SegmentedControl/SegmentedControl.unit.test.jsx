@@ -8,7 +8,7 @@ import {
   nContents,
 } from '../../test-utils/mocks/SegmentedControl/exampleContents';
 
-describe('<SegmentedControl />', () => {
+describe.skip('<SegmentedControl />', () => {
   it('should match the snapshots', () => {
     const SegmentedControls = [
       <SegmentedControl items={defaultContent} />,

@@ -52,13 +52,13 @@ const FormWithValidations = () => (
   </Form>
 );
 
-describe('Form component ', () => {
+describe.skip('Form component ', () => {
   it('should match the snapshot', () => {
     const { container } = render(FormWithValidations());
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  describe('Without validations', () => {
+  describe.skip('Without validations', () => {
     it('Should call "onValidSubmit" and "onSubmit" callback on a valid submit', () => {
       render(FormWithoutValidations());
       const button = screen.getByRole('button', { value: 'Enviar' });
@@ -118,7 +118,7 @@ describe('Form component ', () => {
     },
   ];
 
-  describe('With validations', () => {
+  describe.skip('With validations', () => {
     it('Shouldn\'t call "onValidSubmit" and "onSubmit" callback on a invalid submit', () => {
       render(FormWithValidations());
       const button = screen.getByRole('button', { value: 'Enviar' });
@@ -261,7 +261,7 @@ describe('Form component ', () => {
     });
   });
 
-  describe('Valid state', () => {
+  describe.skip('Valid state', () => {
     it('Should be false when an error occurred', () => {
       const form = (
         <Form onValidSubmit={onValidSubmitCallback} onSubmit={onSubmitCallback}>

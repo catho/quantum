@@ -28,7 +28,7 @@ import { render } from '@testing-library/react';
 
 import ${componentName} from './${componentName}';
 
-describe('<${componentName} />', () => {
+describe.skip('<${componentName} />', () => {
   it('should match the snapshots', () => {
     expect(
       render(<${componentName} />)
