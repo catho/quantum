@@ -227,7 +227,10 @@ export const OffsetExample = () => (
   </Row>
 );
 
+export const Test = ({ children }) => <Col medium={4}>{children}</Col>;
+
 export default {
+  Test,
   SizesTable,
   HorizontalExample,
   MobileDesktopExample,

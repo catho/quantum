@@ -1,0 +1,10 @@
+@import '../theme.css';
+
+.card-wrapper {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--color-neutral-0);
+    box-shadow: rgba(66, 66, 66, 0.2) 0px 2px 1px -1px, rgba(66, 66, 66, 0.14) 0px 1px 1px 0px, rgba(66, 66, 66, 0.12) 0px 1px 3px 0px;
+}

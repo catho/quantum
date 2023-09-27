@@ -1,3 +1,5 @@
 @import "./Accordion/Accordion.module.css";
 @import "./Alert/Alert.module.css";
 @import "./Button/Button.module.css";
+@import "./Card/Card.module.css";
+@import "./Grid/sub-components/Col.module.css";

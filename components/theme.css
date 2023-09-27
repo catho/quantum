@@ -1,4 +1,10 @@
 :root {
+
+    --breakpoints-xsmall-width: 0px;
+    --breakpoints-small-width: 600px;
+    --breakpoints-medium-width: 1024px;
+    --breakpoints-large-width: 1440px;
+    
     --color-red: red;
     --color-neutral-0: #ffffff;
     --color-neutral-100:#f2f2f2;
