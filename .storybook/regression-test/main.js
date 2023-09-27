@@ -1,3 +1,5 @@
+const path = require('path');
+
 const config = {
   stories: ['../../stories/**/*.regression-test.story.jsx'],
   addons: [
@@ -20,22 +22,33 @@ const config = {
   },
   async webpackFinal(config) {
     const customConfigs = { ...config };
+    customConfigs.module.rules = customConfigs.module.rules.filter(
+      (rule) => rule.test && !rule.test.toString().includes('css'),
+    );
+
     customConfigs.module.rules.push({
-      test: /\.scss$/,
+      test: /\.css$/,
       use: [
         'style-loader',
         {
           loader: 'css-loader',
           options: {
             importLoaders: 1,
-            modules: true,
+            modules: {
+              localIdentName: '[local]--[hash:base64:5]',
+            },
           },
         },
-        {
-          loader: 'postcss-loader',
-        },
+        // {
+        //   loader: 'postcss-loader',
+        //   options: {
+        //     implementation: require('postcss'),
+        //   }
+        // },
       ],
+      include: path.resolve(__dirname, '../../components'),
     });
+
     return customConfigs;
   },
 };

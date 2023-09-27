@@ -1,0 +1,36 @@
+@import "../theme.css";
+
+.button-wrapper {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    min-height: var(--spacing-xxlarge);
+    padding: calc(var(--spacing-xsmall) - 4px);
+    transition: all 0.2s ease-in-out;
+    font-size: var(--font-size);
+    line-height: 24px;
+    background-color: var(--components-button-skin-primary-maincolor-700);
+    color: var(--components-button-skin-primary-text);
+    border: 2px solid var(--components-button-skin-primary-maincolor-700);
+    box-shadow: rgba(153, 153, 153, 0.2) 0px 3px 1px -2px, rgba(153, 153, 153, 0.14) 0px 2px 2px 0px, rgba(153, 153, 153, 0.12) 0px 1px 5px 0px;
+}
+
+.button-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-full-width {
+    width: 100%;
+}
+
+.button-wrapper:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-neutral-300);
+    color: var(--color-neutral-700);
+    border: 2px solid var(--color-neutral-300);
+}

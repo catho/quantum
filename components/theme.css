@@ -1,3 +1,20 @@
 :root {
     --color-red: red;
+    --color-neutral-0: #ffffff;
+    --color-neutral-100:#f2f2f2;
+    --color-neutral-300:#e0e0e0;
+    --color-neutral-500:#999999;
+    --color-neutral-700:#424242;
+    --color-neutral-900:#191919;
+    --color-neutral-1000:#000000;
+
+    --color-primary-700: #1250C4;
+
+    --spacing-xsmall: 8px;
+    --spacing-xxlarge: 40px;
+
+    --font-size: 16px;
+
+    --components-button-skin-primary-maincolor-700: var(--color-primary-700);
+    --components-button-skin-primary-text: #ffffff;
 };
