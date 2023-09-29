@@ -14,8 +14,8 @@ Default.args = {
   percentage: 25,
 };
 
-export const WithoutRouded = Template.bind({});
-WithoutRouded.args = {
+export const WithoutRounded = Template.bind({});
+WithoutRounded.args = {
   percentage: 55.55,
   round: false,
 };
