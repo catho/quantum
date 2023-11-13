@@ -10,7 +10,19 @@ import { colors, spacing, baseFontSize } from '../shared/theme';
 
 const CHECKBOX_SIZE = '24px';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  ${({ inline }) =>
+    inline &&
+    `
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: top;
+
+    :last-child {
+      margin-right: 0;
+    }
+  `}
+`;
 
 const CheckboxWrapper = styled.div`
   ${({
@@ -185,10 +197,10 @@ const Checkbox = ({
 }) => {
   const context = useContext(CheckboxGroupContext);
   const { error: errorContext } = context;
-  const { error = errorProp, onChange = onChangeProp } = context;
+  const { error = errorProp, onChange = onChangeProp, inline } = context;
 
   return (
-    <Wrapper>
+    <Wrapper inline={inline}>
       <CheckboxWrapper theme={theme}>
         <HiddenCheckbox
           {...props}
