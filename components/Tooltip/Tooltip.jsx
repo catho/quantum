@@ -105,8 +105,8 @@ class Tooltip extends Component {
 Tip.displayName = 'Tip';
 
 Tooltip.propTypes = {
-  /** Text that tooltip will show */
-  text: PropTypes.string.isRequired,
+  /** Content the tooltip will show */
+  text: PropTypes.node.isRequired,
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,
