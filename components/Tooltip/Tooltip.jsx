@@ -106,7 +106,7 @@ Tip.displayName = 'Tip';
 
 Tooltip.propTypes = {
   /** Content the tooltip will show */
-  text: PropTypes.node.isRequired,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   /** Define tooltip positioning */
   placement: PropTypes.oneOf(['top', 'right', 'bottom', 'left']),
   visible: PropTypes.bool,

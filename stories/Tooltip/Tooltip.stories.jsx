@@ -27,11 +27,9 @@ export const WithFormattedText = Template.bind({});
 WithFormattedText.args = {
   text: (
     <p>
-      <i>
-        This is formatted <br /> text and a{' '}
-      </i>
+      <i>Lorem </i>
       <a href="#examples" style={{ color: '#0CC0EA' }}>
-        link
+        ipsum
       </a>
     </p>
   ),

@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react';
 
 export interface TooltipProps {
-    text: ReactNode;
+    text: string | JSX.Element;
     placement?: 'top' | 'right' | 'bottom' | 'left';
     visible?: boolean;
     multiline?: boolean;
