@@ -71,7 +71,7 @@ ButtonGroup.args = {
 
 export const Inline = Template.bind({});
 Inline.args = {
-  ...ButtonGroup.args,
+  ...Default.args,
   inline: true,
 };
 
