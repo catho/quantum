@@ -445,3 +445,86 @@ exports[`Tooltip component  Should match the snapshot when place is top 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`Tooltip component  Should match the snapshot when text is html elements 1`] = `
+<DocumentFragment>
+  .c1 {
+  border-radius: 4px;
+  font-weight: bold;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  line-height: 0;
+  text-align: center;
+  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
+  z-index: 100;
+  background-color: #424242;
+  border-color: #424242;
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px;
+  left: 50%;
+  bottom: calc(100% + 12px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c1:before {
+  content: '';
+  position: absolute;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 6px solid;
+  border-top-color: inherit;
+  bottom: -5px;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+  text-align: unset;
+}
+
+.c0 {
+  position: relative;
+  float: left;
+  clear: left;
+  width: unset;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        <p>
+          <i>
+            Lorem ipsum dolor sit amet 
+          </i>
+          <a
+            href="/"
+            style="color: rgb(12, 192, 234);"
+          >
+            consectetur
+          </a>
+        </p>
+      </span>
+    </div>
+    Hover me
+  </div>
+</DocumentFragment>
+`;

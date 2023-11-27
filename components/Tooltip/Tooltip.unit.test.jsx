@@ -8,6 +8,14 @@ const MULTILINE_TOOLTIP_TEXT = `Lorem ipsum dolor sit amet,
 consectetur adipiscing elit. 
 Aenean bibendum facilisis sem viverra fringilla. 
 Suspendisse finibus libero nec justo semper.`;
+const TOOLTIP_NODE_TEXT = (
+  <p>
+    <i>Lorem ipsum dolor sit amet </i>
+    <a href="/" style={{ color: '#0CC0EA' }}>
+      consectetur
+    </a>
+  </p>
+);
 
 describe('Tooltip component ', () => {
   it('Should match the snapshot when place is top', () => {
@@ -63,6 +71,16 @@ describe('Tooltip component ', () => {
     expect(
       render(
         <Tooltip visible text={MULTILINE_TOOLTIP_TEXT}>
+          {TOOLTIP_TRIGGER}
+        </Tooltip>,
+      ).asFragment(),
+    ).toMatchSnapshot();
+  });
+
+  it('Should match the snapshot when text is html elements', () => {
+    expect(
+      render(
+        <Tooltip visible text={TOOLTIP_NODE_TEXT}>
           {TOOLTIP_TRIGGER}
         </Tooltip>,
       ).asFragment(),

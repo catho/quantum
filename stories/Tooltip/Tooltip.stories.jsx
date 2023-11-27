@@ -23,6 +23,18 @@ Multiline.args = {
   multiline: true,
 };
 
+export const WithFormattedText = Template.bind({});
+WithFormattedText.args = {
+  text: (
+    <p>
+      <i>Lorem </i>
+      <a href="#examples" style={{ color: '#0CC0EA' }}>
+        ipsum
+      </a>
+    </p>
+  ),
+};
+
 export const WithPlacement = Template.bind({});
 WithPlacement.args = {
   placement: 'right',
