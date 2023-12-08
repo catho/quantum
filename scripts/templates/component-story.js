@@ -1,6 +1,6 @@
 module.exports = (componentName) => [
   {
-    content: `<!-- Generated with scripts/create-componnent.js -->
+    content: `{/* Generated with scripts/create-componnent.js */}
 import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
 import  ${componentName}  from '../../components/${componentName}';
 
@@ -26,14 +26,14 @@ import { ${componentName} } from '@catho/quantum';
 \`\`\`
 
 <Canvas>
-  <Story story={Default} />
+  <Story of={Default} />
 </Canvas>
 
 ## <a id="api"></a>API
 
 <ArgsTable of={${componentName}} />
     `,
-    name: `${componentName}.story.mdx`,
+    name: `${componentName}.mdx`,
   },
   {
     content: `// Generated with scripts/create-componnent.js
@@ -55,6 +55,11 @@ export const Default = Template.bind({})
     content: `// Generated with scripts/create-componnent.js
 
 import ${componentName} from '../../components/${componentName}';
+
+export default {
+  title: '${componentName}',
+  component: ${componentName},
+};
 
 const Template = args => <${componentName} {...args} />;
 

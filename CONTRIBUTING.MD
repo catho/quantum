@@ -73,7 +73,7 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 7. Update the live documentation (Storybook);
 
-    Every component must be on the dynamic documentation of the Storybook. For this reason, every behavior of the component must be documented and up to date within the files `stories/<nome do componente criado>.stories.jsx` and `stories/<nome do componente criado>.story.mdx`.
+    Every component must be on the dynamic documentation of the Storybook. For this reason, every behavior of the component must be documented and up to date within the files `stories/<nome do componente criado>.stories.jsx` and `stories/<nome do componente criado>.mdx`.
 
 
 8.  After making your changes in the new git branch, add your modified files to git, [How to add, commit, push and go](http://readwrite.com/2013/10/02/github-for-beginners-part-2/).
@@ -194,7 +194,7 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
 
 7. Update the live documentation (Storybook);
 
-    Each component must be on the dynamic documentation of the Storybook. Therefore, all the components' behaviors must be registered and updated in the files `stories/<name-of-the-edited-component>.stories.jsx` and `stories/<name-of-the-edited-component>.story.mdx`.
+    Each component must be on the dynamic documentation of the Storybook. Therefore, all the components' behaviors must be registered and updated in the files `stories/<name-of-the-edited-component>.stories.jsx` and `stories/<name-of-the-edited-component>.mdx`.
 
 8. Commit your changes using [commitizen](http://commitizen.github.io/cz-cli/);
 
