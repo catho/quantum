@@ -50,13 +50,15 @@ export default ${componentName};
   {
     content: `
 // Generated with scripts/create-component.js
-import { Component } from 'react';
+import { FC } from 'react';
 
 export interface ${componentName}Props {
   someProp?: string;
 }
 
-export default class ${componentName} extends Component<${componentName}Props> {}
+
+declare const ${componentName}: FC<${componentName}Props>;
+export default ${componentName}
     `,
     name: `index.d.ts`,
   },
