@@ -164,7 +164,7 @@ const AutoComplete = ({
     filterSuggestions.length,
   );
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [cursor, setCursor] = useState(0);
+  const [cursor, setCursor] = useState(-1);
   const wrapperRef = useRef();
   const listOptions = useRef();
   const autoInputRef = useRef(null);
@@ -174,6 +174,14 @@ const AutoComplete = ({
     filterSuggestions[cursor]
   } 
   ${cursor + 1} de ${filterSuggestionsLength} está destacado`;
+
+  const focusOnInput = () => {
+    const input = wrapperRef.current?.children[1];
+    if (input) {
+      input.focus();
+      setCursor(-1);
+    }
+  };
 
   const filterItems = (currentValue) =>
     suggestions.filter((suggestion) => {
@@ -191,7 +199,7 @@ const AutoComplete = ({
   const handleChange = (currentValue) => {
     setUserTypedValue(currentValue);
     onChange(currentValue);
-    setCursor(0);
+    setCursor(-1);
     handleFilter(currentValue);
   };
 
@@ -217,15 +225,13 @@ const AutoComplete = ({
     setUserTypedValue('');
     onChange('');
     setFilterSuggestions(suggestions);
-    setCursor(0);
+    setCursor(-1);
   };
 
   const handleEscPress = ({ key }) => {
-    const node = wrapperRef.current;
-    if (node && key === EscapeKeyPressValue) {
+    if (key === EscapeKeyPressValue) {
       setShowSuggestions(false);
-      node.children[1].focus();
-      setCursor(0);
+      focusOnInput();
     }
   };
 
@@ -288,8 +294,7 @@ const AutoComplete = ({
       listOptions.current.children[selectedCursor].focus();
     }
     if (upPress && cursor === 0) {
-      wrapperRef.current.children[1].focus();
-      setCursor(-1);
+      focusOnInput();
     }
   }, [upPress]);
 
@@ -299,7 +304,7 @@ const AutoComplete = ({
       setUserTypedValue(filterSuggestions[cursor]);
       onSelectedItem(filterSuggestions[cursor]);
       setShowSuggestions(false);
-      wrapperRef.current.children[1].focus();
+      focusOnInput();
     }
   }, [cursor, enterPress]);
 
