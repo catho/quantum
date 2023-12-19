@@ -5,6 +5,11 @@ import AutoComplete from './AutoComplete';
 const Examples = ['morango', 'melancia', 'maça', 'banana', 'laranja'];
 const ExamplesChanged = ['melanci', 'melancia'];
 
+const ARROW_DOWN_KEY_CODE = '{ArrowDown}';
+const ARROW_UP_KEY_CODE = '{ArrowUp}';
+const ENTER_KEY_CODE = '{Enter}';
+const ESCAPE_KEY_CODE = '{Escape}';
+
 describe('AutoComplete', () => {
   it('Should render Autocomplete', () => {
     const { container } = render(<AutoComplete suggestions={Examples} />);
@@ -216,5 +221,68 @@ describe('AutoComplete', () => {
     render(<AutoComplete value={initialValue} suggestions={[]} />);
     const autoCompleteInput = screen.getByRole('combobox');
     expect(autoCompleteInput).toHaveAttribute('value', initialValue);
+  });
+
+  it('Should close options when user press Escape', async () => {
+    render(<AutoComplete suggestions={Examples} />);
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'moran');
+    const autoCompleteOptionsList = await screen.findByRole('listbox');
+
+    expect(autoCompleteOptionsList).toBeInTheDocument();
+
+    await userEvent.keyboard(ESCAPE_KEY_CODE);
+
+    expect(autoCompleteOptionsList).not.toBeInTheDocument();
+  });
+
+  it('Should allow User to select an option using only keyboard', async () => {
+    const onSelectedItemMock = jest.fn();
+    render(
+      <AutoComplete
+        suggestions={Examples}
+        onSelectedItem={onSelectedItemMock}
+      />,
+    );
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'm');
+    const autoCompleteOptionsList = await screen.findByRole('listbox');
+
+    expect(autoCompleteOptionsList).toBeInTheDocument();
+
+    await userEvent.keyboard(
+      `${ARROW_DOWN_KEY_CODE}${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}`,
+    );
+    const autoCompleteOptionItem = screen.getByRole('option', {
+      name: /morango/i,
+    });
+
+    expect(autoCompleteOptionItem).toHaveFocus();
+    await userEvent.keyboard(ENTER_KEY_CODE);
+
+    expect(input.value).toEqual('morango');
+    expect(onSelectedItemMock).toHaveBeenCalledWith('morango');
+    expect(autoCompleteOptionsList).not.toBeInTheDocument();
+  });
+
+  it('Should focus on input when there are no items to navigate above', async () => {
+    const onSelectedItemMock = jest.fn();
+    render(
+      <AutoComplete
+        suggestions={Examples}
+        onSelectedItem={onSelectedItemMock}
+      />,
+    );
+    const input = screen.getByRole('combobox');
+
+    await userEvent.type(input, 'm');
+    const autoCompleteOptionsList = await screen.findByRole('listbox');
+
+    expect(autoCompleteOptionsList).toBeInTheDocument();
+
+    await userEvent.keyboard(`${ARROW_DOWN_KEY_CODE}${ARROW_UP_KEY_CODE}`);
+    expect(input).toHaveFocus();
   });
 });
