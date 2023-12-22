@@ -93,7 +93,7 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -296,7 +296,7 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -499,7 +499,7 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -702,7 +702,7 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -905,7 +905,7 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1108,7 +1108,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1275,7 +1275,7 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   display: flex;
 }
 
-.c2 svg + span {
+.c2 > span {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
