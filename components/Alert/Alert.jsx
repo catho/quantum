@@ -15,7 +15,7 @@ const Content = styled.div`
   align-items: start;
   display: flex;
 
-  svg + span {
+  & > span {
     flex: 1;
   }
 `;
