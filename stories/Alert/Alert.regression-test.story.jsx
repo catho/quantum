@@ -29,6 +29,9 @@ Default.args = { ...props };
 export const DefaultWithoutClose = Template.bind({});
 DefaultWithoutClose.args = { ...props, onClose: undefined };
 
+export const DefaultWithoutIcon = Template.bind({});
+DefaultWithoutIcon.args = { ...props, icon: undefined };
+
 export const SkinPrimary = Template.bind({});
 SkinPrimary.args = {
   ...Default.args,
