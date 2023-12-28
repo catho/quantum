@@ -135,7 +135,7 @@ describe('<TabbedView /> ', () => {
 
       fireEvent.click(secondNavItem);
 
-      expect(onTabClickEventMock).toHaveBeenCalled();
+      expect(onTabClickEventMock).toHaveBeenCalledWith('Companies');
     });
   });
 });
