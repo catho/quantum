@@ -53,7 +53,17 @@
       "files": "*.d.ts",
       "excludedFiles": ["*.js, *.jsx"],
       "parser": "@typescript-eslint/parser",
-      "plugins": ["@typescript-eslint"]
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "import/extensions": ["error", "ignorePackages", { "ts": "never" }]
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {}
+        }
+      }
     }
   ]
 }
