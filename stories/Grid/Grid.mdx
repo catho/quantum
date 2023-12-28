@@ -2,7 +2,7 @@
 import { Meta } from '@storybook/addon-docs';
 
 import Header from '../shared/Header';
-import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, HideExample, OffsetExample } from './Grid';
+import { SizesTable, HorizontalExample, MobileDesktopExample, NoGuttersExample, HideExample, OffsetExample, OffsetWithTwoColumnsExample } from './Grid';
 
 <Meta title="Foundation/Grid" />
 
@@ -228,3 +228,18 @@ You can pass offset to all predefined props:
   <li>medium-offset</li>
   <li>large-offset</li>
 </ul>
+
+When setting a "offset" value, it is important to consider the space occupied by the columns on the left. For example: In a grid with two columns, if we want the second column to be 2 spaces away from the first column that has "small" and "small"-offset defined, the implementation would be the same as the example below.
+
+<OffsetWithTwoColumnsExample />
+
+```js
+<Row>
+  <Col small={2} small-offset={1}>small={2} small-offset={1}</Col>
+  <Col small={2} small-offset={5}>small={2} small-offset={5}</Col>
+</Row>
+```
+
+In the example above, the space occupied by the first column is the sum of the "small" and "small-offset" props. The result must also be added to the desired gap value for the column.
+Therefore, the value of the "offset" prop of the second column is composed of:
+2 ("small" of the 1st column) + 1 ("small-offset" of the 1st column) + 2 (desired gap betwen the 2nd column) = 5.

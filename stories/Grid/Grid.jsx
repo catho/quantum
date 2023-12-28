@@ -227,6 +227,17 @@ export const OffsetExample = () => (
   </Row>
 );
 
+export const OffsetWithTwoColumnsExample = () => (
+  <Row>
+    <StyledCol small={2} small-offset={1}>
+      small={2} small-offset={1}
+    </StyledCol>
+    <StyledCol small={2} small-offset={5}>
+      small={2} small-offset={5}
+    </StyledCol>
+  </Row>
+);
+
 export default {
   SizesTable,
   HorizontalExample,
@@ -234,4 +245,5 @@ export default {
   HideExample,
   NoGuttersExample,
   OffsetExample,
+  OffsetWithTwoColumnsExample,
 };
