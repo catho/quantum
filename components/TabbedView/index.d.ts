@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { baseFontSizeType, breakpointsProps, colorsProps, componentsProps, spacingProps } from '../shared/theme';
+import { baseFontSizeType, breakpointsProps, componentsProps, spacingProps } from '../shared/theme';
 
 export interface TabProps {
     title: string;
@@ -22,7 +22,7 @@ export interface TabbedViewProps {
         breakpoints?: breakpointsProps;
         spacing?: spacingProps;
     };
-    onTabClick?: () => void;
+    onTabClick?: (tab: string) => void;
 }
 
 declare const Tab: FC<TabProps>;
