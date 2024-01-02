@@ -181,7 +181,7 @@ class TabbedView extends Component {
 
   onTabClick = (tab, onTabClick) => {
     this.setState({ activeTab: tab });
-    onTabClick();
+    onTabClick(tab);
   };
 
   sanitize = (str) =>
