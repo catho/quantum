@@ -9,7 +9,6 @@ const IFrame = styled.iframe`
   width: 100%;
   height: 500px;
   border: 0;
-  background-color: blue;
 `;
 
 const EvaluationForm = ({ componentName }) => (
