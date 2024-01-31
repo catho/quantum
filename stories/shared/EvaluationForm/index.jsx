@@ -1,8 +1,16 @@
 import { Unstyled } from '@storybook/addon-docs';
+import styled from 'styled-components';
 import Accordion from '../../../components/Accordion';
 
 const urlGenerator = (componentName) =>
   `https://docs.google.com/forms/d/e/1FAIpQLSewdS_VhSt_JSFOxiuiIc-auEj0MQwn_P_WiXYhAEAE1DqJhg/viewform?entry.1112120969=${componentName}`;
+
+const IFrame = styled.iframe`
+  width: 100%;
+  height: 500px;
+  border: 0;
+  background-color: blue;
+`;
 
 const EvaluationForm = ({ componentName }) => (
   <Unstyled>
@@ -12,21 +20,16 @@ const EvaluationForm = ({ componentName }) => (
           content: (
             <ul>
               <li>
-                <iframe
+                <IFrame
                   title="Rate our Documentation"
                   src={`${urlGenerator(componentName)}`}
-                  width="992"
-                  height="600"
-                  frameBorder="0"
-                  marginHeight="0"
-                  marginWidth="0"
                 >
                   Carregando…
-                </iframe>
+                </IFrame>
               </li>
             </ul>
           ),
-          title: '⭐⭐⭐⭐⭐ Rate our Documentation',
+          title: 'Rate our Documentation ⭐ ',
         },
       ]}
     />
