@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import styled from 'styled-components';
 
 import { Title, Subtitle, Blockquote } from '../../components/GlobalStyle';
