@@ -10,6 +10,9 @@ import {
   WithLoaderIndicator
 } from './InfiniteScroll.stories.jsx';
 
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
+
 <Meta title="InfiniteScroll" component={InfiniteScroll}  />
 
 <Header title="InfiniteScroll">
@@ -103,3 +106,5 @@ export default function InfiniteScrollWithLoader() {
 <Canvas withSource="none">
   <Story of={WithLoaderIndicator} />
 </Canvas>
+
+<EvaluationForm componentName="InfiniteScroll" />
