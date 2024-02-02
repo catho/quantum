@@ -14,6 +14,8 @@ import {
   Inverted,
   WithActionTrigger
 } from './SnackBar.stories.jsx';
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
 
 <Meta title="SnackBar" component={SnackBar} />
 
@@ -199,3 +201,5 @@ export default function Template () {
 <Canvas withSource="none">
   <Story of={WithActionTrigger} />
 </Canvas>
+
+<EvaluationForm componentName="SnackBar" />
