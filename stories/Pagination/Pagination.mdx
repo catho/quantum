@@ -4,6 +4,9 @@ import Header from '../shared/Header';
 import { Alert } from '../../components';
 import Pagination from '../../components/Pagination';
 import { Default, WithSeveralPagesAndActivePage, WithCustomNextAndPrevButtonText, HideLastPage, WithPageHref, MobileWithCustomHelperText, ControlledPagination } from './Pagination.stories.jsx';
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
+
 
 <Meta title="Pagination" component={Pagination} />
 
@@ -73,3 +76,5 @@ import Pagination from '@catho/quantum/Pagination';
 <Canvas>
   <Story of={ControlledPagination} />
 </Canvas>
+
+<EvaluationForm componentName="Pagination" />

@@ -2,6 +2,8 @@ import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
 import { Header } from '../shared';
 import TextArea from '../../components/TextArea';
 import { Default, Disabled, Required, WithAutoSize, WithCustomAutoSize, WithHelperText, WithError, WithLabel } from './TextArea.stories.jsx';
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
 
 <Meta title="Forms/TextArea" component={TextArea}  />
 
@@ -71,3 +73,5 @@ import TextArea from '@catho/quantum/TextArea';
 <Canvas>
   <Story of={WithError}/>
 </Canvas>
+
+<EvaluationForm componentName="TextArea" />

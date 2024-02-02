@@ -2,6 +2,8 @@ import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
 import { Header } from '../shared';
 import AutoComplete from '../../components/AutoComplete';
 import { Default, Required, Disabled, WithHelperText, WithLabel, WithError, WithSkin } from './AutoComplete.stories.jsx';
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
 
 <Meta title="Forms/AutoComplete" component={AutoComplete}  />
 
@@ -64,3 +66,5 @@ import AutoComplete from '@catho/quantum/AutoComplete';
 <Canvas>
   <Story of={WithSkin}/>
 </Canvas>
+
+<EvaluationForm componentName="AutoComplete" />

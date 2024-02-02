@@ -3,6 +3,8 @@ import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
 import Header from '../shared/Header';
 import CircularLoader from '../../components/CircularLoader';
 import { Default, WithSkin, WithSize } from './CircularLoader.stories.jsx';
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
 
 <Meta title="Loaders/CircularLoader" component={CircularLoader} />
 
@@ -41,3 +43,5 @@ import CircularLoader from '@catho/quantum/CircularLoader';
 <Canvas>
   <Story of={WithSize}/>
 </Canvas>
+
+<EvaluationForm componentName="CircularLoader" />
