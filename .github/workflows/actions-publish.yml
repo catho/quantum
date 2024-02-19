@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - beta
 
 jobs:
   tests:
@@ -62,6 +63,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_URL: 'https://api.github.com/'
       - name: Deploy storybook to Github Pages
+        if: ${{ github.ref == 'refs/heads/master' }}
         run: yarn deploy-storybook -- --ci
         env:
           GH_TOKEN: catho:${{ secrets.GITHUB_TOKEN }}
