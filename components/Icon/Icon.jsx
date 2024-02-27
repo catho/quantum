@@ -6,6 +6,7 @@ import AccessTime from '@mui/icons-material/AccessTime';
 import AccountBalanceWallet from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Add from '@mui/icons-material/Add';
+import Addchart from '@mui/icons-material/Addchart';
 import AddCircle from '@mui/icons-material/AddCircle';
 import AddAlarm from '@mui/icons-material/AddAlarm';
 import Apps from '@mui/icons-material/Apps';
@@ -60,6 +61,7 @@ import Launch from '@mui/icons-material/Launch';
 import LocationCity from '@mui/icons-material/LocationCity';
 import Lock from '@mui/icons-material/Lock';
 import LockOpen from '@mui/icons-material/LockOpen';
+import LockOutlined from '@mui/icons-material/LockOutlined';
 import Markunread from '@mui/icons-material/Markunread';
 import Menu from '@mui/icons-material/Menu';
 import MenuBook from '@mui/icons-material/MenuBook';
@@ -116,6 +118,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     accessible: Accessible,
     add: Add,
     wallet: AccountBalanceWallet,
+    add_chart: Addchart,
     add_circle: AddCircle,
     add_alarm: AddAlarm,
     apps: Apps,
@@ -174,6 +177,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     location_city: LocationCity,
     lock: Lock,
     lock_open: LockOpen,
+    lock_outlined: LockOutlined,
     markunread: Markunread,
     menu_book: MenuBook,
     menu: Menu,
