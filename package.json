@@ -14,7 +14,9 @@
     "test:regression:update": "yarn loki update --port 9006",
     "test:regression:update:storie": "yarn loki update --port 9006 --storiesFilter $STORIE",
     "test:regression:storybook": "fuser -k 9006/tcp; storybook dev -c .storybook/regression-test --port 9006",
-    "build": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
+    "build": "cross-env NODE_ENV=production yarn build:css && yarn build:components",
+    "build:components": "cross-env NODE_ENV=production babel ./components --out-dir dist --copy-files",
+    "build:css": "postcss components/index.css -o .temp/index.css",
     "build-storybook": "storybook build",
     "build:regression": "yarn test:regression:storybook & ./scripts/run-regression.sh",
     "clean:files:build": "find ./dist -type f \\( -name '*.unit.test.js' -or -name '*.unit.test.jsx' \\) -delete",
@@ -52,6 +54,7 @@
   "author": "Catho",
   "license": "MIT",
   "devDependencies": {
+    "@adobe/css-tools": "^4.3.3",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
@@ -73,6 +76,7 @@
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "all-contributors-cli": "^6.8.0",
+    "autoprefixer": "^10.4.18",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.0-beta.6",
     "babel-plugin-styled-components": "^1.10.0",
@@ -80,6 +84,7 @@
     "babel-plugin-transform-modern-regexp": "^0.0.6",
     "commitizen": "^4.2.4",
     "cross-env": "^5.2.0",
+    "cssnano": "^6.1.0",
     "cz-conventional-changelog": "2.1.0",
     "eslint": "^8.45.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -95,7 +100,13 @@
     "jest-styled-components": "^7.0.5",
     "lint-staged": "^11.0.0",
     "loki": "^0.31.2",
+    "identity-obj-proxy": "^3.0.0",
     "prettier": "^3.0.0",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "15.1.0",
+    "postcss-modules": "^6.0.0",
+    "postcss-preset-env": "^9.5.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
@@ -112,7 +123,6 @@
     "@mui/material": "^5.13.5",
     "babel-polyfill": "^6.26.0",
     "downshift": "^3.1.10",
-    "identity-obj-proxy": "^3.0.0",
     "prop-types": "^15.6.2",
     "react-slick": "^0.29.0",
     "react-text-mask": "^5.4.3",
@@ -134,7 +144,7 @@
     "coverageDirectory": "coverage",
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileMock.js",
-      "\\.(css|less)$": "identity-obj-proxy"
+      "\\.(css|less|sass)$": "identity-obj-proxy"
     },
     "setupFilesAfterEnv": [
       "<rootDir>/jest-config.js"
