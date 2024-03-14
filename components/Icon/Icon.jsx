@@ -97,6 +97,13 @@ import FlashOn from '@mui/icons-material/FlashOn';
 import GroupAdd from '@mui/icons-material/GroupAdd';
 import AutoGraph from '@mui/icons-material/AutoGraph';
 import Stars from '@mui/icons-material/Stars';
+import PauseCircleOutline from '@mui/icons-material/PauseCircleOutline';
+import PersonAdd from '@mui/icons-material/PersonAdd';
+import Print from '@mui/icons-material/Print';
+import Room from '@mui/icons-material/Room';
+import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
+import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import TimerOutlined from '@mui/icons-material/TimerOutlined';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -183,14 +190,18 @@ const Icon = ({ name, skin, size, ...props }) => {
     menu: Menu,
     notification: Notifications,
     payment: Payment,
+    pause_circle_outline: PauseCircleOutline,
     perm_device_information: PermDeviceInformation,
     person: Person,
+    person_add: PersonAdd,
     person_circle: AccountCircle,
     phone_android: PhoneAndroid,
+    print: Print,
     radio_button_checked: RadioButtonChecked,
     radio_button_unchecked: RadioButtonUnchecked,
     refresh: Refresh,
     receipt: Receipt,
+    room: Room,
     search: Search,
     security: Security,
     send: Send,
@@ -201,6 +212,9 @@ const Icon = ({ name, skin, size, ...props }) => {
     star: Star,
     stars: Stars,
     swap_vert: SwapVert,
+    thumb_down_outlined: ThumbDownOutlined,
+    thumb_up_outlined: ThumbUpOutlined,
+    timer_outline: TimerOutlined,
     trending_up: TrendingUp,
     tune: Tune,
     verified_user: VerifiedUser,
