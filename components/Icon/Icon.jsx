@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
+import AccessTime from '@mui/icons-material/AccessTime';
 import Accessible from '@mui/icons-material/Accessible';
 import AccessibleForward from '@mui/icons-material/AccessibleForward';
-import AccessTime from '@mui/icons-material/AccessTime';
 import AccountBalanceWallet from '@mui/icons-material/AccountBalanceWallet';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Add from '@mui/icons-material/Add';
-import Addchart from '@mui/icons-material/Addchart';
-import AddCircle from '@mui/icons-material/AddCircle';
 import AddAlarm from '@mui/icons-material/AddAlarm';
+import AddCircle from '@mui/icons-material/AddCircle';
+import Addchart from '@mui/icons-material/Addchart';
 import Apps from '@mui/icons-material/Apps';
 import ArrowDropDown from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUp from '@mui/icons-material/ArrowDropUp';
@@ -20,6 +20,7 @@ import Assignment from '@mui/icons-material/Assignment';
 import AssignmentInd from '@mui/icons-material/AssignmentInd';
 import AssignmentTurnedIn from '@mui/icons-material/AssignmentTurnedIn';
 import AttachMoney from '@mui/icons-material/AttachMoney';
+import AutoGraph from '@mui/icons-material/AutoGraph';
 import Block from '@mui/icons-material/Block';
 import Cached from '@mui/icons-material/Cached';
 import CameraAlt from '@mui/icons-material/CameraAlt';
@@ -31,8 +32,8 @@ import CheckCircle from '@mui/icons-material/CheckCircle';
 import Clear from '@mui/icons-material/Clear';
 import Close from '@mui/icons-material/Close';
 import Collections from '@mui/icons-material/Collections';
-import Contacts from '@mui/icons-material/Contacts';
 import ContactPhone from '@mui/icons-material/ContactPhone';
+import Contacts from '@mui/icons-material/Contacts';
 import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
 import DateRange from '@mui/icons-material/DateRange';
@@ -49,8 +50,11 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import Favorite from '@mui/icons-material/Favorite';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import FilterList from '@mui/icons-material/FilterList';
+import FlashOn from '@mui/icons-material/FlashOn';
 import Folder from '@mui/icons-material/Folder';
 import Group from '@mui/icons-material/Group';
+import GroupAdd from '@mui/icons-material/GroupAdd';
+import Help from '@mui/icons-material/Help';
 import Home from '@mui/icons-material/Home';
 import Info from '@mui/icons-material/Info';
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
@@ -66,23 +70,31 @@ import Markunread from '@mui/icons-material/Markunread';
 import Menu from '@mui/icons-material/Menu';
 import MenuBook from '@mui/icons-material/MenuBook';
 import Notifications from '@mui/icons-material/Notifications';
+import PauseCircleOutline from '@mui/icons-material/PauseCircleOutline';
 import Payment from '@mui/icons-material/Payment';
 import PermDeviceInformation from '@mui/icons-material/PermDeviceInformation';
 import Person from '@mui/icons-material/Person';
+import PersonAdd from '@mui/icons-material/PersonAdd';
 import PhoneAndroid from '@mui/icons-material/PhoneAndroid';
+import Print from '@mui/icons-material/Print';
 import RadioButtonChecked from '@mui/icons-material/RadioButtonChecked';
 import RadioButtonUnchecked from '@mui/icons-material/RadioButtonUnchecked';
-import Refresh from '@mui/icons-material/Refresh';
 import Receipt from '@mui/icons-material/Receipt';
+import Refresh from '@mui/icons-material/Refresh';
+import Room from '@mui/icons-material/Room';
+import School from '@mui/icons-material/School';
 import Search from '@mui/icons-material/Search';
 import Security from '@mui/icons-material/Security';
 import Send from '@mui/icons-material/Send';
-import School from '@mui/icons-material/School';
 import Share from '@mui/icons-material/Share';
 import Star from '@mui/icons-material/Star';
 import StarBorder from '@mui/icons-material/StarBorder';
 import StarHalf from '@mui/icons-material/StarHalf';
+import Stars from '@mui/icons-material/Stars';
 import SwapVert from '@mui/icons-material/SwapVert';
+import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
+import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import TimerOutlined from '@mui/icons-material/TimerOutlined';
 import TrendingUp from '@mui/icons-material/TrendingUp';
 import Tune from '@mui/icons-material/Tune';
 import VerifiedUser from '@mui/icons-material/VerifiedUser';
@@ -92,11 +104,6 @@ import Warning from '@mui/icons-material/Warning';
 import WatchLater from '@mui/icons-material/WatchLater';
 import Whatshot from '@mui/icons-material/Whatshot';
 import Work from '@mui/icons-material/Work';
-import Help from '@mui/icons-material/Help';
-import FlashOn from '@mui/icons-material/FlashOn';
-import GroupAdd from '@mui/icons-material/GroupAdd';
-import AutoGraph from '@mui/icons-material/AutoGraph';
-import Stars from '@mui/icons-material/Stars';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -183,14 +190,18 @@ const Icon = ({ name, skin, size, ...props }) => {
     menu: Menu,
     notification: Notifications,
     payment: Payment,
+    pause_circle_outline: PauseCircleOutline,
     perm_device_information: PermDeviceInformation,
     person: Person,
+    person_add: PersonAdd,
     person_circle: AccountCircle,
     phone_android: PhoneAndroid,
+    print: Print,
     radio_button_checked: RadioButtonChecked,
     radio_button_unchecked: RadioButtonUnchecked,
     refresh: Refresh,
     receipt: Receipt,
+    room: Room,
     search: Search,
     security: Security,
     send: Send,
@@ -201,6 +212,9 @@ const Icon = ({ name, skin, size, ...props }) => {
     star: Star,
     stars: Stars,
     swap_vert: SwapVert,
+    thumb_down_outlined: ThumbDownOutlined,
+    thumb_up_outlined: ThumbUpOutlined,
+    timer_outlined: TimerOutlined,
     trending_up: TrendingUp,
     tune: Tune,
     verified_user: VerifiedUser,
