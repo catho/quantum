@@ -93,7 +93,9 @@ import StarHalf from '@mui/icons-material/StarHalf';
 import Stars from '@mui/icons-material/Stars';
 import SwapVert from '@mui/icons-material/SwapVert';
 import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
+import ThumbDown from '@mui/icons-material/ThumbDown';
 import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import ThumbUp from '@mui/icons-material/ThumbUp';
 import TimerOutlined from '@mui/icons-material/TimerOutlined';
 import TrendingUp from '@mui/icons-material/TrendingUp';
 import Tune from '@mui/icons-material/Tune';
@@ -213,7 +215,9 @@ const Icon = ({ name, skin, size, ...props }) => {
     stars: Stars,
     swap_vert: SwapVert,
     thumb_down_outlined: ThumbDownOutlined,
+    thumb_down: ThumbDown,
     thumb_up_outlined: ThumbUpOutlined,
+    thumb_up: ThumbUp,
     timer_outlined: TimerOutlined,
     trending_up: TrendingUp,
     tune: Tune,
