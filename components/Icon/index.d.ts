@@ -789,6 +789,7 @@ export type IconNames =
     | 'star_half'
     | 'star'
     | 'stars'
+    | 'star_rounded'
     | 'stay_current_landscape'
     | 'stay_current_portrait'
     | 'stay_primary_landscape'
