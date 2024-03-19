@@ -90,6 +90,7 @@ const icons = [
   'star_half',
   'star',
   'stars',
+  'star_rounded',
   'timer_outlined',
   'thumb_down_outlined',
   'thumb_down',
