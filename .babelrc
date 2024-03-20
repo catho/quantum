@@ -11,8 +11,7 @@
   "plugins": [
     "transform-class-properties",
     "transform-modern-regexp",
-    "babel-plugin-styled-components",
-    "./scripts/babel-css-modules.js"
+    "babel-plugin-styled-components"
   ],
   "env": {
     "production": {
