@@ -50,7 +50,7 @@ const Wrapper = styled.div`
     margin-right: ${medium}px;
     vertical-align: top;
 
-    :last-child {
+    &:last-child {
       margin-right: 0;
     }
 

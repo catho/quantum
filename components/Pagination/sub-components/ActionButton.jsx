@@ -35,8 +35,8 @@ const ActionButton = styled.a`
     }
 
     &[aria-disabled=false] {
-      :hover,
-      :focus {
+      &:hover,
+      &:focus {
         background-color: ${primary100};
         border: 2px solid ${primary700};
       }

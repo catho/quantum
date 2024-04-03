@@ -43,8 +43,7 @@ const PageButton = styled.a`
     margin: 0 ${xxsmall}px;
     padding: ${xxsmall}px ${xsmall}px;
 
-    :hover,
-    :focus {
+    &:hover, &:focus {
       background-color: ${active ? primary900 : primary100};
       border-color: ${active ? primary900 : primary700};
       color: ${active ? neutral0 : primary700};
