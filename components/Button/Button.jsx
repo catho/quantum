@@ -168,7 +168,9 @@ const StyledButton = styled.button`
       color: ${textColor};
       border: 2px solid ${borderColor};
 
-      ${shadow(2, neutral500)({ theme })} :hover {
+      ${shadow(2, neutral500)({ theme })}
+
+      &:hover {
         ${!disabled
           ? css`
               ${shadow(4, mainColor900)({ theme })}
@@ -178,12 +180,12 @@ const StyledButton = styled.button`
           : ''}
       }
 
-      :focus,
-      :focus-within {
+      &:focus,
+      &:focus-within {
         ${!disabled ? shadow(4, mainColor700)({ theme }) : ''}
       }
 
-      :active {
+      &:active {
         ${!disabled
           ? css`
               ${shadow(8, mainColor900)({ theme })}
@@ -301,14 +303,14 @@ const IconButton = styled(Button)`
         margin-right: 0;
       }
 
-      :hover,
-      :focus {
+      &:hover,
+      &:focus {
         box-shadow: none;
         background-color: ${hexToRgba(mainColor300, 0.4)};
         color: ${mainColor700};
       }
 
-      :active {
+      &:active {
         box-shadow: none;
         background-color: ${hexToRgba(mainColor300, 0.5)};
         color: ${mainColor700};
