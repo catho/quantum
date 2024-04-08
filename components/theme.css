@@ -1,0 +1,12 @@
+:root {
+    --qtm-gutter: 8px;
+    --qtm-spacing-xxxsmall: calc(var(--qtm-gutter) * 0.25); /* 2px */
+    --qtm-spacing-xxsmall: calc(var(--qtm-gutter) * 0.5);   /* 4px */
+    --qtm-spacing-xsmall: calc(var(--qtm-gutter) * 1);      /* 8px */
+    --qtm-spacing-small: calc(var(--qtm-gutter) * 1.5);     /* 12px */
+    --qtm-spacing-medium: calc(var(--qtm-gutter) * 2);      /* 16px */
+    --qtm-spacing-large: calc(var(--qtm-gutter) * 3);       /* 24px */
+    --qtm-spacing-xlarge: calc(var(--qtm-gutter) * 4);      /* 32px */
+    --qtm-spacing-xxlarge: calc(var(--qtm-gutter) * 5);     /* 40px */
+    --qtm-spacing-xxxlarge: calc(var(--qtm-gutter) * 6);    /* 48px */
+}

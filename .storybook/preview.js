@@ -1,4 +1,5 @@
 import GlobalStyle from '../components/GlobalStyle';
+import '../components/theme.css';
 
 const CSSDecorator = (Story, context) => (
   <>
