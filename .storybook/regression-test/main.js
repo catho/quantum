@@ -22,14 +22,29 @@ const config = {
     options: {},
   },
   webpackFinal: async (config) => {
-    config.module.rules
-      .find((rule) => typeof rule === 'object' && isRuleForStyles(rule))
-      .use.push({
+    const rulesIndex = config.module.rules.findIndex(
+      (rule) => typeof rule === 'object' && isRuleForStyles(rule),
+    );
+
+    config.module.rules[rulesIndex].use = [
+      'style-loader',
+      {
+        loader: 'css-loader',
+        options: {
+          importLoaders: 1,
+          modules: {
+            localIdentName: '[local]___[hash:base64:5]',
+          },
+        },
+      },
+      {
         loader: 'postcss-loader',
         options: {
           implementation: require.resolve('postcss'),
         },
-      });
+      },
+    ];
+
     return config;
   },
 };
