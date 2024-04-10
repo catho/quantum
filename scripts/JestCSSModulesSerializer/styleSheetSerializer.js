@@ -59,19 +59,13 @@ const getClassNames = (nodes) =>
 
 const includesClassNames = (classNames, selectors) =>
   classNames.some((className) =>
-    selectors.some((selector) => selector.includes(className)),
+    selectors.some(
+      (selector) => selector.replace('.', '').trim() === className.trim(),
+    ),
   );
-
-const includesUnknownClassNames = (classNames, selectors) =>
-  !selectors
-    .flatMap((selector) => selector.split(' '))
-    .every((chunk) =>
-      classNames.some((className) => chunk.includes(className)),
-    );
 
 const filterRules = (classNames) => (rule) =>
   rule.type === 'rule' &&
-  !includesUnknownClassNames(classNames, rule.selectors) &&
   includesClassNames(classNames, rule.selectors) &&
   rule.declarations.length;
 
