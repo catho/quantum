@@ -4,7 +4,6 @@ export interface ThumbnailProps extends HTMLAttributes<HTMLImageElement> {
     src: string;
     alt: string;
     rounded?: boolean;
-    theme?: { colors?: object };
 }
 
 declare const Thumbnail: FC<ThumbnailProps>;
