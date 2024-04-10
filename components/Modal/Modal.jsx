@@ -28,7 +28,7 @@ function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
 }
 
 const ModalCard = styled(Card)`
-  ${Card.Header} {
+  header {
     padding-right: ${({
       theme: {
         spacing: { xxxlarge },
