@@ -94,7 +94,7 @@ function DescriptionCard({ card, cardSize, theme }) {
 
   return (
     <AdaptedCard cardMeasure={cardMeasure} theme={theme}>
-      <Content>
+      <Content theme={theme}>
         <Media
           cardMeasure={cardMeasure}
           src={card.imagePath}

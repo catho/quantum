@@ -38,7 +38,7 @@ const Thumb = styled.img`
 
 const ThumbCard = ({ card, theme }) => (
   <AdaptedCard theme={theme}>
-    <Content>
+    <Content theme={theme}>
       <Thumb src={card.imagePath} alt={card.imageDescription} />
     </Content>
   </AdaptedCard>
