@@ -1,0 +1,14 @@
+.media-wrapper {
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--qtm-spacing-small);
+    background-color: var(--qtm-colors-neutral-300);
+}
+
+.media-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}

@@ -1,28 +1,16 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import classNames from 'classnames';
+import styles from './Thumbnail.module.css';
 
-import { colors } from '../../shared/theme';
+const Thumbnail = ({ className = '', src, alt, rounded, ...props }) => {
+  const classImg = classNames(className, styles.thumbnail, {
+    [styles['thumbnail-rounded']]: rounded,
+  });
 
-const Image = styled.img.attrs({ loading: 'lazy' })`
-  border-radius: ${({ rounded }) => (rounded ? '50%' : '4px')};
-  display: inline-block;
-  height: 72px;
-  width: 72px;
-
-  ${({
-    rounded,
-    theme: {
-      colors: {
-        neutral: { 300: neutral300 },
-      },
-    },
-  }) => `
-    background-color: ${neutral300};
-    border-radius: ${rounded ? '50%' : '4px'};
-  `}
-`;
-
-const Thumbnail = ({ ...props }) => <Image {...props} />;
+  return (
+    <img loading="lazy" src={src} alt={alt} className={classImg} {...props} />
+  );
+};
 
 Thumbnail.displayName = 'Card.Thumbnail';
 
@@ -31,16 +19,10 @@ Thumbnail.propTypes = {
   alt: PropTypes.string.isRequired,
   /** Display a rounded Thumbnail. */
   rounded: PropTypes.bool,
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-  }),
 };
 
 Thumbnail.defaultProps = {
   rounded: false,
-  theme: {
-    colors,
-  },
 };
 
 export default Thumbnail;

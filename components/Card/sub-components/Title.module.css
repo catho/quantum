@@ -1,0 +1,9 @@
+.title {
+    font-size: calc(var(--qtm-base-font-size) * 1.5);
+    font-weight: 600;
+    margin: 0;
+}
+
+.title-small {
+    font-size: calc(var(--qtm-base-font-size) * 1.25);
+}

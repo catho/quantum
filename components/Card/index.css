@@ -1,0 +1,9 @@
+@import "./Card.module.css";
+@import "./sub-components/Content.module.css";
+@import "./sub-components/Description.module.css";
+@import "./sub-components/Footer.module.css";
+@import "./sub-components/Header.module.css";
+@import "./sub-components/HeaderText.module.css";
+@import "./sub-components/Media.module.css";
+@import "./sub-components/Thumbnail.module.css";
+@import "./sub-components/Title.module.css";

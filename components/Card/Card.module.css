@@ -1,0 +1,7 @@
+.card-wrapper {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--qtm-colors-neutral-0);
+}

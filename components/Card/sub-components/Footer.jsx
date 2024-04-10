@@ -1,25 +1,14 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { spacing } from '../../shared/theme';
+import classNames from 'classnames';
+import styles from './Footer.module.css';
 
-const Footer = styled.footer`
-  padding: ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => `0 ${medium}px ${medium}px`};
-`;
+const Footer = ({ className = '', children, ...props }) => {
+  const classFooter = classNames(className, styles['footer-wrapper']);
 
-Footer.propTypes = {
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-  }),
-};
-
-Footer.defaultProps = {
-  theme: {
-    spacing,
-  },
+  return (
+    <footer {...props} className={classFooter}>
+      {children}
+    </footer>
+  );
 };
 
 Footer.displayName = 'Card.Footer';

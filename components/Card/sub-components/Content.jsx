@@ -1,37 +1,13 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import styles from './Content.module.css';
 
-import {
-  spacing,
-  baseFontSize as defaultBaseFontSize,
-} from '../../shared/theme';
-
-const Content = styled.div`
-  margin: 0;
-
-  ${({
-    theme: {
-      baseFontSize,
-      spacing: { small, medium },
-    },
-  }) => `
-    padding: ${small}px ${medium}px;
-    font-size: ${baseFontSize * 0.875}px;
-  `}
-`;
-
-Content.propTypes = {
-  theme: PropTypes.shape({
-    baseFontSize: PropTypes.number,
-    spacing: PropTypes.object,
-  }),
-};
-
-Content.defaultProps = {
-  theme: {
-    spacing,
-    baseFontSize: defaultBaseFontSize,
-  },
+const Content = ({ className = '', children, ...props }) => {
+  const classContent = classNames(className, styles.content);
+  return (
+    <div className={classContent} {...props}>
+      {children}
+    </div>
+  );
 };
 
 Content.displayName = 'Card.Content';

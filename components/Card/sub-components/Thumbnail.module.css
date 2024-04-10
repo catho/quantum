@@ -1,0 +1,11 @@
+.thumbnail {
+    border-radius: 4px;
+    display: inline-block;
+    height: 72px;
+    width: 72px;
+    background-color: var(--qtm-colors-neutral-300);
+}
+
+.thumbnail-rounded {
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+.header-wrapper {
+    display: flex;
+    padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
+}
+
+.header-wrapper > * {
+    margin-right: var(--qtm-spacing-medium);
+}
+
+.header-wrapper > *:last-child {
+    margin-right: 0;
+}

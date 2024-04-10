@@ -1,0 +1,8 @@
+.description-content {
+    font-size: calc(var(--qtm-base-font-size) * 0.875);
+    margin: var(--qtm-spacing-xsmall) 0 0 0;
+}
+
+.description-content-small {
+    font-size: calc(var(--qtm-base-font-size) * 0.75);
+}
