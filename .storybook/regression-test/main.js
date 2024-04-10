@@ -22,11 +22,11 @@ const config = {
     options: {},
   },
   webpackFinal: async (config) => {
-    const rulesIndex = config.module.rules.findIndex(
+    const styleRuleIndex = config.module.rules.findIndex(
       (rule) => typeof rule === 'object' && isRuleForStyles(rule),
     );
 
-    config.module.rules[rulesIndex].use = [
+    config.module.rules[styleRuleIndex].use = [
       'style-loader',
       {
         loader: 'css-loader',
