@@ -1,5 +1,6 @@
 :root {
     --qtm-gutter: 8px;
+
     --qtm-spacing-xxxsmall: calc(var(--qtm-gutter) * 0.25); /* 2px */
     --qtm-spacing-xxsmall: calc(var(--qtm-gutter) * 0.5);   /* 4px */
     --qtm-spacing-xsmall: calc(var(--qtm-gutter) * 1);      /* 8px */
@@ -9,4 +10,18 @@
     --qtm-spacing-xlarge: calc(var(--qtm-gutter) * 4);      /* 32px */
     --qtm-spacing-xxlarge: calc(var(--qtm-gutter) * 5);     /* 40px */
     --qtm-spacing-xxxlarge: calc(var(--qtm-gutter) * 6);    /* 48px */
+
+    --qtm-colors-neutral-0: #ffffff;
+    --qtm-colors-neutral-300: #e0e0e0;
+    --qtm-colors-neutral-700: #424242;
+
+    --qtm-base-font-size: 16px;
+
+    --qtm-shadow-umbra-opacity: 0.2;
+    --qtm-shadow-penumbra-opacity: 0.14;
+    --qtm-shadow-ambient-opacity: 0.12;
+
+    --qtm-shadow-umbra-color: rgba(66,66,66, var(--qtm-shadow-umbra-opacity)); /* Color based on --qtm-colors-neutral-700 = #424242 */
+    --qtm-shadow-penumbra-color: rgba(66,66,66, var(--qtm-shadow-penumbra-opacity)); /* Color based --qtm-colors-neutral-700 = #424242 */
+    --qtm-shadow-ambient-color: rgba(66,66,66, var(--qtm-shadow-ambient-opacity)); /* Color based --qtm-colors-neutral-700 = #424242 */
 }
