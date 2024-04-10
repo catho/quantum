@@ -34,6 +34,13 @@ const config = {
           importLoaders: 1,
           modules: {
             localIdentName: '[local]___[hash:base64:5]',
+            mode: (resourcePath) => {
+              if (!/module.css$/i.test(resourcePath)) {
+                return 'global';
+              }
+
+              return 'local';
+            },
           },
         },
       },
