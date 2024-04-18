@@ -42,7 +42,7 @@ const StyledActionButton = styled(ActionButton)`
     }
 
     &[aria-disabled=false] {
-      :focus {
+      &:focus {
         border-width: 1px;
       }
     }

@@ -26,7 +26,7 @@ const RadioMark = styled.span`
     border: 2px solid ${gray};
     margin-right: ${xsmall}px;
   `}
-  :after {
+  &:after {
     border-radius: 50%;
     content: '';
     display: none;
@@ -53,7 +53,7 @@ const RadioLabel = styled(Label)`
   user-select: none;
 
   ${HiddenInput} {
-    :checked {
+    &:checked {
       ~ ${RadioMark} {
         ${({
           theme: {
@@ -63,7 +63,7 @@ const RadioLabel = styled(Label)`
           },
         }) => `
           border-color: ${primary};
-          :after {
+          &:after {
             background-color: ${primary};
             display: block;
           }
@@ -71,7 +71,7 @@ const RadioLabel = styled(Label)`
       }
     }
 
-    :focus {
+    &:focus {
       ~ ${RadioMark} {
         ${({ theme }) => {
           const {
@@ -89,8 +89,8 @@ const RadioLabel = styled(Label)`
     }
   }
 
-  :hover,
-  :focus {
+  &:hover,
+  &:focus {
     ${RadioMark} {
       ${({ theme }) => {
         const {
@@ -118,16 +118,16 @@ const RadioLabel = styled(Label)`
       error &&
       `
       ${HiddenInput} {
-        :checked {
+        &:checked {
           ~ ${RadioMark} {
             border-color: ${errorColor};
-            :after {
+            &:after {
               background-color: ${errorColor};
               display: block;
             }
           }
         }
-        :focus {
+        &:focus {
           ~ ${RadioMark} {
             border-color: ${errorColor};
             ${shadow(5, errorColor)({ theme })}
@@ -139,8 +139,7 @@ const RadioLabel = styled(Label)`
         border-color: ${errorColor};
       }
 
-      :hover,
-      :focus {
+      &:hover, &:focus {
         ${RadioMark} {
           border-color: ${errorColor};
           ${shadow(5, errorColor)({ theme })}
@@ -163,28 +162,28 @@ const RadioLabel = styled(Label)`
     `
     color: ${neutral500};
 
-    :hover {
+    &:hover {
       cursor: not-allowed;
     }
 
     ${HiddenInput} {
-      :disabled {
+      &:disabled {
         ~ ${RadioMark} {
           background-color: ${neutral300};
         }
       }
 
-      :checked {
+      &:checked {
         ~ ${RadioMark} {
           border-color: ${errorColor};
-          :after {
+          &:after {
             background-color: ${errorColor};
             display: block;
           }
         }
       }
 
-      :checked:disabled {
+      &:checked:disabled {
         background-color: ${neutral500};
         border-color: ${neutral500};
         ~ ${RadioMark}:after {
@@ -192,7 +191,7 @@ const RadioLabel = styled(Label)`
         }
       }
 
-      :focus {
+      &:focus {
         ~ ${RadioMark} {
           border-color: ${neutral500};
           box-shadow: none;
@@ -200,7 +199,7 @@ const RadioLabel = styled(Label)`
       }
     }
 
-    :hover, :focus {
+    &:hover, &:focus {
       ${RadioMark} {
         border-color: ${neutral500};
         box-shadow: none;

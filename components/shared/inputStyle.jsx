@@ -67,16 +67,14 @@ const AUTO_FILL_STYLE = css`
 `;
 
 const INPUT_STYLE = css`
-  ${DEFAULT_STYLE} :hover,
-  :focus {
+  ${DEFAULT_STYLE} :hover, :focus {
     ${HOVER_STYLE}
   }
 
   ${({ error }) =>
     error &&
     css`
-      ${ERROR_STYLE} :hover,
-      :focus {
+      ${ERROR_STYLE} :hover, :focus {
         ${ERROR_HOVER_STYLE}
       }
     `};

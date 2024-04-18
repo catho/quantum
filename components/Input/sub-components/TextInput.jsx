@@ -27,7 +27,7 @@ const defaultSkin = ({ theme, error, hasDefaultValue }) => {
     ${error ? `border-color: ${mainColor};` : ''}
     ${hasDefaultValue ? `background-color: ${primary100};` : ''}
 
-    :hover, :focus {
+    &:hover, &:focus {
       border-color: ${mainColor};
       ${shadow(2, mainColor)({ theme })}
     }
@@ -63,8 +63,8 @@ const darkSkin = ({ theme, error }) => {
           border-color: ${neutral[0]};
         `
       : ''}
-    :hover,
-    :focus {
+
+    &:hover, &:focus {
       border-color: ${primary[500]};
     }
 

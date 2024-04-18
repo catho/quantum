@@ -79,7 +79,7 @@ const Button = styled.button`
         : colors.neutral['0']};
       border: 2px solid ${error ? colors.error['700'] : colors.neutral['500']};
 
-      :disabled {
+      &:disabled {
         background-color: ${colors.neutral['100']};
         border-color: ${colors.neutral['500']};
         color: ${colors.neutral['500']};
@@ -87,7 +87,7 @@ const Button = styled.button`
         cursor: not-allowed;
       }
 
-      :hover :enabled {
+      &:hover:enabled {
         border-color: ${colors.primary['700']};
         box-shadow:
           0px 3px 1px -2px rgb(18 80 196 / 20%),
@@ -95,7 +95,7 @@ const Button = styled.button`
           0px 1px 5px 0px rgb(18 80 196 / 12%);
       }
 
-      :focus :enabled {
+      &:focus:enabled {
         border-color: ${colors.primary['700']};
         box-shadow:
           0px 3px 1px -2px rgb(18 80 196 / 20%),
@@ -151,7 +151,7 @@ const SelectionListItem = styled.li`
       font-size: ${baseFontSize * 0.875}px;
       padding: ${spacing.xsmall}px ${spacing.medium}px;
 
-      :hover {
+      &:hover {
         background-color: ${colors.neutral['100']};
       }
     `;
