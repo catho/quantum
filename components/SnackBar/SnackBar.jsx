@@ -88,7 +88,7 @@ const SnackBarDialog = styled.div`
     `;
   }}
 
-  :focus {
+  &:focus {
     ${a11yFocusTab}
   }
 `;
@@ -101,7 +101,7 @@ const TextContainer = styled.span`
     margin: 0;
   }
 
-  :focus {
+  &:focus {
     ${a11yFocusTab}
   }
 `;
@@ -139,8 +139,8 @@ const CloseButton = styled(Button.Icon).attrs({
       margin-left: ${small}px;
       color: ${text};
 
-      :hover,
-      :focus {
+      &:hover,
+      &:focus {
         background: transparent;
         box-shadow: none;
         color: ${text};
@@ -170,8 +170,8 @@ const ActionButton = styled(Button)`
       border-width: 0;
       border-color: unset;
 
-      :hover,
-      :focus {
+      &:hover,
+      &:focus {
         background: ${hexToRgba(color, 0.15)};
         box-shadow: none;
         color: ${color};

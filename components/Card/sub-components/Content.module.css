@@ -1,0 +1,5 @@
+.content {
+    margin: 0;
+    padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+    font-size: calc(var(--qtm-base-font-size) * 0.875);
+}

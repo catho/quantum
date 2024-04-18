@@ -107,7 +107,7 @@ const CloseButton = styled(Button.Icon).attrs({
   transition: opacity 0.4s ease;
   width: auto;
 
-  :hover {
+  &:hover {
     background: none;
     opacity: 1;
     ${_getTextColor}

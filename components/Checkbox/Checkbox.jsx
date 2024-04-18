@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     margin-right: 16px;
     vertical-align: top;
 
-    :last-child {
+    &:last-child {
       margin-right: 0;
     }
   `}
@@ -94,7 +94,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     `}
   }
 
-  :checked {
+  &:checked {
     + ${CheckIcon} {
       border-width: 0;
 
@@ -112,7 +112,7 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
     }
   }
 
-  :hover + ${CheckIcon}, :focus + ${CheckIcon} {
+  &:hover + ${CheckIcon}, &:focus + ${CheckIcon} {
     ${({ theme }) => {
       const {
         colors: {
@@ -141,11 +141,11 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
         border-color: ${errorColor};
       }
 
-      :checked + ${CheckIcon} {
+      &:checked + ${CheckIcon} {
         background-color: ${errorColor};
       }
 
-      :hover +  ${CheckIcon}, :focus +  ${CheckIcon} {
+      &:hover +  ${CheckIcon}, &:focus +  ${CheckIcon} {
         border-color: ${errorColor};
         ${shadow(5, errorColor)({ theme })}
       }
@@ -172,12 +172,12 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
         background-color: ${neutral300};
       }
 
-      :checked + ${CheckIcon} {
+      &:checked + ${CheckIcon} {
         background-color: ${neutral500};
       }
     `}
 
-    :hover + ${CheckIcon} {
+    &:hover + ${CheckIcon} {
       ${shadow()}
     }
   }

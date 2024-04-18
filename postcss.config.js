@@ -3,6 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ENV = process.env.NODE_ENV;
+const globalStylesFilePath = [
+  './components/theme.css',
+  './components/_utilities.css',
+];
 
 module.exports = {
   plugins: [
@@ -13,6 +17,7 @@ module.exports = {
           preset: 'default',
         }),
         require('postcss-modules')({
+          globalModulePaths: globalStylesFilePath,
           getJSON(cssFilePath, json) {
             if (ENV === 'production' || ENV === 'jest') {
               const tempFolder = path.resolve('.temp');

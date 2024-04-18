@@ -1,110 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Card /> Snapshots Should match the snapshot 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.shadow-1 {
+  box-shadow: 0 2px 1px -1px var(--qtm-shadow-umbra-color),0 1px 1px 0 var(--qtm-shadow-penumbra-color),0 1px 3px 0 var(--qtm-shadow-ambient-color);
+}
+
+.Card-module__card-wrapper___HvjEg {
+  background-color: var(--qtm-colors-neutral-0);
+  border-radius: 8px;
   display: flex;
-  padding: 16px 16px 0;
+  flex-direction: column;
+  position: relative;
 }
 
-.c1 > * {
-  margin-right: 16px;
-}
-
-.c1 > *:last-child {
-  margin-right: 0;
-}
-
-.c2 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-}
-
-.c3 {
-  font-size: 24px;
-  font-weight: 600;
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
   margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c4 {
-  font-size: 14px;
-  margin: 8px 0 0 0;
+.Description-module__description-content___FVBwO {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: var(--qtm-spacing-xsmall) 0 0 0;
 }
 
-.c5 {
+.Footer-module__footer-wrapper___fgaA4 {
+  padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
+}
+
+.Header-module__header-wrapper___G5kEL {
+  display: flex;
+  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
+}
+
+.HeaderText-module__header-text___TE5FD {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.Thumbnail-module__thumbnail___z2NdG {
+  background-color: var(--qtm-colors-neutral-300);
   border-radius: 4px;
   display: inline-block;
   height: 72px;
   width: 72px;
-  background-color: #e0e0e0;
-  border-radius: 4px;
 }
 
-.c6 {
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
   margin: 0;
-  padding: 12px 16px;
-  font-size: 14px;
-}
-
-.c7 {
-  padding: 0 16px 16px;
-}
-
-.c0 {
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
-  background-color: #ffffff;
 }
 
 <article
-  class="c0"
+  class="Card-module__card-wrapper___HvjEg shadow-1"
 >
   <header
-    class="c1"
+    class="Header-module__header-wrapper___G5kEL"
   >
     <div
-      class="c2"
+      class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="c3"
+        class="Title-module__title___3S2cv"
       >
         Title
       </h2>
       <div
-        class="c4"
+        class="Description-module__description-content___FVBwO"
       >
         Description
       </div>
     </div>
     <img
       alt="Thumbnail"
-      class="c5"
+      class="Thumbnail-module__thumbnail___z2NdG"
       loading="lazy"
       src="#"
     />
   </header>
   <div
-    class="c6"
+    class="Content-module__content___itVo9"
   >
     Content
   </div>
   <footer
-    class="c7"
+    class="Footer-module__footer-wrapper___fgaA4"
   >
     Footer
   </footer>
@@ -112,62 +93,72 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 `;
 
 exports[`<Card /> Snapshots Should match the snapshot 2`] = `
-.c0 {
+.shadow-1 {
+  box-shadow: 0 2px 1px -1px var(--qtm-shadow-umbra-color),0 1px 1px 0 var(--qtm-shadow-penumbra-color),0 1px 3px 0 var(--qtm-shadow-ambient-color);
+}
+
+.Card-module__card-wrapper___HvjEg {
+  background-color: var(--qtm-colors-neutral-0);
   border-radius: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  box-shadow: 0px 2px 1px -1px rgba(66,66,66,0.2),0px 1px 1px 0px rgba(66,66,66,0.14),0px 1px 3px 0px rgba(66,66,66,0.12);
-  background-color: rgba(255,255,255,0.5);
 }
 
 <article
-  class="c0"
+  class="Card-module__card-wrapper___HvjEg shadow-1"
+  style="background-color: rgba(255, 255, 255, 0.5);"
 />
 `;
 
 exports[`<Card /> Snapshots should match snapshot with rounded Thumbnail 1`] = `
-.c0 {
-  border-radius: 50%;
+.Thumbnail-module__thumbnail___z2NdG {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 4px;
   display: inline-block;
   height: 72px;
   width: 72px;
-  background-color: #e0e0e0;
+}
+
+.Thumbnail-module__thumbnail-rounded___p2GVQ {
   border-radius: 50%;
 }
 
 <img
   alt=""
-  class="c0"
+  class="Thumbnail-module__thumbnail___z2NdG Thumbnail-module__thumbnail-rounded___p2GVQ"
   loading="lazy"
   src=""
 />
 `;
 
 exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
-.c0 {
-  font-size: 12px;
-  margin: 8px 0 0 0;
+.Description-module__description-content___FVBwO {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: var(--qtm-spacing-xsmall) 0 0 0;
+}
+
+.Description-module__description-content-small___tf4mk {
+  font-size: calc(var(--qtm-base-font-size)*.75);
 }
 
 <div
-  class="c0"
+  class="Description-module__description-content___FVBwO Description-module__description-content-small___tf4mk"
 />
 `;
 
 exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
-.c0 {
-  font-size: 20px;
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
   font-weight: 600;
   margin: 0;
 }
 
+.Title-module__title-small___4mNd0 {
+  font-size: calc(var(--qtm-base-font-size)*1.25);
+}
+
 <h2
-  class="c0"
+  class="Title-module__title___3S2cv Title-module__title-small___4mNd0"
 />
 `;

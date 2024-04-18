@@ -1,38 +1,14 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import styles from './Header.module.css';
 
-import { spacing } from '../../shared/theme';
+const Header = ({ className = '', children, ...props }) => {
+  const classHeader = classNames(className, styles['header-wrapper']);
 
-const Header = styled.header`
-  display: flex;
-
-  ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => `
-    padding: ${medium}px ${medium}px 0;
-
-    > * {
-      margin-right: ${medium}px;
-    }
-
-    > *:last-child {
-      margin-right: 0;
-    }
-  `}
-`;
-
-Header.propTypes = {
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-  }),
-};
-
-Header.defaultProps = {
-  theme: {
-    spacing,
-  },
+  return (
+    <header className={classHeader} {...props}>
+      {children}
+    </header>
+  );
 };
 
 Header.displayName = 'Card.Header';

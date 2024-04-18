@@ -10,9 +10,6 @@ import Title from './Title';
 
 export interface CardProps {
     onClick?: (e: MouseEvent) => void;
-    theme?: {
-        colors?: object;
-    },
     backgroundOpacity?: number;
 }
 

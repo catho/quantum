@@ -1,5 +1,12 @@
 /* 
-  Here you should have the import of the stylizations used in each component.
-  Example: 
-  @import "./Button/Button.module.css";
+  Here you should have the import of global stylizations and the stylizations used in each component.
+  Example:
+  @import "./Button/index.css";
 */
+
+/* Global style imports */
+@import "./theme.css";
+@import "./_utilities.css";
+
+/* Components imports */
+@import "./Card/index.css";

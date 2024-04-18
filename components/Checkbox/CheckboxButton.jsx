@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     margin-right: 16px;
     vertical-align: top;
 
-    :last-child {
+    &:last-child {
       margin-right: 0;
     }
   `}

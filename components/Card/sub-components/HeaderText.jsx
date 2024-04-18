@@ -1,9 +1,15 @@
-import styled from 'styled-components';
+import classNames from 'classnames';
+import styles from './HeaderText.module.css';
 
-const HeaderText = styled.div`
-  flex-grow: 1;
-  flex-basis: 0;
-`;
+const HeaderText = ({ className = '', children, ...props }) => {
+  const classHeaderText = classNames(className, styles['header-text']);
+
+  return (
+    <div className={classHeaderText} {...props}>
+      {children}
+    </div>
+  );
+};
 
 HeaderText.displayName = 'Card.HeaderText';
 
