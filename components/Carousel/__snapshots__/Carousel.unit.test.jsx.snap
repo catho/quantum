@@ -382,7 +382,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"
         />
       </svg>
       <div
@@ -1276,7 +1276,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
         />
       </svg>
       <ul
@@ -1676,7 +1676,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"
         />
       </svg>
       <div
@@ -2234,7 +2234,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
         />
       </svg>
     </div>
@@ -2624,7 +2624,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"
         />
       </svg>
       <div
@@ -3518,7 +3518,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
         />
       </svg>
       <ul
@@ -3969,7 +3969,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+          d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z"
         />
       </svg>
       <div
@@ -4863,7 +4863,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+          d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
         />
       </svg>
       <ul

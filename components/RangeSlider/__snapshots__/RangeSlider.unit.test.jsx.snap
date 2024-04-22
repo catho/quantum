@@ -10,17 +10,17 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when <RangeSlider /
   class="c0"
 >
   <span
-    class="MuiSlider-root Mui-disabled MuiSlider-colorPrimary MuiSlider-sizeMedium css-16b9jz-MuiSlider-root"
+    class="MuiSlider-root Mui-disabled MuiSlider-colorPrimary MuiSlider-sizeMedium css-snouyj-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      class="MuiSlider-track css-ttgsjq-MuiSlider-track"
       style="left: 0%; width: 0%;"
     />
     <span
-      class="MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
+      class="MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb Mui-disabled MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1as9v07-MuiSlider-thumb"
       data-index="0"
       style="left: 0%;"
     >
@@ -55,17 +55,17 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when <RangeSlider /
   class="c0"
 >
   <span
-    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1dfi1up-MuiSlider-root"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-7n8ri3-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      class="MuiSlider-track css-ttgsjq-MuiSlider-track"
       style="left: 0%; width: 30%;"
     />
     <span
-      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1as9v07-MuiSlider-thumb"
       data-index="0"
       style="left: 30%;"
     >
@@ -86,7 +86,7 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when <RangeSlider /
       />
       <span
         aria-hidden="true"
-        class="MuiSlider-valueLabelOpen MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
+        class="MuiSlider-valueLabelOpen MuiSlider-valueLabel css-14gyywz-MuiSlider-valueLabel"
       >
         <span
           class="MuiSlider-valueLabelCircle"
@@ -113,17 +113,17 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have just one 
   class="c0"
 >
   <span
-    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1jfcvfl-MuiSlider-root"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1n9szit-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      class="MuiSlider-track css-ttgsjq-MuiSlider-track"
       style="left: 0%; width: 10%;"
     />
     <span
-      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1as9v07-MuiSlider-thumb"
       data-index="0"
       style="left: 10%;"
     >
@@ -144,7 +144,7 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have just one 
       />
       <span
         aria-hidden="true"
-        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
+        class="MuiSlider-valueLabel css-14gyywz-MuiSlider-valueLabel"
       >
         <span
           class="MuiSlider-valueLabelCircle"
@@ -171,17 +171,17 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
   class="c0"
 >
   <span
-    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1jfcvfl-MuiSlider-root"
+    class="MuiSlider-root MuiSlider-colorPrimary MuiSlider-sizeMedium css-1n9szit-MuiSlider-root"
   >
     <span
-      class="MuiSlider-rail css-14pt78w-MuiSlider-rail"
+      class="MuiSlider-rail css-7o8aqz-MuiSlider-rail"
     />
     <span
-      class="MuiSlider-track css-1gv0vcd-MuiSlider-track"
+      class="MuiSlider-track css-ttgsjq-MuiSlider-track"
       style="left: 10%; width: 20%;"
     />
     <span
-      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1as9v07-MuiSlider-thumb"
       data-index="0"
       style="left: 10%;"
     >
@@ -202,7 +202,7 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
       />
       <span
         aria-hidden="true"
-        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
+        class="MuiSlider-valueLabel css-14gyywz-MuiSlider-valueLabel"
       >
         <span
           class="MuiSlider-valueLabelCircle"
@@ -216,7 +216,7 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
       </span>
     </span>
     <span
-      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-eg0mwd-MuiSlider-thumb"
+      class="MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1as9v07-MuiSlider-thumb"
       data-index="1"
       style="left: 30%;"
     >
@@ -237,7 +237,7 @@ exports[`<RangeSlider /> Snapshots should match the snapshot when have two handl
       />
       <span
         aria-hidden="true"
-        class="MuiSlider-valueLabel css-nnid7-MuiSlider-valueLabel"
+        class="MuiSlider-valueLabel css-14gyywz-MuiSlider-valueLabel"
       >
         <span
           class="MuiSlider-valueLabelCircle"
