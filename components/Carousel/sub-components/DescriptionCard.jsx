@@ -14,7 +14,11 @@ const cardMeasures = {
   },
 };
 
-const AdaptedCard = styled(Card)`
+const propsNotContainedInTheCard = ['theme', 'cardMeasure'];
+
+const AdaptedCard = styled(Card).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   ${({
     theme: {
       spacing: { xxxsmall, xsmall },
@@ -27,7 +31,9 @@ const AdaptedCard = styled(Card)`
   ${({ cardMeasure: { height } }) => `height: ${height}px;`}
 `;
 
-const Content = styled(Card.Content)`
+const Content = styled(Card.Content).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   height: 100%;
   ${({
     theme: {
@@ -39,7 +45,9 @@ const Content = styled(Card.Content)`
   box-sizing: border-box;
 `;
 
-const Media = styled(Card.Media)`
+const Media = styled(Card.Media).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   width: 192px;
   height: 104px;
   padding-bottom: 0;
@@ -49,7 +57,9 @@ const Media = styled(Card.Media)`
   `};
 `;
 
-const Title = styled(Card.Title)`
+const Title = styled(Card.Title).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   ${({
     theme: {
       baseFontSize: baseFont,
@@ -66,7 +76,9 @@ const Title = styled(Card.Title)`
   text-overflow: ellipsis;
 `;
 
-const Description = styled(Card.Description)`
+const Description = styled(Card.Description).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   ${({
     theme: {
       baseFontSize: baseFont,

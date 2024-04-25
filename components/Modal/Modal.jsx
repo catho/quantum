@@ -13,6 +13,7 @@ import { breakpoints, colors, spacing, components } from '../shared/theme';
 import isSSR from '../shared/isSSR';
 
 const closeButtonPadding = spacing.medium;
+const propsNotContainedInTheCard = ['theme'];
 
 function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   const sizes = {
@@ -27,7 +28,9 @@ function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
   );
 }
 
-const ModalCard = styled(Card)`
+const ModalCard = styled(Card).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   header {
     padding-right: ${({
       theme: {
