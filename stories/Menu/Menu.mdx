@@ -1,0 +1,127 @@
+{/* Generated with scripts/create-componnent.js */}
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs';
+import  Menu  from '../../components/Menu';
+
+import { Header } from '../shared';
+
+import { 
+  Default,
+  WithIcon
+} from './Menu.stories.jsx';
+
+import EvaluationForm from '../../stories/shared/EvaluationForm'
+
+<Meta title="Menu" component={Menu}  />
+
+<Header title="Menu">
+      A menu that displays a list of choices on a temporary surface. It appears when the user interacts with a button, or other control.
+      It is based on the Menu Material UI component of the same name.
+</Header>
+
+- [Importing and usage](#importing)
+- [API](#api)
+
+## <a id="importing"></a>Importing and usage
+
+```js
+import { Menu } from '@catho/quantum';
+```
+
+```jsx
+...
+export default function BasicMenu() {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div>
+      <Button
+        id="button"
+        aria-controls={open ? 'menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        Menu
+      </Button>
+      <Menu
+        open={open}
+        anchorEl={anchorEl}
+        handleClose={handleClose}
+        items={menuItems}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+        {...args}
+      />
+    </div>
+  );
+}
+```
+
+<Canvas>
+  <Story of={Default} />
+</Canvas>
+
+### With Icon
+
+```jsx
+...
+export default function MenuWithIcon() {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div>
+      <div
+        aria-hidden="true"
+        aria-label="Menu"
+        role="button"
+        id="button"
+        aria-controls={open ? 'menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        <Icon name="menu" />{' '}
+      </div>
+      <Menu
+        open={open}
+        anchorEl={anchorEl}
+        handleClose={handleClose}
+        items={menuItems}
+        {...args}
+      />
+    </div>
+  );
+}
+```
+
+<Canvas withSource="none">
+  <Story of={WithIcon}/>
+</Canvas>
+
+## <a id="api"></a>API
+
+<ArgsTable of={Menu} />
+
+<EvaluationForm componentName="Menu" />
+
+    
