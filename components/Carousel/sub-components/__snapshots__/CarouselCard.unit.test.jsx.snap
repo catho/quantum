@@ -39,11 +39,9 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
 
 <article
     class="c0 Card-module__card-wrapper___HvjEg shadow-1"
-    theme="[object Object]"
   >
     <div
       class="c1 Content-module__content___itVo9"
-      theme="[object Object]"
     >
       <img
         alt="a11y image description"
@@ -146,33 +144,27 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
 }
 
 <article
-    cardmeasure="[object Object]"
     class="c0 Card-module__card-wrapper___HvjEg shadow-1"
-    theme="[object Object]"
   >
     <div
       class="c1 Content-module__content___itVo9"
-      theme="[object Object]"
     >
       <div
         class="c2 Media-module__media-wrapper___Uu7hp"
       >
         <img
           alt="a11y image description"
-          cardmeasure="[object Object]"
           class="Media-module__media-image___vWBVj"
           src="https://assets.catho.com.br/logo/svg/blue.svg"
         />
       </div>
       <h2
         class="c3 Title-module__title___3S2cv Title-module__title-small___4mNd0"
-        theme="[object Object]"
       >
         Card title
       </h2>
       <div
         class="c4 Description-module__description-content___FVBwO"
-        theme="[object Object]"
       >
         Lorem ipsum dolor avec
       </div>
@@ -272,33 +264,27 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
 }
 
 <article
-    cardmeasure="[object Object]"
     class="c0 Card-module__card-wrapper___HvjEg shadow-1"
-    theme="[object Object]"
   >
     <div
       class="c1 Content-module__content___itVo9"
-      theme="[object Object]"
     >
       <div
         class="c2 Media-module__media-wrapper___Uu7hp"
       >
         <img
           alt="a11y image description"
-          cardmeasure="[object Object]"
           class="Media-module__media-image___vWBVj"
           src="https://assets.catho.com.br/logo/svg/blue.svg"
         />
       </div>
       <h2
         class="c3 Title-module__title___3S2cv Title-module__title-small___4mNd0"
-        theme="[object Object]"
       >
         Card title
       </h2>
       <div
         class="c4 Description-module__description-content___FVBwO"
-        theme="[object Object]"
       >
         Lorem ipsum dolor avec
       </div>
