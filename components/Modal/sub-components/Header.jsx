@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import Card from '../../Card';
 import { spacing } from '../../shared/theme';
 
-const Header = styled(Card.Header)`
+const propsNotContainedInTheCard = ['theme'];
+
+const Header = styled(Card.Header).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   padding: ${({
     theme: {
       spacing: { medium },

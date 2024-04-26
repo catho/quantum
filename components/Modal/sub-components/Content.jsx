@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import Card from '../../Card';
 import { spacing } from '../../shared/theme';
 
-const Content = styled(Card.Content)`
+const propsNotContainedInTheCard = ['theme'];
+
+const Content = styled(Card.Content).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   font-size: 16px;
   max-height: 70vh;
   overflow-y: auto;

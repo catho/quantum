@@ -199,11 +199,9 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   <article
     class="c1 Card-module__card-wrapper___HvjEg shadow-1"
     tabindex="0"
-    theme="[object Object]"
   >
     <header
       class="c2 Header-module__header-wrapper___G5kEL"
-      theme="[object Object]"
     >
       <div
         class="HeaderText-module__header-text___TE5FD"
@@ -217,7 +215,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     </header>
     <div
       class="c4 Content-module__content___itVo9"
-      theme="[object Object]"
     >
       Modal Content
     </div>
@@ -422,11 +419,9 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
 <article
   class="c0 Card-module__card-wrapper___HvjEg shadow-1"
   tabindex="0"
-  theme="[object Object]"
 >
   <header
     class="c1 Header-module__header-wrapper___G5kEL"
-    theme="[object Object]"
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
@@ -440,7 +435,6 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   </header>
   <div
     class="c3 Content-module__content___itVo9"
-    theme="[object Object]"
   >
     Modal Content
   </div>

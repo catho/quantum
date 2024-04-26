@@ -5,8 +5,11 @@ import { colors, spacing, baseFontSize } from '../../shared/theme';
 
 const SQUARE_CARD_SIZE = 80;
 const SQUARE_THUMB_SIZE = 64;
+const propsNotContainedInTheCard = ['theme'];
 
-const AdaptedCard = styled(Card)`
+const AdaptedCard = styled(Card).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   ${({
     theme: {
       spacing: { xxxsmall, xxsmall },
@@ -20,7 +23,9 @@ const AdaptedCard = styled(Card)`
   width: ${SQUARE_CARD_SIZE}px;
 `;
 
-const Content = styled(Card.Content)`
+const Content = styled(Card.Content).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
+})`
   height: 100%;
   ${({
     theme: {
