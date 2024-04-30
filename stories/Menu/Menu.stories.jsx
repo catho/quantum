@@ -33,6 +33,7 @@ const Template = (args) => {
   return (
     <div>
       <Button
+        aria-label="Menu"
         aria-controls="presentation"
         aria-haspopup="true"
         aria-expanded={open}
@@ -73,7 +74,6 @@ const TemplateButtonIcon = (args) => {
     <div>
       <button
         type="button"
-        aria-labelledby="Menu"
         aria-label="Menu"
         aria-controls="presentation"
         aria-haspopup="true"
