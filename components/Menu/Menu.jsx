@@ -38,8 +38,6 @@ const Menu = (props) => {
   };
   return (
     <MaterialMenu
-      id="menu"
-      data-testid="menu"
       theme={materialThemeOverride}
       aria-labelledby="button"
       anchorReference="anchorEl"

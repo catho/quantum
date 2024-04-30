@@ -57,13 +57,13 @@ describe('<Menu />', () => {
   });
 
   it('does not render with anchorEl when open is false', () => {
-    const { queryByTestId } = renderMenu({
+    const { queryByRole } = renderMenu({
       open: false,
       items: mockItems,
       anchorEl: mockAnchorEl,
       onClose: mockHandleClose,
     });
-    const menu = queryByTestId('menu');
+    const menu = queryByRole('presentation');
     expect(menu).toBeNull();
   });
 
