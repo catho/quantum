@@ -11,12 +11,12 @@ const menuItems = [
   {
     id: 'test-candidate',
     content: 'Testar candidato',
-    handleClick: () => {},
+    onClick: () => {},
   },
   {
     id: 'print-cv',
     content: 'Imprimir currículo',
-    handleClick: () => {},
+    onClick: () => {},
   },
 ];
 
@@ -33,10 +33,9 @@ const Template = (args) => {
   return (
     <div>
       <Button
-        id="button"
-        aria-controls={open ? 'menu' : undefined}
+        aria-controls="presentation"
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open}
         onClick={handleClick}
       >
         Menu
@@ -44,7 +43,7 @@ const Template = (args) => {
       <Menu
         open={open}
         anchorEl={anchorEl}
-        handleClose={handleClose}
+        onClose={handleClose}
         items={menuItems}
         anchorOrigin={{
           vertical: 'bottom',
@@ -72,22 +71,21 @@ const TemplateButtonIcon = (args) => {
 
   return (
     <div>
-      <div
-        aria-hidden="true"
+      <button
+        type="button"
+        aria-labelledby="Menu"
         aria-label="Menu"
-        role="button"
-        id="button"
-        aria-controls={open ? 'menu' : undefined}
+        aria-controls="presentation"
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open}
         onClick={handleClick}
       >
         <Icon name="menu" />{' '}
-      </div>
+      </button>
       <Menu
         open={open}
         anchorEl={anchorEl}
-        handleClose={handleClose}
+        onClose={handleClose}
         items={menuItems}
         {...args}
       />

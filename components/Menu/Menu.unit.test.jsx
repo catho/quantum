@@ -4,8 +4,8 @@ import Menu from './Menu';
 
 describe('<Menu />', () => {
   const mockItems = [
-    { id: 'item-1', content: 'Item 1', handleClick: jest.fn() },
-    { id: 'item-2', content: 'Item 2', handleClick: jest.fn() },
+    { id: 'item-1', content: 'Item 1', onClick: jest.fn() },
+    { id: 'item-2', content: 'Item 2', onClick: jest.fn() },
   ];
 
   const mockAnchorEl = document.createElement('div');
@@ -21,7 +21,7 @@ describe('<Menu />', () => {
       open: true,
       items: mockItems,
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
 
     mockItems.forEach((item) => {
@@ -30,29 +30,29 @@ describe('<Menu />', () => {
     });
   });
 
-  it('calls handleClose when an item is clicked', () => {
+  it('calls onClose when an item is clicked', () => {
     const { getByText } = renderMenu({
       open: true,
       items: mockItems,
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
 
     mockItems.forEach((item) => {
       const renderedItem = getByText(item.content);
       fireEvent.click(renderedItem);
-      expect(item.handleClick).toHaveBeenCalledTimes(1);
+      expect(item.onClick).toHaveBeenCalledTimes(1);
     });
   });
 
   it('renders with anchorEl when open is true', () => {
-    const { getByTestId } = renderMenu({
+    const { getByRole } = renderMenu({
       open: true,
       items: mockItems,
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
-    const menu = getByTestId('menu');
+    const menu = getByRole('presentation');
     expect(menu).toBeInTheDocument();
   });
 
@@ -61,20 +61,20 @@ describe('<Menu />', () => {
       open: false,
       items: mockItems,
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
     const menu = queryByTestId('menu');
     expect(menu).toBeNull();
   });
 
-  it('calls handleClose when onBlur event is triggered', () => {
-    const { getByTestId } = renderMenu({
+  it('calls onClose when onBlur event is triggered', () => {
+    const { getByRole } = renderMenu({
       open: true,
       items: mockItems,
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
-    const menu = getByTestId('menu');
+    const menu = getByRole('presentation');
     fireEvent.blur(menu);
     expect(mockHandleClose).toHaveBeenCalledTimes(1);
   });
@@ -84,7 +84,7 @@ describe('<Menu />', () => {
       open: true,
       items: [],
       anchorEl: mockAnchorEl,
-      handleClose: mockHandleClose,
+      onClose: mockHandleClose,
     });
     mockItems.forEach((item) => {
       const renderedItem = queryByText(item.content);

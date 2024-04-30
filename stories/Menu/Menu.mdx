@@ -42,10 +42,9 @@ export default function BasicMenu() {
   return (
     <div>
       <Button
-        id="button"
-        aria-controls={open ? 'menu' : undefined}
+        aria-controls="presentation"
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open}
         onClick={handleClick}
       >
         Menu
@@ -53,7 +52,7 @@ export default function BasicMenu() {
       <Menu
         open={open}
         anchorEl={anchorEl}
-        handleClose={handleClose}
+        onClose={handleClose}
         items={menuItems}
         anchorOrigin={{
           vertical: 'bottom',
@@ -90,22 +89,21 @@ export default function MenuWithIcon() {
 
   return (
     <div>
-      <div
-        aria-hidden="true"
+      <button
+        type="button"
+        aria-labelledby="Menu"
         aria-label="Menu"
-        role="button"
-        id="button"
-        aria-controls={open ? 'menu' : undefined}
+        aria-controls="presentation"
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open}
         onClick={handleClick}
       >
         <Icon name="menu" />{' '}
-      </div>
+      </button>
       <Menu
         open={open}
         anchorEl={anchorEl}
-        handleClose={handleClose}
+        onClose={handleClose}
         items={menuItems}
         {...args}
       />

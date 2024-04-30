@@ -26,11 +26,16 @@ const Menu = (props) => {
     anchorEl,
     anchorOrigin,
     transformOrigin,
-    handleClose,
+    onClose,
     items,
     keepMounted,
   } = props;
 
+  const itemOnClick = (item) => {
+    const { onClick } = item;
+    onClick();
+    onClose();
+  };
   return (
     <MaterialMenu
       id="menu"
@@ -40,29 +45,22 @@ const Menu = (props) => {
       anchorReference="anchorEl"
       anchorEl={anchorEl}
       open={open}
-      onClose={handleClose}
-      onBlur={handleClose}
+      onClose={onClose}
+      onBlur={onClose}
       anchorOrigin={anchorOrigin}
       transformOrigin={transformOrigin}
       keepMounted={keepMounted}
     >
-      {items.map((item) => {
-        const onClickFunc = () => {
-          const { handleClick } = item;
-          handleClose();
-          handleClick();
-        };
-        return (
-          <MenuItem
-            key={item.id}
-            onClick={onClickFunc}
-            theme={materialThemeOverride}
-            color="textPrimary"
-          >
-            {item.content}
-          </MenuItem>
-        );
-      })}
+      {items.map((item) => (
+        <MenuItem
+          key={item.id}
+          onClick={() => itemOnClick(item)}
+          theme={materialThemeOverride}
+          color="textPrimary"
+        >
+          {item.content}
+        </MenuItem>
+      ))}
     </MaterialMenu>
   );
 };
@@ -71,7 +69,13 @@ Menu.propTypes = {
   /** If true, the component is shown. */
   open: PropTypes.bool,
   /** Menu contents, has a content parameter, an id and a handleClick function. */
-  items: PropTypes.array,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      content: PropTypes.ReactNode,
+      onClick: PropTypes.func,
+    }),
+  ),
   /**	An HTML element, or a function that returns one. It's used to set the position of the menu. */
   anchorEl: PropTypes.object,
   /** The point on the anchor where the popover's anchorEl will attach to.
@@ -87,7 +91,7 @@ Menu.propTypes = {
   /** Always keep the children in the DOM. */
   keepMounted: PropTypes.bool,
   /** Callback fired when the component requests to be closed. */
-  handleClose: PropTypes.func,
+  onClose: PropTypes.func,
 };
 
 Menu.defaultProps = {
@@ -103,7 +107,7 @@ Menu.defaultProps = {
     horizontal: 'left',
   },
   keepMounted: false,
-  handleClose: () => {},
+  onClose: () => {},
 };
 
 export default Menu;

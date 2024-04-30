@@ -4,7 +4,7 @@ import { FC } from 'react';
 export interface MenuItemProps {
   id: string | number;
   content: React.ReactNode;
-  handleClick: Function;
+  onClick: Function;
 }
 
 export interface MenuProps {
@@ -20,7 +20,7 @@ export interface MenuProps {
     horizontal: 'left' | 'center' | 'right';
   };
   keepMounted?: boolean;
-  handleClose?: (event: {}, reason: 'backdropClick' | 'escapeKeyDown') => void;
+  onClose?: (event: {}, reason: 'backdropClick' | 'escapeKeyDown') => void;
 }
 
 declare const Menu: FC<MenuProps>;
