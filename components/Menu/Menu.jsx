@@ -69,8 +69,8 @@ Menu.propTypes = {
   /** Menu contents, has a content parameter, an id and a handleClick function. */
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-      content: PropTypes.ReactNode,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      content: PropTypes.node.isRequired,
       onClick: PropTypes.func,
     }),
   ),
