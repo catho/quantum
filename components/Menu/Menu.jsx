@@ -31,13 +31,10 @@ const Menu = (props) => {
     keepMounted,
   } = props;
 
-  const itemOnClick = (item) => {
-    const { onClick } = item;
-    onClick();
-    onClose();
-  };
   return (
     <MaterialMenu
+      id="menu"
+      data-testid="menu"
       theme={materialThemeOverride}
       aria-labelledby="button"
       anchorReference="anchorEl"
@@ -49,16 +46,23 @@ const Menu = (props) => {
       transformOrigin={transformOrigin}
       keepMounted={keepMounted}
     >
-      {items.map((item) => (
-        <MenuItem
-          key={item.id}
-          onClick={() => itemOnClick(item)}
-          theme={materialThemeOverride}
-          color="textPrimary"
-        >
-          {item.content}
-        </MenuItem>
-      ))}
+      {items.map((item) => {
+        const onClickFunc = () => {
+          const { onClick } = item;
+          onClose();
+          onClick();
+        };
+        return (
+          <MenuItem
+            key={item.id}
+            onClick={onClickFunc}
+            theme={materialThemeOverride}
+            color="textPrimary"
+          >
+            {item.content}
+          </MenuItem>
+        );
+      })}
     </MaterialMenu>
   );
 };
