@@ -4,6 +4,7 @@
 ## Summary
 
  - [Contribution Prerequisites](#contribution-prerequisites)
+ - [Important Notices](#important-notices)
  - [Getting Started](#getting-started)
  - [Editing a Component](#editing-a-component)
 
@@ -13,7 +14,7 @@ You can contribute in many ways: opening or participating of a issue, reporting 
 
 ## Contribution Prerequisites
 
-- Node v16.15.1;
+- Node v16.17.1;
 
 Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same version based on the .nvmrc file in the repository.
 
@@ -26,7 +27,13 @@ Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same ver
 Why _commitizen_? To enforce a padronization to the commits and make sure every commit follows the same profile.
 
 ---
+## Important Notices ⚠️ 
 
+We do not recommend using ready-made components from [MUI](https://mui.com/material-ui/getting-started/) when implementing Quantum components for performance and long-term maintenance reasons. MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
+
+The MUI library, as well as the Styled Components, internally use resources and libraries that are an impediment to the use of [Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components), a resource included in Next JS 13 that we intend to enable its use and consequently improve the performance of our components. In the future, we plan to remove the cited libraries completely.
+
+---
 ## Getting Started
 1.  Fork the project, [Help Guide to Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo);
 2.  Clone the project;
@@ -127,7 +134,7 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 13.  Submit a pull request;
 
-        Open your pull request. If you don't know how do it, check this [tutorial](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
+        Open your pull request. If you don't know how do it, check this [tutorial](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
 14. Review flow for Pull Requests:
 

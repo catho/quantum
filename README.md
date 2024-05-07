@@ -12,6 +12,14 @@
 > **Warning**
 > Quantum requires react@16.14.0 or higher.
 
+## Notices ⚠️
+
+For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum component implementations.
+
+MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
+
+For more details, visit the "Important notices" section at [CONTRIBUTING.MD](https://github.com/catho/quantum/blob/master/CONTRIBUTING.MD#important-notices)
+
 ## Getting started
 
 Quantum is available as an [npm package](https://github.com/catho/quantum/pkgs/npm/quantum). It can be installed using:
