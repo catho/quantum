@@ -14,9 +14,7 @@
 
 ## Notices ⚠️
 
-For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum component implementations.
-
-MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
+For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum component implementations. MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
 
 For more details, visit the "Important notices" section at [CONTRIBUTING.MD](https://github.com/catho/quantum/blob/master/CONTRIBUTING.MD#important-notices)
 
