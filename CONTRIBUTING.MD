@@ -33,6 +33,8 @@ We do not recommend using ready-made components from [MUI](https://mui.com/mater
 
 The MUI library, as well as the Styled Components, internally use resources and libraries that are an impediment to the use of [Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components), a resource included in Next JS 13 that we intend to enable its use and consequently improve the performance of our components. In the future, we plan to remove the cited libraries completely.
 
+We also do not recommend using any other ready-made component libraries. We suggest that new components have their DOM structure, styling and functionalities completely implemented internally, that is, without dependence on third-party libraries.
+
 ---
 ## Getting Started
 1.  Fork the project, [Help Guide to Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo);
