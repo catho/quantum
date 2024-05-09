@@ -16,7 +16,7 @@
 
 For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum components implementation. MUI is present in our library only to allow the use of [Material Icons](https://mui.com/material-ui/material-icons/).
 
-We also do not recommend using any other ready-made component libraries. We suggest that new components have their DOM structure, styling and functionalities completely implemented internally, that is, without dependence on third-party libraries.
+Also, we do not recommend using any other ready-made component library. We suggest for new components to have DOM structure, styling and functionalities completely implemented internally, without any dependence on third-party libraries.
 
 For more details, visit the "Important notices" section at [CONTRIBUTING.MD](https://github.com/catho/quantum/blob/master/CONTRIBUTING.MD#important-notices)
 
