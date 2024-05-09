@@ -14,7 +14,7 @@
 
 ## Notices ⚠️
 
-For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum component implementations. MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
+For performance and long-term maintenance reasons, we do not recommend using [MUI](https://mui.com/material-ui/getting-started/) in Quantum components implementation. MUI is present in our library only to allow the use of [Material Icons](https://mui.com/material-ui/material-icons/).
 
 We also do not recommend using any other ready-made component libraries. We suggest that new components have their DOM structure, styling and functionalities completely implemented internally, that is, without dependence on third-party libraries.
 
