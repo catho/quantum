@@ -60,6 +60,7 @@ const icons = [
   'keyboard_arrow_right',
   'keyboard_arrow_up',
   'launch',
+  'lightbulb_outlined',
   'location_city',
   'lock',
   'lock_open',
