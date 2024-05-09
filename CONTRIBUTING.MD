@@ -31,7 +31,7 @@ Why _commitizen_? To enforce a padronization to the commits and make sure every 
 
 We do not recommend using ready-made components from [MUI](https://mui.com/material-ui/getting-started/) when implementing Quantum components for performance and long-term maintenance reasons. MUI is included in our library only to enable the use of [Material Icons](https://mui.com/material-ui/material-icons/).
 
-The MUI library, as well as the Styled Components, internally use resources and libraries that are an impediment to the use of [Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components), a resource included in Next JS 13 that we intend to enable its use and consequently improve the performance of our components. In the future, we plan to remove the cited libraries completely.
+The MUI library, as well as the Styled Components, uses internally resources and libraries that aren't compatible with [Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components), a resource added to Next JS 13. We intend to enable its use in the future to improve the performance of our components. Therefore, we plan to remove the mentioned libraries completely from our components.
 
 We also do not recommend using any other ready-made component libraries. We suggest that new components have their DOM structure, styling and functionalities completely implemented internally, that is, without dependence on third-party libraries.
 
