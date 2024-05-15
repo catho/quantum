@@ -1,386 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Hide /> should hide it's children according to screen size 1`] = `
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
+@media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
   }
 }
 
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Hide-module__hide-xsmall___CSbWx"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 2`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
   }
 }
 
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Hide-module__hide-small___4sGBt"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 3`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
   }
 }
 
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Hide-module__hide-medium___2Ovgf"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 4`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
 @media (min-width:1440px) {
-  .c0 {
-    display: none !important;
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
   }
 }
 
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Hide-module__hide-large___X3Usc"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 5`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
   }
 }
 
 @media (min-width:1440px) {
-  .c0 {
-    display: none !important;
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
   }
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
 }
 
 <div
-  class="c0"
+  class="Hide-module__hide-small___4sGBt Hide-module__hide-large___X3Usc"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 6`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
+@media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
   }
 }
 
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
   }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
 }
 
 <div
-  class="c0"
+  class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-medium___2Ovgf"
 >
   Content
 </div>
 `;
 
 exports[`<Hide /> should hide it's children according to screen size 7`] = `
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
   }
 }
 
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
   }
 }
 
 @media (min-width:1440px) {
-  .c0 {
-    display: none !important;
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
   }
 }
 
 <div
-  class="c0"
+  class="Hide-module__hide-small___4sGBt Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
 >
   Content
 </div>

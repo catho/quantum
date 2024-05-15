@@ -2,7 +2,19 @@
 
 exports[`<Pagination /> Snapshots should match snapshot when last pagination is not displayed 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -23,29 +35,29 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c6,
-.c6:after,
-.c6:before {
+.c5,
+.c5:after,
+.c5:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -53,22 +65,22 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   width: 5px;
 }
 
-.c6:after,
-.c6:before {
+.c5:after,
+.c5:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c6:after {
+.c5:after {
   left: 8px;
 }
 
-.c6:before {
+.c5:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -104,14 +116,14 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -147,14 +159,14 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -169,36 +181,16 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -206,7 +198,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -214,7 +206,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         2
@@ -222,7 +214,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         3
@@ -230,28 +222,40 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c5"
+        class="c4"
       >
         <span
-          class="c6"
+          class="c5"
         />
       </div>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -272,17 +276,17 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -292,7 +296,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -301,16 +305,16 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -319,16 +323,16 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -343,48 +347,28 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 10
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -396,7 +380,19 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
 
 exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -417,29 +413,29 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c6,
-.c6:after,
-.c6:before {
+.c5,
+.c5:after,
+.c5:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -447,22 +443,22 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   width: 5px;
 }
 
-.c6:after,
-.c6:before {
+.c5:after,
+.c5:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c6:after {
+.c5:after {
   left: 8px;
 }
 
-.c6:before {
+.c5:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -498,14 +494,14 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -541,14 +537,14 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -563,36 +559,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -600,7 +576,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -608,7 +584,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         2
@@ -616,7 +592,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         3
@@ -624,36 +600,48 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c5"
+        class="c4"
       >
         <span
-          class="c6"
+          class="c5"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 10"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         10
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -674,17 +662,17 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -694,7 +682,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -703,16 +691,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -721,16 +709,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -745,48 +733,28 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 10
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -798,7 +766,19 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
 
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -819,17 +799,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -865,14 +845,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -908,14 +888,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -930,36 +910,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -967,7 +927,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -975,7 +935,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         2
@@ -983,7 +943,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         3
@@ -991,7 +951,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
@@ -999,21 +959,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         5
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1034,17 +1006,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -1054,7 +1026,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1063,16 +1035,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1081,16 +1053,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1105,48 +1077,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 5
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -1158,7 +1110,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1179,17 +1143,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1225,14 +1189,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1268,14 +1232,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1290,36 +1254,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -1327,7 +1271,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -1335,7 +1279,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         2
@@ -1343,7 +1287,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         3
@@ -1351,7 +1295,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
@@ -1359,7 +1303,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         5
@@ -1367,21 +1311,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         6
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1402,17 +1358,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -1422,7 +1378,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1431,16 +1387,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1449,16 +1405,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1473,48 +1429,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 6
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -1526,7 +1462,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1547,29 +1495,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c6 {
+.c5 {
   position: relative;
 }
 
-.c6,
-.c6:after,
-.c6:before {
+.c5,
+.c5:after,
+.c5:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -1577,22 +1525,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   width: 5px;
 }
 
-.c6:after,
-.c6:before {
+.c5:after,
+.c5:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c6:after {
+.c5:after {
   left: 8px;
 }
 
-.c6:before {
+.c5:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1628,14 +1576,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1671,14 +1619,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1693,36 +1641,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -1730,7 +1658,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -1738,7 +1666,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         2
@@ -1746,7 +1674,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         3
@@ -1754,36 +1682,48 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c5"
+        class="c4"
       >
         <span
-          class="c6"
+          class="c5"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1804,17 +1744,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -1824,7 +1764,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1833,16 +1773,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -1851,16 +1791,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1875,48 +1815,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -1928,7 +1848,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -1949,17 +1881,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1995,14 +1927,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c4 {
+.c3 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2038,14 +1970,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2060,36 +1992,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -2097,7 +2009,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
@@ -2105,7 +2017,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         2
@@ -2113,7 +2025,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         3
@@ -2121,7 +2033,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 4"
-        class="c4"
+        class="c3"
         tabindex="0"
       >
         4
@@ -2129,7 +2041,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         5
@@ -2137,7 +2049,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         6
@@ -2145,21 +2057,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2180,17 +2104,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -2200,7 +2124,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2209,16 +2133,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2227,16 +2151,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2251,48 +2175,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         4 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -2304,7 +2208,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2325,29 +2241,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
-.c5,
-.c5:after,
-.c5:before {
+.c4,
+.c4:after,
+.c4:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -2355,22 +2271,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   width: 5px;
 }
 
-.c5:after,
-.c5:before {
+.c4:after,
+.c4:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c5:after {
+.c4:after {
   left: 8px;
 }
 
-.c5:before {
+.c4:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2406,14 +2322,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c6 {
+.c5 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2449,14 +2365,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2471,36 +2387,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -2508,22 +2404,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c4"
+        class="c3"
       >
         <span
-          class="c5"
+          class="c4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         4
@@ -2531,7 +2427,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        class="c6"
+        class="c5"
         tabindex="0"
       >
         5
@@ -2539,7 +2435,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         6
@@ -2547,21 +2443,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2582,17 +2490,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -2602,7 +2510,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2611,16 +2519,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -2629,16 +2537,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2653,48 +2561,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         5 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -2706,7 +2594,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2727,29 +2627,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
-.c5,
-.c5:after,
-.c5:before {
+.c4,
+.c4:after,
+.c4:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -2757,22 +2657,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   width: 5px;
 }
 
-.c5:after,
-.c5:before {
+.c4:after,
+.c4:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c5:after {
+.c4:after {
   left: 8px;
 }
 
-.c5:before {
+.c4:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2808,14 +2708,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c6 {
+.c5 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2851,14 +2751,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 4px 8px;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2873,36 +2773,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -2910,22 +2790,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c4"
+        class="c3"
       >
         <span
-          class="c5"
+          class="c4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         4
@@ -2933,7 +2813,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        class="c6"
+        class="c5"
         tabindex="0"
       >
         5
@@ -2941,7 +2821,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         6
@@ -2949,21 +2829,33 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -2984,17 +2876,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -3004,7 +2896,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3013,16 +2905,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3031,16 +2923,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3055,48 +2947,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         5 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -3108,7 +2980,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3129,29 +3013,29 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   display: inline-block;
   margin: 0 4px;
   min-width: 22px;
 }
 
-.c5 {
+.c4 {
   position: relative;
 }
 
-.c5,
-.c5:after,
-.c5:before {
+.c4,
+.c4:after,
+.c4:before {
   background-color: #e0e0e0;
   border-radius: 50%;
   display: inline-block;
@@ -3159,22 +3043,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   width: 5px;
 }
 
-.c5:after,
-.c5:before {
+.c4:after,
+.c4:before {
   content: '';
   position: absolute;
   top: 0;
 }
 
-.c5:after {
+.c4:after {
   left: 8px;
 }
 
-.c5:before {
+.c4:before {
   left: 16px;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3210,14 +3094,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #E5EDFC;
   border-color: #1250C4;
   color: #1250C4;
 }
 
-.c6 {
+.c5 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3253,14 +3137,14 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 4px 8px;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3275,36 +3159,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -3312,22 +3176,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c4"
+        class="c3"
       >
         <span
-          class="c5"
+          class="c4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 49"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         49
@@ -3335,7 +3199,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="page"
         aria-label="Current Page, Page 50"
-        class="c6"
+        class="c5"
         tabindex="0"
       >
         50
@@ -3343,36 +3207,48 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="false"
         aria-label="Page 51"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         51
       </a>
       <div
-        class="c4"
+        class="c3"
       >
         <span
-          class="c5"
+          class="c4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 100"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         100
       </a>
       <a
         aria-disabled="false"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3393,17 +3269,17 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -3413,7 +3289,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3422,16 +3298,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3440,16 +3316,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3464,48 +3340,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="false"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         50 of 100
       </span>
       <a
         aria-disabled="false"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
@@ -3517,7 +3373,19 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 <DocumentFragment>
-  .c2 {
+  @media (max-width:calc(600px - 1px)) {
+  .Hide-module__hide-xsmall___CSbWx {
+    display: none!important;
+  }
+}
+
+@media (min-width:600px) and (max-width:calc(1024px - 1px)) {
+  .Hide-module__hide-small___4sGBt {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3538,17 +3406,17 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c3 {
+.c2 {
   font-weight: bold;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -3584,14 +3452,14 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   padding: 4px 8px;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #002F7B;
   border-color: #002F7B;
   color: #ffffff;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3606,36 +3474,16 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Previous
@@ -3643,21 +3491,33 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c3"
+        class="c2"
         tabindex="0"
       >
         1
       </a>
       <a
         aria-disabled="true"
-        class="c2"
+        class="c1"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  .c2 {
+  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .Hide-module__hide-medium___2Ovgf {
+    display: none!important;
+  }
+}
+
+@media (min-width:1440px) {
+  .Hide-module__hide-large___X3Usc {
+    display: none!important;
+  }
+}
+
+.c1 {
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -3678,17 +3538,17 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   color: #1250C4;
 }
 
-.c2[aria-disabled=true] {
+.c1[aria-disabled=true] {
   display: none;
 }
 
-.c2[aria-disabled=false]:hover,
-.c2[aria-disabled=false]:focus {
+.c1[aria-disabled=false]:hover,
+.c1[aria-disabled=false]:focus {
   background-color: #E5EDFC;
   border: 2px solid #1250C4;
 }
 
-.c4 {
+.c3 {
   border-bottom: 1px solid;
   border-top: 1px solid;
   -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
@@ -3698,7 +3558,7 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   padding: 8px 16px;
 }
 
-.c3 {
+.c2 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3707,16 +3567,16 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   margin: 0;
 }
 
-.c3[aria-disabled=true] {
+.c2[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c3[aria-disabled=false]:focus {
+.c2[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c5 {
+.c4 {
   border-color: #e0e0e0;
   border-radius: 10px;
   border-width: 1px;
@@ -3725,16 +3585,16 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   margin: 0;
 }
 
-.c5[aria-disabled=true] {
+.c4[aria-disabled=true] {
   color: #e0e0e0;
   display: block;
 }
 
-.c5[aria-disabled=false]:focus {
+.c4[aria-disabled=false]:focus {
   border-width: 1px;
 }
 
-.c1 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3749,48 +3609,28 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   justify-content: center;
 }
 
-@media (max-width:599px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    display: none !important;
-  }
-}
-
 <div
-    class="c0"
+    class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c1"
+      class="c0"
     >
       <a
         aria-disabled="true"
-        class="c2 c3"
+        class="c1 c2"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c4"
+        class="c3"
       >
         1 of 1
       </span>
       <a
         aria-disabled="true"
-        class="c2 c5"
+        class="c1 c4"
         tabindex="0"
       >
         Next
