@@ -1,0 +1,23 @@
+@media (max-width: calc(600px - 1px)) {
+    .hide-xsmall {
+        display: none !important;
+    }
+}
+
+@media (min-width:600px) and (max-width: calc(1024px - 1px)) {
+    .hide-small {
+        display: none !important;
+    }
+}
+
+@media (min-width:1024px) and (max-width: calc(1440px - 1px)) {
+    .hide-medium {
+        display: none !important;
+    }
+}
+
+@media (min-width:1440px) {
+    .hide-large {
+        display: none !important;
+    }
+}

@@ -1,6 +1,32 @@
 :root {
     --qtm-gutter: 8px;
 
+    --qtm-gutter-xsmall: calc(var(--qtm-gutter) * 2);
+    --qtm-gutter-small: calc(var(--qtm-gutter) * 3);
+    --qtm-gutter-medium: calc(var(--qtm-gutter) * 3);
+    --qtm-gutter-large: calc(var(--qtm-gutter) * 3);
+
+    --qtm-breakpoint-xsmall-columns: 4;
+    --qtm-breakpoint-small-columns: 8;
+    --qtm-breakpoint-medium-columns: 12;
+    --qtm-breakpoint-large-columns: 12;
+
+    --qtm-col-default-size: 12;
+    --qtm-col-xsmall-size: 4;
+    --qtm-col-small-size: 8;
+    --qtm-col-medium-size: 12;
+    --qtm-col-large-size: 12;
+
+    --qtm-col-xsmall-offset: 0;
+    --qtm-col-small-offset: 0;
+    --qtm-col-medium-offset: 0;
+    --qtm-col-large-offset: 0;
+
+    --qtm-container-xsmall: 100%;
+    --qtm-container-small: 100%;
+    --qtm-container-medium: 1024px;
+    --qtm-container-large: 1440px;
+
     --qtm-spacing-xxxsmall: calc(var(--qtm-gutter) * 0.25); /* 2px */
     --qtm-spacing-xxsmall: calc(var(--qtm-gutter) * 0.5);   /* 4px */
     --qtm-spacing-xsmall: calc(var(--qtm-gutter) * 1);      /* 8px */
