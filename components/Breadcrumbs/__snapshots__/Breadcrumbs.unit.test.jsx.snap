@@ -147,7 +147,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <button
@@ -175,7 +175,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <a
@@ -200,7 +200,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <a
@@ -224,7 +224,7 @@ exports[`<Breadcrumbs /> should match the snapshots 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <span>
@@ -382,7 +382,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <button
@@ -410,7 +410,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <a
@@ -435,7 +435,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <a
@@ -459,7 +459,7 @@ exports[`<Breadcrumbs /> should match the snapshots when breadcrumbs is collapse
           viewBox="0 0 24 24"
         >
           <path
-            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+            d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"
           />
         </svg>
         <span>
@@ -492,7 +492,7 @@ exports[`<Breadcrumbs /> should match the snapshots when collapsed breadcrumbs i
             class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Breadcrumbs__BreadcrumbIcon-sc-d5msik-2 bJMWQD css-1696fkf-MuiSvgIcon-root\\"
             data-qtm-preloader=\\"icon\\"
 @@ -46,21 +47,21 @@
-              d=\\"M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z\\"
+              d=\\"M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z\\"
             />
           </svg>
           <button
