@@ -400,13 +400,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -415,12 +415,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -436,13 +436,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -451,12 +451,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -472,13 +472,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -487,12 +487,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -508,13 +508,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -523,12 +523,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -544,13 +544,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -559,12 +559,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -580,13 +580,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -595,12 +595,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -616,13 +616,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -631,12 +631,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -652,13 +652,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -667,12 +667,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -689,13 +689,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -704,12 +704,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -726,13 +726,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -741,12 +741,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -763,13 +763,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -778,12 +778,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -800,13 +800,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -815,12 +815,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -837,13 +837,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -852,12 +852,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -874,13 +874,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -889,12 +889,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -911,13 +911,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -926,12 +926,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -948,13 +948,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -963,12 +963,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -984,13 +984,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -999,12 +999,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1020,13 +1020,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1035,12 +1035,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1056,13 +1056,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1071,12 +1071,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1092,13 +1092,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1107,12 +1107,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1128,13 +1128,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1143,12 +1143,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1164,13 +1164,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1179,12 +1179,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1200,13 +1200,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1215,12 +1215,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1236,13 +1236,13 @@ exports[`<Carousel /> should match the snapshot 1`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -1251,12 +1251,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -1692,10 +1692,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1714,10 +1714,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1736,10 +1736,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1758,10 +1758,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1780,10 +1780,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1802,10 +1802,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1824,10 +1824,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1846,10 +1846,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1869,10 +1869,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1892,10 +1892,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1915,10 +1915,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1938,10 +1938,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1961,10 +1961,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1984,10 +1984,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2007,10 +2007,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2030,10 +2030,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2052,10 +2052,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2074,10 +2074,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2096,10 +2096,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2118,10 +2118,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2140,10 +2140,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2162,10 +2162,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2184,10 +2184,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2206,10 +2206,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2640,13 +2640,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2655,12 +2655,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2676,13 +2676,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2691,12 +2691,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2712,13 +2712,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2727,12 +2727,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2748,13 +2748,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2763,12 +2763,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2784,13 +2784,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2799,12 +2799,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2820,13 +2820,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2835,12 +2835,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2856,13 +2856,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2871,12 +2871,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2892,13 +2892,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2907,12 +2907,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2929,13 +2929,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2944,12 +2944,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -2966,13 +2966,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -2981,12 +2981,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3003,13 +3003,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3018,12 +3018,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3040,13 +3040,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3055,12 +3055,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3077,13 +3077,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3092,12 +3092,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3114,13 +3114,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3129,12 +3129,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3151,13 +3151,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3166,12 +3166,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3188,13 +3188,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3203,12 +3203,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3224,13 +3224,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3239,12 +3239,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3260,13 +3260,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3275,12 +3275,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3296,13 +3296,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3311,12 +3311,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3332,13 +3332,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3347,12 +3347,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3368,13 +3368,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3383,12 +3383,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3404,13 +3404,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3419,12 +3419,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3440,13 +3440,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3455,12 +3455,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3476,13 +3476,13 @@ exports[`<Carousel /> should match the snapshot 3`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -3491,12 +3491,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -3985,13 +3985,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4000,12 +4000,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4021,13 +4021,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4036,12 +4036,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4057,13 +4057,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4072,12 +4072,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4093,13 +4093,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4108,12 +4108,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4129,13 +4129,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4144,12 +4144,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4165,13 +4165,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4180,12 +4180,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4201,13 +4201,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4216,12 +4216,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4237,13 +4237,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4252,12 +4252,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4274,13 +4274,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4289,12 +4289,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4311,13 +4311,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4326,12 +4326,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4348,13 +4348,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4363,12 +4363,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4385,13 +4385,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4400,12 +4400,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4422,13 +4422,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4437,12 +4437,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4459,13 +4459,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4474,12 +4474,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4496,13 +4496,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4511,12 +4511,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4533,13 +4533,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4548,12 +4548,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4569,13 +4569,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4584,12 +4584,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     1 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4605,13 +4605,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4620,12 +4620,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     2 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4641,13 +4641,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4656,12 +4656,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     3 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4677,13 +4677,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4692,12 +4692,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     4 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4713,13 +4713,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4728,12 +4728,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     5 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4749,13 +4749,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4764,12 +4764,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     6 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4785,13 +4785,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4800,12 +4800,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     7 Lorem ipsum dolor avec celestium of soterum
                   </div>
@@ -4821,13 +4821,13 @@ exports[`<Carousel /> should match the snapshot 4`] = `
           >
             <div>
               <article
-                class="c1 Card-module__card-wrapper___HvjEg shadow-1"
+                class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="c2 Content-module__content___itVo9"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
-                    class="c3 Media-module__media-wrapper___Uu7hp"
+                    class="Media-module__media-wrapper___Uu7hp c3"
                   >
                     <img
                       alt="a11y image description"
@@ -4836,12 +4836,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="c4 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
                   <div
-                    class="c5 Description-module__description-content___FVBwO"
+                    class="Description-module__description-content___FVBwO c5"
                   >
                     8 Lorem ipsum dolor avec celestium of soterum
                   </div>
