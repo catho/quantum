@@ -11,12 +11,15 @@ const Hide = ({
   children,
   ...rest
 }) => {
-  const hideClass = classNames(className, {
-    [styles['hide-xsmall']]: xsmall,
-    [styles['hide-small']]: small,
-    [styles['hide-medium']]: medium,
-    [styles['hide-large']]: large,
-  });
+  const hideClass = classNames(
+    {
+      [styles['hide-xsmall']]: xsmall,
+      [styles['hide-small']]: small,
+      [styles['hide-medium']]: medium,
+      [styles['hide-large']]: large,
+    },
+    className,
+  );
 
   return (
     <div {...rest} className={hideClass}>

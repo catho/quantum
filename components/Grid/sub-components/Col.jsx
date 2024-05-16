@@ -18,16 +18,20 @@ const Col = ({
   style,
   ...rest
 }) => {
-  const classCol = classnames(className, styles.col, {
-    [styles['col-xsmall']]: xsmall,
-    [styles['col-small']]: small,
-    [styles['col-medium']]: medium,
-    [styles['col-large']]: large,
-    [styles['col-xsmall-offset']]: xsmallOffset,
-    [styles['col-small-offset']]: smallOffset,
-    [styles['col-medium-offset']]: mediumOffset,
-    [styles['col-large-offset']]: largeOffset,
-  });
+  const classCol = classnames(
+    styles.col,
+    {
+      [styles['col-xsmall']]: xsmall,
+      [styles['col-small']]: small,
+      [styles['col-medium']]: medium,
+      [styles['col-large']]: large,
+      [styles['col-xsmall-offset']]: xsmallOffset,
+      [styles['col-small-offset']]: smallOffset,
+      [styles['col-medium-offset']]: mediumOffset,
+      [styles['col-large-offset']]: largeOffset,
+    },
+    className,
+  );
 
   return (
     <div

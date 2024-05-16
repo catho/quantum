@@ -10,11 +10,15 @@ const Container = ({
   children,
   ...rest
 }) => {
-  const containerClass = classNames(className, styles.container, {
-    [styles['no-gutters']]: noGutter,
-    [styles['with-breakpoint']]: withBreakpoints,
-    [styles['container-fluid']]: fluid,
-  });
+  const containerClass = classNames(
+    styles.container,
+    {
+      [styles['no-gutters']]: noGutter,
+      [styles['with-breakpoint']]: withBreakpoints,
+      [styles['container-fluid']]: fluid,
+    },
+    className,
+  );
   return (
     <div {...rest} className={containerClass}>
       {children}

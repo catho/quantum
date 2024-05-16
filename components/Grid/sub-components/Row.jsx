@@ -4,9 +4,13 @@ import classNames from 'classnames';
 import styles from './Row.module.css';
 
 const Row = ({ children, 'no-gutters': rowNoGutters, className, ...rest }) => {
-  const rowClass = classNames(className, styles.row, {
-    [styles['no-gutter']]: rowNoGutters,
-  });
+  const rowClass = classNames(
+    styles.row,
+    {
+      [styles['no-gutter']]: rowNoGutters,
+    },
+    className,
+  );
 
   const isNumberOrString = (child) =>
     typeof child === 'string' || typeof child === 'number';
