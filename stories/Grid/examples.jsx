@@ -104,9 +104,11 @@ export const OffsetExample = () => (
 
 export const ContainerExample = () => (
   <Container>
-    <Row>
-      <StyledCol medium={2}>medium={2}</StyledCol>
-      <StyledCol medium={10}>medium={10}</StyledCol>
-    </Row>
+    <Container>
+      <Row>
+        <StyledCol medium={2}>medium={2}</StyledCol>
+        <StyledCol medium={10}>medium={10}</StyledCol>
+      </Row>
+    </Container>
   </Container>
 );
