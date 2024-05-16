@@ -5,6 +5,10 @@
     max-width: 95%;
 }
 
+.container .container {
+    max-width: 100%;
+}
+
 .container-fluid {
     max-width: initial !important;
 }
