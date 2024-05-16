@@ -3,9 +3,13 @@ import classNames from 'classnames';
 import styles from './Thumbnail.module.css';
 
 const Thumbnail = ({ className = '', src, alt, rounded, ...props }) => {
-  const classImg = classNames(className, styles.thumbnail, {
-    [styles['thumbnail-rounded']]: rounded,
-  });
+  const classImg = classNames(
+    styles.thumbnail,
+    {
+      [styles['thumbnail-rounded']]: rounded,
+    },
+    className,
+  );
 
   return (
     <img loading="lazy" src={src} alt={alt} className={classImg} {...props} />

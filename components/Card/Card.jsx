@@ -38,9 +38,9 @@ class Card extends Component {
   render() {
     const { className = '', style, backgroundOpacity, ...rest } = this.props;
     const classArticle = classNames(
-      className,
       styles['card-wrapper'],
       'shadow-1',
+      className,
     );
 
     return (

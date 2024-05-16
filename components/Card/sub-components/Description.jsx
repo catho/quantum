@@ -4,9 +4,9 @@ import styles from './Description.module.css';
 
 const Description = ({ className = '', children, small, ...props }) => {
   const classDescription = classNames(
-    className,
     styles['description-content'],
     { [styles['description-content-small']]: small },
+    className,
   );
 
   return (

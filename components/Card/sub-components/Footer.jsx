@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from './Footer.module.css';
 
 const Footer = ({ className = '', children, ...props }) => {
-  const classFooter = classNames(className, styles['footer-wrapper']);
+  const classFooter = classNames(styles['footer-wrapper'], className);
 
   return (
     <footer {...props} className={classFooter}>

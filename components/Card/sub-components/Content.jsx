@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from './Content.module.css';
 
 const Content = ({ className = '', children, ...props }) => {
-  const classContent = classNames(className, styles.content);
+  const classContent = classNames(styles.content, className);
   return (
     <div className={classContent} {...props}>
       {children}
