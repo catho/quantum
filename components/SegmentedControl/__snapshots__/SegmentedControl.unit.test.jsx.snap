@@ -1,7 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SegmentedControl /> should match the snapshots 1`] = `
-.c5 {
+.Row-module__row___xiasO {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.Col-module__col___DPP6Q {
+  box-sizing: border-box;
+  grid-column: span var(--qtm-col-default-size);
+  word-break: break-word;
+}
+
+@media (min-width:0px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-xsmall);
+    grid-column-gap: var(--qtm-gutter-xsmall);
+    grid-row-gap: var(--qtm-gutter-xsmall);
+    grid-template-columns: repeat(var(--qtm-breakpoint-xsmall-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-small);
+    grid-column-gap: var(--qtm-gutter-small);
+    grid-row-gap: var(--qtm-gutter-small);
+    grid-template-columns: repeat(var(--qtm-breakpoint-small-columns),1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-medium);
+    grid-column-gap: var(--qtm-gutter-medium);
+    grid-row-gap: var(--qtm-gutter-medium);
+    grid-template-columns: repeat(var(--qtm-breakpoint-medium-columns),1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-large);
+    grid-column-gap: var(--qtm-gutter-large);
+    grid-row-gap: var(--qtm-gutter-large);
+    grid-template-columns: repeat(var(--qtm-breakpoint-large-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Col-module__col-small___lioBk {
+    grid-column: span var(--qtm-col-small-size);
+  }
+}
+
+@media (min-width:1024px) {
+  .Col-module__col-medium___BHwDC {
+    grid-column: span var(--qtm-col-medium-size);
+  }
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -12,18 +71,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   width: 0;
 }
 
-.c0 {
-  display: grid;
-  grid-auto-columns: max-content;
-}
-
 .c1 {
-  word-break: break-word;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -52,23 +100,23 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3:hover {
+.c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c3:focus,
-.c3:focus-within {
+.c1:focus,
+.c1:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c3:active {
+.c1:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c6 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -97,33 +145,33 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c6:hover {
+.c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c6:focus,
-.c6:focus-within {
+.c4:focus,
+.c4:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c6:active {
+.c4:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
 }
 
-.c4.input-checked {
+.c2.input-checked {
   font-weight: 700;
 }
 
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -134,99 +182,41 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   justify-content: space-around;
 }
 
-.c2 label {
+.c0 label {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c2 label:first-child {
+.c0 label:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c2 label:last-child {
+.c0 label:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    margin-bottom: 16px;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@supports (display:grid ) {
-
-}
-
-@supports not (display:grid) {
-  .c0 {
-    width: 100%;
-    display: inline-block;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Row-module__row___xiasO"
 >
   <div
-    class="c1"
+    class="Col-module__col___DPP6Q Col-module__col-small___lioBk Col-module__col-medium___BHwDC"
+    style="--qtm-col-small-size: 6; --qtm-col-medium-size: 5;"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <label
         aria-label="Profissional"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-0"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-0"
           name="segmented-control"
           type="radio"
@@ -236,14 +226,14 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
       </label>
       <label
         aria-label="Operacional"
-        class="c6 c4 input-checked"
+        class="c4 c2 input-checked"
         for="segmented-button-1"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c5"
+          class="c3"
           id="segmented-button-1"
           name="segmented-control"
           type="radio"
@@ -253,13 +243,13 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
       </label>
       <label
         aria-label="Estagiário"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-2"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-2"
           name="segmented-control"
           type="radio"
@@ -273,7 +263,66 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
 `;
 
 exports[`<SegmentedControl /> should match the snapshots 2`] = `
-.c5 {
+.Row-module__row___xiasO {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.Col-module__col___DPP6Q {
+  box-sizing: border-box;
+  grid-column: span var(--qtm-col-default-size);
+  word-break: break-word;
+}
+
+@media (min-width:0px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-xsmall);
+    grid-column-gap: var(--qtm-gutter-xsmall);
+    grid-row-gap: var(--qtm-gutter-xsmall);
+    grid-template-columns: repeat(var(--qtm-breakpoint-xsmall-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-small);
+    grid-column-gap: var(--qtm-gutter-small);
+    grid-row-gap: var(--qtm-gutter-small);
+    grid-template-columns: repeat(var(--qtm-breakpoint-small-columns),1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-medium);
+    grid-column-gap: var(--qtm-gutter-medium);
+    grid-row-gap: var(--qtm-gutter-medium);
+    grid-template-columns: repeat(var(--qtm-breakpoint-medium-columns),1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-large);
+    grid-column-gap: var(--qtm-gutter-large);
+    grid-row-gap: var(--qtm-gutter-large);
+    grid-template-columns: repeat(var(--qtm-breakpoint-large-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Col-module__col-small___lioBk {
+    grid-column: span var(--qtm-col-small-size);
+  }
+}
+
+@media (min-width:1024px) {
+  .Col-module__col-medium___BHwDC {
+    grid-column: span var(--qtm-col-medium-size);
+  }
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -284,18 +333,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   width: 0;
 }
 
-.c0 {
-  display: grid;
-  grid-auto-columns: max-content;
-}
-
 .c1 {
-  word-break: break-word;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -324,23 +362,23 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3:hover {
+.c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c3:focus,
-.c3:focus-within {
+.c1:focus,
+.c1:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c3:active {
+.c1:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c6 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -369,33 +407,33 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c6:hover {
+.c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c6:focus,
-.c6:focus-within {
+.c4:focus,
+.c4:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c6:active {
+.c4:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
 }
 
-.c4.input-checked {
+.c2.input-checked {
   font-weight: 700;
 }
 
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -406,99 +444,41 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   justify-content: space-around;
 }
 
-.c2 label {
+.c0 label {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c2 label:first-child {
+.c0 label:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c2 label:last-child {
+.c0 label:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    margin-bottom: 16px;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@supports (display:grid ) {
-
-}
-
-@supports not (display:grid) {
-  .c0 {
-    width: 100%;
-    display: inline-block;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Row-module__row___xiasO"
 >
   <div
-    class="c1"
+    class="Col-module__col___DPP6Q Col-module__col-small___lioBk Col-module__col-medium___BHwDC"
+    style="--qtm-col-small-size: 6; --qtm-col-medium-size: 5;"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <label
         aria-label="Profissional"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-3"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-3"
           name="segmented-control"
           type="radio"
@@ -515,20 +495,20 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
       </label>
       <label
         aria-label="Operacional"
-        class="c6 c4 input-checked"
+        class="c4 c2 input-checked"
         for="segmented-button-4"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c5"
+          class="c3"
           id="segmented-button-4"
           name="segmented-control"
           type="radio"
@@ -545,19 +525,19 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
       </label>
       <label
         aria-label="Estagiário"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-5"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-5"
           name="segmented-control"
           type="radio"
@@ -574,19 +554,19 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+            d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
       </label>
       <label
         aria-label="Maquinário"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-6"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-6"
           name="segmented-control"
           type="radio"
@@ -603,19 +583,19 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"
           />
         </svg>
       </label>
       <label
         aria-label="Favorito"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-7"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-7"
           name="segmented-control"
           type="radio"
@@ -632,7 +612,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+            d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05"
           />
         </svg>
       </label>
@@ -642,7 +622,66 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
 `;
 
 exports[`<SegmentedControl /> should match the snapshots 3`] = `
-.c5 {
+.Row-module__row___xiasO {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.Col-module__col___DPP6Q {
+  box-sizing: border-box;
+  grid-column: span var(--qtm-col-default-size);
+  word-break: break-word;
+}
+
+@media (min-width:0px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-xsmall);
+    grid-column-gap: var(--qtm-gutter-xsmall);
+    grid-row-gap: var(--qtm-gutter-xsmall);
+    grid-template-columns: repeat(var(--qtm-breakpoint-xsmall-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-small);
+    grid-column-gap: var(--qtm-gutter-small);
+    grid-row-gap: var(--qtm-gutter-small);
+    grid-template-columns: repeat(var(--qtm-breakpoint-small-columns),1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-medium);
+    grid-column-gap: var(--qtm-gutter-medium);
+    grid-row-gap: var(--qtm-gutter-medium);
+    grid-template-columns: repeat(var(--qtm-breakpoint-medium-columns),1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-large);
+    grid-column-gap: var(--qtm-gutter-large);
+    grid-row-gap: var(--qtm-gutter-large);
+    grid-template-columns: repeat(var(--qtm-breakpoint-large-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Col-module__col-small___lioBk {
+    grid-column: span var(--qtm-col-small-size);
+  }
+}
+
+@media (min-width:1024px) {
+  .Col-module__col-medium___BHwDC {
+    grid-column: span var(--qtm-col-medium-size);
+  }
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -653,18 +692,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   width: 0;
 }
 
-.c0 {
-  display: grid;
-  grid-auto-columns: max-content;
-}
-
 .c1 {
-  word-break: break-word;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -693,23 +721,23 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3:hover {
+.c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c3:focus,
-.c3:focus-within {
+.c1:focus,
+.c1:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c3:active {
+.c1:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c6 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -738,33 +766,33 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c6:hover {
+.c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c6:focus,
-.c6:focus-within {
+.c4:focus,
+.c4:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c6:active {
+.c4:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
 }
 
-.c4.input-checked {
+.c2.input-checked {
   font-weight: 700;
 }
 
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -775,99 +803,41 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   justify-content: space-around;
 }
 
-.c2 label {
+.c0 label {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c2 label:first-child {
+.c0 label:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c2 label:last-child {
+.c0 label:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    margin-bottom: 16px;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@supports (display:grid ) {
-
-}
-
-@supports not (display:grid) {
-  .c0 {
-    width: 100%;
-    display: inline-block;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Row-module__row___xiasO"
 >
   <div
-    class="c1"
+    class="Col-module__col___DPP6Q Col-module__col-small___lioBk Col-module__col-medium___BHwDC"
+    style="--qtm-col-small-size: 6; --qtm-col-medium-size: 5;"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <label
         aria-label="Profissional"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-8"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-8"
           name="segmented-control"
           type="radio"
@@ -884,20 +854,20 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
       </label>
       <label
         aria-label="Operacional"
-        class="c6 c4 input-checked"
+        class="c4 c2 input-checked"
         for="segmented-button-9"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c5"
+          class="c3"
           id="segmented-button-9"
           name="segmented-control"
           type="radio"
@@ -914,19 +884,19 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
       </label>
       <label
         aria-label="Estagiário"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-10"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-10"
           name="segmented-control"
           type="radio"
@@ -943,7 +913,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+            d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
       </label>
@@ -953,7 +923,66 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
 `;
 
 exports[`<SegmentedControl /> should match the snapshots 4`] = `
-.c5 {
+.Row-module__row___xiasO {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.Col-module__col___DPP6Q {
+  box-sizing: border-box;
+  grid-column: span var(--qtm-col-default-size);
+  word-break: break-word;
+}
+
+@media (min-width:0px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-xsmall);
+    grid-column-gap: var(--qtm-gutter-xsmall);
+    grid-row-gap: var(--qtm-gutter-xsmall);
+    grid-template-columns: repeat(var(--qtm-breakpoint-xsmall-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-small);
+    grid-column-gap: var(--qtm-gutter-small);
+    grid-row-gap: var(--qtm-gutter-small);
+    grid-template-columns: repeat(var(--qtm-breakpoint-small-columns),1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-medium);
+    grid-column-gap: var(--qtm-gutter-medium);
+    grid-row-gap: var(--qtm-gutter-medium);
+    grid-template-columns: repeat(var(--qtm-breakpoint-medium-columns),1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-large);
+    grid-column-gap: var(--qtm-gutter-large);
+    grid-row-gap: var(--qtm-gutter-large);
+    grid-template-columns: repeat(var(--qtm-breakpoint-large-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Col-module__col-small___lioBk {
+    grid-column: span var(--qtm-col-small-size);
+  }
+}
+
+@media (min-width:1024px) {
+  .Col-module__col-medium___BHwDC {
+    grid-column: span var(--qtm-col-medium-size);
+  }
+}
+
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -964,18 +993,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   width: 0;
 }
 
-.c0 {
-  display: grid;
-  grid-auto-columns: max-content;
-}
-
 .c1 {
-  word-break: break-word;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1004,23 +1022,23 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c3:hover {
+.c1:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
   border-color: #002F7B;
 }
 
-.c3:focus,
-.c3:focus-within {
+.c1:focus,
+.c1:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c3:active {
+.c1:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #E5EDFC;
 }
 
-.c6 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1049,33 +1067,33 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c6:hover {
+.c4:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c6:focus,
-.c6:focus-within {
+.c4:focus,
+.c4:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c6:active {
+.c4:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
 }
 
-.c4.input-checked {
+.c2.input-checked {
   font-weight: 700;
 }
 
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1086,99 +1104,41 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   justify-content: space-around;
 }
 
-.c2 label {
+.c0 label {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c2 label:first-child {
+.c0 label:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c2 label:last-child {
+.c0 label:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    margin-bottom: 16px;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    margin-bottom: 24px;
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-  }
-}
-
-@supports (display:grid ) {
-
-}
-
-@supports not (display:grid) {
-  .c0 {
-    width: 100%;
-    display: inline-block;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
 <div
-  class="c0"
+  class="Row-module__row___xiasO"
 >
   <div
-    class="c1"
+    class="Col-module__col___DPP6Q Col-module__col-small___lioBk Col-module__col-medium___BHwDC"
+    style="--qtm-col-small-size: 6; --qtm-col-medium-size: 5;"
   >
     <div
-      class="c2"
+      class="c0"
     >
       <label
         aria-label="Profissional"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-11"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-11"
           name="segmented-control"
           type="radio"
@@ -1195,20 +1155,20 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
       </label>
       <label
         aria-label="Operacional"
-        class="c6 c4 input-checked"
+        class="c4 c2 input-checked"
         for="segmented-button-12"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c5"
+          class="c3"
           id="segmented-button-12"
           name="segmented-control"
           type="radio"
@@ -1225,19 +1185,19 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
       </label>
       <label
         aria-label="Estagiário"
-        class="c3 c4"
+        class="c1 c2"
         for="segmented-button-13"
         tabindex="0"
         type="button"
       >
         <input
-          class="c5"
+          class="c3"
           id="segmented-button-13"
           name="segmented-control"
           type="radio"
@@ -1254,7 +1214,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+            d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
       </label>

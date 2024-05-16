@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './Media.module.css';
 
 const Media = ({ className = '', style, src, alt, ...props }) => {
-  const classMedia = classNames(className, styles['media-wrapper']);
+  const classMedia = classNames(styles['media-wrapper'], className);
   return (
     <div className={classMedia} style={style}>
       <img className={styles['media-image']} src={src} alt={alt} {...props} />

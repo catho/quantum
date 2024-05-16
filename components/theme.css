@@ -1,6 +1,32 @@
 :root {
     --qtm-gutter: 8px;
 
+    --qtm-gutter-xsmall: calc(var(--qtm-gutter) * 2);
+    --qtm-gutter-small: calc(var(--qtm-gutter) * 3);
+    --qtm-gutter-medium: calc(var(--qtm-gutter) * 3);
+    --qtm-gutter-large: calc(var(--qtm-gutter) * 3);
+
+    --qtm-breakpoint-xsmall-columns: 4;
+    --qtm-breakpoint-small-columns: 8;
+    --qtm-breakpoint-medium-columns: 12;
+    --qtm-breakpoint-large-columns: 12;
+
+    --qtm-col-default-size: 12;
+    --qtm-col-xsmall-size: 4;
+    --qtm-col-small-size: 8;
+    --qtm-col-medium-size: 12;
+    --qtm-col-large-size: 12;
+
+    --qtm-col-xsmall-offset: 0;
+    --qtm-col-small-offset: 0;
+    --qtm-col-medium-offset: 0;
+    --qtm-col-large-offset: 0;
+
+    --qtm-container-xsmall: 100%;
+    --qtm-container-small: 100%;
+    --qtm-container-medium: 1024px;
+    --qtm-container-large: 1440px;
+
     --qtm-spacing-xxxsmall: calc(var(--qtm-gutter) * 0.25); /* 2px */
     --qtm-spacing-xxsmall: calc(var(--qtm-gutter) * 0.5);   /* 4px */
     --qtm-spacing-xsmall: calc(var(--qtm-gutter) * 1);      /* 8px */
@@ -11,9 +37,43 @@
     --qtm-spacing-xxlarge: calc(var(--qtm-gutter) * 5);     /* 40px */
     --qtm-spacing-xxxlarge: calc(var(--qtm-gutter) * 6);    /* 48px */
 
+    --qtm-colors-primary-100: #E5EDFC;
+    --qtm-colors-primary-300: #89AAE7;
+    --qtm-colors-primary-500: #0CC0EA;
+    --qtm-colors-primary-700: #1250C4;
+    --qtm-colors-primary-900: #002F7B;
+
+    --qtm-colors-secondary-100: #F7B0C8;
+    --qtm-colors-secondary-300: #F278A1;
+    --qtm-colors-secondary-500: #E91E63;
+    --qtm-colors-secondary-700: #DE0059;
+    --qtm-colors-secondary-900: #9E003F;
+
+    --qtm-colors-success-100: #dcedc8;
+    --qtm-colors-success-300: #c9eda2;
+    --qtm-colors-success-500: #7ed321;
+    --qtm-colors-success-700: #3b610f;
+    --qtm-colors-success-900: #004D40;
+
+    --qtm-colors-warning-100: #ffefd6;
+    --qtm-colors-warning-300: #ffda6a;
+    --qtm-colors-warning-500: #ffc107;
+    --qtm-colors-warning-700: #f09100;
+    --qtm-colors-warning-900: #d14900;
+
+    --qtm-colors-error-100: #fff5f5;
+    --qtm-colors-error-300: #f88e86;
+    --qtm-colors-error-500: #ec584e;
+    --qtm-colors-error-700: #e91b0c;
+    --qtm-colors-error-900: #ac001a;
+
     --qtm-colors-neutral-0: #ffffff;
+    --qtm-colors-neutral-100: #f2f2f2;
     --qtm-colors-neutral-300: #e0e0e0;
+    --qtm-colors-neutral-500: #999999;
     --qtm-colors-neutral-700: #424242;
+    --qtm-colors-neutral-900: #191919;
+    --qtm-colors-neutral-1000: #000000;
 
     --qtm-base-font-size: 16px;
 

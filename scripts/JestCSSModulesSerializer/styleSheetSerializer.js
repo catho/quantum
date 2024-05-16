@@ -76,7 +76,8 @@ const getAtRules = (ast, filter) =>
       // eslint-disable-next-line no-param-reassign
       atRule.rules = atRule.rules.filter(filter);
       return acc.concat(atRule);
-    }, []);
+    }, [])
+    .filter((rule) => rule.rules.length);
 
 const getStyle = (classNames, config = {}) => {
   const ast = getCSSFromTempFolder();

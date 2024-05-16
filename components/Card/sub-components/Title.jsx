@@ -3,9 +3,13 @@ import classNames from 'classnames';
 import styles from './Title.module.css';
 
 const Title = ({ className = '', children, small, ...props }) => {
-  const classH2 = classNames(className, styles.title, {
-    [styles['title-small']]: small,
-  });
+  const classH2 = classNames(
+    styles.title,
+    {
+      [styles['title-small']]: small,
+    },
+    className,
+  );
 
   return (
     <h2 className={classH2} {...props}>

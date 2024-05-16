@@ -41,6 +41,7 @@ import Link from './Link';
 import InfiniteScroll from './InfiniteScroll';
 import DropdownLight from './DropdownLight';
 import Score from './Score';
+import Menu from './Menu';
 
 export {
   Accordion,
@@ -93,4 +94,5 @@ export {
   InfiniteScroll,
   DropdownLight,
   Score,
+  Menu,
 };

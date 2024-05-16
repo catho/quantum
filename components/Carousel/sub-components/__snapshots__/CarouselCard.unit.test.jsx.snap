@@ -38,10 +38,10 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
 }
 
 <article
-    class="c0 Card-module__card-wrapper___HvjEg shadow-1"
+    class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="c1 Content-module__content___itVo9"
+      class="Content-module__content___itVo9 c1"
     >
       <img
         alt="a11y image description"
@@ -144,13 +144,13 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
 }
 
 <article
-    class="c0 Card-module__card-wrapper___HvjEg shadow-1"
+    class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="c1 Content-module__content___itVo9"
+      class="Content-module__content___itVo9 c1"
     >
       <div
-        class="c2 Media-module__media-wrapper___Uu7hp"
+        class="Media-module__media-wrapper___Uu7hp c2"
       >
         <img
           alt="a11y image description"
@@ -159,12 +159,12 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
         />
       </div>
       <h2
-        class="c3 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+        class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c3"
       >
         Card title
       </h2>
       <div
-        class="c4 Description-module__description-content___FVBwO"
+        class="Description-module__description-content___FVBwO c4"
       >
         Lorem ipsum dolor avec
       </div>
@@ -264,13 +264,13 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
 }
 
 <article
-    class="c0 Card-module__card-wrapper___HvjEg shadow-1"
+    class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="c1 Content-module__content___itVo9"
+      class="Content-module__content___itVo9 c1"
     >
       <div
-        class="c2 Media-module__media-wrapper___Uu7hp"
+        class="Media-module__media-wrapper___Uu7hp c2"
       >
         <img
           alt="a11y image description"
@@ -279,12 +279,12 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
         />
       </div>
       <h2
-        class="c3 Title-module__title___3S2cv Title-module__title-small___4mNd0"
+        class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c3"
       >
         Card title
       </h2>
       <div
-        class="c4 Description-module__description-content___FVBwO"
+        class="Description-module__description-content___FVBwO c4"
       >
         Lorem ipsum dolor avec
       </div>

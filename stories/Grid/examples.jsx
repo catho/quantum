@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Row, Col, Hide } from '../../components/Grid';
+import { Row, Col, Hide, Container } from '../../components/Grid';
 
 const StyledCol = styled(Col)`
   background-color: #f6f8fa;
@@ -100,4 +100,15 @@ export const OffsetExample = () => (
     <StyledCol small={2}>small={2}</StyledCol>
     <StyledCol small={2}>small={2}</StyledCol>
   </Row>
+);
+
+export const ContainerExample = () => (
+  <Container>
+    <Container>
+      <Row>
+        <StyledCol medium={2}>medium={2}</StyledCol>
+        <StyledCol medium={10}>medium={10}</StyledCol>
+      </Row>
+    </Container>
+  </Container>
 );

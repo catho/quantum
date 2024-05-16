@@ -1,879 +1,141 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Container /> with "no-gutters" prop should not have gutters 1`] = `
-.c1 {
+.Container-module__container___ZBwIj {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   max-width: 95%;
 }
 
-.c0 .c0 {
-  max-width: 100%;
+.Container-module__no-gutters___sX06G {
+  padding: 0!important;
 }
 
 @media (min-width:0px) {
-  .c1 {
-    padding: 0px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-xsmall);
   }
 }
 
 @media (min-width:600px) {
-  .c1 {
-    padding: 0px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-small);
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
-    padding: 0px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-medium);
   }
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 0px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-large);
   }
 }
 
 <div
-  class="c0 c1"
+  class="Container-module__container___ZBwIj Container-module__no-gutters___sX06G"
 >
   Content
 </div>
 `;
 
 exports[`<Container /> with fluid prop should have a fluid width 1`] = `
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-<div
-  class="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 1`] = `
-.c1 {
+.Container-module__container___ZBwIj {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   max-width: 95%;
 }
 
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
+.Container-module__container-fluid___jVF-f {
+  max-width: none!important;
 }
 
 @media (min-width:0px) {
-  .c1 {
-    padding: 16px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-xsmall);
   }
 }
 
 @media (min-width:600px) {
-  .c1 {
-    padding: 24px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-small);
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-medium);
   }
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (max-width:599px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-<div
-  class="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 2`] = `
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-<div
-  class="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 3`] = `
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-<div
-  class="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 4`] = `
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-<div
-  class="c0 c1"
->
-  Content
-</div>
-`;
-
-exports[`<Container /> with hide prop should hide it's children according to screen size 5`] = `
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-.c1 {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 95%;
-}
-
-.c0 .c0 {
-  max-width: 100%;
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (max-width:599px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:600px) and (max-width:1023px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-
-}
-
-@media (min-width:0px) {
-
-}
-
-@media (min-width:600px) {
-
-}
-
-@media (min-width:1024px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:1440px) {
-
-}
-
-@media (min-width:0px) {
-  .c1 {
-    padding: 16px;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    padding: 24px;
-  }
-}
-
-@media (min-width:1024px) and (max-width:1439px) {
-  .c1 {
-    display: none !important;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    display: none !important;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-large);
   }
 }
 
 <div
-  class="c0 c1"
+  class="Container-module__container___ZBwIj Container-module__container-fluid___jVF-f"
 >
   Content
 </div>
 `;
 
 exports[`<Container /> with withBreakpoints prop should have a fixed width 1`] = `
-.c1 {
+.Container-module__container___ZBwIj {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   max-width: 95%;
 }
 
-.c0 .c0 {
-  max-width: 100%;
-}
-
 @media (min-width:0px) {
-  .c1 {
-    width: 100%,;
-    padding: 16px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-xsmall);
+  }
+
+  .Container-module__with-breakpoint___T6-k5 {
+    width: var(--qtm-container-xsmall);
   }
 }
 
 @media (min-width:600px) {
-  .c1 {
-    width: 100%;
-    padding: 24px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-small);
+  }
+
+  .Container-module__with-breakpoint___T6-k5 {
+    width: var(--qtm-container-small);
   }
 }
 
 @media (min-width:1024px) {
-  .c1 {
-    width: 1024px;
-    padding: 24px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-medium);
+  }
+
+  .Container-module__with-breakpoint___T6-k5 {
+    width: var(--qtm-container-medium);
   }
 }
 
 @media (min-width:1440px) {
-  .c1 {
-    width: 1440px;
-    padding: 24px;
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-large);
+  }
+
+  .Container-module__with-breakpoint___T6-k5 {
+    width: var(--qtm-container-large);
   }
 }
 
 <div
-  class="c0 c1"
+  class="Container-module__container___ZBwIj Container-module__with-breakpoint___T6-k5"
 >
   Content
 </div>

@@ -26,7 +26,7 @@ exports[`<Hamburger /> Should match snapshot with props: default 1`] = `
     viewBox="0 0 24 24"
   >
     <path
-      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
     />
   </svg>
 </div>
@@ -58,7 +58,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted 1`] = `
     viewBox="0 0 24 24"
   >
     <path
-      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
     />
   </svg>
 </div>
@@ -137,7 +137,7 @@ exports[`<Hamburger /> Should match snapshot with props: inverted and showNotifi
     viewBox="0 0 24 24"
   >
     <path
-      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
     />
   </svg>
 </div>
@@ -248,7 +248,7 @@ exports[`<Hamburger /> Should match snapshot with props: showNotification 1`] = 
     viewBox="0 0 24 24"
   >
     <path
-      d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+      d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
     />
   </svg>
 </div>

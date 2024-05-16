@@ -43,7 +43,7 @@ const SegmentedWrapper = styled.div`
 `;
 
 const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => (
-  <Row withBreakpoints>
+  <Row>
     <Col small={6} medium={5}>
       <SegmentedWrapper theme={theme}>
         <SegmentedButtons

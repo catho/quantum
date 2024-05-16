@@ -62,6 +62,7 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowUp from '@mui/icons-material/KeyboardArrowUp';
 import Launch from '@mui/icons-material/Launch';
+import LightbulbOutlined from '@mui/icons-material/LightbulbOutlined';
 import LocationCity from '@mui/icons-material/LocationCity';
 import Lock from '@mui/icons-material/Lock';
 import LockOpen from '@mui/icons-material/LockOpen';
@@ -184,6 +185,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     keyboard_arrow_right: KeyboardArrowRight,
     keyboard_arrow_up: KeyboardArrowUp,
     launch: Launch,
+    lightbulb_outlined: LightbulbOutlined,
     location_city: LocationCity,
     lock: Lock,
     lock_open: LockOpen,

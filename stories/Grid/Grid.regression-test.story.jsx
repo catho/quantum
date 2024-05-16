@@ -6,6 +6,7 @@ import {
   HideExample,
   NoGuttersExample,
   OffsetExample,
+  ContainerExample,
 } from './examples';
 
 export default {
@@ -22,3 +23,5 @@ export const Hide = () => <HideExample />;
 export const NoGutters = () => <NoGuttersExample />;
 
 export const Offset = () => <OffsetExample />;
+
+export const Container = () => <ContainerExample />;
