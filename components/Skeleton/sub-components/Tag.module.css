@@ -1,0 +1,16 @@
+.tag {
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.tag-small {
+    height:calc((var(--qtm-base-font-size) * 0.875) + var(--qtm-spacing-xxsmall) * 2) !important;
+}
+
+.tag-medium {
+    height:calc((var(--qtm-base-font-size) * 1.125) + var(--qtm-spacing-xxsmall) * 2) !important;
+}
+
+.tag-large {
+    height:calc((var(--qtm-base-font-size) * 1.25) + var(--qtm-spacing-xxsmall) * 2) !important;
+}
