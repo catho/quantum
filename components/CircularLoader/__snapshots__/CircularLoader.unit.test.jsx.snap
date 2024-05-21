@@ -1,22 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CircularLoader component Should match the snapshot of a simple circular loader 1`] = `
-.c1 {
+.CircularLoader-module__wrapper___SiDwd {
+  animation: CircularLoader-module__circularRotate___mt0Tx 1.4s linear infinite;
+  position: relative;
+}
+
+.CircularLoader-module__wrapper-medium___ZHa3- {
+  height: calc(var(--qtm-gutter)*2);
+  width: calc(var(--qtm-gutter)*2);
+}
+
+.CircularLoader-module__content___KwVoR {
+  height: 100%;
   left: 50%;
   overflow: hidden;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   width: 100%;
-  height: 100%;
-  color: #1250C4;
 }
 
-.c2 {
-  -webkit-animation: fRiixh 1.4s ease-in-out infinite;
-  animation: fRiixh 1.4s ease-in-out infinite;
+.CircularLoader-module__content-primary-color___kim-Q {
+  color: var(--qtm-colors-primary-700);
+}
+
+.CircularLoader-module__circle___suCdW {
+  animation: CircularLoader-module__circularDash___j4Fcg 1.4s ease-in-out infinite;
   cx: 44px;
   cy: 44px;
   fill: none;
@@ -26,33 +36,18 @@ exports[`CircularLoader component Should match the snapshot of a simple circular
   stroke-dashoffset: 0px;
   stroke-width: 3.6px;
   stroke: currentColor;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-animation: GLFYz 1.4s linear infinite;
-  animation: GLFYz 1.4s linear infinite;
-  position: relative;
-  height: 16px;
-  width: 16px;
 }
 
 <div
-  class="c0"
+  class="CircularLoader-module__wrapper___SiDwd CircularLoader-module__wrapper-medium___ZHa3-"
   role="progressbar"
 >
   <svg
-    class="c1"
-    color="#1250C4"
+    class="CircularLoader-module__content___KwVoR CircularLoader-module__content-primary-color___kim-Q"
     viewBox="22 22 44 44"
   >
     <circle
-      class="c2"
-      color="#1250C4"
-      cx="44"
-      cy="44"
-      r="20.2"
-      stroke-width="3.6"
+      class="CircularLoader-module__circle___suCdW"
     />
   </svg>
 </div>
