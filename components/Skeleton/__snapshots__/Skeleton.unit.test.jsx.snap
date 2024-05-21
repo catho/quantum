@@ -1,110 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Skeleton component Should match the snapshot of a Button component skeleton 1`] = `
-.c0 {
-  background-color: rgba(0,0,0,0.08);
-  -webkit-animation: hDWTUO 1.5s ease-in-out infinite;
-  animation: hDWTUO 1.5s ease-in-out infinite;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100px;
-  height: 14px;
+.Button-module__button___Nec0V {
+  border-radius: 4px;
 }
 
-.c1 {
-  border-radius: 4px;
-  height: 40px;
+.Button-module__button-medium___baTMK {
+  height: var(--qtm-spacing-xxlarge)!important;
+}
+
+.Rect-module__rect___uW80F {
+  animation: Rect-module__fadeInOut___XGMGw 1.5s ease-in-out infinite;
+  background-color: rgba(0,0,0,.08);
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 <div
-  class="c0 c1"
-  height="14px"
-  width="100px"
+  class="Rect-module__rect___uW80F Button-module__button___Nec0V Button-module__button-medium___baTMK"
+  style="width: 100px; height: 14px;"
 />
 `;
 
 exports[`Skeleton component Should match the snapshot of a Tag component loader 1`] = `
-.c0 {
-  background-color: rgba(0,0,0,0.08);
-  -webkit-animation: hDWTUO 1.5s ease-in-out infinite;
-  animation: hDWTUO 1.5s ease-in-out infinite;
-  display: inline-block;
+.Rect-module__rect___uW80F {
+  animation: Rect-module__fadeInOut___XGMGw 1.5s ease-in-out infinite;
+  background-color: rgba(0,0,0,.08);
   box-sizing: border-box;
-  width: 100px;
-  height: 14px;
+  display: inline-block;
 }
 
-.c1 {
+.Tag-module__tag___S6gRK {
   border-radius: 8px;
   margin-right: 8px;
-  height: 26px;
+}
+
+.Tag-module__tag-medium___o9CM7 {
+  height: calc(var(--qtm-base-font-size)*1.125 + var(--qtm-spacing-xxsmall)*2)!important;
 }
 
 <div
-  class="c0 c1"
-  height="14px"
-  width="100px"
+  class="Rect-module__rect___uW80F Tag-module__tag___S6gRK Tag-module__tag-medium___o9CM7"
+  style="width: 100px; height: 14px;"
 />
 `;
 
 exports[`Skeleton component Should match the snapshot of a circular skeleton 1`] = `
-.c0 {
-  background-color: rgba(0,0,0,0.08);
-  -webkit-animation: hDWTUO 1.5s ease-in-out infinite;
-  animation: hDWTUO 1.5s ease-in-out infinite;
-  display: inline-block;
+.Rect-module__rect___uW80F {
+  animation: Rect-module__fadeInOut___XGMGw 1.5s ease-in-out infinite;
+  background-color: rgba(0,0,0,.08);
   box-sizing: border-box;
-  width: 56px;
-  height: 56px;
+  display: inline-block;
 }
 
-.c1 {
+.Circle-module__circle___44uVo {
   border-radius: 50%;
 }
 
 <div
-  class="c0 c1"
-  height="56px"
-  width="56px"
+  class="Rect-module__rect___uW80F Circle-module__circle___44uVo"
+  style="width: 56px; height: 56px;"
 />
 `;
 
 exports[`Skeleton component Should match the snapshot of a simple skeleton 1`] = `
-.c0 {
-  background-color: rgba(0,0,0,0.08);
-  -webkit-animation: hDWTUO 1.5s ease-in-out infinite;
-  animation: hDWTUO 1.5s ease-in-out infinite;
-  display: inline-block;
+.Rect-module__rect___uW80F {
+  animation: Rect-module__fadeInOut___XGMGw 1.5s ease-in-out infinite;
+  background-color: rgba(0,0,0,.08);
   box-sizing: border-box;
-  width: 100%;
-  height: 14px;
+  display: inline-block;
 }
 
 <div
-  class="c0"
-  height="14px"
-  width="100%"
+  class="Rect-module__rect___uW80F"
+  style="width: 100%; height: 14px;"
 />
 `;
 
 exports[`Skeleton component Should match the snapshot of a text skeleton 1`] = `
-.c0 {
-  background-color: rgba(0,0,0,0.08);
-  -webkit-animation: hDWTUO 1.5s ease-in-out infinite;
-  animation: hDWTUO 1.5s ease-in-out infinite;
-  display: inline-block;
+.Rect-module__rect___uW80F {
+  animation: Rect-module__fadeInOut___XGMGw 1.5s ease-in-out infinite;
+  background-color: rgba(0,0,0,.08);
   box-sizing: border-box;
-  width: 100%;
-  height: 14px;
+  display: inline-block;
 }
 
-.c1 {
+.Text-module__text___T-nBn {
   border-radius: 4px;
 }
 
 <span
-  class="c0 c1"
-  height="14px"
-  width="100%"
+  class="Rect-module__rect___uW80F Text-module__text___T-nBn"
+  style="width: 100%; height: 14px;"
 />
 `;
