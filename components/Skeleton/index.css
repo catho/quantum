@@ -1,0 +1,5 @@
+@import "./sub-components/Button.module.css";
+@import "./sub-components/Rect.module.css";
+@import "./sub-components/Tag.module.css";
+@import "./sub-components/Text.module.css";
+@import "./sub-components/Circle.module.css";

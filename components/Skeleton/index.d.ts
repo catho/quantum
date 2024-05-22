@@ -2,9 +2,6 @@ import { FC } from 'react';
 
 export interface SkeletonButtonProps {
   size?: 'xsmall' | 'small' | 'medium' | 'large';
-  theme?: {
-    spacing?: {};
-  };
 }
 
 export interface SkeletonProps {
@@ -13,17 +10,9 @@ export interface SkeletonProps {
   width?: string;
   height?: string;
   size?: 'xsmall' | 'small' | 'medium' | 'large';
-  theme?: {
-    spacing?: {};
-    baseFontSize?: number;
-  };
 }
 export interface SkeletonTagProps {
   size?: 'xsmall' | 'small' | 'medium' | 'large';
-  theme?: {
-    spacing?: {};
-    baseFontSize?: number;
-  };
 }
 
 declare const SkeletonText: FC<SkeletonProps>;
