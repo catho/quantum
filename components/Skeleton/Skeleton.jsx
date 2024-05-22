@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { theme as defaultTheme } from '../shared';
 import { Circle, Text, Button, Tag, Rect } from './sub-components';
 
 const Skeleton = ({ type, ...props }) => {
@@ -27,7 +26,6 @@ Skeleton.defaultProps = {
   width: '100%',
   height: '14px',
   size: 'medium',
-  theme: defaultTheme,
 };
 
 Skeleton.propTypes = {
@@ -39,46 +37,26 @@ Skeleton.propTypes = {
 
   /** Will affect only types that not uses the prop `size` */
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large']),
-
-  /** Used only for themification.  */
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
 };
 
-Skeleton.Rect = ({ theme, width, height, as }) => (
-  <Skeleton theme={theme} width={width} height={height} as={as} />
+Skeleton.Rect = ({ width, height, as }) => (
+  <Skeleton width={width} height={height} as={as} />
 );
 
-Skeleton.Circle = ({ theme, width, height, as }) => (
-  <Skeleton theme={theme} width={width} height={height} as={as} type="circle" />
+Skeleton.Circle = ({ width, height, as }) => (
+  <Skeleton width={width} height={height} as={as} type="circle" />
 );
 
-Skeleton.Text = ({ theme, width, height, as = 'span' }) => (
-  <Skeleton theme={theme} width={width} height={height} as={as} type="text" />
+Skeleton.Text = ({ width, height, as = 'span' }) => (
+  <Skeleton width={width} height={height} as={as} type="text" />
 );
 
-Skeleton.Button = ({ theme, size, width, height, as }) => (
-  <Skeleton
-    theme={theme}
-    width={width}
-    height={height}
-    as={as}
-    size={size}
-    type="button"
-  />
+Skeleton.Button = ({ size, width, height, as }) => (
+  <Skeleton width={width} height={height} as={as} size={size} type="button" />
 );
 
-Skeleton.Tag = ({ theme, size, width, height, as }) => (
-  <Skeleton
-    theme={theme}
-    width={width}
-    height={height}
-    as={as}
-    size={size}
-    type="tag"
-  />
+Skeleton.Tag = ({ size, width, height, as }) => (
+  <Skeleton width={width} height={height} as={as} size={size} type="tag" />
 );
 
 export default Skeleton;

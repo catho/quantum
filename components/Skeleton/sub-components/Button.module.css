@@ -1,0 +1,19 @@
+.button {
+    border-radius: 4px;
+}
+
+.button-xsmall {
+    height: var(--qtm-spacing-large) !important;
+}
+
+.button-small {
+    height: var(--qtm-spacing-xlarge) !important;
+}
+
+.button-medium{
+    height: var(--qtm-spacing-xxlarge) !important;
+}
+
+.button-large {
+    height: var(--qtm-spacing-xxxlarge) !important;
+}

@@ -1,5 +1,7 @@
-export * from './Button';
-export * from './Circle';
-export * from './Rect';
-export * from './Tag';
-export * from './Text';
+import Rect from './Rect';
+import Button from './Button';
+import Circle from './Circle';
+import Tag from './Tag';
+import Text from './Text';
+
+export { Rect, Button, Circle, Tag, Text };
