@@ -109,38 +109,6 @@ const components = {
       },
     },
   },
-  badge: {
-    skins: {
-      neutral: {
-        background: colors.neutral[100],
-        text: colors.neutral[700],
-      },
-      primary: {
-        background: colors.primary[700],
-        text: colors.neutral[100],
-      },
-      secondary: {
-        background: colors.secondary[500],
-        text: colors.neutral[0],
-      },
-      error: {
-        background: colors.error[500],
-        text: colors.neutral[100],
-      },
-      success: {
-        background: colors.success[100],
-        text: colors.success[900],
-      },
-    },
-  },
-  container: {
-    breakpoints: {
-      xsmall: '100%,',
-      small: '100%',
-      medium: '1024px',
-      large: '1440px',
-    },
-  },
   tag: {
     skins: {
       neutral: {

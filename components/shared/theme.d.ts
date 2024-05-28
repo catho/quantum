@@ -109,38 +109,6 @@ export interface componentsProps {
       };
     };
   };
-  badge: {
-    skins: {
-      neutral: {
-        background: colorsProps["neutral"][100];
-        text: colorsProps["neutral"][700];
-      };
-      primary: {
-        background: colorsProps["primary"][700];
-        text: colorsProps["neutral"][100];
-      };
-      secondary: {
-        background: colorsProps["secondary"][500];
-        text: colorsProps["neutral"][0];
-      };
-      error: {
-        background: colorsProps["error"][500];
-        text: colorsProps["neutral"][100];
-      };
-      success: {
-        background: colorsProps["success"][100];
-        text: colorsProps["success"][900];
-      };
-    };
-  };
-  container: {
-    breakpoints: {
-      xsmall: string;
-      small: string;
-      medium: string;
-      large: string;
-    };
-  };
   tag: {
     skins: {
       neutral: {
