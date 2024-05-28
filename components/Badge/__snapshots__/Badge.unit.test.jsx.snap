@@ -1,87 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Badge /> Should match snapshot With number 1`] = `
-.c0 {
+.Badge-module__wrapper___Owq-B {
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
+.Badge-module__badge___vNFzU {
+  align-items: center;
   border-radius: 8px;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
   height: 24px;
+  justify-content: center;
   line-height: 24px;
   min-width: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: #f2f2f2;
-  color: #424242;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-skin-neutral___J8kXp {
+  background-color: var(--qtm-colors-neutral-100);
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
-  value="10"
+  class="Badge-module__wrapper___Owq-B"
 >
   <span
-    class="c1"
-    value="10"
+    class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp"
   >
     10
   </span>
 </div>
 `;
 
-exports[`<Badge /> Should match snapshot with children 1`] = `
-.c0 {
+exports[`<Badge /> Should match snapshot it should contain dot style 1`] = `
+.Badge-module__wrapper___Owq-B {
   display: inline-block;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Badge-module__badge___vNFzU {
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
+  height: 24px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 32px;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-dot___h5kxC {
+  height: 12px;
+  min-width: 12px;
+  right: -2px;
+  top: 0;
+  width: 12px;
+}
+
+.Badge-module__badge-skin-neutral___J8kXp {
+  background-color: var(--qtm-colors-neutral-100);
+  color: var(--qtm-colors-neutral-700);
+}
+
+<div
+  class="Badge-module__wrapper___Owq-B"
+>
+  <span
+    class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp Badge-module__badge-dot___h5kxC"
+  />
+</div>
+`;
+
+exports[`<Badge /> Should match snapshot with children 1`] = `
+.Badge-module__wrapper___Owq-B {
+  display: inline-block;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Badge-module__wrapper-content___CkcNl {
+  margin-left: 0;
+  margin-right: 0;
   position: relative;
 }
 
-.c1 {
+.Badge-module__badge___vNFzU {
+  align-items: center;
   border-radius: 8px;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
   height: 24px;
+  justify-content: center;
   line-height: 24px;
   min-width: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-content___TxPZt {
   position: absolute;
   right: -10px;
   top: -10px;
-  background-color: #f2f2f2;
-  color: #424242;
 }
 
-.c2 {
+.Badge-module__badge-skin-neutral___J8kXp {
+  background-color: var(--qtm-colors-neutral-100);
+  color: var(--qtm-colors-neutral-700);
+}
+
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -110,79 +150,69 @@ exports[`<Badge /> Should match snapshot with children 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c2:hover {
+.c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
   background-color: #002F7B;
   border-color: #002F7B;
 }
 
-.c2:focus,
-.c2:focus-within {
+.c0:focus,
+.c0:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
 }
 
-.c2:active {
+.c0:active {
   box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
   background-color: #002F7B;
 }
 
 <div
-  class="c0"
-  value="10"
+  class="Badge-module__wrapper___Owq-B Badge-module__wrapper-content___CkcNl"
 >
   <span
-    class="c1"
-    value="10"
+    class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp Badge-module__badge-content___TxPZt"
   >
     10
   </span>
   <button
-    class="c2"
+    class="c0"
     type="button"
   />
 </div>
 `;
 
 exports[`<Badge /> Should match snapshot with skin 1`] = `
-.c0 {
+.Badge-module__wrapper___Owq-B {
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
+.Badge-module__badge___vNFzU {
+  align-items: center;
   border-radius: 8px;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
   height: 24px;
+  justify-content: center;
   line-height: 24px;
   min-width: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: #dcedc8;
-  color: #004D40;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-skin-success___lADyt {
+  background-color: var(--qtm-colors-success-100);
+  color: var(--qtm-colors-success-900);
 }
 
 <div
-  class="c0"
-  value="10"
+  class="Badge-module__wrapper___Owq-B"
 >
   <span
-    class="c1"
-    value="10"
+    class="Badge-module__badge___vNFzU Badge-module__badge-skin-success___lADyt"
   >
     10
   </span>
@@ -190,45 +220,42 @@ exports[`<Badge /> Should match snapshot with skin 1`] = `
 `;
 
 exports[`<Badge /> Should match snapshot with skin inverted 1`] = `
-.c0 {
+.Badge-module__wrapper___Owq-B {
   display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
+.Badge-module__badge___vNFzU {
+  align-items: center;
   border-radius: 8px;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  font-weight: bold;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
   height: 24px;
+  justify-content: center;
   line-height: 24px;
   min-width: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: #424242;
-  color: #f2f2f2;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-skin-neutral___J8kXp {
+  background-color: var(--qtm-colors-neutral-100);
+  color: var(--qtm-colors-neutral-700);
+}
+
+.Badge-module__badge-skin-neutral-inverted___RrIBf {
+  background-color: var(--qtm-colors-neutral-700);
+  color: var(--qtm-colors-neutral-100);
 }
 
 <div
-  class="c0"
-  value="10"
+  class="Badge-module__wrapper___Owq-B"
 >
   <span
-    class="c1"
-    value="10"
+    class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp Badge-module__badge-skin-neutral-inverted___RrIBf"
   >
     10
   </span>
