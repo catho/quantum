@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import Badge from './Badge';
 import Button from '../Button';
@@ -36,22 +36,15 @@ describe('<Badge />', () => {
     it('it should contain dot style', () => {
       const { container } = render(<Badge dot />);
 
-      const spanDot = container.querySelector('span');
-      expect(spanDot).toHaveStyle({
-        right: '-2px',
-        top: '0',
-        height: '12px',
-        width: '12px',
-        'min-width': '12px',
-      });
+      expect(container.firstChild).toMatchSnapshot();
     });
 
     it('it should contain +99 in the value when number is bigger than 99', () => {
-      const { container } = render(<Badge number={100} />);
+      render(<Badge number={100} />);
 
-      const spanDot = container.querySelector('span');
+      const spanDot = screen.getByText('99+');
 
-      expect(spanDot.getAttribute('value')).toEqual('99+');
+      expect(spanDot).toBeInTheDocument();
     });
   });
 });

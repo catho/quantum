@@ -6,13 +6,6 @@ export interface BadgeProps {
     number?: number;
     inverted?: boolean;
     dot?: boolean;
-    theme?: {
-        baseFontSize?: number;
-        spacing?: {};
-        components?: {
-            badge?: {};
-        };
-    };
 }
 
 declare const Badge: FC<BadgeProps>;

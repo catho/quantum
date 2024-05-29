@@ -1,0 +1,95 @@
+.wrapper {
+    display: inline-block;
+    margin-left: var(--qtm-spacing-xsmall);
+    margin-right: var(--qtm-spacing-xsmall);
+}
+
+.wrapper-content {
+    position: relative;
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.badge {
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    min-width: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--qtm-base-font-size) * 0.75);
+    padding-left: var(--qtm-spacing-xxxsmall);
+    padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.badge-xxsmall {
+    padding-left: var(--qtm-spacing-xxsmall);
+    padding-right: var(--qtm-spacing-xxsmall);
+}
+
+.badge-content {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.badge-dot {
+    right: -2px;
+    top: 0;
+    height: 12px;
+    width: 12px;
+    min-width: 12px;
+}
+
+.badge-skin-neutral {
+    background-color: var(--qtm-colors-neutral-100);
+    color: var(--qtm-colors-neutral-700);
+}
+
+.badge-skin-primary {
+    background-color: var(--qtm-colors-primary-700);
+    color: var(--qtm-colors-neutral-100);
+}
+
+.badge-skin-secondary {
+    background-color: var(--qtm-colors-secondary-500);
+    color: var(--qtm-colors-neutral-0);
+}
+
+.badge-skin-error {
+    background-color: var(--qtm-colors-error-500);
+    color: var(--qtm-colors-neutral-100);
+}
+
+.badge-skin-success {
+    background-color: var(--qtm-colors-success-100);
+    color: var(--qtm-colors-success-900);
+}
+
+.badge-skin-neutral-inverted {
+    background-color: var(--qtm-colors-neutral-700);
+    color: var(--qtm-colors-neutral-100);
+}
+
+.badge-skin-primary-inverted {
+    background-color: var(--qtm-colors-neutral-100);
+    color: var(--qtm-colors-primary-700);
+}
+
+.badge-skin-secondary-inverted {
+    background-color: var(--qtm-colors-neutral-0);
+    color: var(--qtm-colors-secondary-500);
+}
+
+.badge-skin-error-inverted {
+    background-color: var(--qtm-colors-neutral-100);
+    color: var(--qtm-colors-error-500);
+}
+
+.badge-skin-success-inverted {
+    background-color: var(--qtm-colors-success-900);
+    color: var(--qtm-colors-success-100);
+}

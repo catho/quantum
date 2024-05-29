@@ -105,6 +105,32 @@ exports[`<TabbedView />  Snapshot should match snapshot 1`] = `
 `;
 
 exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`] = `
+.Badge-module__wrapper___Owq-B {
+  display: inline-block;
+  margin-left: var(--qtm-spacing-xsmall);
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Badge-module__badge___vNFzU {
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: calc(var(--qtm-base-font-size)*.75);
+  font-weight: 700;
+  height: 24px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 32px;
+  padding-left: var(--qtm-spacing-xxxsmall);
+  padding-right: var(--qtm-spacing-xxxsmall);
+}
+
+.Badge-module__badge-skin-neutral___J8kXp {
+  background-color: var(--qtm-colors-neutral-100);
+  color: var(--qtm-colors-neutral-700);
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -189,44 +215,12 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
   vertical-align: top;
 }
 
-.c6 {
+.c4 {
   display: inline-block;
   height: 24px;
   margin-left: 0px;
   margin-right: 8px;
   width: 24px;
-}
-
-.c4 {
-  display: inline-block;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.c5 {
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  height: 24px;
-  line-height: 24px;
-  min-width: 32px;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 12px;
-  padding-left: 2px;
-  padding-right: 2px;
-  background-color: #f2f2f2;
-  color: #424242;
 }
 
 @media (min-width:1024px) {
@@ -255,12 +249,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
       class="c3"
     >
       <div
-        class="c4"
-        value="4"
+        class="Badge-module__wrapper___Owq-B"
       >
         <span
-          class="c5"
-          value="4"
+          class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp"
         >
           4
         </span>
@@ -275,7 +267,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
     role="tab"
   >
     <div
-      class="c6"
+      class="c4"
     >
       <svg
         aria-hidden="true"
@@ -305,7 +297,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
     role="tab"
   >
     <div
-      class="c6"
+      class="c4"
     >
       <svg
         aria-hidden="true"
@@ -330,12 +322,10 @@ exports[`<TabbedView />  Snapshot should match snapshot with badges and icons 1`
       class="c3"
     >
       <div
-        class="c4"
-        value="4"
+        class="Badge-module__wrapper___Owq-B"
       >
         <span
-          class="c5"
-          value="4"
+          class="Badge-module__badge___vNFzU Badge-module__badge-skin-neutral___J8kXp"
         >
           4
         </span>
