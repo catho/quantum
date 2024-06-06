@@ -70,6 +70,7 @@ import LockOutlined from '@mui/icons-material/LockOutlined';
 import Markunread from '@mui/icons-material/Markunread';
 import Menu from '@mui/icons-material/Menu';
 import MenuBook from '@mui/icons-material/MenuBook';
+import MoreVert from '@mui/icons-material/MoreVert';
 import Notifications from '@mui/icons-material/Notifications';
 import PauseCircleOutline from '@mui/icons-material/PauseCircleOutline';
 import Payment from '@mui/icons-material/Payment';
@@ -193,6 +194,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     markunread: Markunread,
     menu_book: MenuBook,
     menu: Menu,
+    more_vert: MoreVert,
     notification: Notifications,
     payment: Payment,
     pause_circle_outline: PauseCircleOutline,

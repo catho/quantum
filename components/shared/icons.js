@@ -68,6 +68,7 @@ const icons = [
   'markunread',
   'menu_book',
   'menu',
+  'more_vert',
   'notification',
   'payment',
   'pause_circle_outline',
