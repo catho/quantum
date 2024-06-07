@@ -189,6 +189,7 @@ export type IconNames =
     | 'confirmation_number'
     | 'contact_mail'
     | 'contact_phone'
+    | 'contact_support'
     | 'contacts'
     | 'content_copy'
     | 'content_cut'

@@ -33,6 +33,7 @@ import Clear from '@mui/icons-material/Clear';
 import Close from '@mui/icons-material/Close';
 import Collections from '@mui/icons-material/Collections';
 import ContactPhone from '@mui/icons-material/ContactPhone';
+import ContactSupport from '@mui/icons-material/ContactSupport';
 import Contacts from '@mui/icons-material/Contacts';
 import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
@@ -158,6 +159,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     collections: Collections,
     contacts: Contacts,
     contact_phone: ContactPhone,
+    contact_support: ContactSupport,
     contrast: Contrast,
     credit_card: CreditCard,
     date_range: DateRange,

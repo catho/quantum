@@ -32,6 +32,7 @@ const icons = [
   'collections',
   'contacts',
   'contact_phone',
+  'contact_support',
   'contrast',
   'credit_card',
   'date_range',
