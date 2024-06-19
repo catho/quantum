@@ -39,16 +39,59 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   margin: 0;
 }
 
-.c9 {
+.Modal-module__wrapper___LkDcM {
+  align-items: center;
+  background-color: rgba(66,66,66,.5);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 98;
+}
+
+.Modal-module__close-icon___a0f6b {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+
+@media (min-width:0px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 800px;
+  }
+}
+
+.c3 {
   pointer-events: none;
   width: 24px;
 }
 
-.c9.with-children {
+.c3.with-children {
   margin-right: 8px;
 }
 
-.c5 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -77,23 +120,23 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c5:hover {
+.c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
   border-color: #191919;
 }
 
-.c5:focus,
-.c5:focus-within {
+.c0:focus,
+.c0:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c5:active {
+.c0:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
 }
 
-.c6 {
+.c1 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -103,118 +146,46 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   outline: none;
 }
 
-.c6 .c8 {
+.c1 .c2 {
   margin-right: 0;
 }
 
-.c6:hover,
-.c6:focus {
+.c1:hover,
+.c1:focus {
   box-shadow: none;
   background-color: rgba(224,224,224,0.4);
   color: #424242;
 }
 
-.c6:active {
+.c1:active {
   box-shadow: none;
   background-color: rgba(224,224,224,0.5);
   color: #424242;
 }
 
-.c4 {
-  font-size: 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: 16px;
-}
-
-.c2 {
-  padding: 16px 16px 0;
-}
-
-.c3 {
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c1 header {
-  padding-right: 64px;
-}
-
-.c7 {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-}
-
-.c0 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  z-index: 98;
-  background-color: rgba(66,66,66,0.5);
-}
-
-@media (min-width:0px) {
-  .c1 {
-    width: 90%;
-  }
-}
-
-@media (min-width:600px) {
-  .c1 {
-    width: 400px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    width: 600px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c1 {
-    width: 800px;
-  }
-}
-
 <div
-  class="c0"
+  class="Modal-module__wrapper___LkDcM"
   role="dialog"
 >
   <article
-    class="Card-module__card-wrapper___HvjEg shadow-1 c1"
+    class="Card-module__card-wrapper___HvjEg shadow-1 Modal-module__modal-card___h7YdA"
     tabindex="0"
   >
     <header
-      class="Header-module__header-wrapper___G5kEL c2"
+      class="Header-module__header-wrapper___G5kEL"
     >
       <div
         class="HeaderText-module__header-text___TE5FD"
       >
         <h2
-          class="Title-module__title___3S2cv c3"
+          class="Title-module__title___3S2cv Title-module__title___3S2cv"
         >
           Modal title
         </h2>
       </div>
     </header>
     <div
-      class="Content-module__content___itVo9 c4"
+      class="Content-module__content___itVo9 Content-module__content___itVo9"
     >
       Modal Content
     </div>
@@ -225,12 +196,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     </footer>
     <button
       aria-label="close dialog"
-      class="c5 c6 c7"
+      class="c0 c1 Modal-module__close-icon___a0f6b"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -285,16 +256,46 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   margin: 0;
 }
 
-.c8 {
+.Modal-module__close-icon___a0f6b {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+
+@media (min-width:0px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .Modal-module__modal-card___h7YdA {
+    width: 800px;
+  }
+}
+
+.c3 {
   pointer-events: none;
   width: 24px;
 }
 
-.c8.with-children {
+.c3.with-children {
   margin-right: 8px;
 }
 
-.c4 {
+.c0 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -323,23 +324,23 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c4:hover {
+.c0:hover {
   box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
   background-color: #191919;
   border-color: #191919;
 }
 
-.c4:focus,
-.c4:focus-within {
+.c0:focus,
+.c0:focus-within {
   box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
 }
 
-.c4:active {
+.c0:active {
   box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
   background-color: #191919;
 }
 
-.c5 {
+.c1 {
   border-radius: 50%;
   border: none;
   color: rgba(153,153,153,0.5);
@@ -349,92 +350,42 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   outline: none;
 }
 
-.c5 .c7 {
+.c1 .c2 {
   margin-right: 0;
 }
 
-.c5:hover,
-.c5:focus {
+.c1:hover,
+.c1:focus {
   box-shadow: none;
   background-color: rgba(224,224,224,0.4);
   color: #424242;
 }
 
-.c5:active {
+.c1:active {
   box-shadow: none;
   background-color: rgba(224,224,224,0.5);
   color: #424242;
 }
 
-.c3 {
-  font-size: 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: 16px;
-}
-
-.c1 {
-  padding: 16px 16px 0;
-}
-
-.c2 {
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.c0 header {
-  padding-right: 64px;
-}
-
-.c6 {
-  position: absolute;
-  top: 12px;
-  right: 16px;
-}
-
-@media (min-width:0px) {
-  .c0 {
-    width: 90%;
-  }
-}
-
-@media (min-width:600px) {
-  .c0 {
-    width: 400px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 600px;
-  }
-}
-
-@media (min-width:1440px) {
-  .c0 {
-    width: 800px;
-  }
-}
-
 <article
-  class="Card-module__card-wrapper___HvjEg shadow-1 c0"
+  class="Card-module__card-wrapper___HvjEg shadow-1 Modal-module__modal-card___h7YdA"
   tabindex="0"
 >
   <header
-    class="Header-module__header-wrapper___G5kEL c1"
+    class="Header-module__header-wrapper___G5kEL"
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="Title-module__title___3S2cv c2"
+        class="Title-module__title___3S2cv Title-module__title___3S2cv"
       >
         Modal title
       </h2>
     </div>
   </header>
   <div
-    class="Content-module__content___itVo9 c3"
+    class="Content-module__content___itVo9 Content-module__content___itVo9"
   >
     Modal Content
   </div>
@@ -445,12 +396,12 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   </footer>
   <button
     aria-label="close dialog"
-    class="c4 c5 c6"
+    class="c0 c1 Modal-module__close-icon___a0f6b"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c7 c8 css-1696fkf-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 c3 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="CloseIcon"
       focusable="false"
