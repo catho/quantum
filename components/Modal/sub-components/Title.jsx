@@ -1,13 +1,14 @@
-import styled from 'styled-components';
+import classNames from 'classnames';
 import Card from '../../Card';
+import styles from './Title.module.css';
 
-const propsNotContainedInTheCard = ['theme'];
-
-const Title = styled(Card.Title).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
-})`
-  font-weight: 700;
-  line-height: 1.25;
-`;
+const Title = ({ className = '', children, ...props }) => {
+  const classContent = classNames(styles.title, className);
+  return (
+    <Card.Title className={classContent} {...props}>
+      {children}
+    </Card.Title>
+  );
+};
 
 export default Title;

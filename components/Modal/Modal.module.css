@@ -1,0 +1,46 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+  background-color: rgba(66,66,66, 0.5); /* Color based on --qtm-colors-neutral-700 = #424242 */
+}
+
+.modal-card header {
+  padding-right: 64px; /* xxxlarge + medium spacing */
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px; /* We can't use var because the Button components its not migrate yet */
+  right: 16px;
+}
+
+@media (min-width:0px) {
+  .modal-card {
+    width: 90%;
+  }
+}
+
+@media (min-width:600px) {
+  .modal-card {
+    width: 400px;
+  }
+}
+
+@media (min-width:1024px) {
+  .modal-card {
+    width: 600px;
+  }
+}
+
+@media (min-width:1440px) {
+  .modal-card {
+    width: 800px;
+  }
+}
