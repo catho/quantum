@@ -14,10 +14,11 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
   position: relative;
 }
 
-.Content-module__content___itVo9 {
-  font-size: calc(var(--qtm-base-font-size)*.875);
-  margin: 0;
-  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+.Content-module__content___XHfb6 {
+  font-size: var(--qtm-base-font-size);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: var(--qtm-spacing-medium);
 }
 
 .c0 {
@@ -41,7 +42,7 @@ exports[`<CarouselCard /> should match the snapshots 1`] = `
     class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="Content-module__content___itVo9 c1"
+      class="Content-module__content___XHfb6 c1"
     >
       <img
         alt="a11y image description"
@@ -67,12 +68,6 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
   position: relative;
 }
 
-.Content-module__content___itVo9 {
-  font-size: calc(var(--qtm-base-font-size)*.875);
-  margin: 0;
-  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
-}
-
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -91,6 +86,13 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+}
+
+.Content-module__content___XHfb6 {
+  font-size: var(--qtm-base-font-size);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: var(--qtm-spacing-medium);
 }
 
 .Title-module__title___yTCjg {
@@ -142,7 +144,7 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
     class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="Content-module__content___itVo9 c1"
+      class="Content-module__content___XHfb6 c1"
     >
       <div
         class="Media-module__media-wrapper___Uu7hp c2"
@@ -182,12 +184,6 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
   position: relative;
 }
 
-.Content-module__content___itVo9 {
-  font-size: calc(var(--qtm-base-font-size)*.875);
-  margin: 0;
-  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
-}
-
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -206,6 +202,13 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
+}
+
+.Content-module__content___XHfb6 {
+  font-size: var(--qtm-base-font-size);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: var(--qtm-spacing-medium);
 }
 
 .Title-module__title___yTCjg {
@@ -257,7 +260,7 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
     class="Card-module__card-wrapper___HvjEg shadow-1 c0"
   >
     <div
-      class="Content-module__content___itVo9 c1"
+      class="Content-module__content___XHfb6 c1"
     >
       <div
         class="Media-module__media-wrapper___Uu7hp c2"

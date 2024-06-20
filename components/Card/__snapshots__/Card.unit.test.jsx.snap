@@ -13,12 +13,6 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   position: relative;
 }
 
-.Content-module__content___itVo9 {
-  font-size: calc(var(--qtm-base-font-size)*.875);
-  margin: 0;
-  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
-}
-
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -39,6 +33,13 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   display: inline-block;
   height: 72px;
   width: 72px;
+}
+
+.Content-module__content___XHfb6 {
+  font-size: var(--qtm-base-font-size);
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: var(--qtm-spacing-medium);
 }
 
 .Title-module__title___yTCjg {
@@ -74,7 +75,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
     />
   </header>
   <div
-    class="Content-module__content___itVo9"
+    class="Content-module__content___XHfb6"
   >
     Content
   </div>
