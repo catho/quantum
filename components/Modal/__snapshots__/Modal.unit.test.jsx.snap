@@ -23,11 +23,6 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
 }
 
-.Header-module__header-wrapper___G5kEL {
-  display: flex;
-  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
-}
-
 .HeaderText-module__header-text___TE5FD {
   flex-basis: 0;
   flex-grow: 1;
@@ -56,6 +51,11 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: absolute;
   right: var(--qtm-spacing-medium);
   top: var(--qtm-spacing-small);
+}
+
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 @media (min-width:0px) {
@@ -172,13 +172,13 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     tabindex="0"
   >
     <header
-      class="Header-module__header-wrapper___G5kEL"
+      class=""
     >
       <div
         class="HeaderText-module__header-text___TE5FD"
       >
         <h2
-          class="Title-module__title___3S2cv Title-module__title___3S2cv"
+          class="Title-module__title___yTCjg Title-module__title___3S2cv"
         >
           Modal title
         </h2>
@@ -240,11 +240,6 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
 }
 
-.Header-module__header-wrapper___G5kEL {
-  display: flex;
-  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
-}
-
 .HeaderText-module__header-text___TE5FD {
   flex-basis: 0;
   flex-grow: 1;
@@ -260,6 +255,11 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   position: absolute;
   right: var(--qtm-spacing-medium);
   top: var(--qtm-spacing-small);
+}
+
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 @media (min-width:0px) {
@@ -372,13 +372,13 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   tabindex="0"
 >
   <header
-    class="Header-module__header-wrapper___G5kEL"
+    class=""
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="Title-module__title___3S2cv Title-module__title___3S2cv"
+        class="Title-module__title___yTCjg Title-module__title___3S2cv"
       >
         Modal title
       </h2>

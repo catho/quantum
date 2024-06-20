@@ -40,14 +40,9 @@ exports[`<Carousel /> should match the snapshot 1`] = `
   width: 100%;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .c0 {
@@ -415,7 +410,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -451,7 +446,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -487,7 +482,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -523,7 +518,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -559,7 +554,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -595,7 +590,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -631,7 +626,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -667,7 +662,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -704,7 +699,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -741,7 +736,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -778,7 +773,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -815,7 +810,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -852,7 +847,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -889,7 +884,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -926,7 +921,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -963,7 +958,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -999,7 +994,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1035,7 +1030,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1071,7 +1066,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1107,7 +1102,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1143,7 +1138,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1179,7 +1174,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1215,7 +1210,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -1251,7 +1246,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2280,14 +2275,9 @@ exports[`<Carousel /> should match the snapshot 3`] = `
   width: 100%;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .c0 {
@@ -2655,7 +2645,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2691,7 +2681,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2727,7 +2717,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2763,7 +2753,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2799,7 +2789,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2835,7 +2825,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2871,7 +2861,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2907,7 +2897,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2944,7 +2934,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -2981,7 +2971,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3018,7 +3008,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3055,7 +3045,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3092,7 +3082,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3129,7 +3119,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3166,7 +3156,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3203,7 +3193,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3239,7 +3229,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3275,7 +3265,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3311,7 +3301,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3347,7 +3337,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3383,7 +3373,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3419,7 +3409,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3455,7 +3445,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3491,7 +3481,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -3625,14 +3615,9 @@ exports[`<Carousel /> should match the snapshot 4`] = `
   width: 100%;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .c0 {
@@ -4000,7 +3985,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4036,7 +4021,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4072,7 +4057,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4108,7 +4093,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4144,7 +4129,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4180,7 +4165,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4216,7 +4201,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4252,7 +4237,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4289,7 +4274,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4326,7 +4311,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4363,7 +4348,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4400,7 +4385,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4437,7 +4422,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4474,7 +4459,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4511,7 +4496,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4548,7 +4533,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4584,7 +4569,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4620,7 +4605,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4656,7 +4641,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4692,7 +4677,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4728,7 +4713,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4764,7 +4749,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4800,7 +4785,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>
@@ -4836,7 +4821,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
+                    class="Title-module__title___yTCjg undefined c4"
                   >
                     carousel title
                   </h2>

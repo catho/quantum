@@ -93,14 +93,9 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
   width: 100%;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .c0 {
@@ -159,7 +154,7 @@ exports[`<CarouselCard /> should match the snapshots 2`] = `
         />
       </div>
       <h2
-        class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c3"
+        class="Title-module__title___yTCjg undefined c3"
       >
         Card title
       </h2>
@@ -213,14 +208,9 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
   width: 100%;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .c0 {
@@ -279,7 +269,7 @@ exports[`<CarouselCard /> should match the snapshots 3`] = `
         />
       </div>
       <h2
-        class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c3"
+        class="Title-module__title___yTCjg undefined c3"
       >
         Card title
       </h2>

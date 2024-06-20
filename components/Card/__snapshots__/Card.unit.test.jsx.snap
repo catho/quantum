@@ -28,11 +28,6 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
 }
 
-.Header-module__header-wrapper___G5kEL {
-  display: flex;
-  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
-}
-
 .HeaderText-module__header-text___TE5FD {
   flex-basis: 0;
   flex-grow: 1;
@@ -46,23 +41,22 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   width: 72px;
 }
 
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 <article
   class="Card-module__card-wrapper___HvjEg shadow-1"
 >
   <header
-    class="Header-module__header-wrapper___G5kEL"
+    class=""
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="Title-module__title___3S2cv"
+        class="Title-module__title___yTCjg"
       >
         Title
       </h2>
@@ -148,17 +142,12 @@ exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
 `;
 
 exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
-.Title-module__title___3S2cv {
-  font-size: calc(var(--qtm-base-font-size)*1.5);
-  font-weight: 600;
-  margin: 0;
-}
-
-.Title-module__title-small___4mNd0 {
-  font-size: calc(var(--qtm-base-font-size)*1.25);
+.Title-module__title___yTCjg {
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 <h2
-  class="Title-module__title___3S2cv Title-module__title-small___4mNd0"
+  class="Title-module__title___yTCjg undefined"
 />
 `;
