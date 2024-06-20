@@ -54,8 +54,8 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
 
 .Modal-module__close-icon___a0f6b {
   position: absolute;
-  right: 16px;
-  top: 12px;
+  right: var(--qtm-spacing-medium);
+  top: var(--qtm-spacing-small);
 }
 
 @media (min-width:0px) {
@@ -258,8 +258,8 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
 
 .Modal-module__close-icon___a0f6b {
   position: absolute;
-  right: 16px;
-  top: 12px;
+  right: var(--qtm-spacing-medium);
+  top: var(--qtm-spacing-small);
 }
 
 @media (min-width:0px) {

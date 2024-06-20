@@ -12,13 +12,13 @@
 }
 
 .modal-card header {
-  padding-right: 64px; /* xxxlarge + medium spacing */
+  padding-right: calc(var(--qtm-spacing-xxxlarge) + var(--qtm-spacing-medium));
 }
 
 .close-icon {
   position: absolute;
-  top: 12px; /* We can't use var because the Button components its not migrate yet */
-  right: 16px;
+  top: var(--qtm-spacing-small);
+  right: var(--qtm-spacing-medium);
 }
 
 @media (min-width:0px) {

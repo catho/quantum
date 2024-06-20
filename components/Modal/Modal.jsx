@@ -7,9 +7,17 @@ import Card from '../Card';
 import Button from '../Button';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import regressionTestContainer from '../shared/regressionTestContainer';
-import { breakpoints, colors, spacing, components } from '../shared/theme';
+import { colors, spacing, components } from '../shared/theme';
 import isSSR from '../shared/isSSR';
 import styles from './Modal.module.css';
+
+const theme = {
+  colors,
+  spacing,
+  components: {
+    button: components.button,
+  },
+};
 
 class Modal extends Component {
   static Header = Header;
@@ -125,9 +133,14 @@ class Modal extends Component {
   };
 
   render() {
-    const { children, onClose, closeButtonAriaLabel, theme, ...rest } =
-      this.props;
-    const wrapperClass = classNames(styles.wrapper);
+    const {
+      className = '',
+      children,
+      onClose,
+      closeButtonAriaLabel,
+      ...rest
+    } = this.props;
+    const wrapperClass = classNames(styles.wrapper, className);
     const modalCard = classNames(styles['modal-card']);
     const closeIcon = classNames(styles['close-icon']);
 
@@ -169,14 +182,6 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   /** aria-label property value for the close button icon. */
   closeButtonAriaLabel: PropTypes.string,
-  theme: PropTypes.shape({
-    breakpoints: PropTypes.object,
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    components: PropTypes.shape({
-      button: PropTypes.object,
-    }),
-  }),
 };
 
 /* istanbul ignore next */
@@ -184,14 +189,6 @@ Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
   closeButtonAriaLabel: 'close dialog',
-  theme: {
-    breakpoints,
-    colors,
-    spacing,
-    components: {
-      button: components.button,
-    },
-  },
 };
 
 export default Modal;
