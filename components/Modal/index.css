@@ -1,0 +1,4 @@
+@import "./Modal.module.css";
+@import "./sub-components/ModalContent.module.css";
+@import "./sub-components/ModalHeader.module.css";
+@import "./sub-components/ModalTitle.module.css";

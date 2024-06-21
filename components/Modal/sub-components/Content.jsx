@@ -1,31 +1,14 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Card from '../../Card';
-import { spacing } from '../../shared/theme';
+import styles from './ModalContent.module.css';
 
-const propsNotContainedInTheCard = ['theme'];
-
-const Content = styled(Card.Content).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
-})`
-  font-size: 16px;
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => `${medium}px`};
-`;
-
-Content.propTypes = {
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-  }),
-};
-
-Content.defaultProps = {
-  theme: { spacing },
+const Content = ({ className = '', children, ...props }) => {
+  const classContent = classNames(styles.content, className);
+  return (
+    <Card.Content className={classContent} {...props}>
+      {children}
+    </Card.Content>
+  );
 };
 
 export default Content;
