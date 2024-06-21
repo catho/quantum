@@ -14,6 +14,12 @@ exports[`<Carousel /> should match the snapshot 1`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -34,16 +40,14 @@ exports[`<Carousel /> should match the snapshot 1`] = `
   width: 100%;
 }
 
-.Content-module__content___XHfb6 {
-  font-size: var(--qtm-base-font-size);
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--qtm-spacing-medium);
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
-.Title-module__title___yTCjg {
-  font-weight: 700;
-  line-height: 1.25;
+.Title-module__title-small___4mNd0 {
+  font-size: calc(var(--qtm-base-font-size)*1.25);
 }
 
 .c0 {
@@ -399,7 +403,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -411,7 +415,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -435,7 +439,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -447,7 +451,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -471,7 +475,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -483,7 +487,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -507,7 +511,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -519,7 +523,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -543,7 +547,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -555,7 +559,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -579,7 +583,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -591,7 +595,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -615,7 +619,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -627,7 +631,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -651,7 +655,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -663,7 +667,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -688,7 +692,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -700,7 +704,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -725,7 +729,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -737,7 +741,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -762,7 +766,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -774,7 +778,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -799,7 +803,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -811,7 +815,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -836,7 +840,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -848,7 +852,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -873,7 +877,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -885,7 +889,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -910,7 +914,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -922,7 +926,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -947,7 +951,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -959,7 +963,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -983,7 +987,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -995,7 +999,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1019,7 +1023,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1031,7 +1035,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1055,7 +1059,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1067,7 +1071,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1091,7 +1095,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1103,7 +1107,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1127,7 +1131,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1139,7 +1143,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1163,7 +1167,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1175,7 +1179,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1199,7 +1203,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1211,7 +1215,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1235,7 +1239,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -1247,7 +1251,7 @@ exports[`<Carousel /> should match the snapshot 1`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -1355,11 +1359,10 @@ exports[`<Carousel /> should match the snapshot 2`] = `
   position: relative;
 }
 
-.Content-module__content___XHfb6 {
-  font-size: var(--qtm-base-font-size);
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--qtm-spacing-medium);
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
 .c0 {
@@ -1692,7 +1695,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1714,7 +1717,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1736,7 +1739,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1758,7 +1761,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1780,7 +1783,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1802,7 +1805,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1824,7 +1827,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1846,7 +1849,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1869,7 +1872,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1892,7 +1895,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1915,7 +1918,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1938,7 +1941,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1961,7 +1964,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -1984,7 +1987,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2007,7 +2010,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2030,7 +2033,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2052,7 +2055,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2074,7 +2077,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2096,7 +2099,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2118,7 +2121,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2140,7 +2143,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2162,7 +2165,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2184,7 +2187,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2206,7 +2209,7 @@ exports[`<Carousel /> should match the snapshot 2`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <img
                     alt="a11y image description"
@@ -2251,6 +2254,12 @@ exports[`<Carousel /> should match the snapshot 3`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -2271,16 +2280,14 @@ exports[`<Carousel /> should match the snapshot 3`] = `
   width: 100%;
 }
 
-.Content-module__content___XHfb6 {
-  font-size: var(--qtm-base-font-size);
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--qtm-spacing-medium);
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
-.Title-module__title___yTCjg {
-  font-weight: 700;
-  line-height: 1.25;
+.Title-module__title-small___4mNd0 {
+  font-size: calc(var(--qtm-base-font-size)*1.25);
 }
 
 .c0 {
@@ -2636,7 +2643,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2648,7 +2655,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2672,7 +2679,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2684,7 +2691,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2708,7 +2715,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2720,7 +2727,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2744,7 +2751,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2756,7 +2763,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2780,7 +2787,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2792,7 +2799,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2816,7 +2823,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2828,7 +2835,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2852,7 +2859,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2864,7 +2871,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2888,7 +2895,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2900,7 +2907,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2925,7 +2932,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2937,7 +2944,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2962,7 +2969,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -2974,7 +2981,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -2999,7 +3006,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3011,7 +3018,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3036,7 +3043,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3048,7 +3055,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3073,7 +3080,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3085,7 +3092,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3110,7 +3117,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3122,7 +3129,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3147,7 +3154,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3159,7 +3166,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3184,7 +3191,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3196,7 +3203,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3220,7 +3227,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3232,7 +3239,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3256,7 +3263,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3268,7 +3275,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3292,7 +3299,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3304,7 +3311,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3328,7 +3335,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3340,7 +3347,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3364,7 +3371,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3376,7 +3383,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3400,7 +3407,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3412,7 +3419,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3436,7 +3443,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3448,7 +3455,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3472,7 +3479,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3484,7 +3491,7 @@ exports[`<Carousel /> should match the snapshot 3`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -3592,6 +3599,12 @@ exports[`<Carousel /> should match the snapshot 4`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -3612,16 +3625,14 @@ exports[`<Carousel /> should match the snapshot 4`] = `
   width: 100%;
 }
 
-.Content-module__content___XHfb6 {
-  font-size: var(--qtm-base-font-size);
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--qtm-spacing-medium);
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
-.Title-module__title___yTCjg {
-  font-weight: 700;
-  line-height: 1.25;
+.Title-module__title-small___4mNd0 {
+  font-size: calc(var(--qtm-base-font-size)*1.25);
 }
 
 .c0 {
@@ -3977,7 +3988,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -3989,7 +4000,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4013,7 +4024,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4025,7 +4036,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4049,7 +4060,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4061,7 +4072,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4085,7 +4096,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4097,7 +4108,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4121,7 +4132,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4133,7 +4144,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4157,7 +4168,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4169,7 +4180,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4193,7 +4204,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4205,7 +4216,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4229,7 +4240,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4241,7 +4252,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4266,7 +4277,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4278,7 +4289,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4303,7 +4314,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4315,7 +4326,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4340,7 +4351,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4352,7 +4363,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4377,7 +4388,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4389,7 +4400,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4414,7 +4425,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4426,7 +4437,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4451,7 +4462,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4463,7 +4474,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4488,7 +4499,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4500,7 +4511,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4525,7 +4536,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4537,7 +4548,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4561,7 +4572,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4573,7 +4584,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4597,7 +4608,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4609,7 +4620,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4633,7 +4644,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4645,7 +4656,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4669,7 +4680,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4681,7 +4692,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4705,7 +4716,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4717,7 +4728,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4741,7 +4752,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4753,7 +4764,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4777,7 +4788,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4789,7 +4800,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>
@@ -4813,7 +4824,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                 class="Card-module__card-wrapper___HvjEg shadow-1 c1"
               >
                 <div
-                  class="Content-module__content___XHfb6 c2"
+                  class="Content-module__content___itVo9 c2"
                 >
                   <div
                     class="Media-module__media-wrapper___Uu7hp c3"
@@ -4825,7 +4836,7 @@ exports[`<Carousel /> should match the snapshot 4`] = `
                     />
                   </div>
                   <h2
-                    class="Title-module__title___yTCjg undefined c4"
+                    class="Title-module__title___3S2cv Title-module__title-small___4mNd0 c4"
                   >
                     carousel title
                   </h2>

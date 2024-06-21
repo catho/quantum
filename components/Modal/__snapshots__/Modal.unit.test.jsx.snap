@@ -13,13 +13,30 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Footer-module__footer-wrapper___fgaA4 {
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
+}
+
+.Header-module__header-wrapper___G5kEL {
+  display: flex;
+  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
 }
 
 .HeaderText-module__header-text___TE5FD {
   flex-basis: 0;
   flex-grow: 1;
+}
+
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
 .Modal-module__wrapper___LkDcM {
@@ -41,18 +58,18 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   top: var(--qtm-spacing-small);
 }
 
-.Content-module__content___XHfb6 {
+.ModalContent-module__content___GJGqF {
   font-size: var(--qtm-base-font-size);
   max-height: 70vh;
   overflow-y: auto;
   padding: var(--qtm-spacing-medium);
 }
 
-.Header-module__header___K3I46 {
+.ModalHeader-module__header___lVyEE {
   padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
 }
 
-.Title-module__title___yTCjg {
+.ModalTitle-module__title___AHcTw {
   font-weight: 700;
   line-height: 1.25;
 }
@@ -171,20 +188,20 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     tabindex="0"
   >
     <header
-      class="Header-module__header___K3I46"
+      class="Header-module__header-wrapper___G5kEL ModalHeader-module__header___lVyEE"
     >
       <div
         class="HeaderText-module__header-text___TE5FD"
       >
         <h2
-          class="Title-module__title___yTCjg Title-module__title___yTCjg"
+          class="Title-module__title___3S2cv ModalTitle-module__title___AHcTw"
         >
           Modal title
         </h2>
       </div>
     </header>
     <div
-      class="Content-module__content___XHfb6 Content-module__content___XHfb6"
+      class="Content-module__content___itVo9 ModalContent-module__content___GJGqF"
     >
       Modal Content
     </div>
@@ -229,13 +246,30 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Footer-module__footer-wrapper___fgaA4 {
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
+}
+
+.Header-module__header-wrapper___G5kEL {
+  display: flex;
+  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
 }
 
 .HeaderText-module__header-text___TE5FD {
   flex-basis: 0;
   flex-grow: 1;
+}
+
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
 .Modal-module__close-icon___a0f6b {
@@ -244,18 +278,18 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   top: var(--qtm-spacing-small);
 }
 
-.Content-module__content___XHfb6 {
+.ModalContent-module__content___GJGqF {
   font-size: var(--qtm-base-font-size);
   max-height: 70vh;
   overflow-y: auto;
   padding: var(--qtm-spacing-medium);
 }
 
-.Header-module__header___K3I46 {
+.ModalHeader-module__header___lVyEE {
   padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
 }
 
-.Title-module__title___yTCjg {
+.ModalTitle-module__title___AHcTw {
   font-weight: 700;
   line-height: 1.25;
 }
@@ -370,20 +404,20 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   tabindex="0"
 >
   <header
-    class="Header-module__header___K3I46"
+    class="Header-module__header-wrapper___G5kEL ModalHeader-module__header___lVyEE"
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="Title-module__title___yTCjg Title-module__title___yTCjg"
+        class="Title-module__title___3S2cv ModalTitle-module__title___AHcTw"
       >
         Modal title
       </h2>
     </div>
   </header>
   <div
-    class="Content-module__content___XHfb6 Content-module__content___XHfb6"
+    class="Content-module__content___itVo9 ModalContent-module__content___GJGqF"
   >
     Modal Content
   </div>

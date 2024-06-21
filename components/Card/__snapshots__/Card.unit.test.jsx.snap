@@ -13,6 +13,12 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   position: relative;
 }
 
+.Content-module__content___itVo9 {
+  font-size: calc(var(--qtm-base-font-size)*.875);
+  margin: 0;
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
+}
+
 .Description-module__description-content___FVBwO {
   font-size: calc(var(--qtm-base-font-size)*.875);
   margin: var(--qtm-spacing-xsmall) 0 0 0;
@@ -20,6 +26,11 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
 
 .Footer-module__footer-wrapper___fgaA4 {
   padding: 0 var(--qtm-spacing-medium) var(--qtm-spacing-medium);
+}
+
+.Header-module__header-wrapper___G5kEL {
+  display: flex;
+  padding: var(--qtm-spacing-medium) var(--qtm-spacing-medium) 0;
 }
 
 .HeaderText-module__header-text___TE5FD {
@@ -35,29 +46,23 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
   width: 72px;
 }
 
-.Content-module__content___XHfb6 {
-  font-size: var(--qtm-base-font-size);
-  max-height: 70vh;
-  overflow-y: auto;
-  padding: var(--qtm-spacing-medium);
-}
-
-.Title-module__title___yTCjg {
-  font-weight: 700;
-  line-height: 1.25;
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
 }
 
 <article
   class="Card-module__card-wrapper___HvjEg shadow-1"
 >
   <header
-    class=""
+    class="Header-module__header-wrapper___G5kEL"
   >
     <div
       class="HeaderText-module__header-text___TE5FD"
     >
       <h2
-        class="Title-module__title___yTCjg"
+        class="Title-module__title___3S2cv"
       >
         Title
       </h2>
@@ -75,7 +80,7 @@ exports[`<Card /> Snapshots Should match the snapshot 1`] = `
     />
   </header>
   <div
-    class="Content-module__content___XHfb6"
+    class="Content-module__content___itVo9"
   >
     Content
   </div>
@@ -143,12 +148,17 @@ exports[`<Card /> Snapshots should match snapshot with small Description 1`] = `
 `;
 
 exports[`<Card /> Snapshots should match snapshot with small Title 1`] = `
-.Title-module__title___yTCjg {
-  font-weight: 700;
-  line-height: 1.25;
+.Title-module__title___3S2cv {
+  font-size: calc(var(--qtm-base-font-size)*1.5);
+  font-weight: 600;
+  margin: 0;
+}
+
+.Title-module__title-small___4mNd0 {
+  font-size: calc(var(--qtm-base-font-size)*1.25);
 }
 
 <h2
-  class="Title-module__title___yTCjg undefined"
+  class="Title-module__title___3S2cv Title-module__title-small___4mNd0"
 />
 `;

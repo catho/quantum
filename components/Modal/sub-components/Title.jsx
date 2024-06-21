@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import Card from '../../Card';
-import styles from './Title.module.css';
+import styles from './ModalTitle.module.css';
 
 const Title = ({ className = '', children, ...props }) => {
   const classContent = classNames(styles.title, className);
