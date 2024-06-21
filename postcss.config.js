@@ -25,16 +25,31 @@ module.exports = {
                 fs.mkdirSync(tempFolder);
               }
 
-              const stylesFileNameWithouExtension = path.basename(
+              const stylesFilePathInComponentsFolder = path.relative(
+                './components/',
                 cssFilePath,
-                '.css',
               );
-              const jsonFilePath = path.resolve(
-                `./.temp/${stylesFileNameWithouExtension}.json`,
+              const styleFileFolder = path.dirname(
+                stylesFilePathInComponentsFolder,
+              );
+              const styleFilePathInTempFolder = path.resolve(
+                '.temp/',
+                styleFileFolder,
+              );
+
+              if (!fs.existsSync(styleFilePathInTempFolder)) {
+                fs.mkdirSync(styleFilePathInTempFolder);
+              }
+
+              const mappedStylesFilePath =
+                stylesFilePathInComponentsFolder.replace('.css', '.json');
+              const mappedStylesFilePathInTempDir = path.resolve(
+                `.temp`,
+                mappedStylesFilePath,
               );
               const jsonFileContent = JSON.stringify(json);
 
-              fs.writeFileSync(jsonFilePath, jsonFileContent);
+              fs.writeFileSync(mappedStylesFilePathInTempDir, jsonFileContent);
             }
           },
           generateScopedName: `[name]__[local]___[hash:base64:5]`,
