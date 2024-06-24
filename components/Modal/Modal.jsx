@@ -1,83 +1,24 @@
 import { Component, createRef } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import classNames from 'classnames';
 
 import Card from '../Card';
 import Button from '../Button';
-import { query } from '../Grid/sub-components/shared';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
-import { hexToRgba } from '../shared';
 import regressionTestContainer from '../shared/regressionTestContainer';
-import { breakpoints, colors, spacing, components } from '../shared/theme';
+import { colors, spacing, components } from '../shared/theme';
 import isSSR from '../shared/isSSR';
+import styles from './Modal.module.css';
 
-const closeButtonPadding = spacing.medium;
-const propsNotContainedInTheCard = ['theme'];
+const theme = {
+  colors,
+  spacing,
+  components: {
+    button: components.button,
+  },
+};
 
-function getBreakpoint({ theme: { breakpoints: themeBreakpoints } }) {
-  const sizes = {
-    xsmall: '90%',
-    small: '400px',
-    medium: '600px',
-    large: '800px',
-  };
-  return Object.entries(sizes).map(
-    ([breakpoint, value]) =>
-      query(themeBreakpoints)[breakpoint]`width: ${value};`,
-  );
-}
-
-const ModalCard = styled(Card).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
-})`
-  header {
-    padding-right: ${({
-      theme: {
-        spacing: { xxxlarge },
-      },
-    }) => `${xxxlarge + closeButtonPadding}px`};
-  }
-
-  ${getBreakpoint}
-`;
-
-const CloseIcon = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
-  position: absolute;
-
-  ${({
-    theme: {
-      spacing: { medium, small },
-    },
-  }) => `
-    top: ${small}px;
-    right: ${medium}px;
-  `};
-`;
-
-CloseIcon.displayName = 'CloseIcon';
-
-const ModalWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 98;
-
-  background-color: ${({
-    theme: {
-      colors: { neutral },
-    },
-  }) => hexToRgba(neutral[700], 0.5)};
-`;
-
-ModalWrapper.displayName = 'ModalWrapper';
 class Modal extends Component {
   static Header = Header;
 
@@ -192,26 +133,41 @@ class Modal extends Component {
   };
 
   render() {
-    const { children, onClose, closeButtonAriaLabel, theme, ...rest } =
-      this.props;
+    const {
+      className = '',
+      children,
+      onClose,
+      closeButtonAriaLabel,
+      ...rest
+    } = this.props;
+    const wrapperClass = classNames(styles.wrapper, className);
+    const modalCard = classNames(styles['modal-card']);
+    const closeIcon = classNames(styles['close-icon']);
 
     return ReactDOM.createPortal(
-      <ModalWrapper
+      /**
+       * This eslint warning was ignored because we need to have an event trigger on this div element to close the Modal
+       * when clicking away and a perfectly accessible solution was not found for this scenario
+       */
+      // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events
+      <div
         onClick={this.handleClickOutside}
         ref={this.modalWrapperRef}
         role="dialog"
-        theme={theme}
+        className={wrapperClass}
         {...rest}
       >
-        <ModalCard tabIndex={0} theme={theme}>
+        <Card tabIndex={0} className={modalCard}>
           {children}
-          <CloseIcon
+          <Button.Icon
             onClick={onClose}
             aria-label={closeButtonAriaLabel}
             theme={theme}
+            className={closeIcon}
+            icon="close"
           />
-        </ModalCard>
-      </ModalWrapper>,
+        </Card>
+      </div>,
       this.modalOverlay,
     );
   }
@@ -226,14 +182,6 @@ Modal.propTypes = {
   onClose: PropTypes.func,
   /** aria-label property value for the close button icon. */
   closeButtonAriaLabel: PropTypes.string,
-  theme: PropTypes.shape({
-    breakpoints: PropTypes.object,
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    components: PropTypes.shape({
-      button: PropTypes.object,
-    }),
-  }),
 };
 
 /* istanbul ignore next */
@@ -241,14 +189,6 @@ Modal.defaultProps = {
   children: undefined,
   onClose: () => {},
   closeButtonAriaLabel: 'close dialog',
-  theme: {
-    breakpoints,
-    colors,
-    spacing,
-    components: {
-      button: components.button,
-    },
-  },
 };
 
 export default Modal;

@@ -1,28 +1,14 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Card from '../../Card';
-import { spacing } from '../../shared/theme';
+import styles from './ModalHeader.module.css';
 
-const propsNotContainedInTheCard = ['theme'];
-
-const Header = styled(Card.Header).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInTheCard.includes(prop),
-})`
-  padding: ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => `${medium}px ${medium}px 0`};
-`;
-
-Header.propTypes = {
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-  }),
-};
-
-Header.defaultProps = {
-  theme: { spacing },
+const Header = ({ className = '', children, ...props }) => {
+  const classContent = classNames(styles.header, className);
+  return (
+    <Card.Header className={classContent} {...props}>
+      {children}
+    </Card.Header>
+  );
 };
 
 export default Header;

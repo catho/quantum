@@ -183,6 +183,10 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
 
         yarn test:coverage
 
+    If you need update the Snapshots run this command:
+
+        yarn test:components -u
+
 6. Update the Regression Tests, if needed;
 
     If a behavior that changes the visual aspect of the component is included, this new behavior must be included in the Regression Tests.
