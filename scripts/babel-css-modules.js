@@ -6,26 +6,42 @@ const path = require('path');
 module.exports = function CssToJS({ types: t }) {
   return {
     visitor: {
-      ImportDeclaration(specifiers) {
+      ImportDeclaration(specifiers, source) {
         const environment = process.env.NODE_ENV;
         if (environment === 'production' || environment === 'test') {
           const { node } = specifiers;
 
-          const module = node.source.value;
-          if (module.endsWith('.css')) {
-            const mappedModuleFile = module.replace('.css', '.json');
+          const importedModulePath = node.source.value;
+          if (importedModulePath.endsWith('.css')) {
+            const componentDirPath = path.dirname(source.filename);
+            const styleFilePath = path.resolve(
+              componentDirPath,
+              importedModulePath,
+            );
+            const styleFilePathInComponentsFolder = path.relative(
+              'components',
+              styleFilePath,
+            );
 
-            const jsonMapFilePath = path.resolve('./.temp', mappedModuleFile);
+            const mappedStylesFilePath =
+              styleFilePathInComponentsFolder.replace('.css', '.json');
+            const mappedStylesFilePathInTempDir = path.resolve(
+              './.temp',
+              mappedStylesFilePath,
+            );
 
-            if (!fs.existsSync(jsonMapFilePath)) {
+            if (!fs.existsSync(mappedStylesFilePathInTempDir)) {
               throw new Error(
-                `\n\n JSON map file not found in temporary folder: ${jsonMapFilePath} \n\n`,
+                `\n\n JSON map file not found in temporary folder: ${mappedStylesFilePathInTempDir} \n\n`,
               );
             }
 
-            const jsonMapFileContent = fs.readFileSync(jsonMapFilePath, {
-              encoding: 'utf8',
-            });
+            const jsonMapFileContent = fs.readFileSync(
+              mappedStylesFilePathInTempDir,
+              {
+                encoding: 'utf8',
+              },
+            );
 
             const mapFile = JSON.parse(jsonMapFileContent);
 
