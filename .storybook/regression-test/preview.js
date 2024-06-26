@@ -1,12 +1,13 @@
 import 'loki/configure-react';
-import GlobalStyle from '../../components/GlobalStyle';
+import Typography from '../../components/Typography';
 import '../../components/theme.css';
 import '../../components/_utilities.css';
+import '../../components/global.css';
 
 const CSSDecorator = (Story, context) => (
   <div id="regression-test">
     <Story {...context} />
-    <GlobalStyle />
+    <Typography />
   </div>
 );
 

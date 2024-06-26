@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import styled from 'styled-components';
 
-import { Title, Subtitle, Blockquote } from '../../components/GlobalStyle';
+import { Title, Subtitle, Blockquote } from '../../components/Typography';
 import List from '../../components/List';
 import { exampleItemsDefault } from '../List/objectReference';
 

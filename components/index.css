@@ -7,6 +7,7 @@
 /* Global style imports */
 @import "./theme.css";
 @import "./_utilities.css";
+@import "./global.css";
 
 /* Components imports */
 @import "./Card/index.css";
@@ -15,3 +16,4 @@
 @import "./Skeleton/index.css";
 @import "./Badge/index.css";
 @import "./Modal/index.css";
+@import "./Typography/index.css";
