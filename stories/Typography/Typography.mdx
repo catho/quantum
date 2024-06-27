@@ -19,7 +19,7 @@ import EvaluationForm from '../../stories/shared/EvaluationForm'
 
 
 ```js
-import GlobalStyle from '@catho/quantum/GlobalStyle';
+import Typography from '@catho/quantum/Typography';
 ```
 
 Usually, it is used before the application component
@@ -28,18 +28,18 @@ Usually, it is used before the application component
 ReactDOM
   .render(() => (
     <>
-      <GlobalStyle />
+      <Typography />
       <App />
     </>
   ), document.getElementById('root'));
 ```
 
-The `<GlobalStyle />` will add and set automatically all the base configuration for font and [Icons](?path=/docs/foundation-icons--page).
+The `<Typography />` will add and set automatically all the base configuration for font and [Icons](?path=/docs/foundation-icons--page).
 
 If you want to include one of those separately, you can import each as you'd like to:
 
 ```js
-import Typography from '@catho/quantum/GlobalStyle/Typography';
+import Typography from '@catho/quantum/Typography';
 ```
 ## <a id="examples"></a>Examples
 ## Components

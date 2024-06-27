@@ -6,6 +6,7 @@ const ENV = process.env.NODE_ENV;
 const globalStylesFilePath = [
   './components/theme.css',
   './components/_utilities.css',
+  './components/global.css',
 ];
 
 module.exports = {

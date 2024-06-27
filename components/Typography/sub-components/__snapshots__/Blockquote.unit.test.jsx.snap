@@ -2,18 +2,15 @@
 
 exports[`<Blockquote /> Should match the snapshot 1`] = `
 <DocumentFragment>
-  .c0 {
+  .Blockquote-module__blockquote___Xqdgz {
   font-size: 12px;
+  letter-spacing: .2px;
   line-height: 18px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
   margin: 0;
 }
 
 <blockquote
-    class="c0"
+    class="Blockquote-module__blockquote___Xqdgz"
   />
 </DocumentFragment>
 `;

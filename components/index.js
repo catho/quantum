@@ -10,7 +10,7 @@ import { Checkbox, CheckboxGroup } from './Checkbox';
 import Card from './Card';
 import Colors from './Colors';
 import Dropdown from './Dropdown';
-import GlobalStyle, { Typography } from './GlobalStyle';
+import Typography from './Typography';
 import Icon from './Icon';
 import Input from './Input';
 import Popover from './Popover';
@@ -57,7 +57,6 @@ export {
   Container,
   Dropdown,
   Form,
-  GlobalStyle,
   Hide,
   Icon,
   Input,

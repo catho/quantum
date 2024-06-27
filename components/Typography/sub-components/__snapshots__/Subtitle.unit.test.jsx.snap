@@ -2,17 +2,14 @@
 
 exports[`<Subtitle /> Should match the snapshot 1`] = `
 <DocumentFragment>
-  .c0 {
+  .Subtitle-module__span___BW9AV {
   font-size: 14px;
+  letter-spacing: .3px;
   line-height: 21px;
-  -webkit-letter-spacing: 0.3px;
-  -moz-letter-spacing: 0.3px;
-  -ms-letter-spacing: 0.3px;
-  letter-spacing: 0.3px;
 }
 
 <span
-    class="c0"
+    class="Subtitle-module__span___BW9AV"
   />
 </DocumentFragment>
 `;

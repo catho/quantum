@@ -47,7 +47,7 @@ import { default as MenuComponent, MenuProps } from './Menu';
 export { default as BREAKPOINTS } from './Breakpoints';
 export { default as Colors } from "./Colors";
 export { default as Form, Validations } from './Form';
-export { default as GlobalStyle, Typography } from "./GlobalStyle";
+export { default as Typography } from "./Typography";
 export { default as shared } from "./shared";
 
 export const Accordion: StyledComponent<typeof AccordionComponent, AccordionProps>;
