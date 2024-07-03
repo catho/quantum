@@ -109,11 +109,11 @@ const InfiniteScrollBase = (
   );
 };
 
-const InfiniteScroll = forwardRef(InfiniteScrollBase);
-
-InfiniteScroll.handleScrollPosition = (element, height) => {
+InfiniteScrollBase.handleScrollPosition = (element, height) => {
   element.scrollTo({ top: height, behavior: 'instant' });
 };
+
+const InfiniteScroll = forwardRef(InfiniteScrollBase);
 
 InfiniteScroll.propTypes = {
   children: PropTypes.element.isRequired,
