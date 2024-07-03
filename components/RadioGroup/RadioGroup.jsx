@@ -38,7 +38,6 @@ const RadioGroup = ({
 
   const radioOptions = options.map((option) =>
     Object.assign({}, option, {
-      key: option.value,
       defaultChecked: option.value === defaultValue ? true : undefined,
       ...commonProps,
     }),
@@ -52,7 +51,11 @@ const RadioGroup = ({
       }),
     ) ||
     radioOptions.map((props) =>
-      type === 'button' ? <RadioButton {...props} /> : <Radio {...props} />,
+      type === 'button' ? (
+        <RadioButton key={props.value} {...props} />
+      ) : (
+        <Radio key={props.value} {...props} />
+      ),
     );
 
   return (

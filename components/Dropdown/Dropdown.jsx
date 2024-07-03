@@ -186,10 +186,10 @@ const List = ({ theme, items, selectedItem = null, getItemProps }) => (
     {items.map((item) => (
       <DropItem
         theme={theme}
+        key={_getValue(item)}
         {...getItemProps({
           item,
           isSelected: _isEqual(selectedItem, item),
-          key: _getValue(item),
         })}
       >
         {_isEqual(selectedItem, item) ? (
