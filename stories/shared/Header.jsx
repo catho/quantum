@@ -76,7 +76,7 @@ const Title = styled.h1`
   ${({ as }) => as === 'h3' && `font-size: 24px;`}
 `;
 
-const Header = ({ title, children }) => (
+const Header = ({ title, children = undefined }) => (
   <Unstyled>
     <HeaderWrapper>
       <Container>
@@ -86,10 +86,6 @@ const Header = ({ title, children }) => (
     </HeaderWrapper>
   </Unstyled>
 );
-
-Header.defaultProps = {
-  children: undefined,
-};
 
 Header.propTypes = {
   title: PropTypes.string.isRequired,
