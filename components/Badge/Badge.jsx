@@ -90,7 +90,20 @@ const StyledBadge = styled.span`
 `;
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ children, number, skin, inverted, dot, theme }) => {
+const Badge = ({
+  children = '',
+  number = 0,
+  skin = 'neutral',
+  inverted = false,
+  dot = false,
+  theme = {
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      badge: components.badge,
+    },
+  },
+}) => {
   const value = number > 99 ? '99+' : number;
 
   return (
@@ -141,21 +154,6 @@ Badge.propTypes = {
       badge: PropTypes.object,
     }),
   }),
-};
-
-Badge.defaultProps = {
-  skin: 'neutral',
-  inverted: false,
-  children: '',
-  number: 0,
-  dot: false,
-  theme: {
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    components: {
-      badge: components.badge,
-    },
-  },
 };
 
 export default Badge;

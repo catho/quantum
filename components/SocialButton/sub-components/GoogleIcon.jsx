@@ -5,7 +5,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const GoogleIcon = ({ size, title }) => {
+const GoogleIcon = ({ size = '48', title }) => {
   const SVGOriginalSize = 128;
 
   return (
@@ -60,10 +60,6 @@ const GoogleIcon = ({ size, title }) => {
       </g>
     </StyledSvg>
   );
-};
-
-GoogleIcon.defaultProps = {
-  size: '48',
 };
 
 GoogleIcon.propTypes = {

@@ -20,52 +20,54 @@ const materialThemeOverride = createTheme({
   },
 });
 
-const Menu = (props) => {
-  const {
-    open,
-    anchorEl,
-    anchorOrigin,
-    transformOrigin,
-    onClose,
-    items,
-    keepMounted,
-  } = props;
-
-  return (
-    <MaterialMenu
-      id="menu"
-      data-testid="menu"
-      theme={materialThemeOverride}
-      aria-labelledby="button"
-      anchorReference="anchorEl"
-      anchorEl={anchorEl}
-      open={open}
-      onClose={onClose}
-      onBlur={onClose}
-      anchorOrigin={anchorOrigin}
-      transformOrigin={transformOrigin}
-      keepMounted={keepMounted}
-    >
-      {items.map((item) => {
-        const onClickFunc = () => {
-          const { onClick } = item;
-          onClose();
-          onClick();
-        };
-        return (
-          <MenuItem
-            key={item.id}
-            onClick={onClickFunc}
-            theme={materialThemeOverride}
-            color="textPrimary"
-          >
-            {item.content}
-          </MenuItem>
-        );
-      })}
-    </MaterialMenu>
-  );
-};
+const Menu = ({
+  open = false,
+  items = [],
+  anchorEl = null,
+  anchorOrigin = {
+    vertical: 'bottom',
+    horizontal: 'left',
+  },
+  transformOrigin = {
+    vertical: 'top',
+    horizontal: 'left',
+  },
+  keepMounted = false,
+  onClose = () => {},
+}) => (
+  <MaterialMenu
+    id="menu"
+    data-testid="menu"
+    theme={materialThemeOverride}
+    aria-labelledby="button"
+    anchorReference="anchorEl"
+    anchorEl={anchorEl}
+    open={open}
+    onClose={onClose}
+    onBlur={onClose}
+    anchorOrigin={anchorOrigin}
+    transformOrigin={transformOrigin}
+    keepMounted={keepMounted}
+  >
+    {items.map((item) => {
+      const onClickFunc = () => {
+        const { onClick } = item;
+        onClose();
+        onClick();
+      };
+      return (
+        <MenuItem
+          key={item.id}
+          onClick={onClickFunc}
+          theme={materialThemeOverride}
+          color="textPrimary"
+        >
+          {item.content}
+        </MenuItem>
+      );
+    })}
+  </MaterialMenu>
+);
 
 Menu.propTypes = {
   /** If true, the component is shown. */
@@ -94,22 +96,6 @@ Menu.propTypes = {
   keepMounted: PropTypes.bool,
   /** Callback fired when the component requests to be closed. */
   onClose: PropTypes.func,
-};
-
-Menu.defaultProps = {
-  open: false,
-  items: [],
-  anchorEl: null,
-  anchorOrigin: {
-    vertical: 'bottom',
-    horizontal: 'left',
-  },
-  transformOrigin: {
-    vertical: 'top',
-    horizontal: 'left',
-  },
-  keepMounted: false,
-  onClose: () => {},
 };
 
 export default Menu;

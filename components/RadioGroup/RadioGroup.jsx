@@ -14,17 +14,17 @@ const Group = styled(FieldGroup).attrs({
 `;
 
 const RadioGroup = ({
-  type,
-  size,
-  children,
-  error,
-  inline,
+  type = 'radio',
+  size = 'medium',
+  children = undefined,
+  error = undefined,
+  inline = false,
   name,
-  onChange,
-  options,
-  defaultValue,
-  theme,
-  required,
+  onChange = () => {},
+  options = [],
+  defaultValue = undefined,
+  theme = { colors, spacing },
+  required = false,
   ...rest
 }) => {
   const commonProps = {
@@ -91,22 +91,6 @@ RadioGroup.propTypes = {
     spacing: PropTypes.object,
   }),
   required: PropTypes.bool,
-};
-
-/**
- * Group for Radio components.
- */
-RadioGroup.defaultProps = {
-  type: 'radio',
-  size: 'medium',
-  children: undefined,
-  error: undefined,
-  inline: false,
-  onChange: () => {},
-  options: [],
-  defaultValue: undefined,
-  theme: { colors, spacing },
-  required: false,
 };
 
 export default RadioGroup;

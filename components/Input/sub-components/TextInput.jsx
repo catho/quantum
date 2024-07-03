@@ -80,7 +80,11 @@ const textInputSkinVariations = {
   dark: darkSkin,
 };
 
-const TextInput = styled.input`
+const TextInput = styled.input.attrs(({ theme, ...rest }) => ({
+  theme: { spacing, colors, ...theme },
+  skin: 'default',
+  ...rest,
+}))`
   -webkit-appearance: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -146,11 +150,6 @@ TextInput.propTypes = {
     colors: PropTypes.object,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-TextInput.defaultProps = {
-  theme: { spacing, colors },
-  skin: 'default',
 };
 
 export default TextInput;

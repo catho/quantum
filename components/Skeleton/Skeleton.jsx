@@ -2,32 +2,76 @@ import PropTypes from 'prop-types';
 import { theme as defaultTheme } from '../shared';
 import { Circle, Text, Button, Tag, Rect } from './sub-components';
 
-const Skeleton = ({ type, ...props }) => {
+const Skeleton = ({
+  type = 'rect',
+  as = 'div',
+  width = '100%',
+  height = '14px',
+  size = 'medium',
+  theme = defaultTheme,
+  ...props
+}) => {
   switch (type) {
     case 'circle':
-      return <Circle {...props} />;
+      return (
+        <Circle
+          as={as}
+          width={width}
+          height={height}
+          size={size}
+          theme={theme}
+          {...props}
+        />
+      );
 
     case 'text':
-      return <Text {...props} />;
+      return (
+        <Text
+          as={as}
+          width={width}
+          height={height}
+          size={size}
+          theme={theme}
+          {...props}
+        />
+      );
 
     case 'button':
-      return <Button {...props} />;
+      return (
+        <Button
+          as={as}
+          width={width}
+          height={height}
+          size={size}
+          theme={theme}
+          {...props}
+        />
+      );
 
     case 'tag':
-      return <Tag {...props} />;
+      return (
+        <Tag
+          as={as}
+          width={width}
+          height={height}
+          size={size}
+          theme={theme}
+          {...props}
+        />
+      );
 
     default:
-      return <Rect {...props} />;
+      return (
+        <Rect
+          as={as}
+          width={width}
+          height={height}
+          size={size}
+          theme={theme}
+          {...props}
+        />
+      );
   }
-};
-
-Skeleton.defaultProps = {
-  type: 'rect',
-  as: 'div',
-  width: '100%',
-  height: '14px',
-  size: 'medium',
-  theme: defaultTheme,
 };
 
 Skeleton.propTypes = {

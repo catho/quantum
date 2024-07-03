@@ -124,7 +124,7 @@ const sizes = {
   xlarge: baseFontSize * 2.5, // 40
 };
 
-const Icon = ({ name, skin, size, ...props }) => {
+const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
   const components = {
     access_time: AccessTime,
     accessible_forward: AccessibleForward,
@@ -245,18 +245,17 @@ const Icon = ({ name, skin, size, ...props }) => {
   return (
     <SelectedIcon
       {...props}
-      style={{ color: skin, fontSize: sizes[size], maxWidth: sizes[size] }}
+      style={{
+        color: skin,
+        fontSize: sizes[size],
+        maxWidth: sizes[size],
+        ...style,
+      }}
       data-qtm-preloader="icon"
     >
       {name}
     </SelectedIcon>
   );
-};
-
-Icon.defaultProps = {
-  style: {},
-  skin: '',
-  size: 'medium',
 };
 
 Icon.propTypes = {

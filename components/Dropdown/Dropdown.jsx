@@ -181,7 +181,7 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const List = ({ theme, items, selectedItem, getItemProps }) => (
+const List = ({ theme, items, selectedItem = null, getItemProps }) => (
   <DropList theme={theme}>
     {items.map((item) => (
       <DropItem
@@ -217,10 +217,6 @@ const List = ({ theme, items, selectedItem, getItemProps }) => (
   </DropList>
 );
 
-List.defaultProps = {
-  selectedItem: null,
-};
-
 List.propTypes = {
   selectedItem: itemPropType,
   theme: PropTypes.shape({
@@ -232,21 +228,21 @@ List.propTypes = {
 };
 
 const Dropdown = ({
-  label,
-  error,
-  helperText,
-  required,
-  disabled,
-  items,
-  placeholder,
-  selectedItem,
-  onChange,
-  autocomplete,
-  theme,
-  id,
-  name,
-  ignoreSpecialChars,
-  skin,
+  label = '',
+  error = '',
+  helperText = '',
+  required = false,
+  disabled = false,
+  items = [],
+  placeholder = 'Select an option',
+  selectedItem = null,
+  onChange = () => {},
+  autocomplete = false,
+  theme = { colors, spacing, baseFontSize },
+  id = '',
+  name = '',
+  ignoreSpecialChars = false,
+  skin = 'default',
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
@@ -392,24 +388,6 @@ const Dropdown = ({
       {error && <InputErrorMessage skin={skin}>{error}</InputErrorMessage>}
     </FieldGroup>
   );
-};
-
-Dropdown.defaultProps = {
-  autocomplete: false,
-  disabled: false,
-  required: false,
-  error: '',
-  id: '',
-  name: '',
-  label: '',
-  placeholder: 'Select an option',
-  selectedItem: null,
-  helperText: '',
-  items: [],
-  onChange: () => {},
-  theme: { colors, spacing, baseFontSize },
-  ignoreSpecialChars: false,
-  skin: 'default',
 };
 
 Dropdown.propTypes = {

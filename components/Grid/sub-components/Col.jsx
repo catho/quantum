@@ -137,7 +137,14 @@ const columnPosition = (
   `;
 };
 
-const Col = styled.div`
+const Col = styled.div.attrs(({ 'no-gutters': noGutters, theme, ...rest }) => ({
+  'no-gutters': !!noGutters,
+  theme: {
+    ...defaultTheme,
+    ...theme,
+  },
+  ...rest,
+}))`
   ${(props) =>
     Object.keys(props.theme.breakpoints).map((breakpoint) =>
       columnPosition(props, breakpoint),
@@ -147,11 +154,6 @@ const Col = styled.div`
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 `;
-
-Col.defaultProps = {
-  theme: defaultTheme,
-  'no-gutters': false,
-};
 
 Col.propTypes = {
   'no-gutters': PropTypes.bool,

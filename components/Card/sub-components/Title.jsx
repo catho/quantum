@@ -10,7 +10,13 @@ const Heading = styled.h2`
   margin: 0;
 `;
 
-const Title = ({ ...props }) => <Heading {...props} />;
+const Title = ({
+  small = false,
+  theme = {
+    baseFontSize: defaultBaseFontSize,
+  },
+  ...props
+}) => <Heading small={small} theme={theme} {...props} />;
 
 Title.displayName = 'Card.Title';
 
@@ -20,13 +26,6 @@ Title.propTypes = {
   theme: PropTypes.shape({
     baseFontSize: PropTypes.number,
   }),
-};
-
-Title.defaultProps = {
-  small: false,
-  theme: {
-    baseFontSize: defaultBaseFontSize,
-  },
 };
 
 export default Title;

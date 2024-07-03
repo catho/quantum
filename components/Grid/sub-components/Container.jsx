@@ -47,7 +47,18 @@ const renderResponsives = ({
     ),
   );
 
-const Container = styled.div`
+const Container = styled.div.attrs(
+  ({ fluid, withBreakpoints, 'no-gutters': noGutters, theme, ...rest }) => ({
+    fluid: !!fluid,
+    withBreakpoints: !!withBreakpoints,
+    'no-gutters': !!noGutters,
+    theme: {
+      ...defaultTheme,
+      ...theme,
+    },
+    ...rest,
+  }),
+)`
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -73,13 +84,6 @@ Container.propTypes = {
     components: PropTypes.object,
   }),
   'no-gutters': PropTypes.bool,
-};
-
-Container.defaultProps = {
-  fluid: false,
-  withBreakpoints: false,
-  'no-gutters': false,
-  theme: defaultTheme,
 };
 
 Container.displayName = 'Container';

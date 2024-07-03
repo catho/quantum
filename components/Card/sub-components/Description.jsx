@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 import {
   baseFontSize as defaultBaseFontSize,
@@ -19,25 +18,15 @@ const Content = styled.div`
   `}
 `;
 
-const Description = ({ ...props }) => <Content {...props} />;
-
-Description.displayName = 'Card.Description';
-
-Description.propTypes = {
-  /** default `font-size` is `14px`, with `small` prop defined the `font-size` is changed to `12px`. */
-  small: PropTypes.bool,
-  theme: PropTypes.shape({
-    baseFontSize: PropTypes.number,
-    spacing: PropTypes.object,
-  }),
-};
-
-Description.defaultProps = {
-  small: false,
-  theme: {
+const Description = ({
+  small = false,
+  theme = {
     baseFontSize: defaultBaseFontSize,
     spacing,
   },
-};
+  ...props
+}) => <Content small={small} theme={theme} {...props} />;
+
+Description.displayName = 'Card.Description';
 
 export default Description;
