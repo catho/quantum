@@ -79,7 +79,7 @@ const InfiniteScrollBase = (
 
   useEffect(() => {
     if (reverse) {
-      InfiniteScroll.handleScrollPosition(wrapperRef.current, scrollHeight);
+      InfiniteScrollBase.handleScrollPosition(wrapperRef.current, scrollHeight);
     }
   }, [scrollHeight]);
 
