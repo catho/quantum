@@ -28,8 +28,8 @@ exports[`Popover component should match snapshots 1`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -225,8 +225,8 @@ exports[`Popover component should match snapshots 2`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -422,8 +422,8 @@ exports[`Popover component should match snapshots 3`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -623,8 +623,8 @@ exports[`Popover component should match snapshots 4`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -828,8 +828,8 @@ exports[`Popover component should match snapshots 5`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1037,8 +1037,8 @@ exports[`Popover component should match snapshots 6`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1246,8 +1246,8 @@ exports[`Popover component should match snapshots 7`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1452,8 +1452,8 @@ exports[`Popover component should match snapshots 8`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1658,8 +1658,8 @@ exports[`Popover component should match snapshots 9`] = `
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
+  font-size: 16px;
+  line-height: 24px;
   min-height: 40px;
   padding: 4px 16px;
   -webkit-transition: all 0.2s ease-in-out;
