@@ -282,7 +282,21 @@ Button.propTypes = {
   }),
 };
 
-const IconButton = styled(Button)`
+const IconButton = styled(Button).attrs(({ size, skin, theme, ...rest }) => ({
+  size: size || 'medium',
+  skin: skin || 'neutral',
+  theme: {
+    breakpoints: defaultTheme.breakpoints,
+    gutter: '8px',
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      button: components.button,
+    },
+    ...theme,
+  },
+  ...rest,
+}))`
   ${({ skin, theme }) => {
     const {
       components: {
@@ -348,20 +362,6 @@ IconButton.propTypes = {
       button: PropTypes.object,
     }),
   }),
-};
-
-IconButton.defaultProps = {
-  size: 'medium',
-  skin: 'neutral',
-  theme: {
-    breakpoints: defaultTheme.breakpoints,
-    gutter: '8px',
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    components: {
-      button: components.button,
-    },
-  },
 };
 
 Button.Icon = IconButton;
