@@ -32,13 +32,15 @@ const Wrapper = styled.div`
 `;
 
 const Dialog = ({
-  onClose,
-  closeOnTime,
-  children,
-  theme,
-  onClickOutside,
-  disableClickOutside,
-  selector,
+  onClose = () => {},
+  closeOnTime = undefined,
+  children = undefined,
+  theme = {
+    colors,
+  },
+  onClickOutside = undefined,
+  disableClickOutside = false,
+  selector = 'body',
 }) => {
   const dialogOver = useRef();
 
@@ -195,18 +197,6 @@ Dialog.__docgenInfo = {
       description:
         "This props it's to disable the functionality to close when user clicks in the overlay",
     },
-  },
-};
-
-Dialog.defaultProps = {
-  onClose: () => {},
-  selector: 'body',
-  children: undefined,
-  closeOnTime: undefined,
-  onClickOutside: undefined,
-  disableClickOutside: false,
-  theme: {
-    colors,
   },
 };
 

@@ -89,7 +89,15 @@ Description.displayName = 'Description';
 
 const handleCardMeasures = (cardSize) => cardMeasures[cardSize];
 
-function DescriptionCard({ card, cardSize, theme }) {
+function DescriptionCard({
+  card,
+  cardSize,
+  theme = {
+    colors,
+    spacing,
+    baseFontSize,
+  },
+}) {
   const cardMeasure = handleCardMeasures(cardSize);
 
   return (
@@ -108,14 +116,6 @@ function DescriptionCard({ card, cardSize, theme }) {
     </AdaptedCard>
   );
 }
-
-DescriptionCard.defaultProps = {
-  theme: {
-    colors,
-    spacing,
-    baseFontSize,
-  },
-};
 
 DescriptionCard.propTypes = {
   card: Proptypes.shape({

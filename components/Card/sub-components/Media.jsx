@@ -28,7 +28,15 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const Media = ({ className, style, theme, ...props }) => (
+const Media = ({
+  className = undefined,
+  style = undefined,
+  theme = {
+    colors,
+    spacing,
+  },
+  ...props
+}) => (
   <Wrapper className={className} style={style} theme={theme}>
     <Image {...props} />
   </Wrapper>
@@ -43,15 +51,6 @@ Media.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-Media.defaultProps = {
-  className: undefined,
-  style: undefined,
-  theme: {
-    colors,
-    spacing,
-  },
 };
 
 export default Media;

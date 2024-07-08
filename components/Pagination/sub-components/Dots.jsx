@@ -48,7 +48,13 @@ const Dot = styled.span`
   `}
 `;
 
-const Dots = ({ theme, ...props }) => (
+const Dots = ({
+  theme = {
+    colors,
+    spacing,
+  },
+  ...props
+}) => (
   <Wrapper theme={theme} {...props}>
     <Dot theme={theme} />
   </Wrapper>
@@ -59,13 +65,6 @@ Dots.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-Dots.defaultProps = {
-  theme: {
-    colors,
-    spacing,
-  },
 };
 
 export default Dots;

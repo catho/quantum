@@ -18,11 +18,20 @@ RadialProgressOverlay.displayName = 'RadialProgressOverlay';
 NextStep.displayName = 'NextStep';
 
 const Stepper = ({
-  total,
-  index,
-  currentStepText,
-  nextStepText,
-  i18n,
+  total = 6,
+  index = 1,
+  currentStepText = 'Current step',
+  nextStepText = 'next step',
+  skin = 'primary',
+  theme = {
+    colors,
+    baseFontSize,
+    spacing,
+  },
+  i18n = {
+    paginationPreposition: 'of',
+    nextWord: 'next',
+  },
   ...rest
 }) => {
   const _totalPrepared = handlerValuePrepare(total);
@@ -33,37 +42,27 @@ const Stepper = ({
   const nextWordFormated = `${nextWord}: `;
 
   return (
-    <Wrapper degrees={percentToDegrees(_progressPercent)} {...rest}>
-      <RadialProgressBar className="progress" {...rest}>
-        <RadialProgressOverlay {...rest}>
+    <Wrapper
+      degrees={percentToDegrees(_progressPercent)}
+      skin={skin}
+      theme={theme}
+      {...rest}
+    >
+      <RadialProgressBar className="progress" theme={theme} {...rest}>
+        <RadialProgressOverlay theme={theme} {...rest}>
           {_indexPrepared} {paginationPreposition} {_totalPrepared}
         </RadialProgressOverlay>
       </RadialProgressBar>
-      <TextWrapper {...rest}>
-        <CurrentText {...rest}>{currentStepText}</CurrentText>
-        <NextStep {...rest}>
+      <TextWrapper theme={theme} {...rest}>
+        <CurrentText theme={theme} {...rest}>
+          {currentStepText}
+        </CurrentText>
+        <NextStep theme={theme} {...rest}>
           {!_isLastStep && nextWordFormated} {nextStepText}
         </NextStep>
       </TextWrapper>
     </Wrapper>
   );
-};
-
-Stepper.defaultProps = {
-  total: 6,
-  index: 1,
-  skin: 'primary',
-  currentStepText: 'Current step',
-  nextStepText: 'next step',
-  theme: {
-    colors,
-    baseFontSize,
-    spacing,
-  },
-  i18n: {
-    paginationPreposition: 'of',
-    nextWord: 'next',
-  },
 };
 
 Stepper.propTypes = {

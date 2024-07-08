@@ -42,7 +42,16 @@ const SegmentedWrapper = styled.div`
   }
 `;
 
-const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => (
+const SegmentedControl = ({
+  items,
+  name = 'segmented-control',
+  onChange = () => {},
+  theme = {
+    spacing,
+    colors,
+  },
+  darkMode = false,
+}) => (
   <Row withBreakpoints>
     <Col small={6} medium={5}>
       <SegmentedWrapper theme={theme}>
@@ -56,16 +65,6 @@ const SegmentedControl = ({ items, name, onChange, theme, darkMode }) => (
     </Col>
   </Row>
 );
-
-SegmentedControl.defaultProps = {
-  name: 'segmented-control',
-  onChange: () => {},
-  theme: {
-    spacing,
-    colors,
-  },
-  darkMode: false,
-};
 
 SegmentedControl.propTypes = {
   /** this prop receives a array of object with all the content */

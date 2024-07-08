@@ -2,7 +2,13 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { spacing } from '../../shared/theme';
 
-const Footer = styled.footer`
+const Footer = styled.footer.attrs(({ theme, ...rest }) => ({
+  theme: {
+    spacing,
+    ...theme,
+  },
+  ...rest,
+}))`
   padding: ${({
     theme: {
       spacing: { medium },
@@ -14,12 +20,6 @@ Footer.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
   }),
-};
-
-Footer.defaultProps = {
-  theme: {
-    spacing,
-  },
 };
 
 Footer.displayName = 'Card.Footer';

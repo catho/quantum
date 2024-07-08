@@ -197,8 +197,42 @@ const StyledButton = styled.button`
   }}
 `;
 
-const Button = ({ children, icon, size, $as, theme, ...rest }) => (
-  <StyledButton as={$as} {...rest} size={size} theme={theme}>
+const Button = ({
+  children = undefined,
+  icon = '',
+  size = 'medium',
+  theme = {
+    colors: defaultColors,
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    breakpoints: defaultTheme.breakpoints,
+    components: {
+      button: components.button,
+    },
+  },
+  center = false,
+  disabled = false,
+  stroked = false,
+  full = false,
+  skin = 'primary',
+  type = 'button',
+  $as = undefined,
+  onClick = () => {},
+  ...rest
+}) => (
+  <StyledButton
+    as={$as}
+    size={size}
+    theme={theme}
+    center={center}
+    disabled={disabled}
+    stroked={stroked}
+    full={full}
+    skin={skin}
+    type={type}
+    onClick={onClick}
+    {...rest}
+  >
     {icon && (
       <ButtonIcon
         className={children ? 'with-children' : ''}
@@ -210,29 +244,6 @@ const Button = ({ children, icon, size, $as, theme, ...rest }) => (
     {children}
   </StyledButton>
 );
-
-Button.defaultProps = {
-  center: false,
-  disabled: false,
-  stroked: false,
-  full: false,
-  icon: '',
-  size: 'medium',
-  skin: 'primary',
-  type: 'button',
-  children: undefined,
-  $as: undefined,
-  onClick: () => {},
-  theme: {
-    colors: defaultColors,
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    breakpoints: defaultTheme.breakpoints,
-    components: {
-      button: components.button,
-    },
-  },
-};
 
 Button.propTypes = {
   center: PropTypes.bool,
@@ -271,7 +282,21 @@ Button.propTypes = {
   }),
 };
 
-const IconButton = styled(Button)`
+const IconButton = styled(Button).attrs(({ size, skin, theme, ...rest }) => ({
+  size: size || 'medium',
+  skin: skin || 'neutral',
+  theme: {
+    breakpoints: defaultTheme.breakpoints,
+    gutter: '8px',
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    components: {
+      button: components.button,
+    },
+    ...theme,
+  },
+  ...rest,
+}))`
   ${({ skin, theme }) => {
     const {
       components: {
@@ -337,20 +362,6 @@ IconButton.propTypes = {
       button: PropTypes.object,
     }),
   }),
-};
-
-IconButton.defaultProps = {
-  size: 'medium',
-  skin: 'neutral',
-  theme: {
-    breakpoints: defaultTheme.breakpoints,
-    gutter: '8px',
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    components: {
-      button: components.button,
-    },
-  },
 };
 
 Button.Icon = IconButton;

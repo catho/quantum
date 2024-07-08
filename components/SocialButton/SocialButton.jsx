@@ -27,17 +27,17 @@ const FacebookButton = styled(BaseButton)`
   padding: ${BUTTON_PADDING}px;
 `;
 
-const SocialButton = ({ provider, ...props }) => {
+const SocialButton = ({ provider, onClick = () => {}, ...props }) => {
   switch (provider) {
     case 'facebook':
       return (
-        <FacebookButton {...props}>
+        <FacebookButton onClick={onClick} {...props}>
           <FacebookIcon title="facebook-button" size="24" />
         </FacebookButton>
       );
     case 'google':
       return (
-        <GoogleButton {...props} stroked skin="neutral">
+        <GoogleButton onClick={onClick} {...props} stroked skin="neutral">
           <GoogleIcon title="google-button" size="24" />
         </GoogleButton>
       );
@@ -49,11 +49,6 @@ const SocialButton = ({ provider, ...props }) => {
 SocialButton.propTypes = {
   provider: PropTypes.oneOf(['facebook', 'google']).isRequired,
   onClick: PropTypes.func,
-};
-
-/* istanbul ignore next */
-SocialButton.defaultProps = {
-  onClick: () => {},
 };
 
 export default SocialButton;

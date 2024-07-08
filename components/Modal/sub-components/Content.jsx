@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import Card from '../../Card';
 import { spacing } from '../../shared/theme';
 
-const Content = styled(Card.Content)`
+const Content = styled(Card.Content).attrs(({ theme, ...rest }) => ({
+  theme: { spacing, ...theme },
+  ...rest,
+}))`
   font-size: 16px;
   max-height: 70vh;
   overflow-y: auto;
@@ -18,10 +21,6 @@ Content.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
   }),
-};
-
-Content.defaultProps = {
-  theme: { spacing },
 };
 
 export default Content;

@@ -6,7 +6,14 @@ import {
   baseFontSize as defaultBaseFontSize,
 } from '../../shared/theme';
 
-const Content = styled.div`
+const Content = styled.div.attrs(({ theme, ...rest }) => ({
+  theme: {
+    spacing,
+    baseFontSize: defaultBaseFontSize,
+    ...theme,
+  },
+  ...rest,
+}))`
   margin: 0;
 
   ${({
@@ -25,13 +32,6 @@ Content.propTypes = {
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
   }),
-};
-
-Content.defaultProps = {
-  theme: {
-    spacing,
-    baseFontSize: defaultBaseFontSize,
-  },
 };
 
 Content.displayName = 'Card.Content';

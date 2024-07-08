@@ -23,11 +23,30 @@ const StyledLink = styled.a`
   `}
 `;
 
-const Link = forwardRef(({ children, skin, underline, ...rest }, ref) => (
-  <StyledLink ref={ref} skin={skin} underline={underline} {...rest}>
+const LinkBase = (
+  {
+    children,
+    skin = 'default',
+    underline = true,
+    theme = {
+      colors,
+    },
+    ...rest
+  },
+  ref,
+) => (
+  <StyledLink
+    ref={ref}
+    skin={skin}
+    underline={underline}
+    theme={theme}
+    {...rest}
+  >
     {children}
   </StyledLink>
-));
+);
+
+const Link = forwardRef(LinkBase);
 
 Link.propTypes = {
   theme: PropTypes.shape({
@@ -39,14 +58,6 @@ Link.propTypes = {
   skin: PropTypes.oneOf(['default', 'dark']),
   /** Underline css style */
   underline: PropTypes.bool,
-};
-
-Link.defaultProps = {
-  theme: {
-    colors,
-  },
-  skin: 'default',
-  underline: true,
 };
 
 export default Link;

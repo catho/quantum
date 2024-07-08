@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 
 import { spacing } from '../../shared/theme';
 
-const Header = styled.header`
+const Header = styled.header.attrs(({ theme, ...rest }) => ({
+  theme: {
+    spacing,
+    ...theme,
+  },
+  ...rest,
+}))`
   display: flex;
 
   ${({
@@ -27,12 +33,6 @@ Header.propTypes = {
   theme: PropTypes.shape({
     spacing: PropTypes.object,
   }),
-};
-
-Header.defaultProps = {
-  theme: {
-    spacing,
-  },
 };
 
 Header.displayName = 'Card.Header';

@@ -3,7 +3,14 @@ import styled from 'styled-components';
 
 import { colors, spacing } from '../../shared/theme';
 
-const ActionButton = styled.a`
+const ActionButton = styled.a.attrs(({ theme, ...rest }) => ({
+  theme: {
+    colors,
+    spacing,
+    ...theme,
+  },
+  ...rest,
+}))`
   cursor: pointer;
   font-weight: normal;
   outline: none;
@@ -51,14 +58,6 @@ ActionButton.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-ActionButton.defaultProps = {
-  onClick: () => {},
-  theme: {
-    colors,
-    spacing,
-  },
 };
 
 export default ActionButton;
