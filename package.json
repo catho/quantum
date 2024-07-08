@@ -76,8 +76,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^8.0.0-beta.6",
     "babel-plugin-styled-components": "^1.10.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-modern-regexp": "^0.0.6",
     "commitizen": "^4.2.4",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "2.1.0",
