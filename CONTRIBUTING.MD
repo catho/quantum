@@ -14,7 +14,7 @@ You can contribute in many ways: opening or participating of a issue, reporting 
 
 ## Contribution Prerequisites
 
-- Node v16.17.1;
+- Node v20.15.0;
 
 Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same version based on the .nvmrc file in the repository.
 
