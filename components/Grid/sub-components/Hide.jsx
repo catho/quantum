@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { hideQueries } from './shared/media';
-import theme from '../../shared/theme';
+import defaultTheme from '../../shared/theme';
 
-const Hide = styled.div`
+const Hide = styled.div.attrs(({ theme, ...rest }) => ({
+  theme: {
+    ...defaultTheme,
+    ...theme,
+  },
+  ...rest,
+}))`
   ${({ theme: { breakpoints }, xsmall, small, medium, large }) => {
     let style = '';
 
@@ -17,8 +23,6 @@ const Hide = styled.div`
     return style;
   }}
 `;
-
-Hide.defaultProps = { theme };
 
 Hide.propTypes = {
   large: PropTypes.bool,

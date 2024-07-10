@@ -2,7 +2,11 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { colors } from '../../shared/theme';
 
-const RequiredMark = styled.em`
+const RequiredMark = styled.em.attrs(({ skin, theme, ...rest }) => ({
+  theme: { colors, ...theme },
+  skin: skin || 'default',
+  ...rest,
+}))`
   ${({
     theme: {
       colors: { error },
@@ -18,11 +22,6 @@ RequiredMark.propTypes = {
     colors: PropTypes.object,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-RequiredMark.defaultProps = {
-  theme: { colors },
-  skin: 'default',
 };
 
 export default RequiredMark;

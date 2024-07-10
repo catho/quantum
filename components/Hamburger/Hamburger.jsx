@@ -29,10 +29,10 @@ const IconDot = styled.span`
 `;
 
 const Hamburger = ({
-  showNotification,
-  isOpened,
-  inverted,
-  ariaLabelDescription,
+  inverted = false,
+  showNotification = false,
+  isOpened = false,
+  ariaLabelDescription = 'There are new notifications',
 }) => {
   const Block = (
     <>
@@ -57,13 +57,6 @@ Hamburger.propTypes = {
   /** Swap background and text color */
   inverted: PropTypes.bool,
   ariaLabelDescription: PropTypes.string,
-};
-
-Hamburger.defaultProps = {
-  inverted: false,
-  showNotification: false,
-  isOpened: false,
-  ariaLabelDescription: 'There are new notifications',
 };
 
 export default Hamburger;

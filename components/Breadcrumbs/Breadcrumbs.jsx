@@ -109,7 +109,7 @@ const ExpandButton = styled.button.attrs(() => ({
   `}
 `;
 
-const Breadcrumbs = ({ items, theme }) => {
+const Breadcrumbs = ({ items, theme = defaultTheme }) => {
   if (items.length < 2) {
     // eslint-disable-next-line no-console
     console.error('Breadcrumbs items should be greater or equal than 2.');
@@ -220,10 +220,6 @@ Breadcrumbs.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-};
-
-Breadcrumbs.defaultProps = {
-  theme: defaultTheme,
 };
 
 export default Breadcrumbs;

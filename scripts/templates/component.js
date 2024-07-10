@@ -3,7 +3,7 @@ module.exports = (componentName) => [
     content: `// Generated with scripts/create-component.js
 import PropTypes from 'prop-types';
 
-const ${componentName} = ({ someProp }) => (
+const ${componentName} = ({ someProp = 'some prop' }) => (
   <>
     <h1>Hello, do something here!</h1>
     <p>{someProp}</p>
@@ -12,10 +12,6 @@ const ${componentName} = ({ someProp }) => (
 
 ${componentName}.propTypes = {
   someProp: PropTypes.string,
-}
-
-${componentName}.defaultProps = {
-  someProp: 'some prop',
 }
 
 export default ${componentName};

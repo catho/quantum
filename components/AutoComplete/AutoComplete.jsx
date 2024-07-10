@@ -143,20 +143,23 @@ const PoliteStatus = styled.div`
 `;
 
 const AutoComplete = ({
-  id,
-  name,
-  label,
-  value,
-  error,
-  disabled,
-  helperText,
-  placeholder,
+  id = '',
+  name = '',
+  label = '',
+  value = '',
+  error = '',
+  disabled = false,
+  helperText = '',
+  placeholder = 'Select an option',
   suggestions,
-  theme,
-  onSelectedItem,
-  onChange,
-  required,
-  skin,
+  theme = {
+    spacing,
+    colors,
+  },
+  onSelectedItem = () => {},
+  onChange = () => {},
+  required = false,
+  skin = 'default',
 }) => {
   const [userTypedValue, setUserTypedValue] = useState(value);
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
@@ -410,25 +413,6 @@ AutoComplete.propTypes = {
   helperText: PropTypes.string,
   required: PropTypes.bool,
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-AutoComplete.defaultProps = {
-  theme: {
-    spacing,
-    colors,
-  },
-  id: '',
-  name: '',
-  label: '',
-  value: '',
-  helperText: '',
-  error: '',
-  disabled: false,
-  placeholder: 'Select an option',
-  onChange: () => {},
-  onSelectedItem: () => {},
-  required: false,
-  skin: 'default',
 };
 
 export default AutoComplete;

@@ -21,24 +21,26 @@ const SliderWrapper = styled.div`
     `}
 `;
 
-const RangeSlider = (props) => {
-  const {
-    'aria-labelledby': ariaLabelledby,
-    defaultValue,
-    disabled,
-    marks,
-    max,
-    min,
-    onChange,
-    onChangeCommitted,
-    step,
-    theme,
-    tipFormatter,
-    track,
-    value,
-    valueLabelDisplay,
-  } = props;
-
+const RangeSlider = ({
+  'aria-labelledby': ariaLabelledby = undefined,
+  defaultValue = 30,
+  disabled = false,
+  marks = undefined,
+  max = 100,
+  min = 0,
+  onChange = () => {},
+  onChangeCommitted = () => {},
+  step = 1,
+  theme = {
+    spacing,
+    colors,
+    baseFontSize: defaultBaseFontSize,
+  },
+  tipFormatter = (value) => value.toString(),
+  track = 'normal',
+  value = undefined,
+  valueLabelDisplay = 'auto',
+}) => {
   const {
     colors: { neutral, primary },
     spacing: { xxsmall, xsmall, small },
@@ -165,27 +167,6 @@ const RangeSlider = (props) => {
 };
 
 SliderWrapper.displayName = 'RangeSliderWrapper';
-/* istanbul ignore next */
-RangeSlider.defaultProps = {
-  step: 1,
-  max: 100,
-  min: 0,
-  value: undefined,
-  defaultValue: 30,
-  marks: undefined,
-  disabled: false,
-  onChange: () => {},
-  onChangeCommitted: () => {},
-  tipFormatter: (value) => value.toString(),
-  track: 'normal',
-  'aria-labelledby': undefined,
-  valueLabelDisplay: 'auto',
-  theme: {
-    spacing,
-    colors,
-    baseFontSize: defaultBaseFontSize,
-  },
-};
 
 RangeSlider.propTypes = {
   /** The number that the slider will use as interval of each value */

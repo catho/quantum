@@ -5,7 +5,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const SocialTwitterIcon = ({ size, title, withBox }) => {
+const SocialTwitterIcon = ({ size = '48', title, withBox = true }) => {
   const SVGOriginalSize = 48;
 
   return withBox ? (
@@ -57,11 +57,6 @@ const SocialTwitterIcon = ({ size, title, withBox }) => {
       </g>
     </svg>
   );
-};
-
-SocialTwitterIcon.defaultProps = {
-  size: '48',
-  withBox: true,
 };
 
 SocialTwitterIcon.propTypes = {

@@ -111,12 +111,46 @@ const CloseButton = styled.button`
 
 CloseButton.displayName = 'CloseButton';
 
-const Tag = ({ children, text, onClose, ...rest }) => (
-  <Wrapper {...rest}>
+const Tag = ({
+  children = '',
+  text = 'Tag text',
+  onClose = undefined,
+  bold = false,
+  inverted = false,
+  stroked = false,
+  size = 'medium',
+  skin = 'neutral',
+  theme = {
+    baseFontSize: defaultBaseFontSize,
+    colors,
+    components: {
+      tag: components.tag,
+    },
+    spacing,
+  },
+  ...rest
+}) => (
+  <Wrapper
+    bold={bold}
+    stroked={stroked}
+    size={size}
+    inverted={inverted}
+    skin={skin}
+    theme={theme}
+    {...rest}
+  >
     <Content onClose={onClose}>
       {children || text}
       {onClose && (
-        <CloseButton {...rest} onClick={onClose}>
+        <CloseButton
+          stroked={stroked}
+          size={size}
+          inverted={inverted}
+          skin={skin}
+          theme={theme}
+          {...rest}
+          onClick={onClose}
+        >
           <CloseIcon name="close" />
         </CloseButton>
       )}
@@ -144,25 +178,6 @@ Tag.propTypes = {
     }),
     spacing: PropTypes.object,
   }),
-};
-
-Tag.defaultProps = {
-  bold: false,
-  inverted: false,
-  stroked: false,
-  text: 'Tag text',
-  children: '',
-  size: 'medium',
-  skin: 'neutral',
-  onClose: undefined,
-  theme: {
-    baseFontSize: defaultBaseFontSize,
-    colors,
-    components: {
-      tag: components.tag,
-    },
-    spacing,
-  },
 };
 
 export default Tag;

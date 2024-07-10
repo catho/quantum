@@ -7,17 +7,19 @@ import CarouselCard from './sub-components/CarouselCard';
 
 const MOBILE_BREAKPOINT = breakpoints.medium.width;
 
-const Carousel = (props) => {
-  const {
-    theme,
-    dotsPagination,
-    cards,
-    cardSize,
-    speed,
-    slidesToScroll,
-    arrowColor,
-  } = props;
-
+const Carousel = ({
+  theme = {
+    colors,
+    spacing,
+    baseFontSize,
+  },
+  dotsPagination = true,
+  cards,
+  cardSize = 'medium',
+  speed = 500,
+  slidesToScroll = 1,
+  arrowColor = 'secondary',
+}) => {
   const settings = {
     dots: cardSize !== 'small' ? dotsPagination : false,
     infinite: true,
@@ -58,19 +60,6 @@ const Carousel = (props) => {
       </Slider>
     </SlickSliderWrapper>
   );
-};
-
-Carousel.defaultProps = {
-  dotsPagination: true,
-  speed: 500,
-  slidesToScroll: 1,
-  arrowColor: 'secondary',
-  cardSize: 'medium',
-  theme: {
-    colors,
-    spacing,
-    baseFontSize,
-  },
 };
 
 Carousel.propTypes = {

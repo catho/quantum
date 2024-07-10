@@ -223,14 +223,14 @@ const RadioLabel = styled(Label)`
 `;
 
 const Radio = ({
-  children,
-  label,
-  error,
-  disabled,
-  onChange,
+  disabled = false,
+  error = false,
+  children = undefined,
+  label = undefined,
+  onChange = () => {},
   value,
-  theme,
-  required,
+  theme = { colors, spacing },
+  required = false,
   ...rest
 }) => (
   <RadioLabel error={error} disabled={disabled} theme={theme}>
@@ -261,16 +261,6 @@ Radio.propTypes = {
     spacing: PropTypes.object,
   }),
   required: PropTypes.bool,
-};
-
-Radio.defaultProps = {
-  disabled: false,
-  error: false,
-  children: undefined,
-  label: undefined,
-  onChange: () => {},
-  theme: { colors, spacing },
-  required: false,
 };
 
 export default Radio;

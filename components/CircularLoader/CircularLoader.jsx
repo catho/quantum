@@ -83,17 +83,20 @@ const Wrapper = styled.div`
   `}
 `;
 
-const CircularLoader = (props) => {
+const CircularLoader = ({
+  size = 'medium',
+  skin = 'primary',
+  theme = {
+    colors,
+    gutter: defaultGutter,
+  },
+}) => {
   const {
-    size,
-    skin,
-    theme: {
-      colors: {
-        [skin]: { 700: color },
-      },
-      gutter,
+    colors: {
+      [skin]: { 700: color },
     },
-  } = props;
+    gutter,
+  } = theme;
 
   const { cx, cy, r, strokeWidth } = circleProps;
 
@@ -104,15 +107,6 @@ const CircularLoader = (props) => {
       </Content>
     </Wrapper>
   );
-};
-
-CircularLoader.defaultProps = {
-  size: 'medium',
-  skin: 'primary',
-  theme: {
-    colors,
-    gutter: defaultGutter,
-  },
 };
 
 CircularLoader.propTypes = {

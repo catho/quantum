@@ -26,10 +26,10 @@ const a11yCheckedIndex = (checked) =>
 const SegmentedButton = ({
   label,
   value,
-  checked,
+  checked = undefined,
   name,
-  onChange,
-  icon,
+  onChange = () => {},
+  icon = undefined,
   darkMode,
 }) => {
   const ID = uniqId();
@@ -54,12 +54,6 @@ const SegmentedButton = ({
       {icon ? <Icon name={icon} aria-label={label} /> : label}
     </LabelButton>
   );
-};
-
-SegmentedButton.defaultProps = {
-  checked: undefined,
-  icon: undefined,
-  onChange: () => {},
 };
 
 SegmentedButton.propTypes = {

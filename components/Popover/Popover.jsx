@@ -14,9 +14,11 @@ const TriggerBlock = styled.div`
 `;
 
 const Popover = ({
-  visible,
-  onClose,
-  placement,
+  visible = false,
+  inverted = false,
+  onClose = () => {},
+  skin = 'neutral',
+  placement = 'top',
   trigger,
   children,
   ...rest
@@ -37,6 +39,8 @@ const Popover = ({
         <Content
           placement={placement}
           onPopoverClose={() => handleVisible(false)}
+          inverted={inverted}
+          skin={skin}
           {...rest}
         >
           {children}
@@ -60,15 +64,6 @@ Popover.propTypes = {
   skin: oneOf(['neutral', 'primary', 'success', 'warning', 'error']),
   trigger: PropTypes.node.isRequired,
   onClose: PropTypes.func,
-};
-
-/* istanbul ignore next */
-Popover.defaultProps = {
-  inverted: false,
-  visible: false,
-  skin: 'neutral',
-  placement: 'top',
-  onClose: () => {},
 };
 
 export default Popover;

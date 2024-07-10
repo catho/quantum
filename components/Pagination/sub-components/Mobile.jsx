@@ -70,15 +70,18 @@ const StyledActionButton = styled(ActionButton)`
 Info.displayName = 'Info';
 
 const Mobile = ({
-  activePage,
-  handlePageClick,
-  handleHref,
-  prevButtonText,
-  nextButtonText,
+  activePage = 1,
+  handlePageClick = () => {},
+  handleHref = () => {},
+  prevButtonText = 'Previous',
+  nextButtonText = 'Next',
   totalPages,
-  infoFormatter,
-  theme,
-  followOnlyFirstPage,
+  infoFormatter = (currentPage, lastPage) => `${currentPage} of ${lastPage}`,
+  theme = {
+    colors,
+    spacing,
+  },
+  followOnlyFirstPage = false,
 }) => (
   <>
     <StyledActionButton
@@ -122,20 +125,6 @@ Mobile.propTypes = {
     spacing: PropTypes.object,
   }),
   followOnlyFirstPage: PropTypes.bool,
-};
-
-Mobile.defaultProps = {
-  activePage: 1,
-  nextButtonText: 'Next',
-  prevButtonText: 'Previous',
-  infoFormatter: (activePage, lastPage) => `${activePage} of ${lastPage}`,
-  handleHref: () => {},
-  handlePageClick: () => {},
-  theme: {
-    colors,
-    spacing,
-  },
-  followOnlyFirstPage: false,
 };
 
 export default Mobile;

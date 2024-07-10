@@ -14,17 +14,17 @@ const Group = styled(FieldGroup).attrs({
 `;
 
 const RadioGroup = ({
-  type,
-  size,
-  children,
-  error,
-  inline,
+  type = 'radio',
+  size = 'medium',
+  children = undefined,
+  error = undefined,
+  inline = false,
   name,
-  onChange,
-  options,
-  defaultValue,
-  theme,
-  required,
+  onChange = () => {},
+  options = [],
+  defaultValue = undefined,
+  theme = { colors, spacing },
+  required = false,
   ...rest
 }) => {
   const commonProps = {
@@ -38,7 +38,6 @@ const RadioGroup = ({
 
   const radioOptions = options.map((option) =>
     Object.assign({}, option, {
-      key: option.value,
       defaultChecked: option.value === defaultValue ? true : undefined,
       ...commonProps,
     }),
@@ -52,7 +51,11 @@ const RadioGroup = ({
       }),
     ) ||
     radioOptions.map((props) =>
-      type === 'button' ? <RadioButton {...props} /> : <Radio {...props} />,
+      type === 'button' ? (
+        <RadioButton key={props.value} {...props} />
+      ) : (
+        <Radio key={props.value} {...props} />
+      ),
     );
 
   return (
@@ -91,22 +94,6 @@ RadioGroup.propTypes = {
     spacing: PropTypes.object,
   }),
   required: PropTypes.bool,
-};
-
-/**
- * Group for Radio components.
- */
-RadioGroup.defaultProps = {
-  type: 'radio',
-  size: 'medium',
-  children: undefined,
-  error: undefined,
-  inline: false,
-  onChange: () => {},
-  options: [],
-  defaultValue: undefined,
-  theme: { colors, spacing },
-  required: false,
 };
 
 export default RadioGroup;

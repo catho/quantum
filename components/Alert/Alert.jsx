@@ -84,32 +84,11 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Alert = ({ icon, children, theme, onClose, ...rest }) => {
-  const [show, setShow] = useState(true);
-
-  const handleClose = () => {
-    setShow(false);
-    onClose();
-  };
-
-  return (
-    show && (
-      <Wrapper theme={theme} {...rest} role="alert">
-        <Content>
-          {icon && <AlertIcon name={icon} />}
-          {children && <span>{children}</span>}
-          {onClose && <CloseButton theme={theme} onClick={handleClose} />}
-        </Content>
-      </Wrapper>
-    )
-  );
-};
-
-Alert.defaultProps = {
-  icon: null,
-  skin: 'neutral',
-  onClose: undefined,
-  theme: {
+const Alert = ({
+  icon = null,
+  skin = 'neutral',
+  children,
+  theme = {
     colors,
     baseFontSize: defaultBaseFontSize,
     spacing,
@@ -119,6 +98,27 @@ Alert.defaultProps = {
       button: components.button,
     },
   },
+  onClose = undefined,
+  ...rest
+}) => {
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => {
+    setShow(false);
+    onClose();
+  };
+
+  return (
+    show && (
+      <Wrapper theme={theme} skin={skin} {...rest} role="alert">
+        <Content>
+          {icon && <AlertIcon name={icon} />}
+          {children && <span>{children}</span>}
+          {onClose && <CloseButton theme={theme} onClick={handleClose} />}
+        </Content>
+      </Wrapper>
+    )
+  );
 };
 
 Alert.propTypes = {

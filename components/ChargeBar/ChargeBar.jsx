@@ -84,24 +84,30 @@ const LabelInfo = styled.span`
 ProgressLabel.displayName = 'ProgressLabel';
 LabelInfo.displayName = 'LabelInfo';
 
-const ChargeBar = (props) => {
+const ChargeBar = ({
+  width = '250px',
+  progressPercent = 50,
+  label = 'default informative text',
+  skin = 'primary',
+  theme = {
+    components: {
+      chargeBar: components.chargeBar,
+    },
+    spacing: themeSpacing,
+    baseFontSize: defaultBaseFontSize,
+  },
+}) => {
   const {
-    width,
-    progressPercent,
-    label,
-    skin,
-    theme: {
-      components: {
-        chargeBar: {
-          skins: {
-            [skin]: { background },
-          },
+    components: {
+      chargeBar: {
+        skins: {
+          [skin]: { background },
         },
       },
-      spacing,
-      baseFontSize,
     },
-  } = props;
+    spacing,
+    baseFontSize,
+  } = theme;
 
   return (
     <Wrapper width={width} background={background} baseFontSize={baseFontSize}>
@@ -124,20 +130,6 @@ const ChargeBar = (props) => {
   );
 };
 
-ChargeBar.defaultProps = {
-  width: '250px',
-  progressPercent: 50,
-  skin: 'primary',
-  theme: {
-    components: {
-      chargeBar: components.chargeBar,
-    },
-    spacing: themeSpacing,
-    baseFontSize: defaultBaseFontSize,
-  },
-  label: 'default informative text',
-};
-
 ChargeBar.propTypes = {
   /** This prop sets the color of bar and text.  */
   skin: PropTypes.oneOf(['neutral', 'primary', 'secondary', 'success']),
@@ -153,6 +145,8 @@ ChargeBar.propTypes = {
   /** This prop receives a number of 1 until 100. Its the progress bar in component  */
   progressPercent(props, propName) {
     const percentRange = props[propName];
+    if (!percentRange) return null;
+
     return percentRange >= 0 && percentRange <= 100
       ? null
       : new Error('Must be within range of 0 to 100');

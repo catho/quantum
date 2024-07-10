@@ -14,13 +14,12 @@ const Title = styled.span`
 
 Title.displayName = 'Header';
 
-const Header = ({ children, theme }) => <Title theme={theme}>{children}</Title>;
-
-Header.defaultProps = {
-  theme: {
+const Header = ({
+  children,
+  theme = {
     spacing,
   },
-};
+}) => <Title theme={theme}>{children}</Title>;
 
 Header.propTypes = {
   children: PropTypes.oneOfType([

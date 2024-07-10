@@ -91,7 +91,17 @@ const formatInPercentage = (number) =>
     maximumFractionDigits: 2,
   });
 
-const Score = ({ percentage, round, text, skin, theme }) => {
+const Score = ({
+  percentage = 0,
+  round = true,
+  text = 'compatível',
+  skin = 'primary',
+  theme = {
+    colors,
+    baseFontSize: defaultBaseFontSize,
+    spacing: defaultSpacing,
+  },
+}) => {
   const [compatibilityPercentage, setCompatibilityPercentage] = useState(
     formatInPercentage(0),
   );
@@ -141,18 +151,6 @@ Score.propTypes = {
     baseFontSize: PropTypes.number,
     spacing: PropTypes.object,
   }),
-};
-
-Score.defaultProps = {
-  percentage: 0,
-  text: 'compatível',
-  round: true,
-  skin: 'primary',
-  theme: {
-    colors,
-    baseFontSize: defaultBaseFontSize,
-    spacing: defaultSpacing,
-  },
 };
 
 export default Score;

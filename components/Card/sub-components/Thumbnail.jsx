@@ -22,7 +22,13 @@ const Image = styled.img.attrs({ loading: 'lazy' })`
   `}
 `;
 
-const Thumbnail = ({ ...props }) => <Image {...props} />;
+const Thumbnail = ({
+  rounded = false,
+  theme = {
+    colors,
+  },
+  ...props
+}) => <Image rounded={rounded} theme={theme} {...props} />;
 
 Thumbnail.displayName = 'Card.Thumbnail';
 
@@ -34,13 +40,6 @@ Thumbnail.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.object,
   }),
-};
-
-Thumbnail.defaultProps = {
-  rounded: false,
-  theme: {
-    colors,
-  },
 };
 
 export default Thumbnail;
