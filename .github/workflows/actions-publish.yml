@@ -21,13 +21,13 @@ jobs:
       - name: Install the dependencies
         run: yarn
 
-      - name: run storybook
+      - name: Run storybook
         run: yarn storybook --smoke-test
 
-      - name: run unit tests
+      - name: Run unit tests
         run: yarn test:components
 
-      - name: run the regression tests
+      - name: Run the regression tests
         run: yarn build:regression
 
   publish:
