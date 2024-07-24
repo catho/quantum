@@ -2,85 +2,62 @@
 
 exports[`Popover component should match snapshots 1`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c1 {
@@ -126,7 +103,7 @@ exports[`Popover component should match snapshots 1`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -139,7 +116,7 @@ exports[`Popover component should match snapshots 1`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -150,7 +127,7 @@ exports[`Popover component should match snapshots 1`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -166,12 +143,12 @@ exports[`Popover component should match snapshots 1`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -185,7 +162,7 @@ exports[`Popover component should match snapshots 1`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -199,85 +176,62 @@ exports[`Popover component should match snapshots 1`] = `
 
 exports[`Popover component should match snapshots 2`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c1 {
@@ -323,7 +277,7 @@ exports[`Popover component should match snapshots 2`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -336,7 +290,7 @@ exports[`Popover component should match snapshots 2`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -347,7 +301,7 @@ exports[`Popover component should match snapshots 2`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -363,12 +317,12 @@ exports[`Popover component should match snapshots 2`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -382,7 +336,7 @@ exports[`Popover component should match snapshots 2`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -396,89 +350,62 @@ exports[`Popover component should match snapshots 2`] = `
 
 exports[`Popover component should match snapshots 3`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #3b610f;
-  color: #ffffff;
-  border: 2px solid #3b610f;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,77,64,0.2),0px 4px 5px 0px rgba(0,77,64,0.14),0px 1px 10px 0px rgba(0,77,64,0.12);
-  background-color: #004D40;
-  border-color: #004D40;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(59,97,15,0.2),0px 4px 5px 0px rgba(59,97,15,0.14),0px 1px 10px 0px rgba(59,97,15,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,77,64,0.2),0px 8px 10px 1px rgba(0,77,64,0.14),0px 3px 14px 2px rgba(0,77,64,0.12);
-  background-color: #004D40;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c8 .c5 {
-  margin-right: 0;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(126,211,33,0.5);
-  width: 40px;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(201,237,162,0.4);
-  color: #3b610f;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(201,237,162,0.5);
-  color: #3b610f;
+  width: 40px;
 }
 
 .c1 {
@@ -524,7 +451,7 @@ exports[`Popover component should match snapshots 3`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #004D40;
   display: inherit;
   height: auto;
@@ -537,7 +464,7 @@ exports[`Popover component should match snapshots 3`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #004D40;
@@ -548,7 +475,7 @@ exports[`Popover component should match snapshots 3`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -564,12 +491,12 @@ exports[`Popover component should match snapshots 3`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -583,7 +510,7 @@ exports[`Popover component should match snapshots 3`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -597,93 +524,62 @@ exports[`Popover component should match snapshots 3`] = `
 
 exports[`Popover component should match snapshots 4`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #f09100;
-  color: #ffffff;
-  border: 2px solid #f09100;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(209,73,0,0.2),0px 4px 5px 0px rgba(209,73,0,0.14),0px 1px 10px 0px rgba(209,73,0,0.12);
-  background-color: #d14900;
-  border-color: #d14900;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(209,73,0,0.2),0px 8px 10px 1px rgba(209,73,0,0.14),0px 3px 14px 2px rgba(209,73,0,0.12);
-  background-color: #d14900;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c8 .c5 {
-  margin-right: 0;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c9 .c5 {
-  margin-right: 0;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(255,193,7,0.5);
-  width: 40px;
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(255,218,106,0.4);
-  color: #f09100;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(255,218,106,0.5);
-  color: #f09100;
+  width: 40px;
 }
 
 .c1 {
@@ -729,7 +625,7 @@ exports[`Popover component should match snapshots 4`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -742,7 +638,7 @@ exports[`Popover component should match snapshots 4`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -753,7 +649,7 @@ exports[`Popover component should match snapshots 4`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -769,12 +665,12 @@ exports[`Popover component should match snapshots 4`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -788,7 +684,7 @@ exports[`Popover component should match snapshots 4`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -802,97 +698,62 @@ exports[`Popover component should match snapshots 4`] = `
 
 exports[`Popover component should match snapshots 5`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #e91b0c;
-  color: #ffffff;
-  border: 2px solid #e91b0c;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
-  background-color: #ac001a;
-  border-color: #ac001a;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
-  background-color: #ac001a;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c8 .c5 {
-  margin-right: 0;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c9 .c5 {
-  margin-right: 0;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.c10 .c5 {
-  margin-right: 0;
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(236,88,78,0.5);
-  width: 40px;
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(248,142,134,0.4);
-  color: #e91b0c;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(248,142,134,0.5);
-  color: #e91b0c;
+  width: 40px;
 }
 
 .c1 {
@@ -938,7 +799,7 @@ exports[`Popover component should match snapshots 5`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -951,7 +812,7 @@ exports[`Popover component should match snapshots 5`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -962,7 +823,7 @@ exports[`Popover component should match snapshots 5`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -978,12 +839,12 @@ exports[`Popover component should match snapshots 5`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -997,7 +858,7 @@ exports[`Popover component should match snapshots 5`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -1011,97 +872,62 @@ exports[`Popover component should match snapshots 5`] = `
 
 exports[`Popover component should match snapshots 6`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
-}
-
-.c8 .c5 {
-  margin-right: 0;
-}
-
-.c9 .c5 {
-  margin-right: 0;
-}
-
-.c10 .c5 {
-  margin-right: 0;
+  width: 40px;
 }
 
 .c1 {
@@ -1147,7 +973,7 @@ exports[`Popover component should match snapshots 6`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -1160,7 +986,7 @@ exports[`Popover component should match snapshots 6`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -1171,7 +997,7 @@ exports[`Popover component should match snapshots 6`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -1187,12 +1013,12 @@ exports[`Popover component should match snapshots 6`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -1206,7 +1032,7 @@ exports[`Popover component should match snapshots 6`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -1220,97 +1046,62 @@ exports[`Popover component should match snapshots 6`] = `
 
 exports[`Popover component should match snapshots 7`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
-}
-
-.c8 .c5 {
-  margin-right: 0;
-}
-
-.c9 .c5 {
-  margin-right: 0;
-}
-
-.c10 .c5 {
-  margin-right: 0;
+  width: 40px;
 }
 
 .c1 {
@@ -1353,7 +1144,7 @@ exports[`Popover component should match snapshots 7`] = `
   text-shadow: 4px 1px 4px rgba(66,66,66,0.2);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -1366,7 +1157,7 @@ exports[`Popover component should match snapshots 7`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -1377,7 +1168,7 @@ exports[`Popover component should match snapshots 7`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -1393,12 +1184,12 @@ exports[`Popover component should match snapshots 7`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -1412,7 +1203,7 @@ exports[`Popover component should match snapshots 7`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -1426,97 +1217,62 @@ exports[`Popover component should match snapshots 7`] = `
 
 exports[`Popover component should match snapshots 8`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
-}
-
-.c8 .c5 {
-  margin-right: 0;
-}
-
-.c9 .c5 {
-  margin-right: 0;
-}
-
-.c10 .c5 {
-  margin-right: 0;
+  width: 40px;
 }
 
 .c1 {
@@ -1559,7 +1315,7 @@ exports[`Popover component should match snapshots 8`] = `
   text-shadow: -4px 1px 4px rgba(66,66,66,0.2);
 }
 
-.c4 {
+.c2 {
   color: #424242;
   display: inherit;
   height: auto;
@@ -1572,7 +1328,7 @@ exports[`Popover component should match snapshots 8`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #424242;
@@ -1583,7 +1339,7 @@ exports[`Popover component should match snapshots 8`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -1599,12 +1355,12 @@ exports[`Popover component should match snapshots 8`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -1618,7 +1374,7 @@ exports[`Popover component should match snapshots 8`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"
@@ -1632,97 +1388,62 @@ exports[`Popover component should match snapshots 8`] = `
 
 exports[`Popover component should match snapshots 9`] = `
 <DocumentFragment>
-  .c6 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c6.with-children {
-  margin-right: 8px;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: undefinedpx;
-  line-height: NaNpx;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c2:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2:focus,
-.c2:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c2:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c3 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c3 .c5 {
-  margin-right: 0;
-}
-
-.c3:hover,
-.c3:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c3:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
-}
-
-.c8 .c5 {
-  margin-right: 0;
-}
-
-.c9 .c5 {
-  margin-right: 0;
-}
-
-.c10 .c5 {
-  margin-right: 0;
+  width: 40px;
 }
 
 .c1 {
@@ -1768,7 +1489,7 @@ exports[`Popover component should match snapshots 9`] = `
   transform: translateX(-50%);
 }
 
-.c4 {
+.c2 {
   color: #ffffff;
   display: inherit;
   height: auto;
@@ -1781,7 +1502,7 @@ exports[`Popover component should match snapshots 9`] = `
   width: auto;
 }
 
-.c4:hover {
+.c2:hover {
   background: none;
   opacity: 1;
   color: #ffffff;
@@ -1792,7 +1513,7 @@ exports[`Popover component should match snapshots 9`] = `
   position: relative;
 }
 
-.c7 {
+.c3 {
   cursor: pointer;
 }
 
@@ -1808,12 +1529,12 @@ exports[`Popover component should match snapshots 9`] = `
         This is a hint
       </div>
       <button
-        class="c2 c3 c4"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c2"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 c6 css-1696fkf-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="CloseIcon"
           focusable="false"
@@ -1827,7 +1548,7 @@ exports[`Popover component should match snapshots 9`] = `
       </button>
     </div>
     <div
-      class="c7"
+      class="c3"
     >
       <button
         type="button"

@@ -12,6 +12,50 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   word-break: break-word;
 }
 
+.Button-module__button___AbcpN {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-stroked-primary___YY4WC {
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
 @media (min-width:0px) {
   .Row-module__row___xiasO {
     margin-bottom: var(--qtm-gutter-xsmall);
@@ -60,7 +104,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   }
 }
 
-.c3 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -72,102 +116,16 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #1250C4;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-  border-color: #002F7B;
-}
-
-.c1:focus,
-.c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-}
-
-.c4 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c4:focus,
-.c4:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c4:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-}
-
-.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
-.c2.input-checked {
+.c1.input-checked {
   font-weight: 700;
 }
 
@@ -182,18 +140,18 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   justify-content: space-around;
 }
 
-.c0 label {
+.c0 button {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c0 label:first-child {
+.c0 button:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c0 label:last-child {
+.c0 button:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
@@ -208,55 +166,55 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
     <div
       class="c0"
     >
-      <label
+      <button
         aria-label="Profissional"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-0"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-0"
           name="segmented-control"
           type="radio"
           value="profissional"
         />
         Profissional
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Operacional"
-        class="c4 c2 input-checked"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1 input-checked"
         for="segmented-button-1"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c3"
+          class="c2"
           id="segmented-button-1"
           name="segmented-control"
           type="radio"
           value="operacional"
         />
         Operacional
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Estagiário"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-2"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-2"
           name="segmented-control"
           type="radio"
           value="estagiário"
         />
         Estagiário
-      </label>
+      </button>
     </div>
   </div>
 </div>
@@ -274,6 +232,50 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   word-break: break-word;
 }
 
+.Button-module__button___AbcpN {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-stroked-primary___YY4WC {
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
 @media (min-width:0px) {
   .Row-module__row___xiasO {
     margin-bottom: var(--qtm-gutter-xsmall);
@@ -322,7 +324,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   }
 }
 
-.c3 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -334,102 +336,16 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #1250C4;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-  border-color: #002F7B;
-}
-
-.c1:focus,
-.c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-}
-
-.c4 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c4:focus,
-.c4:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c4:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-}
-
-.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
-.c2.input-checked {
+.c1.input-checked {
   font-weight: 700;
 }
 
@@ -444,18 +360,18 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   justify-content: space-around;
 }
 
-.c0 label {
+.c0 button {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c0 label:first-child {
+.c0 button:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c0 label:last-child {
+.c0 button:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
@@ -470,15 +386,15 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
     <div
       class="c0"
     >
-      <label
+      <button
         aria-label="Profissional"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-3"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-3"
           name="segmented-control"
           type="radio"
@@ -498,17 +414,17 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Operacional"
-        class="c4 c2 input-checked"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1 input-checked"
         for="segmented-button-4"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c3"
+          class="c2"
           id="segmented-button-4"
           name="segmented-control"
           type="radio"
@@ -528,16 +444,16 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Estagiário"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-5"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-5"
           name="segmented-control"
           type="radio"
@@ -557,16 +473,16 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Maquinário"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-6"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-6"
           name="segmented-control"
           type="radio"
@@ -586,16 +502,16 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Favorito"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-7"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-7"
           name="segmented-control"
           type="radio"
@@ -615,7 +531,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
             d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3m-4.4 15.55-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05"
           />
         </svg>
-      </label>
+      </button>
     </div>
   </div>
 </div>
@@ -631,6 +547,50 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   box-sizing: border-box;
   grid-column: span var(--qtm-col-default-size);
   word-break: break-word;
+}
+
+.Button-module__button___AbcpN {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-stroked-primary___YY4WC {
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 @media (min-width:0px) {
@@ -681,7 +641,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   }
 }
 
-.c3 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -693,102 +653,16 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #1250C4;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-  border-color: #002F7B;
-}
-
-.c1:focus,
-.c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-}
-
-.c4 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c4:focus,
-.c4:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c4:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-}
-
-.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
-.c2.input-checked {
+.c1.input-checked {
   font-weight: 700;
 }
 
@@ -803,18 +677,18 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   justify-content: space-around;
 }
 
-.c0 label {
+.c0 button {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c0 label:first-child {
+.c0 button:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c0 label:last-child {
+.c0 button:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
@@ -829,15 +703,15 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
     <div
       class="c0"
     >
-      <label
+      <button
         aria-label="Profissional"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-8"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-8"
           name="segmented-control"
           type="radio"
@@ -857,17 +731,17 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Operacional"
-        class="c4 c2 input-checked"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1 input-checked"
         for="segmented-button-9"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c3"
+          class="c2"
           id="segmented-button-9"
           name="segmented-control"
           type="radio"
@@ -887,16 +761,16 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Estagiário"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-10"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-10"
           name="segmented-control"
           type="radio"
@@ -916,7 +790,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
             d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
-      </label>
+      </button>
     </div>
   </div>
 </div>
@@ -932,6 +806,50 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   box-sizing: border-box;
   grid-column: span var(--qtm-col-default-size);
   word-break: break-word;
+}
+
+.Button-module__button___AbcpN {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-stroked-primary___YY4WC {
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 @media (min-width:0px) {
@@ -982,7 +900,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   }
 }
 
-.c3 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -994,102 +912,16 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #ffffff;
-  color: #1250C4;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c1:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-  border-color: #002F7B;
-}
-
-.c1:focus,
-.c1:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c1:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #E5EDFC;
-}
-
-.c4 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
-}
-
-.c4:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c4:focus,
-.c4:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c4:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-}
-
-.c2 {
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
+  -webkit-letter-spacing: 0.2px;
+  -moz-letter-spacing: 0.2px;
+  -ms-letter-spacing: 0.2px;
+  letter-spacing: 0.2px;
 }
 
-.c2.input-checked {
+.c1.input-checked {
   font-weight: 700;
 }
 
@@ -1104,18 +936,18 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   justify-content: space-around;
 }
 
-.c0 label {
+.c0 button {
   border: 1px solid;
   border-right: 0px;
   border-color: #1250C4;
   padding: 4px 8px;
 }
 
-.c0 label:first-child {
+.c0 button:first-child {
   border-radius: 4px 0px 0px 4px;
 }
 
-.c0 label:last-child {
+.c0 button:last-child {
   border-radius: 0px 4px 4px 0px;
   border: 1px solid #1250C4;
 }
@@ -1130,15 +962,15 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
     <div
       class="c0"
     >
-      <label
+      <button
         aria-label="Profissional"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-11"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-11"
           name="segmented-control"
           type="radio"
@@ -1158,17 +990,17 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Operacional"
-        class="c4 c2 input-checked"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1 input-checked"
         for="segmented-button-12"
         tabindex="-1"
         type="button"
       >
         <input
           checked=""
-          class="c3"
+          class="c2"
           id="segmented-button-12"
           name="segmented-control"
           type="radio"
@@ -1188,16 +1020,16 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
             d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12m8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8"
           />
         </svg>
-      </label>
-      <label
+      </button>
+      <button
         aria-label="Estagiário"
-        class="c1 c2"
+        class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-primary___YY4WC Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c1"
         for="segmented-button-13"
         tabindex="0"
         type="button"
       >
         <input
-          class="c3"
+          class="c2"
           id="segmented-button-13"
           name="segmented-control"
           type="radio"
@@ -1217,7 +1049,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
             d="M9 11H7v2h2zm4 0h-2v2h2zm4 0h-2v2h2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 16H5V9h14z"
           />
         </svg>
-      </label>
+      </button>
     </div>
   </div>
 </div>

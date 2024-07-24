@@ -1,85 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert component Should match a skin snapshot 1`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -99,7 +76,7 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -108,7 +85,7 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
@@ -123,50 +100,50 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
 
-.c10 .c1 > .c5 {
+.c5 .c1 > .c3 {
   color: #1250C4;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 .c4 {
+.c5 .c1 > .c3 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
 
-.c11 .c1 > .c5 {
+.c6 .c1 > .c3 {
   color: #004D40;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c11 .c1 > .c5 .c4 {
+.c6 .c1 > .c3 .c3 {
   color: #004D40;
   margin-left: 0;
 }
 
-.c12 .c1 > .c5 {
+.c7 .c1 > .c3 {
   color: #f09100;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c12 .c1 > .c5 .c4 {
+.c7 .c1 > .c3 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -182,12 +159,12 @@ exports[`Alert component Should match a skin snapshot 1`] = `
       neutral
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -204,85 +181,62 @@ exports[`Alert component Should match a skin snapshot 1`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 2`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -302,7 +256,7 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -311,19 +265,19 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 {
+.c5 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 .c4 {
+.c5 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
@@ -338,38 +292,38 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #1250C4;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
 
-.c11 .c1 > .c5 {
+.c6 .c1 > .c3 {
   color: #004D40;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c11 .c1 > .c5 .c4 {
+.c6 .c1 > .c3 .c3 {
   color: #004D40;
   margin-left: 0;
 }
 
-.c12 .c1 > .c5 {
+.c7 .c1 > .c3 {
   color: #f09100;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c12 .c1 > .c5 .c4 {
+.c7 .c1 > .c3 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -385,12 +339,12 @@ exports[`Alert component Should match a skin snapshot 2`] = `
       blue
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -407,85 +361,62 @@ exports[`Alert component Should match a skin snapshot 2`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 3`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -505,7 +436,7 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -514,31 +445,31 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 {
+.c5 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 .c4 {
+.c5 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
 
-.c11 .c1 > .c5 {
+.c6 .c1 > .c3 {
   color: #1250C4;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c11 .c1 > .c5 .c4 {
+.c6 .c1 > .c3 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
@@ -553,26 +484,26 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #004D40;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #004D40;
   margin-left: 0;
 }
 
-.c12 .c1 > .c5 {
+.c7 .c1 > .c3 {
   color: #f09100;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c12 .c1 > .c5 .c4 {
+.c7 .c1 > .c3 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -588,12 +519,12 @@ exports[`Alert component Should match a skin snapshot 3`] = `
       success
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -610,85 +541,62 @@ exports[`Alert component Should match a skin snapshot 3`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 4`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -708,7 +616,7 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -717,43 +625,43 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 {
+.c5 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 .c4 {
+.c5 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
 
-.c11 .c1 > .c5 {
+.c6 .c1 > .c3 {
   color: #1250C4;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c11 .c1 > .c5 .c4 {
+.c6 .c1 > .c3 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
 
-.c12 .c1 > .c5 {
+.c7 .c1 > .c3 {
   color: #004D40;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c12 .c1 > .c5 .c4 {
+.c7 .c1 > .c3 .c3 {
   color: #004D40;
   margin-left: 0;
 }
@@ -768,14 +676,14 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #f09100;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -791,12 +699,12 @@ exports[`Alert component Should match a skin snapshot 4`] = `
       warning
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -813,85 +721,62 @@ exports[`Alert component Should match a skin snapshot 4`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 5`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -911,7 +796,7 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -920,7 +805,7 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
@@ -935,50 +820,50 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
 
-.c10 .c1 > .c5 {
+.c5 .c1 > .c3 {
   color: #1250C4;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c10 .c1 > .c5 .c4 {
+.c5 .c1 > .c3 .c3 {
   color: #1250C4;
   margin-left: 0;
 }
 
-.c11 .c1 > .c5 {
+.c6 .c1 > .c3 {
   color: #004D40;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c11 .c1 > .c5 .c4 {
+.c6 .c1 > .c3 .c3 {
   color: #004D40;
   margin-left: 0;
 }
 
-.c12 .c1 > .c5 {
+.c7 .c1 > .c3 {
   color: #f09100;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c12 .c1 > .c5 .c4 {
+.c7 .c1 > .c3 .c3 {
   color: #f09100;
   margin-left: 0;
 }
@@ -994,12 +879,12 @@ exports[`Alert component Should match a skin snapshot 5`] = `
       error
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -1016,85 +901,62 @@ exports[`Alert component Should match a skin snapshot 5`] = `
 `;
 
 exports[`Alert component Should match the snapshot of a simple alert 1`] = `
-.c9 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c9.with-children {
-  margin-right: 8px;
-}
-
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c3:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3:focus,
-.c3:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c3:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c6 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c6 .c8 {
-  margin-right: 0;
-}
-
-.c6:hover,
-.c6:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c6:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -1114,7 +976,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   flex: 1;
 }
 
-.c7 {
+.c4 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -1123,7 +985,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   width: auto;
 }
 
-.c7:hover {
+.c4:hover {
   background: none;
   opacity: 1;
 }
@@ -1138,14 +1000,14 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   padding: 12px 16px;
 }
 
-.c0 .c1 > .c5 {
+.c0 .c1 > .c3 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c4 {
+.c0 .c1 > .c3 .c3 {
   color: #424242;
   margin-left: 0;
 }
@@ -1161,12 +1023,12 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
       Sample alert
     </span>
     <button
-      class="c3 c4 c5 c6 c7"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c8 c9 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -1183,85 +1045,62 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 `;
 
 exports[`Alert component Should match the snapshot with an icon 1`] = `
-.c11 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c11.with-children {
-  margin-right: 8px;
-}
-
-.c5 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c5:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c5:focus,
-.c5:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c5:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
 }
 
-.c8 {
-  border-radius: 50%;
-  border: none;
-  color: rgba(153,153,153,0.5);
-  width: 40px;
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+.Button-module__icon-button___gjVoG {
   background-color: transparent;
+  border: none;
+  border-radius: 50%;
   box-shadow: none;
+  color: hsla(0,0%,60%,.5);
   outline: none;
-}
-
-.c8 .c10 {
-  margin-right: 0;
-}
-
-.c8:hover,
-.c8:focus {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.4);
-  color: #424242;
-}
-
-.c8:active {
-  box-shadow: none;
-  background-color: rgba(224,224,224,0.5);
-  color: #424242;
+  width: 40px;
 }
 
 .c2 {
@@ -1285,7 +1124,7 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   width: 24px;
 }
 
-.c9 {
+.c6 {
   height: auto;
   opacity: 0.8;
   padding: 0;
@@ -1294,7 +1133,7 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   width: auto;
 }
 
-.c9:hover {
+.c6:hover {
   background: none;
   opacity: 1;
 }
@@ -1314,14 +1153,14 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   margin-right: 16px;
 }
 
-.c0 .c1 > .c7 {
+.c0 .c1 > .c5 {
   color: #424242;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
 }
 
-.c0 .c1 > .c7 .c6 {
+.c0 .c1 > .c5 .c5 {
   color: #424242;
   margin-left: 0;
 }
@@ -1350,12 +1189,12 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
       Sample alert
     </span>
     <button
-      class="c5 c6 c7 c8 c9"
+      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c5 c6"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c10 c11 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"

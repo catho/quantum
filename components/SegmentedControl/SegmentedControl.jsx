@@ -8,7 +8,7 @@ const SegmentedWrapper = styled.div`
   display: flex;
   justify-content: space-around;
 
-  label {
+  button {
     border: 1px solid;
     border-right: 0px;
     ${({

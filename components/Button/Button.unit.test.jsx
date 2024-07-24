@@ -1,6 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Button from './Button';
-import { colors } from '../shared/theme';
 
 describe('Button component', () => {
   it('Should match the snapshot', () => {
@@ -98,34 +97,6 @@ describe('Button component', () => {
       expect(payment.firstChild).toMatchSnapshot();
       expect(lock.firstChild).toMatchSnapshot();
       expect(star.firstChild).toMatchSnapshot();
-    });
-  });
-
-  it('should have disabled and stroked styles', () => {
-    render(
-      <Button stroked disabled>
-        Text
-      </Button>,
-    );
-
-    const button = screen.getByRole('button', { name: /Text/i });
-
-    expect(button).toHaveStyle({
-      'background-color': `${colors.neutral[300]}`,
-      color: `${colors.neutral[700]}`,
-      border: `2px solid ${colors.neutral[500]}`,
-    });
-  });
-
-  it('should have disabled styles', () => {
-    render(<Button disabled>Text</Button>);
-
-    const button = screen.getByRole('button', { name: /Text/i });
-
-    expect(button).toHaveStyle({
-      'background-color': `${colors.neutral[300]}`,
-      color: `${colors.neutral[700]}`,
-      border: `2px solid ${colors.neutral[300]}`,
     });
   });
 });

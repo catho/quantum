@@ -1,53 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Should match the snapshot 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   Text
@@ -55,67 +48,61 @@ exports[`Button component Should match the snapshot 1`] = `
 `;
 
 exports[`Button component should render a button only icon state  1`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="InfoIcon"
     focusable="false"
@@ -130,67 +117,61 @@ exports[`Button component should render a button only icon state  1`] = `
 `;
 
 exports[`Button component should render a button only icon state  2`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 12px;
-  line-height: 16px;
-  min-height: 24px;
-  padding: 0px 8px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-xsmall___4UqNE {
+  line-height: var(--qtm-base-font-size);
+  min-height: var(--qtm-spacing-large);
+  padding: 0 var(--qtm-spacing-xsmall);
+}
+
+.Button-module__button-small___HWutw,
+.Button-module__button-xsmall___4UqNE {
+  font-size: var(--qtm-font-size-12);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-xsmall___4UqNE Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-xsmall___prEKP css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="InfoIcon"
     focusable="false"
@@ -205,67 +186,65 @@ exports[`Button component should render a button only icon state  2`] = `
 `;
 
 exports[`Button component should render a button only icon state  3`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 12px;
-  line-height: 18px;
-  min-height: 32px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-small___HWutw,
+.Button-module__button-xsmall___4UqNE {
+  font-size: var(--qtm-font-size-12);
+}
+
+.Button-module__button-small___HWutw {
+  line-height: calc(var(--qtm-base-font-size)*.75*1.5);
+  min-height: var(--qtm-spacing-xlarge);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-small___HWutw Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-small___m8db9 css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="InfoIcon"
     focusable="false"
@@ -280,67 +259,55 @@ exports[`Button component should render a button only icon state  3`] = `
 `;
 
 exports[`Button component should render a button only icon state  4`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 28px;
-  min-height: 48px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-large___U5QhC {
+  font-size: var(--qtm-font-size-20);
+  line-height: calc(var(--qtm-base-font-size)*1.75);
+  min-height: var(--qtm-spacing-xxxlarge);
+}
+
+.Button-module__button-large___U5QhC,
+.Button-module__button-xlarge___5YRMz {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-large___U5QhC Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="InfoIcon"
     focusable="false"
@@ -355,67 +322,55 @@ exports[`Button component should render a button only icon state  4`] = `
 `;
 
 exports[`Button component should render a button only icon state  5`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 24px;
-  line-height: 32px;
-  min-height: 56px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-large___U5QhC,
+.Button-module__button-xlarge___5YRMz {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-xlarge___5YRMz {
+  font-size: var(--qtm-font-size-24);
+  line-height: calc(var(--qtm-base-font-size)*2);
+  min-height: calc(var(--qtm-spacing-xxxlarge) + var(--qtm-spacing-xsmall));
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-xlarge___5YRMz Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="InfoIcon"
     focusable="false"
@@ -430,55 +385,51 @@ exports[`Button component should render a button only icon state  5`] = `
 `;
 
 exports[`Button component when center prop is set 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__button-center___cQBiO {
   margin-left: auto;
   margin-right: auto;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-center___cQBiO Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   Text
@@ -486,54 +437,50 @@ exports[`Button component when center prop is set 1`] = `
 `;
 
 exports[`Button component when full prop is set 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__button-full___cUDBp {
   width: 100%;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
-}
-
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
-}
-
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__button-full___cUDBp Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   Text
@@ -541,53 +488,46 @@ exports[`Button component when full prop is set 1`] = `
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #424242;
-  color: #ffffff;
-  border: 2px solid #424242;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(25,25,25,0.2),0px 4px 5px 0px rgba(25,25,25,0.14),0px 1px 10px 0px rgba(25,25,25,0.12);
-  background-color: #191919;
-  border-color: #191919;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(66,66,66,0.2),0px 4px 5px 0px rgba(66,66,66,0.14),0px 1px 10px 0px rgba(66,66,66,0.12);
+.Button-module__button-default-neutral___Tymxh {
+  background-color: var(--qtm-colors-neutral-700);
+  border: 2px solid var(--qtm-colors-neutral-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(25,25,25,0.2),0px 8px 10px 1px rgba(25,25,25,0.14),0px 3px 14px 2px rgba(25,25,25,0.12);
-  background-color: #191919;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-neutral___Tymxh Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-neutral-900___RMGup Button-module__shadow-4-neutral-700___qtCCL Button-module__shadow-8-neutral-900___ocRS3"
   type="button"
 >
   neutral
@@ -595,53 +535,46 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 2`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   primary
@@ -649,53 +582,46 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 3`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #3b610f;
-  color: #ffffff;
-  border: 2px solid #3b610f;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,77,64,0.2),0px 4px 5px 0px rgba(0,77,64,0.14),0px 1px 10px 0px rgba(0,77,64,0.12);
-  background-color: #004D40;
-  border-color: #004D40;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(59,97,15,0.2),0px 4px 5px 0px rgba(59,97,15,0.14),0px 1px 10px 0px rgba(59,97,15,0.12);
+.Button-module__button-default-success___vT9vw {
+  background-color: var(--qtm-colors-success-700);
+  border: 2px solid var(--qtm-colors-success-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,77,64,0.2),0px 8px 10px 1px rgba(0,77,64,0.14),0px 3px 14px 2px rgba(0,77,64,0.12);
-  background-color: #004D40;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-success___vT9vw Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-success-900___cbr4C Button-module__shadow-4-success-700___T6Jye Button-module__shadow-8-success-900___3NjRb"
   type="button"
 >
   success
@@ -703,53 +629,46 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 4`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #f09100;
-  color: #ffffff;
-  border: 2px solid #f09100;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(209,73,0,0.2),0px 4px 5px 0px rgba(209,73,0,0.14),0px 1px 10px 0px rgba(209,73,0,0.12);
-  background-color: #d14900;
-  border-color: #d14900;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(240,145,0,0.2),0px 4px 5px 0px rgba(240,145,0,0.14),0px 1px 10px 0px rgba(240,145,0,0.12);
+.Button-module__button-default-warning___yGKND {
+  background-color: var(--qtm-colors-warning-700);
+  border: 2px solid var(--qtm-colors-warning-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(209,73,0,0.2),0px 8px 10px 1px rgba(209,73,0,0.14),0px 3px 14px 2px rgba(209,73,0,0.12);
-  background-color: #d14900;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-warning___yGKND Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-warning-900___FHXer Button-module__shadow-4-warning-700___-Vppg Button-module__shadow-8-warning-900___UCpvI"
   type="button"
 >
   warning
@@ -757,53 +676,46 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a skin set should match secondary snapshot 5`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #e91b0c;
-  color: #ffffff;
-  border: 2px solid #e91b0c;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(172,0,26,0.2),0px 4px 5px 0px rgba(172,0,26,0.14),0px 1px 10px 0px rgba(172,0,26,0.12);
-  background-color: #ac001a;
-  border-color: #ac001a;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(233,27,12,0.2),0px 4px 5px 0px rgba(233,27,12,0.14),0px 1px 10px 0px rgba(233,27,12,0.12);
+.Button-module__button-default-error___XtXR- {
+  background-color: var(--qtm-colors-error-700);
+  border: 2px solid var(--qtm-colors-error-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(172,0,26,0.2),0px 8px 10px 1px rgba(172,0,26,0.14),0px 3px 14px 2px rgba(172,0,26,0.12);
-  background-color: #ac001a;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-error___XtXR- Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-error-900___aw0O- Button-module__shadow-4-error-700___0k-yJ Button-module__shadow-8-error-900___Kkp5M"
   type="button"
 >
   error
@@ -811,53 +723,46 @@ exports[`Button component when there is a skin set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   button
@@ -865,53 +770,46 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 2`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="reset"
 >
   reset
@@ -919,53 +817,46 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component when there is a type set should match secondary snapshot 3`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="submit"
 >
   submit
@@ -973,67 +864,65 @@ exports[`Button component when there is a type set should match secondary snapsh
 `;
 
 exports[`Button component with an icon should match secondary snapshot 1`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-with-children___-Gopd {
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 with-children css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-with-children___-Gopd Button-module__button-icon-medium___ppo2m css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="SearchIcon"
     focusable="false"
@@ -1049,67 +938,65 @@ exports[`Button component with an icon should match secondary snapshot 1`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 2`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-with-children___-Gopd {
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 with-children css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-with-children___-Gopd Button-module__button-icon-medium___ppo2m css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="PaymentIcon"
     focusable="false"
@@ -1125,67 +1012,65 @@ exports[`Button component with an icon should match secondary snapshot 2`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 3`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-with-children___-Gopd {
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 with-children css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-with-children___-Gopd Button-module__button-icon-medium___ppo2m css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="LockIcon"
     focusable="false"
@@ -1201,67 +1086,65 @@ exports[`Button component with an icon should match secondary snapshot 3`] = `
 `;
 
 exports[`Button component with an icon should match secondary snapshot 4`] = `
-.c1 {
-  pointer-events: none;
-  width: 24px;
-}
-
-.c1.with-children {
-  margin-right: 8px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Button-module__button___AbcpN {
   align-items: center;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: bold;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   border-radius: 4px;
+  box-sizing: border-box;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  min-height: 40px;
-  padding: 4px 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: #1250C4;
-  color: #ffffff;
-  border: 2px solid #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(153,153,153,0.2),0px 2px 2px 0px rgba(153,153,153,0.14),0px 1px 5px 0px rgba(153,153,153,0.12);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
 }
 
-.c0:hover {
-  box-shadow: 0px 2px 4px -1px rgba(0,47,123,0.2),0px 4px 5px 0px rgba(0,47,123,0.14),0px 1px 10px 0px rgba(0,47,123,0.12);
-  background-color: #002F7B;
-  border-color: #002F7B;
+.Button-module__button-default___miWV3 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c0:focus,
-.c0:focus-within {
-  box-shadow: 0px 2px 4px -1px rgba(18,80,196,0.2),0px 4px 5px 0px rgba(18,80,196,0.14),0px 1px 10px 0px rgba(18,80,196,0.12);
+.Button-module__button-default-primary___bURr2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.c0:active {
-  box-shadow: 0px 5px 5px -3px rgba(0,47,123,0.2),0px 8px 10px 1px rgba(0,47,123,0.14),0px 3px 14px 2px rgba(0,47,123,0.12);
-  background-color: #002F7B;
+.Button-module__button-icon___c2VCp {
+  pointer-events: none;
+}
+
+.Button-module__button-icon-with-children___-Gopd {
+  margin-right: var(--qtm-spacing-xsmall);
+}
+
+.Button-module__button-icon-medium___ppo2m,
+.Button-module__button-icon-small___m8db9,
+.Button-module__button-icon-xsmall___prEKP {
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Button-module__button-medium___qo6Ym,
+.Button-module__button-small___HWutw {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.Button-module__button-medium___qo6Ym {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.Button-module__shadow-2-neutral-500___hxqSk {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
 <button
-  class="c0"
+  class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 with-children css-1696fkf-MuiSvgIcon-root"
+    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-with-children___-Gopd Button-module__button-icon-medium___ppo2m css-i4bv87-MuiSvgIcon-root"
     data-qtm-preloader="icon"
     data-testid="StarIcon"
     focusable="false"

@@ -5,10 +5,11 @@ import Icon from '../Icon';
 import HiddenInput from '../shared/HiddenInput';
 import { createUniqId } from '../shared/uniqId';
 
-const LabelButton = styled(Button).attrs({ forwardedAs: 'label' })`
+const LabelButton = styled(Button)`
   width: 100%;
   border-radius: 0px;
   font-weight: 400;
+  letter-spacing: 0.2px;
 
   &.input-checked {
     font-weight: 700;
