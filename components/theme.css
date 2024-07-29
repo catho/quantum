@@ -76,6 +76,9 @@
     --qtm-colors-neutral-1000: #000000;
 
     --qtm-base-font-size: 16px;
+    --qtm-font-size-12: calc(var(--qtm-base-font-size) * 0.75);
+    --qtm-font-size-20: calc(var(--qtm-base-font-size) * 1.25);
+    --qtm-font-size-24: calc(var(--qtm-base-font-size) * 1.5);
 
     --qtm-shadow-umbra-opacity: 0.2;
     --qtm-shadow-penumbra-opacity: 0.14;

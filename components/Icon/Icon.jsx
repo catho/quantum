@@ -33,6 +33,7 @@ import Clear from '@mui/icons-material/Clear';
 import Close from '@mui/icons-material/Close';
 import Collections from '@mui/icons-material/Collections';
 import ContactPhone from '@mui/icons-material/ContactPhone';
+import ContactSupport from '@mui/icons-material/ContactSupport';
 import Contacts from '@mui/icons-material/Contacts';
 import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
@@ -70,6 +71,7 @@ import LockOutlined from '@mui/icons-material/LockOutlined';
 import Markunread from '@mui/icons-material/Markunread';
 import Menu from '@mui/icons-material/Menu';
 import MenuBook from '@mui/icons-material/MenuBook';
+import MoreVert from '@mui/icons-material/MoreVert';
 import Notifications from '@mui/icons-material/Notifications';
 import PauseCircleOutline from '@mui/icons-material/PauseCircleOutline';
 import Payment from '@mui/icons-material/Payment';
@@ -157,6 +159,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     collections: Collections,
     contacts: Contacts,
     contact_phone: ContactPhone,
+    contact_support: ContactSupport,
     contrast: Contrast,
     credit_card: CreditCard,
     date_range: DateRange,
@@ -193,6 +196,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     markunread: Markunread,
     menu_book: MenuBook,
     menu: Menu,
+    more_vert: MoreVert,
     notification: Notifications,
     payment: Payment,
     pause_circle_outline: PauseCircleOutline,

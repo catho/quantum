@@ -72,11 +72,11 @@ const Wrapper = styled.div`
 
     ${Content} > ${CloseButton} {
       color: ${icon};
-      margin: 0 0 0 ${medium}px;
+      margin: 0 0 0 ${medium}px !important;
       min-height: 0;
       opacity: 1;
 
-      ${Button.Icon} {
+      ${CloseButton} {
         color: ${icon};
         margin-left: 0;
       }
