@@ -125,9 +125,15 @@ const SkinIcon = styled(Icon)`
   `}
 `;
 
-const CloseButton = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
+const propsNotContainedInButton = ['inverted'];
+
+const CloseButton = styled(Button.Icon)
+  .attrs({
+    icon: 'close',
+  })
+  .withConfig({
+    shouldForwardProp: (prop) => !propsNotContainedInButton.includes(prop),
+  })`
   ${({ skin, theme, inverted }) => {
     const { text } = getBackgroundAndTextColorBySkin({ skin, theme, inverted });
 
@@ -150,7 +156,9 @@ const CloseButton = styled(Button.Icon).attrs({
   }}
 `;
 
-const ActionButton = styled(Button)`
+const ActionButton = styled(Button).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInButton.includes(prop),
+})`
   ${({ theme, skin, inverted }) => {
     const { text: color } = getBackgroundAndTextColorBySkin({
       skin,
