@@ -1,28 +1,14 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Button from '../Button';
+import classNames from 'classnames';
 import Icon from '../Icon';
 import HiddenInput from '../shared/HiddenInput';
+import buttonBaseStyles from '../shared/styles/ButtonBase.module.css';
+import styles from './SegmentedButton.module.css';
 import { createUniqId } from '../shared/uniqId';
 
-const LabelButton = styled(Button)`
-  width: 100%;
-  border-radius: 0px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-
-  &.input-checked {
-    font-weight: 700;
-  }
-`;
-
-LabelButton.displayName = 'LabelButton';
 HiddenInput.displayName = 'HiddenInput';
 
 const uniqId = createUniqId('segmented-button-');
-
-const a11yCheckedIndex = (checked) =>
-  checked ? { tabIndex: -1, className: 'input-checked' } : { tabIndex: 0 };
 
 const SegmentedButton = ({
   label,
@@ -32,17 +18,34 @@ const SegmentedButton = ({
   onChange,
   icon,
   darkMode,
+  className,
+  ...rest
 }) => {
   const ID = uniqId();
+  const stroked = darkMode ? checked : !checked;
 
-  const handleStroke = () => (darkMode ? checked : !checked);
+  const labelClass = classNames(
+    buttonBaseStyles.button,
+    buttonBaseStyles['button-medium'],
+    { [buttonBaseStyles['button-default']]: !stroked },
+    { [buttonBaseStyles['button-default-primary']]: !stroked },
+    { [buttonBaseStyles['button-stroked-primary']]: stroked },
+    buttonBaseStyles['shadow-2-neutral-500'],
+    buttonBaseStyles['shadow-4-primary-900'],
+    buttonBaseStyles['shadow-4-primary-700'],
+    buttonBaseStyles['shadow-8-primary-900'],
+    styles.label,
+    { [styles['label-checked']]: checked },
+    className,
+  );
 
   return (
-    <LabelButton
+    <label
       aria-label={label}
-      stroked={handleStroke()}
+      className={labelClass}
       htmlFor={ID}
-      {...a11yCheckedIndex(checked)}
+      tabIndex={checked ? -1 : 0}
+      {...rest}
     >
       <HiddenInput
         id={ID}
@@ -53,7 +56,7 @@ const SegmentedButton = ({
         onChange={(e) => onChange(e, { value, label })}
       />
       {icon ? <Icon name={icon} aria-label={label} /> : label}
-    </LabelButton>
+    </label>
   );
 };
 

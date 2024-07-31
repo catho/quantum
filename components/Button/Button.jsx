@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Icon from '../Icon/Icon';
-import styles from './Button.module.css';
+import buttonBaseStyles from '../shared/styles/ButtonBase.module.css';
 
 const Button = ({
   children,
@@ -22,26 +22,26 @@ const Button = ({
   const isStrokedType = stroked && !disabled;
 
   const defaultButtonStyle = classNames(
-    styles.button,
-    styles[`button-${size}`],
-    { [styles['button-disable']]: disabled },
-    { [styles['button-center']]: center },
-    { [styles['button-default']]: isDefaultType },
-    { [styles[`button-default-${skin}`]]: isDefaultType },
-    { [styles['button-disable-stroked']]: disabled && stroked },
-    { [styles[`button-stroked-${skin}`]]: isStrokedType },
-    { [styles['button-full']]: full },
-    styles['shadow-2-neutral-500'],
-    { [styles[`shadow-4-${skin}-900`]]: !disabled },
-    { [styles[`shadow-4-${skin}-700`]]: !disabled },
-    { [styles[`shadow-8-${skin}-900`]]: !disabled },
+    buttonBaseStyles.button,
+    buttonBaseStyles[`button-${size}`],
+    { [buttonBaseStyles['button-disable']]: disabled },
+    { [buttonBaseStyles['button-center']]: center },
+    { [buttonBaseStyles['button-default']]: isDefaultType },
+    { [buttonBaseStyles[`button-default-${skin}`]]: isDefaultType },
+    { [buttonBaseStyles['button-disable-stroked']]: disabled && stroked },
+    { [buttonBaseStyles[`button-stroked-${skin}`]]: isStrokedType },
+    { [buttonBaseStyles['button-full']]: full },
+    buttonBaseStyles['shadow-2-neutral-500'],
+    { [buttonBaseStyles[`shadow-4-${skin}-900`]]: !disabled },
+    { [buttonBaseStyles[`shadow-4-${skin}-700`]]: !disabled },
+    { [buttonBaseStyles[`shadow-8-${skin}-900`]]: !disabled },
     className,
   );
 
   const iconStyle = classNames(
-    styles['button-icon'],
-    { [styles['button-icon-with-children']]: children },
-    styles[`button-icon-${size}`],
+    buttonBaseStyles['button-icon'],
+    { [buttonBaseStyles['button-icon-with-children']]: children },
+    buttonBaseStyles[`button-icon-${size}`],
   );
 
   return (
@@ -97,7 +97,10 @@ Button.propTypes = {
 };
 
 const IconButton = ({ className = '', skin, ...props }) => {
-  const classIconButton = classNames(styles['icon-button'], className);
+  const classIconButton = classNames(
+    buttonBaseStyles['icon-button'],
+    className,
+  );
   return <Button className={classIconButton} {...props} />;
 };
 
