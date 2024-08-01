@@ -2,7 +2,7 @@
 
 exports[`SocialButton component Should match the snapshot 1`] = `
 <DocumentFragment>
-  .Button-module__button___AbcpN {
+  .ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -13,24 +13,24 @@ exports[`SocialButton component Should match the snapshot 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-stroked-neutral___U5syT {
+.ButtonBase-module__button-stroked-neutral___S8irH {
   background-color: var(--qtm-colors-neutral-0);
   border: 2px solid var(--qtm-colors-neutral-700);
   color: var(--qtm-colors-neutral-700);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
@@ -55,7 +55,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
 }
 
 <button
-    class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-stroked-neutral___U5syT Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-neutral-900___RMGup Button-module__shadow-4-neutral-700___qtCCL Button-module__shadow-8-neutral-900___ocRS3 c0 c1"
+    class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-stroked-neutral___S8irH ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-neutral-900___385cv ButtonBase-module__shadow-4-neutral-700___0bwKP ButtonBase-module__shadow-8-neutral-900___-1Nrz c0 c1"
     type="button"
   >
     <svg
@@ -122,7 +122,7 @@ exports[`SocialButton component Should match the snapshot 1`] = `
 
 exports[`SocialButton component when provider prop is set to facebook 1`] = `
 <DocumentFragment>
-  .Button-module__button___AbcpN {
+  .ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -133,27 +133,27 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
@@ -180,7 +180,7 @@ exports[`SocialButton component when provider prop is set to facebook 1`] = `
 }
 
 <button
-    class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH c0 c1"
+    class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 c0 c1"
     type="button"
   >
     <svg
