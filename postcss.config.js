@@ -39,7 +39,7 @@ module.exports = {
               );
 
               if (!fs.existsSync(styleFilePathInTempFolder)) {
-                fs.mkdirSync(styleFilePathInTempFolder);
+                fs.mkdirSync(styleFilePathInTempFolder, { recursive: true });
               }
 
               const mappedStylesFilePath =
