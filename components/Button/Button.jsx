@@ -96,12 +96,15 @@ Button.propTypes = {
   onClick: PropTypes.func,
 };
 
-const IconButton = ({ className = '', skin, ...props }) => {
+const IconButton = ({ className = '', skin, size, ...props }) => {
   const classIconButton = classNames(
     buttonBaseStyles['icon-button'],
+    buttonBaseStyles[`icon-button-${size}`],
+    buttonBaseStyles[`icon-button-${skin}`],
     className,
   );
-  return <Button className={classIconButton} {...props} />;
+
+  return <Button className={classIconButton} size={size} {...props} />;
 };
 
 IconButton.propTypes = {
