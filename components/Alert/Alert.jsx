@@ -75,11 +75,6 @@ const Wrapper = styled.div`
       margin: 0 0 0 ${medium}px !important;
       min-height: 0;
       opacity: 1;
-
-      ${CloseButton} {
-        color: ${icon};
-        margin-left: 0;
-      }
     }
   `}
 `;
