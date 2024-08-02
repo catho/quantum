@@ -111,7 +111,6 @@ Alert.defaultProps = {
     breakpoints,
     components: {
       alert: components.alert,
-      button: components.button,
     },
   },
 };
@@ -131,7 +130,6 @@ Alert.propTypes = {
     spacing: PropTypes.object,
     components: PropTypes.shape({
       alert: PropTypes.object,
-      button: PropTypes.object,
     }),
   }),
 };

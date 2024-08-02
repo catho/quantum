@@ -183,7 +183,6 @@ Content.defaultProps = {
     breakpoints,
     components: {
       popover: components.popover,
-      button: components.button,
     },
   },
 };

@@ -7,16 +7,13 @@ import Card from '../Card';
 import Button from '../Button';
 import { Content, Header, HeaderText, Title, Footer } from './sub-components';
 import regressionTestContainer from '../shared/regressionTestContainer';
-import { colors, spacing, components } from '../shared/theme';
+import { colors, spacing } from '../shared/theme';
 import isSSR from '../shared/isSSR';
 import styles from './Modal.module.css';
 
 const theme = {
   colors,
   spacing,
-  components: {
-    button: components.button,
-  },
 };
 
 class Modal extends Component {

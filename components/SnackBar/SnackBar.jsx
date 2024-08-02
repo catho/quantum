@@ -368,7 +368,6 @@ SnackBar.defaultProps = {
     breakpoints,
     components: {
       snackbar: components.snackbar,
-      button: components.button,
     },
   },
 };

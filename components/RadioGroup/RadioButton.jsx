@@ -150,9 +150,6 @@ Radio.defaultProps = {
     baseFontSize: defaultBaseFontSize,
     spacing,
     colors,
-    components: {
-      button: components.button,
-    },
   },
 };
 
