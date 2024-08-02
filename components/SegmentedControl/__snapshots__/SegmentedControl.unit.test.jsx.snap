@@ -869,7 +869,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
     >
       <label
         aria-label="Profissional"
-        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-stroked-primary___uybCe ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy"
+        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy"
         for="segmented-button-11"
         tabindex="0"
       >
@@ -897,7 +897,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
       </label>
       <label
         aria-label="Operacional"
-        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy SegmentedButton-module__label-checked___xgs6w"
+        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-stroked-primary___uybCe ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy SegmentedButton-module__label-checked___xgs6w"
         for="segmented-button-12"
         tabindex="-1"
       >
@@ -926,7 +926,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
       </label>
       <label
         aria-label="Estagiário"
-        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-stroked-primary___uybCe ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy"
+        class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 SegmentedButton-module__label___sRquy"
         for="segmented-button-13"
         tabindex="0"
       >
