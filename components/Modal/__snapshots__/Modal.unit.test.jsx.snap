@@ -74,7 +74,7 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   line-height: 1.25;
 }
 
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -85,51 +85,64 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 @media (min-width:0px) {
@@ -189,12 +202,12 @@ exports[`<Modal /> Snapshots should match the snapshot 1`] = `
     </footer>
     <button
       aria-label="close dialog"
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG Modal-module__close-icon___a0f6b"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Modal-module__close-icon___a0f6b"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -271,7 +284,7 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   line-height: 1.25;
 }
 
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -282,51 +295,64 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 @media (min-width:0px) {
@@ -382,12 +408,12 @@ exports[`<Modal /> Snapshots should match the snapshot 2`] = `
   </footer>
   <button
     aria-label="close dialog"
-    class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG Modal-module__close-icon___a0f6b"
+    class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Modal-module__close-icon___a0f6b"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="CloseIcon"
       focusable="false"

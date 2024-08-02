@@ -8,7 +8,6 @@ import { createUniqId } from '../shared/uniqId';
 import {
   colors,
   spacing,
-  components,
   baseFontSize as defaultBaseFontSize,
 } from '../shared/theme';
 
@@ -150,9 +149,6 @@ Radio.defaultProps = {
     baseFontSize: defaultBaseFontSize,
     spacing,
     colors,
-    components: {
-      button: components.button,
-    },
   },
 };
 

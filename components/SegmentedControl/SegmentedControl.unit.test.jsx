@@ -14,7 +14,7 @@ describe('<SegmentedControl />', () => {
       <SegmentedControl items={defaultContent} />,
       <SegmentedControl items={fiveContentsWithIcon} />,
       <SegmentedControl items={threeContentsWithIcon} />,
-      <SegmentedControl items={threeContentsWithIcon} darkmode />,
+      <SegmentedControl items={threeContentsWithIcon} darkMode />,
     ];
 
     SegmentedControls.forEach((segmentedControl) => {
@@ -35,7 +35,7 @@ describe('<SegmentedControl />', () => {
       <SegmentedControl items={nContents} name="unit-test" />,
     );
 
-    container.querySelectorAll('button').forEach((label, index) => {
+    container.querySelectorAll('label').forEach((label, index) => {
       expect(label.getAttribute('aria-label')).toEqual(nContents[index].label);
     });
   });
@@ -45,8 +45,8 @@ describe('<SegmentedControl />', () => {
     const firstItemValue = defaultContent[0].value;
     const itemValueChecked = defaultContent[1].value;
 
-    const checkedInput = screen.getAllByRole('radio')[1];
-    const firstInput = screen.getAllByRole('radio')[0];
+    const checkedInput = screen.getByRole('radio', { name: /Operacional/i });
+    const firstInput = screen.getByRole('radio', { name: /Profissional/i });
 
     expect(checkedInput).toHaveAttribute('checked');
     expect(checkedInput.getAttribute('value')).toEqual(itemValueChecked);
@@ -55,7 +55,8 @@ describe('<SegmentedControl />', () => {
 
   it('should change the button when its clicked', () => {
     const onChangeMock = jest.fn();
-    const { container } = render(
+
+    render(
       <SegmentedControl
         items={defaultContent}
         name="unit-test"
@@ -63,18 +64,19 @@ describe('<SegmentedControl />', () => {
       />,
     );
 
-    const firstInput = screen.getAllByRole('radio')[0];
+    const firstInput = screen.getByRole('radio', { name: /Profissional/i });
+    const labelFirstInput = firstInput.parentElement;
 
     expect(onChangeMock).not.toHaveBeenCalled();
 
-    expect(firstInput).not.toHaveAttribute('checked');
+    expect(labelFirstInput).toHaveProperty('tabIndex', 0);
+    expect(firstInput).toHaveProperty('checked', false);
     fireEvent.click(firstInput);
 
-    expect(container.querySelectorAll('button')[0]).toHaveClass(
-      'input-checked',
-    );
-    expect(onChangeMock).toBeCalled();
-    expect(onChangeMock).toBeCalledTimes(1);
+    expect(firstInput).toHaveProperty('checked', true);
+    expect(labelFirstInput).toHaveProperty('tabIndex', -1);
+    expect(onChangeMock).toHaveBeenCalled();
+    expect(onChangeMock).toHaveBeenCalledTimes(1);
   });
 
   it('should not have checked prop', () => {
@@ -86,12 +88,12 @@ describe('<SegmentedControl />', () => {
     });
   });
 
-  it('(a11y) should contains aria-label corresponding the button of items', () => {
+  it('(a11y) should contains aria-label corresponding the label of items', () => {
     const { container } = render(
       <SegmentedControl items={defaultContent} name="unit-test" />,
     );
 
-    const firstLabel = container.querySelectorAll('button')[0];
+    const firstLabel = container.querySelectorAll('label')[0];
     const firstItemLabel = defaultContent[0].label;
     expect(firstLabel.getAttribute('aria-label')).toMatch(firstItemLabel);
   });
@@ -101,8 +103,8 @@ describe('<SegmentedControl />', () => {
       <SegmentedControl items={defaultContent} name="unit-test" />,
     );
 
-    const firstLabel = container.querySelectorAll('button')[0];
-    const secondLabel = container.querySelectorAll('button')[1];
+    const firstLabel = container.querySelectorAll('label')[0];
+    const secondLabel = container.querySelectorAll('label')[1];
 
     expect(firstLabel.getAttribute('tabindex')).toEqual('0');
     expect(secondLabel.getAttribute('tabindex')).toEqual('-1');

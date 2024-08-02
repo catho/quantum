@@ -75,11 +75,6 @@ const Wrapper = styled.div`
       margin: 0 0 0 ${medium}px !important;
       min-height: 0;
       opacity: 1;
-
-      ${CloseButton} {
-        color: ${icon};
-        margin-left: 0;
-      }
     }
   `}
 `;
@@ -116,7 +111,6 @@ Alert.defaultProps = {
     breakpoints,
     components: {
       alert: components.alert,
-      button: components.button,
     },
   },
 };
@@ -136,7 +130,6 @@ Alert.propTypes = {
     spacing: PropTypes.object,
     components: PropTypes.shape({
       alert: PropTypes.object,
-      button: PropTypes.object,
     }),
   }),
 };

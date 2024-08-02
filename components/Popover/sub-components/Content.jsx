@@ -89,9 +89,15 @@ const PopoverContent = styled.div`
   ${_getColors}
 `;
 
-const CloseButton = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
+const propsNotContainedInButton = ['inverted'];
+
+const CloseButton = styled(Button.Icon)
+  .attrs({
+    icon: 'close',
+  })
+  .withConfig({
+    shouldForwardProp: (prop) => !propsNotContainedInButton.includes(prop),
+  })`
   ${_getTextColor}
   display: inherit;
   height: auto;
@@ -177,7 +183,6 @@ Content.defaultProps = {
     breakpoints,
     components: {
       popover: components.popover,
-      button: components.button,
     },
   },
 };

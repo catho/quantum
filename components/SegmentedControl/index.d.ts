@@ -6,10 +6,6 @@ export interface SegmentedControlProps {
     name?: string;
     onChange?: MouseEventHandler<HTMLButtonElement>;
     darkMode?: boolean;
-    theme?: {
-      spacing?: {};
-      colors?: {};
-    };
     items: NonEmptyArray<{
       label: string;
       value: string;

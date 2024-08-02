@@ -17,4 +17,5 @@
 @import "./Badge/index.css";
 @import "./Modal/index.css";
 @import "./Typography/index.css";
-@import "./Button/index.css";
+@import "./shared/styles/ButtonBase.module.css";
+@import "./SegmentedControl/index.css";

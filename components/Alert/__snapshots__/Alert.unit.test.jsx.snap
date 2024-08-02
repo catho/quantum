@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert component Should match a skin snapshot 1`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -12,51 +12,64 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -107,21 +120,11 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
 .c5 .c1 > .c3 {
   color: #1250C4;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c5 .c1 > .c3 .c3 {
-  color: #1250C4;
-  margin-left: 0;
 }
 
 .c6 .c1 > .c3 {
@@ -131,21 +134,11 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   opacity: 1;
 }
 
-.c6 .c1 > .c3 .c3 {
-  color: #004D40;
-  margin-left: 0;
-}
-
 .c7 .c1 > .c3 {
   color: #f09100;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c7 .c1 > .c3 .c3 {
-  color: #f09100;
-  margin-left: 0;
 }
 
 <div
@@ -159,12 +152,12 @@ exports[`Alert component Should match a skin snapshot 1`] = `
       neutral
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -181,7 +174,7 @@ exports[`Alert component Should match a skin snapshot 1`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 2`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -192,51 +185,64 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -275,11 +281,6 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c5 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
 }
 
 .c0 {
@@ -299,11 +300,6 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #1250C4;
-  margin-left: 0;
-}
-
 .c6 .c1 > .c3 {
   color: #004D40;
   margin: 0 0 0 16px !important;
@@ -311,21 +307,11 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   opacity: 1;
 }
 
-.c6 .c1 > .c3 .c3 {
-  color: #004D40;
-  margin-left: 0;
-}
-
 .c7 .c1 > .c3 {
   color: #f09100;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c7 .c1 > .c3 .c3 {
-  color: #f09100;
-  margin-left: 0;
 }
 
 <div
@@ -339,12 +325,12 @@ exports[`Alert component Should match a skin snapshot 2`] = `
       blue
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -361,7 +347,7 @@ exports[`Alert component Should match a skin snapshot 2`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 3`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -372,51 +358,64 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -457,21 +456,11 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   opacity: 1;
 }
 
-.c5 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
 .c6 .c1 > .c3 {
   color: #1250C4;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c6 .c1 > .c3 .c3 {
-  color: #1250C4;
-  margin-left: 0;
 }
 
 .c0 {
@@ -491,21 +480,11 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #004D40;
-  margin-left: 0;
-}
-
 .c7 .c1 > .c3 {
   color: #f09100;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c7 .c1 > .c3 .c3 {
-  color: #f09100;
-  margin-left: 0;
 }
 
 <div
@@ -519,12 +498,12 @@ exports[`Alert component Should match a skin snapshot 3`] = `
       success
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -541,7 +520,7 @@ exports[`Alert component Should match a skin snapshot 3`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 4`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -552,51 +531,64 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -637,11 +629,6 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   opacity: 1;
 }
 
-.c5 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
 .c6 .c1 > .c3 {
   color: #1250C4;
   margin: 0 0 0 16px !important;
@@ -649,21 +636,11 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   opacity: 1;
 }
 
-.c6 .c1 > .c3 .c3 {
-  color: #1250C4;
-  margin-left: 0;
-}
-
 .c7 .c1 > .c3 {
   color: #004D40;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c7 .c1 > .c3 .c3 {
-  color: #004D40;
-  margin-left: 0;
 }
 
 .c0 {
@@ -683,11 +660,6 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #f09100;
-  margin-left: 0;
-}
-
 <div
   class="c0"
   role="alert"
@@ -699,12 +671,12 @@ exports[`Alert component Should match a skin snapshot 4`] = `
       warning
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -721,7 +693,7 @@ exports[`Alert component Should match a skin snapshot 4`] = `
 `;
 
 exports[`Alert component Should match a skin snapshot 5`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -732,51 +704,64 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -827,21 +812,11 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
 .c5 .c1 > .c3 {
   color: #1250C4;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c5 .c1 > .c3 .c3 {
-  color: #1250C4;
-  margin-left: 0;
 }
 
 .c6 .c1 > .c3 {
@@ -851,21 +826,11 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   opacity: 1;
 }
 
-.c6 .c1 > .c3 .c3 {
-  color: #004D40;
-  margin-left: 0;
-}
-
 .c7 .c1 > .c3 {
   color: #f09100;
   margin: 0 0 0 16px !important;
   min-height: 0;
   opacity: 1;
-}
-
-.c7 .c1 > .c3 .c3 {
-  color: #f09100;
-  margin-left: 0;
 }
 
 <div
@@ -879,12 +844,12 @@ exports[`Alert component Should match a skin snapshot 5`] = `
       error
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -901,7 +866,7 @@ exports[`Alert component Should match a skin snapshot 5`] = `
 `;
 
 exports[`Alert component Should match the snapshot of a simple alert 1`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -912,51 +877,64 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -1007,11 +985,6 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c3 .c3 {
-  color: #424242;
-  margin-left: 0;
-}
-
 <div
   class="c0"
   role="alert"
@@ -1023,12 +996,12 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
       Sample alert
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c3 c4"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -1045,7 +1018,7 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
 `;
 
 exports[`Alert component Should match the snapshot with an icon 1`] = `
-.Button-module__button___AbcpN {
+.ButtonBase-module__button___-CVUK {
   align-items: center;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1056,51 +1029,64 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   transition: all .2s ease-in-out;
 }
 
-.Button-module__button-default___miWV3 {
+.ButtonBase-module__button-default___K4Nmm {
   color: var(--qtm-colors-neutral-0);
 }
 
-.Button-module__button-default-primary___bURr2 {
+.ButtonBase-module__button-default-primary___X9GaT {
   background-color: var(--qtm-colors-primary-700);
   border: 2px solid var(--qtm-colors-primary-700);
 }
 
-.Button-module__button-icon___c2VCp {
+.ButtonBase-module__button-icon___s3a-2 {
   pointer-events: none;
 }
 
-.Button-module__button-icon-medium___ppo2m,
-.Button-module__button-icon-small___m8db9,
-.Button-module__button-icon-xsmall___prEKP {
+.ButtonBase-module__button-icon-medium___HY30Y,
+.ButtonBase-module__button-icon-small___tdGMn,
+.ButtonBase-module__button-icon-xsmall___Iilfe {
   width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.Button-module__button-medium___qo6Ym,
-.Button-module__button-small___HWutw {
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
   padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
 }
 
-.Button-module__button-medium___qo6Ym {
+.ButtonBase-module__button-medium___BtByl {
   font-size: var(--qtm-base-font-size);
   line-height: calc(var(--qtm-base-font-size)*1.5);
   min-height: var(--qtm-spacing-xxlarge);
 }
 
-.Button-module__shadow-2-neutral-500___hxqSk {
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
   --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
   --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
   --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
-.Button-module__icon-button___gjVoG {
+.ButtonBase-module__icon-button___nb2zK {
   background-color: transparent;
   border: none;
   border-radius: 50%;
-  box-shadow: none;
-  color: hsla(0,0%,60%,.5);
   outline: none;
-  width: 40px;
+}
+
+.ButtonBase-module__icon-button___nb2zK,
+.ButtonBase-module__icon-button___nb2zK:active,
+.ButtonBase-module__icon-button___nb2zK:focus,
+.ButtonBase-module__icon-button___nb2zK:hover {
+  box-shadow: none;
+}
+
+.ButtonBase-module__icon-button-medium___-pGge {
+  width: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__icon-button-neutral___CseSn {
+  --qtm-colors-neutral-500: hsla(0,0%,60%,.5);
+  color: var(--qtm-colors-neutral-500);
 }
 
 .c2 {
@@ -1160,11 +1146,6 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   opacity: 1;
 }
 
-.c0 .c1 > .c5 .c5 {
-  color: #424242;
-  margin-left: 0;
-}
-
 <div
   class="c0"
   role="alert"
@@ -1189,12 +1170,12 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
       Sample alert
     </span>
     <button
-      class="Button-module__button___AbcpN Button-module__button-medium___qo6Ym Button-module__button-default___miWV3 Button-module__button-default-primary___bURr2 Button-module__shadow-2-neutral-500___hxqSk Button-module__shadow-4-primary-900___HdA30 Button-module__shadow-4-primary-700___Gs4yK Button-module__shadow-8-primary-900___f0GvH Button-module__icon-button___gjVoG c5 c6"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c5 c6"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Button-module__button-icon___c2VCp Button-module__button-icon-medium___ppo2m css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
