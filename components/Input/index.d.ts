@@ -23,7 +23,7 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   required?: boolean;
   placeholder?: string;
   type?: 'email' | 'text' | 'tel' | 'number' | 'password' | 'search';
-  error?: string;
+  error?: string | false;
   id?: string;
   name?: string;
   validate?: Validate | CustomValidate | Array<Validate | CustomValidate>;
