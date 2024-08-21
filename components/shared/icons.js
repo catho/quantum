@@ -54,6 +54,7 @@ const icons = [
   'group',
   'group_add',
   'home',
+  'home_work',
   'help',
   'info',
   'keyboard_arrow_down',
