@@ -57,6 +57,7 @@ import Group from '@mui/icons-material/Group';
 import GroupAdd from '@mui/icons-material/GroupAdd';
 import Help from '@mui/icons-material/Help';
 import Home from '@mui/icons-material/Home';
+import HomeWork from '@mui/icons-material/HomeWork';
 import Info from '@mui/icons-material/Info';
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
@@ -181,6 +182,7 @@ const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
     group: Group,
     group_add: GroupAdd,
     home: Home,
+    home_work: HomeWork,
     help: Help,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,

@@ -407,6 +407,7 @@ export type IconNames =
     | 'high_quality'
     | 'history'
     | 'home'
+    | 'home_work'
     | 'hotel'
     | 'hot_tub'
     | 'hourglass_empty'
