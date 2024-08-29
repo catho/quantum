@@ -39,7 +39,7 @@ import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
 import DateRange from '@mui/icons-material/DateRange';
 import Delete from '@mui/icons-material/Delete';
-import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import DescriptionOutlined from '@mui/icons-material/DescriptionOutlined';
 import Done from '@mui/icons-material/Done';
 import Edit from '@mui/icons-material/Edit';
 import EmojiPeople from '@mui/icons-material/EmojiPeople';
