@@ -166,7 +166,7 @@ const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
     credit_card: CreditCard,
     date_range: DateRange,
     delete: Delete,
-    description_outline: DescriptionOutlinedIcon,
+    description_outlined: DescriptionOutlined,
     done: Done,
     edit: Edit,
     emoji_people: EmojiPeople,
