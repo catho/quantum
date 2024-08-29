@@ -220,6 +220,7 @@ export type IconNames =
     | 'delete'
     | 'delete_sweep'
     | 'description'
+    | 'description_outlined'
     | 'desktop_mac'
     | 'desktop_windows'
     | 'details'
