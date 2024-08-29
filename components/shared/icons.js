@@ -37,6 +37,7 @@ const icons = [
   'credit_card',
   'date_range',
   'delete',
+  'description_outline',
   'done',
   'edit',
   'emoji_people',

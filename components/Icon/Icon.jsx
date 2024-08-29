@@ -39,6 +39,7 @@ import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
 import DateRange from '@mui/icons-material/DateRange';
 import Delete from '@mui/icons-material/Delete';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import Done from '@mui/icons-material/Done';
 import Edit from '@mui/icons-material/Edit';
 import EmojiPeople from '@mui/icons-material/EmojiPeople';
@@ -97,10 +98,10 @@ import StarHalf from '@mui/icons-material/StarHalf';
 import StarRounded from '@mui/icons-material/StarRounded';
 import Stars from '@mui/icons-material/Stars';
 import SwapVert from '@mui/icons-material/SwapVert';
-import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
 import ThumbDown from '@mui/icons-material/ThumbDown';
-import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
 import ThumbUp from '@mui/icons-material/ThumbUp';
+import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
 import TimerOutlined from '@mui/icons-material/TimerOutlined';
 import TrendingUp from '@mui/icons-material/TrendingUp';
 import Tune from '@mui/icons-material/Tune';
@@ -165,6 +166,7 @@ const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
     credit_card: CreditCard,
     date_range: DateRange,
     delete: Delete,
+    description_outline: DescriptionOutlinedIcon,
     done: Done,
     edit: Edit,
     emoji_people: EmojiPeople,
