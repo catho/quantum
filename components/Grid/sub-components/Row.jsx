@@ -1,7 +1,7 @@
 import { cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
-import Container from './Container';
 import classNames from 'classnames';
+import Container from './Container';
 import styles from './Row.module.css';
 
 const Row = ({ children, 'no-gutters': rowNoGutters, className, ...rest }) => {
