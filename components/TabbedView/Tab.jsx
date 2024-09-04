@@ -12,11 +12,6 @@ Tab.propTypes = {
   ]).isRequired,
 };
 
-Tab.defaultProps = {
-  badge: null,
-  icon: null,
-};
-
 Tab.displayName = 'Tab';
 
 export default Tab;

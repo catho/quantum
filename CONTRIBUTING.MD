@@ -3,10 +3,12 @@
 
 ## Summary
 
- - [Contribution Prerequisites](#contribution-prerequisites)
- - [Important Notices](#important-notices)
- - [Getting Started](#getting-started)
- - [Editing a Component](#editing-a-component)
+- [Contributor's Guide](#contributors-guide)
+  - [Summary](#summary)
+  - [Contribution Prerequisites](#contribution-prerequisites)
+  - [Important Notices ⚠️](#important-notices-️)
+  - [Getting Started](#getting-started)
+  - [Editing a Component](#editing-a-component)
 
 
 ---
@@ -14,9 +16,9 @@ You can contribute in many ways: opening or participating of a issue, reporting 
 
 ## Contribution Prerequisites
 
-- Node v16.17.1;
+- Node v20.15.0;
 
-Obs.: We have .nvmrc. When you run nvm use, it will set the node to the same version based on the .nvmrc file in the repository.
+Obs.: We have .nvmrc. When you run `nvm use`, it will set the node to the same version based on the .nvmrc file in the repository.
 
 - Yarn;
 

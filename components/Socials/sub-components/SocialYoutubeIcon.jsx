@@ -5,7 +5,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const SocialYoutubeIcon = ({ size, title, withBox }) => {
+const SocialYoutubeIcon = ({ size = '48', title, withBox = true }) => {
   const SVGOriginalSize = 48;
   const SVGOriginalSizeWithBox = 50;
 
@@ -77,11 +77,6 @@ const SocialYoutubeIcon = ({ size, title, withBox }) => {
       </g>
     </StyledSvg>
   );
-};
-
-SocialYoutubeIcon.defaultProps = {
-  size: '48',
-  withBox: true,
 };
 
 SocialYoutubeIcon.propTypes = {

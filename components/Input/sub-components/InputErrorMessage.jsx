@@ -3,7 +3,13 @@ import styled, { css } from 'styled-components';
 import { ErrorMessage } from '../../shared';
 import { spacing, colors } from '../../shared/theme';
 
-const InputErrorMessage = styled(ErrorMessage)`
+const InputErrorMessage = styled(ErrorMessage).attrs(
+  ({ skin, theme, ...rest }) => ({
+    theme: { spacing, colors, ...theme },
+    skin: skin || 'default',
+    ...rest,
+  }),
+)`
   ${({
     theme: {
       colors: { neutral },
@@ -24,11 +30,6 @@ InputErrorMessage.propTypes = {
     colors: PropTypes.object,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-InputErrorMessage.defaultProps = {
-  theme: { spacing, colors },
-  skin: 'default',
 };
 
 export default InputErrorMessage;

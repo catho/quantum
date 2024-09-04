@@ -5,7 +5,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const FacebookIcon = ({ size, title }) => {
+const FacebookIcon = ({ size = '48', title }) => {
   const SVGOriginalHeight = 402;
   const SVGOriginalWidth = 582;
 
@@ -37,10 +37,6 @@ const FacebookIcon = ({ size, title }) => {
       </g>
     </StyledSvg>
   );
-};
-
-FacebookIcon.defaultProps = {
-  size: '48',
 };
 
 FacebookIcon.propTypes = {

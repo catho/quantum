@@ -47,7 +47,7 @@ const PalleteColor = styled.div`
   margin-bottom: 2px;
 `;
 
-export const ColorSample = ({ hex, number, name, fontColor }) => (
+export const ColorSample = ({ hex, number, name, fontColor = '#fff' }) => (
   <PalleteColor>
     <ColorBackground hex={hex} fontColor={fontColor}>
       <ColorName>{name}</ColorName>
@@ -70,10 +70,6 @@ ColorSample.propTypes = {
   number: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   fontColor: PropTypes.string,
-};
-
-ColorSample.defaultProps = {
-  fontColor: '#fff',
 };
 
 export default () => (

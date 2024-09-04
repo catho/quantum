@@ -2,10 +2,16 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import styles from './Rect.module.css';
 
-const RectComponent = ({ as: element, ...rest }) =>
+const RectComponent = ({ as: element = 'div', ...rest }) =>
   element === 'div' ? <div {...rest} /> : <span {...rest} />;
 
-const Rect = ({ width, height, style, className, ...rest }) => {
+const Rect = ({
+  width = undefined,
+  height = undefined,
+  style,
+  className,
+  ...rest
+}) => {
   const rectClass = classNames(styles.rect, className);
 
   return (
@@ -15,12 +21,6 @@ const Rect = ({ width, height, style, className, ...rest }) => {
       style={{ width, height, ...style }}
     />
   );
-};
-
-Rect.defaultProps = {
-  as: 'div',
-  width: undefined,
-  height: undefined,
 };
 
 Rect.propTypes = {

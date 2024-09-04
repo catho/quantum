@@ -6,9 +6,9 @@ import styles from './SegmentedControl.module.css';
 
 const SegmentedControl = ({
   items,
-  name,
-  onChange,
-  darkMode,
+  name = 'segmented-control',
+  onChange = () => {},
+  darkMode = false,
   className,
   ...rest
 }) => {
@@ -28,12 +28,6 @@ const SegmentedControl = ({
       </Col>
     </Row>
   );
-};
-
-SegmentedControl.defaultProps = {
-  name: 'segmented-control',
-  onChange: () => {},
-  darkMode: false,
 };
 
 SegmentedControl.propTypes = {

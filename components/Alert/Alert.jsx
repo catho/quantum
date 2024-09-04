@@ -79,7 +79,22 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Alert = ({ icon, children, theme, onClose, ...rest }) => {
+const Alert = ({
+  icon = null,
+  skin = 'neutral',
+  children,
+  theme = {
+    colors,
+    baseFontSize: defaultBaseFontSize,
+    spacing,
+    breakpoints,
+    components: {
+      alert: components.alert,
+    },
+  },
+  onClose = undefined,
+  ...rest
+}) => {
   const [show, setShow] = useState(true);
 
   const handleClose = () => {
@@ -89,7 +104,7 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => {
 
   return (
     show && (
-      <Wrapper theme={theme} {...rest} role="alert">
+      <Wrapper theme={theme} skin={skin} {...rest} role="alert">
         <Content>
           {icon && <AlertIcon name={icon} />}
           {children && <span>{children}</span>}
@@ -98,21 +113,6 @@ const Alert = ({ icon, children, theme, onClose, ...rest }) => {
       </Wrapper>
     )
   );
-};
-
-Alert.defaultProps = {
-  icon: null,
-  skin: 'neutral',
-  onClose: undefined,
-  theme: {
-    colors,
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    breakpoints,
-    components: {
-      alert: components.alert,
-    },
-  },
 };
 
 Alert.propTypes = {

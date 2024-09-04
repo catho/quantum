@@ -41,27 +41,25 @@ const Thumb = styled.img`
   height: ${SQUARE_THUMB_SIZE}px;
 `;
 
-const ThumbCard = ({ card, theme }) => (
+const ThumbCard = ({
+  card = {
+    imagePath: 'http://',
+    imageDescription: 'card image a11y description',
+    title: 'card title',
+    description: 'card description',
+  },
+  theme = {
+    colors,
+    spacing,
+    baseFontSize,
+  },
+}) => (
   <AdaptedCard theme={theme}>
     <Content theme={theme}>
       <Thumb src={card.imagePath} alt={card.imageDescription} />
     </Content>
   </AdaptedCard>
 );
-
-ThumbCard.defaultProps = {
-  card: {
-    imagePath: 'http://',
-    imageDescription: 'card image a11y description',
-    title: 'card title',
-    description: 'card description',
-  },
-  theme: {
-    colors,
-    spacing,
-    baseFontSize,
-  },
-};
 
 ThumbCard.propTypes = {
   card: Proptypes.shape({

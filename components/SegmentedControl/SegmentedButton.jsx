@@ -13,10 +13,10 @@ const uniqId = createUniqId('segmented-button-');
 const SegmentedButton = ({
   label,
   value,
-  checked,
+  checked = undefined,
   name,
-  onChange,
-  icon,
+  onChange = () => {},
+  icon = undefined,
   darkMode,
   className,
   ...rest
@@ -58,12 +58,6 @@ const SegmentedButton = ({
       {icon ? <Icon name={icon} aria-label={label} /> : label}
     </label>
   );
-};
-
-SegmentedButton.defaultProps = {
-  checked: undefined,
-  icon: undefined,
-  onChange: () => {},
 };
 
 SegmentedButton.propTypes = {

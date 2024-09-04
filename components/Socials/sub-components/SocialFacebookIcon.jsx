@@ -5,7 +5,7 @@ const StyledSvg = styled.svg`
   display: inline-block;
 `;
 
-const SocialFacebookIcon = ({ size, title, withBox }) => {
+const SocialFacebookIcon = ({ size = '48', title, withBox = true }) => {
   const SVGOriginalSize = 48;
 
   return withBox ? (
@@ -60,11 +60,6 @@ const SocialFacebookIcon = ({ size, title, withBox }) => {
       </g>
     </svg>
   );
-};
-
-SocialFacebookIcon.defaultProps = {
-  size: '48',
-  withBox: true,
 };
 
 SocialFacebookIcon.propTypes = {

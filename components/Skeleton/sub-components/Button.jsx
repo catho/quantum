@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Rect from './Rect';
 import styles from './Button.module.css';
 
-const Button = ({ size, className, ...rest }) => {
+const Button = ({ size = 'medium', className, ...rest }) => {
   const buttonClass = classNames(
     styles.button,
     styles[`button-${size}`],
@@ -11,10 +11,6 @@ const Button = ({ size, className, ...rest }) => {
   );
 
   return <Rect {...rest} className={buttonClass} />;
-};
-
-Button.defaultProps = {
-  size: 'medium',
 };
 
 Button.propTypes = {

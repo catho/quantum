@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './CircularLoader.module.css';
 
 const CircularLoader = (props) => {
-  const { size, skin, className, ...rest } = props;
+  const { size = 'medium', skin = 'primary', className, ...rest } = props;
 
   const wrapperStyles = classNames(
     styles.wrapper,
@@ -23,11 +23,6 @@ const CircularLoader = (props) => {
       </svg>
     </div>
   );
-};
-
-CircularLoader.defaultProps = {
-  size: 'medium',
-  skin: 'primary',
 };
 
 CircularLoader.propTypes = {

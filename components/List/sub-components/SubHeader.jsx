@@ -13,15 +13,12 @@ const Description = styled.span`
 
 Description.displayName = 'SubHeader';
 
-const SubHeader = ({ children, theme }) => (
-  <Description theme={theme}>{children}</Description>
-);
-
-SubHeader.defaultProps = {
-  theme: {
+const SubHeader = ({
+  children,
+  theme = {
     baseFontSize,
   },
-};
+}) => <Description theme={theme}>{children}</Description>;
 
 SubHeader.propTypes = {
   children: PropTypes.oneOfType([

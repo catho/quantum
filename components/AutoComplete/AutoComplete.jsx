@@ -17,6 +17,7 @@ import useKeyPress from './SubComponents/UseKeyPress';
 const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
 const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
+const NON_FOCUSABLE_SUGGESTION_INDEX = -1;
 
 const ComponentWrapper = styled.div`
   ${({
@@ -143,20 +144,23 @@ const PoliteStatus = styled.div`
 `;
 
 const AutoComplete = ({
-  id,
-  name,
-  label,
-  value,
-  error,
-  disabled,
-  helperText,
-  placeholder,
+  id = '',
+  name = '',
+  label = '',
+  value = '',
+  error = '',
+  disabled = false,
+  helperText = '',
+  placeholder = 'Select an option',
   suggestions,
-  theme,
-  onSelectedItem,
-  onChange,
-  required,
-  skin,
+  theme = {
+    spacing,
+    colors,
+  },
+  onSelectedItem = () => {},
+  onChange = () => {},
+  required = false,
+  skin = 'default',
 }) => {
   const [userTypedValue, setUserTypedValue] = useState(value);
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
@@ -164,7 +168,7 @@ const AutoComplete = ({
     filterSuggestions.length,
   );
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const [cursor, setCursor] = useState(-1);
+  const [cursor, setCursor] = useState(NON_FOCUSABLE_SUGGESTION_INDEX);
   const wrapperRef = useRef();
   const listOptions = useRef();
   const autoInputRef = useRef(null);
@@ -179,7 +183,7 @@ const AutoComplete = ({
     const input = wrapperRef.current?.children[1];
     if (input) {
       input.focus();
-      setCursor(-1);
+      setCursor(NON_FOCUSABLE_SUGGESTION_INDEX);
     }
   };
 
@@ -187,7 +191,10 @@ const AutoComplete = ({
     suggestions.filter((suggestion) => {
       let option = normalizeChars(suggestion.toLowerCase());
       option = normalizeChars(option);
-      return option.indexOf(normalizeChars(currentValue.toLowerCase())) > -1;
+      return (
+        option.indexOf(normalizeChars(currentValue.toLowerCase())) >
+        NON_FOCUSABLE_SUGGESTION_INDEX
+      );
     });
 
   const handleFilter = (currentValue) => {
@@ -199,7 +206,7 @@ const AutoComplete = ({
   const handleChange = (currentValue) => {
     setUserTypedValue(currentValue);
     onChange(currentValue);
-    setCursor(-1);
+    setCursor(NON_FOCUSABLE_SUGGESTION_INDEX);
     handleFilter(currentValue);
   };
 
@@ -225,7 +232,7 @@ const AutoComplete = ({
     setUserTypedValue('');
     onChange('');
     setFilterSuggestions(suggestions);
-    setCursor(-1);
+    setCursor(NON_FOCUSABLE_SUGGESTION_INDEX);
   };
 
   const handleEscPress = ({ key }) => {
@@ -310,11 +317,11 @@ const AutoComplete = ({
 
   /* istanbul ignore next */
   useEffect(() => {
-    if (showSuggestions && tabPress) {
-      setUserTypedValue(filterSuggestions[cursor]);
-      onSelectedItem(filterSuggestions[cursor]);
-      setShowSuggestions(false);
-    } else if (tabPress) {
+    if (tabPress) {
+      if (showSuggestions && cursor !== NON_FOCUSABLE_SUGGESTION_INDEX) {
+        setUserTypedValue(filterSuggestions[cursor]);
+        onSelectedItem(filterSuggestions[cursor]);
+      }
       setShowSuggestions(false);
     }
   }, [tabPress]);
@@ -410,25 +417,6 @@ AutoComplete.propTypes = {
   helperText: PropTypes.string,
   required: PropTypes.bool,
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-AutoComplete.defaultProps = {
-  theme: {
-    spacing,
-    colors,
-  },
-  id: '',
-  name: '',
-  label: '',
-  value: '',
-  helperText: '',
-  error: '',
-  disabled: false,
-  placeholder: 'Select an option',
-  onChange: () => {},
-  onSelectedItem: () => {},
-  required: false,
-  skin: 'default',
 };
 
 export default AutoComplete;

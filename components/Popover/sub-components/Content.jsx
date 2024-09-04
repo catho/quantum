@@ -123,12 +123,20 @@ const CloseButton = styled(Button.Icon)
 const PopoverChildren = styled.div``;
 
 const Content = ({
-  placement,
+  placement = 'top',
   children,
-  onPopoverClose,
-  theme,
-  skin,
-  inverted,
+  onPopoverClose = () => {},
+  theme = {
+    colors,
+    spacing,
+    breakpoints,
+    components: {
+      popover: components.popover,
+      button: components.button,
+    },
+  },
+  skin = 'neutral',
+  inverted = false,
   ...rest
 }) => (
   <PopoverContent
@@ -169,22 +177,6 @@ Content.propTypes = {
       button: PropTypes.object,
     }),
   }),
-};
-
-/* istanbul ignore next */
-Content.defaultProps = {
-  inverted: false,
-  placement: 'top',
-  onPopoverClose: () => {},
-  skin: 'neutral',
-  theme: {
-    colors,
-    spacing,
-    breakpoints,
-    components: {
-      popover: components.popover,
-    },
-  },
 };
 
 export default Content;

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './Thumbnail.module.css';
 
-const Thumbnail = ({ className = '', src, alt, rounded, ...props }) => {
+const Thumbnail = ({ className = '', src, alt, rounded = false, ...props }) => {
   const classImg = classNames(
     styles.thumbnail,
     {
@@ -23,10 +23,6 @@ Thumbnail.propTypes = {
   alt: PropTypes.string.isRequired,
   /** Display a rounded Thumbnail. */
   rounded: PropTypes.bool,
-};
-
-Thumbnail.defaultProps = {
-  rounded: false,
 };
 
 export default Thumbnail;

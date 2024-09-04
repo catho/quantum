@@ -5,10 +5,10 @@ import styles from './Col.module.css';
 const parserOffset = (offset) => (offset ? offset + 1 : undefined);
 
 const Col = ({
-  xsmall,
-  small,
-  medium,
-  large,
+  xsmall = undefined,
+  small = undefined,
+  medium = undefined,
+  large = undefined,
   'xsmall-offset': xsmallOffset,
   'small-offset': smallOffset,
   'medium-offset': mediumOffset,
@@ -52,17 +52,6 @@ const Col = ({
       {children}
     </div>
   );
-};
-
-Col.defaultProps = {
-  xsmall: undefined,
-  small: undefined,
-  medium: undefined,
-  large: undefined,
-  'xsmall-offset': undefined,
-  'small-offset': undefined,
-  'medium-offset': undefined,
-  'large-offset': undefined,
 };
 
 Col.propTypes = {

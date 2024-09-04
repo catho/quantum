@@ -4,7 +4,12 @@ import classNames from 'classnames';
 import Container from './Container';
 import styles from './Row.module.css';
 
-const Row = ({ children, 'no-gutters': rowNoGutters, className, ...rest }) => {
+const Row = ({
+  children,
+  'no-gutters': rowNoGutters = false,
+  className,
+  ...rest
+}) => {
   const rowClass = classNames(
     styles.row,
     {
@@ -49,10 +54,6 @@ const Row = ({ children, 'no-gutters': rowNoGutters, className, ...rest }) => {
 Row.propTypes = {
   'no-gutters': PropTypes.bool,
   children: PropTypes.node.isRequired,
-};
-
-Row.defaultProps = {
-  'no-gutters': false,
 };
 
 Row.displayName = 'Row';

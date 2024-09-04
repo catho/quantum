@@ -49,24 +49,28 @@ const ProgressLabel = styled.span`
 
 ProgressLabel.displayName = 'ProgressLabel';
 
-const ProgressBar = (props) => {
+const ProgressBar = ({
+  width = '250px',
+  height = '8px',
+  progressText = null,
+  progressPercent = 0,
+  label = '%',
+  skin = 'primary',
+  theme = {
+    components: {
+      progressBar: components.progressBar,
+    },
+  },
+}) => {
   const {
-    width,
-    height,
-    progressText,
-    progressPercent,
-    label,
-    skin,
-    theme: {
-      components: {
-        progressBar: {
-          skins: {
-            [skin]: { background, textColor },
-          },
+    components: {
+      progressBar: {
+        skins: {
+          [skin]: { background, textColor },
         },
       },
     },
-  } = props;
+  } = theme;
 
   const progressLabel = progressText === null ? progressPercent : progressText;
 
@@ -86,20 +90,6 @@ const ProgressBar = (props) => {
       </ProgressLabel>
     </Wrapper>
   );
-};
-
-ProgressBar.defaultProps = {
-  width: '250px',
-  height: '8px',
-  progressText: null,
-  progressPercent: 0,
-  skin: 'primary',
-  theme: {
-    components: {
-      progressBar: components.progressBar,
-    },
-  },
-  label: '%',
 };
 
 ProgressBar.propTypes = {

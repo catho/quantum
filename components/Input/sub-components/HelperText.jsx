@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import InputErrorMessage from './InputErrorMessage';
 import { colors, spacing } from '../../shared/theme';
 
-const HelperText = styled(InputErrorMessage)`
+const HelperText = styled(InputErrorMessage).attrs(({ theme, ...rest }) => ({
+  theme: { colors, spacing, ...theme },
+  ...rest,
+}))`
   color: inherit;
 `;
 
@@ -12,10 +15,6 @@ HelperText.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-HelperText.defaultProps = {
-  theme: { colors, spacing },
 };
 
 export default HelperText;
