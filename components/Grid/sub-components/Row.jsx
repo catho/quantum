@@ -1,5 +1,6 @@
 import { cloneElement, isValidElement } from 'react';
 import PropTypes from 'prop-types';
+import Container from './Container';
 import classNames from 'classnames';
 import styles from './Row.module.css';
 
@@ -16,7 +17,10 @@ const Row = ({ children, 'no-gutters': rowNoGutters, className, ...rest }) => {
     typeof child === 'string' || typeof child === 'number';
 
   const applyNoGutters = (child) => {
-    if (isNumberOrString(child)) {
+    if (
+      isNumberOrString(child) ||
+      (child.type !== Row && child.type !== Container)
+    ) {
       return child;
     }
 
