@@ -2,9 +2,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './CircularLoader.module.css';
 
-const CircularLoader = (props) => {
-  const { size = 'medium', skin = 'primary', className, ...rest } = props;
-
+const CircularLoader = ({
+  size = 'medium',
+  skin = 'primary',
+  className,
+  ...rest
+}) => {
   const wrapperStyles = classNames(
     styles.wrapper,
     styles[`wrapper-${size}`],
