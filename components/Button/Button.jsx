@@ -5,17 +5,15 @@ import Icon from '../Icon/Icon';
 import buttonBaseStyles from '../shared/styles/ButtonBase.module.css';
 
 const Button = ({
-  children,
-  icon,
-  size,
-  $as,
-  theme,
+  children = undefined,
+  icon = '',
+  size = 'medium',
   className,
-  disabled,
-  center,
-  full,
-  stroked,
-  skin,
+  disabled = false,
+  center = false,
+  full = false,
+  stroked = false,
+  skin = 'primary',
   ...rest
 }) => {
   const isDefaultType = !stroked && !disabled;
@@ -46,26 +44,10 @@ const Button = ({
 
   return (
     <button type="button" className={defaultButtonStyle} size={size} {...rest}>
-      {icon && (
-        <Icon className={iconStyle} size={size} name={icon} theme={theme} />
-      )}
+      {icon && <Icon className={iconStyle} size={size} name={icon} />}
       {children}
     </button>
   );
-};
-
-Button.defaultProps = {
-  center: false,
-  disabled: false,
-  stroked: false,
-  full: false,
-  icon: '',
-  size: 'medium',
-  skin: 'primary',
-  type: 'button',
-  children: undefined,
-  $as: undefined,
-  onClick: () => {},
 };
 
 Button.propTypes = {
@@ -91,12 +73,15 @@ Button.propTypes = {
     PropTypes.node,
     PropTypes.string,
   ]),
-  /** https://www.styled-components.com/docs/api#as-polymorphic-prop */
-  $as: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   onClick: PropTypes.func,
 };
 
-const IconButton = ({ className = '', skin, size, ...props }) => {
+const IconButton = ({
+  className = '',
+  skin = 'neutral',
+  size = 'medium',
+  ...props
+}) => {
   const classIconButton = classNames(
     buttonBaseStyles['icon-button'],
     buttonBaseStyles[`icon-button-${size}`],
@@ -117,11 +102,6 @@ IconButton.propTypes = {
     'warning',
     'error',
   ]),
-};
-
-IconButton.defaultProps = {
-  size: 'medium',
-  skin: 'neutral',
 };
 
 Button.Icon = IconButton;

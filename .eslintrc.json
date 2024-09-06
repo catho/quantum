@@ -42,7 +42,13 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": ["off", { "extensions": [".js"] }],
-    "react/prop-types": ["off", { "extensions": [".stories.jsx"] }]
+    "react/prop-types": ["off", { "extensions": [".stories.jsx"] }],
+    "react/require-default-props": [
+      "error",
+      {
+        "functions": "defaultArguments"
+      }
+    ]
   },
   "globals": {
     "window": true,

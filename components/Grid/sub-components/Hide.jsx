@@ -3,10 +3,10 @@ import classNames from 'classnames';
 import styles from './Hide.module.css';
 
 const Hide = ({
-  xsmall,
-  small,
-  medium,
-  large,
+  xsmall = undefined,
+  small = undefined,
+  medium = undefined,
+  large = undefined,
   className,
   children,
   ...rest
@@ -26,13 +26,6 @@ const Hide = ({
       {children}
     </div>
   );
-};
-
-Hide.defaultProps = {
-  xsmall: undefined,
-  small: undefined,
-  medium: undefined,
-  large: undefined,
 };
 
 Hide.propTypes = {

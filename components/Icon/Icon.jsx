@@ -39,6 +39,7 @@ import Contrast from '@mui/icons-material/Contrast';
 import CreditCard from '@mui/icons-material/CreditCard';
 import DateRange from '@mui/icons-material/DateRange';
 import Delete from '@mui/icons-material/Delete';
+import DescriptionOutlined from '@mui/icons-material/DescriptionOutlined';
 import Done from '@mui/icons-material/Done';
 import Edit from '@mui/icons-material/Edit';
 import EmojiPeople from '@mui/icons-material/EmojiPeople';
@@ -57,6 +58,7 @@ import Group from '@mui/icons-material/Group';
 import GroupAdd from '@mui/icons-material/GroupAdd';
 import Help from '@mui/icons-material/Help';
 import Home from '@mui/icons-material/Home';
+import HomeWork from '@mui/icons-material/HomeWork';
 import Info from '@mui/icons-material/Info';
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
@@ -96,10 +98,10 @@ import StarHalf from '@mui/icons-material/StarHalf';
 import StarRounded from '@mui/icons-material/StarRounded';
 import Stars from '@mui/icons-material/Stars';
 import SwapVert from '@mui/icons-material/SwapVert';
-import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
 import ThumbDown from '@mui/icons-material/ThumbDown';
-import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
+import ThumbDownOutlined from '@mui/icons-material/ThumbDownOutlined';
 import ThumbUp from '@mui/icons-material/ThumbUp';
+import ThumbUpOutlined from '@mui/icons-material/ThumbUpOutlined';
 import TimerOutlined from '@mui/icons-material/TimerOutlined';
 import TrendingUp from '@mui/icons-material/TrendingUp';
 import Tune from '@mui/icons-material/Tune';
@@ -124,7 +126,7 @@ const sizes = {
   xlarge: baseFontSize * 2.5, // 40
 };
 
-const Icon = ({ name, skin, size, ...props }) => {
+const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
   const components = {
     access_time: AccessTime,
     accessible_forward: AccessibleForward,
@@ -164,6 +166,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     credit_card: CreditCard,
     date_range: DateRange,
     delete: Delete,
+    description_outlined: DescriptionOutlined,
     done: Done,
     edit: Edit,
     emoji_people: EmojiPeople,
@@ -181,6 +184,7 @@ const Icon = ({ name, skin, size, ...props }) => {
     group: Group,
     group_add: GroupAdd,
     home: Home,
+    home_work: HomeWork,
     help: Help,
     info: Info,
     keyboard_arrow_down: KeyboardArrowDown,
@@ -245,18 +249,17 @@ const Icon = ({ name, skin, size, ...props }) => {
   return (
     <SelectedIcon
       {...props}
-      style={{ color: skin, fontSize: sizes[size], maxWidth: sizes[size] }}
+      style={{
+        color: skin,
+        fontSize: sizes[size],
+        maxWidth: sizes[size],
+        ...style,
+      }}
       data-qtm-preloader="icon"
     >
       {name}
     </SelectedIcon>
   );
-};
-
-Icon.defaultProps = {
-  style: {},
-  skin: '',
-  size: 'medium',
 };
 
 Icon.propTypes = {

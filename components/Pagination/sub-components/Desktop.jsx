@@ -9,16 +9,16 @@ import { createUniqId } from '../../shared/uniqId';
 const uniqId = createUniqId('dot-');
 
 const Desktop = ({
-  activePage,
-  handlePageClick,
-  handleHref,
-  prevButtonText,
-  nextButtonText,
+  tabIndex = 0,
+  activePage = 1,
+  activePageAriaLabel = 'Current Page',
+  handlePageClick = undefined,
+  handleHref = undefined,
+  followOnlyFirstPage = false,
+  prevButtonText = 'Previous',
+  nextButtonText = 'Next',
+  pageAriaLabel = 'Page',
   totalPages,
-  activePageAriaLabel,
-  pageAriaLabel,
-  tabIndex,
-  followOnlyFirstPage,
   hideLastPagination,
 }) => (
   <>
@@ -79,18 +79,6 @@ Desktop.propTypes = {
   pageAriaLabel: PropTypes.string,
   followOnlyFirstPage: PropTypes.bool,
   hideLastPagination: PropTypes.bool.isRequired,
-};
-
-Desktop.defaultProps = {
-  tabIndex: 0,
-  activePage: 1,
-  activePageAriaLabel: 'Current Page',
-  nextButtonText: 'Next',
-  pageAriaLabel: 'Page',
-  handleHref: undefined,
-  prevButtonText: 'Previous',
-  handlePageClick: undefined,
-  followOnlyFirstPage: false,
 };
 
 export default Desktop;

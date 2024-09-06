@@ -153,11 +153,12 @@ exports[`Alert component Should match a skin snapshot 1`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -326,11 +327,12 @@ exports[`Alert component Should match a skin snapshot 2`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -499,11 +501,12 @@ exports[`Alert component Should match a skin snapshot 3`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -672,11 +675,12 @@ exports[`Alert component Should match a skin snapshot 4`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -845,11 +849,12 @@ exports[`Alert component Should match a skin snapshot 5`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -997,11 +1002,12 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"
@@ -1171,11 +1177,12 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
     </span>
     <button
       class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c5 c6"
+      theme="[object Object]"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium ButtonBase-module__button-icon___s3a-2 ButtonBase-module__button-icon-medium___HY30Y css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="CloseIcon"
         focusable="false"

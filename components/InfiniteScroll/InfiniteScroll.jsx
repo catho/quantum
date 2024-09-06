@@ -21,106 +21,104 @@ const InfiniteScrollWrapper = styled.div`
   overflow-y: auto;
 `;
 
-const InfiniteScroll = forwardRef(
-  ({ children, reverse, onScrollEnd, loading }, ref) => {
-    const [scrollHeight, setScrollHeight] = useState();
-    const [dispatchObserverEvent, setDispatchObserverEvent] = useState(false);
-    const wrapperRef = useRef();
-    const triggerRef = useRef();
+const InfiniteScrollBase = (
+  { children, reverse = false, onScrollEnd = () => {}, loading },
+  ref,
+) => {
+  const [scrollHeight, setScrollHeight] = useState();
+  const [dispatchObserverEvent, setDispatchObserverEvent] = useState(false);
+  const wrapperRef = useRef();
+  const triggerRef = useRef();
 
-    const handleObserver = ([target]) => {
-      if (target.isIntersecting && target.intersectionRatio) {
-        setDispatchObserverEvent(true);
-      }
-    };
-
-    const handleMutations = useCallback((mutations) => {
-      if (mutations?.length > 1) {
-        const wrapperEl = wrapperRef.current;
-        setScrollHeight((state) => wrapperEl.scrollHeight - state);
-      }
-    }, []);
-
-    if (reverse) {
-      useMutationObservable({
-        targetEl: wrapperRef.current,
-        callback: handleMutations,
-      });
+  const handleObserver = ([target]) => {
+    if (target.isIntersecting && target.intersectionRatio) {
+      setDispatchObserverEvent(true);
     }
+  };
 
-    const handleScrollToStart = useCallback(() => {
-      setScrollHeight(wrapperRef?.current?.scrollHeight);
-    }, []);
-
-    useImperativeHandle(ref, () => ({
-      scrollToStart: handleScrollToStart,
-    }));
-
-    useEffect(() => {
+  const handleMutations = useCallback((mutations) => {
+    if (mutations?.length > 1) {
       const wrapperEl = wrapperRef.current;
-      const triggerEl = triggerRef.current;
+      setScrollHeight((state) => wrapperEl.scrollHeight - state);
+    }
+  }, []);
 
-      const intersectionObserver = new IntersectionObserver(handleObserver, {
-        root: wrapperEl,
-        threshold: 1,
-      });
-      intersectionObserver.observe(triggerEl);
+  if (reverse) {
+    useMutationObservable({
+      targetEl: wrapperRef.current,
+      callback: handleMutations,
+    });
+  }
 
-      if (reverse) {
-        setScrollHeight(wrapperEl.scrollHeight);
-      }
+  const handleScrollToStart = useCallback(() => {
+    setScrollHeight(wrapperRef?.current?.scrollHeight);
+  }, []);
 
-      return () => {
-        intersectionObserver.unobserve(triggerEl);
-      };
-    }, []);
+  useImperativeHandle(ref, () => ({
+    scrollToStart: handleScrollToStart,
+  }));
 
-    useEffect(() => {
-      if (reverse) {
-        InfiniteScroll.handleScrollPosition(wrapperRef.current, scrollHeight);
-      }
-    }, [scrollHeight]);
+  useEffect(() => {
+    const wrapperEl = wrapperRef.current;
+    const triggerEl = triggerRef.current;
 
-    useEffect(() => {
-      if (dispatchObserverEvent) {
-        onScrollEnd();
-        setDispatchObserverEvent(false);
-      }
-    }, [dispatchObserverEvent]);
+    const intersectionObserver = new IntersectionObserver(handleObserver, {
+      root: wrapperEl,
+      threshold: 1,
+    });
+    intersectionObserver.observe(triggerEl);
 
     if (reverse) {
-      return (
-        <InfiniteScrollWrapper ref={wrapperRef}>
-          {loading && <Loader />}
-          <span ref={triggerRef} />
-          {children}
-        </InfiniteScrollWrapper>
-      );
+      setScrollHeight(wrapperEl.scrollHeight);
     }
 
+    return () => {
+      intersectionObserver.unobserve(triggerEl);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (reverse) {
+      InfiniteScrollBase.handleScrollPosition(wrapperRef.current, scrollHeight);
+    }
+  }, [scrollHeight]);
+
+  useEffect(() => {
+    if (dispatchObserverEvent) {
+      onScrollEnd();
+      setDispatchObserverEvent(false);
+    }
+  }, [dispatchObserverEvent]);
+
+  if (reverse) {
     return (
       <InfiniteScrollWrapper ref={wrapperRef}>
-        {children}
-        <span ref={triggerRef} />
         {loading && <Loader />}
+        <span ref={triggerRef} />
+        {children}
       </InfiniteScrollWrapper>
     );
-  },
-);
+  }
 
-InfiniteScroll.handleScrollPosition = (element, height) => {
+  return (
+    <InfiniteScrollWrapper ref={wrapperRef}>
+      {children}
+      <span ref={triggerRef} />
+      {loading && <Loader />}
+    </InfiniteScrollWrapper>
+  );
+};
+
+InfiniteScrollBase.handleScrollPosition = (element, height) => {
   element.scrollTo({ top: height, behavior: 'instant' });
 };
+
+const InfiniteScroll = forwardRef(InfiniteScrollBase);
 
 InfiniteScroll.propTypes = {
   children: PropTypes.element.isRequired,
   reverse: PropTypes.bool,
   onScrollEnd: PropTypes.func,
-};
-
-InfiniteScroll.defaultProps = {
-  reverse: false,
-  onScrollEnd: () => {},
 };
 
 export default InfiniteScroll;

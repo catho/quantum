@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import styles from './Container.module.css';
 
 const Container = ({
-  'no-gutters': noGutter,
-  withBreakpoints,
-  fluid,
+  'no-gutters': noGutter = false,
+  withBreakpoints = false,
+  fluid = false,
   className,
   children,
   ...rest
@@ -30,12 +30,6 @@ Container.propTypes = {
   withBreakpoints: PropTypes.bool,
   fluid: PropTypes.bool,
   'no-gutters': PropTypes.bool,
-};
-
-Container.defaultProps = {
-  fluid: false,
-  withBreakpoints: false,
-  'no-gutters': false,
 };
 
 Container.displayName = 'Container';

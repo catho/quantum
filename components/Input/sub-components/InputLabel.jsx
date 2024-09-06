@@ -2,7 +2,10 @@ import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { colors, spacing } from '../../shared/theme';
 
-const InputLabel = styled.label`
+const InputLabel = styled.label.attrs(({ theme, ...rest }) => ({
+  theme: { spacing, colors, ...theme },
+  ...rest,
+}))`
   display: block;
   font-weight: bold;
   ${({
@@ -23,10 +26,6 @@ InputLabel.propTypes = {
     spacing: PropTypes.object,
     colors: PropTypes.object,
   }),
-};
-
-InputLabel.defaultProps = {
-  theme: { spacing, colors },
 };
 
 export default InputLabel;

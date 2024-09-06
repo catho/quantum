@@ -186,13 +186,19 @@ const HiddenCheckbox = styled(HiddenInput).attrs({
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
 const Checkbox = ({
-  children,
-  id,
-  label,
-  value,
-  theme,
-  error: errorProp,
-  onChange: onChangeProp,
+  children = '',
+  id = '',
+  label = '',
+  value = '',
+  theme = {
+    colors,
+    spacing,
+    baseFontSize,
+  },
+  error: errorProp = '',
+  onChange: onChangeProp = () => {},
+  checked = false,
+  disabled = false,
   ...props
 }) => {
   const context = useContext(CheckboxGroupContext);
@@ -203,12 +209,14 @@ const Checkbox = ({
     <Wrapper inline={inline}>
       <CheckboxWrapper theme={theme}>
         <HiddenCheckbox
-          {...props}
+          checked={checked}
+          disabled={disabled}
           id={id}
           error={error}
           value={value}
           onChange={onChange}
           theme={theme}
+          {...props}
         />
         <CheckIcon />
         <CheckboxLabel htmlFor={id} theme={theme}>
@@ -235,22 +243,6 @@ Checkbox.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-};
-
-Checkbox.defaultProps = {
-  checked: false,
-  disabled: false,
-  children: '',
-  error: '',
-  id: '',
-  label: '',
-  value: '',
-  onChange: () => {},
-  theme: {
-    colors,
-    spacing,
-    baseFontSize,
-  },
 };
 
 Checkbox.displayName = 'Checkbox';

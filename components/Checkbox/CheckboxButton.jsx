@@ -44,17 +44,17 @@ const CheckButton = styled(Button)`
 `;
 
 const CheckboxButton = ({
-  children,
-  id,
-  label,
-  value,
-  checked,
-  disabled,
+  children = '',
+  id = '',
+  label = '',
+  value = '',
+  checked = false,
+  disabled = false,
   name,
-  icon,
-  skin,
-  error: errorProp,
-  onChange: onChangeProp,
+  icon = undefined,
+  skin = 'primary',
+  error: errorProp = '',
+  onChange: onChangeProp = () => {},
   ...props
 }) => {
   const {
@@ -104,19 +104,6 @@ const CheckboxButton = ({
       </CheckButton>
     </Wrapper>
   );
-};
-
-CheckboxButton.defaultProps = {
-  checked: false,
-  children: '',
-  skin: 'primary',
-  disabled: false,
-  error: '',
-  icon: undefined,
-  id: '',
-  label: '',
-  onChange: () => {},
-  value: '',
 };
 
 CheckboxButton.propTypes = {

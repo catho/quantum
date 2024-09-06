@@ -184,19 +184,23 @@ const SelectionItemImage = styled.img`
 `;
 
 const DropdownLight = ({
-  disabled,
+  disabled = false,
   items,
-  theme,
-  placeholder,
-  name,
-  id,
-  label,
-  error,
-  required,
-  helperText,
-  skin,
-  onChange,
-  selectedItem,
+  theme = {
+    colors: colorsDefault,
+    spacing: spacingDefault,
+    baseFontSize: baseFontSizeDefault,
+  },
+  placeholder = 'Select an option',
+  name = '',
+  id = '',
+  label = '',
+  error = '',
+  required = false,
+  helperText = '',
+  skin = 'default',
+  onChange = () => {},
+  selectedItem = null,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOptionItem, setSelectedOptionItem] = useState(
@@ -406,25 +410,6 @@ DropdownLight.propTypes = {
     baseFontSize: PropTypes.number,
   }),
   skin: PropTypes.oneOf(['default', 'dark']),
-};
-
-DropdownLight.defaultProps = {
-  id: '',
-  label: '',
-  error: '',
-  required: false,
-  disabled: false,
-  theme: {
-    colors: colorsDefault,
-    spacing: spacingDefault,
-    baseFontSize: baseFontSizeDefault,
-  },
-  placeholder: 'Select an option',
-  name: '',
-  helperText: '',
-  skin: 'default',
-  onChange: () => {},
-  selectedItem: null,
 };
 
 export default DropdownLight;

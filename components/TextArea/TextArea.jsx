@@ -35,25 +35,29 @@ const TextAreaTag = styled(TextInput)`
 const FONT_SIZE = 16;
 const LINE_HEIGHT = 1.5;
 
-const TextArea = forwardRef((props, ref) => {
-  const {
+const TextAreaBase = (
+  {
     id = uniqId(),
-    value,
-    onChange,
-    label,
-    disabled,
-    required,
-    helperText,
-    error,
-    placeholder,
-    theme,
-    skin,
-    isAutoResize,
-    autoResizeConfig: { initialRows, minRows, maxRows },
-    // eslint-disable-next-line react/prop-types
+    value = '',
+    onChange = () => {},
+    label = undefined,
+    disabled = false,
+    required = false,
+    helperText = '',
+    error = '',
+    placeholder = '',
+    theme = { spacing, colors, baseFontSize },
+    skin = 'default',
+    isAutoResize = false,
+    autoResizeConfig: { initialRows, minRows, maxRows } = {
+      initialRows: 1,
+      minRows: 1,
+      maxRows: 5,
+    },
     ...rest
-  } = props;
-
+  },
+  ref,
+) => {
   const [hasDefaultValue, setHasDefaultValue] = useState(!!value?.length);
   const [currentValue, setCurrentValue] = useState(value);
   const [rows, setRows] = useState(initialRows);
@@ -123,28 +127,9 @@ const TextArea = forwardRef((props, ref) => {
       )}
     </FieldGroup>
   );
-});
-
-TextArea.defaultProps = {
-  /** Disables the default resize and activates the auto resize */
-  isAutoResize: false,
-  autoResizeConfig: {
-    initialRows: 1,
-    minRows: 1,
-    maxRows: 5,
-  },
-  disabled: false,
-  error: '',
-  helperText: '',
-  label: undefined,
-  onChange: () => {},
-  placeholder: '',
-  required: false,
-  value: '',
-  id: undefined,
-  theme: { spacing, colors, baseFontSize },
-  skin: 'default',
 };
+
+const TextArea = forwardRef(TextAreaBase);
 
 TextArea.propTypes = {
   isAutoResize: PropTypes.bool,

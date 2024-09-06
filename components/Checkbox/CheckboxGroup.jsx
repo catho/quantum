@@ -12,14 +12,17 @@ const Group = styled(FieldGroup)`
 `;
 
 const CheckboxGroup = ({
-  children,
-  onChange,
-  error,
-  options,
-  type,
-  inline,
-  theme,
-  size,
+  children = undefined,
+  onChange = () => {},
+  error = undefined,
+  options = [],
+  type = 'checkbox',
+  inline = false,
+  theme = {
+    colors,
+    spacing,
+  },
+  size = 'medium',
 }) => {
   const _onChange = (event) => {
     const {
@@ -89,23 +92,6 @@ CheckboxGroup.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-/**
- * Group for Checkbox components.
- */
-CheckboxGroup.defaultProps = {
-  children: undefined,
-  error: undefined,
-  inline: false,
-  onChange: () => {},
-  options: [],
-  size: 'medium',
-  type: 'checkbox',
-  theme: {
-    colors,
-    spacing,
-  },
 };
 
 export default CheckboxGroup;

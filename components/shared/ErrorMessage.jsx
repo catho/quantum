@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { colors, spacing } from './theme';
 
-const ErrorMessage = styled.span`
+const ErrorMessage = styled.span.attrs(({ theme, ...rest }) => ({
+  theme: { colors, spacing, ...theme },
+  ...rest,
+}))`
   ${({
     theme: {
       colors: {
@@ -28,10 +31,6 @@ ErrorMessage.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-ErrorMessage.defaultProps = {
-  theme: { colors, spacing },
 };
 
 export default ErrorMessage;

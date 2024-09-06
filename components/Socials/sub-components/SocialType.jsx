@@ -10,7 +10,7 @@ const SocialWrapper = styled.a`
   display: inline-flex;
 `;
 
-const SocialType = ({ type, url, size, title, withBox }) => {
+const SocialType = ({ type, url, size = '48', title, withBox = true }) => {
   const socialTypes = {
     twitter: <SocialTwitterIcon size={size} title={title} withBox={withBox} />,
     youtube: <SocialYoutubeIcon size={size} title={title} withBox={withBox} />,
@@ -19,11 +19,6 @@ const SocialType = ({ type, url, size, title, withBox }) => {
     ),
   };
   return <SocialWrapper href={url}>{socialTypes[type]}</SocialWrapper>;
-};
-
-SocialType.defaultProps = {
-  size: '48',
-  withBox: true,
 };
 
 SocialType.propTypes = {

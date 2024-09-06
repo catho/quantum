@@ -46,7 +46,7 @@ const InfiniteScrollWithNewItems = () => {
 describe('<InfiniteScroll />', () => {
   beforeAll(() => {
     jest
-      .spyOn(InfiniteScroll, 'handleScrollPosition')
+      .spyOn(InfiniteScroll.render, 'handleScrollPosition')
       .mockImplementation(() => jest.fn());
   });
   it('should match snapshots', () => {

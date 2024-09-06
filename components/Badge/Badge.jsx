@@ -3,7 +3,14 @@ import classNames from 'classnames';
 import styles from './Badge.module.css';
 
 /** This components is used to display only `Numbers`. If you want to pass a string, use `<Tag />` component instead */
-const Badge = ({ className, children, number, skin, inverted, dot }) => {
+const Badge = ({
+  className = '',
+  children = '',
+  number = 0,
+  skin = 'neutral',
+  inverted = false,
+  dot = false,
+}) => {
   const value = number > 99 ? '99+' : number;
   const wrapperClass = classNames(
     styles.wrapper,
@@ -50,14 +57,6 @@ Badge.propTypes = {
   inverted: PropTypes.bool,
   /** Shows only a dot, without any number. */
   dot: PropTypes.bool,
-};
-
-Badge.defaultProps = {
-  skin: 'neutral',
-  inverted: false,
-  children: '',
-  number: 0,
-  dot: false,
 };
 
 export default Badge;

@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Row /> Should forward no-gutters prop only to other Row and Container 1`] = `
+.Row-module__row___xiasO {
+  display: grid;
+  grid-auto-columns: max-content;
+}
+
+.Row-module__no-gutter___8kj-f {
+  margin-bottom: 0!important;
+  grid-column-gap: 0!important;
+  grid-row-gap: 0!important;
+}
+
+.Container-module__container___ZBwIj {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%;
+}
+
+.Container-module__no-gutters___sX06G {
+  padding: 0!important;
+}
+
+@media (min-width:0px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-xsmall);
+    grid-column-gap: var(--qtm-gutter-xsmall);
+    grid-row-gap: var(--qtm-gutter-xsmall);
+    grid-template-columns: repeat(var(--qtm-breakpoint-xsmall-columns),1fr);
+  }
+}
+
+@media (min-width:600px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-small);
+    grid-column-gap: var(--qtm-gutter-small);
+    grid-row-gap: var(--qtm-gutter-small);
+    grid-template-columns: repeat(var(--qtm-breakpoint-small-columns),1fr);
+  }
+}
+
+@media (min-width:1024px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-medium);
+    grid-column-gap: var(--qtm-gutter-medium);
+    grid-row-gap: var(--qtm-gutter-medium);
+    grid-template-columns: repeat(var(--qtm-breakpoint-medium-columns),1fr);
+  }
+}
+
+@media (min-width:1440px) {
+  .Row-module__row___xiasO {
+    margin-bottom: var(--qtm-gutter-large);
+    grid-column-gap: var(--qtm-gutter-large);
+    grid-row-gap: var(--qtm-gutter-large);
+    grid-template-columns: repeat(var(--qtm-breakpoint-large-columns),1fr);
+  }
+}
+
+@media (min-width:0px) {
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-xsmall);
+  }
+}
+
+@media (min-width:600px) {
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-small);
+  }
+}
+
+@media (min-width:1024px) {
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-medium);
+  }
+}
+
+@media (min-width:1440px) {
+  .Container-module__container___ZBwIj {
+    padding: var(--qtm-gutter-large);
+  }
+}
+
+<div
+  class="Row-module__row___xiasO Row-module__no-gutter___8kj-f"
+>
+  <span>
+    Hello world
+  </span>
+  <div
+    class="Row-module__row___xiasO Row-module__no-gutter___8kj-f"
+  >
+    Hello world
+  </div>
+  <div
+    class="Container-module__container___ZBwIj Container-module__no-gutters___sX06G"
+  >
+    Hello world
+  </div>
+</div>
+`;

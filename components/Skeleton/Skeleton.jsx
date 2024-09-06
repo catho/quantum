@@ -1,31 +1,40 @@
 import PropTypes from 'prop-types';
 import { Circle, Text, Button, Tag, Rect } from './sub-components';
 
-const Skeleton = ({ type, ...props }) => {
+const Skeleton = ({
+  type = 'rect',
+  as = 'div',
+  width = '100%',
+  height = '14px',
+  size = 'medium',
+  ...props
+}) => {
   switch (type) {
     case 'circle':
-      return <Circle {...props} />;
+      return (
+        <Circle as={as} width={width} height={height} size={size} {...props} />
+      );
 
     case 'text':
-      return <Text {...props} />;
+      return (
+        <Text as={as} width={width} height={height} size={size} {...props} />
+      );
 
     case 'button':
-      return <Button {...props} />;
+      return (
+        <Button as={as} width={width} height={height} size={size} {...props} />
+      );
 
     case 'tag':
-      return <Tag {...props} />;
+      return (
+        <Tag as={as} width={width} height={height} size={size} {...props} />
+      );
 
     default:
-      return <Rect {...props} />;
+      return (
+        <Rect as={as} width={width} height={height} size={size} {...props} />
+      );
   }
-};
-
-Skeleton.defaultProps = {
-  type: 'rect',
-  as: 'div',
-  width: '100%',
-  height: '14px',
-  size: 'medium',
 };
 
 Skeleton.propTypes = {

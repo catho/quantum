@@ -157,9 +157,23 @@ const HiddenCheckbox = styled.input.attrs({
 
 HiddenCheckbox.displayName = 'HiddenCheckbox';
 
-const Toggle = ({ checked, theme, ...rest }) => (
+const Toggle = ({
+  checked = null,
+  onChange = () => {},
+  theme = {
+    colors,
+    spacing,
+    baseFontSize,
+  },
+  ...rest
+}) => (
   <Wrapper>
-    <HiddenCheckbox theme={theme} checked={checked} {...rest} />
+    <HiddenCheckbox
+      theme={theme}
+      checked={checked}
+      onChange={onChange}
+      {...rest}
+    />
     <Switch theme={theme}>
       <CloseIcon />
       <CheckIcon />
@@ -175,16 +189,6 @@ Toggle.propTypes = {
     spacing: PropTypes.object,
     baseFontSize: PropTypes.number,
   }),
-};
-
-Toggle.defaultProps = {
-  onChange: () => {},
-  checked: null,
-  theme: {
-    colors,
-    spacing,
-    baseFontSize,
-  },
 };
 
 export default Toggle;

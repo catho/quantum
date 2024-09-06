@@ -59,11 +59,11 @@ const IconToggle = styled(Icon)`
 
 /** This components is used to display the user picture. */
 const Avatar = ({
-  picture,
-  text,
-  hasNotification,
-  hasToggle,
-  href,
+  picture = '',
+  text = '',
+  hasNotification = false,
+  hasToggle = false,
+  href = '',
   ...rest
 }) => (
   <AvatarWrapper
@@ -89,14 +89,6 @@ Avatar.propTypes = {
   href: PropTypes.string,
   hasNotification: PropTypes.bool,
   hasToggle: PropTypes.bool,
-};
-
-Avatar.defaultProps = {
-  picture: '',
-  text: '',
-  href: '',
-  hasNotification: false,
-  hasToggle: false,
 };
 
 export default Avatar;

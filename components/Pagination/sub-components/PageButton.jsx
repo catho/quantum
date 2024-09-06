@@ -7,7 +7,16 @@ import {
   baseFontSize as defaultBaseFontSize,
 } from '../../shared/theme';
 
-const PageButton = styled.a`
+const PageButton = styled.a.attrs(({ active, theme, ...rest }) => ({
+  active: !!active,
+  theme: {
+    baseFontSize: defaultBaseFontSize,
+    colors,
+    spacing,
+    ...theme,
+  },
+  ...rest,
+}))`
   font-weight: bold;
   align-items: center;
   border-radius: 10px;
@@ -63,16 +72,6 @@ PageButton.propTypes = {
     colors: PropTypes.object,
     spacing: PropTypes.object,
   }),
-};
-
-PageButton.defaultProps = {
-  active: false,
-  onClick: () => {},
-  theme: {
-    baseFontSize: defaultBaseFontSize,
-    colors,
-    spacing,
-  },
 };
 
 export default PageButton;
