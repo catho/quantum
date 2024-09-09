@@ -20,6 +20,12 @@ describe('Button component', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it('when disabled prop is set', () => {
+    const { container } = render(<Button disabled>Text</Button>);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it('should render a button only icon state ', () => {
     const { container: defaultSize } = render(<Button icon="info" />);
     const { container: xSmallSize } = render(

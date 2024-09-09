@@ -436,6 +436,56 @@ exports[`Button component when center prop is set 1`] = `
 </button>
 `;
 
+exports[`Button component when disabled prop is set 1`] = `
+.ButtonBase-module__button___-CVUK {
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.ButtonBase-module__button-disable___Y9IPR {
+  border: 2px solid var(--qtm-colors-neutral-300);
+  cursor: not-allowed;
+}
+
+.ButtonBase-module__button-disable___Y9IPR,
+.ButtonBase-module__button-disable-stroked___CAyx7 {
+  background-color: var(--qtm-colors-neutral-300);
+  color: var(--qtm-colors-neutral-700);
+}
+
+.ButtonBase-module__button-medium___BtByl,
+.ButtonBase-module__button-small___ffdO7 {
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-medium);
+}
+
+.ButtonBase-module__button-medium___BtByl {
+  font-size: var(--qtm-base-font-size);
+  line-height: calc(var(--qtm-base-font-size)*1.5);
+  min-height: var(--qtm-spacing-xxlarge);
+}
+
+.ButtonBase-module__shadow-2-neutral-500___mSG-z {
+  --qtm-shadow-umbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-umbra-opacity));
+  --qtm-shadow-penumbra-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-penumbra-opacity));
+  --qtm-shadow-ambient-neutral-500-color: rgba(153,153,153,var(--qtm-shadow-ambient-opacity));
+  box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
+}
+
+<button
+  class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-disable___Y9IPR ButtonBase-module__shadow-2-neutral-500___mSG-z"
+  disabled=""
+  type="button"
+>
+  Text
+</button>
+`;
+
 exports[`Button component when full prop is set 1`] = `
 .ButtonBase-module__button___-CVUK {
   align-items: center;
