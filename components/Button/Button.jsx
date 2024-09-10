@@ -43,7 +43,13 @@ const Button = ({
   );
 
   return (
-    <button type="button" className={defaultButtonStyle} size={size} {...rest}>
+    <button
+      type="button"
+      className={defaultButtonStyle}
+      size={size}
+      disabled={disabled}
+      {...rest}
+    >
       {icon && <Icon className={iconStyle} size={size} name={icon} />}
       {children}
     </button>
