@@ -1,4 +1,4 @@
-import { Component, Children } from 'react';
+import { useState, useEffect, Children } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
@@ -159,86 +159,86 @@ const TabPanel = styled.div`
 
 const RenderIf = ({ conditional, children }) => conditional && children;
 
-class TabbedView extends Component {
-  static Tab = Tab;
-
-  constructor(props) {
-    super(props);
-
-    const { children, activeTab } = props;
-
-    if (activeTab) {
-      this.state = { activeTab };
-    } else {
-      const [
-        {
-          props: { title },
-        },
-      ] = Children.toArray(children);
-      this.state = { activeTab: title };
-    }
+function TabbedView({
+  children,
+  activeTab = undefined,
+  skin = 'neutral',
+  theme = {
+    components,
+    baseFontSize: defaultBaseFontSize,
+    breakpoints: defaultBreakpoints,
+    spacing: defaultSpacing,
+  },
+  fluid = false,
+  onTabClick = () => {},
+}) {
+  const [currentTab, setCurrentTab] = useState(activeTab);
+  const tabTitles = Children.toArray(children).map((tab) => tab.props.title);
+  function setDefaultTab() {
+    setCurrentTab(tabTitles[0]);
   }
 
-  onTabClick = (tab, onTabClick) => {
-    this.setState({ activeTab: tab });
+  useEffect(() => {
+    if (tabTitles.includes(activeTab)) {
+      setCurrentTab(activeTab);
+    } else {
+      setDefaultTab();
+    }
+  }, [activeTab]);
+
+  const handleTabClick = (tab) => {
+    setCurrentTab(tab);
     onTabClick(tab);
   };
 
-  sanitize = (str) =>
+  const sanitize = (str) =>
     str
       .normalize('NFD')
       .replace(/[\u0300-\u036f]/g, '')
       .replace(' ', '-')
       .toLowerCase();
 
-  render() {
-    const { children, skin, theme, fluid, onTabClick } = this.props;
-    const { activeTab } = this.state;
+  return (
+    <>
+      <Navbar theme={theme} skin={skin} fluid={fluid}>
+        {Children.map(children, ({ props: { title, badge, icon } }) => (
+          <NavItem
+            fluid={fluid}
+            quantityOfItems={Children.count(children)}
+            key={title}
+            onClick={() => handleTabClick(title)}
+            skin={skin}
+            theme={theme}
+            id={`${sanitize(title)}-tab`}
+            aria-controls={`${sanitize(title)}-panel`}
+            aria-selected={title === currentTab}
+          >
+            {icon && <IconContainer>{icon}</IconContainer>}
+            {title && <TitleContainer>{title}</TitleContainer>}
+            {badge && <BadgeContainer>{badge}</BadgeContainer>}
+          </NavItem>
+        ))}
+      </Navbar>
 
-    return (
-      <>
-        <Navbar theme={theme} skin={skin} fluid={fluid}>
-          {Children.map(children, ({ props: { title, badge, icon } }) => (
-            <NavItem
-              fluid={fluid}
-              quantityOfItems={Children.count(children)}
-              key={title}
-              onClick={() => this.onTabClick(title, onTabClick)}
-              skin={skin}
-              theme={theme}
-              id={`${this.sanitize(title)}-tab`}
-              aria-controls={`${this.sanitize(title)}-panel`}
-              aria-selected={title === activeTab}
-            >
-              {icon && <IconContainer>{icon}</IconContainer>}
-              {title && <TitleContainer>{title}</TitleContainer>}
-              {badge && <BadgeContainer>{badge}</BadgeContainer>}
-            </NavItem>
-          ))}
-        </Navbar>
-
-        {Children.map(
-          children,
-          ({ props: { title, children: tabContent } }) => (
-            <RenderIf conditional={title === activeTab}>
-              <TabPanel
-                role="tabpanel"
-                key={`${this.sanitize(title)}-panel-key`}
-                id={`${this.sanitize(title)}-panel`}
-                aria-labelledby={`${this.sanitize(title)}-tab`}
-              >
-                {tabContent}
-              </TabPanel>
-            </RenderIf>
-          ),
-        )}
-      </>
-    );
-  }
+      {Children.map(children, ({ props: { title, children: tabContent } }) => (
+        <RenderIf conditional={title === currentTab}>
+          <TabPanel
+            role="tabpanel"
+            key={`${sanitize(title)}-panel-key`}
+            id={`${sanitize(title)}-panel`}
+            aria-labelledby={`${sanitize(title)}-tab`}
+          >
+            {tabContent}
+          </TabPanel>
+        </RenderIf>
+      ))}
+    </>
+  );
 }
 
+TabbedView.Tab = Tab;
+
 TabbedView.propTypes = {
-  /** Used to expand all tabs along all the parent width */
   fluid: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
@@ -255,19 +255,6 @@ TabbedView.propTypes = {
     spacing: PropTypes.object,
   }),
   onTabClick: PropTypes.func,
-};
-
-TabbedView.defaultProps = {
-  fluid: false,
-  activeTab: undefined,
-  skin: 'neutral',
-  theme: {
-    components,
-    baseFontSize: defaultBaseFontSize,
-    breakpoints: defaultBreakpoints,
-    spacing: defaultSpacing,
-  },
-  onTabClick: () => {},
 };
 
 TabbedView.displayName = 'TabbedView';
