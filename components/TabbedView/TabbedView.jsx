@@ -198,13 +198,15 @@ function TabbedView({
       .replace(' ', '-')
       .toLowerCase();
 
+  const quantityOfItems = Children.count(children);
+
   return (
     <>
       <Navbar theme={theme} skin={skin} fluid={fluid}>
         {Children.map(children, ({ props: { title, badge, icon } }) => (
           <NavItem
             fluid={fluid}
-            quantityOfItems={Children.count(children)}
+            quantityOfItems={quantityOfItems}
             key={title}
             onClick={() => handleTabClick(title)}
             skin={skin}
