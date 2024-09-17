@@ -112,6 +112,7 @@ import Warning from '@mui/icons-material/Warning';
 import WatchLater from '@mui/icons-material/WatchLater';
 import Whatshot from '@mui/icons-material/Whatshot';
 import Work from '@mui/icons-material/Work';
+import Acute from '@mui/icons-material/Acute';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -240,6 +241,7 @@ const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
     watch_later: WatchLater,
     whatshot: Whatshot,
     work: Work,
+    acute: Acute,
   };
 
   if (!components[name]) return <span>{name}</span>;
