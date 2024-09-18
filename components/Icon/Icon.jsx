@@ -112,6 +112,9 @@ import Warning from '@mui/icons-material/Warning';
 import WatchLater from '@mui/icons-material/WatchLater';
 import Whatshot from '@mui/icons-material/Whatshot';
 import Work from '@mui/icons-material/Work';
+import BoxSeamFill from './Custom/BoxSeamFill';
+import Dentistry from './Custom/Dentistry';
+import EcgHeart from './Custom/EcgHeart';
 
 import { theme } from '../shared';
 import icons from '../shared/icons';
@@ -126,7 +129,13 @@ const sizes = {
   xlarge: baseFontSize * 2.5, // 40
 };
 
-const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
+export const customIcons = {
+  box_seam_fill: BoxSeamFill,
+  dentistry: Dentistry,
+  ecg_heart: EcgHeart,
+};
+
+const Icon = ({ name, skin = '', style = {}, size = 'medium', ...rest }) => {
   const components = {
     access_time: AccessTime,
     accessible_forward: AccessibleForward,
@@ -240,23 +249,33 @@ const Icon = ({ name, skin = '', style = {}, size = 'medium', ...props }) => {
     watch_later: WatchLater,
     whatshot: Whatshot,
     work: Work,
+    ...customIcons,
   };
 
   if (!components[name]) return <span>{name}</span>;
 
   const SelectedIcon = components[name];
+  const sizeInPx = sizes[size];
+
+  const isCustomIcon = Object.values(customIcons).includes(SelectedIcon);
+
+  const customIconProps = { size: sizeInPx, color: skin };
+  const muiIconProps = {
+    style: {
+      color: skin,
+      fontSize: sizeInPx,
+      maxWidth: sizeInPx,
+      ...style,
+    },
+  };
+
+  const iconProps = {
+    ...(isCustomIcon ? customIconProps : muiIconProps),
+    ...rest,
+  };
 
   return (
-    <SelectedIcon
-      {...props}
-      style={{
-        color: skin,
-        fontSize: sizes[size],
-        maxWidth: sizes[size],
-        ...style,
-      }}
-      data-qtm-preloader="icon"
-    >
+    <SelectedIcon {...iconProps} data-qtm-preloader="icon">
       {name}
     </SelectedIcon>
   );
