@@ -1,4 +1,4 @@
-const Dentistry = ({ size = 24, color, ...rest }) => (
+const BoxSeamFill = ({ size = 24, color, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={size}
@@ -14,4 +14,4 @@ const Dentistry = ({ size = 24, color, ...rest }) => (
   </svg>
 );
 
-export default Dentistry;
+export default BoxSeamFill;
