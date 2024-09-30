@@ -147,6 +147,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -315,6 +316,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -506,6 +508,7 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
         aria-label="abrir lista de itens"
         class="c6"
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -685,6 +688,7 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -873,6 +877,7 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -1046,6 +1051,7 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         this is a input placeholder
         <svg
@@ -1215,6 +1221,7 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
         class="c4"
         disabled=""
         id=""
+        type="button"
       >
         Select an option
         <svg
@@ -1383,6 +1390,7 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
         aria-label="abrir lista de itens"
         class="c4"
         id=""
+        type="button"
       >
         Select an option
         <svg
