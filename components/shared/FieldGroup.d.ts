@@ -1,9 +1,6 @@
 import { FC, HTMLAttributes } from "react";
 
 interface FieldGroupProps extends HTMLAttributes<HTMLDivElement>{
-    theme?: {
-      colors?: object;
-    }
     skin: 'default' | string;
 }
 

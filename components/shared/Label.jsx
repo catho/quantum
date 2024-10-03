@@ -1,6 +1,14 @@
-import styled from 'styled-components';
+import classNames from 'classnames';
+import styles from './Label.module.css';
 
-export default styled.label`
-  display: block;
-  margin-bottom: 5px;
-`;
+const Label = ({ className, children, htmlFor, ...rest }) => {
+  const labelClass = classNames(styles.label, className);
+
+  return (
+    <label htmlFor={htmlFor} className={labelClass} {...rest}>
+      {children}
+    </label>
+  );
+};
+
+export default Label;

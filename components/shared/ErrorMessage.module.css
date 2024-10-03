@@ -1,0 +1,10 @@
+.error-message {
+    color: var(--qtm-colors-error-900);
+    margin-top: var(--qtm-spacing-xsmall);
+    cursor: text;
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
