@@ -1,72 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Dropdown component  should match the snapshot 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -84,24 +43,24 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-0-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -116,7 +75,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-0"
       role="button"
@@ -125,7 +84,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -142,72 +101,31 @@ exports[`Dropdown component  should match the snapshot 1`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 2`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -225,24 +143,24 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-1-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -257,7 +175,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-1"
       role="button"
@@ -266,7 +184,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -283,72 +201,31 @@ exports[`Dropdown component  should match the snapshot 2`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 3`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -369,24 +246,24 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-2-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -401,7 +278,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-2"
       role="button"
@@ -409,7 +286,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -426,84 +303,48 @@ exports[`Dropdown component  should match the snapshot 3`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 4`] = `
-.c5 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
-  border-color: #e91b0c;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__error___nPcHX,
+.TextInput-module__error___nPcHX:focus,
+.TextInput-module__error___nPcHX:hover {
+  border-color: var(--qtm-colors-error-700);
 }
 
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #e91b0c;
-  box-shadow: 0px 3px 1px -2px rgba(233,27,12,0.2),0px 2px 2px 0px rgba(233,27,12,0.14),0px 1px 5px 0px rgba(233,27,12,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -521,24 +362,24 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-3-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -553,7 +394,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX c1"
       data-toggle="true"
       id="dropdown-3"
       role="button"
@@ -562,7 +403,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -576,7 +417,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     </button>
   </div>
   <span
-    class="c5"
+    class="ErrorMessage-module__error-message___MWbU-"
   >
     Error message
   </span>
@@ -584,72 +425,31 @@ exports[`Dropdown component  should match the snapshot 4`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 5`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -667,24 +467,24 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-4-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -699,7 +499,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       disabled=""
       id="dropdown-4"
@@ -709,7 +509,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -726,79 +526,42 @@ exports[`Dropdown component  should match the snapshot 5`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 6`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__with-label___NwMP5 {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c3::-webkit-calendar-picker-indicator,
-.c3::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c3[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c3[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -816,28 +579,29 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   color: inherit;
 }
 
-.c5 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-5-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <label
-      class="c2"
+      class="InputLabel-module__input-label___u-ovg"
+      error=""
       for="dropdown-5"
       id="downshift-5-label"
     >
@@ -855,7 +619,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c3 c4"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
       data-toggle="true"
       id="dropdown-5"
       role="button"
@@ -864,7 +628,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -881,83 +645,46 @@ exports[`Dropdown component  should match the snapshot 6`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 7`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c4::-webkit-inner-spin-button,
-.c4::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__with-label___NwMP5 {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c4::-webkit-calendar-picker-indicator,
-.c4::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4::-ms-clear {
-  display: none;
-}
-
-.c4:hover,
-.c4:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c4[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c4[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c3 {
+.c1 {
   color: #ec584e;
 }
 
-.c5 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -975,34 +702,35 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   color: inherit;
 }
 
-.c6 {
+.c3 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-6-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <label
-      class="c2"
+      class="InputLabel-module__input-label___u-ovg"
+      error=""
       for="dropdown-6"
       id="downshift-6-label"
     >
       Dropdown label
       <em
-        class="c3"
+        class="c1"
       >
         *
       </em>
@@ -1019,7 +747,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c4 c5"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c2"
       data-toggle="true"
       id="dropdown-6"
       role="button"
@@ -1028,7 +756,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c6 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1045,72 +773,31 @@ exports[`Dropdown component  should match the snapshot 7`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 8`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1129,18 +816,18 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-7-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -1153,16 +840,17 @@ exports[`Dropdown component  should match the snapshot 8`] = `
       value=""
     />
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-7-label"
         autocomplete="off"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         id="dropdown-7"
         placeholder="Select an option"
-        style="cursor: inherit;"
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall)); cursor: inherit;"
+        text="Select an option"
         value=""
       />
     </div>
@@ -1171,72 +859,31 @@ exports[`Dropdown component  should match the snapshot 8`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 9`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1254,24 +901,24 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-8-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -1286,7 +933,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-8"
       role="button"
@@ -1295,7 +942,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1312,72 +959,31 @@ exports[`Dropdown component  should match the snapshot 9`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 10`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1395,24 +1001,24 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-9-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -1427,7 +1033,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-9"
       role="button"
@@ -1436,7 +1042,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       baz
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1453,79 +1059,42 @@ exports[`Dropdown component  should match the snapshot 10`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 11`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__with-label___NwMP5 {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c3::-webkit-calendar-picker-indicator,
-.c3::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c3[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c3[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1543,28 +1112,29 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   color: inherit;
 }
 
-.c5 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-10-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <label
-      class="c2"
+      class="InputLabel-module__input-label___u-ovg"
+      error=""
       for="dropdown-10"
       id="downshift-10-label"
     >
@@ -1582,7 +1152,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c3 c4"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
       data-toggle="true"
       id="dropdown-10"
       role="button"
@@ -1591,7 +1161,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       What credit card do you prefer?
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1608,72 +1178,31 @@ exports[`Dropdown component  should match the snapshot 11`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot 12`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1691,24 +1220,24 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-11-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -1723,7 +1252,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-11"
       role="button"
@@ -1732,7 +1261,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1749,72 +1278,31 @@ exports[`Dropdown component  should match the snapshot 12`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1832,24 +1320,24 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-12-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -1864,7 +1352,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-12"
       role="button"
@@ -1873,7 +1361,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1890,72 +1378,31 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1973,24 +1420,24 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-13-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -2005,7 +1452,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-13"
       role="button"
@@ -2014,7 +1461,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2031,72 +1478,31 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2117,24 +1523,24 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-14-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -2149,7 +1555,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       id="dropdown-14"
       role="button"
@@ -2157,7 +1563,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2174,84 +1580,48 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
-.c5 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
-  border-color: #e91b0c;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__error___nPcHX,
+.TextInput-module__error___nPcHX:focus,
+.TextInput-module__error___nPcHX:hover {
+  border-color: var(--qtm-colors-error-700);
 }
 
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #e91b0c;
-  box-shadow: 0px 3px 1px -2px rgba(233,27,12,0.2),0px 2px 2px 0px rgba(233,27,12,0.14),0px 1px 5px 0px rgba(233,27,12,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2269,24 +1639,24 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-15-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -2301,7 +1671,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX c1"
       data-toggle="true"
       id="dropdown-15"
       role="button"
@@ -2310,7 +1680,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2324,7 +1694,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
     </button>
   </div>
   <span
-    class="c5"
+    class="ErrorMessage-module__error-message___MWbU-"
   >
     Error message
   </span>
@@ -2332,72 +1702,31 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2415,24 +1744,24 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
   color: inherit;
 }
 
-.c4 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-16-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -2447,7 +1776,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c2 c3"
+      class="TextInput-module__text-input___VCylJ c1"
       data-toggle="true"
       disabled=""
       id="dropdown-16"
@@ -2457,7 +1786,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2474,79 +1803,42 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__with-label___NwMP5 {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c3::-webkit-calendar-picker-indicator,
-.c3::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c3[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c3[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2564,28 +1856,29 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
   color: inherit;
 }
 
-.c5 {
+.c2 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-17-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <label
-      class="c2"
+      class="InputLabel-module__input-label___u-ovg"
+      error=""
       for="dropdown-17"
       id="downshift-17-label"
     >
@@ -2603,7 +1896,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c3 c4"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
       data-toggle="true"
       id="dropdown-17"
       role="button"
@@ -2612,7 +1905,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2629,83 +1922,46 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c4::-webkit-inner-spin-button,
-.c4::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__with-label___NwMP5 {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c4::-webkit-calendar-picker-indicator,
-.c4::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4::-ms-clear {
-  display: none;
-}
-
-.c4:hover,
-.c4:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c4[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c4[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c3 {
+.c1 {
   color: #ec584e;
 }
 
-.c5 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2723,34 +1979,35 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
   color: inherit;
 }
 
-.c6 {
+.c3 {
   pointer-events: none;
   width: 24px;
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-18-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <label
-      class="c2"
+      class="InputLabel-module__input-label___u-ovg"
+      error=""
       for="dropdown-18"
       id="downshift-18-label"
     >
       Dropdown label
       <em
-        class="c3"
+        class="c1"
       >
         *
       </em>
@@ -2767,7 +2024,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="c4 c5"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c2"
       data-toggle="true"
       id="dropdown-18"
       role="button"
@@ -2776,7 +2033,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c6 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2793,72 +2050,31 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
 `;
 
 exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2877,18 +2093,18 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
   color: inherit;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <div
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-19-label"
-    class="c1"
+    class="c0"
     role="combobox"
   >
     <input
@@ -2901,16 +2117,18 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
       value=""
     />
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-19-label"
         autocomplete="off"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
+        dark="skin"
         id="dropdown-19"
         placeholder="Select an option"
-        style="cursor: inherit;"
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall)); cursor: inherit;"
+        text="Select an option"
         value=""
       />
     </div>
