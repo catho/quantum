@@ -20,7 +20,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         for=\\"radio-button-12\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
+            class=\\"HiddenInput-module__hidden-input___GW0sX\\"
 -           id=\\"radio-button-9\\"
 +           id=\\"radio-button-12\\"
             name=\\"foo\\"
@@ -38,7 +38,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         for=\\"radio-button-13\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
+            class=\\"HiddenInput-module__hidden-input___GW0sX\\"
 -           id=\\"radio-button-10\\"
 +           id=\\"radio-button-13\\"
             name=\\"foo\\"
@@ -56,7 +56,7 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 +         for=\\"radio-button-14\\"
         >
           <input
-            class=\\"HiddenInput-sc-14w753s-0 eLqPtD\\"
+            class=\\"HiddenInput-module__hidden-input___GW0sX\\"
 -           id=\\"radio-button-11\\"
 +           id=\\"radio-button-14\\"
             name=\\"foo\\"
@@ -67,15 +67,15 @@ exports[`<RadioGroup /> snapshot should render the same, with <RadioGroup.Button
 `;
 
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -86,7 +86,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -94,23 +94,23 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <div
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-3"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-3"
         name="groceries"
         type="radio"
@@ -123,11 +123,11 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-4"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-4"
         name="groceries"
         type="radio"
@@ -140,11 +140,11 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-5"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-5"
         name="groceries"
         type="radio"
@@ -157,15 +157,15 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -176,17 +176,17 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -194,23 +194,23 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <div
-    class="c2"
+    class="c1"
   >
     <label
-      class="c3"
+      class="c2"
       for="radio-button-6"
     >
       <input
-        class="c4"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-6"
         name="groceries"
         type="radio"
@@ -220,14 +220,14 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
     </label>
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <label
-      class="c3"
+      class="c2"
       for="radio-button-7"
     >
       <input
-        class="c4"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-7"
         name="groceries"
         type="radio"
@@ -237,14 +237,14 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
     </label>
   </div>
   <div
-    class="c2"
+    class="c1"
   >
     <label
-      class="c3"
+      class="c2"
       for="radio-button-8"
     >
       <input
-        class="c4"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-8"
         name="groceries"
         type="radio"
@@ -257,20 +257,15 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Button /> inline 1`] = 
 `;
 
 exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c5 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -281,7 +276,12 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   width: 0;
 }
 
-.c7 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -296,7 +296,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   margin-right: 8px;
 }
 
-.c7:after {
+.c3:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -308,7 +308,7 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   background-color: #1250C4;
 }
 
-.c3 {
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -324,83 +324,83 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
   user-select: none;
 }
 
-.c3 .c4:checked ~ .c6 {
+.c1 input:checked ~ .c2 {
   border-color: #1250C4;
 }
 
-.c3 .c4:checked ~ .c6:after {
+.c1 input:checked ~ .c2:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c3 .c4:focus ~ .c6 {
+.c1 input:focus ~ .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3:hover .c6,
-.c3:focus .c6 {
+.c1:hover .c2,
+.c1:focus .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3 .c4:checked:disabled ~ .c6 {
+.c1 input:checked:disabled ~ .c2 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="groceries"
       type="radio"
       value="Foo"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Foo
     </span>
   </label>
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="groceries"
       type="radio"
       value="Bar"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Bar
     </span>
   </label>
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="groceries"
       type="radio"
       value="Baz"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Baz
@@ -410,15 +410,15 @@ exports[`<RadioGroup /> snapshot simple with <RadioGroup.Radio /> 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot simple with button options 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -429,7 +429,7 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -437,23 +437,23 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <div
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-0"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-0"
         name="foo"
         type="radio"
@@ -466,11 +466,11 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-1"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-1"
         name="foo"
         type="radio"
@@ -483,11 +483,11 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
     class=""
   >
     <label
-      class="c2"
+      class="c1"
       for="radio-button-2"
     >
       <input
-        class="c3"
+        class="HiddenInput-module__hidden-input___GW0sX"
         id="radio-button-2"
         name="foo"
         type="radio"
@@ -500,20 +500,15 @@ exports[`<RadioGroup /> snapshot simple with button options 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot simple with options 1`] = `
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c5 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -524,7 +519,12 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   width: 0;
 }
 
-.c7 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -539,7 +539,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   margin-right: 8px;
 }
 
-.c7:after {
+.c3:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -551,7 +551,7 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   background-color: #1250C4;
 }
 
-.c3 {
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -567,83 +567,83 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
   user-select: none;
 }
 
-.c3 .c4:checked ~ .c6 {
+.c1 input:checked ~ .c2 {
   border-color: #1250C4;
 }
 
-.c3 .c4:checked ~ .c6:after {
+.c1 input:checked ~ .c2:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c3 .c4:focus ~ .c6 {
+.c1 input:focus ~ .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3:hover .c6,
-.c3:focus .c6 {
+.c1:hover .c2,
+.c1:focus .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3 .c4:checked:disabled ~ .c6 {
+.c1 input:checked:disabled ~ .c2 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="foo"
       type="radio"
       value="Foo"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Foo
     </span>
   </label>
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="foo"
       type="radio"
       value="Bar"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Bar
     </span>
   </label>
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="foo"
       type="radio"
       value="Baz"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Baz
@@ -653,31 +653,26 @@ exports[`<RadioGroup /> snapshot simple with options 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot with an error 1`] = `
-.c8 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c5 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -688,7 +683,12 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   width: 0;
 }
 
-.c7 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -703,7 +703,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   margin-right: 8px;
 }
 
-.c7:after {
+.c3:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -715,7 +715,7 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   background-color: #1250C4;
 }
 
-.c3 {
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -731,82 +731,82 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
   user-select: none;
 }
 
-.c3 .c4:checked ~ .c6 {
+.c1 input:checked ~ .c2 {
   border-color: #1250C4;
 }
 
-.c3 .c4:checked ~ .c6:after {
+.c1 input:checked ~ .c2:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c3 .c4:focus ~ .c6 {
+.c1 input:focus ~ .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3:hover .c6,
-.c3:focus .c6 {
+.c1:hover .c2,
+.c1:focus .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3 .c4:checked ~ .c6 {
+.c1 input:checked ~ .c2 {
   border-color: #e91b0c;
 }
 
-.c3 .c4:checked ~ .c6:after {
+.c1 input:checked ~ .c2:after {
   background-color: #e91b0c;
   display: block;
 }
 
-.c3 .c4:focus ~ .c6 {
+.c1 input:focus ~ .c2 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c3 .c6 {
+.c1 .c2 {
   border-color: #e91b0c;
 }
 
-.c3:hover .c6,
-.c3:focus .c6 {
+.c1:hover .c2,
+.c1:focus .c2 {
   border-color: #e91b0c;
   box-shadow: 0px 3px 5px -1px rgba(233,27,12,0.2),0px 5px 8px 0px rgba(233,27,12,0.14),0px 1px 14px 0px rgba(233,27,12,0.12);
 }
 
-.c3 .c4:checked:disabled ~ .c6 {
+.c1 input:checked:disabled ~ .c2 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="groceries"
       type="radio"
       value="Foo"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Foo
     </span>
   </label>
   <span
-    class="c8"
+    class="ErrorMessage-module__error-message___MWbU-"
   >
     Error text
   </span>
@@ -814,20 +814,15 @@ exports[`<RadioGroup /> snapshot with an error 1`] = `
 `;
 
 exports[`<RadioGroup /> snapshot with required 1`] = `
-.c2 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c5 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -838,7 +833,12 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
   width: 0;
 }
 
-.c7 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c3 {
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
@@ -853,7 +853,7 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
   margin-right: 8px;
 }
 
-.c7:after {
+.c3:after {
   border-radius: 50%;
   content: '';
   display: none;
@@ -865,7 +865,7 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
   background-color: #1250C4;
 }
 
-.c3 {
+.c1 {
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -881,52 +881,52 @@ exports[`<RadioGroup /> snapshot with required 1`] = `
   user-select: none;
 }
 
-.c3 .c4:checked ~ .c6 {
+.c1 input:checked ~ .c2 {
   border-color: #1250C4;
 }
 
-.c3 .c4:checked ~ .c6:after {
+.c1 input:checked ~ .c2:after {
   background-color: #1250C4;
   display: block;
 }
 
-.c3 .c4:focus ~ .c6 {
+.c1 input:focus ~ .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3:hover .c6,
-.c3:focus .c6 {
+.c1:hover .c2,
+.c1:focus .c2 {
   border-color: #1250C4;
   box-shadow: 0px 3px 5px -1px rgba(18,80,196,0.2),0px 5px 8px 0px rgba(18,80,196,0.14),0px 1px 14px 0px rgba(18,80,196,0.12);
 }
 
-.c3 .c4:checked:disabled ~ .c6 {
+.c1 input:checked:disabled ~ .c2 {
   background-color: #999999;
   border-color: #999999;
   box-shadow: inset 0 0 0 3.5px #ffffff;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-  class="c0 c1"
+  class="FieldGroup-module__field-group___H0qA5 c0"
   role="radiogroup"
 >
   <label
-    class="c2 c3"
+    class="Label-module__label___opfdV c1"
   >
     <input
-      class="c4 c5"
+      class="HiddenInput-module__hidden-input___GW0sX"
       name="groceries"
       required=""
       type="radio"
       value="Foo"
     />
     <span
-      class="c6 c7"
+      class="c2 c3"
     />
     <span>
       Foo

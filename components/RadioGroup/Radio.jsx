@@ -46,13 +46,17 @@ const RadioMark = styled.span`
   }
 `;
 
-const RadioLabel = styled(Label)`
+const propsNotContainedInLabel = ['theme', 'error'];
+
+const RadioLabel = styled(Label).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInLabel.includes(prop),
+})`
   align-items: baseline;
   display: flex;
   cursor: pointer;
   user-select: none;
 
-  ${HiddenInput} {
+  input {
     &:checked {
       ~ ${RadioMark} {
         ${({
@@ -117,7 +121,7 @@ const RadioLabel = styled(Label)`
     return (
       error &&
       `
-      ${HiddenInput} {
+      input {
         &:checked {
           ~ ${RadioMark} {
             border-color: ${errorColor};
@@ -166,7 +170,7 @@ const RadioLabel = styled(Label)`
       cursor: not-allowed;
     }
 
-    ${HiddenInput} {
+    input {
       &:disabled {
         ~ ${RadioMark} {
           background-color: ${neutral300};
@@ -207,7 +211,7 @@ const RadioLabel = styled(Label)`
     }
   `}
 
-  ${HiddenInput}:checked:disabled ~ ${RadioMark} {
+  input:checked:disabled ~ ${RadioMark} {
     ${({
       theme: {
         colors: {

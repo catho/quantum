@@ -162,7 +162,11 @@ const InputWrapper = styled.div`
   position: relative;
 `;
 
-const InputText = styled(TextInput)`
+const propsNotContainedInInput = ['theme'];
+
+const InputText = styled(TextInput).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInInput.includes(prop),
+})`
   ${({
     theme: {
       spacing: { xsmall },
@@ -308,7 +312,7 @@ const DropdownLight = ({
   }, [enterPress]);
 
   return (
-    <FieldGroup theme={theme} skin={skin}>
+    <FieldGroup skin={skin}>
       <InputWrapper>
         {label && (
           <InputLabel error={error}>
@@ -328,6 +332,7 @@ const DropdownLight = ({
           defaultValue={selectedOptionItem?.label || selectedOptionItem}
           aria-label="selecione uma opção"
           required={required}
+          theme={theme}
         />
         <Button
           aria-haspopup="true"

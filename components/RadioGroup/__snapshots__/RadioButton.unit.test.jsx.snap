@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -29,7 +29,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
   >
     <input
       checked=""
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-1"
       type="radio"
       value="Foo"
@@ -40,7 +40,7 @@ exports[`<RadioGroup.Radio /> snapshot checked 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot children 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -67,7 +67,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
     for="radio-button-7"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-7"
       type="radio"
       value="Foo"
@@ -78,7 +78,7 @@ exports[`<RadioGroup.Radio /> snapshot children 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -89,7 +89,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-left: 8px;
 }
 
@@ -110,7 +110,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     for="radio-button-4"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       disabled=""
       id="radio-button-4"
       type="radio"
@@ -119,7 +119,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="LockIcon"
       focusable="false"
@@ -135,7 +135,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -146,7 +146,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-left: 8px;
 }
 
@@ -167,7 +167,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     for="radio-button-6"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       disabled=""
       id="radio-button-6"
       type="radio"
@@ -176,7 +176,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
     Foo
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="LockIcon"
       focusable="false"
@@ -192,7 +192,7 @@ exports[`<RadioGroup.Radio /> snapshot disabled with an error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot error 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -219,7 +219,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
     for="radio-button-5"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-5"
       type="radio"
       value="Foo"
@@ -230,7 +230,7 @@ exports[`<RadioGroup.Radio /> snapshot error 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -241,7 +241,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-right: 8px;
 }
 
@@ -261,14 +261,14 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
     for="radio-button-3"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-3"
       type="radio"
       value="Foo"
     />
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c1 css-1696fkf-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="CheckIcon"
       focusable="false"
@@ -285,7 +285,7 @@ exports[`<RadioGroup.Radio /> snapshot icon 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
-.c2 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -322,7 +322,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
     for="radio-button-2"
   >
     <input
-      class="c2"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-2"
       type="radio"
       value="Foo"
@@ -333,7 +333,7 @@ exports[`<RadioGroup.Radio /> snapshot inline 1`] = `
 `;
 
 exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -360,7 +360,7 @@ exports[`<RadioGroup.Radio /> snapshot simple 1`] = `
     for="radio-button-0"
   >
     <input
-      class="c1"
+      class="HiddenInput-module__hidden-input___GW0sX"
       id="radio-button-0"
       type="radio"
       value="Foo"

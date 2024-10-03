@@ -2,78 +2,37 @@
 
 exports[`<DropdownLight /> should match the snapshots 1`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -101,7 +60,7 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -109,49 +68,50 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -170,78 +130,37 @@ exports[`<DropdownLight /> should match the snapshots 1`] = `
 
 exports[`<DropdownLight /> should match the snapshots 2`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -269,7 +188,7 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -277,49 +196,50 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name="dropdown-name"
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -338,89 +258,48 @@ exports[`<DropdownLight /> should match the snapshots 2`] = `
 
 exports[`<DropdownLight /> should match the snapshots 3`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c4::-webkit-inner-spin-button,
-.c4::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c4::-webkit-calendar-picker-indicator,
-.c4::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c4::-ms-clear {
-  display: none;
-}
-
-.c4:hover,
-.c4:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c4[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c4:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c4[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c3 {
+.c1 {
   color: #ec584e;
 }
 
-.c7 {
+.c4 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c6 {
+.c3 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -448,7 +327,7 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
   border: 2px solid #999999;
 }
 
-.c6:disabled {
+.c3:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -456,61 +335,63 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
   cursor: not-allowed;
 }
 
-.c6:hover:enabled {
+.c3:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c6:focus:enabled {
+.c3:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c5 {
+.c2 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <label
-        class="c2"
+        class="InputLabel-module__input-label___u-ovg"
+        error=""
       >
         some text
         <em
           aria-label="campo obrigatório"
-          class="c3"
+          class="c1"
         >
           *
         </em>
       </label>
       <input
         aria-label="selecione uma opção"
-        class="c4 c5"
+        class="TextInput-module__text-input___VCylJ c2"
         hidden=""
         name=""
         required=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c6"
+        class="c3"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c7 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c4 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -529,89 +410,48 @@ exports[`<DropdownLight /> should match the snapshots 3`] = `
 
 exports[`<DropdownLight /> should match the snapshots 4`] = `
 <DocumentFragment>
-  .c6 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -639,7 +479,7 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   border: 2px solid #e91b0c;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -647,49 +487,50 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -703,7 +544,8 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
       </button>
     </div>
     <span
-      class="c6"
+      class="ErrorMessage-module__error-message___MWbU-"
+      theme="[object Object]"
     >
       Some error text...
     </span>
@@ -713,93 +555,52 @@ exports[`<DropdownLight /> should match the snapshots 4`] = `
 
 exports[`<DropdownLight /> should match the snapshots 5`] = `
 <DocumentFragment>
-  .c6 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.HelperText-module__helper-text___e4Vp- {
+  color: inherit!important;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c7 {
-  color: inherit;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -827,7 +628,7 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -835,49 +636,50 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -891,7 +693,7 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
       </button>
     </div>
     <span
-      class="c6 c7"
+      class="ErrorMessage-module__error-message___MWbU- HelperText-module__helper-text___e4Vp-"
     >
       'this is a helper text'
     </span>
@@ -901,78 +703,37 @@ exports[`<DropdownLight /> should match the snapshots 5`] = `
 
 exports[`<DropdownLight /> should match the snapshots 6`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1000,7 +761,7 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -1008,49 +769,50 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         this is a input placeholder
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -1069,78 +831,37 @@ exports[`<DropdownLight /> should match the snapshots 6`] = `
 
 exports[`<DropdownLight /> should match the snapshots 7`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1168,7 +889,7 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -1176,50 +897,51 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         disabled=""
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"
@@ -1238,78 +960,37 @@ exports[`<DropdownLight /> should match the snapshots 7`] = `
 
 exports[`<DropdownLight /> should match the snapshots 8`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c5 {
+.c3 {
   display: inline-block;
   pointer-events: none;
   width: 24px;
 }
 
-.c4 {
+.c2 {
   width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1337,7 +1018,7 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
   border: 2px solid #999999;
 }
 
-.c4:disabled {
+.c2:disabled {
   background-color: #f2f2f2;
   border-color: #999999;
   color: #999999;
@@ -1345,49 +1026,50 @@ exports[`<DropdownLight /> should match the snapshots 8`] = `
   cursor: not-allowed;
 }
 
-.c4:hover:enabled {
+.c2:hover:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c4:focus:enabled {
+.c2:focus:enabled {
   border-color: #1250C4;
   box-shadow: 0px 3px 1px -2px rgb(18 80 196 / 20%),0px 2px 2px 0px rgb(18 80 196 / 14%),0px 1px 5px 0px rgb(18 80 196 / 12%);
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
-.c3 {
+.c1 {
   margin-top: 8px;
   background-color: #ffffff;
 }
 
 <div
-    class="c0"
+    class="FieldGroup-module__field-group___H0qA5"
   >
     <div
-      class="c1"
+      class="c0"
     >
       <input
         aria-label="selecione uma opção"
-        class="c2 c3"
+        class="TextInput-module__text-input___VCylJ c1"
         hidden=""
         name=""
+        style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall));"
         type="text"
         value=""
       />
       <button
         aria-haspopup="true"
         aria-label="abrir lista de itens"
-        class="c4"
+        class="c2"
         id=""
       >
         Select an option
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c5 css-i4bv87-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-i4bv87-MuiSvgIcon-root"
           data-qtm-preloader="icon"
           data-testid="ArrowDropDownIcon"
           focusable="false"

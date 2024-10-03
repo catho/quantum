@@ -118,8 +118,6 @@ class Radio extends Component {
             id={this._id}
             onChange={(e) => onChange({ value, label }, e)}
             value={value}
-            skin={skin}
-            error={error}
             {...rest}
           />
           {icon && <ButtonIcon theme={theme} name={icon} />}

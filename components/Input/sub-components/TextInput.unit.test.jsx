@@ -10,8 +10,6 @@ describe('Input component', () => {
       <TextInput skin="dark" error="Error message" />,
       <TextInput disabled />,
       <TextInput skin="dark" disabled />,
-      <TextInput hasIcon />,
-      <TextInput skin="dark" hasIcon />,
       <TextInput placeholder="Placeholder text" />,
       <TextInput skin="dark" placeholder="Placeholder text" />,
       <TextInput value="Value text" readOnly />,
