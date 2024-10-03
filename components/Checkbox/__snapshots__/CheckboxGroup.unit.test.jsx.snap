@@ -2,20 +2,15 @@
 
 exports[`Checkbox group should match snapshots 1`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -26,7 +21,12 @@ exports[`Checkbox group should match snapshots 1`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,45 +35,45 @@ exports[`Checkbox group should match snapshots 1`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -93,7 +93,7 @@ exports[`Checkbox group should match snapshots 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -104,10 +104,10 @@ exports[`Checkbox group should match snapshots 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -127,7 +127,7 @@ exports[`Checkbox group should match snapshots 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -138,10 +138,10 @@ exports[`Checkbox group should match snapshots 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -161,7 +161,7 @@ exports[`Checkbox group should match snapshots 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -174,20 +174,15 @@ exports[`Checkbox group should match snapshots 1`] = `
 
 exports[`Checkbox group should match snapshots 2`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -198,7 +193,12 @@ exports[`Checkbox group should match snapshots 2`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -207,46 +207,46 @@ exports[`Checkbox group should match snapshots 2`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -266,7 +266,7 @@ exports[`Checkbox group should match snapshots 2`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -277,11 +277,11 @@ exports[`Checkbox group should match snapshots 2`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -301,7 +301,7 @@ exports[`Checkbox group should match snapshots 2`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -314,20 +314,15 @@ exports[`Checkbox group should match snapshots 2`] = `
 
 exports[`Checkbox group should match snapshots 3`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -338,7 +333,12 @@ exports[`Checkbox group should match snapshots 3`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -347,45 +347,45 @@ exports[`Checkbox group should match snapshots 3`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -406,7 +406,7 @@ exports[`Checkbox group should match snapshots 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -417,10 +417,10 @@ exports[`Checkbox group should match snapshots 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -441,7 +441,7 @@ exports[`Checkbox group should match snapshots 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -454,20 +454,15 @@ exports[`Checkbox group should match snapshots 3`] = `
 
 exports[`Checkbox group should match snapshots 4`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -478,7 +473,12 @@ exports[`Checkbox group should match snapshots 4`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -487,45 +487,45 @@ exports[`Checkbox group should match snapshots 4`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -545,7 +545,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -556,10 +556,10 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -579,7 +579,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -590,10 +590,10 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -613,7 +613,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -624,11 +624,11 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -648,7 +648,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -659,11 +659,11 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -683,7 +683,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -694,10 +694,10 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -718,7 +718,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -729,10 +729,10 @@ exports[`Checkbox group should match snapshots 4`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -753,7 +753,7 @@ exports[`Checkbox group should match snapshots 4`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -766,31 +766,26 @@ exports[`Checkbox group should match snapshots 4`] = `
 
 exports[`Checkbox group should match snapshots 5`] = `
 <DocumentFragment>
-  .c8 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -801,7 +796,12 @@ exports[`Checkbox group should match snapshots 5`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -810,49 +810,49 @@ exports[`Checkbox group should match snapshots 5`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c9[disabled] ~ .c5 {
+.c5[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -872,7 +872,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -883,10 +883,10 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -906,7 +906,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -917,10 +917,10 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -940,7 +940,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -951,11 +951,11 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -975,7 +975,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -986,11 +986,11 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -1010,7 +1010,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -1021,10 +1021,10 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -1045,7 +1045,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -1056,10 +1056,10 @@ exports[`Checkbox group should match snapshots 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -1080,7 +1080,7 @@ exports[`Checkbox group should match snapshots 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -1088,7 +1088,7 @@ exports[`Checkbox group should match snapshots 5`] = `
       </div>
     </div>
     <span
-      class="c8"
+      class="ErrorMessage-module__error-message___MWbU-"
     >
       Some error
     </span>
@@ -1098,20 +1098,15 @@ exports[`Checkbox group should match snapshots 5`] = `
 
 exports[`Checkbox group should match snapshots 6`] = `
 <DocumentFragment>
-  .c7 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -1122,17 +1117,22 @@ exports[`Checkbox group should match snapshots 6`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1141,49 +1141,49 @@ exports[`Checkbox group should match snapshots 6`] = `
   margin-top: 4px;
 }
 
-.c8 {
+.c5 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c8 a {
+.c5 a {
   position: relative;
   z-index: 5;
 }
 
-.c5 {
+.c3 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c5[disabled] {
+.c3[disabled] {
   cursor: not-allowed;
 }
 
-.c5[disabled] ~ .c6 {
+.c3[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c9[disabled] ~ .c6 {
+.c6[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Foo"
           type="checkbox"
@@ -1203,7 +1203,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Foo
@@ -1211,13 +1211,13 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Bar"
           type="checkbox"
@@ -1237,7 +1237,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Bar
@@ -1245,13 +1245,13 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Baz"
           type="checkbox"
@@ -1271,7 +1271,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Baz
@@ -1279,14 +1279,14 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -1306,7 +1306,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 1
@@ -1314,14 +1314,14 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -1341,7 +1341,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 2
@@ -1349,13 +1349,13 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -1376,7 +1376,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 1
@@ -1384,13 +1384,13 @@ exports[`Checkbox group should match snapshots 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -1411,7 +1411,7 @@ exports[`Checkbox group should match snapshots 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 2
@@ -1424,20 +1424,15 @@ exports[`Checkbox group should match snapshots 6`] = `
 
 exports[`Checkbox group should match snapshots 7`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -1448,7 +1443,12 @@ exports[`Checkbox group should match snapshots 7`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1457,49 +1457,49 @@ exports[`Checkbox group should match snapshots 7`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c8[disabled] ~ .c5 {
+.c5[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -1519,7 +1519,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -1530,10 +1530,10 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -1553,7 +1553,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -1564,10 +1564,10 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -1587,7 +1587,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -1598,11 +1598,11 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -1622,7 +1622,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -1633,11 +1633,11 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -1657,7 +1657,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -1668,10 +1668,10 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -1692,7 +1692,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -1703,10 +1703,10 @@ exports[`Checkbox group should match snapshots 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -1727,7 +1727,7 @@ exports[`Checkbox group should match snapshots 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -1740,20 +1740,15 @@ exports[`Checkbox group should match snapshots 7`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 1`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -1764,7 +1759,12 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1773,45 +1773,45 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -1831,7 +1831,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -1842,10 +1842,10 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -1865,7 +1865,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -1876,10 +1876,10 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -1899,7 +1899,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -1910,11 +1910,11 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -1934,7 +1934,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -1945,11 +1945,11 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -1969,7 +1969,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -1980,10 +1980,10 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -2004,7 +2004,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -2015,10 +2015,10 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -2039,7 +2039,7 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -2052,20 +2052,15 @@ exports[`Checkbox group should match snapshots with different sizes 1`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 2`] = `
 <DocumentFragment>
-  .c7 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -2076,17 +2071,22 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2095,45 +2095,45 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
   margin-top: 4px;
 }
 
-.c8 {
+.c5 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c8 a {
+.c5 a {
   position: relative;
   z-index: 5;
 }
 
-.c5 {
+.c3 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c5[disabled] {
+.c3[disabled] {
   cursor: not-allowed;
 }
 
-.c5[disabled] ~ .c6 {
+.c3[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Foo"
           type="checkbox"
@@ -2153,7 +2153,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Foo
@@ -2161,13 +2161,13 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Bar"
           type="checkbox"
@@ -2187,7 +2187,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Bar
@@ -2195,13 +2195,13 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Baz"
           type="checkbox"
@@ -2221,7 +2221,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Baz
@@ -2229,14 +2229,14 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -2256,7 +2256,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 1
@@ -2264,14 +2264,14 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -2291,7 +2291,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 2
@@ -2299,13 +2299,13 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -2326,7 +2326,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 1
@@ -2334,13 +2334,13 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -2361,7 +2361,7 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 2
@@ -2374,20 +2374,15 @@ exports[`Checkbox group should match snapshots with different sizes 2`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 3`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -2398,7 +2393,12 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2407,45 +2407,45 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -2465,7 +2465,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -2476,10 +2476,10 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -2499,7 +2499,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -2510,10 +2510,10 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -2533,7 +2533,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -2544,11 +2544,11 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -2568,7 +2568,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -2579,11 +2579,11 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -2603,7 +2603,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -2614,10 +2614,10 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -2638,7 +2638,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -2649,10 +2649,10 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -2673,7 +2673,7 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -2686,20 +2686,15 @@ exports[`Checkbox group should match snapshots with different sizes 3`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 4`] = `
 <DocumentFragment>
-  .c7 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -2710,17 +2705,22 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2729,45 +2729,45 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
   margin-top: 4px;
 }
 
-.c8 {
+.c5 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c8 a {
+.c5 a {
   position: relative;
   z-index: 5;
 }
 
-.c5 {
+.c3 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c5[disabled] {
+.c3[disabled] {
   cursor: not-allowed;
 }
 
-.c5[disabled] ~ .c6 {
+.c3[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Foo"
           type="checkbox"
@@ -2787,7 +2787,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Foo
@@ -2795,13 +2795,13 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Bar"
           type="checkbox"
@@ -2821,7 +2821,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Bar
@@ -2829,13 +2829,13 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Baz"
           type="checkbox"
@@ -2855,7 +2855,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Baz
@@ -2863,14 +2863,14 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -2890,7 +2890,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 1
@@ -2898,14 +2898,14 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -2925,7 +2925,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 2
@@ -2933,13 +2933,13 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -2960,7 +2960,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 1
@@ -2968,13 +2968,13 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -2995,7 +2995,7 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 2
@@ -3008,20 +3008,15 @@ exports[`Checkbox group should match snapshots with different sizes 4`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 5`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -3032,7 +3027,12 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3041,45 +3041,45 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -3099,7 +3099,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -3110,10 +3110,10 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -3133,7 +3133,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -3144,10 +3144,10 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -3167,7 +3167,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -3178,11 +3178,11 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -3202,7 +3202,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -3213,11 +3213,11 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -3237,7 +3237,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -3248,10 +3248,10 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -3272,7 +3272,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -3283,10 +3283,10 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -3307,7 +3307,7 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -3320,20 +3320,15 @@ exports[`Checkbox group should match snapshots with different sizes 5`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 6`] = `
 <DocumentFragment>
-  .c7 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -3344,17 +3339,22 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3363,45 +3363,45 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
   margin-top: 4px;
 }
 
-.c8 {
+.c5 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c8 a {
+.c5 a {
   position: relative;
   z-index: 5;
 }
 
-.c5 {
+.c3 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c5[disabled] {
+.c3[disabled] {
   cursor: not-allowed;
 }
 
-.c5[disabled] ~ .c6 {
+.c3[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Foo"
           type="checkbox"
@@ -3421,7 +3421,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Foo
@@ -3429,13 +3429,13 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Bar"
           type="checkbox"
@@ -3455,7 +3455,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Bar
@@ -3463,13 +3463,13 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Baz"
           type="checkbox"
@@ -3489,7 +3489,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Baz
@@ -3497,14 +3497,14 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -3524,7 +3524,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 1
@@ -3532,14 +3532,14 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -3559,7 +3559,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 2
@@ -3567,13 +3567,13 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -3594,7 +3594,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 1
@@ -3602,13 +3602,13 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -3629,7 +3629,7 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 2
@@ -3642,20 +3642,15 @@ exports[`Checkbox group should match snapshots with different sizes 6`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 7`] = `
 <DocumentFragment>
-  .c6 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -3666,7 +3661,12 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3675,45 +3675,45 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
   margin-top: 4px;
 }
 
-.c7 {
+.c4 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c7 a {
+.c4 a {
   position: relative;
   z-index: 5;
 }
 
-.c4 {
+.c2 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c4[disabled] {
+.c2[disabled] {
   cursor: not-allowed;
 }
 
-.c4[disabled] ~ .c5 {
+.c2[disabled] ~ .c3 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Foo"
           type="checkbox"
@@ -3733,7 +3733,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Foo
@@ -3744,10 +3744,10 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Bar"
           type="checkbox"
@@ -3767,7 +3767,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Bar
@@ -3778,10 +3778,10 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Baz"
           type="checkbox"
@@ -3801,7 +3801,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Baz
@@ -3812,11 +3812,11 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -3836,7 +3836,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 1
@@ -3847,11 +3847,11 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
           checked=""
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -3871,7 +3871,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Checked Label - 2
@@ -3882,10 +3882,10 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -3906,7 +3906,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 1
@@ -3917,10 +3917,10 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
       class=""
     >
       <div
-        class="c2"
+        class="c1"
       >
         <input
-          class="c3 c4"
+          class="HiddenInput-module__hidden-input___GW0sX c2"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -3941,7 +3941,7 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
           />
         </svg>
         <label
-          class="c5 c6 c7"
+          class="Label-module__label___opfdV c3 c4"
           for=""
         >
           Disabled Checked Label - 2
@@ -3954,20 +3954,15 @@ exports[`Checkbox group should match snapshots with different sizes 7`] = `
 
 exports[`Checkbox group should match snapshots with different sizes 8`] = `
 <DocumentFragment>
-  .c7 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -3978,17 +3973,22 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
   width: 0;
 }
 
-.c2 {
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3997,45 +3997,45 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
   margin-top: 4px;
 }
 
-.c8 {
+.c5 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c8 a {
+.c5 a {
   position: relative;
   z-index: 5;
 }
 
-.c5 {
+.c3 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c5[disabled] {
+.c3[disabled] {
   cursor: not-allowed;
 }
 
-.c5[disabled] ~ .c6 {
+.c3[disabled] ~ .c4 {
   color: #999999;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Foo"
           type="checkbox"
@@ -4055,7 +4055,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Foo
@@ -4063,13 +4063,13 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Bar"
           type="checkbox"
@@ -4089,7 +4089,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Bar
@@ -4097,13 +4097,13 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Baz"
           type="checkbox"
@@ -4123,7 +4123,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Baz
@@ -4131,14 +4131,14 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 1"
           type="checkbox"
@@ -4158,7 +4158,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 1
@@ -4166,14 +4166,14 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
           checked=""
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           id=""
           name="Checked Option 2"
           type="checkbox"
@@ -4193,7 +4193,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Checked Label - 2
@@ -4201,13 +4201,13 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 1"
@@ -4228,7 +4228,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 1
@@ -4236,13 +4236,13 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
       </div>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <input
-          class="c4 c5"
+          class="HiddenInput-module__hidden-input___GW0sX c3"
           disabled=""
           id=""
           name="Disabled Option 2"
@@ -4263,7 +4263,7 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
           />
         </svg>
         <label
-          class="c6 c7 c8"
+          class="Label-module__label___opfdV c4 c5"
           for=""
         >
           Disabled Checked Label - 2
@@ -4276,15 +4276,15 @@ exports[`Checkbox group should match snapshots with different sizes 8`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 1`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4295,7 +4295,7 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4303,22 +4303,22 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-0"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-0"
           name="Foo"
           type="checkbox"
@@ -4331,11 +4331,11 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-1"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-1"
           name="Bar"
           type="checkbox"
@@ -4348,11 +4348,11 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-2"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-2"
           name="Baz"
           type="checkbox"
@@ -4367,15 +4367,15 @@ exports[`Checkbox group with checkbox button should match snapshots 1`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 2`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4386,7 +4386,7 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4394,23 +4394,23 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-3"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-3"
           name="Checked Option 1"
           type="checkbox"
@@ -4423,12 +4423,12 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-4"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-4"
           name="Checked Option 2"
           type="checkbox"
@@ -4443,15 +4443,15 @@ exports[`Checkbox group with checkbox button should match snapshots 2`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 3`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4462,7 +4462,7 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4470,23 +4470,23 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-5"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-5"
           name="Disabled Option 1"
@@ -4513,12 +4513,12 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-6"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-6"
           name="Disabled Option 2"
@@ -4547,15 +4547,15 @@ exports[`Checkbox group with checkbox button should match snapshots 3`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 4`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4566,7 +4566,7 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4574,22 +4574,22 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-7"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-7"
           name="Foo"
           type="checkbox"
@@ -4602,11 +4602,11 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-8"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-8"
           name="Bar"
           type="checkbox"
@@ -4619,11 +4619,11 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-9"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-9"
           name="Baz"
           type="checkbox"
@@ -4636,12 +4636,12 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-10"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-10"
           name="Checked Option 1"
           type="checkbox"
@@ -4654,12 +4654,12 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-11"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-11"
           name="Checked Option 2"
           type="checkbox"
@@ -4672,12 +4672,12 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-12"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-12"
           name="Disabled Option 1"
@@ -4704,12 +4704,12 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-13"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-13"
           name="Disabled Option 2"
@@ -4738,26 +4738,26 @@ exports[`Checkbox group with checkbox button should match snapshots 4`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 5`] = `
 <DocumentFragment>
-  .c4 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4768,7 +4768,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4776,22 +4776,22 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-14"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-14"
           name="Foo"
           type="checkbox"
@@ -4804,11 +4804,11 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-15"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-15"
           name="Bar"
           type="checkbox"
@@ -4821,11 +4821,11 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-16"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-16"
           name="Baz"
           type="checkbox"
@@ -4838,12 +4838,12 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-17"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-17"
           name="Checked Option 1"
           type="checkbox"
@@ -4856,12 +4856,12 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-18"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-18"
           name="Checked Option 2"
           type="checkbox"
@@ -4874,12 +4874,12 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-19"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-19"
           name="Disabled Option 1"
@@ -4906,12 +4906,12 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-20"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-20"
           name="Disabled Option 2"
@@ -4935,7 +4935,7 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
       </label>
     </div>
     <span
-      class="c4"
+      class="ErrorMessage-module__error-message___MWbU-"
     >
       Some error
     </span>
@@ -4945,15 +4945,15 @@ exports[`Checkbox group with checkbox button should match snapshots 5`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots 6`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -4964,17 +4964,17 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4982,22 +4982,22 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-21"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-21"
           name="Foo"
           type="checkbox"
@@ -5007,14 +5007,14 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-22"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-22"
           name="Bar"
           type="checkbox"
@@ -5024,14 +5024,14 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-23"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-23"
           name="Baz"
           type="checkbox"
@@ -5041,15 +5041,15 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-24"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-24"
           name="Checked Option 1"
           type="checkbox"
@@ -5059,15 +5059,15 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-25"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-25"
           name="Checked Option 2"
           type="checkbox"
@@ -5077,15 +5077,15 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-26"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-26"
           name="Disabled Option 1"
@@ -5109,15 +5109,15 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-27"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-27"
           name="Disabled Option 2"
@@ -5146,15 +5146,15 @@ exports[`Checkbox group with checkbox button should match snapshots 6`] = `
 
 exports[`Checkbox group with checkbox button should match snapshots with children 1`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -5165,7 +5165,7 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5173,22 +5173,22 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-28"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-28"
           name="Foo"
           type="checkbox"
@@ -5201,11 +5201,11 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-29"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-29"
           name="Bar"
           type="checkbox"
@@ -5218,11 +5218,11 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-30"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-30"
           name="Baz"
           type="checkbox"
@@ -5235,12 +5235,12 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-31"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-31"
           name="Checked Option 1"
           type="checkbox"
@@ -5253,12 +5253,12 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-32"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-32"
           name="Checked Option 2"
           type="checkbox"
@@ -5271,12 +5271,12 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-33"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-33"
           name="Disabled Option 1"
@@ -5303,12 +5303,12 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-34"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-34"
           name="Disabled Option 2"
@@ -5335,11 +5335,11 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-35"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-35"
           name="With value"
           type="checkbox"
@@ -5352,11 +5352,11 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-36"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-36"
           name="Another name"
           type="checkbox"
@@ -5371,15 +5371,15 @@ exports[`Checkbox group with checkbox button should match snapshots with childre
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 1`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -5390,7 +5390,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5398,22 +5398,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-37"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-37"
           name="Foo"
           type="checkbox"
@@ -5426,11 +5426,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-38"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-38"
           name="Bar"
           type="checkbox"
@@ -5443,11 +5443,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-39"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-39"
           name="Baz"
           type="checkbox"
@@ -5460,12 +5460,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-40"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-40"
           name="Checked Option 1"
           type="checkbox"
@@ -5478,12 +5478,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-41"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-41"
           name="Checked Option 2"
           type="checkbox"
@@ -5496,12 +5496,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-42"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-42"
           name="Disabled Option 1"
@@ -5528,12 +5528,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-43"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-43"
           name="Disabled Option 2"
@@ -5562,15 +5562,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 2`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -5581,17 +5581,17 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5599,22 +5599,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-44"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-44"
           name="Foo"
           type="checkbox"
@@ -5624,14 +5624,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-45"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-45"
           name="Bar"
           type="checkbox"
@@ -5641,14 +5641,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-46"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-46"
           name="Baz"
           type="checkbox"
@@ -5658,15 +5658,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-47"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-47"
           name="Checked Option 1"
           type="checkbox"
@@ -5676,15 +5676,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-48"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-48"
           name="Checked Option 2"
           type="checkbox"
@@ -5694,15 +5694,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-49"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-49"
           name="Disabled Option 1"
@@ -5726,15 +5726,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-50"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-50"
           name="Disabled Option 2"
@@ -5763,15 +5763,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 3`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -5782,7 +5782,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5790,22 +5790,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-51"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-51"
           name="Foo"
           type="checkbox"
@@ -5818,11 +5818,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-52"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-52"
           name="Bar"
           type="checkbox"
@@ -5835,11 +5835,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-53"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-53"
           name="Baz"
           type="checkbox"
@@ -5852,12 +5852,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-54"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-54"
           name="Checked Option 1"
           type="checkbox"
@@ -5870,12 +5870,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-55"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-55"
           name="Checked Option 2"
           type="checkbox"
@@ -5888,12 +5888,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-56"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-56"
           name="Disabled Option 1"
@@ -5920,12 +5920,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-57"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-57"
           name="Disabled Option 2"
@@ -5954,15 +5954,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 4`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -5973,17 +5973,17 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -5991,22 +5991,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-58"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-58"
           name="Foo"
           type="checkbox"
@@ -6016,14 +6016,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-59"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-59"
           name="Bar"
           type="checkbox"
@@ -6033,14 +6033,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-60"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-60"
           name="Baz"
           type="checkbox"
@@ -6050,15 +6050,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-61"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-61"
           name="Checked Option 1"
           type="checkbox"
@@ -6068,15 +6068,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-62"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-62"
           name="Checked Option 2"
           type="checkbox"
@@ -6086,15 +6086,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-63"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-63"
           name="Disabled Option 1"
@@ -6118,15 +6118,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-64"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-64"
           name="Disabled Option 2"
@@ -6155,15 +6155,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 5`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -6174,7 +6174,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6182,22 +6182,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-65"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-65"
           name="Foo"
           type="checkbox"
@@ -6210,11 +6210,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-66"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-66"
           name="Bar"
           type="checkbox"
@@ -6227,11 +6227,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-67"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-67"
           name="Baz"
           type="checkbox"
@@ -6244,12 +6244,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-68"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-68"
           name="Checked Option 1"
           type="checkbox"
@@ -6262,12 +6262,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-69"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-69"
           name="Checked Option 2"
           type="checkbox"
@@ -6280,12 +6280,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-70"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-70"
           name="Disabled Option 1"
@@ -6312,12 +6312,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-71"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-71"
           name="Disabled Option 2"
@@ -6346,15 +6346,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 6`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -6365,17 +6365,17 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6383,22 +6383,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-72"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-72"
           name="Foo"
           type="checkbox"
@@ -6408,14 +6408,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-73"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-73"
           name="Bar"
           type="checkbox"
@@ -6425,14 +6425,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-74"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-74"
           name="Baz"
           type="checkbox"
@@ -6442,15 +6442,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-75"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-75"
           name="Checked Option 1"
           type="checkbox"
@@ -6460,15 +6460,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-76"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-76"
           name="Checked Option 2"
           type="checkbox"
@@ -6478,15 +6478,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-77"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-77"
           name="Disabled Option 1"
@@ -6510,15 +6510,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-78"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-78"
           name="Disabled Option 2"
@@ -6547,15 +6547,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 7`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -6566,7 +6566,7 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6574,22 +6574,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-79"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-79"
           name="Foo"
           type="checkbox"
@@ -6602,11 +6602,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-80"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-80"
           name="Bar"
           type="checkbox"
@@ -6619,11 +6619,11 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-81"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-81"
           name="Baz"
           type="checkbox"
@@ -6636,12 +6636,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-82"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-82"
           name="Checked Option 1"
           type="checkbox"
@@ -6654,12 +6654,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         for="checkbox-button-83"
       >
         <input
           checked=""
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-83"
           name="Checked Option 2"
           type="checkbox"
@@ -6672,12 +6672,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-84"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-84"
           name="Disabled Option 1"
@@ -6704,12 +6704,12 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       class=""
     >
       <label
-        class="c2"
+        class="c1"
         disabled=""
         for="checkbox-button-85"
       >
         <input
-          class="c3"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-85"
           name="Disabled Option 2"
@@ -6738,15 +6738,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
 
 exports[`Checkbox group with checkbox button should match snapshots with different sizes 8`] = `
 <DocumentFragment>
-  .c0 {
-  position: relative;
+  .FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c4 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -6757,17 +6757,17 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   width: 0;
 }
 
-.c2 {
+.c1 {
   display: inline-block;
   margin-right: 16px;
   vertical-align: top;
 }
 
-.c2:last-child {
+.c1:last-child {
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   margin-bottom: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -6775,22 +6775,22 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
   display: inline-flex;
 }
 
-.c1 {
+.c0 {
   position: relative;
 }
 
 <div
-    class="c0 c1"
+    class="FieldGroup-module__field-group___H0qA5 c0"
   >
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-86"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-86"
           name="Foo"
           type="checkbox"
@@ -6800,14 +6800,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-87"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-87"
           name="Bar"
           type="checkbox"
@@ -6817,14 +6817,14 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-88"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-88"
           name="Baz"
           type="checkbox"
@@ -6834,15 +6834,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-89"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-89"
           name="Checked Option 1"
           type="checkbox"
@@ -6852,15 +6852,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         for="checkbox-button-90"
       >
         <input
           checked=""
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           id="checkbox-button-90"
           name="Checked Option 2"
           type="checkbox"
@@ -6870,15 +6870,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-91"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-91"
           name="Disabled Option 1"
@@ -6902,15 +6902,15 @@ exports[`Checkbox group with checkbox button should match snapshots with differe
       </label>
     </div>
     <div
-      class="c2"
+      class="c1"
     >
       <label
-        class="c3"
+        class="c2"
         disabled=""
         for="checkbox-button-92"
       >
         <input
-          class="c4"
+          class="HiddenInput-module__hidden-input___GW0sX "
           disabled=""
           id="checkbox-button-92"
           name="Disabled Option 2"

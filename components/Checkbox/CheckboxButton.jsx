@@ -92,11 +92,9 @@ const CheckboxButton = ({
           {...props}
           checked={checked}
           disabled={disabled}
-          error={error}
           id={_id}
           name={name}
           onChange={onChange}
-          skin={checkSkin}
           value={value}
         />
         {children || label || value}
