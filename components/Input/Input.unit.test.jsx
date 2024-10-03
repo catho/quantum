@@ -2,7 +2,6 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Input from './Input';
 import masks from '../shared/masks';
-import { colors } from '../shared/theme';
 
 describe('Input component', () => {
   it('should has a required signal when "required" prop is set', () => {
