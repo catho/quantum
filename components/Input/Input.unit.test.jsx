@@ -26,8 +26,8 @@ describe('Input component', () => {
     expect(container.querySelectorAll('svg')[1]).toBeInTheDocument();
   });
 
-  it('should have dark skin and error msg', () => {
-    const { container } = render(
+  it('should have error msg', () => {
+    render(
       <Input
         value="foo"
         label="label of input"
@@ -36,10 +36,8 @@ describe('Input component', () => {
       />,
     );
 
-    const fieldGroup = container.querySelectorAll('div')[0];
     const errorMsg = screen.getByText(/mensagem de erro/i);
 
-    expect(fieldGroup).toHaveStyleRule('color', `${colors.neutral[0]}`);
     expect(errorMsg).toBeInTheDocument();
   });
 

@@ -25,6 +25,11 @@ WithLabel.args = {
   label: 'this is a label',
 };
 
+export const WithDescriptionLabel = Template.bind({});
+WithDescriptionLabel.args = {
+  descriptionLabel: 'Some description label',
+};
+
 export const DarkWithLabel = TemplateDark.bind({});
 DarkWithLabel.parameters = parameters;
 DarkWithLabel.args = {
