@@ -1,20 +1,15 @@
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import classNames from 'classnames';
 import InputErrorMessage from './InputErrorMessage';
-import { colors, spacing } from '../../shared/theme';
+import styles from './HelperText.module.css';
 
-const HelperText = styled(InputErrorMessage).attrs(({ theme, ...rest }) => ({
-  theme: { colors, spacing, ...theme },
-  ...rest,
-}))`
-  color: inherit;
-`;
+const HelperText = ({ className, children, ...rest }) => {
+  const helperTextClass = classNames(styles['helper-text'], className);
 
-HelperText.propTypes = {
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
+  return (
+    <InputErrorMessage className={helperTextClass} {...rest}>
+      {children}
+    </InputErrorMessage>
+  );
 };
 
 export default HelperText;

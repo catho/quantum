@@ -1,0 +1,6 @@
+.input-label {
+    display: block;
+    font-weight: bold;
+    margin: var(--qtm-spacing-xsmall) 0 0;
+    color: inherit;
+}

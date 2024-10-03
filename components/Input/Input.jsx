@@ -1,9 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-
 import MaskedInput from 'react-text-mask';
-
+import classNames from 'classnames';
 import { FieldGroup, createUniqId } from '../shared';
 import Icon from '../Icon';
 // eslint-disable-next-line import/no-cycle
@@ -16,66 +14,31 @@ import {
   InputErrorMessage,
 } from './sub-components';
 import { spacing, colors, baseFontSize } from '../shared/theme';
+import styles from './Input.module.css';
 
 const uniqId = createUniqId('input-');
 
-const InputIcon = styled(Icon)`
-  cursor: pointer;
-  position: absolute;
-  ${({
-    theme: {
-      spacing: { xsmall, medium },
-    },
-  }) => css`
-    right: ${medium}px;
-    bottom: ${xsmall * 1.25}px;
-    width: ${baseFontSize * 1.5}px;
+const InputIcon = ({ className, ...rest }) => {
+  const inputIconClass = classNames(styles['input-icon'], className);
+  return <Icon className={inputIconClass} {...rest} />;
+};
 
-    color: inherit;
-  `}
-`;
+const InputSearchIcon = ({ className, ...rest }) => {
+  const inputIconClass = classNames(styles['search-icon'], className);
+  return <InputIcon name="search" className={inputIconClass} {...rest} />;
+};
 
-const InputSearchIcon = styled(InputIcon).attrs({ name: 'search' })`
-  pointer-events: none;
-  ${({
-    theme: {
-      spacing: { medium },
-    },
-  }) => css`
-    left: ${medium}px;
-  `}
-`;
-
-const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
-  ${({
-    theme: {
-      colors: { error },
-    },
-    skin,
-  }) => css`
-    color: ${skin === 'default' ? error[700] : 'inherit'};
-  `}
-`;
-
-const DescriptionLabel = styled.span`
-  cursor: text;
-  display: block;
-  ${({ theme: { baseFontSize: fontSize } }) => `
-    font-size: ${fontSize * 0.875}px;
-    padding: 0;
-  `}
-
-  color: inherit;
-`;
-
-const InputWrapper = styled.div`
-  position: relative;
-`;
+const InputErrorIcon = ({ className, skin, ...rest }) => {
+  const inputIconClass = classNames(
+    { [styles['error-icon-default']]: skin === 'default' },
+    className,
+  );
+  return <InputIcon name="error" className={inputIconClass} {...rest} />;
+};
 
 InputIcon.displayName = 'InputIcon';
 InputSearchIcon.displayName = 'InputSearchIcon';
 InputErrorIcon.displayName = 'InputErrorIcon';
-DescriptionLabel.displayName = 'DescriptionLabel';
 
 /** A text field component to get user text data */
 class Input extends Component {
@@ -164,19 +127,21 @@ class Input extends Component {
       });
       onClean(e);
     };
+    const inputWrapperClass = classNames(styles.wrapper);
+    const descriptionLabelClass = classNames(styles['description-label']);
 
     return (
-      <FieldGroup theme={theme} skin={skin}>
+      <FieldGroup skin={skin}>
         {label && (
-          <InputLabel htmlFor={this._id} error={error}>
+          <InputLabel htmlFor={this._id}>
             {label}
             {required && <RequiredMark skin={skin}>*</RequiredMark>}
           </InputLabel>
         )}
         {descriptionLabel && (
-          <DescriptionLabel theme={theme}>{descriptionLabel}</DescriptionLabel>
+          <span className={descriptionLabelClass}>{descriptionLabel}</span>
         )}
-        <InputWrapper>
+        <div className={inputWrapperClass}>
           {_isSearchType && (
             <InputSearchIcon description={descriptionLabel} theme={theme} />
           )}
@@ -224,7 +189,7 @@ class Input extends Component {
               onClick={onCleanClick}
             />
           )}
-        </InputWrapper>
+        </div>
         {helperText && <HelperText>{helperText}</HelperText>}
         {error && (
           <InputErrorMessage theme={theme} skin={skin}>
