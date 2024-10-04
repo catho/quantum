@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
@@ -13,6 +13,7 @@ import {
   TextInput,
   HelperText,
 } from '../Input/sub-components';
+import { useTextInputClass } from '../Input/sub-components/TextInput';
 
 const uniqId = createUniqId('dropdown-');
 const ITEM_HEIGHT = '44px';
@@ -21,7 +22,49 @@ const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
 const DROPITEM_IMAGE_SIZE = '24px';
 const ICON_DEFAULT_SIZE = `${baseFontSize * 1.5}px`;
 
-const DropInput = styled(TextInput)`
+const DropButtonBase = forwardRef(
+  (
+    { children, className, hasDefaultValue, hasLabel, skin, error, ...rest },
+    ref,
+  ) => {
+    const buttonClass = useTextInputClass({
+      hasDefaultValue,
+      hasLabel,
+      skin,
+      error,
+      className,
+    });
+
+    return (
+      <button type="button" ref={ref} className={buttonClass} {...rest}>
+        {children}
+      </button>
+    );
+  },
+);
+const propsNotContainedInDropButtonBase = ['text'];
+
+const DropButton = styled(DropButtonBase).withConfig({
+  shouldForwardProp: (prop) =>
+    !propsNotContainedInDropButtonBase.includes(prop),
+})`
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  ${({ text }) => `
+    ${!text ? 'flex-direction: row-reverse;' : ''}
+    color: inherit;
+  `};
+`;
+
+const propsNotContainedInInput = ['theme', 'autocomplete'];
+
+const DropInput = styled(TextInput).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInInput.includes(prop),
+})`
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -277,7 +320,7 @@ const Dropdown = ({
     });
 
   return (
-    <FieldGroup theme={theme} skin={skin}>
+    <FieldGroup skin={skin}>
       <Downshift
         {...rest}
         selectedItem={selectedItem}
@@ -322,7 +365,6 @@ const Dropdown = ({
                   <DropContainer theme={theme}>
                     <DropInput
                       {...getInputProps({
-                        isOpen,
                         placeholder,
                         onClick: openMenu,
                       })}
@@ -350,15 +392,11 @@ const Dropdown = ({
                 </>
               ) : (
                 <>
-                  <DropInput
+                  <DropButton
                     {...getToggleButtonProps()}
-                    as="button"
-                    isOpen={isOpen}
                     disabled={disabled}
                     error={error}
-                    helperText={helperText}
                     text={_buttonLabel}
-                    theme={theme}
                     hasLabel={hasLabel}
                     skin={skin}
                     id={_id}
@@ -368,7 +406,7 @@ const Dropdown = ({
                       name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
                       theme={theme}
                     />
-                  </DropInput>
+                  </DropButton>
 
                   {isOpen && (
                     <List

@@ -1,36 +1,14 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { colors, spacing } from './theme';
+import classNames from 'classnames';
+import styles from './ErrorMessage.module.css';
 
-const ErrorMessage = styled.span.attrs(({ theme, ...rest }) => ({
-  theme: { colors, spacing, ...theme },
-  ...rest,
-}))`
-  ${({
-    theme: {
-      colors: {
-        error: { 900: errorColor },
-      },
-      spacing: { xsmall },
-    },
-  }) => `
-    color: ${errorColor};
-    margin-top: ${xsmall}px;
-  `};
+const ErrorMessage = ({ className, children, ...rest }) => {
+  const errorMessageClass = classNames(styles['error-message'], className);
 
-  cursor: text;
-  display: block;
-  line-height: normal;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 600;
-`;
-
-ErrorMessage.propTypes = {
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
+  return (
+    <span className={errorMessageClass} {...rest}>
+      {children}
+    </span>
+  );
 };
 
 export default ErrorMessage;

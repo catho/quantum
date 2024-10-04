@@ -1,0 +1,11 @@
+.field-group {
+    position: relative;
+    margin-bottom: 20px;
+    min-width: 250px;
+    width: 100%;
+    color: var(--qtm-colors-neutral-700)
+}
+
+.field-group-dark {
+    color: var(--qtm-colors-neutral-0)
+}

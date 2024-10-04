@@ -2,12 +2,7 @@
 
 exports[`<Checkbox /> should match the snapshot 1`] = `
 <DocumentFragment>
-  .c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+  .HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -16,6 +11,11 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -27,27 +27,27 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -58,7 +58,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
       class="c0"
     >
       <input
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         id=""
         name="foo"
         type="checkbox"
@@ -78,7 +78,7 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>
@@ -88,23 +88,18 @@ exports[`<Checkbox /> should match the snapshot 1`] = `
 
 exports[`<Checkbox /> should match the snapshot 2`] = `
 <DocumentFragment>
-  .c6 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -113,6 +108,11 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -124,31 +124,31 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c7[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -159,7 +159,7 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
       class="c0"
     >
       <input
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         id=""
         name="foo"
         type="checkbox"
@@ -179,12 +179,12 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>
     <span
-      class="c6"
+      class="ErrorMessage-module__error-message___MWbU-"
     >
       error message
     </span>
@@ -194,23 +194,18 @@ exports[`<Checkbox /> should match the snapshot 2`] = `
 
 exports[`<Checkbox /> should match the snapshot 3`] = `
 <DocumentFragment>
-  .c6 {
-  color: #ac001a;
-  margin-top: 8px;
+  .ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+.HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -219,6 +214,11 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -230,31 +230,31 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c7[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -266,7 +266,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
     >
       <input
         checked=""
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         id=""
         name="foo"
         type="checkbox"
@@ -286,12 +286,12 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>
     <span
-      class="c6"
+      class="ErrorMessage-module__error-message___MWbU-"
     >
       error message
     </span>
@@ -301,12 +301,7 @@ exports[`<Checkbox /> should match the snapshot 3`] = `
 
 exports[`<Checkbox /> should match the snapshot 4`] = `
 <DocumentFragment>
-  .c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+  .HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -315,6 +310,11 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -326,31 +326,31 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c6[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -362,7 +362,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
     >
       <input
         checked=""
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         id=""
         name="foo"
         type="checkbox"
@@ -382,7 +382,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>
@@ -392,12 +392,7 @@ exports[`<Checkbox /> should match the snapshot 4`] = `
 
 exports[`<Checkbox /> should match the snapshot 5`] = `
 <DocumentFragment>
-  .c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+  .HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -406,6 +401,11 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -417,31 +417,31 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c6[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -452,7 +452,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
       class="c0"
     >
       <input
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         disabled=""
         id=""
         name="foo"
@@ -473,7 +473,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>
@@ -483,12 +483,7 @@ exports[`<Checkbox /> should match the snapshot 5`] = `
 
 exports[`<Checkbox /> should match the snapshot 6`] = `
 <DocumentFragment>
-  .c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+  .HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -497,6 +492,11 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -508,31 +508,31 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c6[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -543,7 +543,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
       class="c0"
     >
       <input
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         id=""
         name="foo"
         type="checkbox"
@@ -563,7 +563,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       >
         Some text
@@ -575,12 +575,7 @@ exports[`<Checkbox /> should match the snapshot 6`] = `
 
 exports[`<Checkbox /> should match the snapshot 7`] = `
 <DocumentFragment>
-  .c4 {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.c1 {
+  .HiddenInput-module__hidden-input___GW0sX {
   border: 0;
   height: 0;
   margin: 0;
@@ -589,6 +584,11 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   padding: 0;
   position: absolute;
   width: 0;
+}
+
+.Label-module__label___opfdV {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .c0 {
@@ -600,31 +600,31 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
   margin-top: 4px;
 }
 
-.c5 {
+.c3 {
   color: #424242;
   margin: 0 0 0 12px;
 }
 
-.c5 a {
+.c3 a {
   position: relative;
   z-index: 5;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   height: 100%;
   width: 100%;
 }
 
-.c2[disabled] {
+.c1[disabled] {
   cursor: not-allowed;
 }
 
-.c2[disabled] ~ .c3 {
+.c1[disabled] ~ .c2 {
   color: #999999;
 }
 
-.c6[disabled] ~ .c3 {
+.c4[disabled] ~ .c2 {
   color: #999999;
 }
 
@@ -636,7 +636,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
     >
       <input
         checked=""
-        class="c1 c2"
+        class="HiddenInput-module__hidden-input___GW0sX c1"
         disabled=""
         id=""
         name="foo"
@@ -657,7 +657,7 @@ exports[`<Checkbox /> should match the snapshot 7`] = `
         />
       </svg>
       <label
-        class="c3 c4 c5"
+        class="Label-module__label___opfdV c2 c3"
         for=""
       />
     </div>

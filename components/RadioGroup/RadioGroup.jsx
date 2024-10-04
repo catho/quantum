@@ -2,7 +2,6 @@ import { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FieldGroup, ErrorMessage } from '../shared';
-import { spacing, colors } from '../shared/theme';
 
 import Radio from './Radio';
 import RadioButton from './RadioButton';
@@ -23,7 +22,6 @@ const RadioGroup = ({
   onChange = () => {},
   options = [],
   defaultValue = undefined,
-  theme = { colors, spacing },
   required = false,
   ...rest
 }) => {
@@ -32,7 +30,6 @@ const RadioGroup = ({
     size,
     error: Boolean(error),
     onChange,
-    inline,
     required,
   };
 
@@ -47,21 +44,22 @@ const RadioGroup = ({
     Children.map(children, (child) =>
       cloneElement(child, {
         defaultChecked: child.props.value === defaultValue ? true : undefined,
+        inline: child.type === RadioButton ? inline : undefined,
         ...commonProps,
       }),
     ) ||
     radioOptions.map((props) =>
       type === 'button' ? (
-        <RadioButton key={props.value} {...props} />
+        <RadioButton key={props.value} inline={inline} {...props} />
       ) : (
         <Radio key={props.value} {...props} />
       ),
     );
 
   return (
-    <Group theme={theme} {...rest}>
+    <Group {...rest}>
       {items}
-      {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
+      {error && <ErrorMessage>{error}</ErrorMessage>}
     </Group>
   );
 };
@@ -89,10 +87,6 @@ RadioGroup.propTypes = {
   defaultValue: PropTypes.string,
   name: PropTypes.string.isRequired,
   error: PropTypes.string,
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
   required: PropTypes.bool,
 };
 

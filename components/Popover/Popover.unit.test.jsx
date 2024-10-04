@@ -78,4 +78,32 @@ describe('Popover component', () => {
 
     expect(onCLoseEventMock).toHaveBeenCalled();
   });
+
+  it('should call in the close event callback when the closeOnClickOut prop is true and there is a click outside the element', () => {
+    const onCLoseEventMock = jest.fn();
+    const sampleText = 'Another element on the page...';
+
+    render(
+      <div>
+        <Popover
+          skin="success"
+          trigger={POPOVER_TRIGGER_TEXT}
+          onClose={onCLoseEventMock}
+          closeOnClickOut
+        >
+          {POPOVER_TEXT}
+        </Popover>
+        <div>{sampleText}</div>
+      </div>,
+    );
+    const trigger = screen.getByText(POPOVER_TRIGGER_TEXT);
+    fireEvent.click(trigger);
+
+    expect(screen.queryByText(POPOVER_TEXT)).toBeInTheDocument();
+
+    const anyElement = screen.getByText(sampleText);
+    fireEvent.click(anyElement);
+
+    expect(screen.queryByText(POPOVER_TEXT)).not.toBeInTheDocument();
+  });
 });

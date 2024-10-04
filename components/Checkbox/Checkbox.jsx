@@ -36,7 +36,11 @@ const CheckboxWrapper = styled.div`
 `}
 `;
 
-const CheckboxLabel = styled(Label)`
+const PropNotContainedInLabel = ['theme', 'error'];
+
+const CheckboxLabel = styled(Label).withConfig({
+  shouldForwardProp: (prop) => !PropNotContainedInLabel.includes(prop),
+})`
   ${({
     theme: {
       colors: {
@@ -61,9 +65,15 @@ const CheckIcon = styled(Icon).attrs({
   name: 'check',
 })``;
 
-const HiddenCheckbox = styled(HiddenInput).attrs({
-  type: 'checkbox',
-})`
+const PropNotContainedInHiddenInput = ['theme', 'error'];
+
+const HiddenCheckbox = styled(HiddenInput)
+  .attrs({
+    type: 'checkbox',
+  })
+  .withConfig({
+    shouldForwardProp: (prop) => !PropNotContainedInHiddenInput.includes(prop),
+  })`
   cursor: pointer;
   height: 100%;
   width: 100%;

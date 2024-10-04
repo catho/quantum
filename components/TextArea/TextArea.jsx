@@ -7,15 +7,32 @@ import {
   InputErrorMessage,
   HelperText,
   RequiredMark,
-  TextInput,
 } from '../Input/sub-components';
 import { spacing, colors, baseFontSize } from '../shared/theme';
+import { useTextInputClass } from '../Input/sub-components/TextInput';
 
 const uniqId = createUniqId('textarea-');
 
 const CUSTOM_HEIGHT = 108;
 
-const TextAreaTag = styled(TextInput)`
+const TextAreaTagBase = forwardRef(
+  ({ className, hasDefaultValue, skin, error, ...rest }, ref) => {
+    const buttonClass = useTextInputClass({
+      hasDefaultValue,
+      skin,
+      error,
+      className,
+    });
+
+    return <textarea ref={ref} className={buttonClass} {...rest} />;
+  },
+);
+
+const propsNotContainedInTextArea = ['theme', 'isAutoResize'];
+
+const TextAreaTag = styled(TextAreaTagBase).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTextArea.includes(prop),
+})`
   && {
     display: block;
     ${({
@@ -95,7 +112,7 @@ const TextAreaBase = (
   };
 
   return (
-    <FieldGroup theme={theme} skin={skin}>
+    <FieldGroup skin={skin}>
       {label && (
         <InputLabel htmlFor={id}>
           {label}
@@ -114,17 +131,12 @@ const TextAreaBase = (
         error={error}
         id={id}
         required={required}
-        as="textarea"
         onChange={onChangeTextArea}
         theme={theme}
         skin={skin}
       />
       {helperText && <HelperText>{helperText}</HelperText>}
-      {error && (
-        <InputErrorMessage skin={skin} helperText={helperText}>
-          {error}
-        </InputErrorMessage>
-      )}
+      {error && <InputErrorMessage skin={skin}>{error}</InputErrorMessage>}
     </FieldGroup>
   );
 };

@@ -1,11 +1,6 @@
 import {FC, HTMLAttributes } from "react";
 
-interface ErrorMessageProps extends HTMLAttributes<HTMLSpanElement>{
-    theme?: {
-      spacing?: object;
-      colors?: object;
-    }
-}
+interface ErrorMessageProps extends HTMLAttributes<HTMLSpanElement>{}
 
 declare const ErrorMessage: FC<ErrorMessageProps>;
   

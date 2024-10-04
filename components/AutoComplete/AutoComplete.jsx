@@ -35,7 +35,11 @@ const InputWrapper = styled.div`
   position: relative;
 `;
 
-const InputText = styled(TextInput)`
+const propsNotContainedInTextInput = ['theme'];
+
+const InputText = styled(TextInput).withConfig({
+  shouldForwardProp: (prop) => !propsNotContainedInTextInput.includes(prop),
+})`
   ${({
     theme: {
       spacing: { xsmall },
@@ -344,7 +348,7 @@ const AutoComplete = ({
   return (
     <ComponentWrapper theme={theme} skin={skin}>
       <InputWrapper ref={wrapperRef}>
-        <InputLabel htmlFor={id} error={error}>
+        <InputLabel htmlFor={id}>
           {label}
           {required && <RequiredMark skin={skin}>*</RequiredMark>}
         </InputLabel>
@@ -366,6 +370,7 @@ const AutoComplete = ({
           onChange={(e) => handleChange(e.target.value)}
           skin={skin}
           required={required}
+          theme={theme}
         />
         {userTypedValue && !error && !disabled && (
           <InputIcon

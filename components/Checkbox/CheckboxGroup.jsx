@@ -5,7 +5,6 @@ import { FieldGroup, ErrorMessage } from '../shared';
 import Checkbox from './Checkbox';
 import CheckboxButton from './CheckboxButton';
 import CheckboxGroupContext from './CheckboxGroupContext';
-import { colors, spacing } from '../shared/theme';
 
 const Group = styled(FieldGroup)`
   position: relative;
@@ -18,10 +17,6 @@ const CheckboxGroup = ({
   options = [],
   type = 'checkbox',
   inline = false,
-  theme = {
-    colors,
-    spacing,
-  },
   size = 'medium',
 }) => {
   const _onChange = (event) => {
@@ -56,11 +51,11 @@ const CheckboxGroup = ({
   );
 
   return (
-    <Group theme={theme}>
+    <Group>
       <CheckboxGroupContext.Provider value={valueProvider}>
         {checkboxes()}
       </CheckboxGroupContext.Provider>
-      {error && <ErrorMessage theme={theme}>{error}</ErrorMessage>}
+      {error && <ErrorMessage>{error}</ErrorMessage>}
     </Group>
   );
 };
@@ -88,10 +83,6 @@ CheckboxGroup.propTypes = {
   ),
   size: PropTypes.oneOf(['xsmall', 'small', 'medium', 'large', 'xlarge']),
   type: PropTypes.oneOf(['checkbox', 'button']),
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
 };
 
 export default CheckboxGroup;

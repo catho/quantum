@@ -8,7 +8,7 @@ const handleDirectionPosition = (direction) => {
 };
 
 const Template = (args) => {
-  const { direction, skin } = args;
+  const { direction, skin, closeOnClickOut } = args;
 
   return (
     <div>
@@ -19,6 +19,7 @@ const Template = (args) => {
             skin={skin}
             trigger={<Button>Popover trigger</Button>}
             visible
+            closeOnClickOut={closeOnClickOut}
           >
             Some text
           </Popover>

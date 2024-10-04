@@ -1,0 +1,29 @@
+.wrapper {
+    position: relative;
+}
+
+.description-label {
+    cursor: text;
+    display: block;
+    font-size: calc(var(--qtm-base-font-size) * 0.875);
+    padding: 0;
+    color: inherit;
+}
+
+.input-icon {
+    cursor: pointer;
+    position: absolute;
+    right: var(--qtm-spacing-medium);
+    bottom: calc(var(--qtm-spacing-xsmall) * 1.25);
+    width: calc(var(--qtm-base-font-size) * 1.5);
+
+    color: inherit;
+}
+
+.search-icon {
+    left: var(--qtm-spacing-medium);
+}
+
+.error-icon-default {
+    color: var(--qtm-colors-error-700);
+}

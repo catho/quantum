@@ -1,72 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextArea component should match snapshots 1`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -76,10 +35,10 @@ exports[`TextArea component should match snapshots 1`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ c0"
     id="textarea-0"
     placeholder=""
   />
@@ -87,73 +46,35 @@ exports[`TextArea component should match snapshots 1`] = `
 `;
 
 exports[`TextArea component should match snapshots 2`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
-  background-color: #E5EDFC;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__has-default-value___o7STi {
+  background-color: var(--qtm-colors-primary-100);
 }
 
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -163,10 +84,10 @@ exports[`TextArea component should match snapshots 2`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__has-default-value___o7STi c0"
     id="textarea-1"
     placeholder=""
   >
@@ -176,79 +97,38 @@ exports[`TextArea component should match snapshots 2`] = `
 `;
 
 exports[`TextArea component should match snapshots 3`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c2 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c2[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c2:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c3.c3 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -258,16 +138,16 @@ exports[`TextArea component should match snapshots 3`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <label
-    class="c1"
+    class="InputLabel-module__input-label___u-ovg"
     for="textarea-2"
   >
     Text label
   </label>
   <textarea
-    class="c2 c3"
+    class="TextInput-module__text-input___VCylJ c0"
     id="textarea-2"
     placeholder=""
   />
@@ -275,83 +155,42 @@ exports[`TextArea component should match snapshots 3`] = `
 `;
 
 exports[`TextArea component should match snapshots 4`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c3 {
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c3::-webkit-calendar-picker-indicator,
-.c3::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c3[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c3:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c3[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c2 {
+.c0 {
   color: #ec584e;
 }
 
-.c4.c4 {
+.c1.c1 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -361,21 +200,21 @@ exports[`TextArea component should match snapshots 4`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <label
-    class="c1"
+    class="InputLabel-module__input-label___u-ovg"
     for="textarea-3"
   >
     Text label
     <em
-      class="c2"
+      class="c0"
     >
       *
     </em>
   </label>
   <textarea
-    class="c3 c4"
+    class="TextInput-module__text-input___VCylJ c1"
     id="textarea-3"
     placeholder=""
     required=""
@@ -384,72 +223,31 @@ exports[`TextArea component should match snapshots 4`] = `
 `;
 
 exports[`TextArea component should match snapshots 5`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -459,10 +257,10 @@ exports[`TextArea component should match snapshots 5`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ c0"
     disabled=""
     id="textarea-4"
     placeholder=""
@@ -471,72 +269,31 @@ exports[`TextArea component should match snapshots 5`] = `
 `;
 
 exports[`TextArea component should match snapshots 6`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -546,10 +303,10 @@ exports[`TextArea component should match snapshots 6`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ c0"
     id="textarea-5"
     placeholder="this input has a placeholder"
   />
@@ -557,87 +314,46 @@ exports[`TextArea component should match snapshots 6`] = `
 `;
 
 exports[`TextArea component should match snapshots 7`] = `
-.c3 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.HelperText-module__helper-text___e4Vp- {
+  color: inherit!important;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c4 {
-  color: inherit;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -647,15 +363,15 @@ exports[`TextArea component should match snapshots 7`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ c0"
     id="textarea-6"
     placeholder=""
   />
   <span
-    class="c3 c4"
+    class="ErrorMessage-module__error-message___MWbU- HelperText-module__helper-text___e4Vp-"
   >
     this is a helper text
   </span>
@@ -663,84 +379,48 @@ exports[`TextArea component should match snapshots 7`] = `
 `;
 
 exports[`TextArea component should match snapshots 8`] = `
-.c3 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
-  border-color: #e91b0c;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__error___nPcHX,
+.TextInput-module__error___nPcHX:focus,
+.TextInput-module__error___nPcHX:hover {
+  border-color: var(--qtm-colors-error-700);
 }
 
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #e91b0c;
-  box-shadow: 0px 3px 1px -2px rgba(233,27,12,0.2),0px 2px 2px 0px rgba(233,27,12,0.14),0px 1px 5px 0px rgba(233,27,12,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -750,15 +430,15 @@ exports[`TextArea component should match snapshots 8`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX c0"
     id="textarea-7"
     placeholder=""
   />
   <span
-    class="c3"
+    class="ErrorMessage-module__error-message___MWbU-"
   >
     Error message
   </span>
@@ -766,82 +446,41 @@ exports[`TextArea component should match snapshots 8`] = `
 `;
 
 exports[`TextArea component should match snapshots 9`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -851,10 +490,10 @@ exports[`TextArea component should match snapshots 9`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c0"
     id="textarea-8"
     placeholder=""
   />
@@ -862,82 +501,45 @@ exports[`TextArea component should match snapshots 9`] = `
 `;
 
 exports[`TextArea component should match snapshots 10`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__has-default-value___o7STi {
+  background-color: var(--qtm-colors-primary-100);
 }
 
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -947,10 +549,10 @@ exports[`TextArea component should match snapshots 10`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__has-default-value___o7STi TextInput-module__text-input-dark___TrWzt c0"
     id="textarea-9"
     placeholder=""
   >
@@ -960,89 +562,48 @@ exports[`TextArea component should match snapshots 10`] = `
 `;
 
 exports[`TextArea component should match snapshots 11`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c2 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2::-webkit-inner-spin-button,
-.c2::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c2::-webkit-calendar-picker-indicator,
-.c2::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c2::-ms-clear {
-  display: none;
-}
-
-.c2::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c2::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c2:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c2::placeholder {
-  color: #ffffff;
-}
-
-.c2:hover,
-.c2:focus {
-  border-color: #0CC0EA;
-}
-
-.c2[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c2[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
-  color: inherit;
-}
-
-.c3.c3 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1052,16 +613,16 @@ exports[`TextArea component should match snapshots 11`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <label
-    class="c1"
+    class="InputLabel-module__input-label___u-ovg"
     for="textarea-10"
   >
     Text label
   </label>
   <textarea
-    class="c2 c3"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c0"
     id="textarea-10"
     placeholder=""
   />
@@ -1069,93 +630,52 @@ exports[`TextArea component should match snapshots 11`] = `
 `;
 
 exports[`TextArea component should match snapshots 12`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c3 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.InputLabel-module__input-label___u-ovg {
+  color: inherit;
+  display: block;
+  font-weight: 700;
+  margin: var(--qtm-spacing-xsmall) 0 0;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c3::-webkit-inner-spin-button,
-.c3::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c3::-webkit-calendar-picker-indicator,
-.c3::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c3::-ms-clear {
-  display: none;
-}
-
-.c3::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c3::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c3:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c3::placeholder {
-  color: #ffffff;
-}
-
-.c3:hover,
-.c3:focus {
-  border-color: #0CC0EA;
-}
-
-.c3[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c3[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c1 {
-  display: block;
-  font-weight: bold;
-  margin: 8px 0 0;
+.c0 {
   color: inherit;
 }
 
-.c2 {
-  color: inherit;
-}
-
-.c4.c4 {
+.c1.c1 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1165,21 +685,21 @@ exports[`TextArea component should match snapshots 12`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <label
-    class="c1"
+    class="InputLabel-module__input-label___u-ovg"
     for="textarea-11"
   >
     Text label
     <em
-      class="c2"
+      class="c0"
     >
       *
     </em>
   </label>
   <textarea
-    class="c3 c4"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c1"
     id="textarea-11"
     placeholder=""
     required=""
@@ -1188,82 +708,41 @@ exports[`TextArea component should match snapshots 12`] = `
 `;
 
 exports[`TextArea component should match snapshots 13`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1273,10 +752,10 @@ exports[`TextArea component should match snapshots 13`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c0"
     disabled=""
     id="textarea-12"
     placeholder=""
@@ -1285,82 +764,41 @@ exports[`TextArea component should match snapshots 13`] = `
 `;
 
 exports[`TextArea component should match snapshots 14`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1370,10 +808,10 @@ exports[`TextArea component should match snapshots 14`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c0"
     id="textarea-13"
     placeholder="this input has a placeholder"
   />
@@ -1381,97 +819,56 @@ exports[`TextArea component should match snapshots 14`] = `
 `;
 
 exports[`TextArea component should match snapshots 15`] = `
-.c3 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.HelperText-module__helper-text___e4Vp- {
+  color: inherit!important;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c4 {
-  color: inherit;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1481,15 +878,15 @@ exports[`TextArea component should match snapshots 15`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c0"
     id="textarea-14"
     placeholder=""
   />
   <span
-    class="c3 c4"
+    class="ErrorMessage-module__error-message___MWbU- HelperText-module__helper-text___e4Vp-"
   >
     this is a helper text
   </span>
@@ -1497,98 +894,66 @@ exports[`TextArea component should match snapshots 15`] = `
 `;
 
 exports[`TextArea component should match snapshots 16`] = `
-.c3 {
-  color: #ac001a;
-  margin-top: 8px;
+.ErrorMessage-module__error-message___MWbU- {
+  color: var(--qtm-colors-error-900);
   cursor: text;
   display: block;
-  line-height: normal;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
+  line-height: normal;
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #ffffff;
 }
 
-.c1 {
+.FieldGroup-module__field-group-dark___E0Qz5 {
+  color: var(--qtm-colors-neutral-0);
+}
+
+.InputErrorMessage-module__error-message-dark___CbNlK {
+  color: var(--qtm-colors-neutral-0)!important;
+}
+
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: rgba(0,0,0,0.7);
+}
+
+.TextInput-module__text-input-dark___TrWzt {
+  background-color: rgba(0,0,0,.7)!important;
   border: 2px solid transparent;
-  color: #ffffff;
-  border-color: #ffffff;
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.TextInput-module__error___nPcHX,
+.TextInput-module__error___nPcHX:focus,
+.TextInput-module__error___nPcHX:hover {
+  border-color: var(--qtm-colors-error-700);
 }
 
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
+.TextInput-module__error-dark___FPgjH {
+  border-color: var(--qtm-colors-neutral-0);
 }
 
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::-moz-placeholder {
-  color: #ffffff;
-}
-
-.c1:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.c1::placeholder {
-  color: #ffffff;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #0CC0EA;
-}
-
-.c1[disabled] {
-  color: rgba(255,255,255,0.5);
-  border-color: transparent;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c4 {
-  color: #ffffff;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: auto;
   min-height: 108px;
@@ -1598,15 +963,15 @@ exports[`TextArea component should match snapshots 16`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5 FieldGroup-module__field-group-dark___E0Qz5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX TextInput-module__text-input-dark___TrWzt TextInput-module__error-dark___FPgjH c0"
     id="textarea-15"
     placeholder=""
   />
   <span
-    class="c3 c4"
+    class="ErrorMessage-module__error-message___MWbU- InputErrorMessage-module__error-message-dark___CbNlK"
   >
     Error message
   </span>
@@ -1614,72 +979,31 @@ exports[`TextArea component should match snapshots 16`] = `
 `;
 
 exports[`TextArea component should match snapshots 17`] = `
-.c0 {
-  position: relative;
+.FieldGroup-module__field-group___H0qA5 {
+  color: var(--qtm-colors-neutral-700);
   margin-bottom: 20px;
   min-width: 250px;
+  position: relative;
   width: 100%;
-  color: #424242;
 }
 
-.c1 {
+.TextInput-module__text-input___VCylJ {
   -webkit-appearance: none;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 2px solid var(--qtm-colors-neutral-500);
   border-radius: 4px;
   box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: initial;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
+  color: var(--qtm-colors-neutral-700);
+  font-size: medium;
+  letter-spacing: .2px;
+  margin-top: 0;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: all .2s ease-in-out;
   width: 100%;
-  margin-top: 0px;
-  padding: 8px 16px;
-  background-color: #ffffff;
-  border: 2px solid #999999;
-  color: #424242;
 }
 
-.c1::-webkit-inner-spin-button,
-.c1::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.c1::-webkit-calendar-picker-indicator,
-.c1::-webkit-search-cancel-button {
-  display: none;
-}
-
-.c1::-ms-clear {
-  display: none;
-}
-
-.c1:hover,
-.c1:focus {
-  border-color: #1250C4;
-  box-shadow: 0px 3px 1px -2px rgba(18,80,196,0.2),0px 2px 2px 0px rgba(18,80,196,0.14),0px 1px 5px 0px rgba(18,80,196,0.12);
-}
-
-.c1[disabled] {
-  background-color: #f2f2f2;
-  border-color: #999999;
-  color: #999999;
-}
-
-.c1:-webkit-autofill {
-  box-shadow: 0 0 0 1000px #fff5f5 inset;
-}
-
-.c1[disabled] {
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
-.c2.c2 {
+.c0.c0 {
   display: block;
   resize: none;
   min-height: inherit;
@@ -1689,10 +1013,10 @@ exports[`TextArea component should match snapshots 17`] = `
 }
 
 <div
-  class="c0"
+  class="FieldGroup-module__field-group___H0qA5"
 >
   <textarea
-    class="c1 c2"
+    class="TextInput-module__text-input___VCylJ c0"
     id="textarea-16"
     placeholder=""
     rows="1"

@@ -56,6 +56,17 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
+.HiddenInput-module__hidden-input___GW0sX {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .SegmentedButton-module__label___sRquy {
   border: 1px solid;
   border-radius: 0;
@@ -124,17 +135,6 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
   }
 }
 
-.c0 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 <div
   class="Row-module__row___xiasO"
 >
@@ -152,7 +152,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-0"
           name="segmented-control"
           type="radio"
@@ -168,7 +168,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
       >
         <input
           checked=""
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-1"
           name="segmented-control"
           type="radio"
@@ -183,7 +183,7 @@ exports[`<SegmentedControl /> should match the snapshots 1`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-2"
           name="segmented-control"
           type="radio"
@@ -252,6 +252,17 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
+.HiddenInput-module__hidden-input___GW0sX {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .SegmentedButton-module__label___sRquy {
   border: 1px solid;
   border-radius: 0;
@@ -320,17 +331,6 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
   }
 }
 
-.c0 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 <div
   class="Row-module__row___xiasO"
 >
@@ -348,7 +348,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-3"
           name="segmented-control"
           type="radio"
@@ -377,7 +377,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
       >
         <input
           checked=""
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-4"
           name="segmented-control"
           type="radio"
@@ -405,7 +405,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-5"
           name="segmented-control"
           type="radio"
@@ -433,7 +433,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-6"
           name="segmented-control"
           type="radio"
@@ -461,7 +461,7 @@ exports[`<SegmentedControl /> should match the snapshots 2`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-7"
           name="segmented-control"
           type="radio"
@@ -543,6 +543,17 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
+.HiddenInput-module__hidden-input___GW0sX {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .SegmentedButton-module__label___sRquy {
   border: 1px solid;
   border-radius: 0;
@@ -611,17 +622,6 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
   }
 }
 
-.c0 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 <div
   class="Row-module__row___xiasO"
 >
@@ -639,7 +639,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-8"
           name="segmented-control"
           type="radio"
@@ -668,7 +668,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
       >
         <input
           checked=""
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-9"
           name="segmented-control"
           type="radio"
@@ -696,7 +696,7 @@ exports[`<SegmentedControl /> should match the snapshots 3`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-10"
           name="segmented-control"
           type="radio"
@@ -778,6 +778,17 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   box-shadow: 0 3px 1px -2px var(--qtm-shadow-umbra-neutral-500-color),0 2px 2px 0 var(--qtm-shadow-penumbra-neutral-500-color),0 1px 5px 0 var(--qtm-shadow-ambient-neutral-500-color);
 }
 
+.HiddenInput-module__hidden-input___GW0sX {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
 .SegmentedButton-module__label___sRquy {
   border: 1px solid;
   border-radius: 0;
@@ -846,17 +857,6 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
   }
 }
 
-.c0 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
 <div
   class="Row-module__row___xiasO"
 >
@@ -874,7 +874,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-11"
           name="segmented-control"
           type="radio"
@@ -903,7 +903,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
       >
         <input
           checked=""
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-12"
           name="segmented-control"
           type="radio"
@@ -931,7 +931,7 @@ exports[`<SegmentedControl /> should match the snapshots 4`] = `
         tabindex="0"
       >
         <input
-          class="c0"
+          class="HiddenInput-module__hidden-input___GW0sX"
           id="segmented-button-13"
           name="segmented-control"
           type="radio"

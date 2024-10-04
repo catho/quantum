@@ -1,17 +1,18 @@
-import styled, { css } from 'styled-components';
+import classNames from 'classnames';
+import styles from './FieldGroup.module.css';
 
-export default styled.div`
-  position: relative;
-  margin-bottom: 20px;
-  min-width: 250px;
-  width: 100%;
+const FieldGroup = ({ className, skin = 'default', children, ...rest }) => {
+  const fieldGroupClass = classNames(
+    styles['field-group'],
+    { [styles['field-group-dark']]: skin === 'dark' },
+    className,
+  );
 
-  ${({
-    theme: {
-      colors: { neutral },
-    },
-    skin = 'default',
-  }) => css`
-    color: ${skin === 'default' ? neutral[700] : neutral[0]};
-  `}
-`;
+  return (
+    <div className={fieldGroupClass} {...rest}>
+      {children}
+    </div>
+  );
+};
+
+export default FieldGroup;
