@@ -294,7 +294,7 @@ exports[`Form component  should match the snapshot 1`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ClearIcon"
         description=""

@@ -13,7 +13,6 @@ import {
   RequiredMark,
   InputErrorMessage,
 } from './sub-components';
-import { spacing, colors, baseFontSize } from '../shared/theme';
 import styles from './Input.module.css';
 
 const uniqId = createUniqId('input-');
@@ -107,7 +106,6 @@ class Input extends Component {
       helperText,
       required,
       onClean,
-      theme,
       disabled,
       skin,
       ...rest
@@ -142,9 +140,7 @@ class Input extends Component {
           <span className={descriptionLabelClass}>{descriptionLabel}</span>
         )}
         <div className={inputWrapperClass}>
-          {_isSearchType && (
-            <InputSearchIcon description={descriptionLabel} theme={theme} />
-          )}
+          {_isSearchType && <InputSearchIcon description={descriptionLabel} />}
           <MaskedInput
             {...rest}
             disabled={disabled}
@@ -167,15 +163,10 @@ class Input extends Component {
             )}
           />
           {error && !_isPassword && (
-            <InputErrorIcon
-              description={descriptionLabel}
-              theme={theme}
-              skin={skin}
-            />
+            <InputErrorIcon description={descriptionLabel} skin={skin} />
           )}
           {_isPassword && (
             <InputIcon
-              theme={theme}
               name={typeState === 'password' ? 'visibility' : 'visibility_off'}
               description={descriptionLabel}
               onClick={this._toggleInputType}
@@ -183,7 +174,6 @@ class Input extends Component {
           )}
           {hasValue && !_isPassword && !error && !disabled && (
             <InputIcon
-              theme={theme}
               name="clear"
               description={descriptionLabel}
               onClick={onCleanClick}
@@ -191,11 +181,7 @@ class Input extends Component {
           )}
         </div>
         {helperText && <HelperText>{helperText}</HelperText>}
-        {error && (
-          <InputErrorMessage theme={theme} skin={skin}>
-            {error}
-          </InputErrorMessage>
-        )}
+        {error && <InputErrorMessage skin={skin}>{error}</InputErrorMessage>}
       </FieldGroup>
     );
   }
@@ -235,11 +221,6 @@ Input.propTypes = {
   ]),
   onClean: PropTypes.func,
   onChange: PropTypes.func,
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-    colors: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
   minLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   maxLength: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   skin: PropTypes.oneOf(['default', 'dark']),
@@ -259,7 +240,6 @@ Input.defaultProps = {
   placeholder: '',
   onClean: () => {},
   onChange: () => {},
-  theme: { spacing, colors, baseFontSize },
   minLength: 0,
   maxLength: 255,
   skin: 'default',

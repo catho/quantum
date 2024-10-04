@@ -112,7 +112,7 @@ exports[`Input component should match snapshots 2`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ClearIcon"
         description=""
@@ -275,7 +275,7 @@ exports[`Input component should match snapshots 4`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__error-icon-default___eeNn1 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__error-icon-default___eeNn1 css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ErrorIcon"
         description=""
@@ -290,7 +290,6 @@ exports[`Input component should match snapshots 4`] = `
     </div>
     <span
       class="ErrorMessage-module__error-message___MWbU-"
-      theme="[object Object]"
     >
       Error message
     </span>
@@ -401,7 +400,7 @@ exports[`Input component should match snapshots 6`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__search-icon___s5j0Q css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__search-icon___s5j0Q css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="SearchIcon"
         description=""
@@ -679,7 +678,7 @@ exports[`Input component should match snapshots 10`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__search-icon___s5j0Q css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN Input-module__search-icon___s5j0Q css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="SearchIcon"
         description="this is a description label"
@@ -1069,7 +1068,7 @@ exports[`Input component should match snapshots 17`] = `
       />
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Input-module__input-icon___gieRN css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="VisibilityIcon"
         description=""

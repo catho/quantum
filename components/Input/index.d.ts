@@ -33,11 +33,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   minLength?: number;
   maxLength?: number;
   skin?: 'default' | 'dark';
-  theme?: {
-    spacing?: {};
-    colors?: {};
-    baseFontSize?: number;
-  };
 }
 
 declare const Input: FC<InputProps> & {
