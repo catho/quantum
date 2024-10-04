@@ -335,6 +335,7 @@ const DropdownLight = ({
           theme={theme}
         />
         <Button
+          type="button"
           aria-haspopup="true"
           aria-label={isOpen ? 'fechar lista de itens' : 'abrir lista de itens'}
           onClick={handleToggleDropdown}

@@ -117,6 +117,50 @@ describe('<TabbedView /> ', () => {
       render(<Tab title="Candidates">Candidates content</Tab>);
       expect(screen.getByText('Candidates content')).toBeInTheDocument();
     });
+    it('should be able to change active tab when activeTab props change', () => {
+      const { rerender } = render(
+        <TabbedView activeTab="Empresas">
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
+      expect(screen.queryByText('Candidatos content')).not.toBeInTheDocument();
+      expect(screen.getByText('Empresas content')).toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
+      rerender(
+        <TabbedView activeTab="Candidatos">
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
+      expect(screen.getByText('Candidatos content')).toBeInTheDocument();
+      expect(screen.queryByText('Empresas content')).not.toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
+    });
+    it('should not be able to change the active tab when active tab props change to a invalid tab', () => {
+      const { rerender } = render(
+        <TabbedView activeTab="Empresas">
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
+      expect(screen.queryByText('Candidatos content')).not.toBeInTheDocument();
+      expect(screen.getByText('Empresas content')).toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
+      rerender(
+        <TabbedView activeTab="invalid tab">
+          <Tab title="Candidatos">Candidatos content</Tab>
+          <Tab title="Empresas">Empresas content</Tab>
+          <Tab title="Educação">Educação content</Tab>
+        </TabbedView>,
+      );
+      expect(screen.getByText('Candidatos content')).toBeInTheDocument();
+      expect(screen.queryByText('Empresas content')).not.toBeInTheDocument();
+      expect(screen.queryByText('Educação content')).not.toBeInTheDocument();
+    });
   });
 
   describe('events', () => {

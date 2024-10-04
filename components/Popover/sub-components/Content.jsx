@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { useEffect, useRef } from 'react';
 import { components, spacing, colors, breakpoints } from '../../shared/theme';
 import getArrow from '../arrowProperties';
 import Button from '../../Button';
@@ -137,24 +138,48 @@ const Content = ({
   },
   skin = 'neutral',
   inverted = false,
+  closeOnClickOut = false,
   ...rest
-}) => (
-  <PopoverContent
-    theme={theme}
-    inverted={inverted}
-    placement={placement}
-    skin={skin}
-    {...rest}
-  >
-    <PopoverChildren>{children}</PopoverChildren>
-    <CloseButton
-      skin={skin}
+}) => {
+  const popoverRef = useRef(null);
+
+  // eslint-disable-next-line consistent-return
+  useEffect(() => {
+    if (closeOnClickOut) {
+      const onClickOutside = (event) => {
+        const element = event.target;
+
+        if (popoverRef.current && !popoverRef.current.contains(element)) {
+          onPopoverClose();
+        }
+      };
+
+      window.addEventListener('click', onClickOutside);
+      return () => {
+        window.removeEventListener('click', onClickOutside);
+      };
+    }
+  }, []);
+
+  return (
+    <PopoverContent
       theme={theme}
       inverted={inverted}
-      onClick={onPopoverClose}
-    />
-  </PopoverContent>
-);
+      placement={placement}
+      skin={skin}
+      ref={popoverRef}
+      {...rest}
+    >
+      <PopoverChildren>{children}</PopoverChildren>
+      <CloseButton
+        skin={skin}
+        theme={theme}
+        inverted={inverted}
+        onClick={onPopoverClose}
+      />
+    </PopoverContent>
+  );
+};
 
 CloseButton.displayName = 'CloseButton';
 PopoverChildren.displayName = 'PopoverChildren';
