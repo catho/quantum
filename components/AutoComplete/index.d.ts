@@ -1,9 +1,5 @@
 import { FC } from 'react';
 export interface AutoCompleteProps {
-  theme?: {
-    colors?: object;
-    spacing?: object;
-  };
   suggestions: Array<string>;
   id?: string;
   name?: string;

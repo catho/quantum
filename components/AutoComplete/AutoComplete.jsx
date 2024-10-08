@@ -1,8 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import { shadow, normalizeChars } from '../shared';
-import { baseFontSize, colors, spacing } from '../shared/theme';
+import classNames from 'classnames';
+import { normalizeChars } from '../shared';
 import Icon from '../Icon';
 
 import {
@@ -13,139 +12,9 @@ import {
   RequiredMark,
 } from '../Input/sub-components';
 import useKeyPress from './SubComponents/UseKeyPress';
+import styles from './AutoComplete.module.css';
 
-const ITEM_HEIGHT = '44px';
-const MAX_ITEMS_VISIBILITY = 7;
-const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
 const NON_FOCUSABLE_SUGGESTION_INDEX = -1;
-
-const ComponentWrapper = styled.div`
-  ${({
-    theme: {
-      colors: { neutral },
-    },
-    skin = 'default',
-  }) => css`
-    position: relative;
-    color: ${skin === 'default' ? neutral[700] : neutral[0]};
-  `}
-`;
-
-const InputWrapper = styled.div`
-  position: relative;
-`;
-
-const propsNotContainedInTextInput = ['theme'];
-
-const InputText = styled(TextInput).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInTextInput.includes(prop),
-})`
-  ${({
-    theme: {
-      spacing: { xsmall },
-    },
-  }) => css`
-    margin-top: ${xsmall}px;
-  `}
-`;
-
-const InputIcon = styled(Icon)`
-  cursor: pointer;
-  position: absolute;
-  ${({
-    theme: {
-      spacing: { xsmall, medium },
-    },
-  }) => css`
-    right: ${medium}px;
-    bottom: ${xsmall * 1.25}px;
-    width: ${baseFontSize * 1.5}px;
-  `}
-`;
-
-const InputErrorIcon = styled(InputIcon).attrs({ name: 'error' })`
-  ${({
-    theme: {
-      colors: {
-        error: { 700: error700 },
-      },
-    },
-    skin,
-  }) => css`
-    color: ${skin === 'default' ? error700 : 'inherit'};
-  `}
-`;
-
-const List = styled.ul`
-  border-radius: 4px;
-  box-sizing: border-box;
-  list-style: none;
-  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
-  overflow: auto;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-
-  ${({ theme }) => {
-    const {
-      spacing: { xxsmall },
-      colors: {
-        neutral: { 0: neutral0, 700: neutral700 },
-      },
-    } = theme;
-    return css`
-      background-color: ${neutral0};
-      margin-top: ${xxsmall}px;
-      ${shadow(3, neutral700)({ theme })};
-    `;
-  }}
-`;
-
-const ListItem = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  cursor: pointer;
-  height: ${ITEM_HEIGHT};
-  ${({
-    theme: {
-      spacing: { xsmall, medium },
-      colors: {
-        neutral: { 0: neutral0, 700: neutral700 },
-      },
-    },
-  }) => css`
-    color: ${neutral700};
-    font-size: ${DROPITEM_FONT_SIZE}px;
-    background-color: ${neutral0};
-    padding: ${xsmall}px ${medium}px;
-  `}
-
-  &[aria-selected = 'true' ], &:hover {
-    ${({
-      theme: {
-        colors: {
-          neutral: { 100: neutral100 },
-        },
-      },
-    }) => css`
-      background-color: ${neutral100};
-    `}
-  }
-`;
-
-const PoliteStatus = styled.div`
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-`;
 
 const AutoComplete = ({
   id = '',
@@ -157,15 +26,25 @@ const AutoComplete = ({
   helperText = '',
   placeholder = 'Select an option',
   suggestions,
-  theme = {
-    spacing,
-    colors,
-  },
   onSelectedItem = () => {},
   onChange = () => {},
   required = false,
   skin = 'default',
 }) => {
+  const wrapperClass = classNames(styles.wrapper, {
+    [styles['wrapper-dark']]: skin === 'dark',
+  });
+  const inputWrapperClass = classNames(styles['input-wrapper']);
+  const inputTextClass = classNames(styles['input-text']);
+  const inputIconClass = classNames(styles['input-icon']);
+  const inputErrorIconClass = classNames(
+    styles['input-icon'],
+    styles[`input-error-icon-${skin}`],
+  );
+  const listClass = classNames(styles['list-suggestions'], 'shadow-3');
+  const itemClass = classNames(styles['item-suggestions']);
+  const politeClass = classNames(styles['polite-status']);
+
   const [userTypedValue, setUserTypedValue] = useState(value);
   const [filterSuggestions, setFilterSuggestions] = useState(suggestions);
   const [filterSuggestionsLength, setFilterSuggestionsLength] = useState(
@@ -248,27 +127,27 @@ const AutoComplete = ({
 
   const generateSuggestions = () =>
     showSuggestions && filterSuggestions ? (
-      <List
-        theme={theme}
+      <ul
         role="listbox"
         id="autocompleteOptions"
         ref={listOptions}
-        skin={skin}
+        className={listClass}
       >
         {filterSuggestions.map((item, index) => (
-          <ListItem
+          // eslint-disable-next-line jsx-a11y/click-events-have-key-events
+          <li
             key={item}
             aria-posinset={index}
             onClick={() => handleItemClick(item)}
-            theme={theme}
+            className={itemClass}
             aria-selected={index === cursor}
             role="option"
             tabIndex="-1"
           >
             {item}
-          </ListItem>
+          </li>
         ))}
-      </List>
+      </ul>
     ) : null;
 
   const generateAssistiveDescript = () => {
@@ -346,13 +225,13 @@ const AutoComplete = ({
   }, [suggestions]);
 
   return (
-    <ComponentWrapper theme={theme} skin={skin}>
-      <InputWrapper ref={wrapperRef}>
+    <div className={wrapperClass}>
+      <div className={inputWrapperClass} ref={wrapperRef}>
         <InputLabel htmlFor={id}>
           {label}
           {required && <RequiredMark skin={skin}>*</RequiredMark>}
         </InputLabel>
-        <InputText
+        <TextInput
           id={id}
           ref={autoInputRef}
           name={name}
@@ -370,39 +249,40 @@ const AutoComplete = ({
           onChange={(e) => handleChange(e.target.value)}
           skin={skin}
           required={required}
-          theme={theme}
+          className={inputTextClass}
         />
         {userTypedValue && !error && !disabled && (
-          <InputIcon
-            theme={theme}
+          <Icon
             name="clear"
             description="limpar valor"
             onClick={() => handleClearValue()}
+            className={inputIconClass}
           />
         )}
         {generateSuggestions()}
         {error && (
-          <InputErrorIcon description={error} theme={theme} skin={skin} />
+          <Icon
+            name="error"
+            description={error}
+            className={inputErrorIconClass}
+          />
         )}
-      </InputWrapper>
+      </div>
       {helperText && <HelperText>{helperText}</HelperText>}
-      {error && (
-        <InputErrorMessage theme={theme} skin={skin}>
-          {error}
-        </InputErrorMessage>
-      )}
-      <PoliteStatus role="status" aria-atomic="true" aria-live="polite">
+      {error && <InputErrorMessage skin={skin}>{error}</InputErrorMessage>}
+      <div
+        role="status"
+        aria-atomic="true"
+        aria-live="polite"
+        className={politeClass}
+      >
         {generateAssistiveDescript()}
-      </PoliteStatus>
-    </ComponentWrapper>
+      </div>
+    </div>
   );
 };
 
 AutoComplete.propTypes = {
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
   /** A list of string or objects with the values to show in component */
   suggestions: PropTypes.arrayOf(PropTypes.string).isRequired,
   id: PropTypes.string,
