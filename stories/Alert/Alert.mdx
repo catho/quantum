@@ -9,7 +9,8 @@ import {
   Primary,
   Success,
   Error,
-  WithIcon
+  WithIcon,
+  WithClose
 } from './Alert.stories.jsx';
 
 import EvaluationForm from '../../stories/shared/EvaluationForm'
@@ -63,6 +64,12 @@ import Alert from '@catho/quantum/Alert';
 
 <Canvas>
   <Story of={WithIcon} />
+</Canvas>
+
+### With Close
+
+<Canvas>
+  <Story of={WithClose} />
 </Canvas>
 
 <EvaluationForm componentName="Alert" />
