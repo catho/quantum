@@ -24,22 +24,21 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
   width: 100%;
 }
 
-.c0 {
+.AutoComplete-module__wrapper___0v99I {
+  color: var(--qtm-colors-neutral-700);
+}
+
+.AutoComplete-module__input-wrapper___Yz9qd,
+.AutoComplete-module__wrapper___0v99I {
   position: relative;
-  color: #424242;
 }
 
-.c1 {
-  position: relative;
+.AutoComplete-module__input-text___8DYxo {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c2 {
-  margin-top: 8px;
-}
-
-.c3 {
+.AutoComplete-module__polite-status___DWMsJ {
   border: 0;
-  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
@@ -50,10 +49,10 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
 }
 
 <div
-  class="c0"
+  class="AutoComplete-module__wrapper___0v99I"
 >
   <div
-    class="c1"
+    class="AutoComplete-module__input-wrapper___Yz9qd"
   >
     <label
       class="InputLabel-module__input-label___u-ovg"
@@ -64,7 +63,7 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
       aria-expanded="false"
       aria-owns="autocompleteOptions"
       autocomplete="off"
-      class="TextInput-module__text-input___VCylJ c2"
+      class="TextInput-module__text-input___VCylJ AutoComplete-module__input-text___8DYxo"
       id=""
       name=""
       placeholder="Select an option"
@@ -77,7 +76,7 @@ exports[`AutoComplete Should render Autocomplete 1`] = `
   <div
     aria-atomic="true"
     aria-live="polite"
-    class="c3"
+    class="AutoComplete-module__polite-status___DWMsJ"
     role="status"
   >
     Digite uma ou mais letras para expandir os resultados. 5 estão disponiveis.
@@ -115,22 +114,25 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
   color: var(--qtm-colors-neutral-0);
 }
 
-.c0 {
+.AutoComplete-module__wrapper___0v99I {
+  color: var(--qtm-colors-neutral-700);
+}
+
+.AutoComplete-module__input-wrapper___Yz9qd,
+.AutoComplete-module__wrapper___0v99I {
   position: relative;
-  color: #ffffff;
 }
 
-.c1 {
-  position: relative;
+.AutoComplete-module__wrapper-dark___PndN8 {
+  color: var(--qtm-colors-neutral-0);
 }
 
-.c2 {
-  margin-top: 8px;
+.AutoComplete-module__input-text___8DYxo {
+  margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c3 {
+.AutoComplete-module__polite-status___DWMsJ {
   border: 0;
-  -webkit-clip: rect(0 0 0 0);
   clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
@@ -141,10 +143,10 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
 }
 
 <div
-  class="c0"
+  class="AutoComplete-module__wrapper___0v99I AutoComplete-module__wrapper-dark___PndN8"
 >
   <div
-    class="c1"
+    class="AutoComplete-module__input-wrapper___Yz9qd"
   >
     <label
       class="InputLabel-module__input-label___u-ovg"
@@ -155,7 +157,7 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
       aria-expanded="false"
       aria-owns="autocompleteOptions"
       autocomplete="off"
-      class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt c2"
+      class="TextInput-module__text-input___VCylJ TextInput-module__text-input-dark___TrWzt AutoComplete-module__input-text___8DYxo"
       id=""
       name=""
       placeholder="Select an option"
@@ -168,7 +170,7 @@ exports[`AutoComplete Should render Autocomplete with dark skin 1`] = `
   <div
     aria-atomic="true"
     aria-live="polite"
-    class="c3"
+    class="AutoComplete-module__polite-status___DWMsJ"
     role="status"
   >
     Digite uma ou mais letras para expandir os resultados. 5 estão disponiveis.
