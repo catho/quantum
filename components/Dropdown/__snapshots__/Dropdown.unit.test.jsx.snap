@@ -25,31 +25,22 @@ exports[`Dropdown component  should match the snapshot 1`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -60,7 +51,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-0-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -75,7 +66,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-0"
       role="button"
@@ -84,7 +75,7 @@ exports[`Dropdown component  should match the snapshot 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -125,31 +116,22 @@ exports[`Dropdown component  should match the snapshot 2`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -160,7 +142,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-1-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -175,7 +157,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-1"
       role="button"
@@ -184,7 +166,7 @@ exports[`Dropdown component  should match the snapshot 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -225,34 +207,26 @@ exports[`Dropdown component  should match the snapshot 3`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
+}
+
+.Dropdown-module__without-text___enWVV {
   flex-direction: row-reverse;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -263,7 +237,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-2-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -278,7 +252,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T Dropdown-module__without-text___enWVV"
       data-toggle="true"
       id="dropdown-2"
       role="button"
@@ -286,7 +260,7 @@ exports[`Dropdown component  should match the snapshot 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -344,31 +318,22 @@ exports[`Dropdown component  should match the snapshot 4`] = `
   border-color: var(--qtm-colors-error-700);
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -379,7 +344,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-3-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -394,7 +359,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX c1"
+      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-3"
       role="button"
@@ -403,7 +368,7 @@ exports[`Dropdown component  should match the snapshot 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -449,31 +414,22 @@ exports[`Dropdown component  should match the snapshot 5`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -484,7 +440,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-4-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -499,7 +455,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       disabled=""
       id="dropdown-4"
@@ -509,7 +465,7 @@ exports[`Dropdown component  should match the snapshot 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -561,31 +517,22 @@ exports[`Dropdown component  should match the snapshot 6`] = `
   margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -596,7 +543,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-5-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <label
@@ -619,7 +566,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-5"
       role="button"
@@ -628,7 +575,7 @@ exports[`Dropdown component  should match the snapshot 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -680,36 +627,27 @@ exports[`Dropdown component  should match the snapshot 7`] = `
   margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
-  color: #ec584e;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c3 {
-  pointer-events: none;
-  width: 24px;
+.Dropdown-module__arrow-icon___lvU4r {
   color: inherit;
+  pointer-events: none;
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Dropdown-module__drop-container___SjYi- {
+  position: relative;
 }
 
 .c0 {
-  position: relative;
+  color: #ec584e;
 }
 
 <div
@@ -719,7 +657,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-6-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <label
@@ -730,7 +668,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     >
       Dropdown label
       <em
-        class="c1"
+        class="c0"
       >
         *
       </em>
@@ -747,7 +685,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c2"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-6"
       role="button"
@@ -756,7 +694,7 @@ exports[`Dropdown component  should match the snapshot 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -797,26 +735,20 @@ exports[`Dropdown component  should match the snapshot 8`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-input___2Gm7H {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  padding: 8px 48px 8px 16px;
-  color: inherit;
 }
 
-.c0 {
+.Dropdown-module__dropdown-input-autocomplete___6Jjs5 {
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-xxxlarge) var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+}
+
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -827,7 +759,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-7-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -840,13 +772,12 @@ exports[`Dropdown component  should match the snapshot 8`] = `
       value=""
     />
     <div
-      class="c0"
+      class="Dropdown-module__drop-container___SjYi-"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-7-label"
-        autocomplete="off"
-        class="TextInput-module__text-input___VCylJ c1"
+        class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-input___2Gm7H Dropdown-module__dropdown-input-autocomplete___6Jjs5"
         id="dropdown-7"
         placeholder="Select an option"
         style="--icon-size: var(--qtm-spacing-large); --icon-area: calc(var(--qtm-spacing-medium) + var(--icon-size) + var(--qtm-spacing-xsmall)); cursor: inherit;"
@@ -883,31 +814,22 @@ exports[`Dropdown component  should match the snapshot 9`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -918,7 +840,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-8-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -933,7 +855,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-8"
       role="button"
@@ -942,7 +864,7 @@ exports[`Dropdown component  should match the snapshot 9`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -983,31 +905,22 @@ exports[`Dropdown component  should match the snapshot 10`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1018,7 +931,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-9-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1033,7 +946,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-9"
       role="button"
@@ -1042,7 +955,7 @@ exports[`Dropdown component  should match the snapshot 10`] = `
       baz
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1094,31 +1007,22 @@ exports[`Dropdown component  should match the snapshot 11`] = `
   margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1129,7 +1033,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-10-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <label
@@ -1152,7 +1056,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-10"
       role="button"
@@ -1161,7 +1065,7 @@ exports[`Dropdown component  should match the snapshot 11`] = `
       What credit card do you prefer?
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1202,31 +1106,22 @@ exports[`Dropdown component  should match the snapshot 12`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1237,7 +1132,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-11-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1252,7 +1147,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-11"
       role="button"
@@ -1261,7 +1156,7 @@ exports[`Dropdown component  should match the snapshot 12`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1302,31 +1197,22 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1337,7 +1223,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-12-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1352,7 +1238,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-12"
       role="button"
@@ -1361,7 +1247,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 1`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1402,31 +1288,22 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1437,7 +1314,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-13-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1452,7 +1329,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-13"
       role="button"
@@ -1461,7 +1338,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 2`] = `
       Dropdown placeholder
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1502,34 +1379,26 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
+}
+
+.Dropdown-module__without-text___enWVV {
   flex-direction: row-reverse;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1540,7 +1409,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-14-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1555,7 +1424,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T Dropdown-module__without-text___enWVV"
       data-toggle="true"
       id="dropdown-14"
       role="button"
@@ -1563,7 +1432,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 3`] = `
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1621,31 +1490,22 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
   border-color: var(--qtm-colors-error-700);
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1656,7 +1516,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-15-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1671,7 +1531,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX c1"
+      class="TextInput-module__text-input___VCylJ TextInput-module__error___nPcHX Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-15"
       role="button"
@@ -1680,7 +1540,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 4`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1726,31 +1586,22 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1761,7 +1612,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-16-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -1776,7 +1627,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ c1"
+      class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       disabled=""
       id="dropdown-16"
@@ -1786,7 +1637,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 5`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1838,31 +1689,22 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
   margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c2 {
+.Dropdown-module__arrow-icon___lvU4r {
+  color: inherit;
   pointer-events: none;
-  width: 24px;
-  color: inherit;
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c0 {
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -1873,7 +1715,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-17-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <label
@@ -1896,7 +1738,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c1"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-17"
       role="button"
@@ -1905,7 +1747,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 6`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c2 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -1957,36 +1799,27 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
   margin-top: var(--qtm-spacing-xsmall);
 }
 
-.c1 {
-  color: #ec584e;
-}
-
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-button___DZE6T {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  color: inherit;
 }
 
-.c3 {
-  pointer-events: none;
-  width: 24px;
+.Dropdown-module__arrow-icon___lvU4r {
   color: inherit;
+  pointer-events: none;
+  width: calc(var(--qtm-base-font-size)*1.5);
+}
+
+.Dropdown-module__drop-container___SjYi- {
+  position: relative;
 }
 
 .c0 {
-  position: relative;
+  color: #ec584e;
 }
 
 <div
@@ -1996,7 +1829,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-18-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <label
@@ -2007,7 +1840,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
     >
       Dropdown label
       <em
-        class="c1"
+        class="c0"
       >
         *
       </em>
@@ -2024,7 +1857,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
     <button
       aria-haspopup="true"
       aria-label="open menu"
-      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 c2"
+      class="TextInput-module__text-input___VCylJ TextInput-module__with-label___NwMP5 Dropdown-module__dropdown-button___DZE6T"
       data-toggle="true"
       id="dropdown-18"
       role="button"
@@ -2033,7 +1866,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 7`] = `
       Select an option
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 css-1696fkf-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Dropdown-module__arrow-icon___lvU4r css-i4bv87-MuiSvgIcon-root"
         data-qtm-preloader="icon"
         data-testid="ArrowDropDownIcon"
         focusable="false"
@@ -2074,26 +1907,20 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
   width: 100%;
 }
 
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+.Dropdown-module__dropdown-input___2Gm7H {
   align-items: center;
+  color: inherit;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: left;
-  padding: 8px 48px 8px 16px;
-  color: inherit;
 }
 
-.c0 {
+.Dropdown-module__dropdown-input-autocomplete___6Jjs5 {
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-xxxlarge) var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+}
+
+.Dropdown-module__drop-container___SjYi- {
   position: relative;
 }
 
@@ -2104,7 +1931,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
     aria-expanded="false"
     aria-haspopup="listbox"
     aria-labelledby="downshift-19-label"
-    class="c0"
+    class="Dropdown-module__drop-container___SjYi-"
     role="combobox"
   >
     <input
@@ -2117,13 +1944,12 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
       value=""
     />
     <div
-      class="c0"
+      class="Dropdown-module__drop-container___SjYi-"
     >
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-19-label"
-        autocomplete="off"
-        class="TextInput-module__text-input___VCylJ c1"
+        class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-input___2Gm7H Dropdown-module__dropdown-input-autocomplete___6Jjs5"
         dark="skin"
         id="dropdown-19"
         placeholder="Select an option"

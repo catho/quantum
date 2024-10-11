@@ -21,12 +21,7 @@ export interface DropdownProps {
     stateAndHelpers: ControllerStateAndHelpers<ItemPropType>,
   ) => void;
   items?: ItemPropType[];
-  skin?: 'default' | 'dark',
-  theme?: {
-    colors?: {};
-    spacing?: {};
-    baseFontSize?: number;
-  };
+  skin?: 'default' | 'dark'
 }
 
 declare const Dropdown: FC<DropdownProps>;

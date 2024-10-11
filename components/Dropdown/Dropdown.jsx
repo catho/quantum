@@ -1,10 +1,9 @@
 import { useState, forwardRef } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
+import classNames from 'classnames';
 import Icon from '../Icon/Icon';
-import { FieldGroup, shadow, createUniqId, normalizeChars } from '../shared';
-import { colors, spacing, baseFontSize } from '../shared/theme';
+import { FieldGroup, createUniqId, normalizeChars } from '../shared';
 
 import {
   InputLabel,
@@ -14,15 +13,12 @@ import {
   HelperText,
 } from '../Input/sub-components';
 import { useTextInputClass } from '../Input/sub-components/TextInput';
+import styles from './Dropdown.module.css';
 
 const uniqId = createUniqId('dropdown-');
-const ITEM_HEIGHT = '44px';
 const MAX_ITEMS_VISIBILITY = 7;
-const DROPITEM_FONT_SIZE = baseFontSize * 0.875;
-const DROPITEM_IMAGE_SIZE = '24px';
-const ICON_DEFAULT_SIZE = `${baseFontSize * 1.5}px`;
 
-const DropButtonBase = forwardRef(
+const DropButton = forwardRef(
   (
     { children, className, hasDefaultValue, hasLabel, skin, error, ...rest },
     ref,
@@ -42,173 +38,15 @@ const DropButtonBase = forwardRef(
     );
   },
 );
-const propsNotContainedInDropButtonBase = ['text'];
 
-const DropButton = styled(DropButtonBase).withConfig({
-  shouldForwardProp: (prop) =>
-    !propsNotContainedInDropButtonBase.includes(prop),
-})`
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-
-  ${({ text }) => `
-    ${!text ? 'flex-direction: row-reverse;' : ''}
-    color: inherit;
-  `};
-`;
-
-const propsNotContainedInInput = ['theme', 'autocomplete'];
-
-const DropInput = styled(TextInput).withConfig({
-  shouldForwardProp: (prop) => !propsNotContainedInInput.includes(prop),
-})`
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-
-  ${({
-    text,
-    autocomplete,
-    theme: {
-      spacing: { xsmall, medium, xxxlarge },
-    },
-  }) => `
-    ${
-      autocomplete
-        ? `padding: ${xsmall}px ${xxxlarge}px ${xsmall}px ${medium}px;`
-        : ''
-    }
-    ${!text ? 'flex-direction: row-reverse;' : ''}
-    color: inherit;
-  `};
-`;
-
-const ArrowIcon = styled(Icon)`
-  pointer-events: none;
-  width: ${ICON_DEFAULT_SIZE};
-
-  ${({ selectedItem }) =>
-    !selectedItem &&
-    `
-    color: inherit;
-  `}
-`;
-
-const DropList = styled.ul`
-  border-radius: 4px;
-  box-sizing: border-box;
-  list-style: none;
-  max-height: calc(${ITEM_HEIGHT} * ${MAX_ITEMS_VISIBILITY});
-  overflow: auto;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 9999;
-
-  ${({ theme }) => {
-    const {
-      spacing: { xxsmall },
-      colors: { neutral },
-    } = theme;
-
-    return css`
-      background-color: ${neutral[0]};
-      color: ${neutral[700]};
-      margin-top: ${xxsmall}px;
-      ${shadow(5, neutral[300])({ theme })};
-    `;
-  }}
-`;
-
-const CheckIcon = styled(Icon).attrs({
-  name: 'check',
-})`
-  ${({
-    selectedItem,
-    theme: {
-      colors: {
-        primary: { 700: primary700 },
-      },
-    },
-  }) =>
-    !selectedItem &&
-    `
-    color: ${primary700};
-  `}
-`;
-
-const DropItem = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-  cursor: pointer;
-  min-height: 42px;
-  ${({
-    theme: {
-      spacing: { xsmall, medium },
-      colors: {
-        neutral: { 0: neutral0 },
-      },
-    },
-  }) => `
-    font-size: ${DROPITEM_FONT_SIZE}px;
-    background-color: ${neutral0};
-    padding: ${xsmall}px ${medium}px;
-  `}
-  &[aria-selected= 'true' ] {
-    ${({
-      theme: {
-        colors: {
-          neutral: { 100: neutral100 },
-        },
-      },
-    }) => `
-      background-color: ${neutral100};
-    `}
-  }
-
-  ${({ isSelected }) =>
-    isSelected &&
-    `
-    display: flex;
-    justify-content: space-between;
-  `}
-`;
-
-const DropContainer = styled.div`
-  position: relative;
-`;
-
-const SelectedItemLabel = styled.span`
-  ${({
-    theme: {
-      colors: {
-        primary: { 700: primary700 },
-      },
-    },
-  }) => `
-    color: ${primary700}
-  `}
-`;
-
-const DropItemImage = styled.img`
-  width: ${DROPITEM_IMAGE_SIZE};
-  height: ${DROPITEM_IMAGE_SIZE};
-  margin-left: ${spacing.xsmall}px;
-`;
-
-DropInput.displayName = 'DropInput';
-DropItem.displayName = 'DropItem';
-ArrowIcon.displayName = 'ArrowIcon';
-SelectedItemLabel.displayName = 'SelectedItemLabel';
-DropItemImage.displayName = 'DropItemImage';
-DropContainer.displayName = 'DropContainer';
+const DropContainer = forwardRef(({ children, className, ...rest }, ref) => {
+  const dropContainerClass = classNames(styles['drop-container'], className);
+  return (
+    <div ref={ref} className={dropContainerClass} {...rest}>
+      {children}
+    </div>
+  );
+});
 
 const _getValue = (item) => (item ? item.value || item.label || item : '');
 const _getLabel = (item) => (item ? item.label || item.value || item : '');
@@ -224,48 +62,59 @@ const itemPropType = PropTypes.oneOfType([
   }),
 ]);
 
-const List = ({ theme, items, selectedItem = null, getItemProps }) => (
-  <DropList theme={theme}>
-    {items.map((item) => (
-      <DropItem
-        theme={theme}
-        key={_getValue(item)}
-        {...getItemProps({
-          item,
-          isSelected: _isEqual(selectedItem, item),
-        })}
-      >
-        {_isEqual(selectedItem, item) ? (
-          <>
-            <SelectedItemLabel theme={theme}>
-              {_getLabel(item)}
-            </SelectedItemLabel>
+const List = ({ items, selectedItem = null, getItemProps }) => {
+  const imageItemClass = classNames(styles['drop-image-item']);
+  const checkIconClass = classNames(styles['check-icon-without-selected-item']);
+  const dropListClass = classNames(styles['drop-list']);
+  const itemClass = classNames(styles['drop-item']);
+  const itemSelectedLabelClass = classNames(
+    styles['drop-item-item-selected-label'],
+  );
 
-            {_getImage(item) ? (
-              <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
-            ) : (
-              <CheckIcon theme={theme} />
-            )}
-          </>
-        ) : (
-          <>
-            <span>{_getLabel(item)}</span>
-            {_getImage(item) && (
-              <DropItemImage src={_getImage(item)} alt={_getImageAlt(item)} />
-            )}
-          </>
-        )}
-      </DropItem>
-    ))}
-  </DropList>
-);
+  return (
+    <ul className={dropListClass}>
+      {items.map((item) => (
+        <li
+          className={`${itemClass} ${_isEqual(selectedItem, item) ? styles['drop-item-item-selected'] : ''}`}
+          key={_getValue(item)}
+          {...getItemProps({
+            item,
+          })}
+        >
+          {_isEqual(selectedItem, item) ? (
+            <>
+              <span className={itemSelectedLabelClass}>{_getLabel(item)}</span>
+
+              {_getImage(item) ? (
+                <img
+                  className={imageItemClass}
+                  src={_getImage(item)}
+                  alt={_getImageAlt(item)}
+                />
+              ) : (
+                <Icon name="check" className={checkIconClass} />
+              )}
+            </>
+          ) : (
+            <>
+              <span>{_getLabel(item)}</span>
+              {_getImage(item) && (
+                <img
+                  className={imageItemClass}
+                  src={_getImage(item)}
+                  alt={_getImageAlt(item)}
+                />
+              )}
+            </>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 List.propTypes = {
   selectedItem: itemPropType,
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }).isRequired,
   items: PropTypes.arrayOf(itemPropType).isRequired,
   getItemProps: PropTypes.func.isRequired,
 };
@@ -281,7 +130,6 @@ const Dropdown = ({
   selectedItem = null,
   onChange = () => {},
   autocomplete = false,
-  theme = { colors, spacing, baseFontSize },
   id = '',
   name = '',
   ignoreSpecialChars = false,
@@ -289,6 +137,14 @@ const Dropdown = ({
   ...rest
 }) => {
   const _buttonLabel = selectedItem ? _getLabel(selectedItem) : placeholder;
+  const dropdownButtonClass = classNames(styles['dropdown-button'], {
+    [styles['without-text']]: !_buttonLabel,
+  });
+  const dropdownInputClass = classNames(styles['dropdown-input'], {
+    [styles['without-text']]: !_buttonLabel,
+    [styles['dropdown-input-autocomplete']]: autocomplete,
+  });
+  const arrowIconClass = classNames(styles['arrow-icon']);
 
   const _highlightedReducer = ({ selectedItem: selected }, changes) => {
     if (changes.isOpen !== undefined && changes.isOpen) {
@@ -342,7 +198,7 @@ const Dropdown = ({
           const filteredInput = isOpen ? inputFilter(inputValue) : [];
 
           return (
-            <DropContainer theme={theme} {...getRootProps()}>
+            <DropContainer {...getRootProps()}>
               {label && (
                 <InputLabel
                   {...getLabelProps()}
@@ -362,8 +218,8 @@ const Dropdown = ({
               />
               {autocomplete ? (
                 <>
-                  <DropContainer theme={theme}>
-                    <DropInput
+                  <DropContainer>
+                    <TextInput
                       {...getInputProps({
                         placeholder,
                         onClick: openMenu,
@@ -372,11 +228,11 @@ const Dropdown = ({
                       error={error}
                       disabled={disabled}
                       text={_buttonLabel}
-                      theme={theme}
                       hasLabel={hasLabel}
                       id={_id}
                       autocomplete={autocomplete}
                       skin={skin}
+                      className={dropdownInputClass}
                       {...rest}
                     />
                   </DropContainer>
@@ -384,7 +240,6 @@ const Dropdown = ({
                   {filteredInput.length > 0 && (
                     <List
                       items={filteredInput}
-                      theme={theme}
                       selectedItem={selectedItem}
                       getItemProps={getItemProps}
                     />
@@ -396,22 +251,21 @@ const Dropdown = ({
                     {...getToggleButtonProps()}
                     disabled={disabled}
                     error={error}
-                    text={_buttonLabel}
                     hasLabel={hasLabel}
                     skin={skin}
                     id={_id}
+                    className={dropdownButtonClass}
                   >
                     {_buttonLabel}
-                    <ArrowIcon
+                    <Icon
                       name={isOpen ? 'arrow_drop_up' : 'arrow_drop_down'}
-                      theme={theme}
+                      className={arrowIconClass}
                     />
                   </DropButton>
 
                   {isOpen && (
                     <List
                       items={items}
-                      theme={theme}
                       selectedItem={selectedItem}
                       getItemProps={getItemProps}
                     />
@@ -449,11 +303,6 @@ Dropdown.propTypes = {
   onChange: PropTypes.func,
   /** A list of string or objects with value and label keys */
   items: PropTypes.arrayOf(itemPropType),
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
   ignoreSpecialChars: PropTypes.bool,
   skin: PropTypes.oneOf(['default', 'dark']),
 };
