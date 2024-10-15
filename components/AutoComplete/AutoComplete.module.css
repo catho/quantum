@@ -1,6 +1,6 @@
 :root {
-    --max-items-visibility: 7;
-    --item-height: 44px;
+    --max-items-visibility-autocomplete: 7;
+    --item-height-autocomplete: 44px;
     --dropitem-font-size: calc(var(--qtm-base-font-size) * 0.875);
 }
 
@@ -52,7 +52,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     list-style: none;
-    max-height: calc(var(--item-height) * var(--max-items-visibility));
+    max-height: calc(var(--item-height-autocomplete) * var(--max-items-visibility-autocomplete));
     overflow: auto;
     padding: 0;
     position: absolute;
@@ -68,7 +68,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     cursor: pointer;
-    height: var(--item-height);
+    height: var(--item-height-autocomplete);
     color: var(--qtm-colors-neutral-700);
     font-size: var(--dropitem-font-size);
     background-color: var(--qtm-colors-neutral-0);

@@ -1,0 +1,100 @@
+:root {
+    --max-items-visibility-dropdown: 7;
+    --item-height-dropdown: 44px;
+
+    --qtm-shadow-umbra-neutral-300-color: rgba(224, 224, 224, var(--qtm-shadow-umbra-opacity));
+    --qtm-shadow-penumbra-neutral-300-color: rgba(224, 224, 224, var(--qtm-shadow-penumbra-opacity));
+    --qtm-shadow-ambient-neutral-300-color: rgba(224, 224, 224, var(--qtm-shadow-ambient-opacity));
+
+    --shadow-5-neutral-300: 
+        0px 3px 5px -1px var(--qtm-shadow-umbra-neutral-300-color),
+        0px 5px 8px 0px var(--qtm-shadow-penumbra-neutral-300-color),
+        0px 1px 14px 0px var(--qtm-shadow-ambient-neutral-300-color);
+}
+
+.dropdown-button {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: inherit;
+}
+
+.without-text {
+    flex-direction: row-reverse;
+}
+
+.dropdown-input {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: inherit;
+}
+
+.dropdown-input-autocomplete {
+    padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-xxxlarge) var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+}
+
+.arrow-icon {
+    pointer-events: none;
+    width: calc(var(--qtm-base-font-size) * 1.5);
+    color: inherit;
+}
+
+.check-icon-without-selected-item {
+    color: var(--qtm-colors-primary-700);
+}
+
+.drop-container {
+    position: relative;
+}
+
+.drop-list {
+    border-radius: 4px;
+    box-sizing: border-box;
+    list-style: none;
+    max-height: calc(var(--item-height-dropdown) * var(--max-items-visibility-dropdown));
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    background-color: var(--qtm-colors-neutral-0);
+    color: var(--qtm-colors-neutral-700);
+    margin-top: var(--qtm-spacing-xxsmall);
+    box-shadow: var(--shadow-5-neutral-300);
+}
+
+.drop-image-item {
+    width: 24px;
+    height: 24px;
+    margin-left: var(--qtm-spacing-xsmall);
+}
+
+.drop-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: pointer;
+    min-height: 42px;
+    font-size: calc(var(--qtm-base-font-size) * 0.875);
+    background-color: var(--qtm-colors-neutral-0);
+    padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+}
+
+.drop-item[aria-selected='true'] {
+    background-color: var(--qtm-colors-neutral-100);
+}
+
+.drop-item-item-selected {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-item-item-selected-label {
+    color: var(--qtm-colors-primary-700);
+}
