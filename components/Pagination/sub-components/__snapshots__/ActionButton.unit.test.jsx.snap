@@ -2,39 +2,26 @@
 
 exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 <DocumentFragment>
-  .c0 {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
   cursor: pointer;
-  font-weight: normal;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
   outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
   text-align: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c0[aria-disabled=true] {
-  display: none;
-}
-
-.c0[aria-disabled=false]:hover,
-.c0[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
 }
 
 <a
-    class="c0"
+    class="ActionButton-module__action___kJcys"
   >
     Back
   </a>
@@ -43,40 +30,27 @@ exports[`<ActionButton /> Snapshot should match snapshot 1`] = `
 
 exports[`<ActionButton /> Snapshot should match snapshot with aria-disabled prop 1`] = `
 <DocumentFragment>
-  .c0 {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
   cursor: pointer;
-  font-weight: normal;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
   outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
   text-align: center;
-  -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c0[aria-disabled=true] {
-  display: none;
-}
-
-.c0[aria-disabled=false]:hover,
-.c0[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
 }
 
 <a
     aria-disabled="true"
-    class="c0"
+    class="ActionButton-module__action___kJcys"
   >
     Next
   </a>

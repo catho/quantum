@@ -1,0 +1,45 @@
+.page-button {
+    font-weight: bold;
+    align-items: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
+    min-width: 40px;
+    outline: none;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    user-select: none;
+
+    background-color: var(--qtm-colors-neutral-0);
+    border: 1px solid var(--qtm-colors-neutral-300);
+    color: var(--qtm-colors-neutral-700);
+    font-size: var(--qtm-base-font-size);
+    margin: 0 var(--qtm-spacing-xxsmall);
+    padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+}
+
+.page-button:hover,
+.page-button:focus {
+    background-color: var(--qtm-colors-primary-100);
+    border-color: var(--qtm-colors-primary-700);
+    color: var(--qtm-colors-primary-700);
+}
+
+.page-button-active {
+    background-color: var(--qtm-colors-primary-700);
+    border: 1px solid var(--qtm-colors-primary-700);
+    color: var(--qtm-colors-neutral-0);
+}
+
+.page-button-active:hover,
+.page-button-active:focus {
+    background-color: var(--qtm-colors-primary-900);
+    border-color: var(--qtm-colors-primary-900);
+    color: var(--qtm-colors-neutral-0);
+}

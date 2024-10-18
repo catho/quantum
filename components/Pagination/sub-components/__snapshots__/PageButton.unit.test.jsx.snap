@@ -2,51 +2,32 @@
 
 exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .PageButton-module__page-button___eu3bX {
   align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
   border-radius: 10px;
   box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
   justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
   min-height: 40px;
   min-width: 40px;
   outline: none;
-  -webkit-text-decoration: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
   text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
 }
 
 <a
-    class="c0"
+    class="PageButton-module__page-button___eu3bX"
   >
     50
   </a>
@@ -55,51 +36,38 @@ exports[`<PageButton /> Snapshot should match snapshot 1`] = `
 
 exports[`<PageButton /> Snapshot should match snapshot with active prop 1`] = `
 <DocumentFragment>
-  .c0 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  .PageButton-module__page-button___eu3bX {
   align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
   border-radius: 10px;
   box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
   justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
   min-height: 40px;
   min-width: 40px;
   outline: none;
-  -webkit-text-decoration: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
   text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
 }
 
-.c0:hover,
-.c0:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
 }
 
 <a
-    class="c0"
+    class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
   >
     10
   </a>

@@ -2,46 +2,31 @@
 
 exports[`<Dots /> Snapshot should match snapshot 1`] = `
 <DocumentFragment>
-  .c0 {
+  .Dots-module__wrapper-dot___2KnG7 {
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 var(--qtm-spacing-xxsmall);
   min-width: 22px;
 }
 
-.c1 {
+.Dots-module__pagination-dot___VsFe4 {
   position: relative;
 }
 
-.c1,
-.c1:after,
-.c1:before {
-  background-color: #e0e0e0;
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
   border-radius: 50%;
   display: inline-block;
   height: 5px;
   width: 5px;
 }
 
-.c1:after,
-.c1:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c1:after {
-  left: 8px;
-}
-
-.c1:before {
-  left: 16px;
-}
-
 <div
-    class="c0"
+    class="Dots-module__wrapper-dot___2KnG7"
   >
     <span
-      class="c1"
+      class="Dots-module__pagination-dot___VsFe4"
     />
   </div>
 </DocumentFragment>
