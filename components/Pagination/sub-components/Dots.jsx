@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './Dots.module.css';
 
@@ -11,13 +10,6 @@ const Dots = ({ className, ...props }) => {
       <span className={dotsClass} />
     </div>
   );
-};
-
-Dots.propTypes = {
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
 };
 
 export default Dots;
