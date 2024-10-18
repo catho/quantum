@@ -1,0 +1,28 @@
+.action {
+    cursor: pointer;
+    font-weight: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out,
+        border 0.2s ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    margin: 0 var(--qtm-spacing-xxsmall);
+    padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+    color: var(--qtm-colors-primary-700);
+}
+
+.action[aria-disabled=true] {
+    display: none;
+}
+
+.action[aria-disabled=false]:hover,
+.action[aria-disabled=false]:focus {
+    background-color: var(--qtm-colors-primary-100);
+    border: 2px solid var(--qtm-colors-primary-700);
+}

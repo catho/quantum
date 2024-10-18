@@ -1,0 +1,34 @@
+.wrapper-dot {
+    display: inline-block;
+    margin: 0 var(--qtm-spacing-xxsmall);
+    min-width: 22px;
+}
+
+.pagination-dot {
+    position: relative;
+}
+
+.pagination-dot,
+.pagination-dot:after,
+.pagination-dot:before {
+    background-color: var(--qtm-colors-neutral-300);
+    border-radius: 50%;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+}
+
+.pagination-dot:after,
+.pagination-dot:before {
+    content: '';
+    position: absolute;
+    top: 0;
+}
+
+.pagination-dot:after {
+    left: var(--qtm-spacing-xsmall);
+}
+
+.pagination-dot:before {
+    left: var(--qtm-spacing-medium);
+}

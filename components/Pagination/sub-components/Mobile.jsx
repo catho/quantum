@@ -1,73 +1,7 @@
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
+import classNames from 'classnames';
 import ActionButton from './ActionButton';
-import { colors, spacing } from '../../shared/theme';
-
-const Info = styled.span`
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  transition:
-    background-color 0.2s ease-in-out,
-    color 0.2s ease-in-out;
-
-  ${({
-    theme: {
-      colors: {
-        neutral: { 300: neutral300, 700: neutral700 },
-      },
-      spacing: { xsmall, medium },
-    },
-  }) => `
-    border-color: ${neutral300};
-    color: ${neutral700};
-    padding: ${xsmall}px ${medium}px;
-  `}
-`;
-const StyledActionButton = styled(ActionButton)`
-  ${({
-    theme: {
-      colors: {
-        neutral: { 300: neutral300 },
-      },
-    },
-  }) => `
-    border-color: ${neutral300};
-    border-radius: 10px;
-    border-width: 1px;
-
-    &[aria-disabled=true] {
-      color: ${neutral300};
-      display: block;
-    }
-
-    &[aria-disabled=false] {
-      &:focus {
-        border-width: 1px;
-      }
-    }
-  `}
-
-  ${({ rightSquared }) =>
-    rightSquared
-      ? `
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    margin: 0;
-  `
-      : ''}
-
-  ${({ leftSquared }) =>
-    leftSquared
-      ? `
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin: 0;
-  `
-      : ''}
-`;
-
-Info.displayName = 'Info';
+import styles from './Mobile.module.css';
 
 const Mobile = ({
   activePage = 1,
@@ -77,40 +11,44 @@ const Mobile = ({
   nextButtonText = 'Next',
   totalPages,
   infoFormatter = (currentPage, lastPage) => `${currentPage} of ${lastPage}`,
-  theme = {
-    colors,
-    spacing,
-  },
   followOnlyFirstPage = false,
-}) => (
-  <>
-    <StyledActionButton
-      tabIndex={0}
-      aria-disabled={activePage === 1}
-      onClick={handlePageClick(activePage - 1)}
-      href={handleHref(activePage - 1)}
-      rightSquared
-      theme={theme}
-      rel={followOnlyFirstPage && activePage > 2 ? 'nofollow' : undefined}
-    >
-      {prevButtonText}
-    </StyledActionButton>
+}) => {
+  const infoClass = classNames(styles['pages-info']);
+  const previousButtonClass = classNames(
+    styles['switch-button'],
+    styles['switch-button-right'],
+  );
+  const nextButtonClass = classNames(
+    styles['switch-button'],
+    styles['switch-button-left'],
+  );
 
-    <Info theme={theme}>{infoFormatter(activePage, totalPages)}</Info>
-
-    <StyledActionButton
-      tabIndex={0}
-      aria-disabled={activePage === totalPages}
-      onClick={handlePageClick(activePage + 1)}
-      href={handleHref(activePage + 1)}
-      leftSquared
-      theme={theme}
-      rel={followOnlyFirstPage ? 'nofollow' : undefined}
-    >
-      {nextButtonText}
-    </StyledActionButton>
-  </>
-);
+  return (
+    <>
+      <ActionButton
+        tabIndex={0}
+        aria-disabled={activePage === 1}
+        onClick={handlePageClick(activePage - 1)}
+        href={handleHref(activePage - 1)}
+        className={previousButtonClass}
+        rel={followOnlyFirstPage && activePage > 2 ? 'nofollow' : undefined}
+      >
+        {prevButtonText}
+      </ActionButton>
+      <span className={infoClass}>{infoFormatter(activePage, totalPages)}</span>
+      <ActionButton
+        tabIndex={0}
+        aria-disabled={activePage === totalPages}
+        onClick={handlePageClick(activePage + 1)}
+        href={handleHref(activePage + 1)}
+        className={nextButtonClass}
+        rel={followOnlyFirstPage ? 'nofollow' : undefined}
+      >
+        {nextButtonText}
+      </ActionButton>
+    </>
+  );
+};
 
 Mobile.propTypes = {
   activePage: PropTypes.number,
@@ -120,10 +58,6 @@ Mobile.propTypes = {
   prevButtonText: PropTypes.string,
   handleHref: PropTypes.func,
   handlePageClick: PropTypes.func,
-  theme: PropTypes.shape({
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-  }),
   followOnlyFirstPage: PropTypes.bool,
 };
 

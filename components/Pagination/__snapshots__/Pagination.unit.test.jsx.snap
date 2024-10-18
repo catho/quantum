@@ -2,7 +2,81 @@
 
 exports[`<Pagination /> Snapshots should match snapshot when last pagination is not displayed 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -14,183 +88,16 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c5,
-.c5:after,
-.c5:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c5:after,
-.c5:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c5:after {
-  left: 8px;
-}
-
-.c5:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -198,7 +105,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
@@ -206,7 +113,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -214,7 +121,7 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -222,28 +129,82 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c4"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c5"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -255,120 +216,28 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 10
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -380,7 +249,81 @@ exports[`<Pagination /> Snapshots should match snapshot when last pagination is 
 
 exports[`<Pagination /> Snapshots should match snapshot when viewport is below then small breakpoint 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -392,183 +335,16 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c5,
-.c5:after,
-.c5:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c5:after,
-.c5:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c5:after {
-  left: 8px;
-}
-
-.c5:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -576,7 +352,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
@@ -584,7 +360,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -592,7 +368,7 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -600,36 +376,90 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c4"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c5"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 10"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         10
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -641,120 +471,28 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 10
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -766,7 +504,61 @@ exports[`<Pagination /> Snapshots should match snapshot when viewport is below t
 
 exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -778,148 +570,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -927,7 +587,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
@@ -935,7 +595,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -943,7 +603,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -951,7 +611,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
@@ -959,21 +619,75 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         5
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -985,120 +699,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 5
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -1110,7 +732,61 @@ exports[`<Pagination /> Snapshots should match snapshot with 5 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -1122,148 +798,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -1271,7 +815,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
@@ -1279,7 +823,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -1287,7 +831,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -1295,7 +839,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
@@ -1303,7 +847,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         5
@@ -1311,21 +855,75 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         6
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -1337,120 +935,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 6
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -1462,7 +968,81 @@ exports[`<Pagination /> Snapshots should match snapshot with 6 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -1474,183 +1054,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c4 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c5 {
-  position: relative;
-}
-
-.c5,
-.c5:after,
-.c5:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c5:after,
-.c5:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c5:after {
-  left: 8px;
-}
-
-.c5:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -1658,7 +1071,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
@@ -1666,7 +1079,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -1674,7 +1087,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -1682,36 +1095,90 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
       </a>
       <div
-        class="c4"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c5"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -1723,120 +1190,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -1848,7 +1223,61 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages 1`] = `
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 4 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -1860,148 +1289,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c3 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c3:hover,
-.c3:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -2009,7 +1306,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         1
@@ -2017,7 +1314,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 2"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         2
@@ -2025,7 +1322,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 3"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         3
@@ -2033,7 +1330,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 4"
-        class="c3"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         4
@@ -2041,7 +1338,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 5"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         5
@@ -2049,7 +1346,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         6
@@ -2057,21 +1354,75 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -2083,120 +1434,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         4 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -2208,7 +1467,81 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 5 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -2220,183 +1553,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-}
-
-.c4,
-.c4:after,
-.c4:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after,
-.c4:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c4:after {
-  left: 8px;
-}
-
-.c4:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c5 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c5:hover,
-.c5:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -2404,22 +1570,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c3"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c4"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
@@ -2427,7 +1593,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        class="c5"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         5
@@ -2435,7 +1601,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         6
@@ -2443,21 +1609,75 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -2469,120 +1689,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         5 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -2594,7 +1722,81 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activePage equals 7 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -2606,183 +1808,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-}
-
-.c4,
-.c4:after,
-.c4:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after,
-.c4:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c4:after {
-  left: 8px;
-}
-
-.c4:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c5 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c5:hover,
-.c5:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -2790,22 +1825,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c3"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c4"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 4"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         4
@@ -2813,7 +1848,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="page"
         aria-label="Current Page, Page 5"
-        class="c5"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         5
@@ -2821,7 +1856,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 6"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         6
@@ -2829,21 +1864,75 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
       <a
         aria-current="false"
         aria-label="Page 7"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         7
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -2855,120 +1944,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         5 of 7
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -2980,7 +1977,81 @@ exports[`<Pagination /> Snapshots should match snapshot with 7 pages and activeP
 
 exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activePage equals 50 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Dots-module__wrapper-dot___2KnG7 {
+  display: inline-block;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-width: 22px;
+}
+
+.Dots-module__pagination-dot___VsFe4 {
+  position: relative;
+}
+
+.Dots-module__pagination-dot___VsFe4,
+.Dots-module__pagination-dot___VsFe4:after,
+.Dots-module__pagination-dot___VsFe4:before {
+  background-color: var(--qtm-colors-neutral-300);
+  border-radius: 50%;
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -2992,183 +2063,16 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  display: inline-block;
-  margin: 0 4px;
-  min-width: 22px;
-}
-
-.c4 {
-  position: relative;
-}
-
-.c4,
-.c4:after,
-.c4:before {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-}
-
-.c4:after,
-.c4:before {
-  content: '';
-  position: absolute;
-  top: 0;
-}
-
-.c4:after {
-  left: 8px;
-}
-
-.c4:before {
-  left: 16px;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  color: #424242;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #E5EDFC;
-  border-color: #1250C4;
-  color: #1250C4;
-}
-
-.c5 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c5:hover,
-.c5:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -3176,22 +2080,22 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="false"
         aria-label="Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         1
       </a>
       <div
-        class="c3"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c4"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 49"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         49
@@ -3199,7 +2103,7 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="page"
         aria-label="Current Page, Page 50"
-        class="c5"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         50
@@ -3207,36 +2111,90 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
       <a
         aria-current="false"
         aria-label="Page 51"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         51
       </a>
       <div
-        class="c3"
+        class="Dots-module__wrapper-dot___2KnG7"
       >
         <span
-          class="c4"
+          class="Dots-module__pagination-dot___VsFe4"
         />
       </div>
       <a
         aria-current="false"
         aria-label="Page 100"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX"
         tabindex="0"
       >
         100
       </a>
       <a
         aria-disabled="false"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -3248,120 +2206,28 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="false"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         50 of 100
       </span>
       <a
         aria-disabled="false"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next
@@ -3373,7 +2239,61 @@ exports[`<Pagination /> Snapshots should match snapshot with 100 pages and activ
 
 exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
 <DocumentFragment>
-  @media (max-width:calc(600px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.PageButton-module__page-button___eu3bX {
+  align-items: center;
+  background-color: var(--qtm-colors-neutral-0);
+  border: 1px solid var(--qtm-colors-neutral-300);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: var(--qtm-colors-neutral-700);
+  cursor: pointer;
+  display: flex;
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  justify-content: center;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  min-height: 40px;
+  min-width: 40px;
+  outline: none;
+  padding: var(--qtm-spacing-xxsmall) var(--qtm-spacing-xsmall);
+  text-decoration: none;
+  transition: background-color .2s ease-in-out,border-color .2s ease-in-out,color .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.PageButton-module__page-button-active___8ARg2 {
+  background-color: var(--qtm-colors-primary-700);
+  border: 1px solid var(--qtm-colors-primary-700);
+  color: var(--qtm-colors-neutral-0);
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:calc(600px - 1px)) {
   .Hide-module__hide-xsmall___CSbWx {
     display: none!important;
   }
@@ -3385,105 +2305,16 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c2 {
-  font-weight: bold;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  box-sizing: border-box;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  min-height: 40px;
-  min-width: 40px;
-  outline: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #1250C4;
-  border: 1px solid #1250C4;
-  color: #ffffff;
-  font-size: 16px;
-  margin: 0 4px;
-  padding: 4px 8px;
-}
-
-.c2:hover,
-.c2:focus {
-  background-color: #002F7B;
-  border-color: #002F7B;
-  color: #ffffff;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-xsmall___CSbWx Hide-module__hide-small___4sGBt"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Previous
@@ -3491,21 +2322,75 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
       <a
         aria-current="page"
         aria-label="Current Page, Page 1"
-        class="c2"
+        class="PageButton-module__page-button___eu3bX PageButton-module__page-button-active___8ARg2"
         tabindex="0"
       >
         1
       </a>
       <a
         aria-disabled="true"
-        class="c1"
+        class="ActionButton-module__action___kJcys"
         tabindex="0"
       >
         Next
       </a>
     </nav>
   </div>
-  @media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
+  .ActionButton-module__action___kJcys {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--qtm-colors-primary-700);
+  cursor: pointer;
+  font-weight: 400;
+  margin: 0 var(--qtm-spacing-xxsmall);
+  outline: none;
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s ease-in-out,background-color .2s ease-in-out,border .2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.Mobile-module__pages-info___qedLb {
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: var(--qtm-colors-neutral-700);
+  padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+  transition: background-color .2s ease-in-out,color .2s ease-in-out;
+}
+
+.Mobile-module__pages-info___qedLb,
+.Mobile-module__switch-button___iqftY {
+  border-color: var(--qtm-colors-neutral-300);
+}
+
+.Mobile-module__switch-button___iqftY {
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.Mobile-module__switch-button-right___USxzj {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  margin: 0;
+}
+
+.Mobile-module__switch-button-left___Walf2 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
+}
+
+.Pagination-module__wrapper___tisiU {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width:1024px) and (max-width:calc(1440px - 1px)) {
   .Hide-module__hide-medium___2Ovgf {
     display: none!important;
   }
@@ -3517,120 +2402,28 @@ exports[`<Pagination /> Snapshots should match snapshot without props 1`] = `
   }
 }
 
-.c1 {
-  cursor: pointer;
-  font-weight: normal;
-  outline: none;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out,background-color 0.2s ease-in-out,border 0.2s ease-in-out;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  white-space: nowrap;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  margin: 0 4px;
-  padding: 8px 16px;
-  color: #1250C4;
-}
-
-.c1[aria-disabled=true] {
-  display: none;
-}
-
-.c1[aria-disabled=false]:hover,
-.c1[aria-disabled=false]:focus {
-  background-color: #E5EDFC;
-  border: 2px solid #1250C4;
-}
-
-.c3 {
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  -webkit-transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out,color 0.2s ease-in-out;
-  border-color: #e0e0e0;
-  color: #424242;
-  padding: 8px 16px;
-}
-
-.c2 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 0;
-}
-
-.c2[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c2[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c4 {
-  border-color: #e0e0e0;
-  border-radius: 10px;
-  border-width: 1px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 0;
-}
-
-.c4[aria-disabled=true] {
-  color: #e0e0e0;
-  display: block;
-}
-
-.c4[aria-disabled=false]:focus {
-  border-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 <div
     class="Hide-module__hide-medium___2Ovgf Hide-module__hide-large___X3Usc"
   >
     <nav
       aria-label="pagination"
-      class="c0"
+      class="Pagination-module__wrapper___tisiU"
     >
       <a
         aria-disabled="true"
-        class="c1 c2"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-right___USxzj"
         tabindex="0"
       >
         Previous
       </a>
       <span
-        class="c3"
+        class="Mobile-module__pages-info___qedLb"
       >
         1 of 1
       </span>
       <a
         aria-disabled="true"
-        class="c1 c4"
+        class="ActionButton-module__action___kJcys Mobile-module__switch-button___iqftY Mobile-module__switch-button-left___Walf2"
         tabindex="0"
       >
         Next

@@ -1,0 +1,5 @@
+@import './sub-components/ActionButton.module.css';
+@import './sub-components/Dots.module.css';
+@import './sub-components/Mobile.module.css';
+@import './sub-components/PageButton.module.css';
+@import './Pagination.module.css';
