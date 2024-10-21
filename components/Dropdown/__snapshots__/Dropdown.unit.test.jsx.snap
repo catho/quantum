@@ -777,6 +777,7 @@ exports[`Dropdown component  should match the snapshot 8`] = `
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-7-label"
+        autocomplete="off"
         class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-input___2Gm7H Dropdown-module__dropdown-input-autocomplete___6Jjs5"
         id="dropdown-7"
         placeholder="Select an option"
@@ -1949,6 +1950,7 @@ exports[`Dropdown component  should match the snapshot with dark skin 8`] = `
       <input
         aria-autocomplete="list"
         aria-labelledby="downshift-19-label"
+        autocomplete="off"
         class="TextInput-module__text-input___VCylJ Dropdown-module__dropdown-input___2Gm7H Dropdown-module__dropdown-input-autocomplete___6Jjs5"
         dark="skin"
         id="dropdown-19"
