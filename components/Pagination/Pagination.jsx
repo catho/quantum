@@ -1,16 +1,11 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
+import classNames from 'classnames';
 import { Hide } from '../Grid';
 import Desktop from './sub-components/Desktop';
 import Mobile from './sub-components/Mobile';
-
-const Wrapper = styled.nav`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-`;
+import styles from './Pagination.module.css';
 
 class Pagination extends Component {
   constructor(props) {
@@ -36,6 +31,7 @@ class Pagination extends Component {
       hideLastPagination,
       ...props
     } = this.props;
+    const wrapperClass = classNames(styles.wrapper);
 
     const handlePageClick = (page) => (e) => {
       if (!onPageClick) {
@@ -76,15 +72,15 @@ class Pagination extends Component {
     return (
       <>
         <Hide xsmall small>
-          <Wrapper aria-label={ariaLabel} {...props}>
+          <nav className={wrapperClass} aria-label={ariaLabel} {...props}>
             <Desktop {...attributes} />
-          </Wrapper>
+          </nav>
         </Hide>
 
         <Hide medium large>
-          <Wrapper aria-label={ariaLabel} {...props}>
+          <nav className={wrapperClass} aria-label={ariaLabel} {...props}>
             <Mobile {...attributes} />
-          </Wrapper>
+          </nav>
         </Hide>
       </>
     );

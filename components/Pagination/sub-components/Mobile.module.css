@@ -1,0 +1,37 @@
+.pages-info {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    transition:
+        background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    border-color: var(--qtm-colors-neutral-300);
+    color: var(--qtm-colors-neutral-700);
+    padding: var(--qtm-spacing-xsmall) var(--qtm-spacing-medium);
+}
+
+.switch-button {
+    border-color: var(--qtm-colors-neutral-300);
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.switch-button[aria-disabled=true] {
+    color: var(--qtm-colors-neutral-300);
+    display: block;
+}
+
+.switch-button[aria-disabled=false]:focus {
+    border-width: 1px;
+}
+
+.switch-button-right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+}
+
+.switch-button-left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+}

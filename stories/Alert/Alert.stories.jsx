@@ -16,11 +16,7 @@ const sampleChildren = (
   </span>
 );
 
-const Template = (args) => (
-  <Alert onClose={() => {}} {...args}>
-    {sampleChildren}
-  </Alert>
-);
+const Template = (args) => <Alert {...args}>{sampleChildren}</Alert>;
 
 export const Default = Template.bind({});
 
@@ -43,4 +39,10 @@ export const WithIcon = Template.bind({});
 WithIcon.args = {
   skin: 'primary',
   icon: 'info',
+};
+
+export const WithClose = Template.bind({});
+WithClose.args = {
+  skin: 'primary',
+  onClose: () => {},
 };
