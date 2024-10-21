@@ -1,65 +1,7 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import placementConfig from './options';
-import {
-  colors,
-  spacing,
-  baseFontSize as defaultBaseFontSize,
-} from '../shared/theme';
-
-const Tip = styled.div`
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: ${({ visible }) => (visible ? '1' : '0')};
-  visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  transition:
-    opacity 0.2s ease-in-out,
-    visibility 0.2s ease-in-out;
-  z-index: 100;
-
-  ${({
-    theme: {
-      colors: { neutral },
-      spacing: { xsmall },
-      baseFontSize,
-    },
-  }) => `
-    background-color: ${neutral[700]};
-    border-color: ${neutral[700]};
-    color: ${neutral[100]};
-    font-size: ${baseFontSize}px;
-    padding: ${xsmall}px;
-  `}
-
-  ${({ placement }) => placementConfig.tipPosition[placement]};
-
-  &:before {
-    content: '';
-    position: absolute;
-    ${({ placement }) => placementConfig.arrowPosition[placement]};
-  }
-`;
-
-const TipText = styled.span`
-  display: inline-block;
-  max-width: ${({ multiline }) => (multiline ? 'unset' : '250px')};
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: ${({ multiline }) => (multiline ? 'pre' : 'nowrap')};
-  line-height: 20px;
-  text-align: ${({ multiline }) => (multiline ? 'left' : 'unset')};
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-  float: left;
-  clear: left;
-  width: ${({ multiline }) => (multiline ? 'max-content' : 'unset')};
-`;
+import classNames from 'classnames';
+import styles from './Tooltip.module.css';
 
 class Tooltip extends Component {
   constructor(props) {
@@ -73,36 +15,42 @@ class Tooltip extends Component {
   render() {
     const {
       children,
+      className,
       placement,
       text,
       visible: visibleProp,
-      theme,
       multiline,
       ...rest
     } = this.props;
     const { visible: visibleState } = this.state;
 
+    const wrapperClass = classNames(
+      styles['tooltip-wrapper'],
+      { [styles['tooltip-wrapper-multiline']]: multiline },
+      className,
+    );
+    const tipClass = classNames(styles.tip, styles[`tip-${placement}`], {
+      [styles['tip-visible']]: visibleProp || visibleState,
+    });
+    const tipTextClass = classNames(styles['tip-text'], {
+      [styles['tip-text-multiline']]: multiline,
+    });
+
     return (
-      <Wrapper
+      <div
         onMouseEnter={() => this.isVisible(true)}
         onMouseLeave={() => this.isVisible(false)}
-        multiline={multiline}
+        className={wrapperClass}
         {...rest}
       >
-        <Tip
-          placement={placement}
-          visible={visibleProp || visibleState}
-          theme={theme}
-        >
-          <TipText multiline={multiline}>{text}</TipText>
-        </Tip>
+        <div className={tipClass}>
+          <span className={tipTextClass}>{text}</span>
+        </div>
         {children}
-      </Wrapper>
+      </div>
     );
   }
 }
-
-Tip.displayName = 'Tip';
 
 Tooltip.propTypes = {
   /** Content the tooltip will show */
@@ -115,22 +63,12 @@ Tooltip.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-    colors: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
 };
 
 Tooltip.defaultProps = {
   placement: 'top',
   visible: false,
   multiline: false,
-  theme: {
-    spacing,
-    colors,
-    baseFontSize: defaultBaseFontSize,
-  },
 };
 
 export default Tooltip;

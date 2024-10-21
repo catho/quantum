@@ -6,11 +6,6 @@ export interface TooltipProps {
     visible?: boolean;
     multiline?: boolean;
     children: ReactNode[] | ReactNode;
-    theme?: {
-        spacing?: {};
-        colors?: {};
-        baseFontSize?: number;
-    };
 }
 
 declare const Tooltip: FC<TooltipProps>;

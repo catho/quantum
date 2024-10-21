@@ -230,7 +230,6 @@ const Dropdown = ({
                       text={_buttonLabel}
                       hasLabel={hasLabel}
                       id={_id}
-                      autocomplete={autocomplete}
                       skin={skin}
                       className={dropdownInputClass}
                       {...rest}
