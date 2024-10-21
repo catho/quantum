@@ -1,11 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import {
-  colors,
-  spacing,
-  baseFontSize as defaultBaseFontSize,
-} from '../shared/theme';
 import styles from './Tooltip.module.css';
 
 class Tooltip extends Component {
@@ -24,7 +19,6 @@ class Tooltip extends Component {
       placement,
       text,
       visible: visibleProp,
-      theme,
       multiline,
       ...rest
     } = this.props;
@@ -69,22 +63,12 @@ Tooltip.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  theme: PropTypes.shape({
-    spacing: PropTypes.object,
-    colors: PropTypes.object,
-    baseFontSize: PropTypes.number,
-  }),
 };
 
 Tooltip.defaultProps = {
   placement: 'top',
   visible: false,
   multiline: false,
-  theme: {
-    spacing,
-    colors,
-    baseFontSize: defaultBaseFontSize,
-  },
 };
 
 export default Tooltip;
