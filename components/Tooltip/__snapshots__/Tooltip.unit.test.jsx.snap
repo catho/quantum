@@ -2,70 +2,74 @@
 
 exports[`Tooltip component  Should match the snapshot when is multiline 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: unset;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: pre;
-  line-height: 20px;
-  text-align: left;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
-  width: -webkit-max-content;
+  float: left;
+  position: relative;
+  width: unset;
+}
+
+.Tooltip-module__tooltip-wrapper-multiline___-JxiN {
   width: -moz-max-content;
   width: max-content;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Tooltip-module__tip-text-multiline___KNloF {
+  max-width: unset;
+  text-align: left;
+  white-space: pre;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9 Tooltip-module__tooltip-wrapper-multiline___-JxiN"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj Tooltip-module__tip-text-multiline___KNloF"
       >
         Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
@@ -80,68 +84,63 @@ Suspendisse finibus libero nec justo semper.
 
 exports[`Tooltip component  Should match the snapshot when is not multiline 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit. 
@@ -156,68 +155,64 @@ Suspendisse finibus libero nec justo semper.
 
 exports[`Tooltip component  Should match the snapshot when place is bottom 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
+    place="bottom"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         This is a hint
       </span>
@@ -229,68 +224,64 @@ exports[`Tooltip component  Should match the snapshot when place is bottom 1`] =
 
 exports[`Tooltip component  Should match the snapshot when place is left 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
+    place="left"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         This is a hint
       </span>
@@ -302,68 +293,64 @@ exports[`Tooltip component  Should match the snapshot when place is left 1`] = `
 
 exports[`Tooltip component  Should match the snapshot when place is right 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
+    place="right"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         This is a hint
       </span>
@@ -375,68 +362,64 @@ exports[`Tooltip component  Should match the snapshot when place is right 1`] = 
 
 exports[`Tooltip component  Should match the snapshot when place is top 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
+    place="top"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         This is a hint
       </span>
@@ -448,68 +431,63 @@ exports[`Tooltip component  Should match the snapshot when place is top 1`] = `
 
 exports[`Tooltip component  Should match the snapshot when text is html elements 1`] = `
 <DocumentFragment>
-  .c1 {
-  border-radius: 4px;
-  font-weight: bold;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-  line-height: 0;
-  text-align: center;
-  -webkit-transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out,visibility 0.2s ease-in-out;
-  z-index: 100;
-  background-color: #424242;
-  border-color: #424242;
-  color: #f2f2f2;
-  font-size: 16px;
-  padding: 8px;
-  left: 50%;
-  bottom: calc(100% + 12px);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.c1:before {
-  content: '';
-  position: absolute;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  border-top: 6px solid;
-  border-top-color: inherit;
-  bottom: -5px;
-}
-
-.c2 {
-  display: inline-block;
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 20px;
-  text-align: unset;
-}
-
-.c0 {
-  position: relative;
-  float: left;
+  .Tooltip-module__tooltip-wrapper___QIZP9 {
   clear: left;
+  float: left;
+  position: relative;
   width: unset;
 }
 
+.Tooltip-module__tip___OwJfd {
+  background-color: var(--qtm-colors-neutral-700);
+  border-color: var(--qtm-colors-neutral-700);
+  border-radius: 4px;
+  color: var(--qtm-colors-neutral-100);
+  font-size: var(--qtm-base-font-size);
+  font-weight: 700;
+  line-height: 0;
+  opacity: 0;
+  padding: var(--qtm-spacing-xsmall);
+  position: absolute;
+  text-align: center;
+  transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.Tooltip-module__tip-top___Eh2V4 {
+  bottom: var(--tip-position-distance);
+}
+
+.Tooltip-module__tip-bottom___-XQIh,
+.Tooltip-module__tip-top___Eh2V4 {
+  left: var(--tip-percentage-x);
+  transform: translateX(calc(var(--tip-percentage-x)*-1));
+}
+
+.Tooltip-module__tip-visible___ycDZa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Tooltip-module__tip-text___fFkEj {
+  display: inline-block;
+  line-height: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  text-align: unset;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 <div
-    class="c0"
+    class="Tooltip-module__tooltip-wrapper___QIZP9"
   >
     <div
-      class="c1"
+      class="Tooltip-module__tip___OwJfd Tooltip-module__tip-top___Eh2V4 Tooltip-module__tip-visible___ycDZa"
     >
       <span
-        class="c2"
+        class="Tooltip-module__tip-text___fFkEj"
       >
         <p>
           <i>

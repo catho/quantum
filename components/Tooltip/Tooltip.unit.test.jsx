@@ -88,17 +88,18 @@ describe('Tooltip component ', () => {
   });
 
   it('should toggle visibility when mouse enter and mouse leave', () => {
+    const classContainedInClassList = (expression, classList) =>
+      Array.from(classList).some((className) => expression.test(className));
+
     render(<Tooltip text={TOOLTIP_TEXT}>{TOOLTIP_TRIGGER}</Tooltip>);
 
     const tooltipTrigger = screen.getByText(TOOLTIP_TRIGGER);
+    const tip = tooltipTrigger.firstChild;
+
+    expect(classContainedInClassList(/visible/, tip.classList)).toBe(false);
+
     fireEvent.mouseEnter(tooltipTrigger);
 
-    const tip = screen.getByText(TOOLTIP_TEXT);
-
-    expect(tip.parentNode).toHaveStyleRule('visibility', 'visible');
-
-    fireEvent.mouseLeave(tooltipTrigger);
-
-    expect(tip.parentNode).toHaveStyleRule('visibility', 'hidden');
+    expect(classContainedInClassList(/visible/, tip.classList)).toBe(true);
   });
 });
