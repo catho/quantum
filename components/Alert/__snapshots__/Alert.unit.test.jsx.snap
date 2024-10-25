@@ -72,88 +72,54 @@ exports[`Alert component Should match a skin snapshot 1`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-neutral___Be4pp {
+  color: var(--qtm-colors-neutral-700)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #e0e0e0;
-  border: 1.5px solid #424242;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K {
+  background-color: var(--qtm-colors-neutral-300);
+  border: 1.5px solid var(--qtm-colors-neutral-700);
 }
 
-.c5 .c1 > .c3 {
-  color: #1250C4;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c6 .c1 > .c3 {
-  color: #004D40;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c7 .c1 > .c3 {
-  color: #f09100;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K,
+.Alert-module__wrapper-primary___G3O8Y {
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-neutral___dsh9K"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       neutral
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-neutral___Be4pp"
       type="button"
     >
       <svg
@@ -246,88 +212,54 @@ exports[`Alert component Should match a skin snapshot 2`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-primary___Ca1Xf {
+  color: var(--qtm-colors-primary-700)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c5 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #E5EDFC;
-  border: 1.5px solid #1250C4;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #1250C4;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K,
+.Alert-module__wrapper-primary___G3O8Y {
+  color: var(--qtm-colors-neutral-700);
 }
 
-.c6 .c1 > .c3 {
-  color: #004D40;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c7 .c1 > .c3 {
-  color: #f09100;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-primary___G3O8Y {
+  background-color: var(--qtm-colors-primary-100);
+  border: 1.5px solid var(--qtm-colors-primary-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-primary___G3O8Y"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       blue
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-primary___Ca1Xf"
       type="button"
     >
       <svg
@@ -420,88 +352,50 @@ exports[`Alert component Should match a skin snapshot 3`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-success___r8GSH {
+  color: var(--qtm-colors-success-900)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c5 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c6 .c1 > .c3 {
-  color: #1250C4;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #dcedc8;
-  border: 1.5px solid #004D40;
-  color: #004D40;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #004D40;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c7 .c1 > .c3 {
-  color: #f09100;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-success___Qzpb0 {
+  background-color: var(--qtm-colors-success-100);
+  border: 1.5px solid var(--qtm-colors-success-900);
+  color: var(--qtm-colors-success-900);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-success___Qzpb0"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       success
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-success___r8GSH"
       type="button"
     >
       <svg
@@ -594,88 +488,50 @@ exports[`Alert component Should match a skin snapshot 4`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-warning___WeAWK {
+  color: var(--qtm-colors-warning-700)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c5 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c6 .c1 > .c3 {
-  color: #1250C4;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c7 .c1 > .c3 {
-  color: #004D40;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #ffefd6;
-  border: 1.5px solid #f09100;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #f09100;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-warning___GfyLm {
+  background-color: var(--qtm-colors-warning-100);
+  border: 1.5px solid var(--qtm-colors-warning-700);
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-warning___GfyLm"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       warning
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-warning___WeAWK"
       type="button"
     >
       <svg
@@ -768,88 +624,55 @@ exports[`Alert component Should match a skin snapshot 5`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-neutral___Be4pp {
+  color: var(--qtm-colors-neutral-700)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #e0e0e0;
-  border: 1.5px solid #424242;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K {
+  background-color: var(--qtm-colors-neutral-300);
+  border: 1.5px solid var(--qtm-colors-neutral-700);
 }
 
-.c5 .c1 > .c3 {
-  color: #1250C4;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c6 .c1 > .c3 {
-  color: #004D40;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
-}
-
-.c7 .c1 > .c3 {
-  color: #f09100;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K,
+.Alert-module__wrapper-primary___G3O8Y {
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-neutral___dsh9K"
   role="alert"
+  skins="error"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       error
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-neutral___Be4pp"
       type="button"
     >
       <svg
@@ -942,67 +765,54 @@ exports[`Alert component Should match the snapshot of a simple alert 1`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__icon-neutral___Be4pp {
+  color: var(--qtm-colors-neutral-700)!important;
 }
 
-.c4 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c4:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #e0e0e0;
-  border: 1.5px solid #424242;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 > .c3 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K {
+  background-color: var(--qtm-colors-neutral-300);
+  border: 1.5px solid var(--qtm-colors-neutral-700);
+}
+
+.Alert-module__wrapper-neutral___dsh9K,
+.Alert-module__wrapper-primary___G3O8Y {
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-neutral___dsh9K"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <span>
       Sample alert
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c3 c4"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-neutral___Be4pp"
       type="button"
     >
       <svg
@@ -1095,73 +905,57 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
   color: var(--qtm-colors-neutral-500);
 }
 
-.c2 {
-  -webkit-align-items: start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
+.Alert-module__content___dWn0E {
   align-items: start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 
-.c2 > span {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.Alert-module__alert-icon___Lk96n {
+  margin-right: var(--qtm-spacing-medium);
+  width: calc(var(--qtm-base-font-size)*1.5);
 }
 
-.c4 {
-  width: 24px;
+.Alert-module__icon-neutral___Be4pp {
+  color: var(--qtm-colors-neutral-700)!important;
 }
 
-.c6 {
+.Alert-module__close-button___d9UE7 {
   height: auto;
-  opacity: 0.8;
+  margin: 0 0 0 var(--qtm-spacing-medium)!important;
+  min-height: 0;
+  opacity: 1;
   padding: 0;
-  -webkit-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+  transition: opacity .4s ease;
   width: auto;
 }
 
-.c6:hover {
-  background: none;
-  opacity: 1;
-}
-
-.c0 {
+.Alert-module__wrapper___wtuwZ {
   border-radius: 8px;
   box-sizing: border-box;
-  font-size: 16px;
-  background-color: #e0e0e0;
-  border: 1.5px solid #424242;
-  color: #424242;
-  padding: 12px 16px;
+  font-size: var(--qtm-base-font-size);
+  padding: var(--qtm-spacing-small) var(--qtm-spacing-medium);
 }
 
-.c0 .c1 .c3 {
-  color: #424242;
-  margin-right: 16px;
+.Alert-module__wrapper-neutral___dsh9K {
+  background-color: var(--qtm-colors-neutral-300);
+  border: 1.5px solid var(--qtm-colors-neutral-700);
 }
 
-.c0 .c1 > .c5 {
-  color: #424242;
-  margin: 0 0 0 16px !important;
-  min-height: 0;
-  opacity: 1;
+.Alert-module__wrapper-neutral___dsh9K,
+.Alert-module__wrapper-primary___G3O8Y {
+  color: var(--qtm-colors-neutral-700);
 }
 
 <div
-  class="c0"
+  class="Alert-module__wrapper___wtuwZ Alert-module__wrapper-neutral___dsh9K"
   role="alert"
 >
   <div
-    class="c1 c2"
+    class="Alert-module__content___dWn0E"
   >
     <svg
       aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium c3 c4 css-i4bv87-MuiSvgIcon-root"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Alert-module__alert-icon___Lk96n Alert-module__icon-neutral___Be4pp css-i4bv87-MuiSvgIcon-root"
       data-qtm-preloader="icon"
       data-testid="InfoIcon"
       focusable="false"
@@ -1176,8 +970,7 @@ exports[`Alert component Should match the snapshot with an icon 1`] = `
       Sample alert
     </span>
     <button
-      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn c5 c6"
-      theme="[object Object]"
+      class="ButtonBase-module__button___-CVUK ButtonBase-module__button-medium___BtByl ButtonBase-module__button-default___K4Nmm ButtonBase-module__button-default-primary___X9GaT ButtonBase-module__shadow-2-neutral-500___mSG-z ButtonBase-module__shadow-4-primary-900___OVVjG ButtonBase-module__shadow-4-primary-700___OKpXZ ButtonBase-module__shadow-8-primary-900___cXlt5 ButtonBase-module__icon-button___nb2zK ButtonBase-module__icon-button-medium___-pGge ButtonBase-module__icon-button-neutral___CseSn Alert-module__close-button___d9UE7 Alert-module__icon-neutral___Be4pp"
       type="button"
     >
       <svg

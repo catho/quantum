@@ -81,34 +81,6 @@ export interface spacingProps {
 
 
 export interface componentsProps {
-  button: {
-    skins: {
-      neutral: {
-        mainColor: colorsProps["neutral"];
-        text: colorsProps["neutral"];
-      };
-      primary: {
-        mainColor: colorsProps["primary"];
-        text: colorsProps["neutral"];
-      };
-      secondary: {
-        mainColor: colorsProps["secondary"];
-        text: colorsProps["neutral"];
-      };
-      success: {
-        mainColor: colorsProps["success"];
-        text: colorsProps["neutral"];
-      };
-      warning: {
-        mainColor: colorsProps["warning"];
-        text: colorsProps["neutral"];
-      };
-      error: {
-        mainColor: colorsProps["error"];
-        text: colorsProps["neutral"];
-      };
-    };
-  };
   tag: {
     skins: {
       neutral: {
@@ -193,37 +165,6 @@ export interface componentsProps {
       };
     };
   };
-
-  alert: {
-    skins: {
-      neutral: {
-        icon: colorsProps["neutral"][700];
-        background: colorsProps["neutral"][300];
-        text: colorsProps["neutral"][700];
-      };
-      primary: {
-        icon: colorsProps["primary"][700];
-        background: colorsProps["primary"][100];
-        text: colorsProps["neutral"][700];
-      };
-      success: {
-        icon: colorsProps["success"][900];
-        background: colorsProps["success"][100];
-        text: colorsProps["success"][900];
-      };
-      warning: {
-        icon: colorsProps["warning"][700];
-        background: colorsProps["warning"][100];
-        text: colorsProps["neutral"][700];
-      };
-      error: {
-        icon: colorsProps["error"][700];
-        background: colorsProps["error"][100];
-        text: colorsProps["error"][900];
-      };
-    };
-  };
-
   progressBar: {
     skins: {
       neutral: {

@@ -6,15 +6,6 @@ export interface AlertProps {
     onClose?: MouseEventHandler<HTMLButtonElement> | TouchEventHandler<HTMLButtonElement>;
     icon?: IconNames | string;
     skin?: 'primary' | 'success' | 'error' | 'neutral' | 'warning';
-    theme?: {
-        baseFontSize?: number;
-        colors?: {};
-        spacing?: {};
-        components?: {
-            alert?: {};
-            button?: {};
-        };
-    };
 }
 
 declare const Alert: FC<AlertProps>;

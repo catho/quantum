@@ -1,101 +1,26 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import classNames from 'classnames';
 import Button from '../Button';
 import Icon from '../Icon';
-import {
-  components,
-  spacing,
-  colors,
-  baseFontSize as defaultBaseFontSize,
-  breakpoints,
-} from '../shared/theme';
-
-const Content = styled.div`
-  align-items: start;
-  display: flex;
-
-  & > span {
-    flex: 1;
-  }
-`;
-
-const AlertIcon = styled(Icon)`
-  width: ${defaultBaseFontSize * 1.5}px;
-`;
-
-const CloseButton = styled(Button.Icon).attrs({
-  icon: 'close',
-})`
-  height: auto;
-  opacity: 0.8;
-  padding: 0;
-  transition: opacity 0.4s ease;
-  width: auto;
-
-  &:hover {
-    background: none;
-    opacity: 1;
-  }
-`;
-
-CloseButton.displayName = 'CloseButton';
-
-const Wrapper = styled.div`
-  border-radius: 8px;
-  box-sizing: border-box;
-
-  ${({
-    skin,
-    theme: {
-      baseFontSize,
-      spacing: { small, medium },
-      components: {
-        alert: {
-          skins: {
-            [skin]: { background, icon, text },
-          },
-        },
-      },
-    },
-  }) => `
-    font-size: ${baseFontSize}px;
-    background-color: ${background};
-    border: 1.5px solid ${icon};
-    color: ${text};
-    padding: ${small}px ${medium}px;
-
-    ${Content} ${AlertIcon} {
-      color: ${icon};
-      margin-right: ${medium}px;
-    }
-
-    ${Content} > ${CloseButton} {
-      color: ${icon};
-      margin: 0 0 0 ${medium}px !important;
-      min-height: 0;
-      opacity: 1;
-    }
-  `}
-`;
+import styles from './Alert.module.css';
 
 const Alert = ({
   icon = null,
   skin = 'neutral',
   children,
-  theme = {
-    colors,
-    baseFontSize: defaultBaseFontSize,
-    spacing,
-    breakpoints,
-    components: {
-      alert: components.alert,
-    },
-  },
   onClose = undefined,
+  className,
   ...rest
 }) => {
   const [show, setShow] = useState(true);
+  const contentClass = classNames(styles.content, className);
+  const alertClass = classNames(styles['alert-icon'], styles[`icon-${skin}`]);
+  const closeButtonClass = classNames(
+    styles['close-button'],
+    styles[`icon-${skin}`],
+  );
+  const wrapperClass = classNames(styles.wrapper, styles[`wrapper-${skin}`]);
 
   const handleClose = () => {
     setShow(false);
@@ -104,13 +29,19 @@ const Alert = ({
 
   return (
     show && (
-      <Wrapper theme={theme} skin={skin} {...rest} role="alert">
-        <Content>
-          {icon && <AlertIcon name={icon} />}
+      <div className={wrapperClass} {...rest} role="alert">
+        <div className={contentClass}>
+          {icon && <Icon name={icon} className={alertClass} />}
           {children && <span>{children}</span>}
-          {onClose && <CloseButton theme={theme} onClick={handleClose} />}
-        </Content>
-      </Wrapper>
+          {onClose && (
+            <Button.Icon
+              onClick={handleClose}
+              icon="close"
+              className={closeButtonClass}
+            />
+          )}
+        </div>
+      </div>
     )
   );
 };
@@ -124,14 +55,6 @@ Alert.propTypes = {
   /** You must pass a callback that is called when close button is clicked */
   onClose: PropTypes.func,
   skin: PropTypes.oneOf(['primary', 'success', 'error', 'neutral', 'warning']),
-  theme: PropTypes.shape({
-    baseFontSize: PropTypes.number,
-    colors: PropTypes.object,
-    spacing: PropTypes.object,
-    components: PropTypes.shape({
-      alert: PropTypes.object,
-    }),
-  }),
 };
 
 export default Alert;
