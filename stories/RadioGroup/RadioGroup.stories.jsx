@@ -59,6 +59,6 @@ Button.args = {
 
 export const Inline = Template.bind({});
 Inline.args = {
-  ...Button.args,
+  options: buttonOptions,
   inline: true,
 };

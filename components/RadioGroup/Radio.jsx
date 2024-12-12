@@ -89,6 +89,21 @@ const RadioLabel = styled(Label)`
     }
   }
 
+  ${({
+    inline,
+    theme: {
+      spacing: { medium },
+    },
+  }) =>
+    inline &&
+    `
+    display: inline-flex;
+    margin-right: ${medium}px;
+
+    &:last-child {
+      margin-right: 0;
+    }`}
+
   &:hover,
   &:focus {
     ${RadioMark} {
@@ -231,9 +246,10 @@ const Radio = ({
   value,
   theme = { colors, spacing },
   required = false,
+  inline = false,
   ...rest
 }) => (
-  <RadioLabel error={error} disabled={disabled} theme={theme}>
+  <RadioLabel inline={inline} error={error} disabled={disabled} theme={theme}>
     <HiddenInput
       type="radio"
       disabled={disabled}
@@ -252,6 +268,7 @@ Radio.displayName = 'RadioGroup.Radio';
 Radio.propTypes = {
   disabled: PropTypes.bool,
   error: PropTypes.bool,
+  inline: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   label: PropTypes.string,
   value: PropTypes.string.isRequired,
