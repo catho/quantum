@@ -182,6 +182,19 @@ describe('<RadioGroup />', () => {
       );
       expect(container.firstChild).toMatchSnapshot();
     });
+
+    it('with inline', () => {
+      const options = [
+        { value: 'Foo', label: 'Foo' },
+        { value: 'Bar', label: 'Bar' },
+        { value: 'Baz', label: 'Baz' },
+      ];
+
+      const { container } = render(
+        <RadioGroup inline name="foo" options={options} />,
+      );
+      expect(container.firstChild).toMatchSnapshot();
+    });
   });
 
   _childrenTest(RadioGroup.Radio);
