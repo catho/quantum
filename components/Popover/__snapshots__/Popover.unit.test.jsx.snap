@@ -117,7 +117,7 @@ exports[`Popover component should match snapshots 1`] = `
   color: #ffffff;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
@@ -314,7 +314,7 @@ exports[`Popover component should match snapshots 2`] = `
   color: #ffffff;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
@@ -515,7 +515,7 @@ exports[`Popover component should match snapshots 3`] = `
   color: #dcedc8;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
@@ -720,7 +720,7 @@ exports[`Popover component should match snapshots 4`] = `
   color: #ffefd6;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
@@ -929,7 +929,7 @@ exports[`Popover component should match snapshots 5`] = `
   color: #fff5f5;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
@@ -1139,7 +1139,7 @@ exports[`Popover component should match snapshots 6`] = `
   font-size: 16px;
   position: absolute;
   top: -4px;
-  content: '▲';
+  content: '▲︎';
   left: 50%;
   text-shadow: 0px -3px 4px rgba(66,66,66,0.2);
   -webkit-transform: translateX(-50%);
@@ -1348,7 +1348,7 @@ exports[`Popover component should match snapshots 7`] = `
   font-size: 16px;
   position: absolute;
   bottom: 50%;
-  content: '▶';
+  content: '▶︎';
   right: -8px;
   text-shadow: 4px 1px 4px rgba(66,66,66,0.2);
 }
@@ -1554,7 +1554,7 @@ exports[`Popover component should match snapshots 8`] = `
   font-size: 16px;
   position: absolute;
   bottom: 50%;
-  content: '◀';
+  content: '◀︎';
   left: -8px;
   text-shadow: -4px 1px 4px rgba(66,66,66,0.2);
 }
@@ -1759,7 +1759,7 @@ exports[`Popover component should match snapshots 9`] = `
   color: #424242;
   font-size: 16px;
   position: absolute;
-  content: '▼';
+  content: '▼︎';
   left: 50%;
   text-shadow: 0px 8px 4px rgba(66,66,66,0.2);
   bottom: 0;
