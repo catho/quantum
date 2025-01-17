@@ -6,7 +6,7 @@ const CENTER_POSITION = '50%';
 
 const placementPosition = ({ neutral: { 700: shadowColor } }) => ({
   top: `
-    content: '▼';
+    content: '\u25BC\uFE0E';
     left: ${CENTER_POSITION};
     text-shadow: 0px 8px 4px ${hexToRgba(shadowColor, 0.2)};
     bottom: 0;
@@ -14,20 +14,20 @@ const placementPosition = ({ neutral: { 700: shadowColor } }) => ({
   `,
   bottom: `
     top: -4px;
-    content: '▲';
+    content: '\u25B2\uFE0E';
     left: ${CENTER_POSITION};
     text-shadow: 0px -3px 4px ${hexToRgba(shadowColor, 0.2)};
     transform: translateX(-${CENTER_POSITION});
   `,
   right: `
     bottom: ${CENTER_POSITION};
-    content: '◀';
+    content: '\u25C0\uFE0E';
     left: ${SIDE_POSITION_X}px;
     text-shadow: -4px 1px 4px ${hexToRgba(shadowColor, 0.2)};
   `,
   left: `
     bottom: ${CENTER_POSITION};
-    content: '▶';
+    content: '\u25B6\uFE0E';
     right: ${SIDE_POSITION_X}px;
     text-shadow: 4px 1px 4px ${hexToRgba(shadowColor, 0.2)};
   `,
