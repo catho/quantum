@@ -171,14 +171,17 @@ describe('<DropdownLight />', () => {
 
   it('should close Dropdown Options when user press Escape', async () => {
     render(<DropdownLight items={itemsStringMock} />);
+    const dropdownButton = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
 
+    await userEvent.click(dropdownButton);
     await userEvent.keyboard(ESCAPE_KEY_CODE);
 
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
 
-    expect(
-      screen.getByRole('button', { name: 'abrir lista de itens' }),
-    ).toBeInTheDocument();
+    expect(dropdownButton).toBeInTheDocument();
+    expect(dropdownButton).toHaveFocus();
   });
 
   it('should allow User to select an option using only keyboard', async () => {
@@ -200,9 +203,13 @@ describe('<DropdownLight />', () => {
 
     await userEvent.keyboard(ENTER_KEY_CODE);
     const input = screen.getByRole('textbox', { hidden: true });
+    const dropdownButton = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
 
     expect(input.value).toEqual(bananaItemMock);
     expect(screen.queryByRole('list')).not.toBeInTheDocument();
+    expect(dropdownButton).toHaveFocus();
   });
 
   it('should allow the User to navigate between items using the keys with the initial letter of each item', async () => {
@@ -279,5 +286,37 @@ describe('<DropdownLight />', () => {
     const selectionItemImage = optionItem.querySelector('img');
 
     expect(selectionItemImage).toBeInTheDocument();
+  });
+
+  it('should allow to select an item from the list using the keyboard and without opening the list of options', async () => {
+    const onChangeMock = jest.fn();
+    render(<DropdownLight items={itemsObjectMock} onChange={onChangeMock} />);
+
+    await userEvent.tab();
+
+    const dropdownButton = screen.getByRole('button', {
+      name: 'abrir lista de itens',
+    });
+    expect(dropdownButton).toHaveFocus();
+
+    await userEvent.keyboard(ARROW_DOWN_KEY_CODE);
+
+    expect(onChangeMock).toHaveBeenCalledWith({
+      label: 'Lemon',
+      value: 'Lemon',
+    });
+
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+    expect(dropdownButton).toHaveFocus();
+
+    await userEvent.keyboard(ARROW_DOWN_KEY_CODE);
+
+    expect(onChangeMock).toHaveBeenCalledWith({
+      label: 'Lime',
+      value: 'Lime',
+    });
+
+    expect(screen.queryByRole('list')).not.toBeInTheDocument();
+    expect(dropdownButton).toHaveFocus();
   });
 });
