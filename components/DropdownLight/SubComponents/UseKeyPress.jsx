@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
 
-const useKeyPress = (targetKey) => {
+const useKeyPress = (targetKey, isPreventDefault = () => false) => {
   const [keyPressed, setKeyPressed] = useState(false);
 
   /* istanbul ignore next */
-  const downHandler = ({ key }) => {
-    if (key === targetKey) {
+  const downHandler = (event) => {
+    if (event.key === targetKey) {
+      if (isPreventDefault()) {
+        event.preventDefault();
+      }
       setKeyPressed(true);
     }
   };

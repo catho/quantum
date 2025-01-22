@@ -210,12 +210,14 @@ const DropdownLight = ({
   const [cursor, setCursor] = useState(-1);
   const buttonRef = useRef();
   const listOptions = useRef();
+  const ButtonIsClosedAndFocused = () =>
+    !isOpen && document.activeElement === buttonRef.current;
 
-  const downPress = useKeyPress('ArrowDown');
-  const upPress = useKeyPress('ArrowUp');
+  const downPress = useKeyPress('ArrowDown', ButtonIsClosedAndFocused);
+  const upPress = useKeyPress('ArrowUp', ButtonIsClosedAndFocused);
   const enterPress = useKeyPress('Enter');
+  const escapePress = useKeyPress('Escape');
   const focusedItemIndex = useKeyboardSearchItems(items, cursor, isOpen);
-  const EscapeKeyPressValue = 'Escape';
 
   const handleToggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -249,18 +251,32 @@ const DropdownLight = ({
     }
   };
 
-  const handleEscPress = ({ key }) => {
-    if (key === EscapeKeyPressValue) {
+  useEffect(() => {
+    if (isOpen && escapePress) {
       setIsOpen(false);
       setCursor(-1);
       buttonRef.current.focus();
     }
-  };
+  }, [escapePress, isOpen]);
 
   useEffect(() => {
+    const GetNextCursor = (currentCursor) =>
+      currentCursor < items.length - 1 ? currentCursor + 1 : currentCursor;
+
     if (isOpen && downPress) {
-      const selectedCursor = cursor < items.length - 1 ? cursor + 1 : cursor;
+      const selectedCursor = GetNextCursor(cursor);
       setCursor(selectedCursor);
+    }
+
+    if (downPress && ButtonIsClosedAndFocused()) {
+      const selectedItemIndex = items.findIndex(
+        (item) => (item?.label || item) === selectedOptionItem,
+      );
+      const selectedCursor = GetNextCursor(selectedItemIndex);
+
+      if (selectedItemIndex !== selectedCursor) {
+        selectItem(items[selectedCursor]);
+      }
     }
   }, [downPress, items, isOpen]);
 
@@ -269,24 +285,30 @@ const DropdownLight = ({
       const selectedCursor = cursor - 1;
       setCursor(selectedCursor);
     }
+
+    if (upPress && ButtonIsClosedAndFocused()) {
+      const selectedItemIndex = items.findIndex(
+        (item) => (item?.label || item) === selectedOptionItem,
+      );
+      const previousCursor =
+        selectedItemIndex > 0 ? selectedItemIndex - 1 : selectedItemIndex;
+      const selectedCursor = previousCursor;
+
+      if (selectedItemIndex !== selectedCursor) {
+        selectItem(items[selectedCursor]);
+      }
+    }
   }, [upPress, items, isOpen]);
 
   useEffect(() => {
     window.addEventListener('click', handleClickOutside);
-    window.addEventListener('keydown', handleEscPress);
     return () => {
       window.removeEventListener('click', handleClickOutside);
-      window.removeEventListener('keydown', handleEscPress);
     };
   }, []);
 
   useEffect(() => {
-    if (
-      enterPress &&
-      !isOpen &&
-      document.activeElement === buttonRef.current &&
-      selectedOptionItem
-    ) {
+    if (enterPress && ButtonIsClosedAndFocused() && selectedOptionItem) {
       const selectedItemIndex = items.findIndex(
         (item) => (item?.label || item) === selectedOptionItem,
       );
