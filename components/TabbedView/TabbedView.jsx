@@ -41,7 +41,7 @@ const Navbar = styled.nav.attrs({
       background-color: ${background};
       margin: 0 0 ${large}px 0;
 
-      ${fluid ? 'width: 100%; overflow-x: scroll;' : null}
+      ${fluid ? 'width: 100%; overflow-x: auto;' : null}
 
       ${mediumQuery`
         overflow-x: auto;

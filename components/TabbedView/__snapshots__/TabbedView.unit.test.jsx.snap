@@ -378,7 +378,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 1`] = 
   background-color: transparent;
   margin: 0 0 24px 0;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .c1 {
@@ -488,7 +488,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 2`] = 
   background-color: transparent;
   margin: 0 0 24px 0;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .c1 {
@@ -611,7 +611,7 @@ exports[`<TabbedView />  Snapshot should match snapshot with fluid option 3`] = 
   background-color: transparent;
   margin: 0 0 24px 0;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .c1 {
