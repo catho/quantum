@@ -124,6 +124,39 @@ describe('Input component', () => {
     expect(screen.getByDisplayValue('999.999.999-99')).toBeInTheDocument();
   });
 
+  it('should apply CNPJ mask allowing alphanumeric chars and numeric check digits', () => {
+    render(<Input.CNPJ value="ab123cd456ef78" label="Digite seu cnpj" />);
+
+    expect(screen.getByDisplayValue('AB.123.CD4/56EF-78')).toBeInTheDocument();
+  });
+
+  it('should ignore symbols in CNPJ and keep last 2 chars as numbers only', () => {
+    render(
+      <Input
+        mask={masks.cnpj}
+        value="AB12@3CD456EF7A8"
+        label="Digite seu cnpj"
+      />,
+    );
+
+    const input = screen.getByRole('textbox', { name: /Digite seu cnpj/i });
+    const inputValue = input.getAttribute('value');
+
+    expect(inputValue).toEqual('AB.123.CD4/56EF-78');
+    expect(inputValue).not.toContain('@');
+    expect(inputValue).toMatch(/-\d{2}$/);
+  });
+
+  it('should transform lowercase CNPJ chars to uppercase while typing', async () => {
+    render(<Input.CNPJ label="Digite seu cnpj" />);
+
+    const input = screen.getByRole('textbox', { name: /Digite seu cnpj/i });
+
+    await userEvent.type(input, 'ab123cd456ef78');
+
+    expect(input.getAttribute('value')).toEqual('AB.123.CD4/56EF-78');
+  });
+
   it('should call onClean callback when prop is setted', () => {
     const onCleanMock = jest.fn();
     const { container } = render(
