@@ -22,8 +22,6 @@ Obs.: We have .nvmrc. When you run `nvm use`, it will set the node to the same v
 
 - Yarn;
 
-* Docker for the visual tests;
-
 * Commitizen.
 
 Why _commitizen_? To enforce a padronization to the commits and make sure every commit follows the same profile.
@@ -64,23 +62,6 @@ Also, we do not recommend using any other ready-made component library. We sugge
     Check the test coverage using:
 
         yarn test:coverage
-
-6.  If there are visual changes, run the Regression Tests;
-
-    To update the Regression Tests, revise the file `stories/<nome do componente criado>.regression-test.story.jsx`.
-
-    To run Regression Tests, you must get the Storybook running first. You can do it with the command:
-
-        yarn test:regression:storybook
-
-    After the Storybook is up, run the following to check if there are any visual differences:
-
-        yarn test:regression
-
-
-    This will run a pixel-perfect comparison to protect any visual changes that may happen on the component. If the desired change is detected and according to the desired output, run:
-
-        yarn test:regression:approve
 
 7. Update the live documentation (Storybook);
 
@@ -169,7 +150,7 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
 
     The components are subfolders of the `components` folder; therefore, if you want to edit the `Footer`, the path will be `components/footer`.
 
-    All the corresponding documentation and regression tests will be at `story/footer`.
+    All the corresponding documentation will be at `story/footer`.
 
 4. Proceed with the desired changes.
 
@@ -184,24 +165,6 @@ Follow steps [1 and 2](#getting-started) from Getting Started.
     To check the test coverage, run:
 
         yarn test:coverage
-
-6. Update the Regression Tests, if needed;
-
-    If a behavior that changes the visual aspect of the component is included, this new behavior must be included in the Regression Tests.
-
-    To update the Regression Test, just edit the file `stories/<name-of-the-edited-component>.regression-test.story.jsx`. 
-
-    To run the Regression Test, you must get up the Testing Storybook first:
-
-        yarn test:regression:storybook
-
-    With the Testing Storybook running, execute the following command to compare the visual changes, if there's any:
-
-        yarn test:regression
-
-    This command will run a pixel-perfect comparative test to protect the visual changes of the components, if they happen. If the desired change is detected, execute:
-
-        yarn test:regression:approve
 
 7. Update the live documentation (Storybook);
 

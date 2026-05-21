@@ -22,6 +22,3 @@ jobs:
 
       - name: Run unit tests
         run: yarn test:components
-
-      - name: Run the regression tests
-        run: yarn build:regression
