@@ -130,16 +130,11 @@ describe('Input component', () => {
     expect(screen.getByDisplayValue('AB.123.CD4/56EF-78')).toBeInTheDocument();
   });
 
-  it('should ignore symbols in CNPJ and keep last 2 chars as numbers only', () => {
-    render(
-      <Input
-        mask={masks.cnpj}
-        value="AB12@3CD456EF7A8"
-        label="Digite seu cnpj"
-      />,
-    );
+  it('should ignore symbols in CNPJ and keep last 2 chars as numbers only', async () => {
+    render(<Input.CNPJ label="Digite seu cnpj" />);
 
     const input = screen.getByRole('textbox', { name: /Digite seu cnpj/i });
+    await userEvent.type(input, 'AB12@3CD456EF7A8');
     const inputValue = input.getAttribute('value');
 
     expect(inputValue).toEqual('AB.123.CD4/56EF-78');
@@ -151,7 +146,6 @@ describe('Input component', () => {
     render(<Input.CNPJ label="Digite seu cnpj" />);
 
     const input = screen.getByRole('textbox', { name: /Digite seu cnpj/i });
-
     await userEvent.type(input, 'ab123cd456ef78');
 
     expect(input.getAttribute('value')).toEqual('AB.123.CD4/56EF-78');
