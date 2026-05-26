@@ -48,12 +48,12 @@ jobs:
       - name: Setting NPM token
         run: ./scripts/publish.sh
         env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN_WRITE}}
 
       - name: Publish package
         run: yarn semantic-release
         env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN_WRITE}}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_URL: 'https://api.github.com/'
 
