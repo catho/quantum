@@ -2,9 +2,11 @@
 import Input from './Input';
 import masks from '../shared/masks';
 
+const cnpjPipe = (value) => value.toUpperCase();
+
 const InputTypes = {
   CEP: (props) => <Input mask={masks.cep} {...props} />,
-  CNPJ: (props) => <Input mask={masks.cnpj} {...props} />,
+  CNPJ: (props) => <Input mask={masks.cnpj} pipe={cnpjPipe} {...props} />,
   CPF: (props) => <Input mask={masks.cpf} {...props} />,
   Date: (props) => <Input mask={masks.date} {...props} />,
   Phone: (props) => <Input mask={masks.phone} {...props} />,

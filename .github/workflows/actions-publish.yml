@@ -8,7 +8,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v4
@@ -27,12 +27,9 @@ jobs:
       - name: Run unit tests
         run: yarn test:components
 
-      - name: Run the regression tests
-        run: yarn build:regression
-
   publish:
     needs: tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v4

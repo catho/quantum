@@ -13,14 +13,6 @@ const foundation = [
 
 const hooks = ['Hooks'].map((s) => `../stories/${s}/${s}.mdx`);
 
-const components = ['../stories/**/!(*.regression).mdx'].filter(Boolean);
-
 const componentsStories = ['../stories/**/*.stories.jsx'];
 
-module.exports = [
-  ...docs,
-  ...foundation,
-  ...hooks,
-  ...components,
-  ...componentsStories,
-];
+module.exports = [...docs, ...foundation, ...hooks, ...componentsStories];

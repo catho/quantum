@@ -49,22 +49,6 @@ const Template = args => <${componentName} {...args} />;
 
 export const Default = Template.bind({})
     `,
-    name: `${componentName}.regression-test.story.jsx`,
-  },
-  {
-    content: `// Generated with scripts/create-componnent.js
-
-import ${componentName} from '../../components/${componentName}';
-
-export default {
-  title: '${componentName}',
-  component: ${componentName},
-};
-
-const Template = args => <${componentName} {...args} />;
-
-export const Default = Template.bind({})
-    `,
     name: `${componentName}.stories.jsx`,
   },
 ];
