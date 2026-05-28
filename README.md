@@ -1,17 +1,14 @@
 [![](https://img.shields.io/badge/status-descontinuado-red)](#)
+[![Quantum CI - publish](https://github.com/catho/quantum/actions/workflows/actions-publish.yml/badge.svg)](https://github.com/catho/quantum/actions/workflows/actions-publish.yml)
+[![npm version](https://badge.fury.io/js/%40catho%2Fquantum.svg)](https://badge.fury.io/js/%40catho%2Fquantum)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-> **ATENÇÃO**
-> Este projeto será descontinuado e não receberá mais suporte ou atualizações.
-> Recomendamos não utilizá-lo em novos projetos.
 
 > **ATTENTION**
 > This project will be discontinued and will no longer receive support or updates.
 > We recommend not using it in new projects.
 
-[![Quantum CI - publish](https://github.com/catho/quantum/actions/workflows/actions-publish.yml/badge.svg)](https://github.com/catho/quantum/actions/workflows/actions-publish.yml)
-[![npm version](https://badge.fury.io/js/%40catho%2Fquantum.svg)](https://badge.fury.io/js/%40catho%2Fquantum)
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 <div align="center">
   <img src="https://assets.catho.com.br/quantum/quantum_logo.svg" height="80" width="200">
