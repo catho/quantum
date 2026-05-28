@@ -1,3 +1,9 @@
+[![](https://img.shields.io/badge/status-descontinuado-red)](#)
+
+> **ATENÇÃO**
+> Este projeto será descontinuado e não receberá mais suporte ou atualizações.
+> Recomendamos não utilizá-lo em novos projetos.
+
 [![Quantum CI - publish](https://github.com/catho/quantum/actions/workflows/actions-publish.yml/badge.svg)](https://github.com/catho/quantum/actions/workflows/actions-publish.yml)
 [![npm version](https://badge.fury.io/js/%40catho%2Fquantum.svg)](https://badge.fury.io/js/%40catho%2Fquantum)
 [![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
